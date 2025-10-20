@@ -9,19 +9,19 @@ const blogPosts = [
   {
     title: "5 Modern Apartment Interior Design",
     date: "June 11, 2025",
-    image: "/images/high-end-dubai-apartment-interior-design-in-dubai.png",
+    image: "/images/blog-1.png",
     link: "/modern-apartment-interior-design",
   },
   {
     title: "6 Interior Design Styles Dubai 2025",
     date: "September 23, 2025",
-    image: "/images/six-best-interior-design-trends-dubai-2025.png",
+    image: "/images/blog-2.png",
     link: "/interior-design-styles-dubai-2025",
   },
   {
     title: "Bohemian Interior Design in Dubai",
     date: "May 25, 2025",
-    image: "/images/bohemian-boho-interior-design-dubai.png",
+    image: "/images/blog-3.png",
     link: "/bohemian-interior-design-dubai",
   },
 ];
