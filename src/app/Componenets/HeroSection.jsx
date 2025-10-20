@@ -2,18 +2,18 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
     <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden">
-      {/* 🔹 Background Video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        src="/videos/homepage-1.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
+      {/* 🔹 Background Image */}
+      <Image
+        src="/images/blog-3.png" // ✅ Replace with your desired image path
+        alt="Luxury Interior Design Dubai"
+        fill
+        className="object-cover"
+        priority
       />
 
       {/* 🔹 Soft overlay for text readability */}
