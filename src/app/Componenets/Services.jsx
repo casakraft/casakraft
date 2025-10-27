@@ -18,7 +18,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-[#f6f6f6] py-16">
+    <section id="services" className="bg-[#f6f6f6] py-16">
       {/* Title */}
       <h2 className="text-center text-[#c79d63] font-semibold text-2xl sm:text-3xl md:text-4xl mb-10">
         Our Most Demanding Services In Dubai
