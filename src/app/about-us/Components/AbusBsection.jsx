@@ -50,7 +50,7 @@ export default function AbusBsection() {
             <h2 className="text-3xl md:text-4xl sm:mt-10 font-semibold mb-6" style={{ color: gold }}>About Us</h2>
             <div className="space-y-5 text-gray-700 leading-relaxed">
               <p>
-                Muse Design is a top-notch company that was established in 2007 by <strong>Michael Dudnyk</strong> and <strong>Stanislava Rudas-Dudnyk</strong>. The company manufactures and delivers the best interior design products and services at an affordable price throughout the UAE.
+                Casa Kraft Interiors is a top-notch company that was established in 2*** by <strong>--</strong> and <strong>--</strong>. The company manufactures and delivers the best interior design products and services at an affordable price throughout the UAE.
               </p>
               <p>
                 We have a highly qualified staff available 24/7. Our professionals can transform your normal-looking interior into a modern, aesthetic, and luxurious one with tasteful modifications.
@@ -86,16 +86,16 @@ export default function AbusBsection() {
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             {[
               {
-                title: "Commercial",
-                img: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=80&w=1470&auto=format&fit=crop",
+                title: "RESIDENTIAL",
+                img: "images/residential.png",
               },
               {
-                title: "Residential",
-                img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1470&auto=format&fit=crop",
+                title: "LANDSCAPE",
+                img: "images/landscape-services.png",
               },
               {
-                title: "Fit Out",
-                img: "https://images.unsplash.com/photo-1505691723518-36a5ac3b2d95?q=80&w=1470&auto=format&fit=crop",
+                title: "FIT OUT",
+                img: "images/fit-out.png",
               },
             ].map((c, i) => (
               <Card key={i}>
@@ -123,11 +123,11 @@ export default function AbusBsection() {
       {/* SPECTACULAR WORKING */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-6xl px-6">
-          <SectionTitle title="Spectacular Working Of Muse Designs" />
+          <SectionTitle title="Spectacular Working Of Casa Kraft Interiors" />
 
           <div className="mt-10 grid gap-10">
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <img className="rounded-xl shadow" src="https://images.unsplash.com/photo-1551516594-56cb78394645?q=80&w=1470&auto=format&fit=crop" alt="Living room" />
+              <img className="rounded-xl shadow" src="images/premium-quality-products-services.png" alt="Living room" />
               <div className="space-y-4 text-gray-700">
                 <h3 className="text-2xl font-semibold" style={{ color: gold }}>Premium Quality Products & Services</h3>
                 <p>
@@ -142,10 +142,10 @@ export default function AbusBsection() {
                   We tailor every project to your requirements and guarantee best-in-class results.
                 </p>
               </div>
-              <img className="order-1 md:order-2 rounded-xl shadow" src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2d95?q=80&w=1470&auto=format&fit=crop" alt="TV wall" />
+              <img className="order-1 md:order-2 rounded-xl shadow" src="images/best-customized-services.png" alt="TV wall" />
             </div>
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <img className="rounded-xl shadow" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1470&auto=format&fit=crop" alt="Decor" />
+              <img className="rounded-xl shadow" src="images/highly-experienced-team.png" alt="Decor" />
               <div className="space-y-4 text-gray-700">
                 <h3 className="text-2xl font-semibold" style={{ color: gold }}>Highly Experienced Staff</h3>
                 <p>
@@ -196,24 +196,24 @@ export default function AbusBsection() {
           <div className="grid md:grid-cols-2 gap-10 items-start mt-10">
             <div className="space-y-5 text-gray-700 leading-relaxed">
               <p>
-                Since 2007, we’ve worked tirelessly to make Muse Design popular for its best-quality products and services. Our primary goal is 100% customer satisfaction.
+                Since 2007, we’ve worked tirelessly to make Casa Kraft Interiors popular for its best-quality products and services. Our primary goal is 100% customer satisfaction.
               </p>
               <p>
                 Our experienced interior designers transform entire homes into outstanding spaces that attract and inspire.
               </p>
             </div>
-            <img className="rounded-xl shadow" src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?q=80&w=1470&auto=format&fit=crop" alt="Delivering best quality services" />
+            <img className="rounded-xl shadow" src="images/our-mission.png"alt="Delivering best quality services" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-start mt-12">
-            <img className="rounded-xl shadow hidden md:block" src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1470&auto=format&fit=crop" alt="Sofa" />
+            <img className="rounded-xl shadow hidden md:block" src="images/best-quality-services.png" alt="Sofa" />
             <div className="space-y-4 text-gray-700">
               <h3 className="text-2xl font-semibold" style={{ color: gold }}>Delivering Best Quality Services</h3>
               <p>
                 Give us a call, share your requirements, and our professional team will come to your doorstep ASAP to deliver the best service.
               </p>
               <p>
-                Choose musedesign.ae for premium results at a competitive price point you won’t get elsewhere.
+                Choose casakraftinteriors.ae for premium results at a competitive price point you won’t get elsewhere.
               </p>
             </div>
           </div>

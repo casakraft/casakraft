@@ -10,7 +10,7 @@ const AboutSection = () => {
         {/* Left Side - Image */}
         <div className="w-full lg:w-1/2">
           <Image
-            src="/images/about-image.png"
+            src="/images/about-us.png"
             alt="Interior Design Dubai"
             width={800}
             height={600}
