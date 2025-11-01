@@ -10,7 +10,7 @@ const PHeroSection = () => {
       {/* Background Image */}
       <Image
         src="/images/adh (3).webp"
-        alt="Our Gallery – Musedesign"
+        alt="Our Gallery – Casa Kraft Interiors"
         fill
         priority
         className="object-cover"
@@ -20,7 +20,7 @@ const PHeroSection = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="bg-black/40 border-4 border-white p-8 text-center max-w-3xl w-[90%]">
           <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
-            Our Gallery – Musedesign
+            Our Gallery – Casa Kraft Interiors
           </h1>
           <Link
             href="/contact-us"

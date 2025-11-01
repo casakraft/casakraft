@@ -16,13 +16,13 @@ const blogPosts = [
     title: "6 Interior Design Styles Dubai 2025",
     date: "September 23, 2025",
     image: "/images/blog-2.png",
-    link: "/interior-design-styles-dubai-2025",
+    link: "/modern-apartment-interior-design",
   },
   {
     title: "Bohemian Interior Design in Dubai",
     date: "May 25, 2025",
     image: "/images/blog-3.png",
-    link: "/bohemian-interior-design-dubai",
+    link: "/modern-apartment-interior-design",
   },
 ];
 

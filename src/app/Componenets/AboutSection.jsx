@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const AboutSection = () => {
   return (
@@ -43,14 +44,19 @@ const AboutSection = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-            <button className="border border-black px-6 py-3 text-black font-medium hover:bg-[#193c38] hover:text-white transition">
-              See Our Projects
-            </button>
-            <button className="border border-black px-6 py-3 text-black font-medium hover:bg-[#193c38] hover:text-white transition">
-              Free Consultation
-            </button>
-          </div>
+       <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+  <Link href="/gallery">
+    <button className="border border-black px-6 py-3 text-black font-medium hover:bg-[#193c38] hover:text-white transition">
+      See Our Projects
+    </button>
+  </Link>
+
+  <Link href="/contact-us">
+    <button className="border border-black px-6 py-3 text-black font-medium hover:bg-[#193c38] hover:text-white transition">
+      Free Consultation
+    </button>
+  </Link>
+</div>
         </div>
       </div>
     </section>

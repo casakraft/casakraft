@@ -1,65 +1,65 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import Link from 'next/link';
-import Image from 'next/image';
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import Link from "next/link";
+import Image from "next/image";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
 
 dayjs.extend(relativeTime);
 
 const blogs = [
   {
     id: 1,
-    slug: '/modern-apartment-interior-design',
-    title: 'Modern Apartment Interior Design',
-    image: '/images/6w-residence (22).webp',
-    date: '2025-01-01',
-    tag: 'Blog',
+    slug: "modern-apartment-interior-design",
+    title: "Modern Apartment Interior Design",
+    image: "/images/blog-1.png",
+    date: "2025-01-01",
+    tag: "Blog",
   },
   {
     id: 2,
-    slug: 'villa-renovation-dubai',
-    title: 'Perfect Villa Renovation?',
-    image: '/images/6w-residence (23).webp',
-    date: '2024-12-01',
-    tag: 'Blog',
+    slug: "modern-apartment-interior-design",
+    title: "Perfect Villa Renovation?",
+    image: "/images/blog-2.png",
+    date: "2024-12-01",
+    tag: "Blog",
   },
   {
     id: 3,
-    slug: 'apartment-revamp-dubai',
-    title: 'Revamp Your Dubai Apartment Ideas for a Modern Look',
-    image: '/images/6w-residence (24).webp',
-    date: '2024-07-01',
-    tag: 'Blog',
+    slug: "modern-apartment-interior-design",
+    title: "Revamp Your Dubai Apartment Ideas for a Modern Look",
+    image: "/images/blog-3.png",
+    date: "2024-07-01",
+    tag: "Blog",
   },
   {
     id: 4,
-    slug: 'studio-apartment-maximization',
-    title: 'Maximize Small Spaces in Studio Apartments',
-    image: '/images/6w-residence (25).webp',
-    date: '2024-06-10',
-    tag: 'Blog',
+    slug: "modern-apartment-interior-design",
+    title: "Luxury Apartment Interior Design",
+    image: "/images/blog-1.png",
+    date: "2025-01-01",
+    tag: "Blog",
   },
   {
     id: 5,
-    slug: 'luxury-vs-minimal-interiors',
-    title: 'Luxury vs Minimal Interior Design Styles Compared',
-    image: '/images/6w-residence (26).webp',
-    date: '2024-05-05',
-    tag: 'Blog',
+    slug: "modern-apartment-interior-design",
+    title: "Top Villa Interior Trends in Dubai",
+    image: "/images/blog-2.png",
+    date: "2024-12-01",
+    tag: "Blog",
   },
   {
     id: 6,
-    slug: 'smart-home-integrations-villas',
-    title: 'Smart Home Integrations for Modern Villas',
-    image: '/images/6w-residence (27).webp',
-    date: '2024-03-15',
-    tag: 'Blog',
+    slug: "modern-apartment-interior-design",
+    title: "Modern Living Room Design Ideas",
+    image: "/images/blog-3.png",
+    date: "2024-07-01",
+    tag: "Blog",
   },
 ];
 
@@ -74,25 +74,19 @@ export default function BHeroSection() {
           disableOnInteraction: false,
         }}
         centeredSlides={true}
-        spaceBetween={0} // 🚫 No space between slides
+        spaceBetween={0}
         breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
-          640: {
-            slidesPerView: 1.2,
-          },
-          1024: {
-            slidesPerView: 2.5, // ✅ Wider side slides
-          },
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 1.2 },
+          1024: { slidesPerView: 2.5 },
         }}
         className="w-full"
       >
         {blogs.map((blog) => (
           <SwiperSlide key={blog.id} className="pb-0">
             <Link
-              href={`/blogs/${blog.slug}`}
-              className="block h-[60vh] relative overflow-hidden shadow-lg transition-transform duration-3000 hover:scale-[1.05] bg-black"
+              href={`/${blog.slug}`} // ✅ FIXED HERE — removed `/blogs/`
+              className="block h-[60vh] relative overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.05] bg-black"
               aria-label={`Read blog: ${blog.title}`}
             >
               <Image

@@ -1,15 +1,11 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import {
-  FaTiktok,
   FaInstagram,
   FaLinkedin,
   FaPinterest,
-  FaFacebook,
-  FaWhatsapp,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -34,7 +30,7 @@ const Footer = () => {
                 "Cookie Policy",
                 "Accessibility Statement",
               ].map((item, i) => (
-                <li key={i} className="hover:text-white cursor-pointer transition">
+                <li key={i} className="text-gray-300">
                   {item}
                 </li>
               ))}
@@ -53,10 +49,10 @@ const Footer = () => {
                 "Retail Interior & Fit-out",
                 "Villa Renovation",
                 "Beauty Salon",
-                "Office interior Design",
-                "Clinic interior Design",
+                "Office Interior Design",
+                "Clinic Interior Design",
               ].map((item, i) => (
-                <li key={i} className="hover:text-white cursor-pointer transition">
+                <li key={i} className="text-gray-300">
                   {item}
                 </li>
               ))}
@@ -68,7 +64,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-3 text-lg">Fit-Out</h3>
             <ul className="space-y-2 text-gray-300">
               {[
-                "Vill Fit-Out",
+                "Villa Fit-Out",
                 "Apartment Fit-Out",
                 "Office Fit-Out",
                 "Retail Fit-Out",
@@ -77,7 +73,7 @@ const Footer = () => {
                 "Outdoor Seating Design",
                 "Marble Fixing",
               ].map((item, i) => (
-                <li key={i} className="hover:text-white cursor-pointer transition">
+                <li key={i} className="text-gray-300">
                   {item}
                 </li>
               ))}
@@ -98,7 +94,7 @@ const Footer = () => {
                 "Living Room",
                 "Kitchen",
               ].map((item, i) => (
-                <li key={i} className="hover:text-white cursor-pointer transition">
+                <li key={i} className="text-gray-300">
                   {item}
                 </li>
               ))}
@@ -119,7 +115,7 @@ const Footer = () => {
                 "Plunge Pools",
                 "Pools Design Gallery",
               ].map((item, i) => (
-                <li key={i} className="hover:text-white cursor-pointer transition">
+                <li key={i} className="text-gray-300">
                   {item}
                 </li>
               ))}
@@ -139,7 +135,7 @@ const Footer = () => {
                 "Exterior Design",
                 "Hotel Interior Design",
               ].map((item, i) => (
-                <li key={i} className="hover:text-white cursor-pointer transition">
+                <li key={i} className="text-gray-300">
                   {item}
                 </li>
               ))}
@@ -154,24 +150,16 @@ const Footer = () => {
             alt="CasaKraft Logo"
             width={50}
             height={60}
-            
           />
           <p className="text-gray-400 text-sm">
-            © 2002–{new Date().getFullYear()} Antonovich Group – Interior Design & Fit-Out & Build | All rights reserved
+            © 2002–{new Date().getFullYear()} Casa Kraft Interiors – Interior Design & Fit-Out & Build | All rights reserved
           </p>
 
-          <div className="flex items-center gap-4 text-lg text-gray-300">
-          
-            <a href="#" className="hover:text-white">
-              <FaInstagram />
-            </a>
-            <a href="#" className="hover:text-white">
-              <FaLinkedin />
-            </a>
-            <a href="#" className="hover:text-white">
-              <FaPinterest />
-            </a>
-        
+          {/* Icons (non-clickable) */}
+          <div className="flex items-center gap-4 text-lg text-gray-400">
+            <FaInstagram />
+            <FaLinkedin />
+            <FaPinterest />
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FaCheckCircle, FaEnvelope } from "react-icons/fa";
 
 const GetInTouch = () => {
@@ -19,23 +20,34 @@ const GetInTouch = () => {
 
       {/* 🔹 Buttons Container */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-        {/* Button 1 */}
-        <button className="flex items-center justify-center gap-2 bg-[#67bb74] hover:bg-[#57a464] text-white font-semibold py-3 px-8 rounded-md w-full sm:w-auto transition duration-300">
+        {/* Button 1 - Projects Page */}
+        <Link
+          href="/gallery"
+          className="flex items-center justify-center gap-2 bg-[#67bb74] hover:bg-[#57a464] text-white font-semibold py-3 px-8 rounded-md w-full sm:w-auto transition duration-300"
+        >
           <FaCheckCircle className="text-white text-lg" />
           See Our Projects
-        </button>
+        </Link>
 
-        {/* Button 2 */}
-        <button className="flex items-center justify-center gap-2 bg-[#67bb74] hover:bg-[#57a464] text-white font-semibold py-3 px-8 rounded-md w-full sm:w-auto transition duration-300">
+        {/* Button 2 - WhatsApp */}
+        <a
+          href="https://wa.me/971586023677" // ✅ Replace with your actual WhatsApp number (e.g., 971501234567)
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 bg-[#67bb74] hover:bg-[#57a464] text-white font-semibold py-3 px-8 rounded-md w-full sm:w-auto transition duration-300"
+        >
           <FaCheckCircle className="text-white text-lg" />
           Request availability by WhatsApp
-        </button>
+        </a>
 
-        {/* Button 3 */}
-        <button className="flex items-center justify-center gap-2 bg-[#b6935b] hover:bg-[#a2814f] text-white font-semibold py-3 px-8 rounded-md w-full sm:w-auto transition duration-300">
+        {/* Button 3 - Email */}
+        <a
+          href="mailto:info@casakraftinteriors.ae" // ✅ Replace with your business email
+          className="flex items-center justify-center gap-2 bg-[#b6935b] hover:bg-[#a2814f] text-white font-semibold py-3 px-8 rounded-md w-full sm:w-auto transition duration-300"
+        >
           <FaEnvelope className="text-white text-lg" />
           Request availability by E-mail
-        </button>
+        </a>
       </div>
     </section>
   );

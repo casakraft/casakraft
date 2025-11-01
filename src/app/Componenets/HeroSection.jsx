@@ -9,7 +9,7 @@ const HeroSection = () => {
     <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden">
       {/* 🔹 Background Image */}
       <Image
-        src="/images/hero-section.png" // ✅ Replace with your desired image path
+        src="/images/hero-image.png" // ✅ Replace with your desired image path
         alt="Luxury Interior Design Dubai"
         fill
         className="object-cover"

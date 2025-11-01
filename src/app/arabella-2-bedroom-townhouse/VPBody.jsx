@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import React from "react";
 
 const galleryImages = [
   // --- 1st block of 6 (pattern 1) ---
@@ -27,59 +28,71 @@ const toBlocks = (arr, n = 6) => {
   return out;
 };
 
-export default function VPBody() {
-  const blocks = toBlocks(galleryImages, 6);
+// ✅ Fixed — pure JS SectionHeader component
+function SectionHeader({ as = "h2", title, text }) {
+  const Tag = as; // h1 or h2
+  const isH1 = Tag === "h1";
+  const size = isH1
+    ? "text-3xl sm:text-4xl lg:text-[40px]"
+    : "text-2xl sm:text-3xl lg:text-[32px]";
 
-  const LargeImg = ({ src, alt }) => (
-    <figure>
-      <Image
-        src={src}
-        alt={alt}
-        width={1600}
-        height={1000}
-        priority={false}
-        className="w-full h-auto object-cover"
-      />
-    </figure>
-  );
-
-  const SmallImg = ({ src, alt }) => (
-    <figure>
-      <Image
-        src={src}
-        alt={alt}
-        width={1200}
-        height={800}
-        className="w-full h-auto object-cover"
-      />
-    </figure>
-  );
-
-  // Section heading + paragraph (reused)
-  const HeadingAndText = () => (
+  return (
     <>
       <div className="border-t border-b border-[#d1a155]/60 pt-6 pb-6 sm:pt-8 sm:pb-8">
-        <h1 className="text-center text-[#d7b46a] font-semibold leading-tight text-3xl sm:text-4xl lg:text-[40px]">
-          Palace Interior Design in UAE
-        </h1>
+        <Tag
+          className={`text-center text-[#d7b46a] font-semibold leading-tight ${size}`}
+        >
+          {title}
+        </Tag>
       </div>
-      <div className="mt-6 sm:mt-8 text-white/90">
-        <p className="mx-auto max-w-[1000px] text-[13.5px] sm:text-[15px] leading-7 sm:leading-8">
-          At Spazio Interiors and Architecture, royal palace interior design is one of our
-          core specialties. As a renowned luxury interior design company in Dubai, we take
-          pride in crafting regal residences for elite clients across the UAE. Every project
-          we undertake is a reflection of timeless sophistication, tradition, and exceptional
-          artistry.
-        </p>
-      </div>
+      {text && (
+        <div className="mt-6 sm:mt-8 text-white/90">
+          <p className="mx-auto max-w-[1000px] text-[13.5px] sm:text-[15px] leading-7 sm:leading-8">
+            {text}
+          </p>
+        </div>
+      )}
     </>
   );
+}
+
+const LargeImg = ({ src, alt }) => (
+  <figure>
+    <Image
+      src={src}
+      alt={alt}
+      width={1600}
+      height={1000}
+      priority={false}
+      className="w-full h-auto object-cover"
+    />
+  </figure>
+);
+
+const SmallImg = ({ src, alt }) => (
+  <figure>
+    <Image
+      src={src}
+      alt={alt}
+      width={1200}
+      height={800}
+      className="w-full h-auto object-cover"
+    />
+  </figure>
+);
+
+export default function VPBody() {
+  const blocks = toBlocks(galleryImages, 6);
 
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== FIRST SECTION ===== */}
-        <HeadingAndText />
+        {/* ===== FIRST SECTION: H1 + paragraph ===== */}
+        <SectionHeader
+          as="h1"
+          title="Arabella 2 Bedroom Townhouse"
+          text="Experience a contemporary blend of warmth and functionality designed for family living. Soft neutrals, layered textures, and clean lines define the character of this space."
+        />
 
         {/* 1st gallery block */}
         <div className="mt-8 sm:mt-10 space-y-8 sm:space-y-10">
@@ -99,9 +112,14 @@ export default function VPBody() {
           )}
         </div>
 
-        {/* ===== SECOND SECTION (repeats) ===== */}
+        {/* ===== SECOND SECTION: H2 + paragraph ===== */}
         <div className="mt-16 sm:mt-20">
-          <HeadingAndText />
+          <SectionHeader
+            as="h2"
+            title="Living & Dining — Mood and Materials"
+            text="Natural wood, brushed metal, and warm lighting craft a calm, inviting atmosphere. Every detail is curated to balance durability with understated luxury."
+          />
+
           <div className="mt-8 sm:mt-10 space-y-8 sm:space-y-10">
             {blocks[1] && (
               <div className="space-y-6 sm:space-y-8">

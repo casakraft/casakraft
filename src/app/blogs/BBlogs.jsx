@@ -11,7 +11,7 @@ const blogs = [
     id: 1,
     slug: "modern-apartment-interior-design",
     title: "Modern Apartment Interior Design",
-    image: "/images/6w-residence (22).webp",
+    image: "/images/blog-1.png",
     date: "2025-01-01",
     tag: "Blog",
   },
@@ -19,7 +19,7 @@ const blogs = [
     id: 2,
     slug: "villa-renovation-dubai",
     title: "Perfect Villa Renovation?",
-    image: "/images/6w-residence (23).webp",
+    image: "/images/blog-2.png",
     date: "2024-12-01",
     tag: "Blog",
   },
@@ -27,34 +27,13 @@ const blogs = [
     id: 3,
     slug: "apartment-revamp-dubai",
     title: "Revamp Your Dubai Apartment Ideas for a Modern Look",
-    image: "/images/6w-residence (24).webp",
+    image: "/images/blog-3.png",
     date: "2024-07-01",
     tag: "Blog",
   },
-  {
-    id: 4,
-    slug: "studio-apartment-maximization",
-    title: "Maximize Small Spaces in Studio Apartments",
-    image: "/images/6w-residence (25).webp",
-    date: "2024-06-10",
-    tag: "Blog",
-  },
-  {
-    id: 5,
-    slug: "luxury-vs-minimal-interiors",
-    title: "Luxury vs Minimal Interior Design Styles Compared",
-    image: "/images/6w-residence (26).webp",
-    date: "2024-05-05",
-    tag: "Blog",
-  },
-  {
-    id: 6,
-    slug: "smart-home-integrations-villas",
-    title: "Smart Home Integrations for Modern Villas",
-    image: "/images/6w-residence (27).webp",
-    date: "2024-03-15",
-    tag: "Blog",
-  },
+
+
+
 ];
 
 // Helper to split title onto two lines (optional)
