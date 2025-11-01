@@ -1,10 +1,10 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Arabella 2 Bedroom Townhouse | We Do Interior",
+  title: "Accacia 3 Bedroom Apartment | Casa Kraft Interiors",
   description:
-    "Arabella 2 Bedroom Townhouse by WE DO, the Best Townhouse Interior Design Company in Dubai, showcases luxury, comfort, and bespoke modern style.",
-  metadataBase: new URL('https://wedointerior.ae/'),
+    "Arabella 2 Bedroom Townhouse by Casa Kraft Interiors, the Best Townhouse Interior Design Company in Dubai, showcases luxury, comfort, and bespoke modern style.",
+  metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/arabella-2-bedroom-townhouse',
   },

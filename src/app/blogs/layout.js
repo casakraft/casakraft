@@ -1,10 +1,10 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Our Blogs | We Do Interior",
+  title: "Our Blogs | Casa Kraft Interios",
   description:
     "Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.",
-  metadataBase: new URL('https://wedointerior.ae/'),
+  metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/blogs',
   },

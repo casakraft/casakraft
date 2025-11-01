@@ -1,10 +1,10 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Contact Us | We Do Interior Design & Fit Out",
+  title: "About Us | Casa Kraft Interiors",
   description:
-    "We Do Interior Design & Fit Out",
-  metadataBase: new URL('https://wedointerior.ae/'),
+    "Casa Kraft Interiors, Dubai, UAE",
+  metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/contact-us',
   },

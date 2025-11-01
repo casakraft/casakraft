@@ -1,7 +1,7 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Our Gallery | We Do Interior Design & Fit-Out",
+  title: "Our Gallery | Casa Kraft Interiors",
   description:
     "Explore luxury interior design and fit-out projects in Dubai by We Do Interior. Discover our residential, commercial, and hospitality portfolio.",
   keywords: [
@@ -11,7 +11,7 @@ export const metadata = {
     'We Do Interior Design Projects',
     'Dubai Interior Design Portfolio',
   ],
-  metadataBase: new URL('https://wedointerior.ae/'),
+  metadataBase: new URL('https://casakraftinteriors.ae/'),
   openGraph: {
     title: 'Interior Design Projects Dubai | We Do Interior Design & Fit-Out',
     description:
