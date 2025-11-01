@@ -6,23 +6,84 @@ import Link from "next/link";
 
 const items = [
   {
-    title: "Arabella 2 Bedroom Townhouse",
-    img: "/images/sample-1.jpg", // replace with your actual image
+    title: "Accacia 3 Bedroom Apartment",
+    img: "/images/gp-1.png", 
     alt: "Arabella 2 Bedroom Townhouse",
-    href: "/arabella-2-bedroom-townhouse",
+    href: "/acacia-3-bedroom-apartment",
   },
-  {
-    title: "Central Park penthouse",
-    img: "/images/sample-2.jpg",
-    alt: "Central Park penthouse",
-    href: "/projects/central-park",
+    {
+    title: "Bluewaters 3 Bedroom Design",
+    img: "/images/gp-2.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/bluewaters-3-bedroom-design",
   },
-  {
-    title: "District 1 MBR city. Contemporary villa",
-    img: "/images/sample-3.jpg",
-    alt: "District 1 villa",
-    href: "/projects/district-1",
+    {
+    title: "Boulevard Point Penthouse",
+    img: "/images/gp-3.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/boulevard-point-penthouse",
   },
+    {
+    title: "Bulgari 2 Bedroom Apartment",
+    img: "/images/gp-4.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/bulgari-2-bedroom-apartment",
+  },
+    {
+    title: "City Walk 3 Bedroom Apartment",
+    img: "/images/gp-5.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/city-walk-3-bedroom-apartment",
+  },
+    {
+    title: "Villa Damac Hills 5 Bedroom",
+    img: "/images/gp-6.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/villa-damac-hills-5-bedroom",
+  },
+    {
+    title: "JBR 3 Bedroom Apartment",
+    img: "/images/gp-7.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/jbr-3-bedroom-apartment",
+  },
+    {
+    title: "Marina Gate Penthouse",
+    img: "/images/gp-8.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/marina-gate-penthouse",
+  },
+    {
+    title: "Marina Gate Penthouse 2",
+    img: "/images/gp-9.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/marina-gate-penthouse-2",
+  },
+    {
+    title: "Dubai Marina Penthouse",
+    img: "/images/gp-10.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/dubai-marina-penthouse",
+  },
+    {
+    title: "Meadows Contemporary Villa",
+    img: "/images/gp-11.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/meadows-contempo",
+  },
+    {
+    title: "Nikki Beach 2 Bedroom Apartment",
+    img: "/images/gp-12.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/nikki-beach-2-bedroom-apartment",
+  },
+    {
+    title: "Palm Jumeirah Apartment",
+    img: "/images/gp-13.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/palm-jumeirah-apartment",
+  },
+
 ];
 
 const PProjects = () => {
