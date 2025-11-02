@@ -5,16 +5,16 @@ import React from "react";
 
 const galleryImages = [
   // --- 1st block (1 large + 3 small) ---
-  { src: "/images/arth (7).png", alt: "Large 1" },
-  { src: "/images/arth (1).png", alt: "Small 1" },
-  { src: "/images/arth (2).png", alt: "Small 2" },
-  { src: "/images/arth (3).png", alt: "Small 3" },
+  { src: "/images/bulgari-3.png", alt: "Large 1" },
+  { src: "/images/bulgari-2.png", alt: "Small 1" },
+  { src: "/images/bulgari-3.png", alt: "Small 2" },
+  { src: "/images/bulgari-4.png", alt: "Small 3" },
 
   // --- 2nd block (1 large + 3 small) ---
-  { src: "/images/arth (4).png", alt: "Large 2" },
-  { src: "/images/arth (5).png", alt: "Small 4" },
-  { src: "/images/arth (6).png", alt: "Small 5" },
-  { src: "/images/arth (8).png", alt: "Small 6" },
+  { src: "/images/bulgari-5.png", alt: "Large 2" },
+  { src: "/images/bulgari-6.png", alt: "Small 4" },
+  { src: "/images/bulgari-7.png", alt: "Small 5" },
+  { src: "/images/bulgari-8.png", alt: "Small 6" },
 ];
 
 // Group images into sets of 4 (1 large + 3 small)
@@ -95,8 +95,8 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Arabella 2 Bedroom Townhouse"
-          text="Experience a contemporary blend of warmth and functionality designed for family living. Soft neutrals, layered textures, and clean lines define the character of this space."
+          title="Bulgari 2 Bedroom Apartment"
+          text=""
         />
 
         {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}

@@ -86,8 +86,8 @@ export default function VPBody() {
         {/* ===== FIRST SECTION ===== */}
         <SectionHeader
           as="h1"
-          title="Arabella 2 Bedroom Townhouse"
-          text="Experience a contemporary blend of warmth and functionality designed for family living. Soft neutrals, layered textures, and clean lines define the character of this space."
+          title="Accacia 3 Bedroom Apartment"
+          text=""
         />
 
         {/* Both gallery blocks */}

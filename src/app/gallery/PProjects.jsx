@@ -69,7 +69,7 @@ const items = [
     title: "Meadows Contemporary Villa",
     img: "/images/gp-11.png", 
     alt: "Arabella 2 Bedroom Townhouse",
-    href: "/meadows-contempo",
+    href: "/meadows-contemporary-villa",
   },
     {
     title: "Nikki Beach 2 Bedroom Apartment",
