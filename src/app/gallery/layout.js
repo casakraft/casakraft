@@ -3,21 +3,21 @@ import '../globals.css';
 export const metadata = {
   title: "Our Gallery | Casa Kraft Interiors",
   description:
-    "Explore luxury interior design and fit-out projects in Dubai by We Do Interior. Discover our residential, commercial, and hospitality portfolio.",
+    "Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interiors. Discover our residential, commercial, and hospitality portfolio.",
   keywords: [
     'Interior Design Projects Dubai',
     'Fit-Out Portfolio Dubai',
     'Luxury Interior Projects UAE',
-    'We Do Interior Design Projects',
+    'Casa Kraft Interior Design Projects',
     'Dubai Interior Design Portfolio',
   ],
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   openGraph: {
-    title: 'Interior Design Projects Dubai | We Do Interior Design & Fit-Out',
+    title: 'Interior Design Projects Dubai | Casa Kraft Interiors',
     description:
-      'Explore luxury interior design and fit-out projects in Dubai by We Do Interior. Discover our residential, commercial, and hospitality portfolio.',
-    url: 'https://wedointerior.ae/projects',
-    siteName: 'we do interior design & fit out',
+      'Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interiors. Discover our residential, commercial, and hospitality portfolio.',
+    url: 'https://casakraftinteriors.ae/projects',
+    siteName: 'Casa Kraft interiors',
     images: [
       {
         url: '/og-image.jpg',
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Interior Design Projects Dubai | We Do Interior Design & Fit-Out',
+    title: 'Interior Design Projects Dubai | Casa Kraft Interiors',
     description:
-      'Explore luxury interior design and fit-out projects in Dubai by We Do Interior. Discover our residential, commercial, and hospitality portfolio.',
+      'Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interiors. Discover our residential, commercial, and hospitality portfolio.',
     images: ['/og-image.jpg'],
   },
   alternates: {
@@ -54,8 +54,8 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'we do interior design & fit out',
-              url: 'https://wedointerior.ae/',
+              name: 'Casa Kraft interiors',
+              url: 'https://kasacraftinteriors.ae/',
               logo: 'https://wedointerior.ae/logo.png',
               sameAs: [
                 'https://www.instagram.com/yourprofile',
@@ -87,9 +87,9 @@ export default function RootLayout({ children }) {
               '@context': 'https://schema.org',
               '@type': 'WebPage',
               name: 'Interior Design Projects in Dubai',
-              url: 'https://wedointerior.ae/projects',
+              url: 'https://casakraftinteriors.ae/projects',
               description:
-                'Explore luxury interior design and fit-out projects in Dubai by We Do Interior. Discover our residential, commercial, and hospitality portfolio.',
+                'Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interiors. Discover our residential, commercial, and hospitality portfolio.',
             }),
           }}
         />
@@ -104,7 +104,7 @@ export default function RootLayout({ children }) {
               name: 'Interior Design Projects',
               url: 'https://wedointerior.ae/projects',
               description:
-                'A curated collection of luxury interior design and fit-out projects completed by We Do Interior Design in Dubai.',
+                'A curated collection of luxury interior design and fit-out projects completed by Casa Kraft Interiors.',
               mainEntity: {
                 '@type': 'ItemList',
                 itemListElement: [

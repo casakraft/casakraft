@@ -107,7 +107,7 @@ const LocationMap = () => {
              href="tel:+971586023677"
               className="block text-2xl sm:text-3xl font-extrabold tracking-tight hover:underline underline-offset-4 transition-all"
             >
-              +971 058 602 3677
+              +971 58 602 3677
             </a>
             </div>
 
