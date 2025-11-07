@@ -16,14 +16,14 @@ export const metadata = {
     title: 'Interior Design Projects Dubai | Casa Kraft Interiors',
     description:
       'Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interiors. Discover our residential, commercial, and hospitality portfolio.',
-    url: 'https://casakraftinteriors.ae/projects',
-    siteName: 'Casa Kraft interiors',
+    url: 'https://casakraftinteriors.ae/gallery',
+    siteName: 'Casa Kraft Interiors',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Interior Design Project Banner',
+        alt: 'Luxury Interior Design Project Banner',
       },
     ],
     type: 'website',
@@ -52,28 +52,28 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Casa Kraft interiors',
-              url: 'https://kasacraftinteriors.ae/',
-              logo: 'https://wedointerior.ae/logo.png',
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Casa Kraft Interiors",
+              url: "https://casakraftinteriors.ae/",
+              logo: "https://casakraftinteriors.ae/logo.png",
               sameAs: [
-                'https://www.instagram.com/yourprofile',
-                'https://www.facebook.com/yourprofile',
+                "https://www.instagram.com/casakraftinteriors",
+                "https://www.facebook.com/casakraftinteriors",
               ],
               contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '+971-50-123-4567',
-                contactType: 'Customer Service',
-                areaServed: 'AE',
-                availableLanguage: ['English', 'Arabic'],
+                "@type": "ContactPoint",
+                telephone: "+971-50-123-4567",
+                contactType: "Customer Service",
+                areaServed: "AE",
+                availableLanguage: ["English", "Arabic"],
               },
               address: {
-                '@type': 'PostalAddress',
-                streetAddress: 'Dubai Marina',
-                addressLocality: 'Dubai',
-                postalCode: '00000',
-                addressCountry: 'AE',
+                "@type": "PostalAddress",
+                streetAddress: "Sheikh Zayed Road, Al Quoz 3",
+                addressLocality: "Dubai",
+                postalCode: "00000",
+                addressCountry: "AE",
               },
             }),
           }}
@@ -84,12 +84,18 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebPage',
-              name: 'Interior Design Projects in Dubai',
-              url: 'https://casakraftinteriors.ae/projects',
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Interior Design Projects in Dubai",
+              url: "https://casakraftinteriors.ae/gallery",
               description:
-                'Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interiors. Discover our residential, commercial, and hospitality portfolio.',
+                "Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interiors. Discover our residential, commercial, and hospitality portfolio.",
+              inLanguage: "en",
+              isPartOf: {
+                "@type": "WebSite",
+                name: "Casa Kraft Interiors",
+                url: "https://casakraftinteriors.ae",
+              },
             }),
           }}
         />
@@ -99,38 +105,37 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'CollectionPage',
-              name: 'Interior Design Projects',
-              url: 'https://wedointerior.ae/projects',
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              name: "Interior Design Projects Gallery",
+              url: "https://casakraftinteriors.ae/gallery",
               description:
-                'A curated collection of luxury interior design and fit-out projects completed by Casa Kraft Interiors.',
+                "A curated collection of luxury interior design and fit-out projects completed by Casa Kraft Interiors across Dubai and the UAE.",
               mainEntity: {
-                '@type': 'ItemList',
+                "@type": "ItemList",
                 itemListElement: [
                   {
-                    '@type': 'ListItem',
+                    "@type": "ListItem",
                     position: 1,
-                    name: 'Residential Interior Projects',
-                    url: 'https://wedointerior.ae/projects/residential',
+                    name: "Residential Interior Projects",
+                    url: "https://casakraftinteriors.ae/gallery/residential",
                   },
                   {
-                    '@type': 'ListItem',
+                    "@type": "ListItem",
                     position: 2,
-                    name: 'Commercial Interior Projects',
-                    url: 'https://wedointerior.ae/projects/commercial',
+                    name: "Commercial Interior Projects",
+                    url: "https://casakraftinteriors.ae/gallery/commercial",
                   },
                   {
-                    '@type': 'ListItem',
+                    "@type": "ListItem",
                     position: 3,
-                    name: 'Hospitality Interior Projects',
-                    url: 'https://wedointerior.ae/projects/hospitality',
+                    name: "Hospitality Interior Projects",
+                    url: "https://casakraftinteriors.ae/gallery/hospitality",
                   },
                 ],
               },
             }),
           }}
-          
         />
       </head>
       <body>{children}</body>
