@@ -21,7 +21,7 @@ const HeroSection = () => {
 
       {/* 🔹 Centered Text Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-20">
-        <h1 className="text-lg sm:text-xl md:text-4xl lg:text-5xl font-penrise -tracking-normal">
+        <h1 className="text-lg sm:text-xl md:text-4xl lg:text-5xl font-conthrax -tracking-normal">
           DUBAI'S PREMIUM RENOVATION COMPANY
         </h1>
         <p className="text-[10px] sm:text-lg md:text-2xl md:mt-2 font-play tracking-wider">

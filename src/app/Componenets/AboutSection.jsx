@@ -22,7 +22,7 @@ const AboutSection = () => {
         {/* Right Side - Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h2 className="text-[#c68b4e] text-2xl sm:text-3xl font-extrabold mb-4 leading-tight">
-            We Design Your Building Within Your Budget
+            We Design Your Space Within Your Budget
           </h2>
 
           <p className="text-gray-700 text-sm sm:text-base mb-4">

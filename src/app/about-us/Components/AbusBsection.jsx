@@ -50,13 +50,13 @@ export default function AbusBsection() {
             <h2 className="text-3xl md:text-4xl sm:mt-10 font-semibold mb-6" style={{ color: gold }}>About Us</h2>
             <div className="space-y-5 text-gray-700 leading-relaxed">
               <p>
-                Casa Kraft Interiors is a top-notch company that was established in 2*** by <strong>--</strong> and <strong>--</strong>. The company manufactures and delivers the best interior design products and services at an affordable price throughout the UAE.
+                Casa Kraft Interiors is a premier interior design and fit-out company established in the UAE. We specialize in manufacturing and delivering high-quality interior design products and services at competitive prices across the region.
               </p>
               <p>
-                We have a highly qualified staff available 24/7. Our professionals can transform your normal-looking interior into a modern, aesthetic, and luxurious one with tasteful modifications.
+                With a team of highly qualified professionals available 24/7, we are dedicated to transforming ordinary spaces into modern, aesthetic, and luxurious environments tailored to our clients’ unique preferences.
               </p>
               <p>
-                We provide commercial, institutional, residential, and other architectural interior solutions.
+                Our expertise covers commercial, residential, institutional, and other architectural interior solutions, ensuring excellence, innovation, and attention to detail in every project we undertake.
               </p>
             </div>
           </div>
