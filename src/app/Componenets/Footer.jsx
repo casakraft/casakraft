@@ -15,6 +15,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-10">
         {/* Main Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 mb-10">
+          
           {/* Menu */}
           <div>
             <h3 className="font-semibold mb-3 text-lg">Menu</h3>
@@ -30,9 +31,7 @@ const Footer = () => {
                 "Cookie Policy",
                 "Accessibility Statement",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">
-                  {item}
-                </li>
+                <li key={i} className="text-gray-300">{item}</li>
               ))}
             </ul>
           </div>
@@ -52,9 +51,7 @@ const Footer = () => {
                 "Office Interior Design",
                 "Clinic Interior Design",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">
-                  {item}
-                </li>
+                <li key={i} className="text-gray-300">{item}</li>
               ))}
             </ul>
           </div>
@@ -73,9 +70,7 @@ const Footer = () => {
                 "Outdoor Seating Design",
                 "Marble Fixing",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">
-                  {item}
-                </li>
+                <li key={i} className="text-gray-300">{item}</li>
               ))}
             </ul>
           </div>
@@ -94,9 +89,7 @@ const Footer = () => {
                 "Living Room",
                 "Kitchen",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">
-                  {item}
-                </li>
+                <li key={i} className="text-gray-300">{item}</li>
               ))}
             </ul>
           </div>
@@ -115,9 +108,7 @@ const Footer = () => {
                 "Plunge Pools",
                 "Pools Design Gallery",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">
-                  {item}
-                </li>
+                <li key={i} className="text-gray-300">{item}</li>
               ))}
             </ul>
           </div>
@@ -135,32 +126,39 @@ const Footer = () => {
                 "Exterior Design",
                 "Hotel Interior Design",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">
-                  {item}
-                </li>
+                <li key={i} className="text-gray-300">{item}</li>
               ))}
             </ul>
           </div>
+
         </div>
 
         {/* Bottom Section */}
         <div className="border-t border-gray-600 pt-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
+
           <Image
             src="/images/logo.svg"
             alt="CasaKraft Logo"
             width={50}
             height={60}
           />
+
+          {/* ⭐ Added Address Here */}
+          <p className="text-gray-400 text-sm">
+            Al Quoz 3, Shop No. G-11, Dubai, UAE
+          </p>
+
           <p className="text-gray-400 text-sm">
             © 2002–{new Date().getFullYear()} Casa Kraft Interiors – Interior Design & Fit-Out & Build | All rights reserved
           </p>
 
-          {/* Icons (non-clickable) */}
+          {/* Icons */}
           <div className="flex items-center gap-4 text-lg text-gray-400">
             <FaInstagram />
             <FaLinkedin />
             <FaPinterest />
           </div>
+
         </div>
       </div>
     </footer>
