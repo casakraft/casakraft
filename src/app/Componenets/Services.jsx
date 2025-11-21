@@ -4,14 +4,14 @@ import React from "react";
 import Image from "next/image";
 
 const services = [
-  { title: "Villa Design Dubai", image: "/images/villa-design-dubai.png" },
-  { title: "Apartment Design", image: "/images/apartment-interior-design.png" },
-  { title: "Penthouse Interior", image: "/images/penthouse-interior-design.png" },
-  { title: "Kitchen Design", image: "/images/kitchen-interior-design.png" },
-  { title: "Beach Front Design", image: "/images/beach-front-design.png" },
-  { title: "Landscape Design", image: "/images/landscape-design.png" },
-  { title: "Villa Renovation", image: "/images/villa-renovation.png" },
-  { title: "Apartment Renovation", image: "/images/apartment-renovation.png" },
+  { title: "Villa Interior Design ", image: "/images/villa-design-dubai.png" },
+  { title: "Apartment Interior Design ", image: "/images/apartment-interior-design.png" },
+  { title: "Penthouse Interior Design ", image: "/images/penthouse-interior-design.png" },
+  { title: "Kitchen Interior Fitout", image: "/images/kitchen-interior-design.png" },
+  { title: "Beach Front Interior Design", image: "/images/beach-front-design.png" },
+  { title: "Landscape Design Dubai", image: "/images/landscape-design.png" },
+  { title: "Villa Renovation Dubai", image: "/images/villa-renovation.png" },
+  { title: "Apartment Renovation Dubai", image: "/images/apartment-renovation.png" },
 ];
 
 const Services = () => {
@@ -19,7 +19,7 @@ const Services = () => {
     <section id="services" className="bg-[#f6f6f6] py-16">
       {/* Title */}
       <h2 className="text-center text-[#c79d63] font-semibold text-2xl sm:text-3xl md:text-4xl mb-10">
-        Our Most Demanding Services In Dubai
+        Our Most Demanding Interior Design Services In Dubai
       </h2>
 
       {/* Grid */}

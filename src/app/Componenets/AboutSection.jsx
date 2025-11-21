@@ -11,37 +11,38 @@ const AboutSection = () => {
         {/* Left Side - Image */}
         <div className="w-full lg:w-1/2">
           <Image
-            src="/images/about-us.png"
+            src="/images/Top_Interior_Design_Firm_For_Apartments_And_Villas_In_Dubai.png"
             alt="Interior Design Dubai"
             width={800}
             height={600}
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-full h-100 rounded-lg shadow-md"
           />
         </div>
+
+      
 
         {/* Right Side - Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h2 className="text-[#c68b4e] text-2xl sm:text-3xl font-extrabold mb-4 leading-tight">
-            We Design Your Space Within Your Budget
+            Top Interior Design Firm for Apartments & Villas in Dubai
           </h2>
 
           <p className="text-gray-700 text-sm sm:text-base mb-4">
-            At CasaKraft, we offer interior designing services to give your place a unique look.
-            Whether a residential setting or a commercial place, we choose color schemes
-            and furnishing accordingly to create your desired environment.
+            Casa Kraft Interiors and Decoration is a <b className="text-[#c68b4e]"><a href="https://www.casakraftinteriors.ae/#services">leading residential interior design company in Dubai</a></b> which specializes 
+            in luxury apartment and villa design, home interior design, landscape design Dubai, and turnkey interior fit-out 
+            services in Dubai. 
           </p>
+
+
 
           <p className="text-gray-700 text-sm sm:text-base mb-4">
-            As a team of designers, we are experienced in creating a modern, traditional,
-            minimal, and industrial look for your place. We never exceed your budget and
-            always craft a draft before starting our services.
+            As one of the most trusted interior companies in Dubai, Casa Kraft interiors 
+            create elegant, functional, and personalized spaces that reflect the modern
+             living style of Dubai. <br /> <br />
+             Our team of expert designers and fit-out specialists deliver high-quality results from concept to completion, making us a best choice for homeowners seeking interior design Dubai, luxury residential interiors, and professional interior fit-out Dubai services.
+
           </p>
 
-          <p className="text-gray-700 text-sm sm:text-base mb-8">
-            We are the leading interior masters in Dubai serving customers with all their
-            desired needs. Hiring our professional designer for embellishing your interior
-            will surely be the best decision.
-          </p>
 
           {/* Buttons */}
        <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">

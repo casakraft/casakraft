@@ -2,31 +2,35 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 const projects = [
   {
-    src: "/images/bedroom-design.png",
-    title: "Luxury Bedroom Design",
+    src: "/images/acacia-4.png",
+    title: "Accacia 3 Bedroom Apartment",
+    link: "/acacia-3-bedroom-apartment",
+  },
+  
+  {
+    src: "/images/bluewaters-2.png",
+    title: "Bluewaters 3 Bedroom Design",
   },
   {
-    src: "/images/dining-area.png",
-    title: "Modern Dining Area",
+    src: "/images/boulevard-5.png",
+    title: "Boulevard Point Penthouse",
   },
   {
-    src: "/images/elegant-living-room.png",
-    title: "Elegant Living Room",
+    src: "/images/bulgari-9.png",
+    title: "Bulgari 2 Bedroom Apartment",
   },
   {
-    src: "/images/tv-lounge.png",
-    title: "Contemporary Lounge",
+    src: "/images/citywalk-7.png",
+    title: "City Walk 3 Bedroom Apartment",
   },
   {
-    src: "/images/classic-dining.png",
-    title: "Classic Dining Space",
-  },
-  {
-    src: "/images/modern-interior-concept.png",
-    title: "Modern Interior Concept",
+    src: "/images/damac-9.png",
+    title: "Villa Damac Hills 5 Bedroom",
   },
 ];
 
@@ -37,6 +41,7 @@ const Portfolio = () => {
       <h2 className="text-[#c9964a] text-center py-10 text-2xl sm:text-3xl md:text-5xl font-conthrax mb-10">
         CASAKRAFT DESIGN PORTFOLIO
       </h2>
+
 
       {/* === Portfolio Grid === */}
       <div className="w-[90%] sm:w-[85%] md:w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -60,9 +65,17 @@ const Portfolio = () => {
             </div>
           </div>
         ))}
+         <div className="mt-14 flex justify-center ">
+          <Link href="/gallery">
+            <button className="flex items-center  gap-2 bg-[#b6935b] hover:bg-[#a2814f]  text-white font-conthrax py-3 px-8 rounded-md w-full sm:w-auto transition duration-300">
+            BROWSE OUR PORTFOLIO    
+            </button>
+          </Link>
+        </div> 
       </div>
     </section>
   );
 };
+
 
 export default Portfolio;

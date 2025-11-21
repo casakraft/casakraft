@@ -3,6 +3,7 @@ import WhatsAppButton from "./Componenets/WhatsAppButton";
 import CallButton from "./Componenets/CallButton";
 import HeroSection from "./Componenets/HeroSection";
 import AboutSection from "./Componenets/AboutSection";
+import OurServices from "./Componenets/WhatWeDo";
 import Services from "./Componenets/Services";
 import GetInTouch from "./Componenets/GetinTouch";
 import Portfolio from "./Componenets/Portfolio";
@@ -22,6 +23,7 @@ export default function Home() {
         <CallButton />
         <HeroSection />
         <AboutSection />
+        <OurServices />
         <Services />
         <GetInTouch />
         <Portfolio />

@@ -22,12 +22,11 @@ const HeroSection = () => {
       {/* 🔹 Centered Text Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-20">
         <h1 className="text-lg sm:text-xl md:text-4xl lg:text-5xl font-conthrax -tracking-normal">
-          DUBAI'S PREMIUM RENOVATION COMPANY
+           RESIDENTIAL INTERIOR DESIGN COMPANY IN DUBAI
         </h1>
         <p className="text-[10px] sm:text-lg md:text-2xl md:mt-2 font-play tracking-wider">
-          Your all-in-one destination for expert planning, cutting-edge design
-          <br />
-          and superior renovation execution.
+         Specialized in residential interior design, landscape design, <br />Renovation and high-quality fit-out works across Dubai.
+
         </p>
       </div>
 
