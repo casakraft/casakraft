@@ -148,7 +148,7 @@ const Footer = () => {
             info@casakraftinteriors.ae
           </p>
           <p className="text-gray-400 text-sm">
-          Office G11, The Curve Building, Service Road, Sheikh Zayed Road, Dubai, UAE
+          The Curve Building, Showroom G11, Sheikh Zayed Service Road, Dubai, UAE
           </p>
 
           <p className="text-gray-400 text-sm">
