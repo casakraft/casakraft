@@ -11,10 +11,10 @@ const galleryImages = [
   { src: "/images/mha-4.png", alt: "Small 3" },
 
   // --- 2nd block (1 large + 3 small) ---
-  { src: "/images/mha-5.png", alt: "Large 2" },
+  { src: "/images/mha-8.png", alt: "Large 2" },
   { src: "/images/mha-6.png", alt: "Small 4" },
-  { src: "/images/mha-7.png", alt: "Small 5" },
-  { src: "/images/mha-8.png", alt: "Small 6" },
+  { src: "/images/mha-1.png", alt: "Small 5" },
+  { src: "/images/mha-5.png", alt: "Small 6" },
 ];
 
 // Group images into sets of 4 (1 large + 3 small)

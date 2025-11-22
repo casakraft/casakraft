@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Accacia 3 Bedroom Apartment | Casa Kraft Interiors",
+  title: "Al Wasl Salon Interior Design | Casa Kraft Interiors",
   description:
-    "Arabella 2 Bedroom Townhouse by Casa Kraft Interiors, the Best Townhouse Interior Design Company in Dubai, showcases luxury, comfort, and bespoke modern style.",
+    "Al Wasl Salon Interior Design by Casa Kraft Interiors, the Best Salon Interior Design Company in Dubai, showcases luxury interiors.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/arabella-2-bedroom-townhouse',
+    canonical: '/al-wasl-salon-interior-design',
   },
 };
 

@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Damac Hills 3 Bedroom Apartment"
+          title="Damac Hills 3 Bedroom Townhouse"
           text=""
         />
 

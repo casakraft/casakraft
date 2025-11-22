@@ -12,7 +12,7 @@ const galleryImages = [
 
   // --- 2nd block (1 large + 3 small) ---
   { src: "/images/aa-6.png", alt: "Large 2" },
-  { src: "/images/aa-7.png", alt: "Small 4" },
+  { src: "/images/aa-1.png", alt: "Small 4" },
   { src: "/images/aa-8.png", alt: "Small 5" },
   { src: "/images/aa-9.png", alt: "Small 6" },
 ];

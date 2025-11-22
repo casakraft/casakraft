@@ -5,16 +5,16 @@ import React from "react";
 
 const galleryImages = [
   // --- 1st block (1 large + 3 small) ---
-  { src: "/images/arth (7).png", alt: "Large 1" },
-  { src: "/images/arth (1).png", alt: "Small 1" },
-  { src: "/images/arth (2).png", alt: "Small 2" },
-  { src: "/images/arth (3).png", alt: "Small 3" },
+  { src: "/images/citywalk-1.png", alt: "Large 1" },
+  { src: "/images/citywalk-2.png", alt: "Small 1" },
+  { src: "/images/citywalk-3.png", alt: "Small 2" },
+  { src: "/images/citywalk-4.png", alt: "Small 3" },
 
   // --- 2nd block (1 large + 3 small) ---
-  { src: "/images/arth (4).png", alt: "Large 2" },
-  { src: "/images/arth (5).png", alt: "Small 4" },
-  { src: "/images/arth (6).png", alt: "Small 5" },
-  { src: "/images/arth (8).png", alt: "Small 6" },
+  { src: "/images/citywalk-6.png", alt: "Large 2" },
+  { src: "/images/citywalk-7.png", alt: "Small 4" },
+  { src: "/images/citywalk-8.png", alt: "Small 5" },
+  { src: "/images/citywalk-9.png", alt: "Small 6" },
 ];
 
 // Group images into sets of 4 (1 large + 3 small)
@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="City Walk 3 Bedroom Apartment"
+          title="City Walk 3 Bedroom Apartment Interior"
           text=""
         />
 

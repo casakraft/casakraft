@@ -86,7 +86,7 @@ export default function VPBody() {
         {/* ===== FIRST SECTION ===== */}
         <SectionHeader
           as="h1"
-          title="Accacia 3 Bedroom Apartment"
+          title="Acacia 3 Bedroom Apartment Interior"
           text=""
         />
 

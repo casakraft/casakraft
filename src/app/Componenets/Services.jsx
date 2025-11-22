@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 const services = [
-  { title: "Villa Interior Design ", image: "/images/villa-design-dubai.png" },
+  { title: "Villa Interior Design ", image: "/images/villa-design-dubai.png"},
   { title: "Apartment Interior Design ", image: "/images/apartment-interior-design.png" },
   { title: "Penthouse Interior Design ", image: "/images/penthouse-interior-design.png" },
   { title: "Kitchen Interior Fitout", image: "/images/kitchen-interior-design.png" },

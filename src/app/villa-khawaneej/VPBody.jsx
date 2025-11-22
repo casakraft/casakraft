@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Villa Khawaneej"
+          title="Villa Khawaneej Interior"
           text=""
         />
 

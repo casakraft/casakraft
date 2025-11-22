@@ -6,15 +6,15 @@ import React from "react";
 const galleryImages = [
   // --- 1st block (1 large + 3 small) ---
   { src: "/images/pja-1.png", alt: "Large 1" },
-  { src: "/images/pja-3.png", alt: "Small 1" },
-  { src: "/images/pja-4.png", alt: "Small 2" },
+  { src: "/images/pja-2.png", alt: "Small 1" },
+  { src: "/images/pja-3.png", alt: "Small 2" },
   { src: "/images/pja-4.png", alt: "Small 3" },
 
   // --- 2nd block (1 large + 3 small) ---
-  { src: "/images/pja-6.png", alt: "Large 2" },
-  { src: "/images/pja-7.png", alt: "Small 4" },
-  { src: "/images/pja-8.png", alt: "Small 5" },
-  { src: "/images/pja-9.png", alt: "Small 6" },
+  { src: "/images/pja-7.png", alt: "Large 2" },
+  { src: "/images/pja-6.png", alt: "Small 4" },
+  { src: "/images/pja-7.png", alt: "Small 5" },
+  { src: "/images/pja-8.png", alt: "Small 6" },
 ];
 
 // Group images into sets of 4 (1 large + 3 small)
@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Palm Jumeirah Apartment"
+          title="Palm Jumeirah Apartment Interior"
           text=""
         />
 

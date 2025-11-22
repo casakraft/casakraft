@@ -6,15 +6,15 @@ import React from "react";
 const galleryImages = [
   // --- 1st block (1 large + 3 small) ---
   { src: "/images/at-2.png", alt: "Large 1" },
-  { src: "/images/at-3.png", alt: "Small 1" },
+  { src: "/images/at-6.png", alt: "Small 1" },
   { src: "/images/at-4.png", alt: "Small 2" },
   { src: "/images/at-5.png", alt: "Small 3" },
 
   // --- 2nd block (1 large + 3 small) ---
-  { src: "/images/at-6.png", alt: "Large 2" },
+  { src: "/images/at-3.png", alt: "Large 2" },
   { src: "/images/at-7.png", alt: "Small 4" },
   { src: "/images/at-8.png", alt: "Small 5" },
-  { src: "/images/at-9.png", alt: "Small 6" },
+  { src: "/images/at-1.png", alt: "Small 6" },
 ];
 
 // Group images into sets of 4 (1 large + 3 small)
@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Arabella 2 Townhouse"
+          title="Arabella 2 Townhouse Interior"
           text=""
         />
 

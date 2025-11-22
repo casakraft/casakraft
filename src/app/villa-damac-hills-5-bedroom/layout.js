@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Accacia 3 Bedroom Apartment | Casa Kraft Interiors",
+  title: "Villa Damac Hills 5 Bedroom Interior | Casa Kraft Interiors",
   description:
-    "Arabella 2 Bedroom Townhouse by Casa Kraft Interiors, the Best Townhouse Interior Design Company in Dubai, showcases luxury, comfort, and bespoke modern style.",
+    "Villa Damac Hills 5 Bedroom by Casa Kraft Interiors, the Best Villa Interior Design Company in Dubai, showcases luxury Interiors.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/arabella-2-bedroom-townhouse',
+    canonical: '/villa-damac-hills-5-bedroom',
   },
 };
 

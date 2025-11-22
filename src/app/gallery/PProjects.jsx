@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const items = [
   {
-    title: "Accacia 3 Bedroom Apartment",
+    title: "Acacia 3 Bedroom Apartment",
     img: "/images/gp-1.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/acacia-3-bedroom-apartment",
@@ -61,25 +61,25 @@ const items = [
   },
     {
     title: "Dubai Marina Penthouse",
-    img: "/images/gp-10.png", 
+    img: "/images/dmp-5.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/dubai-marina-penthouse",
   },
     {
     title: "Meadows Contemporary Villa",
-    img: "/images/gp-11.png", 
+    img: "/images/mcv-7.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/meadows-contemporary-villa",
   },
     {
     title: "Nikki Beach 2 Bedroom Apartment",
-    img: "/images/gp-12.png", 
+    img: "/images/nba-3.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/nikki-beach-2-bedroom-apartment",
   },
     {
     title: "Palm Jumeirah Apartment",
-    img: "/images/gp-13.png", 
+    img: "/images/pja-6.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/palm-jumeirah-apartment",
   },
@@ -91,13 +91,13 @@ const items = [
   },
     {
     title: "Dubai Creek 2 Bedroom Apartment",
-    img: "/images/dca-9.png", 
+    img: "/images/dca-4.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/dubai-creek-2-bedroom-apartment",
   },
     {
     title: "Taj Residence 3 Bedroom Dubai",
-    img: "/images/trd-1.png", 
+    img: "/images/trd-9.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/taj-residence-3-bedroom-dubai",
   },
@@ -109,7 +109,7 @@ const items = [
   },
     {
     title: "Jumeirah Salon Interior Design",
-    img: "/images/jsd-9.png", 
+    img: "/images/jsd-4.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/jumeirah-salon-interior-design",
   },
@@ -121,7 +121,7 @@ const items = [
   },
     {
     title: "Damac Hills 3 Bedroom Townhouse",
-    img: "/images/dht-6.png", 
+    img: "/images/dht-3.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/damac-hills-3-bedroom-townhouse",
   },
@@ -133,19 +133,19 @@ const items = [
   },
     {
     title: "Arabella 2 Townhouse",
-    img: "/images/at-6.png", 
+    img: "/images/at-8.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/arabella-2-townhouse",
   },
       {
     title: "Mirdif Hills Apartment",
-    img: "/images/mha-8.png", 
+    img: "/images/mha-5.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/mirdif-hills-apartment",
   },
     {
     title: "Dubai Hills Townhouse",
-    img: "/images/tdh-4.png", 
+    img: "/images/tdh-2.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/dubai-hills-townhouse",
   },
@@ -163,7 +163,7 @@ const items = [
   },
     {
     title: "Bvlgari One Bedroom Apartment",
-    img: "/images/ba-4.png", 
+    img: "/images/ba-2.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/bvlgari-one-bedroom-apartment",
   },
@@ -175,7 +175,7 @@ const items = [
   },
     {
     title: "Villa Khawaneej",
-    img: "/images/vk-10.png", 
+    img: "/images/vk-1.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/villa-khawaneej",
   },
@@ -187,9 +187,50 @@ const items = [
   },
     {
     title: "Barber Shop Dubai",
-    img: "/images/bsd-8.png", 
+    img: "/images/bsd-3.png", 
     alt: "Arabella 2 Bedroom Townhouse",
     href: "/barber-shop-dubai",
+  },
+  {
+    title: "Emirates Hills Villa",
+    img: "/images/ehv-9.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/emirates-hills-villa",
+  },
+
+  {
+    title: "MBR City Villa",
+    img: "/images/mbr-4.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/mbr-city-villa",
+  },
+
+  {
+    title: "Royal Atlantis Apartment",
+    img: "/images/atr-3.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/royal-atlantis-apartment",
+  },
+
+  {
+    title: "Tilal Al Ghaf Villa",
+    img: "/images/tag-7.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/tilal-al-ghaf-villa",
+  },
+
+  {
+    title: "Dubai Silicon Oasis Apartment",
+    img: "/images/dso-6.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/dubai-silicon-oasis-apartment",
+  },
+
+  {
+    title: "Palm Jumeirah Villa",
+    img: "/images/pjv-10.png", 
+    alt: "Arabella 2 Bedroom Townhouse",
+    href: "/palm-jumeirah-villa",
   },
 
 ];

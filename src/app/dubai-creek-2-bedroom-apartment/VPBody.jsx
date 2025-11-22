@@ -5,16 +5,17 @@ import React from "react";
 
 const galleryImages = [
   // --- 1st block (1 large + 3 small) ---
-  { src: "/images/dca-1.png", alt: "Large 1" },
+  { src: "/images/dca-6.png", alt: "Large 1" },
   { src: "/images/dca-2.png", alt: "Small 1" },
   { src: "/images/dca-3.png", alt: "Small 2" },
-  { src: "/images/dca-4.png", alt: "Small 3" },
+  { src: "/images/dca-5.png", alt: "Small 3" },
 
   // --- 2nd block (1 large + 3 small) ---
-  { src: "/images/dca-5.png", alt: "Large 2" },
-  { src: "/images/dca-6.png", alt: "Small 4" },
+  { src: "/images/dca-9.png", alt: "Large 2" },
+  { src: "/images/dca-1.png", alt: "Small 4" },
   { src: "/images/dca-7.png", alt: "Small 5" },
   { src: "/images/dca-8.png", alt: "Small 6" },
+  
 ];
 
 // Group images into sets of 4 (1 large + 3 small)
@@ -95,7 +96,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Marina Gate Penthouse 2"
+          title="Dubai Creek 2 Bedroom Apartment"
           text=""
         />
 

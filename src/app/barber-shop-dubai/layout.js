@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Accacia 3 Bedroom Apartment | Casa Kraft Interiors",
+  title: "Barber Shop Dubai | Casa Kraft Interiors",
   description:
-    "Arabella 2 Bedroom Townhouse by Casa Kraft Interiors, the Best Townhouse Interior Design Company in Dubai, showcases luxury, comfort, and bespoke modern style.",
+    "Barber Shop Dubai by Casa Kraft Interiors, the Best baber shop Interior Design Company in Dubai, showcases luxury interiors.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/arabella-2-bedroom-townhouse',
+    canonical: '/barber-shop-dubai',
   },
 };
 

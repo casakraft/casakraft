@@ -9,7 +9,7 @@ const VHeroSection = () => {
     <section className="relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[600px] overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/images/mha-1.png"
+        src="/images/mha-7.png"
         alt=""
         fill
         priority

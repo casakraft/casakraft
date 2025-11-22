@@ -12,7 +12,7 @@ const galleryImages = [
 
   // --- 2nd block (1 large + 3 small) ---
   { src: "/images/boulevard-6.png", alt: "Large 2" },
-  { src: "/images/boulevard-7.png", alt: "Small 4" },
+  { src: "/images/boulevard-1.png", alt: "Small 4" },
   { src: "/images/boulevard-8.png", alt: "Small 5" },
   { src: "/images/boulevard-9.png", alt: "Small 6" },
 ];
@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Boulevard Point Penthouse"
+          title="Boulevard Point Penthouse Interior"
           text=""
         />
 

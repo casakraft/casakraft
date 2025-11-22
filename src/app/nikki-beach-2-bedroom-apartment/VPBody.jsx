@@ -14,7 +14,7 @@ const galleryImages = [
   { src: "/images/nba-5.png", alt: "Large 2" },
   { src: "/images/nba-6.png", alt: "Small 4" },
   { src: "/images/nba-7.png", alt: "Small 5" },
-  { src: "/images/nba-7.png", alt: "Small 6" },
+  { src: "/images/nba-1.png", alt: "Small 6" },
 ];
 
 // Group images into sets of 4 (1 large + 3 small)

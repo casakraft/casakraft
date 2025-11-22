@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Dubai Marina Penthouse"
+          title="Dubai Marina Penthouse Interior"
           text=""
         />
 

@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Townhiuse Arabian Ranches 2"
+          title="Townhouse Arabian Ranches 2"
           text=""
         />
 

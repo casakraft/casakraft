@@ -5,7 +5,7 @@ import React from "react";
 
 const galleryImages = [
   // --- 1st block (1 large + 3 small) ---
-  { src: "/images/mcv-1.png", alt: "Large 1" },
+  { src: "/images/mcv-7.png", alt: "Large 1" },
   { src: "/images/mcv-2.png", alt: "Small 1" },
   { src: "/images/mcv-3.png", alt: "Small 2" },
   { src: "/images/mcv-4.png", alt: "Small 3" },
@@ -13,7 +13,7 @@ const galleryImages = [
   // --- 2nd block (1 large + 3 small) ---
   { src: "/images/mcv-5.png", alt: "Large 2" },
   { src: "/images/mcv-6.png", alt: "Small 4" },
-  { src: "/images/mcv-7.png", alt: "Small 5" },
+  { src: "/images/mcv-1.png", alt: "Small 5" },
   { src: "/images/mcv-8.png", alt: "Small 6" },
 ];
 
@@ -95,7 +95,7 @@ export default function VPBody() {
         {/* ===== MAIN SECTION HEADER ===== */}
         <SectionHeader
           as="h1"
-          title="Meadows Contemporary Villa"
+          title="Meadows Contemporary Villa Interior"
           text=""
         />
 

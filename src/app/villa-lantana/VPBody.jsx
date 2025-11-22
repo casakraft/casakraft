@@ -14,7 +14,7 @@ const galleryImages = [
   { src: "/images/vl-6.png", alt: "Large 2" },
   { src: "/images/vl-7.png", alt: "Small 4" },
   { src: "/images/vl-8.png", alt: "Small 5" },
-  { src: "/images/vl-9.png", alt: "Small 6" },
+  { src: "/images/vl-10.png", alt: "Small 6" },
 ];
 
 // Group images into sets of 4 (1 large + 3 small)

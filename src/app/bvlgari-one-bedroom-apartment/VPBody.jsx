@@ -8,10 +8,10 @@ const galleryImages = [
   { src: "/images/ba-1.png", alt: "Large 1" },
   { src: "/images/ba-3.png", alt: "Small 1" },
   { src: "/images/ba-4.png", alt: "Small 2" },
-  { src: "/images/ba-4.png", alt: "Small 3" },
+  { src: "/images/ba-6.png", alt: "Small 3" },
 
   // --- 2nd block (1 large + 3 small) ---
-  { src: "/images/ba-6.png", alt: "Large 2" },
+  { src: "/images/ba-5.png", alt: "Large 2" },
   { src: "/images/ba-7.png", alt: "Small 4" },
   { src: "/images/ba-8.png", alt: "Small 5" },
   { src: "/images/ba-2.png", alt: "Small 6" },
