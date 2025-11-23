@@ -218,9 +218,7 @@ const LocationMap = () => {
         <div className="w-full lg:w-1/2 h-[420px] md:h-[520px] lg:h-[600px] overflow-hidden rounded-xl">
           <iframe
             title="CASAKRAFT Interiors Group Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.3162381061898!2d55.2397317!3d25.158797699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6916b3b487a5%3A0xd0509cac38a7ca6d!2sCasa%20Kraft%20Interiors%20and%20Decoration!5e0!3m2!1sen!2sae!4v1763027338415!5m2!1sen!2sae"
-
-
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.1935081425995!2d55.234983899999996!3d25.1629431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f690a322c150b%3A0x2af6c3d4662a7abe!2sCasa%20Kraft%20Interiors%20and%20Decoration%20LLC!5e0!3m2!1sen!2sae!4v1763873168581!5m2!1sen!2sae"
             width="100%"
             height="100%"
             className="border-0 w-full h-full"
