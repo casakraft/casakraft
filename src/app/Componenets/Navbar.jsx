@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaInstagram, FaPinterest, FaLinkedin } from "react-icons/fa";
 import { IoMdCloseCircleOutline } from "react-icons/io";
@@ -40,6 +40,10 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // NEW: scroll-based visibility
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
   const navLinks = [
     { title: "About Us", path: "/about-us" },
     { title: "Services", path: "/#services" },
@@ -68,16 +72,42 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Background change
+      setScrolled(currentScrollY > 50);
+
+      // Visibility logic
+      if (currentScrollY <= 0) {
+        setIsVisible(true);
+      } else {
+        // Scrolling down and mobile menu NOT open → hide
+        if (currentScrollY > lastScrollY.current && !navbarOpen) {
+          setIsVisible(false);
+        }
+        // Scrolling up → show
+        else if (currentScrollY < lastScrollY.current) {
+          setIsVisible(true);
+        }
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [navbarOpen]);
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || navbarOpen ? "bg-black/40 shadow-md" : "bg-black/70 shadow-md"
-      }`}
+      className={`
+        fixed top-0 left-0 right-0 z-50
+        transition-colors duration-300
+        transform transition-transform duration-300
+        ${scrolled || navbarOpen ? "bg-black/40 shadow-md" : "bg-black/70 shadow-md"}
+        ${isVisible || navbarOpen ? "translate-y-0" : "-translate-y-full"}
+      `}
     >
       <div className="text-white px-4 md:px-10">
         {/* === Desktop Header (Logo + Nav + Social) === */}
