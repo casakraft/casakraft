@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Best Hotel Interior Design Dubai| Casa Kraft Interiors",
+  title: "Best Hotel Interior Design Dubai - Casa Kraft Interiors",
   description:
-    "Best Hotel Interior Design Dubai by Casa Kraft Interiors, the Best Hotel Interior Design Company, showcases luxury interiors.",
+    "Casa Kraft interiors delivers exceptional Best Hotel Interior Design Dubai. Leading hotel interior design company for bespoke, modern spaces. Visit now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/best-hotel-interior-design-dubai',

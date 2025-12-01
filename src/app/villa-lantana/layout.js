@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Latana Interior Design | Casa Kraft Interiors",
+  title: "Villa Latana Interior Design Dubai - Casa Kraft Interiors",
   description:
-    "Villa Latana interior by Casa Kraft Interiors, the Best Villa Interior Design Company in Dubai, showcases luxury interiors.",
+    "Casa Kraft delivers stunning modern villa Lantana interiors with luxury finishes. Get the best interior design services in Dubai. Contact us today.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/villa-lantana',

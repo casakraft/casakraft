@@ -3,7 +3,7 @@ import '../globals.css';
 export const metadata = {
   title: "Our Gallery | Casa Kraft Interiors",
   description:
-    "Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interiors. Discover our residential, commercial, and hospitality portfolio.",
+    "Explore our interior design gallery featuring residential interiors, luxury renovations, landscape designs, and high-quality fit-out projects across Dubai.",
   keywords: [
     'Interior Design Projects Dubai',
     'Fit-Out Portfolio Dubai',

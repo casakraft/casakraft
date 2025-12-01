@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Bluewaters 3 Bedroom Design | Casa Kraft Interiors",
+  title: "Bluewaters 3-Bedroom Design - CasaKraft interiors",
   description:
-    "Bluewaters 3 Bedroom Design by Casa Kraft Interiors, the Best residential Interior Design Company in Dubai, showcases luxury, comfort, and bespoke modern style.",
+    "Bluewaters 3-Bedroom design Dubai by CasaKraft Interiors. We deliver Luxurious, stylish interiors for your Bedroom. Contact us today.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/bluewaters-3-bedroom-design',

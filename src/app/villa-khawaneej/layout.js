@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Khawaneej | Casa Kraft Interiors",
+  title: "Villa Khawaneej Interior Design In Dubai - Casa Kraft Interiors",
   description:
-    "Villa Khawaneej by Casa Kraft Interiors, the Best Villa Interior Design Company in Dubai, showcases luxury interiors.",
+    "Transform your villa Khawaneej with Casa Kraft interiors. Luxury and modern interiors by top villa interior design company in dubai. Contact now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/villa-khawaneej',

@@ -1,9 +1,9 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Interior Design Dubai | Luxury Designers | Casa Kraft Interiors',
+  title: 'Residential Interior Design Company in Dubai - Casa Kraft Interiors',
   description:
-    'Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.',
+    'Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.',
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   openGraph: {
     title: 'Interior Design Dubai | Luxury Designers | Casa Kraft Interiors',
@@ -23,9 +23,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Interior Design Dubai | Luxury Designers | Casa Kraft Interiors',
+    title: 'Residential Interior Design Company in Dubai - Casa Kraft Interiors',
     description:
-      'Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.',
+      'Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.',
     images: ['/images/logo.svg'],
   },
   alternates: {

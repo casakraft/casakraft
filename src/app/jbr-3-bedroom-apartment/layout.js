@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "JBR 3 Bedroom Apartment | Casa Kraft Interiors",
+  title: "JBR 3 Bedroom Apartment Design Dubai - Casa Kraft Interiors",
   description:
-    "JBR 3 Bedroom Apartment by Casa Kraft Interiors, the Best Apartment Interior Design Company in Dubai, showcases luxury interiors.",
+    "Experience premium interior design and best fit-out services for your JBR 3-Bedroom Apartment with CasaKraft Interiors, Dubai. Contact us now.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/jbr-3-bedroom-apartment',

@@ -241,7 +241,7 @@ const PProjects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
         <h2 className="uppercase tracking-wide text-3xl sm:text-4xl lg:text-5xl font-semibold text-neutral-600">
-          Casa Kraft Interiors Related Services
+          Casa Kraft Interior Design Projects
         </h2>
 
         {/* Decorative Divider */}

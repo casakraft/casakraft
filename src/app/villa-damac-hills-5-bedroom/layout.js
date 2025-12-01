@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Damac Hills 5 Bedroom Interior | Casa Kraft Interiors",
+  title: "Villa Damac Hills 5 Bedroom Interior Dubai | Casa Kraft Interiors",
   description:
-    "Villa Damac Hills 5 Bedroom by Casa Kraft Interiors, the Best Villa Interior Design Company in Dubai, showcases luxury Interiors.",
+    "CasaKraft Interiors delivers Villa Damac Hills 5-Bedroom interiors with expert design and décor. Best interior design company in Dubai. Call us now.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/villa-damac-hills-5-bedroom',

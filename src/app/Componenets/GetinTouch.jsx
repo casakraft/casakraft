@@ -9,8 +9,8 @@ const GetInTouch = () => {
     <section className="bg-[#e6e6e6] py-16 px-4 text-center">
       {/* 🔹 Heading */}
       <h2 className="text-[26px] sm:text-[32px] font-bold mb-2">
-        <span className="text-black">GET</span>{" "}
-        <span className="text-[#c8a56a]">IN TOUCH WITH US</span>
+      
+        <span className="text-[#c8a56a]"> GET IN TOUCH WITH US</span>
       </h2>
 
       {/* 🔹 Subtext */}

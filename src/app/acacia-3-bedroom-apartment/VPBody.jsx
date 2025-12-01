@@ -89,7 +89,7 @@ export default function VPBody() {
           title="Acacia 3 Bedroom Apartment Interior"
           text=""
         />
-
+      
         {/* Both gallery blocks */}
         <div className="mt-8 sm:mt-10 space-y-10">
           {blocks[0] && <GalleryBlock block={blocks[0]} />}

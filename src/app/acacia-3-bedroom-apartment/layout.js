@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Accacia 3 Bedroom Apartment | Casa Kraft Interiors",
+  title: "Acacia 3 Bedroom Apartment Design Dubai - Casa Kraft Interiors",
   description:
-    "Arabella 2 Bedroom Townhouse by Casa Kraft Interiors, the Best Townhouse Interior Design Company in Dubai, showcases luxury, comfort, and bespoke modern style.",
+    "CasaKraft Interiors, top interior design company in Dubai, crafted stunning Acacia 3-Bedroom Apartment with full fit-out services. Get in touch today.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/arabella-2-bedroom-townhouse',
+    canonical: '/acacia-3-bedroom-apartment',
   },
 };
 

@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Arabella 2 Townhouse | Casa Kraft Interiors",
+  title: "Arabella 2 Townhouse Interior Design - Casa Kraft Interiors",
   description:
-    "Arabella 2 Townhouse by Casa Kraft Interiors, the Best Townhouse Interior Design Company in Dubai, showcases luxury interiors.",
+    "Casa Kraft offers luxury modern interior for Arabella 2 Townhouse in Dubai. Stunning design services by top interior experts. Call now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/arabella-2-townhouse',

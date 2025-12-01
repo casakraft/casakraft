@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Palm Jumeirah Apartment | Casa Kraft Interiors",
+  title: "Palm Jumeirah Apartment Interior Design in Dubai | Casa Kraft Interiors",
   description:
-    "Palm Jumeirah Apartment by Casa Kraft Interiors, the Best Apartment Interior Design Company in Dubai, showcases luxury interiors.",
+    "Transform your Palm Jumeirah apartment interiors with bespoke, luxurious interior and architectural design by CasaKraft Interiors. Get in touch now.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/palm-jumeirah-apartment',

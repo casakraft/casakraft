@@ -3,7 +3,7 @@ import '../globals.css';
 export const metadata = {
   title: "Bvlgari One Bedroom Apartment | Casa Kraft Interiors",
   description:
-    "Bvlgari One Bedroom Apartment by Casa Kraft Interiors, the Best apartment Interior Design Company in Dubai, showcases luxury, comfort, and bespoke modern style.",
+    "Transform your Bvlgari One Bedroom Apartment with Casa Kraft interiors. Luxury interiors and top fitout services by leading interior design experts. Contact now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/bvlgari-one-bedroom-apartment',

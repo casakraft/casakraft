@@ -3,7 +3,7 @@ import '../globals.css';
 export const metadata = {
   title: "Dubai Hills Townhouse | Casa Kraft Interiors",
   description:
-    "Dubai Hills Townhouse by Casa Kraft Interiors, the Best Townhouse Interior Design Company in Dubai, showcases luxury interiors.",
+    "Create a modern luxury Dubai Hills Townhouse with Casa Kraft interiors. Stunning designs by top interior and fitout experts. Contact now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/dubai-hills-townhouse',

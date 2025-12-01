@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Meadows Contemporary Villa | Casa Kraft Interiors",
+  title: "Meadows Contemporary Villa Design - Casa Kraft Interiors",
   description:
-    "Meadows Contemporary Villa by Casa Kraft Interiors, the Best Villa Interior Design Company in Dubai, showcases luxury interiors.",
+    "Best meadows contemporary villa design by CasaKraft Interiors. Modern interiors from top interior design company in Dubai. Visit us today.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/meadows-contemporary-villa',

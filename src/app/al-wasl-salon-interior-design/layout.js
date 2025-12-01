@@ -3,7 +3,7 @@ import '../globals.css';
 export const metadata = {
   title: "Al Wasl Salon Interior Design | Casa Kraft Interiors",
   description:
-    "Al Wasl Salon Interior Design by Casa Kraft Interiors, the Best Salon Interior Design Company in Dubai, showcases luxury interiors.",
+    "CasaKraft Interiors, Dubai’s best salon interior design company, creates stunning Al Wasl beauty salon interior design with luxury and style. Call today.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/al-wasl-salon-interior-design',

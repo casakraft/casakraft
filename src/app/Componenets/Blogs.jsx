@@ -8,19 +8,19 @@ import Link from "next/link";
 const blogPosts = [
   {
     title: "5 Modern Apartment Interior Design",
-    date: "June 11, 2025",
+    date: "Nov 22, 2025",
     image: "/images/blog-1.png",
     link: "/modern-apartment-interior-design",
   },
   {
     title: "6 Interior Design Styles Dubai 2025",
-    date: "September 23, 2025",
+    date: "Nov 10, 2025",
     image: "/images/blog-2.png",
     link: "/modern-apartment-interior-design",
   },
   {
     title: "Bohemian Interior Design in Dubai",
-    date: "May 25, 2025",
+    date: "Nov 4, 2025",
     image: "/images/blog-3.png",
     link: "/modern-apartment-interior-design",
   },

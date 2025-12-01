@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Marina Gate Penthouse 2 | Casa Kraft Interiors",
+  title: "Marina Gate Penthouse 2 Design - Casa Kraft Interiors",
   description:
-    "Marina Gate Penthouse 2 by Casa Kraft Interiors, the Best Penthouse Interior Design Company in Dubai, showcases luxury Interiors.",
+    "Best interior design services for Marina Gate Penthouse 2 by CasaKraft Interiors. Stunning, refined interiors crafted for luxury living. Contact now.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/marina-gate-penthouse-2',

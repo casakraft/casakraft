@@ -3,7 +3,7 @@ import '../globals.css';
 export const metadata = {
   title: "Mirdif Hills Apartment | Casa Kraft Interiors",
   description:
-    "Mirdif Hills Apartment by Casa Kraft Interiors, the Best apartment Interior Design Company in Dubai, showcases luxury interiors.",
+    "Casa Kraft delivers luxury modern Mirdif Hills Apartment. Top interior design services by the best interior design company. visit now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/mirdif-hills-apartment',

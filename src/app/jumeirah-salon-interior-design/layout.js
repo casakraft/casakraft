@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Jumeirah Salon Interior Design | Casa Kraft Interiors",
+  title: "Luxurious Jumeirah Salon Interior Design - Casa Kraft Interiors",
   description:
-    "Jumeirah Salon Interior Design by Casa Kraft Interiors, the Best salon Interior Design Company in Dubai, showcases luxury interiors.",
+    "Stunning and exceptional Jumeirah salon interior Design. Casakraft interiors create the best salon interior design with style and function. Contact us.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/jumeirah-salon-interior-design',
