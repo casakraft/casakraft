@@ -37,6 +37,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+
+        {/* Google Tag (gtag.js) for AW-17422215715 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17422215715"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17422215715');
+            `,
+          }}
+        />
+
         {/* Robots Meta Tag */}
         <meta
           name="robots"
@@ -203,12 +220,14 @@ export default function RootLayout({ children }) {
                 '@type': 'Place',
                 name: 'Dubai, UAE',
               },
-              serviceOutput: 'Luxury interior design solutions for residential and commercial spaces in Dubai.',
+              serviceOutput:
+                'Luxury interior design solutions for residential and commercial spaces in Dubai.',
               url: 'https://casakraftinteriors.ae/',
             }),
           }}
         />
       </head>
+
       <body>{children}</body>
     </html>
   );
