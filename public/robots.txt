@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://casakraftinteriors.ae
+
+# Sitemaps
+Sitemap: https://casakraftinteriors.ae/sitemap.xml
