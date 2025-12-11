@@ -24,13 +24,16 @@ const toBlocks = (arr, n = 4) => {
   return out;
 };
 
-// Section Header (used only once)
-function SectionHeader({ as = "h1", title, text }) {
+// Reusable Header
+function SectionHeader({ as = "h2", title, text }) {
   const Tag = as;
-  const size =
-    Tag === "h1"
-      ? "text-3xl sm:text-4xl lg:text-[40px]"
-      : "text-2xl sm:text-3xl lg:text-[32px]";
+  const isH1 = Tag === "h1";
+
+  const size = isH1
+    ? "text-3xl sm:text-4xl lg:text-[40px]"
+    : "text-2xl sm:text-3xl lg:text-[32px]";
+
+  const paragraphs = Array.isArray(text) ? text : [text];
 
   return (
     <>
@@ -41,18 +44,24 @@ function SectionHeader({ as = "h1", title, text }) {
           {title}
         </Tag>
       </div>
+
       {text && (
-        <div className="mt-6 sm:mt-8 text-white/90">
-          <p className="mx-auto max-w-[1000px] text-[13.5px] sm:text-[15px] leading-7 sm:leading-8">
-            {text}
-          </p>
+        <div className="mt-6 sm:mt-8 text-white/90 space-y-5">
+          {paragraphs.map((p, i) => (
+            <p
+              key={i}
+              className="mx-auto max-w-[1000px] text-[13.5px] sm:text-[15px] leading-7 sm:leading-8"
+            >
+              {p}
+            </p>
+          ))}
         </div>
       )}
     </>
   );
 }
 
-// Image components
+// Image component
 const Img = ({ src, alt }) => (
   <figure className="relative w-full overflow-hidden">
     <Image
@@ -66,17 +75,15 @@ const Img = ({ src, alt }) => (
   </figure>
 );
 
-// Layout: 1 large (top) + 3 small (bottom)
+// Large + 3 small layout
 const GalleryBlock = ({ block }) => {
   if (!block || block.length < 4) return null;
   const [large, s1, s2, s3] = block;
 
   return (
     <div className="space-y-6 sm:space-y-8">
-      {/* Top row: Large image */}
       <Img src={large.src} alt={large.alt} />
 
-      {/* Bottom row: Three small images in a row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
         <Img src={s1.src} alt={s1.alt} />
         <Img src={s2.src} alt={s2.alt} />
@@ -92,18 +99,33 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== SECTION HEADER ===== */}
+
+        {/* ===== SECTION 1 (2 paragraphs) ===== */}
         <SectionHeader
           as="h1"
-          title="Bluewaters 3 Bedroom Design"
-          text=""
+          title="BLUEWATERS 3-BEDROOM APARTMENT DESIGN : ELEVATING WATERFRONT LIVING"
+          text={[
+            "At Casa kraft Interiors, our Bluewaters 3 Bedroom Design shows a pure blend of comfort, functionality, and modern Dubai living. Situated on the vibrant Bluewaters Island, this project reflects how thoughtfully designed interiors can change a space into a comfort, elegant, and truly livable home. Each element of this Bluewaters 3-Bedroom Apartment Interior Design in Dubai is created to complement the island’s warm waterfront atmosphere while balancing a sophisticated modern style.",
+            "Casa kraft Interiors is a leading residential interior design company in Dubai, our experience in fit-out projects in Dubai and our interior decorators focused on designing smooth layouts, and an equal mix of textures and finishes. Warm tones, high-end materials, bespoke design and seamless flow from one bedroom to another"
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS ===== */}
+        {/* ===== BLOCK 1 (large + 3 small) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, idx) => (
-            <GalleryBlock key={idx} block={block} />
-          ))}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECTION 2 (2 paragraphs) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Bluewaters Luxury Interior Layout"
+            text={[
+              "Casa kraft’s strong portfolio across Dubai luxury apartments creates trust for clients seeking for reliable, detail-oriented design expertise. Clients frequently ask whether we provide complete fit-out services for Bluewaters apartments, yes, our professionals handle everything from idea creation to final execution, making sure a flawless experience with premium quality.",
+              "This Bluewaters work shows why Casa kraft Interiors stands out as one of the best residential interior design companies in Dubai, each space is created with purpose, comfort, and long-lasting sophistication. If you’re dreaming of upgrading or redesigning your Bluewaters home. Contact Casa kraft Interiors to enhance your Bluewaters 3-bedroom apartment into a luxurious waterfront home"
+            ]}
+          />
+
+          {/* ===== BLOCK 2 (large + 3 small) ===== */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

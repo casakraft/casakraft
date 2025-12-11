@@ -24,13 +24,15 @@ const toBlocks = (arr, n = 4) => {
   return out;
 };
 
-// Section header (only shown once)
+// Section header (reusable, supports multiple paragraphs)
 function SectionHeader({ as = "h1", title, text }) {
   const Tag = as;
-  const size =
-    Tag === "h1"
-      ? "text-3xl sm:text-4xl lg:text-[40px]"
-      : "text-2xl sm:text-3xl lg:text-[32px]";
+  const isH1 = Tag === "h1";
+  const size = isH1
+    ? "text-3xl sm:text-4xl lg:text-[40px]"
+    : "text-2xl sm:text-3xl lg:text-[32px]";
+
+  const paragraphs = !text ? [] : Array.isArray(text) ? text : [text];
 
   return (
     <>
@@ -41,11 +43,17 @@ function SectionHeader({ as = "h1", title, text }) {
           {title}
         </Tag>
       </div>
-      {text && (
-        <div className="mt-6 sm:mt-8 text-white/90">
-          <p className="mx-auto max-w-[1000px] text-[13.5px] sm:text-[15px] leading-7 sm:leading-8">
-            {text}
-          </p>
+
+      {paragraphs.length > 0 && (
+        <div className="mt-6 sm:mt-8 text-white/90 space-y-4 sm:space-y-5">
+          {paragraphs.map((para, idx) => (
+            <p
+              key={idx}
+              className="mx-auto max-w-[1000px] text-[13.5px] sm:text-[15px] leading-7 sm:leading-8"
+            >
+              {para}
+            </p>
+          ))}
         </div>
       )}
     </>
@@ -92,18 +100,33 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== SECTION 1: 2 paragraphs + 1 large + 3 small ===== */}
         <SectionHeader
           as="h1"
-          title="Boulevard Point Penthouse Interior"
-          text=""
+          title="Boulevard Point Penthouse: Luxury Interior Design Dubai"
+          text={[
+            "The Boulevard Point Penthouse – Interior Design Dubai work reflects sophistication, luxury, and modern elegance. Each interior design has been purposely executed to curate an innovative yet modern home. Our decorators are specialists in delivering exceptional interior design services, turning vision into elegant realities that manage practicality and modern sophistication.",
+            "Casa kraft Interiors is a Luxury Interior Design Company in Boulevard Point Penthouse, Dubai. Our interior decorators make sure stylish layouts, premium finishes, and bespoke touches that enhance every room. With many years of experience as one of the famous interior design firms in Dubai, we deliver tailored solutions that show each client’s personality and lifestyle."
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECTION 2: 2 paragraphs + 1 large + 3 small ===== */}
+          <SectionHeader
+            as="h2"
+            title="Luxury Living Above the Boulevard"
+            text={[
+              "We are also reliable among the best interior fit out companies in Dubai, providing end-to-end services from idea creation to final finishing. Clients frequently question if their vision can be fully customized, and we make sure each interior design Dubai project is modern, functional, and luxurious.",
+
+              "Casakraft’s Boulevard Point Penthouse interiors highlight why we are reputed in Dubai interior design. Explore Casa kraft Interiors and find out how we can turn your penthouse into a masterpiece of style, luxury, and sophistication."
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

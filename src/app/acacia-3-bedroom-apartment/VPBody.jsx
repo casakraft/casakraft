@@ -27,16 +27,30 @@ const toBlocks = (arr, n = 4) => {
 function SectionHeader({ as = "h2", title, text }) {
   const Tag = as;
   const isH1 = Tag === "h1";
-  const size = isH1 ? "text-3xl sm:text-4xl lg:text-[40px]" : "text-2xl sm:text-3xl lg:text-[32px]";
+  const size = isH1
+    ? "text-3xl sm:text-4xl lg:text-[40px]"
+    : "text-2xl sm:text-3xl lg:text-[32px]";
+
+  const paragraphs = !text ? [] : Array.isArray(text) ? text : [text];
 
   return (
     <>
       <div className="border-t border-b border-[#d1a155]/60 pt-6 pb-6 sm:pt-8 sm:pb-8">
-        <Tag className={`text-center text-[#d7b46a] font-semibold leading-tight ${size}`}>{title}</Tag>
+        <Tag className={`text-center text-[#d7b46a] font-semibold leading-tight ${size}`}>
+          {title}
+        </Tag>
       </div>
-      {text && (
-        <div className="mt-6 sm:mt-8 text-white/90">
-          <p className="mx-auto max-w-[1000px] text-[13.5px] sm:text-[15px] leading-7 sm:leading-8">{text}</p>
+
+      {paragraphs.length > 0 && (
+        <div className="mt-6 sm:mt-8 text-white/90 space-y-4 sm:space-y-5">
+          {paragraphs.map((para, idx) => (
+            <p
+              key={idx}
+              className="mx-auto max-w-[1000px] text-[13.5px] sm:text-[15px] leading-7 sm:leading-8"
+            >
+              {para}
+            </p>
+          ))}
         </div>
       )}
     </>
@@ -83,16 +97,32 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== FIRST SECTION ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Acacia 3 Bedroom Apartment Interior"
-          text=""
+          title="Acacia 3 Bedroom Apartment Design Dubai"
+          text={[
+            "Acacia 3-Bedroom Apartment in Dubai Hills, explore the perfect blend of luxury, elegance, and functionality, designed by Casa kraft Interiors. Our interior designers managed the fitout service of apartment interior design Dubai while making sure that each space is designed with bespoke finishes, high-end materials, and functionally planned layouts to enhance modern Dubai living.",
+            "Casa kraft Interiors has many years of experience, we are prominent among interior fit-out companies in Dubai and experts in transforming ordinary apartments into extraordinary residences. The creative design of our 3-bedroom apartment in Dubai reflects sophistication, luxury, and functionality. As a top interior design firm in Dubai, our decorators deliver full design and fit-out services, from conceptual layouts to flawless finishing, guaranteeing a high-end experience."
+          ]}
         />
-      
-        {/* Both gallery blocks */}
+
         <div className="mt-8 sm:mt-10 space-y-10">
+          {/* First gallery block: 1 large + 3 small */}
           {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Elegant Living Spaces in Acacia Dubai Hills"
+            text={[
+              "Clients frequently question whether Casa kraft Interiors is capable of designing and furnishing an Acacia apartment? Yes! We offer high-end services that combine sophistication with practicality to enhance your living style.",
+
+              "Contact Casa kraft Interiors to enhance your Dubai residence right now and change your Acacia 3-bedroom apartment into a luxurious and modern haven."
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
           {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
