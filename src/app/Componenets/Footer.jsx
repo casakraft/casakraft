@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-10">
         {/* Main Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 mb-10">
-          
+
           {/* Menu */}
           <div>
             <h3 className="font-semibold mb-3 text-lg">Menu</h3>
@@ -31,7 +31,7 @@ const Footer = () => {
                 "Cookie Policy",
                 "Accessibility Statement",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">{item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
@@ -51,7 +51,7 @@ const Footer = () => {
                 "Office Interior Design",
                 "Clinic Interior Design",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">{item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
                 "Outdoor Seating Design",
                 "Marble Fixing",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">{item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
@@ -89,7 +89,7 @@ const Footer = () => {
                 "Living Room",
                 "Kitchen",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">{item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
@@ -108,7 +108,7 @@ const Footer = () => {
                 "Plunge Pools",
                 "Pools Design Gallery",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">{item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
@@ -126,7 +126,7 @@ const Footer = () => {
                 "Exterior Design",
                 "Hotel Interior Design",
               ].map((item, i) => (
-                <li key={i} className="text-gray-300">{item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>
@@ -134,8 +134,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-600 pt-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
+        <div className="border-t border-gray-600 pt-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
 
+          {/* Logo */}
           <Image
             src="/images/logo.svg"
             alt="CasaKraft Logo"
@@ -143,23 +144,53 @@ const Footer = () => {
             height={60}
           />
 
-          {/* ⭐ Added Address Here */}
-           <p className="text-gray-400 text-sm">
-            info@casakraftinteriors.ae
-          </p>
-          <p className="text-gray-400 text-sm">
-          The Curve Building, Showroom G11, Sheikh Zayed Service Road, Dubai, UAE
+          {/* Contact Details */}
+          <div className="text-gray-400 text-sm space-y-1">
+            <p>
+              <a
+                href="mailto:info@casakraftinteriors.ae"
+                className="hover:text-white transition"
+              >
+                info@casakraftinteriors.ae
+              </a>
+            </p>
+
+            <p>
+              <span className="text-gray-300 font-medium">Mobile:</span>{" "}
+              <a
+                href="tel:+971586023677"
+                className="hover:text-white transition"
+              >
+                +971 58 602 3677
+              </a>
+            </p>
+
+            <p>
+              <span className="text-gray-300 font-medium">Landline:</span>{" "}
+              <a
+                href="tel:++97144208855"
+                className="hover:text-white transition"
+              >
+                +971 4 4208855
+              </a>
+            </p>
+          </div>
+
+          {/* Address */}
+          <p className="text-gray-400 text-sm max-w-xs">
+            The Curve Building, Showroom G11, Sheikh Zayed Service Road, Dubai, UAE
           </p>
 
+          {/* Copyright */}
           <p className="text-gray-400 text-sm">
-            © 2002–{new Date().getFullYear()} Casa Kraft Interiors – Interior Design & Fit-Out & Build | All rights reserved
+            © 2002–{new Date().getFullYear()} Casa Kraft Interiors
           </p>
 
-          {/* Icons */}
+          {/* Social Icons */}
           <div className="flex items-center gap-4 text-lg text-gray-400">
-            <FaInstagram />
-            <FaLinkedin />
-            <FaPinterest />
+            <FaInstagram className="hover:text-white cursor-pointer transition" />
+            <FaLinkedin className="hover:text-white cursor-pointer transition" />
+            <FaPinterest className="hover:text-white cursor-pointer transition" />
           </div>
 
         </div>
