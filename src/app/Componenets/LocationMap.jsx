@@ -3,30 +3,30 @@
 import React, { useState } from "react";
 
 const SERVICES = [
-"Bathroom design & Renovation",
-"Bedroom design",
-"Cabinetry and hardware design",
-"Commercial interior design",
-"Crockery Unit",
-"Curtains",
-"Customized Furniture",
-"Doors & Window",
-"Flooring",
-"Full Home Renovation",
-"Joinery",
-"Kitchen Renovation",
-"Landscaping",
-"Office Renovation",
-"Painting",
-"Parquet Flooring",
-"Swimming Pool",
-"TV Wall/Multimedia Walls",
-"Villa Extension/Modification",
-"Wall Panels",
-"Wallpapers",
-"Wardrobe & Cabinets",
-"Wrapping",
-"Others",
+  "Bathroom design & Renovation",
+  "Bedroom design",
+  "Cabinetry and hardware design",
+  "Commercial interior design",
+  "Crockery Unit",
+  "Curtains",
+  "Customized Furniture",
+  "Doors & Window",
+  "Flooring",
+  "Full Home Renovation",
+  "Joinery",
+  "Kitchen Renovation",
+  "Landscaping",
+  "Office Renovation",
+  "Painting",
+  "Parquet Flooring",
+  "Swimming Pool",
+  "TV Wall/Multimedia Walls",
+  "Villa Extension/Modification",
+  "Wall Panels",
+  "Wallpapers",
+  "Wardrobe & Cabinets",
+  "Wrapping",
+  "Others",
 ];
 
 const LocationMap = () => {
@@ -40,17 +40,22 @@ const LocationMap = () => {
   });
 
   const [errorMsg, setErrorMsg] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
     setErrorMsg("");
+    setSuccessMsg("");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setErrorMsg("");
+    setSuccessMsg("");
 
-    // Basic validation for required fields
+    // Required fields (email optional)
     if (
       !form.firstName.trim() ||
       !form.phone.trim() ||
@@ -61,18 +66,53 @@ const LocationMap = () => {
       return;
     }
 
-    // ✅ Submit logic (replace this with API)
-    console.log("Form submitted:", form);
+    const fullName = `${form.firstName} ${form.lastName}`.trim();
+    const chosenService =
+      form.service === "Others" ? form.otherService.trim() : form.service;
 
-    setErrorMsg("");
-    setForm({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      service: "",
-      otherService: "",
-    });
+    const payload = {
+      name: fullName,
+      email: form.email.trim() || "", // optional
+      phone: form.phone.trim(),
+      subject: `New Lead - ${chosenService}`,
+      message:
+        `Service Required: ${chosenService}\n` +
+        `Client Name: ${fullName}\n` +
+        `Phone: ${form.phone.trim()}\n` +
+        (form.email.trim() ? `Email: ${form.email.trim()}\n` : "") +
+        `\nSubmitted from LocationMap form.`,
+    };
+
+    try {
+      setIsSending(true);
+
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.ok) {
+        throw new Error(data?.error || "Failed to send. Please try again.");
+      }
+
+      setSuccessMsg("Thanks! Your request has been sent successfully.");
+
+      setForm({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        service: "",
+        otherService: "",
+      });
+    } catch (err) {
+      setErrorMsg(err?.message || "Something went wrong while sending.");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -97,6 +137,13 @@ const LocationMap = () => {
                 </p>
               )}
 
+              {/* Success Message */}
+              {successMsg && (
+                <p className="text-green-200 text-sm sm:text-base bg-green-900/20 p-3 rounded-lg">
+                  {successMsg}
+                </p>
+              )}
+
               {/* Row 1: Name / Last name */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex flex-col">
@@ -112,6 +159,7 @@ const LocationMap = () => {
                     className="h-12 sm:h-14 rounded-full w-full px-5 bg-white text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-white/40"
                   />
                 </div>
+
                 <div className="flex flex-col">
                   <label className="mb-1 text-sm font-medium">Last Name</label>
                   <input
@@ -132,12 +180,13 @@ const LocationMap = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Email (optional)"
                     value={form.email}
                     onChange={handleChange}
                     className="h-12 sm:h-14 rounded-full w-full px-5 bg-white text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-white/40"
                   />
                 </div>
+
                 <div className="flex flex-col">
                   <label className="mb-1 text-sm font-medium">
                     Mobile No <span className="text-red-400">*</span>
@@ -162,7 +211,7 @@ const LocationMap = () => {
                   name="service"
                   value={form.service}
                   onChange={handleChange}
-                  className="h-12 sm:h-14 rounded-full w-full pl-5 pr-12 bg-white text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-white/40 appearance-none"
+                  className="h-12 sm:h-14 rounded-full w-full pl-5 pr-12 bg-white text-gray-900 outline-none focus:ring-2 focus:ring-white/40 appearance-none"
                 >
                   <option value="">Select a service</option>
                   {SERVICES.map((s) => (
@@ -197,9 +246,10 @@ const LocationMap = () => {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="h-12 sm:h-14 rounded-full px-10 w-full sm:w-auto border-2 border-white/70 text-white font-medium hover:bg-white/10 transition"
+                  disabled={isSending}
+                  className="h-12 sm:h-14 rounded-full px-10 w-full sm:w-auto border-2 border-white/70 text-white font-medium hover:bg-white/10 transition disabled:opacity-50"
                 >
-                  Submit
+                  {isSending ? "Sending..." : "Submit"}
                 </button>
               </div>
             </form>
