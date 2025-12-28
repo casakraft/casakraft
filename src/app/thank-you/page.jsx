@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Thank You | WE DO Interior Design Dubai",
+  title: "Thank You | Casa Kraft Interiors & Renovators Dubai",
   description: "Thanks for getting in touch. We’ll respond shortly.",
 };
 
