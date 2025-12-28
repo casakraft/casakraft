@@ -23,7 +23,7 @@ export default function ThankYouPage() {
           </h1>
           <p className="mt-4 text-sm sm:text-base leading-7">
             Your message has been sent to{" "}
-            <span className="font-medium">WE DO Interior Design &amp; Fit-Out</span>.
+            <span className="font-medium">Casa Kraft Interiors &amp; Renovations</span>.
             We’ll get back to you shortly.
           </p>
 
