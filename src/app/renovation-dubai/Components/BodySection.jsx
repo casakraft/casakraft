@@ -103,17 +103,17 @@ export default function BodySection() {
   // Renovations grid (PDF shows image tiles with bottom black label)
   const renovationTiles = useMemo(
     () => [
-      { title: "Villa Renovation", img: "/images/reno/villa.jpg", href: "/villa-renovation" },
-      { title: "Apartment Renovation", img: "/images/reno/apartment.jpg", href: "/apartment-renovation" },
-      { title: "Office Renovation", img: "/images/reno/office.jpg", href: "/office-renovation" },
-      { title: "Kitchens", img: "/images/reno/kitchen.jpg", href: "/kitchens" },
-      { title: "Bathrooms", img: "/images/reno/bathroom.jpg", href: "/bathrooms" },
-      { title: "Flooring", img: "/images/reno/flooring.jpg", href: "/flooring" },
-      { title: "Wardrobes & Cabinets", img: "/images/reno/wardrobes.jpg", href: "/wardrobes" },
-      { title: "Villa Extension", img: "/images/reno/extension.jpg", href: "/villa-extension" },
-      { title: "Landscape", img: "/images/reno/landscape.jpg", href: "/landscape" },
-      { title: "Painting", img: "/images/reno/painting.jpg", href: "/painting" },
-      { title: "Windows & Doors", img: "/images/reno/windows.jpg", href: "/windows-doors" },
+      { title: "Villa Renovation", img: "/images/cvd-5.png", href: "/" },
+      { title: "Apartment Renovation", img: "/images/ca-6.png", href: "/" },
+      { title: "Office Renovation", img: "/images/bulgari-2.png", href: "/" },
+      { title: "Kitchens", img: "/images/marina-8.png", href: "/" },
+      { title: "Bathrooms", img: "/images/bluewaters-5.png", href: "/" },
+      { title: "Flooring", img: "/images/trd-9.png", href: "/flooring" },
+      { title: "Wardrobes & Cabinets", img: "/images/ca-6.png", href: "/" },
+      { title: "Villa Extension", img: "/images/vl-7.png", href: "/" },
+      { title: "Landscape", img: "/images/landscape-design.png", href: "/" },
+      { title: "Painting", img: "/images/boulevard-5.png", href: "/" },
+      { title: "Windows & Doors", img: "/images/damac-5.png", href: "/" },
     ],
     []
   );
@@ -305,24 +305,43 @@ export default function BodySection() {
                 Dubai’s Trusted Renovators
               </p>
               <h2 className="mt-2 text-2xl md:text-3xl font-semibold text-black/80 leading-snug">
-                Book Online Full Home Renovation Services in Dubai
+                Our Renovation Process
               </h2>
 
               <div className="mt-6 space-y-4 text-sm leading-relaxed text-black/70">
                 <p>
-                  Your full home renovation &amp; villa renovation projects handled
-                  by an experienced team with a detailed scope of work.
+                  At Casa Kraft Interiors, our renovation services in Dubai follow a structured process to ensure high-quality results for every home renovation, villa renovation, apartment renovation, and office renovation project.
                 </p>
+
+                <h3 className="text-lg font-semibold">
+                 1. Consultation & Design
+                </h3>
                 <p>
-                  Our professionals execute requirements in an average timeline of
-                  8–10 weeks without charging extra fees for developer NOC, basic
-                  design and drawings.
+                  Our professionals execute requirements in an average timeline of 8–10 weeks
+                  without charging extra fees for developer NOC, basic design and drawings.
                 </p>
+
+                <h3 className="text-lg font-semibold">
+                 2. Material Selection & Planning
+                </h3>
+                <p> 
+                We help you choose the finest materials, finishes, and fixtures for your kitchen renovation company projects, bathroom renovation, or full interior renovation in Dubai. Every detail is planned to ensure durability, style, and functionality.
+                </p>
+
+                <h3 className="text-lg font-semibold">
+                 3. Project Execution & Supervision
+                </h3>
                 <p>
-                  Our team assists you in procuring materials with best price
-                  guarantee and no hidden charges—from sanitaryware and tiles to
-                  kitchen appliances.
+                  Our skilled team executes all renovation work in Dubai with precision. Professional supervision ensures timely completion and exceptional craftsmanship for villa renovation contractors in Dubai, apartment renovation companies, office renovation contractors, or any home renovation project.
                 </p>
+
+                <h3 className="text-lg font-semibold">
+                 4. Handover & Warranty
+                </h3>
+                <p>
+                   We hand over your fully renovated space, backed by our warranty. Casa Kraft, as a leading home renovation company in Dubai, guarantees lasting quality, attention to detail, and complete customer satisfaction.
+                </p>
+
               </div>
 
               <div className="mt-8">
@@ -333,7 +352,7 @@ export default function BodySection() {
             <div className="relative w-full overflow-hidden">
               <div className="relative aspect-[4/3] w-full">
                 <Image
-                  src="/images/sections/book-online.jpg"
+                  src="/images/renovation-process.png"
                   alt="Book Online"
                   fill
                   className="object-cover"
@@ -353,7 +372,7 @@ export default function BodySection() {
             <div className="relative overflow-hidden">
               <div className="relative aspect-[4/3] w-full">
                 <Image
-                  src="/images/sections/full-home.jpg"
+                  src="/images/choose-us.jpeg"
                   alt="Full Home Renovation"
                   fill
                   className="object-cover"
@@ -366,23 +385,22 @@ export default function BodySection() {
                 Renovation &amp; Design
               </p>
               <h2 className="mt-2 text-2xl md:text-3xl font-semibold text-black/80 leading-snug">
-                Full Home Renovation and Interior Design Services
+                Why Choose Casa Kraft for Renovation?
               </h2>
 
               <div className="mt-6 space-y-4 text-sm leading-relaxed text-black/70">
                 <p>
-                  With the help of renovation and interior design services, you can
-                  update the look and feel of a room or an entire house without
-                  changing the main purpose of your space.
+                  Choose Casa Kraft Interiors for your renovation services in Dubai and experience a seamless blend of expertise, luxury, and smart solutions. As a top interior fit-out & renovation company in Dubai and best home contractor.
+                 
                 </p>
                 <p>
-                  With more space, increased property value, style change and reduced
-                  energy costs, you get all the benefits of going for full home
-                  renovation services in Dubai.
+                   We specialize in villa renovation, apartment renovation, office renovation, kitchen renovation, bathroom renovations, and full interior renovation projects. 
                 </p>
                 <p>
-                  From co-ops to single-family houses, we work with you to set up your
-                  project and help you know everything about the ins and out of renovating.
+                  From meticulous planning and premium material selection to professional execution and reliable warranty, we ensure every renovation work in Dubai reflects elegance, functionality, and lasting value.
+                </p>
+                <p>
+                    We also offer turnkey villa renovations in Dubai, luxury villa renovation services, and apartment renovation services, making us one of the leading renovation companies in Dubai.
                 </p>
               </div>
 
