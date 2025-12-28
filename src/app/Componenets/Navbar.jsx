@@ -1,50 +1,29 @@
 "use client";
-import Link from "next/link";
-import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import { FaInstagram, FaPinterest, FaLinkedin } from "react-icons/fa";
-import { IoMdCloseCircleOutline } from "react-icons/io";
 
-// ========================
-// NavLink Component
-// ========================
-const NavLink = ({ href, title }) => (
+import Link from "next/link";
+import Image from "next/image";
+import React, { useEffect, useRef, useState } from "react";
+import { FaInstagram, FaFacebookF, FaLinkedin  } from "react-icons/fa";
+import { IoMdCloseCircleOutline } from "react-icons/io";
+import { HiOutlineMenuAlt3, HiChevronRight } from "react-icons/hi";
+
+const NavItem = ({ href, title, onClick }) => (
   <Link
     href={href}
-    className="block py-0 text-white text-sm rounded md:p-0 hover:text-[#193c38] transition-colors duration-300"
+    onClick={onClick}
+    className="text-[15px] text-black/80 hover:text-black transition-colors"
   >
     {title}
   </Link>
 );
 
-// ========================
-// MenuOverlay Component
-// ========================
-const MenuOverlay = ({ links, children }) => (
-  <div>
-    <ul className="flex flex-col py-4 items-center space-y-6 text-white text-xl">
-      {links.map((link, index) => (
-        <li key={index}>
-          <NavLink href={link.path} title={link.title} />
-        </li>
-      ))}
-    </ul>
-    <div className="flex justify-center items-center py-4">{children}</div>
-  </div>
-);
-
-// ========================
-// Navbar Component
-// ========================
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  // NEW: scroll-based visibility
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
 
   const navLinks = [
+    { title: "Home", path: "/" },
     { title: "About Us", path: "/about-us" },
     { title: "Services", path: "/#services" },
     { title: "Gallery", path: "/gallery" },
@@ -54,45 +33,22 @@ const Navbar = () => {
   ];
 
   const socialLinks = [
-    {
-      icon: <FaInstagram />,
-      href: "https://www.instagram.com/",
-      hoverColor: "hover:text-pink-500",
-    },
-    {
-      icon: <FaLinkedin />,
-      href: "https://www.linkedin.com/",
-      hoverColor: "hover:text-blue-600",
-    },
-    {
-      icon: <FaPinterest />,
-      href: "https://www.pinterest.com/",
-      hoverColor: "hover:text-red-500",
-    },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/" },
+    { icon: <FaFacebookF />, href: "https://www.facebook.com/" },
+    { icon: <FaLinkedin />, href: "https://www.facebook.com/" },
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const y = window.scrollY;
 
-      // Background change
-      setScrolled(currentScrollY > 50);
-
-      // Visibility logic
-      if (currentScrollY <= 0) {
-        setIsVisible(true);
-      } else {
-        // Scrolling down and mobile menu NOT open → hide
-        if (currentScrollY > lastScrollY.current && !navbarOpen) {
-          setIsVisible(false);
-        }
-        // Scrolling up → show
-        else if (currentScrollY < lastScrollY.current) {
-          setIsVisible(true);
-        }
+      if (y <= 0) setIsVisible(true);
+      else {
+        if (y > lastScrollY.current && !navbarOpen) setIsVisible(false);
+        else if (y < lastScrollY.current) setIsVisible(true);
       }
 
-      lastScrollY.current = currentScrollY;
+      lastScrollY.current = y;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -100,106 +56,166 @@ const Navbar = () => {
   }, [navbarOpen]);
 
   return (
-    <nav
+    <header
       className={`
         fixed top-0 left-0 right-0 z-50
-        transition-colors duration-300
         transform transition-transform duration-300
-        ${scrolled || navbarOpen ? "bg-black/40 shadow-md" : "bg-black/70 shadow-md"}
         ${isVisible || navbarOpen ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <div className="text-white px-4 md:px-10">
-        {/* === Desktop Header (Logo + Nav + Social) === */}
-        <div className="hidden md:flex items-center justify-between py-4">
-          {/* Logo Left */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/logo.svg"
-              alt="Casa Kraft Logo"
-              width={200}
-              height={40}
-              className="w-20 lg:w-24"
-            />
-          </Link>
+    {/* =======================
+    TOP BLACK STRIP (FIXED LIKE SS)
+======================= */}
+<div className="bg-black text-white">
+  <div className="mx-auto max-w-7xl px-4 md:px-8">
+    <div className="flex items-center justify-between py-2 text-[13px]">
+      {/* LEFT: text + number together */}
+      <div className="flex items-center gap-4">
+        <p className="hidden sm:block text-white/90">
+          Plan your Kitchen &amp; Bathroom Renovation with us! Get Free Estimate
+        </p>
 
-          {/* Nav Links Center */}
-          <div className="flex space-x-8">
-            {navLinks.map((link, index) => (
-              <div key={index} className="pb-1">
-                <NavLink href={link.path} title={link.title} />
-              </div>
-            ))}
-          </div>
-
-          {/* Social Icons Right */}
-          <div className="flex space-x-3">
-            {socialLinks.map((social, index) => (
-              <a
-                key={index}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${social.hoverColor} transition-colors`}
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* === Mobile Header === */}
-        <div className="md:hidden flex items-center justify-between py-2">
-          {/* Logo Left */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/logo.svg"
-              alt="Casa Kraft Logo"
-              width={180}
-              height={40}
-              className="w-14"
-            />
-          </Link>
-
-          {/* Hamburger Right */}
-          <button
-            onClick={() => setNavbarOpen(!navbarOpen)}
-            className="text-white"
-          >
-            {!navbarOpen ? (
-              <Image
-                src="/images/bars.svg"
-                alt="Menu Bars"
-                width={80}
-                height={10}
-                className="w-8 h-6"
-              />
-            ) : (
-              <IoMdCloseCircleOutline className="text-4xl" />
-            )}
-          </button>
-        </div>
+        <p className="font-semibold tracking-wide whitespace-nowrap">
+          +971 58 602 3677
+        </p>
       </div>
 
-      {/* === Mobile Menu Overlay === */}
-      {navbarOpen && (
-        <MenuOverlay links={navLinks}>
-          <div className="mt-6 flex justify-center space-x-5 text-white">
-            {socialLinks.map((social, index) => (
-              <a
-                key={index}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${social.hoverColor} transition-colors text-sm`}
+      {/* RIGHT: social icons */}
+      <div className="flex items-center gap-4 text-white/90">
+        {socialLinks.map((s, i) => (
+          <a
+            key={i}
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+            aria-label="social"
+          >
+            {s.icon}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+      {/* =======================
+          MAIN WHITE NAVBAR
+      ======================= */}
+      <nav className="bg-white shadow-md">
+        <div className="mx-auto max-w-7xl px-4 md:px-8">
+          {/* Desktop */}
+          <div className="hidden md:flex items-center justify-between py-4">
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-3">
+              {/* Replace with your logo image if needed */}
+              <Image
+                src="/images/logo.svg"
+                alt="Logo"
+                width={140}
+                height={44}
+                className="h-10 w-auto"
+                priority
+              />
+            </Link>
+
+            {/* Links */}
+            <div className="flex items-center gap-8">
+              {navLinks.map((l, idx) => (
+                <NavItem key={idx} href={l.path} title={l.title} />
+              ))}
+            </div>
+
+            {/* CTA (arrow + purple button like SS) */}
+            <div className="flex items-stretch">
+              <button
+                type="button"
+                className="h-12 w-12 grid place-items-center border border-black/10 bg-white hover:bg-black/5 transition-colors"
+                aria-label="Next"
               >
-                {social.icon}
-              </a>
-            ))}
+                <HiChevronRight className="text-2xl text-black/70" />
+              </button>
+
+              <Link
+                href="/contact-us"
+                className="h-12 px-7 grid place-items-center bg-[#1f4a45] text-white font-medium hover:brightness-110 transition"
+              >
+                Get Free Estimate
+              </Link>
+            </div>
           </div>
-        </MenuOverlay>
-      )}
-    </nav>
+
+          {/* Mobile */}
+          <div className="md:hidden flex items-center justify-between py-3">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo.svg"
+                alt="Logo"
+                width={120}
+                height={40}
+                className="h-9 w-auto"
+                priority
+              />
+            </Link>
+
+            <div className="flex items-center gap-2">
+              <Link
+                href="/get-free-estimate"
+                className="h-10 px-4 grid place-items-center bg-[#6b3f7a] text-white text-sm font-medium"
+              >
+                Estimate
+              </Link>
+
+              <button
+                onClick={() => setNavbarOpen((v) => !v)}
+                className="h-10 w-10 grid place-items-center border border-black/10"
+                aria-label="Toggle menu"
+              >
+                {!navbarOpen ? (
+                  <HiOutlineMenuAlt3 className="text-2xl text-black/70" />
+                ) : (
+                  <IoMdCloseCircleOutline className="text-3xl text-black/70" />
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {navbarOpen && (
+          <div className="md:hidden border-t border-black/10 bg-white">
+            <div className="mx-auto max-w-7xl px-4 py-4">
+              <ul className="flex flex-col gap-4">
+                {navLinks.map((l, idx) => (
+                  <li key={idx}>
+                    <NavItem
+                      href={l.path}
+                      title={l.title}
+                      onClick={() => setNavbarOpen(false)}
+                    />
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-5 flex items-center gap-5 text-black/70">
+                {socialLinks.map((s, i) => (
+                  <a
+                    key={i}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-black transition-colors"
+                    aria-label="social"
+                  >
+                    {s.icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
   );
 };
 

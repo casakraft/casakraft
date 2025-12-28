@@ -1,7 +1,8 @@
 import Navbar from "../Componenets/Navbar";
 import WhatsAppButton from "../Componenets/WhatsAppButton";
 import CallButton from "../Componenets/CallButton";
-import LocationMap from "../Componenets/LocationMap";
+import VHeroSection from "./Components/VHeroSection";
+import BodySection from "./Components/BodySection";
 import Footer from "../Componenets/Footer";
 
 
@@ -12,19 +13,11 @@ export default function ProjectsPage() {
       <Navbar className="absolute top-0 z-10 w-screen" />
       <WhatsAppButton />
       <CallButton />
+      <VHeroSection />
+      <BodySection />
 
-      {/* Hero Image Section */}
-    
-      <LocationMap />
 
-      {/* Floating Action Buttons 
-      <CallButton />
-      <WhatsAppButton />
-
-    <div className="bg-[#f5ede5]">
-      <ContactForm />
-      <LocationMap />
-    </div>*/}
+     
 
       {/* Footer Section */}
       <Footer />

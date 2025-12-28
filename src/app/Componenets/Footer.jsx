@@ -2,197 +2,160 @@
 
 import React from "react";
 import Image from "next/image";
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaPinterest,
-} from "react-icons/fa";
+import Link from "next/link";
+import { FaInstagram, FaLinkedin, FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-[#193c38] text-white text-sm font-light">
-      {/* Content Wrapper */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-10">
-        {/* Main Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 mb-10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12">
 
-          {/* Menu */}
+        {/* TOP GRID */}
+        <div
+          className="
+            grid grid-cols-2
+            sm:grid-cols-3
+            lg:[grid-template-columns:repeat(4,max-content)]
+            lg:justify-between
+            gap-y-10
+            gap-x-20
+            mb-12
+          "
+        >
+          {/* LINKS */}
           <div>
-            <h3 className="font-semibold mb-3 text-lg">Menu</h3>
+            <h3 className="font-semibold mb-4 text-lg">LINKS</h3>
             <ul className="space-y-2 text-gray-300">
               {[
-                "About us",
-                "Construction",
-                "News",
-                "Media",
-                "Contact us",
-                "Privacy Policy",
-                "Terms & Conditions",
-                "Cookie Policy",
-                "Accessibility Statement",
+                { label: "About Us", href: "/about" },
+                { label: "Our Process", href: "/process" },
+                { label: "Projects", href: "/projects" },
+                { label: "Media", href: "/media" },
+                { label: "Why Casa Kraft", href: "/why-casa-kraft" },
+                { label: "Contact Us", href: "/contact" },
               ].map((item, i) => (
-                <li key={i}>{item}</li>
+                <li key={i}>
+                  <Link href={item.href} className="hover:text-white transition">
+                    {item.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
 
-          {/* Interior Design */}
+          {/* SERVICES */}
           <div>
-            <h3 className="font-semibold mb-3 text-lg">Interior Design</h3>
+            <h3 className="font-semibold mb-4 text-lg">SERVICES</h3>
             <ul className="space-y-2 text-gray-300">
               {[
-                "Villa Interior Design",
-                "Apartment Interior Design",
-                "Exterior Design",
-                "Hotel Design",
-                "Retail Interior & Fit-out",
-                "Villa Renovation",
-                "Beauty Salon",
-                "Office Interior Design",
-                "Clinic Interior Design",
+                { label: "Interior Design", href: "/services/interior-design" },
+                { label: "Fit Out", href: "/services/fit-out" },
+                { label: "Renovation Dubai", href: "/services/renovation" },
+                { label: "Custom Joinery", href: "/services/joinery" },
+                { label: "Modular Kitchen & Wardrobes", href: "/services/modular-kitchen" },
+                { label: "Landscaping & Swimming Pools", href: "/services/landscaping" },
               ].map((item, i) => (
-                <li key={i}>{item}</li>
+                <li key={i}>
+                  <Link href={item.href} className="hover:text-white transition">
+                    {item.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
 
-          {/* Fit-Out */}
+          {/* EXPERTISE */}
           <div>
-            <h3 className="font-semibold mb-3 text-lg">Fit-Out</h3>
+            <h3 className="font-semibold mb-4 text-lg">EXPERTISE</h3>
             <ul className="space-y-2 text-gray-300">
               {[
-                "Villa Fit-Out",
-                "Apartment Fit-Out",
-                "Office Fit-Out",
-                "Retail Fit-Out",
-                "MEP Consultants",
-                "Barbecue Design",
-                "Outdoor Seating Design",
-                "Marble Fixing",
+                { label: "Residential Projects", href: "/expertise/residential" },
+                { label: "Commercial Projects", href: "/expertise/commercial" },
+                { label: "Villas & Apartments", href: "/expertise/villas" },
+                { label: "Offices & Retail", href: "/expertise/offices" },
+                { label: "Turnkey Solutions", href: "/expertise/turnkey" },
+                { label: "Outdoor Design", href: "/expertise/outdoor" },
               ].map((item, i) => (
-                <li key={i}>{item}</li>
+                <li key={i}>
+                  <Link href={item.href} className="hover:text-white transition">
+                    {item.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
 
-          {/* Furniture */}
+          {/* CONTACT */}
           <div>
-            <h3 className="font-semibold mb-3 text-lg">Furniture</h3>
+            <h3 className="font-semibold mb-4 text-lg">CONTACT US</h3>
             <ul className="space-y-2 text-gray-300">
-              {[
-                "Home Furniture",
-                "Outdoor Furniture",
-                "Dressing Room",
-                "Office",
-                "Children’s Room",
-                "Bathroom",
-                "Living Room",
-                "Kitchen",
-              ].map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
+              <li>Dubai, UAE</li>
+
+              <li>
+                <a href="tel:+971586023677" className="hover:text-white transition">
+                  +971 58 602 3677
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:info@casakraft.ae" className="hover:text-white transition">
+                  info@casakraft.ae
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://wa.me/971586023677"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition"
+                >
+                  WhatsApp
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition"
+                >
+                  Instagram
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition"
+                >
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
-
-          {/* Landscape */}
-          <div>
-            <h3 className="font-semibold mb-3 text-lg">Landscape</h3>
-            <ul className="space-y-2 text-gray-300">
-              {[
-                "Landscape Design",
-                "Gardening",
-                "Swimming Pools",
-                "Swimming Pools Designs",
-                "Swimming Pool Construction",
-                "Infinity Pools",
-                "Plunge Pools",
-                "Pools Design Gallery",
-              ].map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="font-semibold mb-3 text-lg">Services</h3>
-            <ul className="space-y-2 text-gray-300">
-              {[
-                "Villa Interior Design Dubai",
-                "Top Quality Fit-out Service",
-                "Apartment Interior Design",
-                "Furniture, Light, Accessories",
-                "Landscape Design Dubai",
-                "Exterior Design",
-                "Hotel Interior Design",
-              ].map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div>
-
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-600 pt-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        {/* BOTTOM BAR */}
+        <div className="border-t border-gray-600 pt-8 flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
+          <Image src="/images/logo.svg" alt="CasaKraft Logo" width={55} height={60} />
 
-          {/* Logo */}
-          <Image
-            src="/images/logo.svg"
-            alt="CasaKraft Logo"
-            width={50}
-            height={60}
-          />
-
-          {/* Contact Details */}
-          <div className="text-gray-400 text-sm space-y-1">
-            <p>
-              <a
-                href="mailto:info@casakraftinteriors.ae"
-                className="hover:text-white transition"
-              >
-                info@casakraftinteriors.ae
-              </a>
-            </p>
-
-            <p>
-              <span className="text-gray-300 font-medium">Mobile:</span>{" "}
-              <a
-                href="tel:+971586023677"
-                className="hover:text-white transition"
-              >
-                +971 58 602 3677
-              </a>
-            </p>
-
-            <p>
-              <span className="text-gray-300 font-medium">Landline:</span>{" "}
-              <a
-                href="tel:++97144208855"
-                className="hover:text-white transition"
-              >
-                +971 4 4208855
-              </a>
-            </p>
-          </div>
-
-          {/* Address */}
-          <p className="text-gray-400 text-sm max-w-xs">
+          <p className="text-gray-400 text-sm max-w-md">
             The Curve Building, Showroom G11, Sheikh Zayed Service Road, Dubai, UAE
           </p>
 
-          {/* Copyright */}
           <p className="text-gray-400 text-sm">
             © 2002–{new Date().getFullYear()} Casa Kraft Interiors
           </p>
 
-          {/* Social Icons */}
-          <div className="flex items-center gap-4 text-lg text-gray-400">
-            <FaInstagram className="hover:text-white cursor-pointer transition" />
-            <FaLinkedin className="hover:text-white cursor-pointer transition" />
-            <FaPinterest className="hover:text-white cursor-pointer transition" />
+          <div className="flex gap-4 text-lg text-gray-400">
+            <a className="hover:text-white transition"><FaInstagram /></a>
+            <a className="hover:text-white transition"><FaLinkedin /></a>
+            <a className="hover:text-white transition"><FaPinterest /></a>
           </div>
-
         </div>
       </div>
     </footer>

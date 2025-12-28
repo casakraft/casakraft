@@ -7,9 +7,9 @@ import Link from "next/link";
 const services = [
   { title: "Villa Interior Design", image: "/images/villa-design-dubai.png", href: "/villa-interior-design-dubai" },
   { title: "Apartment Interior Design", image: "/images/apartment-interior-design.png", href: "/apartment-interior-design-dubai" },
-  { title: "Penthouse Interior Design", image: "/images/penthouse-interior-design.png", href: "/" },
-  { title: "Kitchen Interior Fitout", image: "/images/kitchen-interior-design.png", href: "/" },
-  { title: "Beach Front Interior Design", image: "/images/beach-front-design.png", href: "/" },
+  { title: "Renovation Dubai", image: "/images/penthouse-interior-design.png", href: "/renovation-dubai" },
+  { title: "Kitchen Renovation Dubai", image: "/images/kitchen-interior-design.png", href: "/" },
+  { title: "Joinery", image: "/images/beach-front-design.png", href: "/" },
   { title: "Landscape Design Dubai", image: "/images/landscape-design.png", href: "/" },
   { title: "Villa Renovation Dubai", image: "/images/villa-renovation.png", href: "/" },
   { title: "Apartment Renovation Dubai", image: "/images/apartment-renovation.png", href: "/" },
