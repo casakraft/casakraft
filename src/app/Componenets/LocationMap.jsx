@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
 
 const SERVICES = [
   "Bathroom design & Renovation",
@@ -31,8 +30,6 @@ const SERVICES = [
 ];
 
 const LocationMap = () => {
-  const router = useRouter();
-
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -101,10 +98,10 @@ const LocationMap = () => {
         throw new Error(data?.error || "Failed to send. Please try again.");
       }
 
-      // optional: keep a brief message (won't be seen much because of redirect)
+      // Optional brief message (user may not see due to redirect)
       setSuccessMsg("Thanks! Redirecting...");
 
-      // reset form (optional)
+      // Reset form (optional)
       setForm({
         firstName: "",
         lastName: "",
@@ -114,8 +111,9 @@ const LocationMap = () => {
         otherService: "",
       });
 
-      // ✅ Redirect to thank-you page (conversion page)
-      router.push("/thank-you");
+      // ✅ Hard redirect to thank-you page (most reliable)
+      window.location.assign("/thank-you");
+      return;
     } catch (err) {
       setErrorMsg(err?.message || "Something went wrong while sending.");
     } finally {
