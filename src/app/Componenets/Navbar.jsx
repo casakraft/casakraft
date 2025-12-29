@@ -160,8 +160,8 @@ const Navbar = () => {
 
             <div className="flex items-center gap-2">
               <Link
-                href="/get-free-estimate"
-                className="h-10 px-4 grid place-items-center bg-[#6b3f7a] text-white text-sm font-medium"
+                href="/contact-us"
+                className="h-10 px-4 grid place-items-center bg-[#1e4a45] text-white text-sm font-medium"
               >
                 Estimate
               </Link>
