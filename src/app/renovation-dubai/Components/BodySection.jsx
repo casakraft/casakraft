@@ -26,7 +26,7 @@ const Container = ({ className = "", children }) => (
 const PrimaryBtn = ({ href = "#", children, className = "" }) => (
   <Link
     href={href}
-    className={`inline-flex items-center justify-center rounded-sm bg-[#6b3f7a] px-6 py-3 text-sm font-medium text-white hover:brightness-110 transition ${className}`}
+    className={`inline-flex items-center justify-center rounded-sm bg-[#1e4a45] px-6 py-3 text-sm font-medium text-white hover:brightness-110 transition ${className}`}
   >
     {children}
   </Link>
