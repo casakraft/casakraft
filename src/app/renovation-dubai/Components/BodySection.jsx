@@ -108,7 +108,7 @@ export default function BodySection() {
       { title: "Office Renovation", img: "/images/bulgari-2.png", href: "/" },
       { title: "Kitchens", img: "/images/marina-8.png", href: "/" },
       { title: "Bathrooms", img: "/images/bluewaters-5.png", href: "/" },
-      { title: "Flooring", img: "/images/trd-9.png", href: "/flooring" },
+      { title: "Flooring", img: "/images/flooring.png", href: "/flooring" },
       { title: "Wardrobes & Cabinets", img: "/images/ca-6.png", href: "/" },
       { title: "Villa Extension", img: "/images/vl-7.png", href: "/" },
       { title: "Landscape", img: "/images/landscape-design.png", href: "/" },
