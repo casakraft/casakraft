@@ -418,7 +418,7 @@ export default function BodySection() {
             Our Projects
           </h2>
 
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-3">
             {projectMosaic.map((p, idx) => (
               <div
                 key={idx}
