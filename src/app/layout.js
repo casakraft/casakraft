@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Residential Interior Design Company in Dubai - Casa Kraft Interiors',
+  title: 'Interior Design Company in Dubai - Casa Kraft Interiors',
   description:
     'Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.',
   metadataBase: new URL('https://casakraftinteriors.ae/'),
