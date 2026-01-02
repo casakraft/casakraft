@@ -42,14 +42,15 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+                Professional Painting Services Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+                Casa Kraft provides professional painting services Dubai for both interior and exterior spaces. 
+                Our skilled team of professional house painters is dedicated to enhancing villas, apartments, offices 
+                and commercial spaces with precision and style. From interior painting of living rooms, bedrooms and 
+                office interiors to exterior walls painting & protection services, we deliver complete solutions 
+                designed around your property’s specific needs.
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -76,129 +77,139 @@ export default function BodySection() {
       {/* 3) After this: Benefits of apartment renovation (already vertical) */}
       <section className="bg-white">
         <div className="max-w-[780px] mx-auto px-4 sm:px-6 lg:px-0 pt-14 pb-10">
-          <h2
-            className="text-center font-semibold text-[24px] sm:text-[30px]"
-            style={{ color: PURPLE }}
-          >
-            Benefits of Apartment Renovation in Dubai
-          </h2>
 
-          <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
-            <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
-            </p>
-
-            <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
-            </p>
-          </div>
-
-          <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
-            </h3>
+          <div className="mt-5">
+            <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+           Our Interior and Exterior Painting Services for Homes & Offices
+            </h2>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
+              Whether you require wall painting for apartments, villas and offices or interior door painting, Casa Kraft 
+              guarantees flawless results with durable, long-lasting finishes. By using premium quality, eco friendly 
+              paints, our home painting services Dubai, UAE help protect your surfaces while giving your spaces a 
+              fresh and elegant appearance.
+
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
+              → Villa Painting Services Dubai
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
-              </p>
-
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
+                As professional villa painters and painting contractors in Dubai, we offer the top notch 
+                villa painting services in Dubai. Our professional painters for villas & apartments 
+                carefully prepare and treat every surface to deliver a smooth finish that lasts. 
+                From bold accent walls through subtle neutrals our house and villa painting services 
+                enhance the look and extend the life of your home by protecting it against the elements
               </p>
             </div>
           </div>
 
-          <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
+          <div className="mt-5">
+            <h3 className="mt-5  font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Apartment Painting Services in Dubai
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
-              </p>
-
-              <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
+               All our apartment painting services in Dubai either take up interior or exterior services. 
+               We operate wall painting services in Dubai and interior painting services with great care, 
+               ensuring that all apartments receive their due share of attention to detail, proper color 
+               applications and a finish that is second to none. Casa Kraft’s team is experienced in 
+               painting all types of apartment surfaces, including doors, ceilings, walls and trims.
               </p>
             </div>
 
-            <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
+           <h3 className=" mt-5 font-semibold text-[18px]" style={{ color: PURPLE }}>
+             → Commercial Painting Services Dubai
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               Casa Kraft provides commercial painting solutions for offices, retail, restaurants and industrial 
+               sectors. Our expert team will work with efficacy to ensure that there is least disruption to the 
+               business being carried out. Starting from exterior commercial painting to interior commercial 
+               painting, our expertise will provide you with a clean, long lasting and beautiful finish that 
+               will represent the image of your business.
+              </p>
+            </div>
+
+             <h3 className="mt-5 font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Interior Painting Services Dubai
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               With our interior painting services, Casa Kraft aims to create colorful and personalized spaces 
+               for you within your home or office. Ceilings, walls, doors, trims and feature walls can all be 
+               painted using high quality paint by us. Professional painting services in Dubai also include 
+               color consultation for your interior, catering to your classic, modern and contemporary design 
+               preferences when it comes to color schemes.
+              </p>
+            </div>
+           
+
+             <h3 className=" mt-5 font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Exterior Painting Services
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               Casa Kraft's exterior painting services Dubai ensure that your property is well painted and protected 
+               from the harsh weather in Dubai. Our services include exterior painting & protection using the 
+               best paints that are weather resistant. Whether you are painting your villas, apartments or 
+               commercial spaces, we provide professional painting services by our expert painters.
+              </p>
+            </div>
+
+             <h3 className="mt-5 font-semibold text-[18px]" style={{ color: PURPLE }}>
+             → Wall Painting Services in Dubai
+
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               Our wall painting services in Dubai range from customized painting solutions for residential and 
+               commercial walls to feature walls, textured finishes, decorative painting and traditional wall 
+               painting to suit one's style. Casa Kraft’s wall painting for apartments, villas and offices 
+               ensures flawless results that enhance the ambiance and value of your property.
+              </p>
+            </div>
+
+
+            <div className="mt-5">
+              <h2 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+                Why Choose Casa Kraft for Painting Services in Dubai
+              </h2>
+             <p className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>Casa Kraft stands among the top professional painting services in Dubai simply because of how we 
+              merge expertise, the best materials and a personal approach in every project. Whether it's about 
+              home painting services in Dubai,  villa painting services or commercial painting services, our 
+              team is delivering:</p>
 
               <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
+                  High-quality finishes both inside and outside.
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
+                  Use of eco-friendly and durable paints.
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
+                  Professional villa & apartment painters.
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
+                  Personalized color consultation and design advice.
                 </li>
               </ul>
 
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
-              </p>
-
-              <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
+                We serve key areas across Dubai including Dubai Marina, Jumeirah, Business Bay, 
+                Downtown and Emirates Hills making sure each project meets the highest standards.
               </p>
             </div>
           </div>
@@ -215,16 +226,12 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
+        q: "What are professional painting services in Dubai?",
+        a: "Professional painting services offered in Dubai include the complete painting process for apartments, offices and villas. The services include painting services for interior, exterior, wall painting services in Dubai, villa painting services and apartment painting services in Dubai, using the best paints available and the latest techniques to produce the best results.",
       },
       {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
-      },
-      {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
+        q: "Can Casa Kraft handle painting services for apartments and commercial buildings?",
+        a: "Absolutely. Casa Kraft deals in Dubai apartment painting services, as well as office, commercial  painting services. When you opt for Casa Kraft’s wall painting services in Dubai or opt for interior painting services, you get professional, clean and highly durable finishes that increase the aesthetic as well as monetary value of your real estate.",
       },
     ],
     []

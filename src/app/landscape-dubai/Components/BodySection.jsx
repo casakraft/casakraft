@@ -42,14 +42,20 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+                Landscape Dubai Services
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+                At Casa Kraft our expertise in landscape design in Dubai is of the highest quality transforming 
+                outdoor spaces into beautiful, functional and sustainable spaces. At Casa Kraft, we are known to 
+                be one of the best landscaping companies in Dubai, aiming to deliver luxurious outdoor spaces, 
+                biophilic spaces and nature inspired escapes.
+                <br /><br />
+                At Dubai, our team of professional landscape architects and designers combines creativity with 
+                expertise to provide completely personalized solutions when it comes to villas, corporate 
+                developments or hospitality projects. If it is an entire landscape design renovation that 
+                you require in Dubai, at Casa Kraft, we 
+                provide eternal landscapes that will suit Dubai perfectly.
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -80,125 +86,122 @@ export default function BodySection() {
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-            Benefits of Apartment Renovation in Dubai
+            Get Landscaping Services from a Leading Landscaping Contractor in Dubai
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
+              Casa Kraft is a leading landscaping contractor company catering entirely to the 
+              needs of Dubai by providing end-to-end design, fit-out and construction services. 
+              Being an expert fit-out and landscaping company, we undertake every aspect of the 
+              process from conceptualization to implementation.
             </p>
 
             <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
+              Our team assesses each site thoughtfully, creates custom concepts, and provides 
+              efficient implementation. Whether it is planting and paving to lighting and outdoor 
+              structures, our landscaping and gardening services provide quality consistency in 
+              every project.
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
+             → Residential and Villa Landscape Dubai
             </h3>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
+              Our villa landscape Dubai services will remake your private garden into an oasis of 
+              serenity and luxury. We are personalized outdoors with respect to your lifestyle. 
+              Whether you want a peaceful retreat in your garden, an outdoor living area for the 
+              family, or even a resort style space in pure luxury.
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
+             → Commercial Landscape Dubai
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
-              </p>
-
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
+              Our commercial landscape Dubai solutions help enhance the visual identity and functional 
+              aspects of corporate, retail, hospitality, and mixed-use developments.By incorporating 
+              biophilic spaces, shaded walkways, and green areas, we can assist commercial developments 
+              in creating healthier space while also making it engaging and maintaining ease of maintenance.
               </p>
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
+             → Soft and Hard Landscaping in Dubai
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
-              </p>
-
-              <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
+              In Casa Kraft, soft and hard landscaping is used to combine elements of nature and architecture in 
+              landscaping. Soft landscaping is performed using grass, plants, trees, and flowering plants to beautify 
+              landscaping and give color to the landscape Dubai. Hard landscaping involves the use of patios, pathways, decks, 
+              retaining walls and architectural elements in landscaping.
               </p>
             </div>
 
-            <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
+            <h3 className=" mt-5 font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Landscape Lighting Design Dubai
+            </h3>
 
-              <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
-                </li>
-              </ul>
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+              Our landscape lighting systems help accentuate the beauty of the outdoors in the night as well as provide 
+              safety and functionality. Where the design is concerned, the lighting should accentuate the features of the 
+              architecture, plants, walkways, as well as water features.
+              </p>
+            </div>
+
+             <h3 className=" mt-5 font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Pergolas, Shades and Outdoor Living Spaces
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+              We offer the design and installation of custom made pergolas and shades to ensure comfort from the sun in 
+              Dubai while giving a touch of architectural beauty to the structure. The outdoor living spaces provided by 
+              us include outdoor lounges, entertainment areas, BBQ and outdoor kitchens and spaces designed for family 
+              gatherings.
+              </p>
+            </div>
+           
+           <h3 className="mt-5 font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Water Features and Swimming Pool Integration
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+             Casa Kraft combines water features like fountains, waterfalls and reflection pools to give the outside space 
+             an essence of serenity and exclusivity.  Our swimming pool and landscape  give the pool an aesthetic of unity 
+             with the garden and other elements around it, thus giving the effect of an entire resort.
+              </p>
+            </div>
+            <div className="mt-10">
+              <h2  className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+                Our Landscape Dubai Design and Construction Process
+              </h2>
 
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
-              </p>
+                Our services start with consultation and site analysis. We then proceed with concept design and planning. 
+                Once this is approved our services entail landscape construction. We ensure that this is done well and on 
+                schedule.
 
+              </p>
+            <h2  className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+                Why Choose Casa Kraft Interiors
+              </h2>
               <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
+                Casa Kraft stands out, ranking as one of the top 10 landscape companies in Dubai due to its adherence to 
+                design excellence, quality materials, sustainability and customer satisfaction. Individual approach, 
+                attention to the smallest details and fluently delivered projects make us a preferred choice for 
+                customers who seek the best landscape company in Dubai.
+
               </p>
             </div>
           </div>
@@ -215,16 +218,24 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
+        q: "What are landscape design services in Dubai?",
+        a: "The services offered in landscape architecture in Dubai are planning, design, and execution of the villa landscape gardens, commercial landscapes and luxury outdoor spaces. These services vary from site analysis to custom designs, soft landscaping, hard landscaping, landscape illumination, water features, pergolas, sustainable landscape designs to the integration of swimming pools with landscapes in Dubai.",
       },
       {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
+        q: "Why is Casa Kraft considered one of the best landscaping companies in Dubai?",
+        a: "Casa Kraft has also been identified as one of the most well known landscaping firms in Dubai because of the expertise of their landscape architects and designers, bespoke design philosophy, use of high quality materials, emphasis on sustainable landscape designs and end-to-end services related to landscape design, fitouts and landscape construction.",
       },
       {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
+        q: "Do you offer villa landscape design and luxury landscaping services in Dubai?",
+        a: "Yes, Casa Kraft is known to have specialized in the designs of villas and landscaping in Dubai to provide customers with customized outdoor space designs, nature inspired getaways, biophilic designs, pergolas and shades, outdoor kitchens, pools and landscape designs and water features.",
+      },
+      {
+        q: "What is included in commercial landscape design services in Dubai?",
+        a: "Commercial landscape architecture in Dubai involves the designing and implementation of outdoor space in offices, retail, hotels and communities. The trends in landscape architecture in the commercial setting include functionality, branding, biophilic space and sustainability.",
+      },
+      {
+        q: "How much do landscape design services in Dubai cost?",
+        a: "Landscaping design cost in Dubai relies on factors like size, design complexity, material, as well as incorporation of landscape lighting, water features, pergolas or swimming pools. This is where Casa Kraft offers clear pricing with tailored quotes based on consultation following a visit.",
       },
     ],
     []

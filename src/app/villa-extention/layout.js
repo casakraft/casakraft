@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Renovation Dubai - Best Renovation Company - Casa Kraft Interiors",
+  title: " Best Villa Extension Services in Dubai - Casa Kraft Interiors",
   description:
-    "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
+    "Expert villa extension services in Dubai by Casa Kraft Interiors. Structural extensions, custom designs, approvals & luxury finishes for villas. Visit Now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/villa-lantana',

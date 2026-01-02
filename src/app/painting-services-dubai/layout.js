@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Renovation Dubai - Best Renovation Company - Casa Kraft Interiors",
+  title: "Professional Painting Services Dubai",
   description:
-    "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
+    "Get expert interior & exterior painting services in Dubai by Casa Kraft. We paint villas, apartments & offices. Contact Us",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/villa-lantana',
+    canonical: '/painting-services-dubai',
   },
 };
 

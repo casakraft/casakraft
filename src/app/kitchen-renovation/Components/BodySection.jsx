@@ -42,14 +42,21 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+                Kitchen Renovation Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+              Casa Kraft Interiors is known as the Best Kitchen Renovation Company in Dubai, providing 
+              luxurious kitchen renovations as well as tailored kitchen renovation services for 
+              contemporary homes. Whether it is a cozy apartment, a luxurious villa, or a commercial 
+              space, Casa Kraft Interiors is a professional team providing kitchen renovations & 
+              remodeling services that can help create a functional, beautiful, and inspirational 
+              kitchen from an ordinary one. 
+              <br />
+
+               It may be a luxury kitchen renovation at Palm Jumeirah, an Emirates Hills renovation, or 
+               a #1 kitchen renovation at Downtown Dubai, Casa Kraft Interiors is your dependable partner 
+               for designing & renovating your dream kitchen.
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -80,127 +87,155 @@ export default function BodySection() {
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-            Benefits of Apartment Renovation in Dubai
+           Our Kitchen Renovation Services in Dubai
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
-            </p>
-
-            <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
+             Our services for a kitchen renovation in Dubai encompass every aspect of kitchen design in Dubai, 
+             making us one of the best kitchen renovation companies in Dubai. Right from planning our services 
+             for a kitchen renovation in Dubai till its execution, we manage every aspect of your kitchen 
+             renovation in Dubai.
             </p>
           </div>
 
           <div className="mt-10">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
+             → Full Kitchen Renovation & Remodeling
             </h3>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
+              As a leading kitchen renovation company in Dubai, Casa Kraft Interiors provides 
+              full kitchen renovation services such as wall, ceiling, floor, and cabinet 
+              renovation. At Casa Kraft Interiors, we work to provide every customer with 
+              an exact kitchen renovation service. Whether it is an apartment or a complete 
+              luxury kitchen renovation in Palm Jumeirah.
             </p>
           </div>
 
           <div className="mt-10">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
+             → Modular Kitchens & Custom Cabinets
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
-              </p>
-
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
+                We provide tailored kitchen renovations solutions with bespoke modular kitchens and 
+                small kitchen cabinets for efficient and aesthetically pleasing design. Our design 
+                solutions are precisely developed for maximizing storage space   and are among the 
+                best in Dubai kitchens today.
               </p>
             </div>
           </div>
 
           <div className="mt-10">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
+              → Premium Kitchen Appliances & Fix
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
-              </p>
-
-              <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
+               Our kitchen renovation contractors use modern kitchen appliances in Dubai, 
+               alongside high end kitchen fixtures, to provide you with practical, high end 
+               kitchen designs. With smart ovens, induction cooktops, sleek sinks, and high 
+               end faucets, our Casa Kraft Interiors services ensure that you have a modern 
+               kitchen that fits the next generation.
               </p>
             </div>
 
-            <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Luxury Kitchens & High End Finishes
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               For homeowners seeking luxury kitchen renovation in Palm Jumeirah or Emirates Hills, 
+               our team provides customized solutions with the best materials, marble top finishes, 
+               designer cabinets and contemporary lighting systems. A kitchen renovation job done in 
+               Palm Jumeirah or Downtown Dubai carries an essence of elegance, utility as well as 
+               modernism with each piece of work done.
+              </p>
+            </div>
+
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+             → Smart Sustainable Kitchen Upgrades
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               The Smart Kitchen Our areas of specialization include expert kitchen renovation 
+               services in Dubai, utilizing smart renovation Dubai techniques that include energy 
+               efficient sinks, automated lighting and an internet of things kitchen. Sustainability 
+               is also an integral part of this process, using ecofriendly materials as well as water
+                saving fixtures.
+              </p>
+            </div>
+
+            <div className="mt-5">
+              <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+               Our Kitchen Renovation Process
+
+              </h2>
 
               <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
+                  <b>Consultation & Site Assessment: </b>Analyze your kitchen space to determine your objectives.
+
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
+                  <b>Design & 3D Visualization:</b>  Detailed designs to help visualize your Dubai kitchen renovation project.
+
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
+                 <b> Material Selection & Budget Planning:</b>  Choose high quality, robust and fashionable materials.
+
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
+                 <b> Approval & Permits: </b> Deal with any approval required for kitchens in villas or apartments in Dubai
+                </li>
+
+                <li className="flex gap-3">
+                <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                <b> Construction & Remodeling: </b> Expert kitchen remodeling services in Dubai with attention to every detail.
+                </li>
+
+                <li className="flex gap-3">
+                <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                <b> Appliance & Fixture Installation:</b>  Install high quality kitchen appliances Dubai and fixtures
+                </li>
+
+                <li className="flex gap-3">
+                <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                <b> Quality Inspection & Handover:</b> Your dream renovation must be of superior quality.
                 </li>
               </ul>
 
-              <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
-              </p>
-
-              <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
-              </p>
             </div>
+
+            <div className="mt-10">
+            <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+             Why Choose Casa Kraft Interiors for Kitchen Renovation in Dubai
+
+            </h2>
+            <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
+              Casa Kraft Interiors is your reliable kitchen renovation services provider, offering the expert 
+              kitchen renovation in Dubai, whether in small kitchens, luxurious kitchens, or any type of 
+              kitchen in between. We also pride ourselves in providing customized kitchen renovation services 
+              to suit every family, making sure our designs are functional, fashionable, and in-tune with every 
+              family's ideas. 
+
+              <br /> <br />
+              We also serve all the key areas in Dubai, such as Business Bay, Downtown Dubai, Jumeirah, Palm 
+              Jumeirah, Emirates Hills, and Dubai Marina, making Casa Kraft Dubai kitchen renovations & remodels 
+              one of the best choices to cater to the Dubai kitchen renovation needs of everyone. At Casa Kraft 
+              Interiors, we integrate modern means in kitchen renovation, combine this with our excellent 
+              craftsmanship, quality, and price, and guarantee on time delivery, making us the best kitchen 
+              renovation in Dubai.
+            </p>
+          </div>
           </div>
         </div>
       </section>
@@ -215,16 +250,20 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
+        q: "How much does it cost to renovate a kitchen in Dubai?",
+        a: "The cost of kitchen renovation in Dubai depends on the materials used, size of the kitchen, appliances, and whether you are taking a standard or luxury kitchen renovation service. At Casa Kraft Interiors, kitchen renovation prices are customized according to your design, layout, and finish selections.",
       },
       {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
+        q: "What Types Of Kitchen Renovation Services Do You Offer?",
+        a: "Casa Kraft Interiors offers full kitchen renovation and remodeling services in Dubai including modular kitchens, custom cabinets, kitchen layout redesign, appliance installation, lighting upgrades, and luxury kitchen renovations for villas, apartments, and penthouses.",
       },
       {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
+        q: "Can You Help With Kitchen Design And Layout Planning?",
+        a: "Yes, Casa Kraft Interiors provides professional kitchen design and layout planning in Dubai, including space optimization, 3D kitchen visualization, and material selection to ensure a functional and stylish kitchen renovation in Dubai.",
+      },
+       {
+        q: "Which Is The Best Kitchen Renovation Company In Dubai?",
+        a: "Casa Kraft Interiors is one of the best kitchen renovation companies in Dubai and the UAE, known for customized designs, premium materials, expert craftsmanship, transparent pricing, and on-time delivery for both luxury and small kitchen renovations.",
       },
     ],
     []

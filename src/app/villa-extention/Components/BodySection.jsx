@@ -42,14 +42,20 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+               Villa Extension Services in Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+                Looking for expert villa extension services in Dubai? Casa Kraft Interiors, the No.1 Villa Extension 
+                Company Dubai, offers premium villa extension services for both commercial and residential properties, 
+                combining modern design, structural expertise, and luxury finishes. If you desire to elevate your 
+                living space, renovate, or create personalized additions, our expert designers provide the best 
+                villa extension services in Dubai specific to your needs.
+
+                <br /><br />
+                We are experts in villa structural extensions, villa extensions in Dubai, and Villa Extension and 
+                Alteration Services in Dubai, offering high-end solutions from concept development and design to 
+                construction and interior fit-out. 
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -80,125 +86,132 @@ export default function BodySection() {
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-            Benefits of Apartment Renovation in Dubai
+           Why Choose Casa Kraft for Villa Extension?
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
-            </p>
-
-            <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
+              As a leading Villa Extension Company in Dubai, Casa Kraft Interiors brings years of expertise and 
+              a strong commitment to excellence. Our luxury villa extension services in Dubai cover fully bespoke 
+              interior designs that enhance your living style, the use of premium quality materials and durable 
+              construction for quality villa extension in Dubai, transparent pricing, and on-time delivery. 
+              <br /><br />
+              We manage each step of the project, from elegant design, planning, and permit approvals to high-end 
+              Villa Extension and Modifications, covering planning, interior fit-out, and finishing touches. 
+              Our focus is to deliver the best villa extension services in Dubai that flawlessly integrate 
+              with your property while elevating both its practicality and value.
             </p>
           </div>
 
-          <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
-            </h3>
+          <div className="mt-5">
+            <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+             Our Villa Extension Services In Dubai
+            </h2>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
+             No Matter if it’s a villa extension in Dubai for additional bedrooms, home offices, kitchens, or living 
+             areas, we provide bespoke villa extension services that match your property’s style. Our team integrates 
+             modular designs, smart home solutions, and high-end finishes for quality villa extension in Dubai that 
+             elevates your home’s value and comfort.
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
+             → Design & Planning
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
-              </p>
-
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
+              We design specific plans for villa extension services in Dubai, covering 3D visualization, space optimization, 
+              and align with Dubai building regulations.
               </p>
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
+              → Structural Extensions
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
-              </p>
-
-              <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
+                Our villa structural extensions ensure safe and durable additions, from extra rooms and floors to complete 
+                property expansions.
               </p>
             </div>
 
-            <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
+
+           <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Interior Fit-Out & Finishing
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               Casa Kraft provides premium finishing services, including flooring, ceilings, walls, and lighting, ensuring 
+               your luxury villa extension services in Dubai look seamless and elegant.
+              </p>
+            </div>
+
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Doors & Windows Installation
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               We install high-quality glass doors, sliding doors, and windows for villa extension and modifications, 
+               enhancing aesthetics, energy efficiency, and natural light.
+               </p>
+            </div>
+
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Villa Extension Renovations
+            </h3>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               We also offer Villa Extension and Alteration Services in Dubai, upgrading existing extensions or 
+               modifying layouts for modern living.
+               </p>
+            </div>
+            
+
+            <div className="mt-5">
+              <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+                Our 3-Step Villa Extension Process
+              </h2>
 
               <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
-                <li className="flex gap-3">
+                <li>
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
+                  <b>Consultation & Assessment — </b> Understand your goals and evaluate feasibility for villa extension services 
+                  in Dubai
                 </li>
-                <li className="flex gap-3">
+               <li>
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
+                  <b>Design & Approvals — </b>Plan and obtain permits for Villa Extension Dubai projects.
                 </li>
-                <li className="flex gap-3">
+                <li>
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
+                 <b> Construction & Interior Fit-Out —</b> Execute with precision and high-quality finishes for villa extensions 
+                 in Dubai.
                 </li>
               </ul>
 
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
+               Clients believe us for  Villa Extension and Modifications because of our many years of experience, premium 
+               quality materials and commitment to excellence. Every villa extension in Dubai is managed by skilled project 
+               managers, making sure smooth execution, on-time delivery, and long lasting quality. With Casa Kraft, you get 
+               the best villa extension services in Dubai, backed by superior craftsmanship and a reputation as the No.1 Villa 
+               Extension Company Dubai.
               </p>
-
+              <h2 className=" mt-6 text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+                Get the Best Villa Extension Services in Dubai
+              </h2>
               <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
+                Upgrade your home with Casa Kraft Interiors’ Villa Extension Services in Dubai. From structural extensions 
+                to interior fit-out, we deliver quality villa extensions in Dubai that combine luxury, functionality, and style. 
+                Contact Casa Kraft Interiors today for a consultation and discover why we’re the No.1 Villa Extension Company 
+                Dubai for residential and commercial properties.
               </p>
             </div>
           </div>
@@ -215,16 +228,20 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
+        q: " How long does a villa extension take in Dubai?",
+        a: "Most villa extension projects in Dubai take 8–16 weeks depending on size and complexity.",
       },
       {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
+        q: "Can I customize the villa extension layout?",
+        a: "Yes, our Villa Extension and Alteration Services in Dubai are fully customizable to suit your needs and lifestyle.",
       },
       {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
+        q: "Do you handle permits for villa extensions?",
+        a: "Yes, Casa Kraft manages all approvals and compliance for villa extension services in Dubai. ",
+      },
+      {
+        q: "Can you renovate or modify an existing villa extension?",
+        a: "Absolutely, we provide Villa Extension and Modifications to upgrade or alter existing spaces with modern design and finishes.",
       },
     ],
     []

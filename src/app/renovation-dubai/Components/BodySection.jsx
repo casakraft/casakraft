@@ -112,7 +112,7 @@ export default function BodySection() {
       { title: "Wardrobes & Cabinets", img: "/images/ca-6.png", href: "/wardrobes-and-cabinets" },
       { title: "Villa Extension", img: "/images/vl-7.png", href: "/villa-extention" },
       { title: "Landscape", img: "/images/landscape-design.png", href: "/landscape-dubai" },
-      { title: "Painting", img: "/images/boulevard-5.png", href: "/painting-dubai" },
+      { title: "Painting", img: "/images/boulevard-5.png", href: "/painting-services-dubai" },
       { title: "Windows & Doors", img: "/images/damac-5.png", href: "/windows-and-doors" },
     ],
     []

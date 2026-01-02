@@ -42,14 +42,19 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+                Bathroom Renovation Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+                Casa Kraft Interiors is one of the most reliable bathroom renovation contractors Dubai, 
+                and we provide the best bathroom renovations and bathroom remodeling Dubai. Whether it 
+                be a bathroom remodeling Dubai or bathroom renovation Dubai, we provide the best bathroom 
+                facilities that include a modern bathroom design and bathroom fittings that are best suitable 
+                to the bathroom design. 
+                <br /><br />
+                 If you are looking to get a luxury bathroom renovation Palm Jumeirah, 
+                bathroom renovation  Downtown Dubai , or bathroom renovation Dubai, then just contact us and 
+                get the best bathroom remodeling.
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -80,127 +85,121 @@ export default function BodySection() {
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-            Benefits of Apartment Renovation in Dubai
+           Our Bathroom Renovation Services in Dubai
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
+              The bathroom renovation Dubai solutions we provide at Casa Kraft Interior cover all aspects of a bathroom redesign and make us one of the best providers of bathroom renovation Dubai services. Beginning from designing to execution and comprising all activities such as flooring, tiling, fixtures, cabinets, and lights of a bathroom renovation and fit-out process, Casa Kraft Interior is known to be a bathroom renovation company offering a perfect mix of design and functionality to every bathroom makeover project.
             </p>
 
-            <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
-            </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
+             → Full Bathroom Renovation & Remodeling
             </h3>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
+              Being one of the best bathroom renovation companies in Dubai, at Casa Kraft Interiors, we provide our clients with a full bathroom renovation service in Dubai, including villa bathroom renovations and bathroom renovations for apartments. Whether you require bathroom remodel in Dubai or require a luxury bathroom renovation company in Dubai, our company is committed to providing a level of excellence. We manage every detail, from plumbing upgrades and tiling to installing bathroom fitout contractors Dubai solutions for cabinets, vanities, and shower enclosures.
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
+             → Partial Bathroom Renovation & Upgrades
+
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
+                As a service for our customers, we offer a bathroom renovation in Dubai solution which includes the installation, renovation, and upgrade of bathroom fixtures, tiles, as well as bathroom vanity renovation in Dubai. Our bathroom remodeling companies in Dubai are experts in transforming old bathrooms into functional, modern, and trendy bathrooms, regardless of whether it is in a small apartment or villa bathroom.
               </p>
 
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
-              </p>
+             
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
+             → Luxury Bathroom Renovation
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
-              </p>
-
-              <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
+               At Casa Kraft Interiors, we are known as one of the best bathroom design Dubai service providers for our customers who require a design that exudes elegance, functionality and class. The provision of our luxury bathroom renovation Dubai service for villas and apartments located at Palm Jumeirah, Emirates Hills, Dubai Marina and Jumeirah ensures that our customers receive expert bathroom design and installations Casa Kraft Interiors is  one of the best bathroom design Dubai companies for those seeking elegance, functionality and style.
               </p>
             </div>
 
-            <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
+            <div className="mt-5">
+              <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
+               Our Bathroom Renovation Dubai Process
+              </h2>
 
               <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
+                <li>
+                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                <b> Consultation & Assessment:</b> Evaluate the needs and conduct site assessment regarding Dubai bathroom renovation.
+
                 </li>
-                <li className="flex gap-3">
+                <li >
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
+                 <b> Design Concept & 3D Visualization: </b> Develop complete layouts for your bathroom design and construction.
+
                 </li>
-                <li className="flex gap-3">
+                <li>
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
+                   <b>Material Selection and Budget Planning:</b> Choose the highest quality tiles, fittings and premium materials for renovation.
+
                 </li>
-                <li className="flex gap-3">
+                <li>
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
+                   <b>Approval & Permits:</b> Manage approvals, as in bathroom renovation in Dubai villa and apartment approvals.
+
+                </li>
+
+                 <li>
+                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                   <b>Demolition and Waterproofing:</b> Provide long lasting, leak tight finishes for all projects undertaken by bathroom renovation specialists.
+
+                </li>
+
+                 <li>
+                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                  <b> Construction & Installation:</b> Undertake the installation of fixtures, vanities, cabinets, as well as bathroom fit out contractors in Dubai solutions.
+                </li>
+
+                 <li>
+                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                  <b>Quality Inspection & Handover:</b> Final checks will be done to ensure your high quality bathroom renovation and remodeling meets our standards.
+
                 </li>
               </ul>
-
-              <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
-              </p>
-
-              <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
-              </p>
             </div>
+             <div className="mt-5">
+            <h2 className="text-center font-semibold text-[24px] sm:text-[30px]">
+             Benefits of Bathroom Renovation in Dubai
+            </h2>
+            <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
+             Renovating your bathroom with Casa Kraft Interiors ensures several benefits for residents in Dubai. Our bathroom renovation process in Dubai can turn an old space into a modern and beautifully designed bathroom that is a great mix of aesthetics and functionality. With smart bathroom renovation and efficient elements, we not only improve efficiency but also create a luxurious space that is completely sustainable.
+           <br /> <br />
+           Hiring a professional bathroom renovation contractor Dubai means possessing a bathroom of high quality, long lasting and safe, healthy and comfortable, which increases the value of your property.
+           <br /> <br />
+           With the expertise of our bathroom remodelling contractors, all designs are conceptualized to optimize space, functional flow, and a seamless design. Casa Kraft Interiors is  among the best bathroom renovation Dubai services for villas and apartments in key locations such as Downtown Dubai, Palm Jumeirah, Business Bay and Jumeirah.
+           
+           </p>
+          </div>
+
+          <div className="mt-5">
+            <h2 className="text-center font-semibold text-[24px] sm:text-[30px]">
+             Why Choose Casa Kraft Interiors for Bathroom Renovation?
+            </h2>
+            <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
+             Casa Kraft Interiors is the best bathroom renovation Dubai company offering comprehensive bathroom renovation services in Dubai, with unparalleled quality, meticulous attention to detail and commitment to excellence. We are specialists in providing tailored bathroom renovation solutions for all residences, guaranteeing that every project embodies the client’s preferences and practical requirements.Our team of experienced bathroom renovation specialists and contractors deliver high quality finishes, premium materials and expert bathroom waterproofing services in Dubai.
+            <br /><br />
+            Our company is known for its fair and clear pricing, on time completion of projects and smart  and environmentally friendly bathroom renovation. This makes us the perfect partner for those seeking a stress free bathroom renovation experience. As a reliable and professional firm, Casa Kraft Interiors is proud to cater to the entire Dubai area, including smaller and bigger projects of luxury bathroom renovation Dubai.
+
+           </p>
+          </div>
           </div>
         </div>
       </section>
@@ -215,17 +214,26 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
+        q: "How much does it cost to renovate a bathroom in Dubai?",
+        a: "The bathroom renovation cost in Dubai depends on size, materials, fixtures, and type of service you choose, a standard or luxury bathroom renovation Dubai project.",
       },
       {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
+        q: "What are the most important factors to consider when planning a bathroom renovation?",
+        a: "The most important factors to consider are budget, layout, plumbing condition, bathroom waterproofing Dubai, ventilation, material quality, and required approvals.",
       },
       {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
+        q: "How do you choose the right flooring for a bathroom renovation?",
+        a: "Choose water-resistant, anti-slip bathroom flooring such as porcelain tiles, ceramic tiles, or sealed natural stone for durability and safety.",
       },
+       {
+        q: "What are the stages of bathroom renovation?",
+        a: "The stages of a bathroom renovation in Dubai include consultation, design, material selection, approvals, demolition, waterproofing, installation, and handover.",
+      },
+       {
+        q: "How long does a bathroom renovation take?",
+        a: "A typical bathroom renovation Dubai project takes around 2 to 4 weeks, depending on the scope, approvals, and material availability.",
+      },
+
     ],
     []
   );

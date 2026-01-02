@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Renovation Dubai - Best Renovation Company - Casa Kraft Interiors",
+  title: "Windows & Doors Services in Dubai - Casa Kraft Interiors",
   description:
-    "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
+    "Premium windows and doors in Dubai by Casa Kraft. We offer repair, replacement & installation of glass, aluminium & wooden windows and doors. Visit Now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/villa-lantana',
+    canonical: '/windows-and-doors',
   },
 };
 

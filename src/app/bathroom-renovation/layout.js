@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Renovation Dubai - Best Renovation Company - Casa Kraft Interiors",
+  title: "Bathroom Renovation Dubai | Best Bathroom Renovation Company – Casa Kraft",
   description:
-    "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
+    "Expert bathroom renovation Dubai by Casa Kraft Interiors. Luxury designs, waterproofing, smart fixtures & full remodeling.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/villa-lantana',
+    canonical: '/bathroom-renovation',
   },
 };
 

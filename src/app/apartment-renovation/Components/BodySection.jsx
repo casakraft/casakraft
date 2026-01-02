@@ -42,14 +42,17 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+              Apartment Renovation Services in Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+               Casa Kraft Interiors is the No.1 apartment renovation Dubai company, providing high-end 
+               apartment renovation services in Dubai that turn old-fashioned living spaces into elegant, 
+               contemporary homes. As a reliable apartment renovation contractor in Dubai, we are experts 
+               in both complete apartment renovation and individual transformation. Whether you are 
+               renovating your apartment in Dubai for living style enhancement, elevated property value, 
+               or elegant aesthetics, our professional designers make sure each apartment renovation project 
+               is completed with accuracy, artistic, and practical.
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -80,125 +83,132 @@ export default function BodySection() {
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-            Benefits of Apartment Renovation in Dubai
+          Our Apartment Renovation Services in Dubai
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
-            </p>
-
-            <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
+             Casa Kraft apartment renovation Dubai services handle each element of interior design and 
+             remodeling, placing us one of the best apartment renovation companies in Dubai. We manage 
+             each process of the renovation of apartments, making sure contemporary, Innovative, and 
+             luxurious results.
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
+              → Full Apartment Renovation and Remodeling
             </h3>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
+              Casa Kraft Interiors provide full apartment renovation in Dubai, whether it’s a studio, one-bedroom, 
+              or multi-bedroom apartment. From modern layout redesigns to final execution, our apartment renovation 
+              projects change spaces into elegant and sophisticated spaces.
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
+             → Kitchen Renovation Dubai
             </h3>
 
-            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
-              <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
-              </p>
-
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
-              </p>
+          <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+            <p>
+              We deliver comprehensive kitchen renovation services and provide contemporary and practical kitchen spaces. 
+              Casa Kraft is a reliable apartment renovation contractor in Dubai, we handle customized cabinetry, benchtop, 
+              and practical appliances to design a kitchen that enhances your everyday living.
+            </p>
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
+              → Bathroom Renovation and Upgrades
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
+                Casa Kraft Interiors offers luxurious bathroom renovation services in Dubai, including contemporary 
+                appliances, premium tiling, and Innovative space optimization. Each apartment renovation project 
+                includes bathrooms designed for both functionality and excellence.
               </p>
 
-              <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
-              </p>
+              <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+              → Living Room and Bedroom Renovation
+            </h3>
+            <p>
+              Casa Kraft experienced team enhanced apartment interior design – remodeling in Dubai, transforming 
+              living rooms and bedrooms with practical layouts, elegant finishes, and bespoke touches. Each element 
+              of renovation is designed to showcase the client's vision and personality.
+            </p>
+            
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+             → Custom Storage and Wardrobe Solutions
+            </h3>
+            <p>
+              We offer functional storage solutions, built-in wardrobes, and stylish cabinetry to perfectly optimized 
+              space, placing us one of the best apartment renovation companies in Dubai for functional yet modern living 
+              spaces.
+            </p>
+            
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+             → Interior Fit-Out and Finishing
+            </h3>
+            <p>
+              Casa Kraft is a top apartment renovation contractor in Dubai, we manage flooring, wall finishes, ceilings, 
+              warm lighting, and all interior fit-out works. Our premium execution elevates your apartment’s design while 
+              making sure durability.
+            </p>
+
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+             → Smart Home Integration Services in Dubai
+            </h3>
+            <p>
+              We integrate modern smart renovation Dubai solutions in developing future-ready apartments blending elegance 
+              with comfort through automated lighting, climate control, and security systems.
+            </p>
+
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+             → Tailored Apartment Renovation Services Dubai
+            </h3>
+            <p>
+              Casa Kraft Interiors offers both small-scale transformation and large-scale apartment renovation projects, 
+              delivering bespoke solutions for each home. This comprehensive concept creates us the best apartment renovation 
+              company in Dubai, reliable for premium quality, and innovation.
+            </p>
             </div>
 
-            <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
+            <div className="mt-5">
+              <h2 className="font-semibold text-[24px]" style={{ color: PURPLE }}>
+               Benefits of Apartment Renovation in Dubai
+              </h2>
 
-              <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
-                </li>
-              </ul>
+              <p className="mt-5 text-[15px] leading-7" style={{ color: MUTED }}>
+                There are a lot of benefits to investing in apartment renovation services in Dubai. For the renovation of 
+                apartments, comfort and space are thoughtfully modulated while increasing their luxury value in an upscale 
+                manner. At Casa Kraft Interiors, the experts will guide you through each step of your apartment renovation 
+                project, ensuring that every detail, from design to materials, will stand at the top standard. Our space 
+                owners consistently renowned us as the expert apartment renovation Dubai company for providing practical 
+                solutions and exclusive results.
+              </p>
+            </div>
+              <div className="mt-5">
+              <h2 className="font-semibold text-[24px]" style={{ color: PURPLE }}>
+              Why Choose Casa Kraft Interiors For your Apartment Renovation in Dubai?
+              </h2>
 
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
-              </p>
+               We are the best apartment renovation company for space owners looking for professional, premium renovation 
+               services in Dubai. We oversee each element of your apartment renovation project, making sure on-time delivery, 
+               premium materials, and seamless execution. Our professionals and project handlers work closely with clients to 
+               get knowledge of their concept and bring it into real life, placing us the go-to experts for apartment renovation 
+               Dubai, from full apartment renovations to contemporary, elegant transformation</p>
 
-              <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
+              <p className="mt-5 text-[15px] leading-7" style={{ color: MUTED }}>
+                With the best reputation as an apartment renovation contractor in Dubai, we have perfectly and on-time 
+                accomplished various apartment renovation projects, making us one of the best apartment renovation 
+                companies in Dubai. As we focus on quality and customer satisfaction, we are indeed the only option 
+                available for space owners, who look for apartment renovation services in Dubai with a combination of 
+                luxury and timeless elegance.
               </p>
             </div>
           </div>
@@ -215,16 +225,16 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
+        q: "How much does it cost to renovate an apartment in Dubai?",
+        a: "The cost of apartment renovation in Dubai depends on the size of apartment, renovation scope in Dubai, nature of design, and material selection. Casa Kraft Interiors provides customized apartment renovation services in Dubai based on your requirements.",
       },
       {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
+        q: "How much does it cost to fully renovate an apartment?",
+        a: "A full apartment renovation includes layout changes, kitchen renovation Dubai, bathroom renovation, interior fit-out, and finishing. The final cost depends on the level of customization and finishes selected for your apartment renovation Dubai project.",
       },
       {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
+        q: "Do I need approvals for apartment renovation in Dubai?",
+        a: "Yes, approvals are required for apartment renovation in Dubai, especially for layout changes, plumbing, electrical work, and structural modifications. Casa Kraft Interiors manages all approvals for apartment renovation Dubai to ensure compliance and smooth execution.",
       },
     ],
     []
@@ -234,7 +244,7 @@ function FAQSection() {
 
   return (
     <section className="bg-white">
-      <div className="max-w-[980px] mx-auto px-4 sm:px-6 lg:px-0 pt-10 pb-20">
+      <div className="max-w-[980px] mx-auto px-4 sm:px-6 lg:px-0  pb-20">
         <h2 className="text-[28px] sm:text-[44px] font-semibold" style={{ color: "#222" }}>
           Frequently Asked Questions
         </h2>

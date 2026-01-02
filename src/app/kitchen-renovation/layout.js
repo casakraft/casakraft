@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Renovation Dubai - Best Renovation Company - Casa Kraft Interiors",
+  title: "Kitchen Renovation In Dubai - Best Remodeling Company - Casa Kraft",
   description:
-    "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
+    "Luxury kitchen renovation in Dubai by Casa Kraft Interiors. Custom designs, modular kitchens, premium finishes & smart upgrades for villas & apartments.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/villa-lantana',
+    canonical: '/kitchen-renovation',
   },
 };
 

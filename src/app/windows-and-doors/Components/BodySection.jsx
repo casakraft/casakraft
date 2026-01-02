@@ -42,14 +42,19 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+                Windows & Doors Services in Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+               Casa Kraft offers Door and Window Services in Dubai through high-quality, fashionable, 
+               and functioning doors and windows. At Casa Kraft, our experts perform Door and Window 
+               Repair & Installation services to ensure that your entire windows and doors function 
+               perfectly and appear attractive. We can do custom wooden window and door installations 
+               as well as modern Glass Door and Window installation
+               <br /><br />
+               If you desire top-quality doors and windows in Dubai, the best glass doors in Dubai, or 
+               full replacements, Casa Kraft makes sure smooth installation and the best alignment for 
+               a timeless, sophisticated finish.
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -80,127 +85,148 @@ export default function BodySection() {
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-            Benefits of Apartment Renovation in Dubai
+           Our Comprehensive Doors & Windows Services
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
+             At Casa Kraft Interiors, we offer a complete range of Windows and Doors Services in Dubai designed to 
+             enhance the comfort, security, energy efficiency, and visual appeal of your property.
             </p>
 
-            <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
-            </p>
+           
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
+              Windows and Doors Repair Services Dubai
             </h3>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
+             Renowned for our exclusive expertise in Door & Window Alignment for managing issues such as 
+             stuck doors, creaking hinges, damaged handles, or faulty locks. Our experienced designers 
+             make sure your doors & windows work perfectly while managing the luxury as well as the 
+             security of your space.
             </p>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
+              Window Repairs & Replacement Dubai
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
-              </p>
+                We have the expertise to handle all aspects of window repairs, including damaged glass, 
+                drafts, damaged frames, and damaged mechanics. Our expert windows and doors services in 
+                Dubai improve the energy efficiency factor as well as upgrade the look of your environment. 
+                When required, we offer the best door and window replacement using premium materials.
 
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
               </p>
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
+              Windows & Doors Installation
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
+               Casa Kraft provides accurate Door and Window Installation for both new build space and renovation 
+               projects. From Glass Doors and Windows to premium Aluminium & Glass solutions, our installations 
+               make sure flawless operation and inspiring appeal. Casa Kraft is also skilled in custom wooden 
+               window and door installations to meet with your space's luxurious interior design.
               </p>
 
-              <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
-              </p>
             </div>
 
-            <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
-
+            <div className="mt-5">
+              <h2 className="font-semibold text-[24px]" style={{ color: PURPLE }}>
+                Types of Windows and Doors We Offer
+              </h2>
+              <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
+                Casa Kraft offers a comprehensive options to align with any property:
+              </p>
               <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
+                 <b> Aluminium windows and doors –</b> modern, trendy, and robust.
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
+                 <b> Glass Doors –</b> elegant, well-lit, and of luxury quality.
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
+                 <b> UPVC Windows & Doors –</b> low-maintenance, energy-efficient, and secure.
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
+                 <b> Custom Wooden Windows and Doors – </b>as per your design requirements.
                 </li>
               </ul>
 
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
+               If you are seeking top-quality doors and windows in Dubai or the best glass doors 
+               in Dubai, we offer high-end solutions for all spaces.
               </p>
 
-              <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
-              </p>
+              
             </div>
+          </div>
+          <div className="mt-5">
+            <h2 className="font-semibold text-[24px]" style={{ color: PURPLE }}>
+              Window Repairs & Replacement Dubai
+            </h2>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+               Casa Kraft handles each step of your project to ensure premium quality results:
+              </p>
+             <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
+                <li>
+                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                 <b> Consultation & Site Assessment:</b> Professionals analyze your needs and recommend optimal approaches.
+                </li>
+
+                <li>
+                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                 <b> Selection & Design:</b> Select from Glass Doors and Windows, Aluminium or wooden options, 
+                 and bespoke designs.
+                </li>
+
+                <li>
+                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                 <b> Installation & Quality Check: </b> Our professionals manage Door and Window Installation 
+                 and make sure perfect alignment and practicality.
+                </li>
+
+                <li>
+                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
+                 <b> Aftercare & Support:</b> We offer maintenance tips and follow-up services for timeless performance.
+
+                </li>
+            </ul>
+            </div>
+             <div className="mt-5">
+            <h2 className="font-semibold text-[24px]" style={{ color: PURPLE }}>
+             Why Choose Casa Kraft for windows and doors in Dubai?
+            </h2>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+              Casa Kraft is renowned for expert window and door services in Dubai because of our commitment to high-end 
+              materials, experienced designers, and flawless finishes. We offer luxurious solutions for residential villas, 
+              homes, and commercial spaces, providing premium Aluminium & Glass solutions as well as custom wooden windows 
+              and doors installations. Our focus is to blend elegance, security, and practicality, providing space owners 
+              the best door replacements in Al Barsha Dubai and across all key areas of the city.
+              <br /><br />
+              We deliver Windows and Doors Services in Dubai across key areas including Dubai Marina, Downtown Dubai, Jumeirah, 
+              Business Bay, Al Barsha, and surrounding communities, offering high-end solutions wherever you are.
+
+              </p>
+              </div>
+          </div>
           </div>
         </div>
       </section>
@@ -215,16 +241,16 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
+        q: "What types of windows and Doors in Dubai does Casa Kraft offer?",
+        a: "Casa Kraft provides complete Doors and Windows windows and DoorsServices in Dubai, including door and window installation, door and window repair, door and window alignment, and full door and window replacement. We work with glass doors and windows, aluminium doors and windows, UPVC systems, and custom wooden doors and windows for both residential and commercial spaces.",
       },
       {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
+        q: "Do you offer energy-efficient windows and Doors in Dubai?",
+        a: "Yes, Our energy-efficient windows and Doors in Dubai improve insulation, help reduce heat transfer, and lower energy costs. We use high-performance aluminium & glass systems, UPVC windows and doors, and premium sealing technology to enhance comfort and sustainability.",
       },
       {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
+        q: "Does Casa Kraft provide custom wooden doors and windows in Dubai?",
+        a: "Yes, Casa Kraft specializes in custom wooden doors and windows in Dubai, designed to match your interior style and architectural needs.",
       },
     ],
     []

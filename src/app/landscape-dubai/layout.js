@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Renovation Dubai - Best Renovation Company - Casa Kraft Interiors",
+  title: "Landscape Dubai | Landscape Design & Landscaping Services – Casa Kraft",
   description:
-    "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
+    "Expert landscape Dubai services by Casa Kraft Interiors. Custom landscape design, garden landscaping & outdoor solutions.Visit Now",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/villa-lantana',
+    canonical: '/landscape-dubai',
   },
 };
 

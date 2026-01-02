@@ -11,8 +11,8 @@ const services = [
   { title: "Home Renovation Dubai", image: "/images/kitchen-interior-design.png", href: "/" },
   { title: "Joinery", image: "/images/beach-front-design.png", href: "/" },
   { title: "Landscape Design Dubai", image: "/images/landscape-design.png", href: "/" },
-  { title: "Villa Renovation Dubai", image: "/images/villa-renovation.png", href: "/" },
-  { title: "Apartment Renovation Dubai", image: "/images/apartment-renovation.png", href: "/" },
+  { title: "Villa Renovation Dubai", image: "/images/villa-renovation.png", href: "/villa-renovation" },
+  { title: "Apartment Renovation Dubai", image: "/images/apartment-renovation.png", href: "/apartment-renovation" },
 ];
 
 const Services = () => {
