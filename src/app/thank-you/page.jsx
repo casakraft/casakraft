@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ThankYouTracker from "./ThankYouTracker";
 
 export const metadata = {
   title: "Thank You | Casa Kraft Interiors & Renovators Dubai",
@@ -9,6 +10,8 @@ export const metadata = {
 export default function ThankYouPage() {
   return (
     <main className="bg-[#f5ede5] min-h-[70vh] flex items-center">
+      <ThankYouTracker />
+
       <section className="max-w-3xl mx-auto px-6 py-16 text-center text-black">
         <div className="flex flex-col items-center">
           <Image
@@ -23,8 +26,10 @@ export default function ThankYouPage() {
           </h1>
           <p className="mt-4 text-sm sm:text-base leading-7">
             Your message has been sent to{" "}
-            <span className="font-medium">Casa Kraft Interiors &amp; Renovations</span>.
-            We’ll get back to you shortly.
+            <span className="font-medium">
+              Casa Kraft Interiors &amp; Renovations
+            </span>
+            . We’ll get back to you shortly.
           </p>
 
           <Link

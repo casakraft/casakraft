@@ -1,20 +1,20 @@
 'use client';
+
 import { FaPhoneAlt } from 'react-icons/fa';
+import { gaEvent } from '../lib/ga';
 
 const CallButton = () => {
   const phoneNumber = '+971586023677';
 
   const handleClick = () => {
-    // Fire Google Ads conversion for Call Button click
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-11361089409/wchnCMOb_OsZEIHvsakq',
-      });
-    }
+    // Fire GA4 conversion event
+    gaEvent('phone_click', {
+      event_category: 'conversion',
+      event_label: 'floating_call_button',
+    });
 
     // Initiate the call
-    const formattedPhoneNumber = `tel:${phoneNumber}`;
-    window.location.href = formattedPhoneNumber;
+    window.location.href = `tel:${phoneNumber}`;
   };
 
   return (
@@ -25,8 +25,9 @@ const CallButton = () => {
         position: 'fixed',
         bottom: '60px',
         right: '40px',
-        zIndex: '9999', // Ensure the button is on top of other elements
+        zIndex: '9999',
       }}
+      aria-label="Call Casa Kraft Interiors"
     >
       <FaPhoneAlt className="text-2xl" />
     </button>

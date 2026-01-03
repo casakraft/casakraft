@@ -2,23 +2,25 @@
 
 import { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import { gaEvent } from '../lib/ga';
 
 const WhatsAppButton = () => {
   const [whatsappNumber] = useState('+971586023677');
 
   const handleClick = () => {
-    // Fire Google Ads conversion for WhatsApp click
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-11361089409/3MTICMCb_OsZEIHvsakq',
-      });
-    }
+    // Fire GA4 conversion event
+    gaEvent('whatsapp_click', {
+      event_category: 'conversion',
+      event_label: 'floating_whatsapp_button',
+    });
 
     // Format the WhatsApp URL with your number
     const whatsappUrl = `https://wa.me/${whatsappNumber.replace('+', '')}`;
 
-    // Open the WhatsApp chat in a new tab
-    window.open(whatsappUrl, '_blank');
+    // Small delay so the GA4 event can send before opening a new tab
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    }, 200);
   };
 
   return (
@@ -31,6 +33,7 @@ const WhatsAppButton = () => {
         left: '20px',
         zIndex: '9999',
       }}
+      aria-label="WhatsApp Casa Kraft Interiors"
     >
       <FaWhatsapp className="text-xl" />
     </button>
