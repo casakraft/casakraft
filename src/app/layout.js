@@ -1,60 +1,62 @@
-import './globals.css';
+import "./globals.css";
+import Script from "next/script";
+
+const GA_MEASUREMENT_ID = "G-WXLLXZ9HRM";
 
 export const metadata = {
-  title: 'Interior Design Company in Dubai - Casa Kraft Interiors',
+  title: "Interior Design Company in Dubai - Casa Kraft Interiors",
   description:
-    'Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.',
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+    "Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.",
+  metadataBase: new URL("https://casakraftinteriors.ae/"),
   openGraph: {
-    title: 'Interior Design Dubai | Luxury Designers | Casa Kraft Interiors',
+    title: "Interior Design Dubai | Luxury Designers | Casa Kraft Interiors",
     description:
-      'Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.',
-    url: 'https://casakraftinteriors.ae/',
-    siteName: 'Casa Kraft Interiors',
+      "Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.",
+    url: "https://casakraftinteriors.ae/",
+    siteName: "Casa Kraft Interiors",
     images: [
       {
-        url: '/images/logo.svg',
+        url: "/images/logo.svg",
         width: 1200,
         height: 630,
-        alt: 'Casa Kraft Interiors Logo',
+        alt: "Casa Kraft Interiors Logo",
       },
     ],
-    type: 'website',
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Residential Interior Design Company in Dubai - Casa Kraft Interiors',
+    card: "summary_large_image",
+    title: "Residential Interior Design Company in Dubai - Casa Kraft Interiors",
     description:
-      'Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.',
-    images: ['/images/logo.svg'],
+      "Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.",
+    images: ["/images/logo.svg"],
   },
-  alternates: {
-    canonical: '/',
-  },
+  alternates: { canonical: "/" },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-
-        {/* Google Tag (gtag.js) for AW-17422215715 */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17422215715"
+        {/* GA4 (single measurement tag) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17422215715');
-            `,
-          }}
-        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        {/* Robots Meta Tag */}
+            // GA4 config (disable auto page_view for SPA safety)
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              send_page_view: false
+            });
+          `}
+        </Script>
+
+        {/* Robots */}
         <meta
           name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
@@ -65,25 +67,25 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Casa Kraft Interiors',
-              url: 'https://casakraftinteriors.ae/',
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Casa Kraft Interiors",
+              url: "https://casakraftinteriors.ae/",
               logo: {
-                '@type': 'ImageObject',
-                url: 'https://casakraftinteriors.ae/images/logo.svg',
+                "@type": "ImageObject",
+                url: "https://casakraftinteriors.ae/images/logo.svg",
                 width: 600,
                 height: 60,
               },
               address: {
-                '@type': 'PostalAddress',
-                streetAddress: 'Sheikh Zayed Road',
-                addressLocality: 'Dubai',
-                addressCountry: 'UAE',
+                "@type": "PostalAddress",
+                streetAddress: "Sheikh Zayed Road",
+                addressLocality: "Dubai",
+                addressCountry: "UAE",
               },
               sameAs: [
-                'https://www.instagram.com/yourprofile',
-                'https://www.facebook.com/yourprofile',
+                "https://www.instagram.com/yourprofile",
+                "https://www.facebook.com/yourprofile",
               ],
             }),
           }}
@@ -94,12 +96,12 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebPage',
-              name: 'Casa Kraft Interiors',
-              url: 'https://casakraftinteriors.ae/',
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Casa Kraft Interiors",
+              url: "https://casakraftinteriors.ae/",
               description:
-                'Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.',
+                "Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.",
             }),
           }}
         />
@@ -109,34 +111,34 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'BlogPosting',
-              headline: 'Modern Interior Design in Dubai',
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline: "Modern Interior Design in Dubai",
               description:
-                'Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.',
-              url: 'https://casakraftinteriors.ae/',
+                "Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.",
+              url: "https://casakraftinteriors.ae/",
               author: {
-                '@type': 'Organization',
-                name: 'Casa Kraft Interiors',
+                "@type": "Organization",
+                name: "Casa Kraft Interiors",
               },
               publisher: {
-                '@type': 'Organization',
-                name: 'Casa Kraft Interiors',
+                "@type": "Organization",
+                name: "Casa Kraft Interiors",
                 logo: {
-                  '@type': 'ImageObject',
-                  url: 'https://casakraftinteriors.ae/images/logo.svg',
+                  "@type": "ImageObject",
+                  url: "https://casakraftinteriors.ae/images/logo.svg",
                   width: 600,
                   height: 60,
                 },
               },
-              mainEntityOfPage: 'https://casakraftinteriors.ae/',
+              mainEntityOfPage: "https://casakraftinteriors.ae/",
               image: {
-                '@type': 'ImageObject',
-                url: 'https://casakraftinteriors.ae/images/logo.svg',
+                "@type": "ImageObject",
+                url: "https://casakraftinteriors.ae/images/logo.svg",
                 width: 1200,
                 height: 630,
               },
-              datePublished: '2025-06-22',
+              datePublished: "2025-06-22",
             }),
           }}
         />
@@ -146,38 +148,38 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'ItemList',
+              "@context": "https://schema.org",
+              "@type": "ItemList",
               itemListElement: [
                 {
-                  '@type': 'SiteNavigationElement',
+                  "@type": "SiteNavigationElement",
                   position: 1,
-                  name: 'About Us',
-                  url: 'https://casakraftinteriors.ae/about-us',
+                  name: "About Us",
+                  url: "https://casakraftinteriors.ae/about-us",
                 },
                 {
-                  '@type': 'SiteNavigationElement',
+                  "@type": "SiteNavigationElement",
                   position: 2,
-                  name: 'Apartment Interior Design Dubai',
-                  url: 'https://casakraftinteriors.ae/apartment-interior-design-dubai',
+                  name: "Apartment Interior Design Dubai",
+                  url: "https://casakraftinteriors.ae/apartment-interior-design-dubai",
                 },
                 {
-                  '@type': 'SiteNavigationElement',
+                  "@type": "SiteNavigationElement",
                   position: 3,
-                  name: 'Villa Interior Design Dubai',
-                  url: 'https://casakraftinteriors.ae/villa-interior-design-dubai',
+                  name: "Villa Interior Design Dubai",
+                  url: "https://casakraftinteriors.ae/villa-interior-design-dubai",
                 },
                 {
-                  '@type': 'SiteNavigationElement',
+                  "@type": "SiteNavigationElement",
                   position: 4,
-                  name: 'Gallery',
-                  url: 'https://casakraftinteriors.ae/projects',
+                  name: "Gallery",
+                  url: "https://casakraftinteriors.ae/projects",
                 },
                 {
-                  '@type': 'SiteNavigationElement',
+                  "@type": "SiteNavigationElement",
                   position: 5,
-                  name: 'Contact Us',
-                  url: 'https://casakraftinteriors.ae/contact-us',
+                  name: "Contact Us",
+                  url: "https://casakraftinteriors.ae/contact-us",
                 },
               ],
             }),
@@ -189,14 +191,14 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
               itemListElement: [
                 {
-                  '@type': 'ListItem',
+                  "@type": "ListItem",
                   position: 1,
-                  name: 'Home',
-                  item: 'https://casakraftinteriors.ae/',
+                  name: "Home",
+                  item: "https://casakraftinteriors.ae/",
                 },
               ],
             }),
@@ -208,21 +210,18 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Service',
-              serviceType: 'Interior Design and Fit Out',
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: "Interior Design and Fit Out",
               provider: {
-                '@type': 'Organization',
-                name: 'Casa Kraft Interiors',
-                url: 'https://casakraftinteriors.ae',
+                "@type": "Organization",
+                name: "Casa Kraft Interiors",
+                url: "https://casakraftinteriors.ae",
               },
-              areaServed: {
-                '@type': 'Place',
-                name: 'Dubai, UAE',
-              },
+              areaServed: { "@type": "Place", name: "Dubai, UAE" },
               serviceOutput:
-                'Luxury interior design solutions for residential and commercial spaces in Dubai.',
-              url: 'https://casakraftinteriors.ae/',
+                "Luxury interior design solutions for residential and commercial spaces in Dubai.",
+              url: "https://casakraftinteriors.ae/",
             }),
           }}
         />

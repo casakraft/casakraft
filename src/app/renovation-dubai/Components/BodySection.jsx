@@ -105,7 +105,7 @@ export default function BodySection() {
     () => [
       { title: "Villa Renovation", img: "/images/cvd-5.png", href: "/villa-renovation" },
       { title: "Apartment Renovation", img: "/images/ca-6.png", href: "/apartment-renovation" },
-      { title: "Office Renovation", img: "/images/bulgari-2.png", href: "/office-renovation" },
+      { title: "Office Renovation", img: "/images/bulgari-2.png", href: "/office-renovation-dubai" },
       { title: "Kitchens", img: "/images/marina-8.png", href: "/kitchen-renovation" },
       { title: "Bathrooms", img: "/images/bluewaters-5.png", href: "/bathroom-renovation" },
       { title: "Flooring", img: "/images/flooring.png", href: "/flooring-dubai" },
