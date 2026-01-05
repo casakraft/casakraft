@@ -27,12 +27,12 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-lg">LINKS</h3>
             <ul className="space-y-2 text-gray-300">
               {[
-                { label: "About Us", href: "/about" },
-                { label: "Our Process", href: "/process" },
-                { label: "Projects", href: "/projects" },
-                { label: "Media", href: "/media" },
-                { label: "Why Casa Kraft", href: "/why-casa-kraft" },
-                { label: "Contact Us", href: "/contact" },
+                { label: "About Us", href: "/" },
+                { label: "Our Process", href: "/" },
+                { label: "Projects", href: "/" },
+                { label: "Media", href: "/" },
+                { label: "Why Casa Kraft", href: "/" },
+                { label: "Contact Us", href: "/" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.href} className="hover:text-white transition">
@@ -48,12 +48,12 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-lg">SERVICES</h3>
             <ul className="space-y-2 text-gray-300">
               {[
-                { label: "Interior Design", href: "/services/interior-design" },
-                { label: "Fit Out", href: "/services/fit-out" },
-                { label: "Renovation Dubai", href: "/services/renovation" },
-                { label: "Custom Joinery", href: "/services/joinery" },
-                { label: "Modular Kitchen & Wardrobes", href: "/services/modular-kitchen" },
-                { label: "Landscaping & Swimming Pools", href: "/services/landscaping" },
+                { label: "Interior Design", href: "/" },
+                { label: "Fit Out", href: "/" },
+                { label: "Renovation Dubai", href: "/" },
+                { label: "Custom Joinery", href: "/" },
+                { label: "Modular Kitchen & Wardrobes", href: "/" },
+                { label: "Landscaping & Swimming Pools", href: "/" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.href} className="hover:text-white transition">
@@ -69,12 +69,12 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-lg">EXPERTISE</h3>
             <ul className="space-y-2 text-gray-300">
               {[
-                { label: "Residential Projects", href: "/expertise/residential" },
-                { label: "Commercial Projects", href: "/expertise/commercial" },
-                { label: "Villas & Apartments", href: "/expertise/villas" },
-                { label: "Offices & Retail", href: "/expertise/offices" },
-                { label: "Turnkey Solutions", href: "/expertise/turnkey" },
-                { label: "Outdoor Design", href: "/expertise/outdoor" },
+                { label: "Residential Projects", href: "/" },
+                { label: "Commercial Projects", href: "/" },
+                { label: "Villas & Apartments", href: "/" },
+                { label: "Offices & Retail", href: "/" },
+                { label: "Turnkey Solutions", href: "/" },
+                { label: "Outdoor Design", href: "/" },
               ].map((item, i) => (
                 <li key={i}>
                   <Link href={item.href} className="hover:text-white transition">
