@@ -29,11 +29,17 @@ export default function BodySection() {
               <div className="w-full max-w-[760px]">
                 <HeroGallerySwiper
                   images={[
-                    "/images/acacia-1.png",
-                    "/images/acacia-2.png",
-                    "/images/acacia-3.png",
-                    "/images/acacia-4.png",
-                    "/images/acacia-5.png",
+                    "/images/fr1.png",
+                    "/images/fr2.png",
+                    "/images/fr3.png",
+                    "/images/fr4.png",
+                    "/images/fr5.png",
+                    "/images/fr6.png",
+                    "/images/fr7.png",
+                    "/images/fr8.png",
+                    "/images/fr9.jpeg",
+                    "/images/fr10.jpeg",
+                    
                   ]}
                 />
               </div>
@@ -42,14 +48,12 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+                Flooring Services in Dubai | Casa Kraft Interiors
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+                Casa Kraft Interiors provide professional flooring services in Dubai, offering a wide range of  flooring supply & installation Dubai solutions for residential, commercial, and luxury projects. Casa Kraft is a top flooring company in Dubai, famous in offering premium flooring materials in Dubai with professional craftsmanship and premium materials. If space owners are seeking villa flooring, wooden flooring Dubai, or custom wooden flooring Dubai Marina, our experienced designers ensure seamless installation and timeless elegance.
+
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -80,126 +84,116 @@ export default function BodySection() {
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-            Benefits of Apartment Renovation in Dubai
+            Our Flooring Services in Dubai
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
+             At Casa Kraft Interiors, we provide extensive flooring services and solutions tailored to every home and business. We offer services from modern apartments to luxury villas, our expert flooring services in Dubai include everything from concept development, material selection to final execution. We deliver flooring installation Dubai by professional teams, including expert fixing & installation for residential & commercial flooring Dubai projects.
             </p>
 
             <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
+              Casa Kraft is renowned as the best flooring company in Dubai, providing durable, modern, and climate-appropriate solutions across all major areas. Our offerings include:
             </p>
           </div>
 
           <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
-            </h3>
-            <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
-            </p>
+            <h2 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+             Types of Flooring in Dubai & UAE
+            </h2>
+            
+              <ul className="mt-5 space-y-2 text-[15px] list-inside list-disc">
+                <li>
+                  Wooden Flooring Dubai / Hardwood Flooring Dubai – Classic sophistication with timeless luxury
+                </li>
+                <li>
+                  Parquet Flooring Dubai – Modern patterns and bespoke designs
+                </li>
+                <li>
+                  Vinyl Flooring Dubai / Vinyl Flooring Solutions in Al Barsha – Waterproof and versatile
+                </li>
+                <li>
+                  Laminate Flooring Dubai – Affordable and chic synthetic flooring solutions 
+                </li>
+                <li>
+                  SPC & WPC Flooring Dubai – Engineered floors with high durability
+                </li>
+                  <li>
+                  Tile Flooring Dubai / Luxury Tile Flooring in Jumeirah – Offering premium quality ceramic, porcelain, and designer tiles
+                </li>
+                <li>
+                  Marble Flooring Dubai –  elegant marble flooring designs for villas and modern apartments
+                </li>
+                <li>
+                  Carpet Flooring Dubai – Soft and comfortable end-to-end services
+                </li>
+                <li>
+                  Luxury Flooring Dubai – Bespoke elegant Floors designs for contemporary interiors
+                </li>
+                <li>
+                 Waterproof Flooring Solutions Dubai – Ideal for restrooms, kitchens, and wet zones.
+                </li>
+                <li>
+                  Industrial Floor Treatments – lasting solutions for  business and industrial areas
+                </li>
+              
+              </ul>
           </div>
 
           <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
-            </h3>
+            <h2 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+              Our Flooring Installation Process
+            </h2>
 
-            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
-              <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
-              </p>
-
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
-              </p>
+            <div className="mt-4 space-y-6 text-[15px] leading-7">
+                  <ol className="mt-5 space-y-2 text-[15px] list-inside list-decimal">
+                <li>
+                 Consultation & Site Assessment – Improve your area with the best flooring Dubai products recommendations.
+                </li>
+                <li>
+                  Material Selection & Style Guidance – Select from premium flooring Dubai choices to align with your vision and budget.
+                </li>
+                <li>
+                  Subfloor Preparation & Waterproofing – Ensure high-end and solid installation.
+                </li>
+                <li>
+                 Precision Installation by Certified Flooring Contractors Dubai – offers expert flooring services Dubai for all kinds of floors. 
+                </li>
+                <li>
+                 Polishing, Sealing & Finishing Touches – High quality finishes for luxury and durability.
+                </li>
+                  <li>
+                 Final Inspection & Client Handover – Customer satisfaction and premium quality assurance.
+                </li>
+               
+              </ol>
+              
             </div>
           </div>
 
           <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
-            </h3>
-
+            <h2 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+              Why Choose Casa Kraft Interiors for Flooring Services in Dubai
+            </h2>
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
+                 Casa Kraft Interiors is renowned as the best flooring company in Dubai, providing a wide range of Dubai flooring solutions with premium quality, accuracy, and attention to detail. We are experts in custom flooring solutions Dubai for villas, apartments, offices, and commercial spaces, making sure each project showcase the client’s style and functional requirements. Caa Kraft Interiors provide services extend across all major Dubai areas, including Downtown Dubai, Palm Jumeirah, Business Bay, Dubai Marina, Jumeirah, Emirates Hills, Al Barsha, Dubai Hills Estate, and The Greens.
               </p>
 
               <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
+                We amalgamate premium flooring materials in Dubai with premium durability and aesthetics, providing skilled craftsmanship in both residential & commercial flooring Dubai projects. With transparent pricing, on-time delivery, and a designers of top-rated flooring experts experienced in installation, fixing, and maintenance, Casa Kraft Interiors is your reliable partner for transforming spaces with modernity and functionality.
               </p>
             </div>
 
             <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
-
-              <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
-                </li>
-              </ul>
-
+              <h2 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+                Contact the Best Flooring Company in Dubai
+              </h2>  
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
+                Ready to elevate your home or office? Connect Casa Kraft Interiors, the best flooring installation company in Dubai, for expert flooring services in Dubai, covering supply, installation, and maintenance. If it’s villa flooring, wooden flooring Dubai, or custom flooring solutions Dubai, Casa Kraft deliver premium, professional, and timeless results.
               </p>
 
-              <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
-              </p>
+             
             </div>
           </div>
         </div>
@@ -214,18 +208,9 @@ export default function BodySection() {
 function FAQSection() {
   const faqs = useMemo(
     () => [
-      {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
-      },
-      {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
-      },
-      {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
-      },
+  
+
+ 
     ],
     []
   );
@@ -236,7 +221,7 @@ function FAQSection() {
     <section className="bg-white">
       <div className="max-w-[980px] mx-auto px-4 sm:px-6 lg:px-0 pt-10 pb-20">
         <h2 className="text-[28px] sm:text-[44px] font-semibold" style={{ color: "#222" }}>
-          Frequently Asked Questions
+        
         </h2>
 
         <div className="mt-6">

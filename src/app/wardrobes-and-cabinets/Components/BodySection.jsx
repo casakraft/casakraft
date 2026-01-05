@@ -29,11 +29,40 @@ export default function BodySection() {
               <div className="w-full max-w-[760px]">
                 <HeroGallerySwiper
                   images={[
-                    "/images/acacia-1.png",
-                    "/images/acacia-2.png",
-                    "/images/acacia-3.png",
-                    "/images/acacia-4.png",
-                    "/images/acacia-5.png",
+                    "/images/wc1.png",
+                    "/images/wc2.png",
+                    "/images/wc3.png",
+                    "/images/wc4.png",
+                    "/images/wc4.png",
+                    "/images/wc5.png",
+                    "/images/wc6.png",
+                    "/images/wc8.png",
+                    "/images/wc9.png",
+                    "/images/wc10.png",
+                    "/images/wc11.jpeg",
+                    "/images/wc12.jpeg",
+                    "/images/wc13.jpeg",
+                    "/images/wc14.jpeg",
+                    "/images/wc15.jpeg",
+                    "/images/wc16.jpeg",
+                    "/images/wc17.jpeg",
+                    "/images/wc18.jpeg",
+                    "/images/wc19.jpeg",
+                    "/images/wc20.jpeg",
+                    "/images/wc21.jpeg",
+                    "/images/wc22.jpeg",
+                    "/images/wc23.jpeg",
+                    "/images/wc24.jpeg",
+                    "/images/wc25.jpeg",
+                    "/images/wc26.jpeg",
+                    "/images/wc27.jpeg",
+                    "/images/wc28.jpeg",
+                    "/images/wc29.jpeg",
+                    "/images/wc30.jpeg",
+                    "/images/wc31.jpeg",
+                    "/images/wc32.jpeg",
+                    
+                    
                   ]}
                 />
               </div>
@@ -42,14 +71,14 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Apartment Renovation Dubai
+                Wardrobe and Cabinet Designer in Dubai Casa Kraft Interiors
               </h1>
 
-              <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                WE DO Interior Design &amp; Fit-Out provides expert Apartment Renovation
-                Services in Dubai, including AC upgrades, electrical and plumbing work,
-                carpentry, tiling, and flooring — all tailored to transform your living
-                space with quality and care.
+              <p className="mt-2 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
+                Seeking a Built in Wardrobe and Cabinet Designer in Dubai who provides modernity, premium quality, and practicality? At Casa Kraft Interiors, we deliver Premier Wardrobe & Cabinet Solutions in Dubai, expert in Custom Built-In & Modern Designs for homes, villas, and sophisticated residences.
+              </p>
+               <p className="mt-2 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
+                Whether you want to Buy the Best Wardrobe Cabinet in Dubai, improve your storage space in the bedroom or invest in wardrobes and cabinet design in Dubai, our trained professionals at Casa Kraft help you with the most effective reliable design and installation services on your space and budget. Casa Kraft is a Leading Wooden Cabinet Company as well as a Modern Custom wardrobe designer in Dubai.
               </p>
 
               {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
@@ -77,130 +106,167 @@ export default function BodySection() {
       <section className="bg-white">
         <div className="max-w-[780px] mx-auto px-4 sm:px-6 lg:px-0 pt-14 pb-10">
           <h2
-            className="text-center font-semibold text-[24px] sm:text-[30px]"
+            className="text-center font-semibold text-[20px] sm:text-[24px]"
             style={{ color: PURPLE }}
           >
-            Benefits of Apartment Renovation in Dubai
+           Best Wardrobe and Cabinet Designer Services in Dubai 
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Renovating your apartment in Dubai comes with a myriad of benefits.
-              Firstly, it enhances the aesthetic appeal of your space, making it more
-              modern and stylish. A renovated apartment not only looks great but also
-              adds value to your property, which can be advantageous if you plan to sell
-              or rent it out in the future.
+            Casa Kraft Interiors reputation is built on professional craftsmanship, modern aesthetics, and flawless project finishes. As experts in wardrobe cabinet services in Dubai, we create storage that elevate both functionality and interior elegance.
             </p>
 
-            <p>
-              Moreover, apartment renovation allows you to customize your space
-              according to your preferences and lifestyle. Whether you want to create
-              an open-plan layout, add extra storage, or upgrade fixtures and fittings,
-              renovation gives you the freedom to design your dream home.
-            </p>
           </div>
 
           <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Apartment Renovation Goals
-            </h3>
+            <h2 className="font-semibold text-[20px]" style={{ color: PURPLE }}>
+              Why Choose Casa Kraft Interiors For Wardrobe Services?
+            </h2>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Before embarking on an apartment renovation project, it&apos;s essential
-              to set clear goals. Determine what you aim to achieve with the renovation.
-              Are you looking to increase functionality, improve energy efficiency, or
-              simply enhance the overall ambiance? By defining your objectives, you can
-              streamline the renovation process and ensure that it aligns with your
-              vision.
+              We provide a wide range of wardrobe services including expert wardrobe fit-out and custom design with high-end quality materials and contemporary finishes to design storage solutions that are both stylish and practical. We craft specific layouts for small rooms and modern bedrooms, making sure each inch of space is used thoughtfully and efficiently while maintaining a pure aesthetic.
+            </p>
+            <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
+              Casa Kraft Interiors provide modern appliance devices, effective space-utilizing designs, along with a high emphasis on every detail, we also offer you with a wardrobe design that enhances your living. Our professionals ensure premium quality, on-time delivery, transparent pricing, and timeless elegance, so you cherish a flawless and modern experience from concept development to final execution. Casa Kraft Interiors craft Customized Wardrobe Cabinets in Dubai that perfectly match contemporary living standards.
             </p>
           </div>
 
           <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              How to Start an Apartment Renovation Dubai
+            <h3 className="font-semibold text-[20px]" style={{ color: PURPLE }}>
+             Our Wardrobe & Cabinet Services In Dubai
             </h3>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Starting an{" "}
-                <span className="font-semibold underline text-black">
-                  apartment renovation Dubai
-                </span>{" "}
-                may seem daunting, but with the right approach, it can be a smooth and
-                rewarding experience. Begin by researching reputable apartment renovation
-                companies in Dubai. Look for contractors who have experience in renovating
-                apartments similar to yours and have a proven track record of delivering
-                quality results.
+                Casa Kraft Interiors offer premium wardrobe cabinet services in Dubai, delivering custom built-in and modern designs specific for apartments, villas, and luxury homes. Our experienced designers deliver luxurious, functional solutions as a reliable wardrobe and cabinet designer in Dubai.
               </p>
 
-              <p>
-                Once you&apos;ve selected a renovation company, schedule a consultation
-                to discuss your ideas and budget. A professional contractor will assess
-                your space, provide expert advice, and offer design solutions tailored
-                to your needs.
-              </p>
+              <h4 className="flex items-center gap-3 font-bold text-[18px] text-black">
+              <span className="w-3 h-3 bg-black rounded-full"></span>
+              Custom Built-In Wardrobes in Dubai
+              </h4>
+              <p className="text-[15px] leading-7">
+              Our built-in wardrobes in Dubai are created to amalgamate flawlessly modernity and functionality together into your interiors, designing a pure, elegant look while maximizing storage.
+            </p>
+
+             <h4 className="flex items-center gap-3 font-bold text-[18px] text-black">
+              <span className="w-3 h-3 bg-black rounded-full"></span>
+              Walk-In Wardrobe Design
+              </h4>
+              <p className="text-[15px] leading-7">
+             Walk-in wardrobes is modern and luxurious offer specific sections for clothing, shoes, bags, and accessories, best for modern master bedrooms and luxurious villa.
+            </p>
+
+             <h4 className="flex items-center gap-3 font-bold text-[18px] text-black">
+              <span className="w-3 h-3 bg-black rounded-full"></span>
+              Modern Sliding & Mirrored Wardrobes
+              </h4>
+              <p className="text-[15px] leading-7">
+              The modern wardrobe cabinets in Dubai by Casa Kraft Interiors come with sliders, as well as mirror options, to increase storage space and add to the beauty of small rooms.
+            </p>
+
+             <h4 className="flex items-center gap-3 font-bold text-[18px] text-black">
+              <span className="w-3 h-3 bg-black rounded-full"></span>
+             Wooden Wardrobes & Cabinets
+              </h4>
+              <p className="text-[15px] leading-7">
+              Casa Kraft interiors is a Leading Wooden Cabinet Company, offering luxurious and elegant wooden wardrobes created using premium durable and moisture-resistant material.
+            </p>
+
+             <h4 className="flex items-center gap-3 font-bold text-[18px] text-black">
+              <span className="w-3 h-3 bg-black rounded-full"></span>
+              Corner & Compact Wardrobe Solutions
+              </h4>
+              <p className="text-[15px] leading-7">
+              We create smart corner wardrobes and L-shaped cabinets to optimize awkward or limited spaces.
+            </p>
+
+             <h4 className="flex items-center gap-3 font-bold text-[18px] text-black">
+              <span className="w-3 h-3 bg-black rounded-full"></span>
+              Wardrobe Renovations
+              </h4>
+              <p className="text-[15px] leading-7">
+              Casa Kraft Interiors also deliver full wardrobe renovations, transforming old-fashioned storage into luxurious, modern solutions.
+            </p>
             </div>
           </div>
 
           <div className="mt-10">
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              Why Choose Our Apartment Renovation Dubai Services?
-            </h3>
+            <h2 className="font-semibold text-[20px]" style={{ color: PURPLE }}>
+              Custom Built-In & Modern Designs for Every Space
+            </h2>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                At{" "}
-                <span className="font-semibold text-black">
-                  WE DO Interior Design &amp; Fit-Out
-                </span>
-                , we focus on delivering premium apartment renovation results that match
-                your expectations — with a practical scope, clean workmanship, and clear
-                communication from start to finish.
+                From modern apartments to elegant villas, our wardrobes and cabinet design in Dubai adapts to every interior style. We focus on:
               </p>
-
+              
+                  <ul className="mt-5 space-y-2 text-[15px] list-inside list-disc">
+                <li>
+                 Space planning & functional zoning
+                </li>
+                <li>
+                  Soft-close hinges and smooth sliding systems
+                </li>
+                <li>
+                 LED lighting integration
+                </li>
+                <li>
+                Modular accessories for organization
+                </li>
+              </ul>
               <p>
-                With years of experience in the industry, we understand the unique
-                challenges and requirements of renovating apartments in Dubai and are
-                committed to providing personalized solutions that suit your preferences
-                and budget.
+                Our goal is to provide elegant, functional, and modern wardrobe cabinets in Dubai that strengthen everyday living.
               </p>
+              
+              
+
             </div>
 
             <div className="mt-10">
-              <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                When you choose our apartment renovation services, you can expect:
-              </h4>
+              <h2 className="font-semibold text-[20px]">
+                Our Simple 3-Step Process
+              </h2>
 
-              <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Expert craftsmanship and attention to detail
+              <ul className="mt-5 space-y-2 text-[15px]">
+                <li>
+                  Consultation & Measurement — Understand your needs and measure your space
+
                 </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Transparent communication and project management
+                <li>
+               Design & Approval — Create your custom wardrobe layout and material selection
+
                 </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Competitive pricing and accurate cost estimates
-                </li>
-                <li className="flex gap-3">
-                  <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  Timely completion without compromising quality
+                <li>
+                Manufacturing & Installation — Precision production and professional fitting
                 </li>
               </ul>
 
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Don&apos;t settle for anything less than the best when it comes to
-                renovating your apartment in Dubai. Trust WE DO Interior Design &amp;
-                Fit-Out to bring your vision to life and transform your space into a
-                place you&apos;ll love to call home.
-              </p>
-
-              <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Contact us today to schedule a consultation and take the first step
-                towards realizing your apartment renovation goals!
+                From concept to completion, we ensure a smooth experience with our reliable design and installation services.
               </p>
             </div>
+
+                <div className="mt-10">
+            <h2 className="font-semibold text-[20px]" style={{ color: PURPLE }}>
+              Buy Wardrobe Cabinet Dubai — Premium Quality Guaranteed
+            </h2>
+            <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
+             If you’re seeking to Buy Wardrobe Cabinet Dubai, we offer fully personalized solutions rather than generic furniture. Every cabinet is created for your room dimensions, storage needs, and unique aesthetic preferences.
+            </p>
+            <p>
+              Whether you desire to Buy the Best Wardrobe Cabinet in Dubai or enhance your existing storage, we make sure of expert craftsmanship and luxurious finishes.
+            </p>
+          </div>
+              <div className="mt-10">
+            <h2 className="font-semibold text-[20px]" style={{ color: PURPLE }}>
+              Get the Best Wardrobe & Cabinet Solutions in Dubai
+            </h2>
+            <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
+              Upgrade your home with Casa Kraft Interiors Premier Wardrobe & Cabinet Solutions in Dubai  crafted for beauty, efficiency, and long-term use. Contact Casa Kraft Interiors today for a free consultation and discover why we’re known for the best wardrobe and cabinet designer services in Dubai.
+            </p>
+          </div>
+
           </div>
         </div>
       </section>
@@ -215,17 +281,22 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How do you renovate a small apartment?",
-        a: "Renovating a small apartment involves maximizing space efficiency and enhancing functionality. Start by decluttering and selecting multifunctional furniture. Opt for light colors to create an illusion of space and incorporate smart storage solutions. Our experts can tailor a plan to optimize your small apartment renovation.",
+        q: "How long does installation take?",
+        a: " Generally 3–6 weeks depending on complexity.",
       },
       {
-        q: "What does it mean to renovate an apartment?",
-        a: "It typically includes improving layouts, finishes, fixtures, and functional systems—such as flooring, ceilings, lighting, joinery, kitchens, bathrooms, and painting—based on your goals and building approvals.",
+        q: "What is the difference between a closet and a wardrobe?",
+        a: "The difference between a closet and a wardrobe is that a closet showcases a simple storage solution, but a wardrobe is a customized storage solution that incorporates shelves, drawers, and other storage solutions, which is essentially seen in wardrobe cabinets in Dubai for contemporary homes.",
       },
       {
-        q: "Can you paint walls in a rented apartment?",
-        a: "Often yes, but it depends on your tenancy contract and landlord approval. We can recommend reversible finishes and provide approval-ready samples/specs for sign-off.",
+        q: " Do you offer custom wardrobe design services?",
+        a: "Yes, we also provide fully custom wardrobe design services in Dubai, as per the area and the interior design you have chosen.",
       },
+       {
+        q: "Are built-in wardrobes better than walk-in wardrobes?",
+        a: "Built-in wardrobes in Dubai are the perfect option for space conservation, while walk-in wardrobes add a bit of modernity and luxury and this choice depends on the size of your Dubai room and living style.",
+      },
+      
     ],
     []
   );

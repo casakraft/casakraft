@@ -29,11 +29,19 @@ export default function BodySection() {
               <div className="w-full max-w-[760px]">
                 <HeroGallerySwiper
                   images={[
-                    "/images/acacia-1.png",
-                    "/images/acacia-2.png",
-                    "/images/acacia-3.png",
-                    "/images/acacia-4.png",
-                    "/images/acacia-5.png",
+                    "/images/pn1.png",
+                    "/images/pn2.png",
+                    "/images/pn3.png",
+                    "/images/pn4.png",
+                    "/images/pn5.png",
+                    "/images/pn6.png",
+                    "/images/pn7.png",
+                    "/images/pn8.png",
+                    "/images/pn9.jpeg",
+                    "/images/pn10.jpeg",
+                    "/images/pn11.jpeg",
+                    "/images/pn12.jpeg",
+                    
                   ]}
                 />
               </div>

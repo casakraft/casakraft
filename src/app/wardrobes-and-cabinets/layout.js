@@ -1,7 +1,7 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Renovation Dubai - Best Renovation Company - Casa Kraft Interiors",
+  title: "Wardrobes and Cabinets Dubai - Best Renovation Company - Casa Kraft Interiors",
   description:
     "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),

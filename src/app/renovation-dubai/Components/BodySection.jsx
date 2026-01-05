@@ -103,17 +103,17 @@ export default function BodySection() {
   // Renovations grid (PDF shows image tiles with bottom black label)
   const renovationTiles = useMemo(
     () => [
-      { title: "Villa Renovation", img: "/images/cvd-5.png", href: "/villa-renovation" },
-      { title: "Apartment Renovation", img: "/images/ca-6.png", href: "/apartment-renovation" },
-      { title: "Office Renovation", img: "/images/bulgari-2.png", href: "/office-renovation-dubai" },
-      { title: "Kitchens", img: "/images/marina-8.png", href: "/kitchen-renovation" },
-      { title: "Bathrooms", img: "/images/bluewaters-5.png", href: "/bathroom-renovation" },
-      { title: "Flooring", img: "/images/flooring.png", href: "/flooring-dubai" },
-      { title: "Wardrobes & Cabinets", img: "/images/ca-6.png", href: "/wardrobes-and-cabinets" },
-      { title: "Villa Extension", img: "/images/vl-7.png", href: "/villa-extention" },
-      { title: "Landscape", img: "/images/landscape-design.png", href: "/landscape-dubai" },
-      { title: "Painting", img: "/images/boulevard-5.png", href: "/painting-services-dubai" },
-      { title: "Windows & Doors", img: "/images/damac-5.png", href: "/windows-and-doors" },
+      { title: "Villa Renovation", img: "/images/vr2.png", href: "/villa-renovation" },
+      { title: "Apartment Renovation", img: "/images/aptt1.png", href: "/apartment-renovation" },
+      { title: "Office Renovation", img: "/images/or6.png", href: "/office-renovation-dubai" },
+      { title: "Kitchens", img: "/images/kr4.png", href: "/kitchen-renovation" },
+      { title: "Bathrooms", img: "/images/br7.jpeg", href: "/bathroom-renovation" },
+      { title: "Flooring", img: "/images/fr4.png", href: "/flooring-dubai" },
+      { title: "Wardrobes & Cabinets", img: "/images/wc5.png", href: "/wardrobes-and-cabinets" },
+      { title: "Villa Extension", img: "/images/ve6.png", href: "/villa-extention" },
+      { title: "Landscape", img: "/images/ls2.png", href: "/landscape-dubai" },
+      { title: "Painting", img: "/images/pn3.png", href: "/painting-services-dubai" },
+      { title: "Windows & Doors", img: "/images/wd1.png", href: "/windows-and-doors" },
     ],
     []
   );
