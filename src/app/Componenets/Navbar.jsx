@@ -78,6 +78,9 @@ const Navbar = () => {
         <p className="font-semibold tracking-wide whitespace-nowrap">
           +971 58 602 3677
         </p>
+         <p className="font-semibold tracking-wide whitespace-nowrap">
+          +971 4 420 8855
+        </p>
       </div>
 
       {/* RIGHT: social icons */}
@@ -114,7 +117,7 @@ const Navbar = () => {
                 alt="Logo"
                 width={140}
                 height={44}
-                className="h-10 w-auto"
+                className="h-16 w-auto"
                 priority
               />
             </Link>
@@ -153,7 +156,7 @@ const Navbar = () => {
                 alt="Logo"
                 width={120}
                 height={40}
-                className="h-9 w-auto"
+                className="h-16 w-auto"
                 priority
               />
             </Link>

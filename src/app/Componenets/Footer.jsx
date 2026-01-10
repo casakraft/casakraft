@@ -96,6 +96,11 @@ const Footer = () => {
                   +971 58 602 3677
                 </a>
               </li>
+               <li>
+                <a href="tel:+971586023677" className="hover:text-white transition">
+                  +971 4 420 8855
+                </a>
+              </li>
 
               <li>
                 <a href="mailto:info@casakraft.ae" className="hover:text-white transition">

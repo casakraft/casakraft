@@ -8,7 +8,7 @@ import Services from "./Componenets/Services";
 import GetInTouch from "./Componenets/GetinTouch";
 import Portfolio from "./Componenets/Portfolio";
 import Blogs from "./Componenets/Blogs";
-
+import TestimonialsWidget from "./Componenets/Testimonials";
 import LocationMap from "./Componenets/LocationMap";
 import Footer from "./Componenets/Footer";
 
@@ -28,7 +28,7 @@ export default function Home() {
         <GetInTouch />
         <Portfolio />
         <Blogs />
-        
+        <TestimonialsWidget />
          <div className="bg-[#f5ede5]">
           <LocationMap />
           <Footer />
