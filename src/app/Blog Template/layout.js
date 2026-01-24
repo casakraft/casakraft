@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Modern Apartment Interior Design in Dubai - Casa Kraft Interiors",
+  title: " 5 Modern Apartment Interior Design Tips in 2025 by WEDO",
   description:
-    "Explore modern apartment interior design in Dubai with Casa Kraft Interiors. Discover trends, colors, smart layouts, and renovation ideas.",
+    "Discover modern apartment interior designs in 2025. Explore 5 trending styles in Dubai, from minimalism to boho, for elegant living spaces. ",
   metadataBase: new URL('https://wedointerior.ae/'),
   alternates: {
     canonical: '/modern-apartment-interior-design',

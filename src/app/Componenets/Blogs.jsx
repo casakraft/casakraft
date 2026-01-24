@@ -8,8 +8,8 @@ import Link from "next/link";
 const blogPosts = [
   {
     title: "5 Modern Apartment Interior Design",
-    date: "Nov 22, 2025",
-    image: "/images/blog-1.png",
+    date: "Jan 24, 2026",
+    image: "/images/designing-the-perfect-modern-apartment-interior.png",
     link: "/modern-apartment-interior-design",
   },
   {
