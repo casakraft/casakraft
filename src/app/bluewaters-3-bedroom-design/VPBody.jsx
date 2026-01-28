@@ -103,10 +103,10 @@ export default function VPBody() {
         {/* ===== SECTION 1 (2 paragraphs) ===== */}
         <SectionHeader
           as="h1"
-          title="BLUEWATERS 3-BEDROOM APARTMENT DESIGN : ELEVATING WATERFRONT LIVING"
+          title="BLUEWATERS 3-BEDROOM DESIGN DUBAI"
           text={[
-            "At Casa kraft Interiors, our Bluewaters 3 Bedroom Design shows a pure blend of comfort, functionality, and modern Dubai living. Situated on the vibrant Bluewaters Island, this project reflects how thoughtfully designed interiors can change a space into a comfort, elegant, and truly livable home. Each element of this Bluewaters 3-Bedroom Apartment Interior Design in Dubai is created to complement the island’s warm waterfront atmosphere while balancing a sophisticated modern style.",
-            "Casa kraft Interiors is a leading residential interior design company in Dubai, our experience in fit-out projects in Dubai and our interior decorators focused on designing smooth layouts, and an equal mix of textures and finishes. Warm tones, high-end materials, bespoke design and seamless flow from one bedroom to another"
+            "The Bluewaters 3 Bedroom interior Design by Casa Kraft Interiors, recognized as the best residential interior design company in Dubai, showcases a perfect blend of elegance, comfort and functionality. Every corner of this home is meticulously planned . Casa kraft interiors offer luxurious bedroom interiors that feel both inviting and refined.",
+            "Our team specializes in bespoke 3 bedroom apartment interior design, ensuring each room reflects individuality while maintaining a cohesive overall style. The modern bedroom interiors are designed as a serene retreat, combining soft textures, sophisticated lighting and carefully selected finishes. With expert master bedroom interiors design in Bluewaters Dubai, Casa kraft interiors deliver spaces that are luxurious yet practical, reflecting the client’s taste and lifestyle."
           ]}
         />
 
@@ -117,10 +117,10 @@ export default function VPBody() {
           {/* ===== SECTION 2 (2 paragraphs) ===== */}
           <SectionHeader
             as="h2"
-            title="Bluewaters Luxury Interior Layout"
+            title="Bluewaters Luxury Apartment Interior Design"
             text={[
-              "Casa kraft’s strong portfolio across Dubai luxury apartments creates trust for clients seeking for reliable, detail-oriented design expertise. Clients frequently ask whether we provide complete fit-out services for Bluewaters apartments, yes, our professionals handle everything from idea creation to final execution, making sure a flawless experience with premium quality.",
-              "This Bluewaters work shows why Casa kraft Interiors stands out as one of the best residential interior design companies in Dubai, each space is created with purpose, comfort, and long-lasting sophistication. If you’re dreaming of upgrading or redesigning your Bluewaters home. Contact Casa kraft Interiors to enhance your Bluewaters 3-bedroom apartment into a luxurious waterfront home"
+              "Casa Kraft Interiors and decoration also offers Bespoke Bedroom Design in Dubai, using premium materials and craftsmanship to create bedrooms that stand out. As one of the best bedroom interior designer manufacturers in Dubai, we focus on precision, quality and style.",
+              "Our services include full Interior Design & 3D Visualization  Bluewaters Bedroom, allowing clients to experience their space before execution. Whether it’s modern bedroom interior design in Bluewaters Dubai or a timeless classic look, we deliver top interior designs in Dubai that redefine luxury living."
             ]}
           />
 

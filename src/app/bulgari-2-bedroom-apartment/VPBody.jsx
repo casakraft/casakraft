@@ -96,16 +96,24 @@ export default function VPBody() {
         <SectionHeader
           as="h1"
           title="Bulgari 2 Bedroom Apartment"
-          text=""
+          text={[
+            "Casa Kraft Interiors and Renovations specializes in expert apartment renovation and complete fitout services in Dubai. The Interior Design of 2 Bedroom Apartment in Bulgari represents our ability to transform spaces into luxurious, elegant homes. ",
+            "Casa kraft interior and Renovation expert team delivers bespoke interior design and fit-out services, creating luxury apartment interiors in Bulgari Dubai that combine comfort, style and functionality. Each detail is carefully curated from the layout to finishes, lighting and furniture reflecting the client’s taste and lifestyle."
+          ]}
         />
 
         {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
+          
           {blocks.map((block, i) => (
             <GalleryBlock key={i} block={block} />
           ))}
+          
+          
         </div>
       </div>
+
+      
     </section>
   );
 }

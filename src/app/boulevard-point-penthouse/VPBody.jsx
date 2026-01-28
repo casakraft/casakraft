@@ -103,10 +103,10 @@ export default function VPBody() {
         {/* ===== SECTION 1: 2 paragraphs + 1 large + 3 small ===== */}
         <SectionHeader
           as="h1"
-          title="Boulevard Point Penthouse: Luxury Interior Design Dubai"
+          title="Boulevard Point Penthouse Luxury Interior Design Dubai"
           text={[
-            "The Boulevard Point Penthouse – Interior Design Dubai work reflects sophistication, luxury, and modern elegance. Each interior design has been purposely executed to curate an innovative yet modern home. Our decorators are specialists in delivering exceptional interior design services, turning vision into elegant realities that manage practicality and modern sophistication.",
-            "Casa kraft Interiors is a Luxury Interior Design Company in Boulevard Point Penthouse, Dubai. Our interior decorators make sure stylish layouts, premium finishes, and bespoke touches that enhance every room. With many years of experience as one of the famous interior design firms in Dubai, we deliver tailored solutions that show each client’s personality and lifestyle."
+            "This Boulevard Point Penthouse is a stunning example of modern luxury, designed by Casa Kraft Interiors and Renovations, a Luxury Interior Design Company in Boulevard Point Dubai. Casa kraft interiors's expert team delivers stunning and exceptional interior design services, creating beautiful and functional penthouses in Dubai that combine elegance, comfort and sophistication.",
+            "As one of the leading penthouse interior designers in Dubai, we specialize in Interior Design Services in Dubai offering tailored solutions for every space. From modern penthouse design to top Penthouse interior design & fit-out company in Dubai, every detail is meticulously planned, balancing style, functionality and premium finishes."
           ]}
         />
 
@@ -117,11 +117,10 @@ export default function VPBody() {
           {/* ===== SECTION 2: 2 paragraphs + 1 large + 3 small ===== */}
           <SectionHeader
             as="h2"
-            title="Luxury Living Above the Boulevard"
+            title="Luxury Living Above the Boulevard Point Dubai"
             text={[
-              "We are also reliable among the best interior fit out companies in Dubai, providing end-to-end services from idea creation to final finishing. Clients frequently question if their vision can be fully customized, and we make sure each interior design Dubai project is modern, functional, and luxurious.",
-
-              "Casakraft’s Boulevard Point Penthouse interiors highlight why we are reputed in Dubai interior design. Explore Casa kraft Interiors and find out how we can turn your penthouse into a masterpiece of style, luxury, and sophistication."
+              "Casa kraft interiors work with clients to create stylish Dubai penthouse interiors using contemporary materials, bespoke furnishings and advanced design techniques. Recognized among the top 10 interior fit out companies in Dubai, our expertise covers interior fit out Dubai, interior decoration companies in Dubai, interior design firms in Dubai and interior decorators Dubai, ensuring every project is executed to perfection.",
+              "Whether you are seeking modern interior Renovation, top penthouse interior design or collaborations with world famous interior designers. Casa Kraft Interiors delivers results that redefine luxury living. Our work represents the pinnacle of design, craftsmanship and elegance making your Boulevard Point Penthouse a signature residence in Dubai."
             ]}
           />
 
@@ -132,3 +131,4 @@ export default function VPBody() {
     </section>
   );
 }
+

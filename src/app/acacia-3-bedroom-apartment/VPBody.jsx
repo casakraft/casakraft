@@ -102,8 +102,8 @@ export default function VPBody() {
           as="h1"
           title="Acacia 3 Bedroom Apartment Design Dubai"
           text={[
-            "Acacia 3-Bedroom Apartment in Dubai Hills, explore the perfect blend of luxury, elegance, and functionality, designed by Casa kraft Interiors. Our interior designers managed the fitout service of apartment interior design Dubai while making sure that each space is designed with bespoke finishes, high-end materials, and functionally planned layouts to enhance modern Dubai living.",
-            "Casa kraft Interiors has many years of experience, we are prominent among interior fit-out companies in Dubai and experts in transforming ordinary apartments into extraordinary residences. The creative design of our 3-bedroom apartment in Dubai reflects sophistication, luxury, and functionality. As a top interior design firm in Dubai, our decorators deliver full design and fit-out services, from conceptual layouts to flawless finishing, guaranteeing a high-end experience."
+            "The Acacia 3 Bedroom Apartment is fashioned as an elegant retreat that reflects the signature style of Casa Kraft Interiors and Decoration. Every space is carefully planned and attentively balances comfort, sophistication and sense of calm that make any individual instantly feel at home. The design is focused on harmony, balance and refined luxury apartment interiors in Dubai.",
+            "With expert master bedroom interiors design in Bluewaters Dubai, Casa kraft interiors deliver spaces that are luxurious yet practical, reflecting the client’s taste and lifestyle. Each room is planned to be comforting without necessarily sacrificing beautiful appeal."
           ]}
         />
 
@@ -116,9 +116,9 @@ export default function VPBody() {
             as="h2"
             title="Elegant Living Spaces in Acacia Dubai Hills"
             text={[
-              "Clients frequently question whether Casa kraft Interiors is capable of designing and furnishing an Acacia apartment? Yes! We offer high-end services that combine sophistication with practicality to enhance your living style.",
+              "Casa Kraft Interiors and Decoration works across modern, contemporary, classic and timeless styles. This flexibility is reflected in the Acacia 3 Bedroom Apartment, where luxury and elegant contrasts come together to create a polished welcoming environment.",
 
-              "Contact Casa kraft Interiors to enhance your Dubai residence right now and change your Acacia 3-bedroom apartment into a luxurious and modern haven."
+              "As one of the top interior design companies in Dubai, we provide bespoke interior design and fit-out services that cover every minute detail, from the material selection to bespoke joinery. The Acacia 3 Bedroom Apartment stands as a strong example of Dubai apartment interior design fusing style and function in a seamless way. Contact Casa kraft Interiors to enhance your Dubai residence right now and change your Acacia 3-bedroom apartment into a luxurious and modern haven."
             ]}
           />
 

@@ -40,7 +40,7 @@ const VHeroSection = () => {
           </h1>
          <div className=" text-sm leading-relaxed font-play">
              <p>
-              Modern apartment interior design has come up as the foundation of modern city life, especially in Dubai, 
+             <b className="text-[#caa193]"><a href="https://www.casakraftinteriors.ae/apartment-interior-design-dubai">Modern apartment interior design</a></b> has come up as the foundation of modern city life, especially in Dubai, 
               where lifestyle, luxury and space management meet as one. From studio apartment interior design to luxurious 
               apartment interior designs, modern interior design focuses on simplicity, functionality and elegance.
               </p> <br />
@@ -55,15 +55,15 @@ const VHeroSection = () => {
               className="rounded-md w-full object-cover"
             />
             <div className=" text-sm leading-relaxed font-play">
-              Whether you are planning a full apartment renovation, looking for apartment interior  ideas or simply looking 
+              Whether you are  <b className="text-[#caa193]"><a href="https://www.casakraftinteriors.ae/apartment-renovation"></a>full apartment renovation</b>, looking for apartment interior  ideas or simply looking 
               at apartment interior design inspiration this guide by Casa Kraft Interiors & Renovations contains all the 
               information you need about Apartment Interior in a Modern Style.
             <p>
              
             </p>
             <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">What Is Modern Apartment Interior Design?</h2>
-            <p> Casa Kraft's modern apartment interior design services focus on minimalism, functionality and harmony. Casa 
-              Kraft Interiors & Renovations incorporate soft colors,smart layouts and high quality materials to create a 
+            <p> Casa Kraft's modern apartment interior design services focus on minimalism, functionality and harmony. <b className="text-[#caa193]"><a href="https://www.casakraftinteriors.ae/">Casa 
+              Kraft Interiors & Renovations</a></b> incorporate soft colors,smart layouts and high quality materials to create a 
               serene and elegant space. This modern apartment interior is organized for maximum comfort and usability 
               making it ideal for apartments of different sizes.</p>
           </div>
@@ -77,7 +77,7 @@ const VHeroSection = () => {
              <h3 class="text-[#caa193] text-xl font-conthrax leading-tight">Modern vs Contemporary Apartment Interior Design</h3>
             <p className="text-sm"> Although Modern apartment interior design ideas are based on proper design principles, which are linked to 
               minimalism, contemporary apartment interior design is style friendly and keeps changing with time. Both are 
-              commonly used in apartment interior design Dubai projects.</p>
+              commonly used in <b className="text-[#caa193]"><a href="https://www.casakraftinteriors.ae/gallery"></a>apartment interior design Dubai projects</b>.</p>
               
              <Image
               src="/images/modern-vs-contemporary-apartment-interior-design.png"
