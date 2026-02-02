@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Barber Shop Dubai"
-          text=""
+          title="Interior Design of Barber Shop Dubai"
+          text={[
+            "At Casa Kraft Interiors, we provide premier barber shop interior design services in Dubai that take your space to new heights. As one of the best barber shop design firms in Dubai, we infuse imaginative concepts and technical experience into our interior designs. We believe every barber shop Design reflects its brand identity while offering a warm,  and comfortable environment. Our bespoke interior design approach to high-end interior design begins with deeply understanding your needs, followed by meticulous space planning, thoughtful material selection and design execution .",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Barber Shop interior Design in Dubai"
+            text={[
+              "Our services include everything from concept development to final execution. Casa kraft interior and renovations create modern barber shop interior design in Dubai with luxury decor that will make a memorable experience for your clients. From customized fixtures and lighting to premium finishes, we will provide solutions to make your outlet stand apart. As dedicated barber shop interior designers in Dubai, we are committed to exceptional quality and innovation. Casa Kraft Interiors stands in the lead among the best design services of barber shops and is able to create modern, luxury, and futuristic custom interiors, reflecting your business. Partner with us for top Barber Shop Interior Design Dubai services, and bring to life a space that will impress at first sight and perform every day.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Mirdif Hills Apartment"
-          text=""
+          title="Mirdif Hills Apartment Design"
+          text={[
+            "HExperience premium interior design services by Casa Kraft Interiors and Renovations, where refined aesthetics and functionality come together at Mirdif Hills Contemporary Luxury Living. We specialize in Premium Luxury Apartment interior design Mirdif Hills, delivering contemporary interiors that reflect a refined contemporary luxury lifestyle. Each project is driven by unique design concepts shaped through modernized designs and cutting edge architecture. From space planning to material selection, our team focuses on creating stylish urban interiors that feel elegant, warm and timeless.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Apartment Interior Design in Mirdif Hills"
+            text={[
+              "As expert interior designers in Dubai Mirdif Hills, we provide complete apartment interior design work, covering concept development, execution, and turnkey fit out solutions. Every Luxury Apartment Interior is designed to deliver comfort and luxury while showcasing refined aesthetics. Recognized as a leading interior design company in Dubai and counted among the best interior design firms in Dubai, Casa Kraft Interior and Renovations is trusted for delivering luxury apartment interior design solutions that result in truly breathtaking luxury spaces defined by modern luxury interior design standards",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

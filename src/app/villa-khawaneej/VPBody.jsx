@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Villa Khawaneej Interior"
-          text=""
+          title="Villa Khawaneej Luxury Interior Design Dubai "
+          text={[
+            "This incredible villa in Al Khawaneej is a demonstration of the best integration between elegance, comfort, and modernism. The Villa Khawaneej  Luxury Interior Design Dubai boasts desirable villa interior designs in Khawaneej with a perfect blend of classic villa interior design and a modern interior design approach.  Every single space in the villa is carefully conceptualized to allow the creation of generous interior spaces. Custom furniture, luxurious finishes, and sophisticated interior detail the interior design with an element of luxury.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Best interior design company in Al Khawaneej"
+            text={[
+              "Being the most preferred interior design company in Al Khawaneej, Casa Kraft Interiors and renovations is a leading company for end-to-end luxurious villa interior design in the area of Al Khawaneej, dealing with all tasks from conceptualization to execution of the task. This remarkable interior design task proves our proficiency in designing spaces perfectly, uniquely, and aesthetically attractive. At our company, we strike a balance between modern and elegant design to give every single area within the villa a thoughtful design. This way, we provide our valued clienteles with not only a beautiful and elegant home but also a home with high-class interior design in Dubai villas.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

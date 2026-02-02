@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Nikki Beach 2 Bedroom Apartment"
-          text=""
+          title="Nikki Beach 2 Bedroom Apartment "
+          text={[
+            "The Nikki Beach 2 bedroom apartment is crafted  with an elegant touch that embodies contemporary coastal living.  CasaKraft Interiors presents a luxury 2 bedroom apartment in Nikki Beach resort that blends comfort, elegance and a premium lifestyle in every detail. This Nikki Beach Residence 2 Bedroom Apartment features meticulously designed interiors that enhance the comfort  and create a smooth flow across the living. The Casa kraft interiors and Renovations create designs that are supported by modern interiors  around functionality and visual balance, creating a home that feels both warm and sophisticated.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Nikki Beach 2 Bedroom Apartment Interior Design Dubai"
+            text={[
+              "Carefully curated elements bring together stylish interiors that elevate the entire atmosphere. CasaKraft interior and Decoration deliver bespoke interior designs that respond to individual taste while maintaining a premium standard. The result is an elegantly designed 2 bedroom apartment in nikki beach that showcases refined aesthetics, meticulous attention to detailing and contemporary interiors made for modern and luxury lifestyle.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

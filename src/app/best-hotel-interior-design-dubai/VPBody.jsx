@@ -90,20 +90,32 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Best Hotel Interior Design Dubai"
-          text=""
+          text={[
+            "Casa Kraft Interior and Decoration is the best  hotel interior design company in Dubai,   focusing on the fields of Hotel Interior Design in Dubai. As a Luxury Interior Design and Architecture Company in Dubai, we provide complete solutions, including turnkey hotel interior design, ensuring seamless execution from initial idea to final execution . Our  expert team  creates beautiful and smart hotel interior design in Dubai, combining contemporary elegance with tailored solutions that elevate every guest experience.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Best Hotel Interior Design Company in Dubai"
+            text={[
+              "Recognized among the best hotel interior design firms in Dubai, Casa Kraft Interior and Decoration is recognized for luxury hotel  design that reflects innovation, style and operational efficiency. Each project is a showcase of Hotel Interior Design Dubai at its finest, balancing design, functionality and luxury. From boutique properties to large-scale resorts, we are a leading interior design company in Dubai delivering Top Hotel Interior Design experiences.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

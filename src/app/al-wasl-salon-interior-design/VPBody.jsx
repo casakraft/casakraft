@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Al Wasl Salon Interior Design"
-          text=""
+          text={[
+            "At CasaKraft Interiors, our focus is on transforming spaces through  Interior design, renovation and fit out services for salons that want to make a lasting impression. Our Beauty Salon Dubai Design & Fit-Out solutions are designed to reflect the identity and aspirations of each brand, creating spaces that feel both inviting and refined. We excel in luxury interior design that enhances the client experience from reception to treatment zones. The Al Wasl Salon interior design project showcases our commitment to beauty salon interior design with a focus on flow, functionality and aesthetics. Every detail is considered to support comfort and elevate the overall ambiance.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Al Wasl Salon Interior in Dubai"
+            text={[
+              "Our team combines architectural knowledge with interior design skills to deliver stunning  salon interior designs that balance form and performance. Casa Kraft interiors and renovations craft luxury beauty salons in Dubai that stand out in a competitive market, combining modern trends with classic sophistication. As contemporary interior designers in Dubai, we deliver modern interiors that reflect quality, elegance and purposeful design.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

@@ -90,20 +90,32 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Dubai Hills Townhouse"
-          text=""
+          text={[
+            "Experience Luxury interiors and architecture services in Dubai Hills with Casa Kraft Interior and Renovations. Our portfolio interior design services for premium residences, including townhouses in Dubai Hills and the exclusive Dubai Hills Estate townhouse communities. This Townhouse Dubai Hills  project showcases our expertise in townhouse full interior design. Every home is shaped through bespoke interiors, refined layouts and curated finishes that enhance everyday living. Our approach to luxury modern townhouse design focuses on clean lines, open spaces and timeless materials creating a truly modern townhouse environment",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Interior Design Company in Dubai Hills"
+            text={[
+              "As specialists in contemporary townhouse interior design, we create beautiful townhouse interior designs that reflect a refined lifestyle. From concept to execution , Casa kraft interiors deliver high quality tailored interior design and fitout in Dubai Hills, ensuring seamless results with attention to every detail. Our work also extends to Dubai Hills Estate Apartment interiors, maintaining the same level of quality and craftsmanship. ",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

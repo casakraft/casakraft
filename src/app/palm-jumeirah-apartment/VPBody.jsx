@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Palm Jumeirah Apartment Interior"
-          text=""
+          title="Palm Jumeirah Apartment Interior Design in Dubai"
+          text={[
+            "CasaKraft Interiors presents a refined approach to Palm Jumeirah Apartment Interior Design & Fit Out,where we incorporate  spaces that reflect the extraordinary charm of Dubai’s most iconic destination. Our Luxury Apartment Palm Jumeirah  Dubai project provides a perfect combination of sophistication, comfort and style designed through bespoke Interior Design Services in Dubai. This house features luxurious interior  design and architectural designs where every detail matters. From how spaces are planned to what design of material to use, our team delivers custom interiors and bespoke furnishings that define modern luxury.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Apartment Interior Design Company in Palm Jumeirah"
+            text={[
+              "As a leading interior design company in Dubai, CasaKraft interiors provides best Interior Design Services in Palm Jumeirah supported by complete fitout execution. Our work on the Apartment at Palm Jumeirah Dubai  Interior Fit Out showcases the efficiency of a top class Interior Renovation company in Dubai, offering seamless craftsmanship and refined finishes. This project represents Stunning Modern Apartment Interior Design and Fit-Out in Palm Jumeirah, Dubai, crafted by the leading apartment interior designers Dubai and supported by top interior design and fit-out expertise.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

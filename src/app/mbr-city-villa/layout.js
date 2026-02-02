@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "MBR City Villa | Casa Kraft Interiors",
+  title: "Luxury MBR City Villa Interior Design - Casa Kraft interiors",
   description:
-    "MBR City Villa by Casa Kraft Interiors, the Best Villa Interior Design Company in Dubai, showcases luxury interiors.",
+    "Transform your MBR City villa with Casa Kraft’s expert interior design and fit-out services. Modern luxury interiors made for Dubai living. Visit us",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/mbr-city-villa',
@@ -13,7 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+    <meta name="keywords" content="Luxury modern villa design MBR City, MBR City villa interior design, modern villa design Dubai, villa fit out company Dubai, bespoke villa interior design Dubai, luxury villa renovation Dubai, boutique villa interior designers Dubai, architectural villa design Dubai, Casa Kraft Interiors, premium villa fit out Dubai"/>
+    <meta name="publisher" content="Casa Kraft Interiors" />
+    <body>{children}</body>
     </html>
   );
 }

@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Amfali 4 Bedroom Apartment | Casa Kraft Interiors",
+  title: "Amfali 4 Bedroom Apartment - Casa Kraft Interiors",
   description:
-    "Amfali 4 Bedroom Apartment by Casa Kraft Interiors, the Best apartment Interior Design Company in Dubai, showcases luxury interiors.",
+    "Amfali 4-bedroom apartment by Casa Kraft interiors. Elegant and luxury interiors by the best interior design company. Contact today.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
     canonical: '/amfali-4-bedroom-apartment',

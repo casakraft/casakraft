@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Contemporary 2 Bedroom Apartment"
-          text=""
+          text={[
+            "At Casa Kraft Interiors, we specialize in Modern, classic, or creative styles to create homes that reflect elegance and personality. Offering premier interior design services in Dubai, our team focuses on transforming spaces with attention to detail and functional layouts. We provide complete solutions for apartment Interior Design Dubai - Modern Interior Design, including contemporary 2 bedroom apartment and full apartment interior design dubai. Our expertise in modern interior design ensures every project from  2 bedroom apartment design in Dubai to larger residences, is executed with precision. As a top interior design company in Dubai, we deliver stunning Dubai apartments interior design that blends aesthetics with comfort.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title=" 2 Bedroom Apartment Interior Design in Dubai"
+            text={[
+              "Recognized as a “Luxury Interior Design and Architecture Company , we offer Dubai Apartments Interior Design: Stylish Modern Solutions and are a Leading interior design company in Dubai, specializing in interior styling for apartments in Dubai and bespoke interior design projects. We also excel in contemporary interiors for apartments, including Arabic style apartment interiors  and contemporary apartment fit-outs in Dubai. Our team designs luxurious bedrooms, including “Luxury Bedroom Design Dubai” and Bespoke Bedroom Design in Dubai, with modern designs and Modern bedroom interiors in Dubai that enhance comfort, functionality, and style, making each home a sophisticated retreat in the heart of the city.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

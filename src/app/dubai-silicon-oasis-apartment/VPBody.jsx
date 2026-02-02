@@ -81,18 +81,31 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== FIRST SECTION ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="2 Bedroom Dubai Silicon Oasis Apartment"
-          text=""
+          text={[
+            "Luxury residential interiors in Dubai Silicon Oasis by Casa Kraft Interiors are designed for those who understand the value of design, quality, as well as function. We are the leading interior design services provider in Silicon Oasis trained in designing elegant spaces that not only keep up with the times but also have timeless style. We are equally recognized among the leading interior fit-out companies in Dubai Silicon Oasis. We provide the full range of interior design solutions for apartments, from design conception to design delivery.",
+          ]}
         />
 
-        {/* Both gallery blocks */}
         <div className="mt-8 sm:mt-10 space-y-10">
+          {/* First gallery block: 1 large + 3 small */}
           {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Apartment Interior Design Services in Dubai Silicon Oasis"
+            text={[
+              "Our luxury interior design and home décor services include interior space planning, interior materials selection, and complete interior designs. In addition, our luxury interior designs for apartments in Silicon Oasis – Dubai are created using the finest interior products. Whether you are renovating an apartment or an entire development, our expert designers offer some of the best apartment interior design in the UAE. This is made possible by a keen eye for detail and the drive to be the best at what we do at Casa Kraft Interiors, helping to turn apartments into wonderful living spaces within the Dubai Silicon Oasis.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
           {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>

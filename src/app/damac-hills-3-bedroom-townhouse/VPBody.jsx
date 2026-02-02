@@ -90,20 +90,32 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Damac Hills 3 Bedroom Townhouse"
-          text=""
+          title="Damac Hills 3 Bedroom Town House"
+          text={[
+            "Casa Kraft Interiors and Renovations brings to you the Damac Hills 3 Bedroom Town House Interior Design, which is a harmonious blend of elegance, modernity, and functionality. Our design intent is to design personalized interior design that can convert every space into a luxurious living home. At Casa Kraft Interiors, we are careful to design high-quality interiors that showcase a modern luxury lifestyle. Casa Kraft Interiors is a professional service that deals with premium interior design and decor solutions in DAMAC Hills, known for providing exclusive solutions for every Damac Hills 3-bedroom townhouse. The services include carefully planned layouts, high-class finish, and furniture to blend luxury inside.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Damac Hills 3 Bedroom Town House Interior Design Dubai"
+            text={[
+              "The master bedroom interior design in Damac Hills is a heaven of luxury. Our luxury master bedroom interior design in Damac Hills is a refuge where elegant lighting, customized wardrobes, and subtle textures make it a delight to relax. Casakraft interior design also undertakes modern bedroom interior design in Damac Hills Dubai for a uniformity of style.Being a prominent interior design and fit-out firm in Dubai, Casa Kraft Interiors is known to be one of the top luxury interior design firms in Damac Hills. Our experts provide professional interior design services in Damac Hills with personalized designs that take townhouses to a whole new level of luxury.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Meadows Contemporary Villa Interior"
-          text=""
+          title="Meadows Contemporary Villa Design "
+          text={[
+            "Experience the charm of a stunning luxury villa transformation with our latest villa project in Meadows Dubai. This home reflects the elegance of the Meadows Villa Dubai . A Masterpiece of Luxury, combining warm tones, refined materials and a calm modern flow that enhances every part of the space. The design reflects the spirit of a Vibrant, Contemporary Villa crafted to suit the lifestyle of a modern family. Casa kraft interiors and Renovations expert team approached The Meadows Modern Interior Upgrade with a focus on balance, comfort and a clean architectural look. This project stands as a strong example of Contemporary villa interior design shaped for a modern Dubai lifestyle.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Contemporary Villa Interior Design In Meadows "
+            text={[
+              "Through the Meadows Villa Renovation Dubai, we introduced better space planning, premium finishes and a softer visual language. The interior now represents world-class design, exceptional interiors, and modern architecture in Dubai, elevating the home to a new level of refinement. The villa delivers the presence of a Magnificent Villa Design in Dubai, designed with purpose and precision. As part of our full villa renovation, Casa Kraft interiors delivered a space that feels personal and timeless. This Fully bespoke Meadows Villa Interior Design Dubai highlights our expertise in Luxury villa interior design in meadows dubai.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

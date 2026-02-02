@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Taj Residence 3 Bedroom Dubai"
-          text=""
+          text={[
+            "Casa Kraft Interiors & Renovations presents Taj Residence 3 Bedroom Dubai, a project shaped with care, balance and refined detail. This home offers a  spacious interior at Taj Dubai designed to highlight comfort, functionality and  elegance. Our team delivers  stunning interior and exceptional  design services that bring out the best in luxury living. The project focuses on luxury interior design and fitout projects in Dubai, combining Modern Interior Design with the warm character of premium materials. The Taj Residence 3 Bedroom Dubai features contemporary design, thoughtful architectural design, luxurious materials and beautifully layered modern finishes that create a calm cohesive atmosphere.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Taj Residence 3 Bedroom Apartment Interior Design"
+            text={[
+              "As experts in high-end residential work, we craft the Best Three Bedroom Apartment Interior Designs with careful attention to proportion, flow and visual harmony. This stunning 3 bedroom apartment blends stylish interiors, bespoke designs and timeless luxury interior details that elevate everyday living. CasaKraft specializes in Luxury apartment interior design in Dubai, shaping each space with clarity and purpose. This Apartment Interior in a Modern Style includes Full Design, Renovation & Fit-Out, offering complete solutions for refined living. Through our modern Apartment Interior Services, we aim to be the best apartment Interior Design Service Company, creating homes that feel personal, polished and beautifully finished.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

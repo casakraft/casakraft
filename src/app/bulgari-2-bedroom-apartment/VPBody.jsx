@@ -90,30 +90,38 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Bulgari 2 Bedroom Apartment"
+          title="Bulgari 2 Bedroom Apartment Interior Design"
           text={[
-            "Casa Kraft Interiors and Renovations specializes in expert apartment renovation and complete fitout services in Dubai. The Interior Design of 2 Bedroom Apartment in Bulgari represents our ability to transform spaces into luxurious, elegant homes. ",
-            "Casa kraft interior and Renovation expert team delivers bespoke interior design and fit-out services, creating luxury apartment interiors in Bulgari Dubai that combine comfort, style and functionality. Each detail is carefully curated from the layout to finishes, lighting and furniture reflecting the client’s taste and lifestyle."
+            "Casa Kraft Interiors and Renovations specializes in expert apartment renovation and complete fitout services in Dubai. The Interior Design of 2 Bedroom Apartment in Bulgari represents our ability to transform spaces into luxurious, elegant homes.",
+
+            " Casa kraft interior and Renovation expert team delivers bespoke interior design and fit-out services, creating luxury apartment interiors in Bulgari Dubai that combine comfort, style and functionality. Each detail is carefully curated from the layout to finishes, lighting and furniture reflecting the client’s taste and lifestyle."
           ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
-          
-          
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Best Apartment Interior Desig in Bulgari"
+            text={[
+              "Recognized as a leading apartment interior design company in Dubai, we are also counted among the top apartment interior design and best apartment interior design service companies in Dubai. We ensure every project meets the highest standards through precise planning and execution",
+
+              "Our expertise includes working with the top 10 interior fit out companies in Dubai, best fit out companies in Dubai, interior decoration companies in Dubai . The Luxury Bulgari 2 bedroom Apartment Dubai stands as a testament to our commitment to creating refined, contemporary and timeless apartment interiors that redefine luxury living in the city."
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
-
-      
     </section>
   );
 }

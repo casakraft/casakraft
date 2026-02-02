@@ -83,16 +83,29 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== FIRST SECTION ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Royal Atlantis Apartment Interior"
-          text=""
+          title="Royal Atlantis Apartmen Interior Design"
+          text={[
+            "Interior Design of the Royal Atlantis apartment by Casa Kraft Interiors, using modern style and sophistication for the most elite tastes of the homeowners. Located within Atlantis The Royal Residences, these exceptional homes require only interiors that exude elegance, exclusiveness and refined comfort. Casa kraft interiors deliver complete luxury fitout and bespoke furniture solutions for Royal Atlantis in Dubai that executed with precision and attention to detail. As one of the Best apartment interior design companies in Dubai Casa Kraft Interiors is renowned for crafting premium luxury interiors masterfully balancing modern aesthetics with everyday functionality.",
+          ]}
         />
 
-        {/* Both gallery blocks */}
         <div className="mt-8 sm:mt-10 space-y-10">
+          {/* First gallery block: 1 large + 3 small */}
           {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Interior Design Company in Royal Atlantis"
+            text={[
+              "Each modern luxury apartment interior features sleek lines, high-quality materials, and tailored finishes that enhance the overall living experience. Our team consists of skilled Luxury Interior Designers in Dubai, who design fully customized interiors for  contemporary apartments and high-end duplexes. Casa kraft interior's designs  captured breathtaking surroundings through maximized natural light, views and flow of space. The effect is to create a refined, timeless interior that captures the true essence of Royal Atlantis living while offering comfort, luxury and lasting value.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
           {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>

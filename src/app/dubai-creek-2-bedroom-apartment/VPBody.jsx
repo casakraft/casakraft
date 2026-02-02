@@ -93,18 +93,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Dubai Creek 2 Bedroom Apartment"
-          text=""
+          title="Dubai Creek 2 Bedroom Apartment Interior Design"
+          text={[
+            "CasaKraft Interiors and Renovations presents a stunning Dubai Creek 2 Bedroom Apartment interior design project aimed at enhancing contemporary waterfront lifestyles.This 2 Bedroom Apartment in Dubai creek harbour reflects our expertise in Luxury apartment interior design at Dubai Creek Harbour, bringing together balance, comfort and sophistication. Inspired by the elegance of 2 Bedroom Apartments in Dubai Creek Harbour, the home features a layout designed for flow and functionality paired with high end fitout and modern design elements that define contemporary city living.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Apartment Interior In Dubai Creek Harbour"
+            text={[
+              "As specialists in expert modern apartment design interior, apartment renovation, and complete fitout services, we deliver spaces that feel polished and purposeful. Every room in this luxury apartment interior design project in Creek Harbour Dubai is shaped through thoughtful and bespoke interior design, resulting in a home that is both practical and visually striking. CasaKraft’s approach enhances the beauty of modern, space-efficient apartment interior renovation while celebrating the calm ambience of waterfront life.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

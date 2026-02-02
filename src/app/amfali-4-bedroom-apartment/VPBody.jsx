@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Amfali 4 Bedroom Apartment"
-          text=""
+          title="Amfali 4 Bedroom Apartment Design"
+          text={[
+            "This luxurious apartment featuring 4 bedrooms in Amfali reflects elegant living as a result of  thoughtful planning  and timeless design philosophy by Casa Kraft Interiors. This Amfali 4 Bedroom Apartment feature is optimized in such a way to maximize the comfort of daily living. The interior design of all the rooms in this apartment is a well planned design of a modern apartment interior design with crisp lines, soft color schemes and premium materials used for every interior. No detail has been left unthought-out; it all leads to a perfectly designed interior where everything looks spacious, balanced, and effortlessly luxurious.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Amfali 4 Bedroom Apartment Interior Design in Dubai"
+            text={[
+              "This Apartment is where customized features, tailored layouts, and even refined detailing come into play in order to achieve a fully bespoke apartment interior design solution in the Amfali . Light is also used in this dwelling, with a touch of elegance from the customized textures. One of the most renowned interior designing agencies, Casa Kraft Interiors provides the best luxurious apartment interior designing in the Amfali area with customized interior designing solutions. The project showcases the classic interior designing style with comfort, beauty, and personalized living inspired by its iconic location near the coast.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

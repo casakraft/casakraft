@@ -100,11 +100,9 @@ export default function VPBody() {
         {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="H1 heading will be here"
+          title=""
           text={[
-            "H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here.H1 Para 1 will be here. H1 Para 1 will be here. H1 Para 1 will be here.",
-
-            "H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here. H1 Para 2 will be here."
+            "",
           ]}
         />
 
@@ -115,11 +113,9 @@ export default function VPBody() {
           {/* ===== SECOND SECTION (2 more paras) ===== */}
           <SectionHeader
             as="h2"
-            title="2 heading will be here"
+            title=""
             text={[
-              "H2 Para 1 will be here. H2 Para 1 will be here. H2 Para 1 will be here. H2 Para 1 will be here. H2 Para 1 will be here. H2 Para 1 will be here. H2 Para 1 will be here. H2 Para 1 will be here. H2 Para 1 will be here. H2 Para 1 will be here.",
-
-              "H2 Para 2 will be here. H2 Para 2 will be here. H2 Para 2 will be here. H2 Para 2 will be here. H2 Para 2 will be here. H2 Para 2 will be here. H2 Para 2 will be here. H2 Para 2 will be here."
+              "",
             ]}
           />
 

@@ -83,16 +83,29 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== FIRST SECTION ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Emirates Hills Villa Interior"
-          text=""
+          title="Emirates Hills villa Interior Design"
+          text={[
+            "This Luxury Emirates Hills villa by Casa Kraft Interior Design & Renovation is a flawless combination of elegance, comfort and architectural excellence. Every interior space has been attentively designed to maximize its scale, light and functionality, creating a home that is both luxurious and inviting. The interior design villa concept in Emirates Hills by our company is based on a well designed balance between structure and interior design. This luxurious villa interior design in Dubai is characterized by high-quality materials and carefully considered space allocations, making up true bespoke interior design.",
+          ]}
         />
 
-        {/* Both gallery blocks */}
         <div className="mt-8 sm:mt-10 space-y-10">
+          {/* First gallery block: 1 large + 3 small */}
           {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Villa Interior Design Company in Emirates Hills"
+            text={[
+              " Ultimately, this contemporary design in this modern luxury villa is achieved through monochromatic schemes, light architecture, and sophisticated textures, resulting in this brilliant contemporary villa. Awarded for its premium interior designing and architecture solutions offered in Emirates Hills, Dubai, Casa Kraft Interiors remains the benchmark for luxurious villas. The above property represents the epitome of Luxury Modern interior designing in Emirates Hills, conceptualized by one of the pioneers of the finest villa interior designing in dubai.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
           {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>

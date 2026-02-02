@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Marina Gate Penthouse 2"
-          text=""
+          title="Marina Gate Penthouse Interior in Dubai"
+          text={[
+            "Casa Kraft Interiors and Renovations presents a project that redefines luxury living in Marina Gates. As a leading interior design company Dubai, we create beautiful and functional penthouse interiors in Dubai that combine elegance, comfort and modern sophistication. This residence showcases luxury modern penthouse interior design at its finest. Every corner is carefully designed to provide Luxury Penthouse Interior Design Dubai  with seamless flow, premium finishes and thoughtful detailing. Our top penthouse interior design services in Dubai transform living space into a luxurious apartment that is both stylish and highly functional.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Marina Gate Penthouse Design"
+            text={[
+              "Through modern penthouse design and bespoke design, Casakraft interiors craft interiors that reflect individuality while maximizing space and light. With comprehensive Interior Design Services for a Penthouse, Casa Kraft interiors and decoration ensures that every element from furniture to finishes is perfectly coordinated. Recognized as the Best Interior Design Company in Marina Gates, we are known for top penthouse interior design in Marina Gates and the best Interior Design in Dubai Marina. For clients seeking luxury penthouses Dubai Marina or bespoke residential interior design Dubai Marina, our high end solutions transform every penthouse into a refined, personalized sanctuary.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

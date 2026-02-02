@@ -92,18 +92,32 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="City Walk 3 Bedroom Apartment Interior"
-          text=""
+          title="Citywalk 3 Bedroom Apartment"
+          text={[
+            "At Casa Kraft Interiors and Renovations, we bring thoughtful design and refined detailing to every project. This citywalk 3 bedroom apartment showcases how comfort and modern style can fit naturally into one space. Our approach to City Walk apartment interior design focuses on clean layouts, soft textures, and a warm flow that makes the home feel inviting.",
+            "We create Modern apartment interiors at City Walk that balance function and beauty, resulting in stunning apartment interiors. Whether you need a fresh update or a full transformation, our team handles your city walk apartment renovation with precision and care. Clients trust us for expert fitout service and truly bespoke interiors tailored to their lifestyle."
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Apartment Interior Design Company in City Walk"
+            text={[
+              "As the Best Interior Design Company in Dubai, we specialize in Luxury apartment interior design in Dubai, bringing an elevated look to every room. The Master bedroom apartment interior design in City Walk Dubai features soft lighting, calm tones, and custom furniture, while the second room reflects modern bedroom apartment interiors at City Walk with a clean and airy feel.",
+              "From shaping your luxury Dubai apartment to planning a modern 3 bedroom apartment design in Dubai City Walk, Casa Kraft Interiors and Decoration delivers seamless results. If you’re building a Residential Home in City Walk Dubai or looking for a leading fit-out design company in Dubai, our team is ready to guide you with clarity and expertise in Modern bedroom design in Dubai."
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

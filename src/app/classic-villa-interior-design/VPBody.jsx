@@ -90,20 +90,32 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Classic Villa Interior Design"
-          text=""
+          text={[
+            "At Casa Kraft Interiors & Renovations, our villa interior design approach focuses on refined detailing and well balanced spaces. We create Modern and classic villa interior design concepts that highlight elegance while keeping the home comfortable. Each home reflects our commitment to Luxury Classic Villa Interior Design and crafting The Elegant Classic Villa Interiors that feel personal and welcoming. Recognized among the Best Interior Designers, we provide complete Luxury Villa Fit-Out in Dubai and deliver Bespoke Villa Interior Design in Dubai by Luxury  standards for every client. Our work includes classic villa interiors with interior & landscape design, handled by a fully professional interior design and Renovation company. Every detail supports a stunning classic villa interior with luxury classic interiors designed for long lasting beauty.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title=" Villa Interior Design Company In Dubai"
+            text={[
+              "We offer luxurious villa interior designing services in Dubai, creating a luxurious and comfortable villa experience. As a Classic Luxury Interior Design & Fit-Out Company in Dubai, we also support clients seeking modern villa design in Dubai with tailored concepts. Whether you prefer Luxury Villa in Classic Interior Design, elegant classic style villas, or the best villa interior design, we provide expert villa renovation and interior solutions that result in beautiful villa interiors in Dubai. Trust the Best Interior Design Dubai Company for a home that reflects true luxury.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

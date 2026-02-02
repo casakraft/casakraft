@@ -90,20 +90,33 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Villa Damac Hills 5 Bedroom Interior"
-          text=""
+          title="Villa Damac Hills 5 bedroom Interior"
+          text={[
+            "At CasaKraft Interiors and Renovations, we bring thoughtful design and refined craftsmanship to every project, including our latest work on a villa Damac Hills 5 bedroom project. This home epitomizes our commitment to stunning and exceptional interior design services with each space crafted to feel elegant, welcoming and timeless. Casa Kraft's team specializes in providing luxury interior design and décor services in DAMAC Hills, creating homes that match the area’s upscale lifestyle. The Premium Golf Facing 5-Bedroom Villa in  DAMAC Hills is designed with  perfect balance of style, luxury and comfort.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="5 Bedrooms Villa Interior Design in DAMAC Hills"
+            text={[
+              "As one of the Best Luxury Interior Designers in Damac Hills, Casa kraft interiors focus on thoughtful planning, custom built elements and seamless execution. Clients trust us for expert Villa Interior Design supported by bespoke interiors, 3D planning & luxury finishes that bring each idea to life. As a Top villa Interior Design Company in Dubai  and a leading interior design company in Dubai, CasaKraft Interiors ensures every villa feels personal, refined and beautifully crafted.",
+
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

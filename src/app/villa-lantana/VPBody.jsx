@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Villa Latana"
-          text=""
+          title="Villa Latana Interior Design"
+          text={[
+            "Casa Kraft Interiors is a Dubai based interior design company that offers professional interior design and renovations services for luxury villas. Our staff turns each room with precision, creativity, and a great deal of attention to detail. Ultra luxury interior design that reflects elegance and modern living is delivered. From concept to completion, we handle everything related to interior design in Dubai from luxury villa renovations making homes functional and stylish . We provide bespoke design and fitout service that combines comfort, style and contemporary aesthetics. Every project presents modern interiors and elegant designs, specializing in the client's lifestyle and personal taste. From sleek modern minimalist designs to more involved decor schemes, our solutions bring every villa into life.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Best Villa Interior Design Company in Dubai"
+            text={[
+              "Among our works, the most notable is the Villa Lantana, Dubai  which represents seamless interior layouts with refined finishes. With modern villa landscaping, Villa Lantana harmoniously complements the interior spaces with a curated outdoor space and contemporary landscape design that adds to the aesthetic feel. Casa Kraft Interiors and renovations being among the leading interior designers companies, promises to make a difference with class-packed luxurious yet pragmatic interiors. Quality focus, bespoke design, and long-lasting impact are assured in every crafted villa.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

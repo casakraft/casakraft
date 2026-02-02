@@ -90,20 +90,32 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="JBR 3 Bedroom Apartment Interior"
-          text=""
+          title="JBR 3 Bedroom Apartment Design"
+          text={[
+            "Casa Kraft Interiors and Renovation presents a remarkable transformation of a JBR 3 Bedroom Apartment. Casa kraft interiors known as the Best Apartment Interior Design Company in Dubai Jumeirah Beach Residence, we specialize in luxury interiors and high quality fit out services that elevate every aspect of modern apartment living. This 3 Bedroom Apartment Interior Design in JBR indicates our commitment to crafting stunning apartment interiors. Every bedroom is carefully planned, ensuring that the modern apartment interior design is both beautiful and practical.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Apartment Interior in Jumeirah Beach Residence"
+            text={[
+              "We provide tailored solutions for every three bedroom apartment, offering full scale Dubai interior design for luxury apartment services. Casa Kraft Interiors is among the leading interior design companies in Dubai, delivering professional interior design Dubai services with meticulous attention to detail and refined aesthetics. Whether you are seeking a top 3 bedroom apartment interior design JBR or a complete Turnkey Apartment Interior Design in Dubai UAE, our team ensures seamless execution from concept to completion. As a Luxury Interior Design and Architecture Company in Dubai, Casa kraft interiors and renovations transform homes into timeless spaces, combining style, comfort and elegance for a truly exceptional living experience.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

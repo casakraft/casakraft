@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Studio Apartment in Milan"
-          text=""
+          text={[
+            "This is a studio apartment in Milan that takes a modern urban lifestyle into account. It is the work of Casa Kraft Interiors and Renovation that demonstrates the influence modern Milan apartment designs have had on it, resulting in a modern apartment within Milan that is open, balanced, and interesting. Being a prestigious  interior design firm operating from Milan, Casa Kraft Interiors tackled this project with strong focus on  functional efficiency. In this regard, the apartment features clearly defined zones, allowing living, sleeping and dining areas to connect seamlessly. Custom-built joinery and functional storage solutions also facilitate comprehensive, vibrant, and organized spaces for this studio apartment located in Milan",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Studio Apartment Interior Design in Milan"
+            text={[
+              "This interior design project for a studio apartment in Milan attests to our skills in interior architecture and interior design, where functionality and aesthetic design interact and support each other with a view to enhancing life as lived. Awarded for excellence in interior design in Milan, Casa Kraft Interiors offers exclusive projects and contemporary apartments in Milan suited to every lifestyle. In the field of interior design and renovation in Milan, Casa Kraft Interiors is known for exclusive interior design in upscale interiors that turn small areas into elegant and sophisticated apartments in Milan.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

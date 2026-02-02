@@ -83,16 +83,29 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== FIRST SECTION ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="MBR City Villa Interior"
-          text=""
+          title="MBR City Villa Design"
+          text={[
+            "This Luxurious Modern Villa Design in MBR City by Casa Kraft Interiors embodies refined lifestyle statements expressed through elegance, innovation, and attention to detail. This MBR City  villa design project is an example of modern architectural design along with the interior design perspective. The interior design strikes a calm ambiance, putting emphasis on all spaces being connected for a stylish interior experience. Our group of professionals also delivers the premier villa interior design and fit-out work. The design and build of the villa also encompasses customized landscaping design to complement the architecture design and maximize privacy and alfresco living.",
+          ]}
         />
 
-        {/* Both gallery blocks */}
         <div className="mt-8 sm:mt-10 space-y-10">
+          {/* First gallery block: 1 large + 3 small */}
           {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Villa Interior Design in Mohammad Bin Rashid City"
+            text={[
+              "With the design and attention to detail by the villa designers and constructors, this villa represents a lifestyle of understated luxury. As professional interior designers for boutique villas in Dubai, our company, Casa Kraft Interiors, provides customized spaces that are designed and crafted for optimal functionality and custom interior designs. As one of the best Villa Fit-Out companies, we are known for providing comprehensive Villa Renovation and Interior Design services in Dubai that combine architecture and interior design.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
           {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>

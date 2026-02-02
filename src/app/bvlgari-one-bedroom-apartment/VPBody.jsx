@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Bvlgari One Bedroom Apartment"
-          text=""
+          text={[
+            "This luxury apartment is located in Bvlgari Residences Dubai. It is an epitome of luxury living where luxury and sophistication meet. The project is a creation of Casa Kraft Interiors and encompasses the very spirit of the Luxury Bvlgari Apartment Dubai.The system is characterized by spacious interiors that exude a soothing and airy atmosphere that has been complemented by a stylish Italian minimalist design. The clean lines, textures and neutral colors make this Dubai apartment in Bvlgari a masterpiece of modern interior and exterior architectural styles while maintaining a welcoming feel.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Bvlgari Bedroom Apartment Interior Design Dubai"
+            text={[
+              "Inspired by the surroundings of Luxury Residences in Dubai  Bvlgari Resort Dubai, each apartment has a coastal design inspired by its surroundings. The design of each apartment encompasses customized design and materials reflective of a fully bespoke design philosophy. This luxury apartment interior design in Bvlgari reflects excellence in modern apartment interior design in Bvlgari by providing a harmonious combination of aesthetics and functionality. As a top interior design firm in Dubai Casa Kraft Interior and renovation specializes in designing timeless and elegant interiors to transform ordinary living into a luxurious experience.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

@@ -81,18 +81,31 @@ export default function VPBody() {
   const blocks = toBlocks(galleryImages, 4);
 
   return (
-    <section className="bg-[#332e2a] text-white">
+   <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== FIRST SECTION ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Palm Jumeirah Villa Interior"
-          text=""
+          title="Palm Jumeirah Villa Design"
+          text={[
+            "At Casa Kraft Interior Design & Renovation Company Dubai, we provide exclusive interior and architectural designs that can upgrade luxury lifestyle living in Dubai. Our knowledge in Luxury Villa Interior Design Palm Jumeirah enables the delivery of sophisticated, tailor-made interior designs that cater to the lifestyle of each client. The villa in Palm Jumeirah has an interior living room design concept that is modern and has bright interior designs. The interior designs are elegant and enhance light in the living spaces. At our firm, our clients get the best villa interior designs as we handle all aspects of Villa Renovation in Palm Jumeirah (Interior Design). All villas are designed with a focus to create a beautiful and cohesive look.",
+          ]}
         />
 
-        {/* Both gallery blocks */}
         <div className="mt-8 sm:mt-10 space-y-10">
+          {/* First gallery block: 1 large + 3 small */}
           {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Villa Interior Design Company in Palm Jumeirah"
+            text={[
+              "Casa Kraft Interiors & Renovations has been identified among the leading interior design and renovation companies offering the best interior design solutions in Palm Jumeirah Villa, Dubai, UAE. This firm combines sustainable interior design with modern and latest design trends. The portfolio section showcases the latest works of interior design, reflecting current trends for Villa Interior Designs. Being one among the best interior designers in Dubai, we also offer villa interior design services in Dubai that create luxurious spaces through innovation, best craftsmanship, and attention to detail.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
           {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>

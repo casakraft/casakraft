@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Arabella 2 Townhouse Interior"
-          text=""
+          title="Arabella 2 Townhouse Design"
+          text={[
+            "This Arabella 2 Townhouse is one of their signature projects at Casa Kraft Interior & Renovations, symbolizing the best  townhouse interior design in Dubai.  Our expertise in interior design and luxury renovation is evident throughout. The modern interior of this townhouse is characterized by impressive interiors, open plans, and sophisticated finishes that add functionality and aesthetic touches. This Arabella townhouse takes its design cues from current architectural design trends that emphasize fresh lines, textures, and a balanced color scheme.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Townhouse Interior Design in Dubai"
+            text={[
+              "As specialized designers in expert modern townhouse design interior, Casa Kraft Interior and Renovations provides unique solutions that can reshape living spaces. This particular work is one of the best examples of modern interior designs for townhouses in Dubai, establishing a standard for excellence. This home is also an embodiment of the elegance of contemporary Arabella townhouses that were designed to accommodate the demands of their discerning owners.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

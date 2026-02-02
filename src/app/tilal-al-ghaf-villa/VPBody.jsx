@@ -83,16 +83,29 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== FIRST SECTION ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Tilal Al Ghaf Villa Interior"
-          text=""
+          text={[
+            "Tilal Al Ghaf luxury villa interior designs by Casa Kraft Interiors are made with the aim of instilling serenity, luxury, and sophisticated contemporary living. Tilal Al Ghaf is widely regarded for the calm atmosphere and the sophisticated design involved in the planning of the communities there. Our expertise lies in modern interior design in Tilal Al Ghaf Dubai. We provide our expertise in full interior design and decoration for medium to high-level villas. Our projects involve full luxury villa renovations and custom upgrades that incorporate architectural clarity with premium materials. Every project at Casa kraft interior and decoration incorporates modern interiors that embrace serenity, natural light, clarity, and spatiality.",
+          ]}
         />
 
-        {/* Both gallery blocks */}
         <div className="mt-8 sm:mt-10 space-y-10">
+          {/* First gallery block: 1 large + 3 small */}
           {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Villa Interior Design Services in Tilal Al Ghaf"
+            text={[
+              "Our team is able to provide customized interior designing services which will help to turn the villas into their personal homes. Starting from living areas and kitchens to bedrooms and private lounges, every element is designed in such a way that the final interior design will be breathtakingly beautiful. This is achieved through modern interior designing. As luxury villa interior design specialists in Tilal Al Ghaf, the team at Casa Kraft Interiors creates modern, refined, and sophisticated spaces that make ordinary life extraordinary. The effect is beautifully integrated luxury, comfort, and modern design that will not date quickly.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
           {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>

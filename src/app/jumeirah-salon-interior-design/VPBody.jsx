@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
           title="Jumeirah Salon Interior Design"
-          text=""
+          text={[
+            "Creating luxury beauty salons requires a balance of style, function and atmosphere. At Casa Kraft Interiors & Renovations, we specialize in salon interior design in the UAE, delivering stunning and exceptional interior design services. Our team understands how a well-designed Beauty Salon Interior supports client experience and brand identity.Casa kraft interior design and Renovations work with the best beauty salons in Dubai & UAE, shaping stylish interiors that elevate every corner of the space.We deliver stunning salon interior design in Dubai that blends functionality with character. Clients trust us for modern beauty salon designs, crafted by renowned interior designers in Dubai who focus on stylish, high-quality design solutions.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Salon Interior Design Company In Jumeirah"
+            text={[
+              "Recognized as a Best Interior Design Firm in Jumeirah Dubai, we stand among the leading interior fit-out companies in Dubai, offering complete beauty salon interior designs. Whether it’s Luxury salon interior design in Jumeirah, Dubai, a full spa concept with a modern Spa interior design company in Dubai, or a sleek Contemporary salon interior in Dubai, we deliver spaces that help your brand shine",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

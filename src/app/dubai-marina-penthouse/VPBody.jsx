@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Dubai Marina Penthouse Interior"
-          text=""
+          title="Dubai Marina Penthouse Interior Design"
+          text={[
+            "The Penthouses in Dubai Marina offer a setting where luxury and modern living come together, and our design approach reflects that harmony. Casa Kraft Interiors and Decoration provides best Penthouse Interior Design Services in Dubai creating spaces that feel bespoke, timeless and exclusively crafted. Each project is shaped through bespoke residential interior design ensuring every detail aligns with your lifestyle. Casa kraft interiors crafted  Dubai Penthouse Apartment  with a focus on comfort,luxury and visual elegance. Soft tones, balanced materials and thoughtful planning enhance the comfort of living in a Luxury Penthouse at Dubai Marina.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Penthouse Interior & Renovation in Dubai Marina"
+            text={[
+              "Casa kraft interiors experts create  designs that emphasize modern penthouse design and bespoke design incorporating premium finishes, customized furniture and thoughtful layouts. The result is a luxurious and functional penthouse that reflects  premium quality , luxury and comfort throughout. Recognized as the best Interior Design Company in Dubai Marina, Casa Kraft Interiors delivers complete design and fitout solutions. Explore the elegance of Dubai Marina Penthouse. Luxury Views & Exclusive living and experience the standard set by the creators of the Top Luxury Penthouses in Dubai Marina.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>

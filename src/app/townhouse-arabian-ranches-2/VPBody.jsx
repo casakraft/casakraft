@@ -92,18 +92,30 @@ export default function VPBody() {
   return (
     <section className="bg-[#332e2a] text-white">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-16">
-        {/* ===== MAIN SECTION HEADER ===== */}
+        {/* ===== FIRST SECTION (2 paras + 1 large + 3 small) ===== */}
         <SectionHeader
           as="h1"
-          title="Townhouse Arabian Ranches 2"
-          text=""
+          title="Interior Design Of Townhouse Arabian Ranches"
+          text={[
+            "This  modern Townhouse Arabian Ranches  features an outstanding interior design by Casa Kraft Interiors & Renovations, reflecting an epitome of elegance and comfort. As one of the top interior design companies in Dubai, we offer high-quality interior architecture and design services in Arabian Ranches, Dubai, and our interior design is of the best class and is aligned with the top-class interior design standards. This townhouse has been designed in a manner that incorporates well-planned layouts and storage, thus encompassing the design of a townhouse interior.",
+          ]}
         />
 
-        {/* ===== IMAGE BLOCKS (NO EXTRA HEADINGS) ===== */}
         <div className="mt-8 sm:mt-10 space-y-10">
-          {blocks.map((block, i) => (
-            <GalleryBlock key={i} block={block} />
-          ))}
+          {/* First gallery block: 1 large + 3 small */}
+          {blocks[0] && <GalleryBlock block={blocks[0]} />}
+
+          {/* ===== SECOND SECTION (2 more paras) ===== */}
+          <SectionHeader
+            as="h2"
+            title="Interior Design Company in Arabian Ranches"
+            text={[
+              "We offer expertise in luxurious townhouse interior design and Luxury Townhouse Fit-Out Interiors so that every aspect of your townhouse is diligently designed. Our experience in interior renovation brings life to your spaces. Our design philosophy results in colorful, useful, and well-harmonized spaces. Casa Kraft Interiors is a highly-rated interior fit-out firm in Arabian Ranches  and a leading interior fit-out firm in Arabian Ranches, Dubai, that provides Arabian Ranches | Luxury Interior Design Solutions that are meant for a specific lifestyle, making every endeavor a hallmark of elegance, sophistication, and design excellence.",
+            ]}
+          />
+
+          {/* Second gallery block: 1 large + 3 small */}
+          {blocks[1] && <GalleryBlock block={blocks[1]} />}
         </div>
       </div>
     </section>
