@@ -4,7 +4,7 @@ export const metadata = {
   title: "Luxury Royal Atlantis Apartment - Casa Kraft interiors",
   description:
     "Upgrade your Royal Atlantis apartment with Casa Kraft . Luxury interior design by one of best apartment design companies in dubai. visit now. ",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/royal-atlantis-apartment',
   },

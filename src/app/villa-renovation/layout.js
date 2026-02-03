@@ -4,7 +4,7 @@ export const metadata = {
   title: "Best Villa Renovation Company in Dubai - Casa Kraft Interiors",
   description:
     "Looking for villa renovation in Dubai? Casa Kraft Interiors delivers luxury design, smart upgrades & flawless execution. Book your consultation today.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/villa-renovation',
   },

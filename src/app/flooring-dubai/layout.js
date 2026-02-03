@@ -4,7 +4,7 @@ export const metadata = {
   title: "Flooring Services in Dubai - Best Renovation Company - Casa Kraft Interiors",
   description:
     "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/villa-lantana',
   },

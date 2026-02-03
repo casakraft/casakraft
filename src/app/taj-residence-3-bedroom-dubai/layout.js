@@ -4,9 +4,9 @@ export const metadata = {
   title: "Taj Residence 3 Bedroom Dubai - Casa Kraft Interiors",
   description:
     "Luxury Taj Residence 3 Bedroom Dubai by CasaKraft Interiors, the best interior design company. Stylish, premium design. Contact us today.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/taj-residence-3-bedroom-dubai',
+    canonical: 'taj-residence-3-bedroom-dubai',
   },
 };
 

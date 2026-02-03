@@ -4,7 +4,7 @@ export const metadata = {
   title: "Kitchen Renovation In Dubai - Best Remodeling Company - Casa Kraft",
   description:
     "Luxury kitchen renovation in Dubai by Casa Kraft Interiors. Custom designs, modular kitchens, premium finishes & smart upgrades for villas & apartments.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/kitchen-renovation',
   },

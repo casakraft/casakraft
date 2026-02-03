@@ -4,7 +4,7 @@ export const metadata = {
   title: "Damac Hills 3 Bedroom townhouse Interior Design - Casa Kraft Interiors",
   description:
     "Casa Kraft delivers bespoke luxury interiors for Damac Hills 3 Bedroom townhouse. Top interior design and fitout company in Dubai. Call now.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/damac-hills-3-bedroom-townhouse',
   },

@@ -4,7 +4,7 @@ export const metadata = {
   title: "Nikki Beach 2 Bedroom Apartment | Casa Kraft Interiors",
   description:
     "CasaKraft Interiors creates modern, elegant interiors for Nikki Beach 2-Bedroom Apartment. Top interior design company in Dubai. Get in touch now.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/nikki-beach-2-bedroom-apartment',
   },

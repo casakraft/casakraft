@@ -4,7 +4,7 @@ export const metadata = {
   title: "Tilal Al Ghaf Villa Interior Design - Casa Kraft Interiors",
   description:
     "Transform your Tilal Al Ghaf villa with Casa Kraft. Luxury interiors, bespoke designs and top renovation services by the best design company. Call us",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/tilal-al-ghaf-villa',
   },

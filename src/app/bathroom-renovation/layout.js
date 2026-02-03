@@ -4,7 +4,7 @@ export const metadata = {
   title: "Bathroom Renovation Dubai | Best Bathroom Renovation Company – Casa Kraft",
   description:
     "Expert bathroom renovation Dubai by Casa Kraft Interiors. Luxury designs, waterproofing, smart fixtures & full remodeling.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/bathroom-renovation',
   },

@@ -4,7 +4,7 @@ export const metadata = {
   title: "2 Bedroom Dubai Silicon Oasis Apartment Design- Casa Kraft Interiors",
   description:
     "Smart, stylish interiors for Dubai Silicon Oasis apartments by Casa Kraft. Best design and fit-out services by top interior design company. Call us.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/dubai-silicon-oasis-apartment',
   },

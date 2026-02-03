@@ -4,7 +4,7 @@ export const metadata = {
   title: "City Walk 3 Bedroom Apartment Dubai - Casa Kraft Interiors",
   description:
     "City Walk 3-Bedroom Apartment interior design Dubai by CasaKraft Interiors. Bespoke, contemporary interiors for luxurious modern living. Call us today.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/city-walk-3-bedroom-apartment',
   },

@@ -4,7 +4,7 @@ export const metadata = {
   title: " Palm Jumeirah Villa Design - Casa Kraft interiors",
   description:
     "Casa Kraft interiors delivers luxurious interiors and architectural designs in Palm Jumeirah villa. Top interior design services in Dubai. Browse us",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/palm-jumeirah-villa',
   },

@@ -4,7 +4,7 @@ export const metadata = {
   title: "Marina Gate Penthouse Interior Design Dubai - Casa Kraft Interiors",
   description:
     "Transform your Marina Gate Penthouse with bespoke luxury interior design and architecture by CasaKraft Interiors, Interior design company Dubai. Call today.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/marina-gate-penthouse',
   },

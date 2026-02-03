@@ -4,9 +4,9 @@ export const metadata = {
   title: "Studio Apartment in Milan - Casa Kraft Interiors",
   description:
     "Transform your studio apartment in  Milan Dubai with Casa Kraft interiors. Luxury interiors and modern design by top interior design experts. Visit us",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/studio-apartment-in-milan',
+    canonical: 'studio-apartment-in-milan',
   },
 };
 

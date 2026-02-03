@@ -4,7 +4,7 @@ export const metadata = {
   title: "Emirates Hills Villa Interior Design Dubai - Casa Kraft interiors",
   description:
     "Luxurious Emirates Hills villa interiors by Casa Kraft interiors. styling by the best interior design team. Transform your home. Contact us today.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/emirates-hills-villa',
   },

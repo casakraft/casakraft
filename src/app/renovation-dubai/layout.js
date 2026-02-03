@@ -4,9 +4,9 @@ export const metadata = {
   title: "Renovation Dubai - Home Renovation - Casa Kraft Interiors",
   description:
     "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('hhttps://www.casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/villa-lantana',
+    canonical: '/renovation-dubai',
   },
 };
 

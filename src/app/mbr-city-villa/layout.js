@@ -4,7 +4,7 @@ export const metadata = {
   title: "Luxury MBR City Villa Interior Design - Casa Kraft interiors",
   description:
     "Transform your MBR City villa with Casa Kraft’s expert interior design and fit-out services. Modern luxury interiors made for Dubai living. Visit us",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/mbr-city-villa',
   },
