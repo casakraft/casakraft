@@ -3,9 +3,10 @@ import Image from "next/image";
 const VHeroSection = () => {
   const suggestions = [
     {
-      title: "New Hotel Interior Ideas To Make Your Hotel Spaces Luxury",
-      age: "4 years ago",
-      image: "/images/high-rise-dubai-marina-apartment-interior-design-dubai.png", // Replace with actual path
+      title: "Top Notch Villa Renovation Company in Dubai ",
+      age: "February 20, 2026",
+      image: "/images/villa-renovation-company-in-dubai.png", // Replace with actual path
+      href:"villa-renovation-company-dubai",
     },
     {
       title: "Best Kids Room Interior Design Ideas | Tips To Decorate Your Kids Room",
@@ -31,16 +32,16 @@ const VHeroSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-8">
         {/* Blog Content */}
         <div>
-          <div className="text-sm mb-4 text-[#caa193]">
+          <div className="text-sm mb-4 text-[#b49a55]">
             <p>Jan 24, 2026 • No Comments</p>
           </div>
 
-          <h1 className=" text-[#caa193] text-3xl font-conthrax leading-tight py-5 ">
+          <h1 className=" text-[#b49a55] text-3xl font-conthrax leading-tight py-5 ">
            Modern Apartment Interior Design in Dubai
           </h1>
          <div className=" text-sm leading-relaxed font-play">
              <p>
-             <b className="text-[#caa193]"><a href="https://www.casakraftinteriors.ae/apartment-interior-design-dubai">Modern apartment interior design</a></b> has come up as the foundation of modern city life, especially in Dubai, 
+             <b className="text-[#b49a55]"><a href="https://www.casakraftinteriors.ae/apartment-interior-design-dubai">Modern apartment interior design</a></b> has come up as the foundation of modern city life, especially in Dubai, 
               where lifestyle, luxury and space management meet as one. From studio apartment interior design to luxurious 
               apartment interior designs, modern interior design focuses on simplicity, functionality and elegance.
               </p> <br />
@@ -55,14 +56,14 @@ const VHeroSection = () => {
               className="rounded-md w-full object-cover"
             />
             <div className=" text-sm leading-relaxed font-play">
-              Whether you are  <b className="text-[#caa193]"><a href="https://www.casakraftinteriors.ae/apartment-renovation"></a>full apartment renovation</b>, looking for apartment interior  ideas or simply looking 
+              Whether you are  <b className="text-[#b49a55]"><a href="https://www.casakraftinteriors.ae/apartment-renovation">full apartment renovation</a></b>, looking for apartment interior  ideas or simply looking 
               at apartment interior design inspiration this guide by Casa Kraft Interiors & Renovations contains all the 
               information you need about Apartment Interior in a Modern Style.
             <p>
              
             </p>
-            <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">What Is Modern Apartment Interior Design?</h2>
-            <p> Casa Kraft's modern apartment interior design services focus on minimalism, functionality and harmony. <b className="text-[#caa193]"><a href="https://www.casakraftinteriors.ae/">Casa 
+            <h2 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">What Is Modern Apartment Interior Design?</h2>
+            <p> Casa Kraft's modern apartment interior design services focus on minimalism, functionality and harmony. <b className="text-[#b49a55]"><a href="https://www.casakraftinteriors.ae/">Casa 
               Kraft Interiors & Renovations</a></b> incorporate soft colors,smart layouts and high quality materials to create a 
               serene and elegant space. This modern apartment interior is organized for maximum comfort and usability 
               making it ideal for apartments of different sizes.</p>
@@ -74,10 +75,10 @@ const VHeroSection = () => {
               height={600}
               className="rounded-md w-full object-cover"
             />
-             <h3 class="text-[#caa193] text-xl font-conthrax leading-tight">Modern vs Contemporary Apartment Interior Design</h3>
+             <h3 class="text-[#b49a55] text-xl font-conthrax leading-tight">Modern vs Contemporary Apartment Interior Design</h3>
             <p className="text-sm"> Although Modern apartment interior design ideas are based on proper design principles, which are linked to 
               minimalism, contemporary apartment interior design is style friendly and keeps changing with time. Both are 
-              commonly used in <b className="text-[#caa193]"><a href="https://www.casakraftinteriors.ae/gallery"></a>apartment interior design Dubai projects</b>.</p>
+              commonly used in <b className="text-[#b49a55]"><a href="https://www.casakraftinteriors.ae/gallery">apartment interior design Dubai projects</a></b>.</p>
               
              <Image
               src="/images/modern-vs-contemporary-apartment-interior-design.png"
@@ -89,7 +90,7 @@ const VHeroSection = () => {
              </div>
         <div className=" text-sm leading-relaxed font-play">
           
-            <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">
+            <h2 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">
               Apartment Interior Design Trends Shaping Modern Homes</h2>
             <p>Current trends in apartment interior design focus on open plan layouts, natural textures, 
               layered lighting and  indoor and outdoor connections. Modern apartment interior design Dubai 
@@ -101,7 +102,7 @@ const VHeroSection = () => {
               height={600}
               className="rounded-md w-full object-cover"
             />
-            <h3 class="text-[#caa193] text-xl font-conthrax leading-tight py-5">
+            <h3 class="text-[#b49a55] text-xl font-conthrax leading-tight py-5">
               Modern Home Interior Design for Urban Apartments</h3>
             <p>Modern interior design for residential buildings is characterized by functionality and aesthetics. Modern 
               ideas and concepts for apartment interior design revolve around flexible designs that promote working, 
@@ -115,7 +116,7 @@ const VHeroSection = () => {
               className="rounded-md w-full object-cover"
             /> <br />
 
-            <h3 class="text-[#caa193] text-xl font-conthrax leading-tight py-5"> 
+            <h3 class="text-[#b49a55] text-xl font-conthrax leading-tight py-5"> 
               Studio Apartment Interior Design & Studio Apartment Design
             </h3>
             <p>Designing the interior of a studio apartment with careful consideration to create an atmosphere that feels 
@@ -131,7 +132,7 @@ const VHeroSection = () => {
               height={600}
               className="rounded-md w-full object-cover"
             /> <br />
-              <h3 class="text-[#caa193] text-xl font-conthrax leading-tight py-5"> 
+              <h3 class="text-[#b49a55] text-xl font-conthrax leading-tight py-5"> 
               Apartment Interior Design for Family Apartments
             </h3>
             <p>Larger apartments benefit from structured apartment interior ideas that define living, dining and private 
@@ -149,7 +150,7 @@ const VHeroSection = () => {
         
              <div className=" text-sm leading-relaxed font-play">
           
-            <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">
+            <h2 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">
               Modern Apartment Living Room Design Ideas
             </h2>
             <p>Modern interior design for residential buildings is defined by functionality and aesthetics. Modern 
@@ -167,7 +168,7 @@ const VHeroSection = () => {
              <div className=" text-sm leading-relaxed font-play">
             
             
-            <h3 class="text-[#caa193] text-xl font-conthrax leading-tight py-5">
+            <h3 class="text-[#b49a55] text-xl font-conthrax leading-tight py-5">
              Luxurious Apartment Interior Living Spaces
             </h3>
             <p>Luxurious apartment interior design requires the application of quality materials, designer furniture 
@@ -176,7 +177,7 @@ const VHeroSection = () => {
           </div>
            <div className=" text-sm leading-relaxed font-play">
           
-            <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">
+            <h2 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">
               Colors, Materials & Apartment Interior Decor
             </h2>
             <p> Thoughtfully chosen apartment interior design helps to add to the warmth and character. In modern 
@@ -188,7 +189,7 @@ const VHeroSection = () => {
               height={600}
               className="rounded-md w-full object-cover"
             /> <br />
-            <h3 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">
+            <h3 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">
               Materials Used in Modern Apartment Interiors
             </h3>
             <p>The materials used in modern apartments in Dubai include wood, stone, glass and metal. These 
@@ -198,7 +199,7 @@ const VHeroSection = () => {
           
           <div className=" text-sm leading-relaxed font-play">
           
-            <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">
+            <h2 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">
              Apartment Renovation & Complete Fitout Services
             </h2>
             <p> A well designed apartment renovation can improve the layout, materials and functionality. 
@@ -211,7 +212,7 @@ const VHeroSection = () => {
               height={600}
               className="rounded-md w-full object-cover"
             /> <br />
-            <h3 class="text-[#caa193] text-xl font-conthrax leading-tight py-5">
+            <h3 class="text-[#b49a55] text-xl font-conthrax leading-tight py-5">
             Complete Fitout Services for Apartments
             </h3>
             <p> Expert complete fit out services take care of everything from planning to implementation. 
@@ -221,14 +222,14 @@ const VHeroSection = () => {
 
           <div className=" text-sm leading-relaxed font-play">
           
-            <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">
+            <h2 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">
              Why Apartment Interior Design Dubai Is Unique
             </h2>
             <p> Apartment interior design Dubai is characterized by luxury, modernity and regional lifestyle 
               preferences. Apartment interior design UAE focuses on intelligent design, high quality materials 
               and climate responsive materials</p> <br />
            
-            <h3 class="text-[#caa193] text-xl font-conthrax leading-tight py-3">
+            <h3 class="text-[#b49a55] text-xl font-conthrax leading-tight py-3">
             Affordable vs Luxury Apartment Interior Design Dubai
             </h3>
             <p> Whereas affordable apartment interior design Dubai is all about effective budgeting and design. 
@@ -238,7 +239,7 @@ const VHeroSection = () => {
 
            <div className=" text-sm leading-relaxed font-play">
           
-            <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">
+            <h2 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">
              Choosing the Right Interior Design Experts in Dubai
             </h2>
             <p> Experienced interior designers in Dubai possess creativity, technical knowledge and market trends. 
@@ -261,10 +262,10 @@ const VHeroSection = () => {
           
           <div className=" text-md leading-relaxed font-play">
           
-            <h2 class="text-[#caa193] text-2xl font-conthrax leading-tight py-5">
+            <h2 class="text-[#b49a55] text-2xl font-conthrax leading-tight py-5">
              Frequently asked questions (FAQs)
             </h2>
-            <h3 class="text-[#caa193] text-md font-conthrax leading-tight py-5">
+            <h3 class="text-[#b49a55] text-md font-conthrax leading-tight py-5">
               1- How to choose smart lighting solutions for small apartments?
             </h3>
             <p>
@@ -272,7 +273,7 @@ const VHeroSection = () => {
             and automation to enhance space, improve functionality, and create a modern ambiance
             </p>
 
-            <h3 class="text-[#caa193] text-md font-conthrax leading-tight py-5">
+            <h3 class="text-[#b49a55] text-md font-conthrax leading-tight py-5">
              2- What are the trending colours for apartments in Dubai?
             </h3>
             <p>
@@ -300,7 +301,7 @@ const VHeroSection = () => {
 // Sidebar component
 const Sidebar = ({ suggestions }) => (
   <div>
-    <h3 className="text-xl font-conthrax mb-4 mt-16 text-[#caa193]">You might also like</h3>
+    <h3 className="text-xl font-conthrax mb-4 mt-16 text-[#b49a55]">You might also like</h3>
     <ul className="space-y-4">
       {suggestions.map((post, index) => (
         <li key={index} className="flex space-x-4">
@@ -315,7 +316,7 @@ const Sidebar = ({ suggestions }) => (
           </div>
           <div>
             <p className="text-sm font-play">{post.title}</p>
-            <p className="text-xs text-[#caa193]">{post.age}</p>
+            <p className="text-xs text-[#b49a55]">{post.age}</p>
           </div>
         </li>
       ))}

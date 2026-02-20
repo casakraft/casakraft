@@ -10,7 +10,7 @@ import Image from "next/image";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 
-dayjs.extend(relativeTime);
+dayjs.extend(relativeTime); 
 
 const blogs = [
   {
@@ -23,8 +23,8 @@ const blogs = [
   },
   {
     id: 2,
-    slug: "modern-apartment-interior-design",
-    title: "Perfect Villa Renovation?",
+    slug: "villa-renovation-company-dubai",
+    title: " Villa Renovation Company In Dubai",
     image: "/images/blog-2.png",
     date: "2024-12-01",
     tag: "Blog",

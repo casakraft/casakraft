@@ -17,8 +17,8 @@ const blogs = [
   },
   {
     id: 2,
-    slug: "villa-renovation-dubai",
-    title: "Perfect Villa Renovation?",
+    slug: "villa-renovation-company-dubai",
+    title: "Villa Renovation Company in Dubai",
     image: "/images/blog-2.png",
     date: "2024-12-01",
     tag: "Blog",
