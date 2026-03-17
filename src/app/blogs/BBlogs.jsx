@@ -9,29 +9,29 @@ import dayjs from "dayjs";
 const blogs = [
   {
     id: 1,
-    slug: "modern-apartment-interior-design",
-    title: "Modern Apartment Interior Design",
-    image: "/images/blog-1.png",
-    date: "2025-01-01",
+    slug: "bedroom-interior-design-trends",
+    title: "Bedroom Interior Design Trends In Dubai",
+    image: "/images/The Future of Bedroom Interior Design in Dubai.png",
+    date: "2026-03-17",
     tag: "Blog",
   },
-  {
+{
     id: 2,
-    slug: "villa-renovation-company-dubai",
-    title: "Villa Renovation Company in Dubai",
-    image: "/images/blog-2.png",
-    date: "2024-12-01",
+    slug: "modern-apartment-interior-design",
+    title: "Modern Apartment Interior Design in Dubai",
+    image: "/images/interior-design-trends-for-modern-apartments.png",
+    date: "2026-02-15",
     tag: "Blog",
   },
   {
     id: 3,
-    slug: "apartment-revamp-dubai",
-    title: "Revamp Your Dubai Apartment Ideas for a Modern Look",
-    image: "/images/blog-3.png",
-    date: "2024-07-01",
+    slug: "villa-renovation-company-dubai",
+    title: "Top Notch Villa Renovation Company in Dubai ",
+    image: "/images/villa-renovation-company-in-dubai.png",
+    date: "2026-01-01 ",
     tag: "Blog",
   },
-
+  
 
 
 ];

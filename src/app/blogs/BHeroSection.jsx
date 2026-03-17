@@ -13,24 +13,33 @@ import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime); 
 
 const blogs = [
+  
   {
     id: 1,
-    slug: "modern-apartment-interior-design",
-    title: "Modern Apartment Interior Design",
-    image: "/images/blog-1.png",
-    date: "2025-01-01",
+    slug: "bedroom-interior-design-trends",
+    title: "Bedroom Interior Design Trends in Dubai",
+    image: "/images/Lighting and Atmosphere in bedroom interior dubai.png",
+    date: "2026-03-17",
     tag: "Blog",
   },
   {
     id: 2,
-    slug: "villa-renovation-company-dubai",
-    title: " Villa Renovation Company In Dubai",
-    image: "/images/blog-2.png",
-    date: "2024-12-01",
+    slug: "modern-apartment-interior-design",
+    title: "Modern Apartment Interior Design",
+    image: "/images/modern-family-apartment-interior-design.png",
+    date: "2026-01-24",
     tag: "Blog",
   },
   {
     id: 3,
+    slug: "villa-renovation-company-dubai",
+    title: " Villa Renovation Company In Dubai",
+    image: "/images/villa-renovation-company-in-dubai.png",
+    date: "2026-02-15",
+    tag: "Blog",
+  },
+  {
+    id: 4,
     slug: "modern-apartment-interior-design",
     title: "Revamp Your Dubai Apartment Ideas for a Modern Look",
     image: "/images/blog-3.png",
@@ -38,7 +47,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 4,
+    id: 5,
     slug: "modern-apartment-interior-design",
     title: "Luxury Apartment Interior Design",
     image: "/images/blog-1.png",
@@ -46,7 +55,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 5,
+    id: 6,
     slug: "modern-apartment-interior-design",
     title: "Top Villa Interior Trends in Dubai",
     image: "/images/blog-2.png",
@@ -54,7 +63,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 6,
+    id: 7,
     slug: "modern-apartment-interior-design",
     title: "Modern Living Room Design Ideas",
     image: "/images/blog-3.png",

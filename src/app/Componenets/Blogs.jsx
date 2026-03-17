@@ -7,21 +7,21 @@ import Link from "next/link";
 // Blog data
 const blogPosts = [
   {
-    title: "5 Modern Apartment Interior Design",
-    date: "Jan 24, 2026",
-    image: "/images/designing-the-perfect-modern-apartment-interior.png",
+    title: "Bedroom Interior Design Trends In Dubai",
+    date: "Mar 17, 2026",
+    image: "/images/The Future of Bedroom Interior Design in Dubai.png",
     link: "/modern-apartment-interior-design",
   },
   {
-    title: "6 Interior Design Styles Dubai 2025",
-    date: "Nov 10, 2025",
-    image: "/images/blog-2.png",
+    title: "Modern Apartment Interior Design in Dubai",
+    date: "Feb 15, 2026",
+    image: "/images/interior-design-trends-for-modern-apartments.png",
     link: "/modern-apartment-interior-design",
   },
   {
-    title: "Bohemian Interior Design in Dubai",
-    date: "Nov 4, 2025",
-    image: "/images/blog-3.png",
+    title: "Top Notch Villa Renovation Company in Dubai",
+    date: "Jan 1, 2026",
+    image: "/images/villa-renovation-company-in-dubai.png",
     link: "/modern-apartment-interior-design",
   },
 ];
