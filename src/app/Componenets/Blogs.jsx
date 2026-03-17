@@ -10,7 +10,7 @@ const blogPosts = [
     title: "Bedroom Interior Design Trends In Dubai",
     date: "Mar 17, 2026",
     image: "/images/The Future of Bedroom Interior Design in Dubai.png",
-    link: "/modern-apartment-interior-design",
+    link: "/bedroom-interior-design-trends",
   },
   {
     title: "Modern Apartment Interior Design in Dubai",
@@ -22,7 +22,7 @@ const blogPosts = [
     title: "Top Notch Villa Renovation Company in Dubai",
     date: "Jan 1, 2026",
     image: "/images/villa-renovation-company-in-dubai.png",
-    link: "/modern-apartment-interior-design",
+    link: "/villa-renovation-company-dubai",
   },
 ];
 
