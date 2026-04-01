@@ -1,12 +1,12 @@
 import '../globals.css';
 
 export const metadata = {
-  title: " Best Villa Extension Services in Dubai - Casa Kraft Interiors",
+  title: " Luxury Kitchen Interior Design in Dubai By Casa Kraft",
   description:
-    "Expert villa extension services in Dubai by Casa Kraft Interiors. Structural extensions, custom designs, approvals & luxury finishes for villas. Visit Now",
+    "Discover modern luxury kitchen interior design in Dubai with Casa Kraft. Custom layouts, German kitchens, premium materials & expert renovation services. ",
   metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/villa-extention',
+    canonical: '/kitchen-interior-design-in-dubai',
   },
 };
 
