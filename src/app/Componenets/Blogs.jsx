@@ -7,6 +7,13 @@ import Link from "next/link";
 // Blog data
 const blogPosts = [
   {
+    title: "Kitchen Interior Design in Dubai",
+    date: "Apr 1, 2026",
+    image: "/images/technology-in-modern-kitchens-in-dubai.png",
+    link: "/kitchen-interior-design-in-dubai",
+  },
+
+  {
     title: "Bedroom Interior Design Trends In Dubai",
     date: "Mar 17, 2026",
     image: "/images/The Future of Bedroom Interior Design in Dubai.png",
@@ -18,12 +25,7 @@ const blogPosts = [
     image: "/images/interior-design-trends-for-modern-apartments.png",
     link: "/modern-apartment-interior-design",
   },
-  {
-    title: "Top Notch Villa Renovation Company in Dubai",
-    date: "Jan 1, 2026",
-    image: "/images/villa-renovation-company-in-dubai.png",
-    link: "/villa-renovation-company-dubai",
-  },
+
 ];
 
 // Helper to split title onto two lines (optional)

@@ -7,6 +7,15 @@ import dayjs from "dayjs";
 
 // ---- DATA (kept from your current version; slugs normalized) ----
 const blogs = [
+
+  {
+    id: 4,
+    slug: "kitchen-interior-design-in-dubai",
+    title: "Kitchen Interior Design in Dubai",
+    image: "/images/technology-in-modern-kitchens-in-dubai.png",
+    date: "2026-04-1",
+    tag: "Blog",
+  },
   {
     id: 1,
     slug: "bedroom-interior-design-trends",
