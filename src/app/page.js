@@ -2,12 +2,15 @@ import Navbar from "./Componenets/Navbar";
 import WhatsAppButton from "./Componenets/WhatsAppButton";
 import CallButton from "./Componenets/CallButton";
 import HeroSection from "./Componenets/HeroSection";
+import PartnersSwiper from "./Componenets/PartnersSwiper";
 import AboutSection from "./Componenets/AboutSection";
+import BodySection from "./Componenets/BodySection";
 import OurServices from "./Componenets/WhatWeDo";
 import Services from "./Componenets/Services";
 import GetInTouch from "./Componenets/GetinTouch";
 import Portfolio from "./Componenets/Portfolio";
 import Blogs from "./Componenets/Blogs";
+
 import TestimonialsWidget from "./Componenets/Testimonials";
 import LocationMap from "./Componenets/LocationMap";
 import Footer from "./Componenets/Footer";
@@ -22,12 +25,15 @@ export default function Home() {
         <WhatsAppButton />
         <CallButton />
         <HeroSection />
+        <PartnersSwiper />
         <AboutSection />
+        <BodySection />
         <OurServices />
         <Services />
         <GetInTouch />
         <Portfolio />
         <Blogs />
+        
         <TestimonialsWidget />
          <div className="bg-[#f5ede5]">
           <LocationMap />

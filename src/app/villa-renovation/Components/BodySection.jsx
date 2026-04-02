@@ -66,7 +66,7 @@ export default function BodySection() {
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
                 Casa Kraft Interiors is the best and  <b> <a href="https://www.casakraftinteriors.ae/"> leading villa renovation company in Dubai </a></b>, offering meticulous and stylish 
                 renovation services for modern villas and private residences. As a reliable renovation company in Dubai, Casa 
-                Kraft is skilled in offering premium villa renovation services in Dubai, blending custom design, professional 
+                Kraft is skilled in offering premium villa renovation services at affordable price in Dubai, blending custom design, professional 
                 interior designers, and flawless design finishing.
                <br /> <br />
                If you are planning a full villa transformation, a modern interior upgrade, or a stylish home renovation, Casa 

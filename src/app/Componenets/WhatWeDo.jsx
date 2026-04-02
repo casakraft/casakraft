@@ -26,7 +26,7 @@ const AboutSection = () => {
             our services include villa interior design, apartment interior design, home interiors, and outdoor 
             landscape designs. <br /><br />
           
-           Whether you need luxury interior decoration, room interior design, or full turnkey execution, CasaKraft
+           Whether you need interior decoration, room interior design, or full turnkey execution, CasaKraft
           Interiors provides creative, functional, and high-quality solutions tailored to modern Dubai living. <br/> <br/>
           </p>
 

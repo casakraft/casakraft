@@ -110,10 +110,12 @@ export default function BodySection() {
       { title: "Bathrooms", img: "/images/br7.jpeg", href: "/bathroom-renovation" },
       { title: "Flooring", img: "/images/fr4.png", href: "/flooring-dubai" },
       { title: "Wardrobes & Cabinets", img: "/images/wc5.png", href: "/wardrobes-and-cabinets" },
-      { title: "Villa Extension", img: "/images/ve6.png", href: "/villa-extention" },
+      { title: "Swimming Pool", img: "/images/ve6.png", href: "/villa-extention" },
       { title: "Landscape", img: "/images/ls2.png", href: "/landscape-dubai" },
-      { title: "Painting", img: "/images/pn3.png", href: "/painting-services-dubai" },
+      { title: "Painting Works", img: "/images/pn3.png", href: "/painting-services-dubai" },
       { title: "Windows & Doors", img: "/images/wd1.png", href: "/windows-and-doors" },
+      { title: "Customized Curtains & Blinds", img: "/images/wd1.png", href: "/windows-and-doors" },
+      { title: "Customized Wallpapers", img: "/images/wd1.png", href: "/windows-and-doors" },
     ],
     []
   );
@@ -306,7 +308,7 @@ export default function BodySection() {
 
               <div className="mt-6 space-y-4 text-sm leading-relaxed text-black/70">
                 <p>
-                  At Casa Kraft Interiors, our renovation services in Dubai follow a structured process to ensure high-quality results for every home renovation, villa renovation, apartment renovation, and office renovation project.
+                  At Casa Kraft Interiors, our renovation services in Dubai follow a structured process to ensure high-quality results for every home and office renovation project.
                 </p>
 
                 <h3 className="text-lg font-semibold">
@@ -386,7 +388,7 @@ export default function BodySection() {
 
               <div className="mt-6 space-y-4 text-sm leading-relaxed text-black/70">
                 <p>
-                  Choose Casa Kraft Interiors for your renovation services in UAE and experience a seamless blend of expertise, luxury, and smart solutions. As a top interior fit-out & renovation company in Dubai and best home contractor.
+                  Choose Casa Kraft Interiors for your renovation services in Dubai and experience a seamless blend of expertise, luxury, and smart solutions. As a top interior fit-out & renovation company in Dubai and best home contractor.
                  
                 </p>
                 <p>
@@ -498,18 +500,18 @@ export default function BodySection() {
                 },
                 {
                   key: "DESIGN",
-                  left: ["Free design consultation", "Personalised designs with 3D visuals"],
+                  left: ["Free design consultation", "Personalised designs with 2D CAD drawings & 3D visuals"],
                   right: ["No design or cookie-cutter designs", "3D designs at extra cost"],
                 },
                 {
                   key: "TIMELINES",
-                  left: ["45 days installation for kitchens/wardrobes/cabinets", "Regular updates with project tracking"],
+                  left: ["20 working days supply and installation for kitchens/wardrobes/cabinets after drawing approvals", "Regular updates with project tracking"],
                   right: ["Unreliable timelines", "No communication / update delays"],
                 },
                 {
                   key: "QUALITY",
                   left: ["Material procured directly from manufacturers", "Quality checks"],
-                  right: ["Inferior material used to cut costs", "No quality check", "Outsourced to small contractors"],
+                  right: ["Inferior material used to cut costs", "No quality check", "Outsourced from small contractors"],
                 },
                 {
                   key: "WARRANTY",
