@@ -24,22 +24,16 @@ const AboutSection = () => {
         {/* Right Side - Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h2 className="text-[#c68b4e] text-2xl sm:text-3xl font-extrabold mb-4 leading-tight">
-            Casa Kraft Interiors: Top Renovation Company in Dubai, UAE
+            Interior Design Company Dubai - Casa Kraft Interiors
           </h2>
 
           <p className="text-gray-700 text-sm sm:text-base mb-4">
-            Casa Kraft Interiors and Decoration is a <b className="text-[#c68b4e]"><a href="https://www.casakraftinteriors.ae/#services">leading residential interior design company in Dubai</a></b> which specializes 
-            in apartment and villa design, home interior design, landscape design Dubai, and turnkey interior fit-out 
-            services in Dubai. 
+            Casa Kraft Interiors and Renovations is a leading <b className="text-[#b49a55]"><a href="https://www.casakraftinteriors.ae/renovation-dubai">renovation company in Dubai</a></b> which specializes in apartment and villa interior design, Renovation services, landscape design, and turnkey interior fit-out services in Dubai. 
           </p>
 
-
-
           <p className="text-gray-700 text-sm sm:text-base mb-4">
-            As one of the most trusted interior companies in Dubai, Casa Kraft interiors 
-            create elegant, functional, and personalized spaces that reflect the modern
-             living style of Dubai. <br /> <br />
-             Our team of expert designers and fit-out specialists deliver high-quality results from concept to completion, making us a best choice for homeowners seeking interior design Dubai, residential interiors, and professional interior fit-out Dubai services.
+            As one of the most trusted renovation companies in Dubai, Casa Kraft creates elegant, functional, and personalized spaces that reflect the modern living style of Dubai.<br /> <br />
+             Our team of expert designers and renovation specialists deliver high-quality results from concept to completion, making us a best choice for homeowners seeking interior design Dubai, renovation services, and professional interior fit-out services in Dubai.
 
           </p>
 
