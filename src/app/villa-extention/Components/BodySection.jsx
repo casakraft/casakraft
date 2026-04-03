@@ -22,25 +22,19 @@ export default function BodySection() {
       {/* ========= IMAGE + CONTENT SECTION (Mobile stacked | Desktop side-by-side) ========= */}
       <section className="bg-[#f4f4f4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
-          {/* Mobile: stacked vertical | Desktop: 12-col grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
             {/* 1) Gallery + Swiper on top (mobile), centered */}
             <div className="lg:col-span-7 flex justify-center">
               <div className="w-full max-w-[760px]">
                 <HeroGallerySwiper
                   images={[
-                    "/images/ve1.png",
-                    "/images/ve2.png",
-                    "/images/ve3.png",
-                    "/images/ve4.png",
-                    "/images/ve5.png",
-                    "/images/ve6.png",
-                    "/images/ve7.png",
-                    "/images/ve8.png",
-                    "/images/ve9.png",
-                    "/images/ve10.png",
-                    "/images/ve11.png",
-                    
+                    "/images/villa-swimming-pool-construction-services-in-dubai.png",
+                    "/images/residential-swimming-pool-in-dubai.png",
+                    "/images/villa-swimming-pool-contractors-in-dubai.png",
+                    "/images/apartment-pool-swimming-pool-construction.png",
+                    "/images/rooftop-apartment-swimming-pool-in-dubai.png",
+                    "/images/top-view-swimming-pool-design-dubai.png",
+                   
                   ]}
                 />
               </div>
@@ -49,23 +43,19 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-               Villa Extension Services in Dubai
+               Swimming Pool Construction Services in Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                Looking for expert villa extension services in Dubai? Casa Kraft Interiors, the No.1 Villa Extension 
-                Company Dubai, offers premium villa extension services for both commercial and residential properties, 
-                combining modern design, structural expertise, and luxury finishes. If you desire to elevate your 
-                living space, renovate, or create personalized additions, our expert designers provide the best 
-                villa extension services in Dubai specific to your needs.
-
+                Casa Kraft Interiors offers premium Swimming Pool Construction Services in Dubai, creating 
+                luxurious and safe pools tailored to your lifestyle. Our team specializes in designing, building, 
+                and finishing residential and commercial pools with modern aesthetics, high-quality materials, 
+                and attention to detail.
                 <br /><br />
-                We are experts in villa structural extensions, villa extensions in Dubai, and Villa Extension and 
-                Alteration Services in Dubai, offering high-end solutions from concept development and design to 
-                construction and interior fit-out. 
+                From concept and 3D design to construction, finishing, and maintenance solutions, we deliver 
+                complete swimming pool services that elevate your property’s value and comfort.
               </p>
 
-              {/* Buttons: vertical on mobile, horizontal from sm+, left aligned on desktop */}
               <div className="mt-7 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
                 <a
                   href="/contact-us"
@@ -86,39 +76,36 @@ export default function BodySection() {
         </div>
       </section>
 
-      {/* 3) After this: Benefits of apartment renovation (already vertical) */}
+      {/* 3) Benefits / Services Section */}
       <section className="bg-white">
         <div className="max-w-[780px] mx-auto px-4 sm:px-6 lg:px-0 pt-14 pb-10">
           <h2
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-           Why Choose Casa Kraft for Villa Extension?
+           Why Choose Casa Kraft for Swimming Pool Construction?
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              As a leading Villa Extension Company in Dubai, Casa Kraft Interiors brings years of expertise and 
-              a strong commitment to excellence. Our luxury villa extension services in Dubai cover fully bespoke 
-              interior designs that enhance your living style, the use of premium quality materials and durable 
-              construction for quality villa extension in Dubai, transparent pricing, and on-time delivery. 
+              Casa Kraft Interiors is a leading Swimming Pool Construction Company in Dubai. We provide 
+              custom-designed pools that enhance outdoor living spaces, using high-quality materials and 
+              modern construction techniques. Our transparent pricing, timely execution, and premium finishes 
+              ensure the best swimming pool services in Dubai.
               <br /><br />
-              We manage each step of the project, from elegant design, planning, and permit approvals to high-end 
-              Villa Extension and Modifications, covering planning, interior fit-out, and finishing touches. 
-              Our focus is to deliver the best villa extension services in Dubai that flawlessly integrate 
-              with your property while elevating both its practicality and value.
+              We handle all stages of your pool project: concept design, structural engineering, construction, 
+              interior fit-out, finishing, and maintenance.
             </p>
           </div>
 
           <div className="mt-5">
             <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
-             Our Villa Extension Services In Dubai
+             Our Swimming Pool Services In Dubai
             </h2>
             <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-             No Matter if it’s a villa extension in Dubai for additional bedrooms, home offices, kitchens, or living 
-             areas, we provide bespoke villa extension services that match your property’s style. Our team integrates 
-             modular designs, smart home solutions, and high-end finishes for quality villa extension in Dubai that 
-             elevates your home’s value and comfort.
+             Whether you need a residential pool, infinity pool, lap pool, or commercial pool, we provide tailored 
+             construction and design solutions. Our team integrates modern designs, energy-efficient solutions, 
+             and premium finishes for pools that combine luxury, safety, and durability.
             </p>
           </div>
 
@@ -126,106 +113,90 @@ export default function BodySection() {
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
              → Design & Planning
             </h3>
-
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-              We design specific plans for villa extension services in Dubai, covering 3D visualization, space optimization, 
-              and align with Dubai building regulations.
+                We create detailed 3D designs and layouts for your pool, ensuring optimal space usage and aesthetic appeal, 
+                fully aligned with Dubai building regulations.
               </p>
             </div>
           </div>
 
           <div className="mt-5">
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              → Structural Extensions
+              → Structural Construction
             </h3>
-
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Our villa structural extensions ensure safe and durable additions, from extra rooms and floors to complete 
-                property expansions.
+                We ensure safe and durable pool structures, from foundation and waterproofing to walls, floors, and safety features.
               </p>
             </div>
-
 
            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              → Interior Fit-Out & Finishing
+              → Pool Finishing & Aesthetics
             </h3>
-
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-               Casa Kraft provides premium finishing services, including flooring, ceilings, walls, and lighting, ensuring 
-               your luxury villa extension services in Dubai look seamless and elegant.
+               High-quality finishes, including tiles, decking, lighting, and water features, ensure your pool looks elegant and luxurious.
               </p>
             </div>
 
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              → Doors & Windows Installation
+              → Pool Equipment Installation
             </h3>
-
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-               We install high-quality glass doors, sliding doors, and windows for villa extension and modifications, 
-               enhancing aesthetics, energy efficiency, and natural light.
-               </p>
+               We install pumps, filtration systems, heating, and automation for energy efficiency and easy maintenance.
+              </p>
             </div>
 
             <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              → Villa Extension Renovations
+              → Pool Renovation & Upgrades
             </h3>
-
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-               We also offer Villa Extension and Alteration Services in Dubai, upgrading existing extensions or 
-               modifying layouts for modern living.
-               </p>
+               Upgrade or modify existing pools with modern design, enhanced features, and improved safety.
+              </p>
             </div>
-            
 
             <div className="mt-5">
               <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
-                Our 3-Step Villa Extension Process
+                Our 3-Step Swimming Pool Construction Process
               </h2>
 
               <ul className="mt-5 space-y-2 text-[15px]" style={{ color: TEXT }}>
                 <li>
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  <b>Consultation & Assessment — </b> Understand your goals and evaluate feasibility for villa extension services 
-                  in Dubai
+                  <b>Consultation & Planning — </b> Understand your goals, site assessment, and pool design options.
                 </li>
                <li>
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                  <b>Design & Approvals — </b>Plan and obtain permits for Villa Extension Dubai projects.
+                  <b>Design & Approvals — </b> Develop detailed layouts, 3D designs, and obtain necessary permits.
                 </li>
                 <li>
                   <span className="mt-[7px] h-[6px] w-[6px] rounded-full bg-black" />
-                 <b> Construction & Interior Fit-Out —</b> Execute with precision and high-quality finishes for villa extensions 
-                 in Dubai.
+                 <b>Construction & Finishing —</b> Build the pool with premium materials, safety, and aesthetic finishing.
                 </li>
               </ul>
 
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-               Clients believe us for  Villa Extension and Modifications because of our many years of experience, premium 
-               quality materials and commitment to excellence. Every villa extension in Dubai is managed by skilled project 
-               managers, making sure smooth execution, on-time delivery, and long lasting quality. With Casa Kraft, you get 
-               the best villa extension services in Dubai, backed by superior craftsmanship and a reputation as the No.1 Villa 
-               Extension Company Dubai.
+               Clients trust Casa Kraft for Swimming Pool Construction in Dubai because of our experience, top-quality materials, 
+               and commitment to excellence. Every pool project is managed by skilled professionals to ensure smooth execution, 
+               timely delivery, and lasting quality.
               </p>
               <h2 className=" mt-6 text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
-                Get the Best Villa Extension Services in Dubai
+                Get the Best Swimming Pool Construction Services in Dubai
               </h2>
               <p className="mt-6 text-[15px] leading-7" style={{ color: MUTED }}>
-                Upgrade your home with Casa Kraft Interiors’ Villa Extension Services in Dubai. From structural extensions 
-                to interior fit-out, we deliver quality villa extensions in Dubai that combine luxury, functionality, and style. 
-                Contact Casa Kraft Interiors today for a consultation and discover why we’re the No.1 Villa Extension Company 
-                Dubai for residential and commercial properties.
+                Upgrade your property with Casa Kraft Interiors’ Swimming Pool Construction Services in Dubai. From custom design 
+                to finishing and maintenance, we deliver pools that combine luxury, safety, and elegance. Contact Casa Kraft Interiors today 
+                for a consultation and discover why we’re a top choice for Swimming Pool Construction in Dubai.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4) After it: FAQs (already vertical) */}
+      {/* 4) FAQs */}
       <FAQSection />
     </>
   );
@@ -235,20 +206,20 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: " How long does a villa extension take in Dubai?",
-        a: "Most villa extension projects in Dubai take 8–16 weeks depending on size and complexity.",
+        q: " How long does a swimming pool construction take in Dubai?",
+        a: "Most swimming pool projects in Dubai take 6–12 weeks depending on design and complexity.",
       },
       {
-        q: "Can I customize the villa extension layout?",
-        a: "Yes, our Villa Extension and Alteration Services in Dubai are fully customizable to suit your needs and lifestyle.",
+        q: "Can I customize the swimming pool design?",
+        a: "Yes, our Swimming Pool Construction Services in Dubai are fully customizable to suit your property and lifestyle.",
       },
       {
-        q: "Do you handle permits for villa extensions?",
-        a: "Yes, Casa Kraft manages all approvals and compliance for villa extension services in Dubai. ",
+        q: "Do you handle permits for pool construction?",
+        a: "Yes, Casa Kraft manages all approvals and compliance for swimming pool construction projects in Dubai.",
       },
       {
-        q: "Can you renovate or modify an existing villa extension?",
-        a: "Absolutely, we provide Villa Extension and Modifications to upgrade or alter existing spaces with modern design and finishes.",
+        q: "Do you offer pool renovation or upgrades?",
+        a: "Absolutely, we provide pool renovation, upgrades, and feature additions to enhance existing pools.",
       },
     ],
     []
@@ -323,17 +294,13 @@ function Chevron({ isOpen }) {
   );
 }
 
-/* =====================================================================================
-   Swiper Gallery (click thumbnails -> opens FULLSCREEN Swiper)
-===================================================================================== */
-
 function HeroGallerySwiper({
   images = [
-    "/images/acacia-1.png",
-    "/images/acacia-2.png",
-    "/images/acacia-3.png",
-    "/images/acacia-4.png",
-    "/images/acacia-5.png",
+    "/images/pool1.png",
+    "/images/pool2.png",
+    "/images/pool3.png",
+    "/images/pool4.png",
+    "/images/pool5.png",
   ],
 }) {
   const slides = images.map((src, i) => ({ src, alt: `Gallery image ${i + 1}` }));
@@ -345,7 +312,6 @@ function HeroGallerySwiper({
   return (
     <>
       <div className="w-full">
-        {/* Main */}
         <div className="relative">
           <Swiper
             modules={[Navigation, Thumbs, Keyboard]}
@@ -368,7 +334,6 @@ function HeroGallerySwiper({
                   className="block w-full"
                   aria-label="Open fullscreen gallery"
                 >
-                  {/* Mobile-friendly height */}
                   <img
                     src={img.src}
                     alt={img.alt}
@@ -380,7 +345,6 @@ function HeroGallerySwiper({
           </Swiper>
         </div>
 
-        {/* Thumbs */}
         <div className="mt-3">
           <Swiper
             modules={[FreeMode, Thumbs]}
@@ -408,7 +372,6 @@ function HeroGallerySwiper({
         </div>
       </div>
 
-      {/* Fullscreen */}
       {isOpen ? (
         <FullscreenGallery
           slides={slides}

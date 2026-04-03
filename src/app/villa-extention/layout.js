@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: " Best Villa Extension Services in Dubai - Casa Kraft Interiors",
+  title: " Swimming Pool Construction Dubai - Casa Kraft Interiors",
   description:
-    "Expert villa extension services in Dubai by Casa Kraft Interiors. Structural extensions, custom designs, approvals & luxury finishes for villas. Visit Now",
+    "Expert swimming pool construction services in Dubai. Casa Kraft Interiors delivers luxury, custom-designed pools for homes and commercial properties.",
   metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
     canonical: '/villa-extention',
