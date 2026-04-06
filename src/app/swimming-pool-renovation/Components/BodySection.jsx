@@ -43,11 +43,11 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-               Swimming Pool Construction Services in Dubai
+               Swimming Pool Renovation Services in Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                Casa Kraft Interiors offers premium Swimming Pool Construction Services in Dubai, creating 
+                Casa Kraft Interiors offers premium Swimming Pool Renovation Services in Dubai, creating 
                 luxurious and safe pools tailored to your lifestyle. Our team specializes in designing, building, 
                 and finishing residential and commercial pools with modern aesthetics, high-quality materials, 
                 and attention to detail.

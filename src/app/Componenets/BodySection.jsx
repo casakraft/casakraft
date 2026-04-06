@@ -110,12 +110,12 @@ export default function BodySection() {
       { title: "Bathrooms", img: "/images/br7.jpeg", href: "/bathroom-renovation" },
       { title: "Flooring", img: "/images/fr4.png", href: "/flooring-dubai" },
       { title: "Wardrobes & Cabinets", img: "/images/wc3.png", href: "/wardrobes-and-cabinets" },
-      { title: "Swimming Pool", img: "/images/ve6.png", href: "/villa-extention" },
+      { title: "Swimming Pool", img: "/images/ve6.png", href: "/swimming-pool-renovation" },
       { title: "Landscape", img: "/images/ls2.png", href: "/landscape-dubai" },
       { title: "Painting Works", img: "/images/pn3.png", href: "/painting-services-dubai" },
       { title: "Windows & Doors", img: "/images/wd1.png", href: "/windows-and-doors" },
-      { title: "Customized Curtains & Blinds", img: "/images/villa-living-room-curtains-in-dubai.png", href: "/customized-curtains-dubai" },
-      { title: "Customized Wallpapers", img: "/images/study-room-interior-wallpaper-in-dubai.png", href: "/windows-and-doors" },
+      { title: "Customized Curtains & Blinds", img: "/images/villa-living-room-curtains-in-dubai.png", href: "customized-curtains-blinds-dubai" },
+      { title: "Customized Wallpapers", img: "/images/study-room-interior-wallpaper-in-dubai.png", href: "/customized-wallpapers-dubai" },
     ],
     []
   );
