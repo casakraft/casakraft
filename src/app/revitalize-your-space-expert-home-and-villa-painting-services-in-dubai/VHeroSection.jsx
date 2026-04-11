@@ -149,7 +149,7 @@ const VHeroSection = () => {
               When your villa is maintained properly, its attractiveness is increased significantly, which will make it very easy for buyers or tenants to be attracted towards it. This is an investment worth considering.
             </p>
 
-            <h3 className="text-[#b49a55] text-xl font-bold mb-2">Complete Home Transformation with Villa Painting Dubai</h3>
+            <h4 className="text-[#b49a55] text-xl font-bold mb-2">Complete Home Transformation with Villa Painting Dubai</h4>
             <p>
               Painting is an easy technique to give your house an altogether new look according to your needs.
             </p>
@@ -181,21 +181,21 @@ const VHeroSection = () => {
           </div>
 
           <div className="text-md leading-relaxed font-play space-y-4">
-            <h2 className="text-[#b49a55] text-2xl py-5 font-conthrax uppercase">FAQs</h2>
+            <h2 className="text-[#b49a55] text-2xl py-5 font-conthrax uppercase font-bold">FAQs</h2>
 
-            <h3 className="text-[#b49a55] text-xl font-bold mb-2">What are some of the top villa painting services in Dubai?</h3>
+            <h3 className="text-[#b49a55]  font-bold mb-2">What are some of the top villa painting services in Dubai?</h3>
             <p>They include companies such as Casa Kraft that provide top quality paints and expert painters to deliver durable work.</p>
 
-            <h3 className="text-[#b49a55] text-xl font-bold mb-2">How much do you pay for villa painting services?</h3>
+            <h3 className="text-[#b49a55]  font-bold mb-2">How much do you pay for villa painting services?</h3>
             <p>The pricing of services varies based on the size of the villa, the quality of paints among other factors. Casa Kraft provides personalized quotes according to your needs.</p>
 
-            <h3 className="text-[#b49a55] text-xl font-bold mb-2">Why use professional painters in Dubai?</h3>
+            <h3 className="text-[#b49a55]  font-bold mb-2">Why use professional painters in Dubai?</h3>
             <p>Professional painters guarantee effective surface preparation, quality finishes and timely completion of projects.</p>
 
-            <h3 className="text-[#b49a55] text-xl font-bold mb-2">What paint should you use for villas?</h3>
+            <h3 className="text-[#b49a55]  font-bold mb-2">What paint should you use for villas?</h3>
             <p>Paints with heat resistance and humidity resistance qualities are suitable for villas located in Dubai.</p>
 
-            <h3 className="text-[#b49a55] text-xl font-bold mb-2">How long will the villa painting process take?</h3>
+            <h3 className="text-[#b49a55]  font-bold mb-2">How long will the villa painting process take?</h3>
             <p>It depends on the scale and complexity of the project but typically it takes several days to complete.</p>
           </div>
         </div>
