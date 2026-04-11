@@ -14,6 +14,15 @@ dayjs.extend(relativeTime);
 
 const blogs = [
   
+
+  {
+    id: 5,
+    slug: "revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
+    title: "Villa Painting Services in Dubai",
+    image: "/images/Villa Painting Services in Dubai.png",
+    date: "2026-04-10",
+    tag: "Blog",
+  },
   {
     id: 1,
     slug: "bedroom-interior-design-trends",
@@ -29,6 +38,7 @@ const blogs = [
     image: "/images/modern-family-apartment-interior-design.png",
     date: "2026-01-24",
     tag: "Blog",
+
   },
   {
     id: 3,

@@ -7,7 +7,15 @@ import dayjs from "dayjs";
 
 // ---- DATA (kept from your current version; slugs normalized) ----
 const blogs = [
-
+ 
+  {
+    id: 5,
+    slug: "revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
+    title: "Villa Painting Services in Dubai",
+    image: "/images/Villa Painting Services in Dubai.png",
+    date: "2026-04-10",
+    tag: "Blog",
+  },
   {
     id: 4,
     slug: "kitchen-interior-design-in-dubai",

@@ -6,6 +6,14 @@ import Link from "next/link";
 
 // Blog data
 const blogPosts = [
+  
+  {
+    title: "Villa Painting Services in Dubai",
+    date: "10 Apr, 2026",
+    image: "/images/Villa Painting Services in Dubai.png",
+    link: "/revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
+  },
+
   {
     title: "Kitchen Interior Design in Dubai",
     date: "Apr 1, 2026",
@@ -19,13 +27,7 @@ const blogPosts = [
     image: "/images/The Future of Bedroom Interior Design in Dubai.png",
     link: "/bedroom-interior-design-trends",
   },
-  {
-    title: "Modern Apartment Interior Design in Dubai",
-    date: "Feb 15, 2026",
-    image: "/images/interior-design-trends-for-modern-apartments.png",
-    link: "/modern-apartment-interior-design",
-  },
-
+  
 ];
 
 // Helper to split title onto two lines (optional)

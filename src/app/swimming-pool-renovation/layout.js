@@ -6,7 +6,7 @@ export const metadata = {
     "Expert swimming pool construction services in Dubai. Casa Kraft Interiors delivers luxury, custom-designed pools for homes and commercial properties.",
   metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/villa-extention',
+    canonical: '/swimming-pool-renovation',
   },
 };
 

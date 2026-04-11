@@ -6,7 +6,7 @@ export const metadata = {
     "Transform your home with expert villa painting services in Dubai. Casa Kraft offers premium finishes, weather-resistant paints, and custom solutions.",
   metadataBase: new URL('https://www.casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/modern-apartment-interior-design',
+    canonical: '/revitalize-your-space-expert-home-and-villa-painting-services-in-dubai',
   },
 };
 
