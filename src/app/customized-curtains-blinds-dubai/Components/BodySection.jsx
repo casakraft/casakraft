@@ -39,30 +39,39 @@ export default function BodySection() {
             </div>
 
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
-              <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
+              <h1 className=" font-semibold text-[24px] sm:text-[34px] font-medium "style={{ color: PURPLE }}>
                 Customized Curtains & Blinds Services in Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                Enhance your interior aesthetics by incorporating our high-quality curtains & blinds in Dubai offered by Casa Kraft Interior Design & Renovation. If you are designing an upscale villa, updating your modern apartment or renovating your professional office, our high quality curtains and blinds in Dubai cater to all types of spaces. Our designer curtains are tailor made to match your exact requirements and offer modern designs with premium quality fabrics.<br /><br />
-                We specialize in offering customized curtains and blinds in Dubai along with modern designs & flawless installations. Discover unparalleled elegance and efficiency in every one of our products including the best curtains in Dubai. Our luxurious curtains and blinds in Dubai offer superior light blocking capability, ease of usage and an elegant look.
+                Enhance your interior aesthetics by incorporating our <b>high-quality curtains & blinds in Dubai</b> offered by <a 
+  href="https://casakraft.ae" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="font-bold hover:underline"
+  style={{ color: PURPLE }}
+>
+  Casa Kraft Interior Design & Renovation
+</a>. If you are designing an upscale villa, updating your modern apartment or renovating your professional office, our high quality curtains and blinds in Dubai cater to all types of spaces. Our designer curtains are tailor made to match your exact requirements and offer<b> modern designs</b> with premium quality fabrics.<br /><br />
+                We specialize in offering customized<b> curtains and blinds in Dubai</b> along with<b> modern designs & flawless installations</b>. Discover unparalleled elegance and efficiency in every one of our products including the best curtains in Dubai. Our luxurious curtains and blinds in Dubai offer superior light blocking capability, ease of usage and an elegant look.
               </p>
 
-              <div className="mt-7 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
-                <a
-                  href="/contact-us"
-                  className="h-11 w-full sm:w-[220px] flex items-center justify-center text-xs tracking-wider uppercase text-white bg-[#1e4a45]"
-                >
-                  Book a Consultation
-                </a>
+              {/* mt-7 ko mt-8 ya mt-10 kar dein aur mb-10 add kar dein nichay gap ke liye */}
+<div className="mt-8 mb-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+  <a
+    href="/contact-us"
+    className="h-11 w-full sm:w-[220px] flex items-center justify-center text-xs tracking-wider uppercase text-white bg-[#1e4a45] hover:opacity-90 transition-opacity"
+  >
+    Book a Consultation
+  </a>
 
-                <a
-                  href="/contact-us"
-                  className="h-11 w-full sm:w-[220px] flex items-center justify-center text-xs tracking-wider uppercase text-white bg-black/70"
-                >
-                  Get Your Estimate
-                </a>
-              </div>
+  <a
+    href="/contact-us"
+    className="h-11 w-full sm:w-[220px] flex items-center justify-center text-xs tracking-wider uppercase text-white bg-black/70 hover:bg-black/80 transition-all"
+  >
+    Get Your Estimate
+  </a>
+</div>
             </div>
           </div>
         </div>
@@ -77,7 +86,7 @@ export default function BodySection() {
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Enhance your space with beautifully crafted curtains and blinds designed to bring elegance, comfort, and sophistication to villas, modern apartments, and professional offices across Dubai. Each task gets done with professionalism and precision, providing tailor made and well fitted shades and curtains according to the theme and design of your interior space. Enjoy perfect curtain installation service in Dubai with Casa kraft interior design & renovation which provide durable and aesthetically pleasing products.
+              Enhance your space with<b>beautifully crafted curtains and blinds designed</b>  to bring elegance, comfort, and sophistication to villas, modern apartments, and professional offices across Dubai. Each task gets done with professionalism and precision, providing tailor made and <b>well fitted shades and curtains </b>according to the theme and design of your interior space. Enjoy perfect curtain installation service in Dubai with Casa kraft interior design & renovation which provide durable and aesthetically pleasing products.
             </p>
           </div>
 
@@ -88,10 +97,10 @@ export default function BodySection() {
             </h2>
 
             <p className="mt-6 text-[15px] leading-7 text-[#6a6a6a]">
-              There are many options for curtain and blind installation services available for interior designing in Dubai; however, Casa Kraft offers unmatched quality products in addition to personalized services for homes and workplaces. Our company combines custom made curtains along with blinds and installs them according to the needs of homeowners and businessmen in Dubai.</p>
+              There are many options for<b> curtain and blind installation services </b>available for interior designing in Dubai; however, <b>Casa Kraft</b> offers unmatched quality products in addition to personalized services for homes and workplaces. Our company combines<b> custom made curtains</b> along with blinds and installs them according to the needs of homeowners and businessmen in Dubai.</p>
 
             <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a]">
-             What makes Casa Kraft Interior Design & Renovation unique and popular among its customers is the level of customization involved in its products with personalized services. After visiting your site to get exact measurements, the company recommends suitable curtains or blinds, and you can choose your favorite color from a huge collection available with them. Moreover, there is an option for motorized and smart blinds so that you can enjoy modern technology. The most amazing thing about Casa Kraft is that it offers a variety of premium quality textiles to give a luxurious touch to your rooms or offices. The professional installers ensure that every blind or curtain is installed perfectly at your place.The team that is skilled at installing such curtains and blinds does the task professionally and leaves no marks of inefficiency. While providing the best quality products, Casa Kraft makes sure that all of their services remain within affordable prices. Their professional team executes all tasks efficiently and quickly so that all projects are completed effectively.</p>
+             What makes<b> Casa Kraft Interior Design & Renovation </b>unique and popular among its customers is the level of customization involved in its products with personalized services. After visiting your site to get exact measurements, the company recommends suitable curtains or blinds, and you can choose your favorite color from a huge collection available with them. Moreover, there is an option for<b> motorized and smart blinds</b> so that you can enjoy modern technology. The most amazing thing about Casa Kraft is that it offers a variety of premium quality textiles to give a luxurious touch to your rooms or offices. The professional installers ensure that every blind or curtain is installed perfectly at your place.The team that is skilled at installing such curtains and blinds does the task professionally and leaves no marks of inefficiency. While providing the best quality products, Casa Kraft makes sure that all of their services remain within affordable prices. Their professional team executes all tasks efficiently and quickly so that all projects are completed effectively.</p>
 
           </div>
 
@@ -101,40 +110,40 @@ export default function BodySection() {
               Our Curtain & Blind ServicesH2: Our Customized Curtain & Blind Solutions
              </h2>
              <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              We at Casa Kraft Interior Design & Renovation provide you with all custom made curtains with professional installation services for your villas, apartments and offices. You can get custom made curtains in Dubai that will be crafted according to your choice and needs and customized designs that would perfectly fit your room. <br/><br/>
-                Get custom made blinds along with custom curtains in Dubai that have motorized blinds and best quality fabrics installed in your room with curtain installation Dubai. Get luxurious custom curtains Dubai with Casa Kraft Interior Design & Renovation for elegance and comfort. </p>
+              We at <b>Casa Kraft Interior Design & Renovation </b>provide you with all <b>custom made curtains with professional installation services</b> for your villas, apartments and offices. You can get custom made curtains in Dubai that will be crafted according to your choice and needs and <b>customized designs</b> that would perfectly fit your room. <br/><br/>
+                Get <b>custom made blinds along with custom curtains in Dubai</b> that have motorized blinds and best quality fabrics installed in your room with curtain installation Dubai. Get <b>luxurious custom curtains Dubai with Casa Kraft Interior</b> Design & Renovation for elegance and comfort. </p>
           </div>
 
           {/* Service Details */}
           <div className="mt-8 space-y-10">
             <div>
               <h3 className="font-semibold text-[20px]" style={{ color: PURPLE }}>Custom Curtains</h3>
-              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Give your room a new look and elegance with our custom made curtains with professional installations. You can easily order custom made curtains in Dubai to get the desired design according to your style. Custom windows layering will control the lighting and customized printed curtains are designed for your personal style. Enjoy the luxury with custom made curtains in Dubai.</p>
+              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Give your room a new look and elegance with our <b>custom made curtains</b> with professional installations. You can easily order custom made curtains in Dubai to get the desired design according to your style. Custom windows layering will control the lighting and <b>customized printed curtains</b> are designed for your personal style. Enjoy the luxury with custom made curtains in Dubai.</p>
             </div>
 
             <div>
               <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>Sheer curtains</h4>
-              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Add style to your interiors with our best sheer curtains in Dubai made using high-quality materials with exact stitching, rails, and installation services. Sheer curtains with rails & installation and luxury sheer curtains enhance your living spaces, adding style, elegance and ample lighting to your home and office areas. Get premium, customized sheer curtains to suit your design requirements creating an atmosphere of privacy and luxury.</p>
+              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Add style to your interiors with our<b> best sheer curtains in Dubai</b> made using high-quality materials with exact stitching, rails, and installation services.<b> Sheer curtains with rails & installation</b> and <b>luxury sheer curtains</b> enhance your living spaces, adding style, elegance and ample lighting to your home and office areas. Get<b> premium, customized sheer curtains</b> to suit your design requirements creating an atmosphere of privacy and luxury.</p>
             </div>
 
             <div>
               <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>Blackout curtains</h4>
-              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Experience the privacy, heat resistance and luxury with the blackout curtains in Dubai. With our premium blackout curtains, blocking out sunlight , protect your interior against heat and give luxury a chance.</p>
+              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Experience the privacy, heat resistance and luxury with the<b> blackout curtains in Dubai</b>. With our<b> premium blackout curtains</b>, blocking out sunlight , protect your interior against heat and give luxury a chance.</p>
             </div>
 
             <div>
               <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>Wave curtains</h4>
-              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Add beauty and utility to your interiors with the beautiful Wave Curtains. Experience privacy and light control all while enjoying the most modern look you've ever seen with Wave Curtains Dubai.</p>
+              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Add beauty and utility to your interiors with the beautiful Wave Curtains. Experience privacy and light control all while enjoying the most modern look you've ever seen with<b> Wave Curtains Dubai</b>.</p>
             </div>
 
             <div>
               <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>Eyelet curtains</h4>
-              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Because the eyelet design makes it easy to open and close the curtains as you move the curtain along the rail with ease.Add sophistication and style to your interiors with our premium Eyelet Curtains in Dubai. Get premium, stylish Eyelet Curtains in Dubai that give you privacy and light control.</p>
+              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Because the <b>eyelet design</b> makes it easy to open and close the curtains as you move the curtain along the rail with ease.Add sophistication and style to your interiors with our <b>premium Eyelet Curtains in Dubai. Get premium, stylish Eyelet Curtains in Dubai</b> that give you privacy and light control.</p>
             </div>
 
              <div>
               <h4 className="font-semibold text-[18px]" style={{ color: PURPLE }}>Pinch Pleat Curtains</h4>
-              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}>Casa kraft  offer premium quality French pinch pleat curtains in Dubai and we can boast of providing the best pinch pleat curtains made by our experts in Dubai. Our pinch pleat curtains range is aimed at decorating the interior of your homes offering an elegant solution to both privacy and light management. Suitable for all villas, apartments or offices, these curtains are sure to meet all of your expectations.</p>
+              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}><b>Casa kraft </b> offer <b>premium quality French pinch pleat curtains in Dubai</b> and we can boast of providing the best pinch pleat curtains made by our experts in Dubai. Our pinch pleat curtains range is aimed at decorating the interior of your homes offering an elegant solution to both privacy and light management. Suitable for all villas, apartments or offices, these curtains are sure to meet all of your expectations.</p>
             </div>
 
           </div>
@@ -183,7 +192,15 @@ export default function BodySection() {
             <div className="mt-8 space-y-10">
             <div>
               <h3 className="text-[20px]" style={{ color: PURPLE }}>Interior Solutions for Villas</h3>
-              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}> Create a perfect interior design for villas with our high-quality curtains and blinds. Enjoy the ultimate elegance by choosing our products, which will be installed correctly to make a luxurious interior.</p>
+              <p className="mt-2 text-[15px] leading-7" style={{ color: MUTED }}> Create a perfect <a 
+  href="https://casakraft.ae" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="font-bold hover:underline"
+  style={{ color: PURPLE }}
+>
+interior design for villas
+</a> with our high-quality curtains and blinds. Enjoy the ultimate elegance by choosing our products, which will be installed correctly to make a luxurious interior.</p>
             </div>
 
             <div>
