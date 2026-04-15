@@ -418,64 +418,7 @@ export default function BodySection() {
         </Container>
       </Section>
 
-      {/* =========================
-          OUR PROJECTS (mosaic with per-card overlay text)
-      ========================== */}
-      <Section className="bg-[#f4f4f4]">
-        <Container className="py-14">
-          <h2 className="text-center text-2xl md:text-3xl font-semibold text-black/70">
-            Our Projects
-          </h2>
-
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-3">
-            {projectMosaic.map((p, idx) => (
-              <div
-                key={idx}
-                className="group relative overflow-hidden rounded-sm bg-white"
-              >
-                <div className="relative aspect-square w-full">
-                  <Image
-                    src={p.img}
-                    alt={p.title || `Project ${idx + 1}`}
-                    fill
-                    className="object-cover"
-                  />
-
-                  {/* Dark overlay */}
-                  <div className="absolute inset-0 bg-black/45 group-hover:bg-black/55 transition" />
-
-                  {/* Center text overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
-                    <div className="text-white">
-                      <h3 className="tracking-[0.35em] text-lg md:text-xl font-semibold">
-                        {p.title}
-                      </h3>
-
-                      <p className="mt-4 tracking-[0.35em] text-xs md:text-sm opacity-90">
-                        {p.type}
-                      </p>
-
-                      <p className="mt-4 text-[11px] md:text-xs leading-relaxed opacity-85">
-                        {p.locationLine1}
-                        <br />
-                        {p.locationLine2}
-                      </p>
-
-                      <p className="mt-4 tracking-[0.35em] text-xs md:text-sm opacity-90">
-                        {p.year}
-                      </p>
-
-                      <p className="mt-5 tracking-[0.35em] text-[11px] md:text-xs opacity-90">
-                        {p.service}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
+    
 
       {/* =========================
           COMPARISON TABLE (Yalla vs Typical)

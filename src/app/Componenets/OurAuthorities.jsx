@@ -1,91 +1,99 @@
 "use client";
 
-import React, { useCallback, useEffect, useState } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 const logos = [
-    "/images/dubai-municipality.png",
-    "/images/dcd.png",
-    "/images/nakheel-logo.png",
-    "/images/Emaar-Properties-Logo.png",
+  "/images/dm.png",
+  "/images/dcd.png",
+  "/images/nakheel.png",
+  "/images/emaar.png",
 ];
 
 const OurAuthorities = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, align: "center" },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
-  );
-
-  const [prevEnabled, setPrevEnabled] = useState(false);
-  const [nextEnabled, setNextEnabled] = useState(false);
-
-  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
-
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setPrevEnabled(emblaApi.canScrollPrev());
-    setNextEnabled(emblaApi.canScrollNext());
-  }, [emblaApi]);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-    emblaApi.on("select", onSelect);
-    onSelect();
-  }, [emblaApi, onSelect]);
-
   return (
-    <section className="py-10 px-4 sm:px-8 lg:px-16 text-center bg-white text-black">
-         {/* Scroll Arrow and Heading */}
-          <div className="mb-8">
-            
-            <h2 className="mt-10 text-sm sm:text-xl tracking-widest font-conthrax">
-              OUR AUTHORTIES
-            </h2>
-          </div>
+    <section className="bg-white px-4 py-10 text-center text-black sm:px-8 lg:px-16">
+      <div className="mb-8">
+        <h2 className="mt-10 text-sm font-conthrax tracking-widest sm:text-xl">
+          OUR AUTHORITIES
+        </h2>
+      </div>
 
-      {/* Carousel */}
-      <div className="relative max-w-6xl mx-auto">
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-2 sm:gap-4">
-            {logos.map((logo, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-[33.33%] sm:w-[25%] md:w-[20%] lg:w-[16.66%] flex items-center justify-center"
-              >
+      <div className="relative mx-auto max-w-6xl">
+        <Swiper
+          modules={[Autoplay, Navigation]}
+          loop={true}
+          navigation={true}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          speed={800}
+          centeredSlides={true}
+          spaceBetween={8}
+          slidesPerView={3}
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 8,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 12,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 16,
+            },
+          }}
+          className="our-authorities-swiper"
+        >
+          {logos.map((logo, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex items-center justify-center">
                 <Image
                   src={logo}
                   alt={`Authority logo ${index + 1}`}
-                  width={120}
-                  height={80}
-                  className="object-contain w-full h-auto"
+                  width={160}
+                  height={100}
+                  className="h-16 w-auto object-contain sm:h-20"
                 />
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Scroll Arrows */}
-        <button
-          onClick={scrollPrev}
-          className="absolute -left-4 sm:-left-8 lg:-left-12 top-1/2 -translate-y-1/2 text-black text-4xl p-1 hover:text-[#a16848] z-10"
-          aria-label="Scroll Previous"
-          disabled={!prevEnabled}
-        >
-          <HiOutlineChevronLeft />
-        </button>
-        <button
-          onClick={scrollNext}
-          className="absolute -right-4 sm:-right-8 lg:-right-12 top-1/2 -translate-y-1/2 text-black text-4xl p-1 hover:text-[#a16848] z-10"
-          aria-label="Scroll Next"
-          disabled={!nextEnabled}
-        >
-          <HiOutlineChevronRight />
-        </button>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
+
+      <style jsx global>{`
+        .our-authorities-swiper {
+          padding: 0 36px;
+        }
+
+        .our-authorities-swiper .swiper-button-prev,
+        .our-authorities-swiper .swiper-button-next {
+          color: #000;
+          width: 40px;
+          height: 40px;
+        }
+
+        .our-authorities-swiper .swiper-button-prev:after,
+        .our-authorities-swiper .swiper-button-next:after {
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        .our-authorities-swiper .swiper-button-prev {
+          left: 0;
+        }
+
+        .our-authorities-swiper .swiper-button-next {
+          right: 0;
+        }
+      `}</style>
     </section>
   );
 };

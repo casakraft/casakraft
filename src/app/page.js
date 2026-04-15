@@ -4,11 +4,12 @@ import CallButton from "./Componenets/CallButton";
 import HeroSection from "./Componenets/HeroSection";
 import PartnersSwiper from "./Componenets/PartnersSwiper";
 import AboutSection from "./Componenets/AboutSection";
+import OurProjectsSwiper from "./Componenets/OurProjectsSwiper";
 import BodySection from "./Componenets/BodySection";
 import OurServices from "./Componenets/WhatWeDo";
-import Services from "./Componenets/Services";
+
 import GetInTouch from "./Componenets/GetinTouch";
-import Portfolio from "./Componenets/Portfolio";
+
 import Blogs from "./Componenets/Blogs";
 import OurAuthorities from "./Componenets/OurAuthorities";
 import TestimonialsWidget from "./Componenets/Testimonials";
@@ -27,11 +28,12 @@ export default function Home() {
         <HeroSection />
         <PartnersSwiper />
         <AboutSection />
+        <OurProjectsSwiper />
         <BodySection />
         <OurServices />
-        <Services />
+        
         <GetInTouch />
-        <Portfolio />
+       
         <Blogs />
         <OurAuthorities />
         <TestimonialsWidget />
