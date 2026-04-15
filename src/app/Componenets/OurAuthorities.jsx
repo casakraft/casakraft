@@ -12,6 +12,10 @@ const logos = [
   "/images/dcd.png",
   "/images/nakheel.png",
   "/images/emaar.png",
+  "/images/dm.png",
+  "/images/dcd.png",
+  "/images/nakheel.png",
+  "/images/emaar.png",
 ];
 
 const OurAuthorities = () => {
@@ -34,7 +38,7 @@ const OurAuthorities = () => {
           }}
           speed={800}
           centeredSlides={true}
-          spaceBetween={8}
+          spaceBetween={12}
           slidesPerView={3}
           breakpoints={{
             640: {
@@ -42,11 +46,11 @@ const OurAuthorities = () => {
               spaceBetween: 8,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 12,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 16,
             },
           }}
