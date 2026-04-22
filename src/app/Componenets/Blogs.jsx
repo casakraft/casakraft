@@ -10,7 +10,7 @@ const blogPosts = [
    {
     title: "Your Ultimate Guide to Villa and Home Renovation in Dubai",
     date: "Apr 22, 2026",
-    image: "/images/The Future of Bedroom Interior Design in Dubai.png",
+    image: "/images/Villa and Home Renovation in Dubai.png",
     link: "/your-ultimate-guide-to-villa-and-home-renovation-in-dubai",
   },
 

@@ -18,7 +18,7 @@ const blogs = [
     id: 1,
     slug: "your-ultimate-guide-to-villa-and-home-renovation-in-dubai",
     title: "Your Ultimate Guide to Villa and Home Renovation in Dubai",
-    image: "/images/blog-3.png",
+    image: "/images/Villa and Home Renovation in Dubai.png",
     date: "2026-04-22",
     tag: "Blog",
   },

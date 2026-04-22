@@ -2,26 +2,31 @@ import Image from "next/image";
 
 const VillaRenovationSection = () => {
   const suggestions = [
-    {
-      title: "New Hotel Interior Ideas To Make Your Hotel Spaces Luxury",
-      age: "4 years ago",
-      image: "/images/high-rise-dubai-marina-apartment-interior-design-dubai.png",
-    },
-    {
-      title: "Best Kids Room Interior Design Ideas | Tips To Decorate Your Kids Room",
-      age: "4 years ago",
-      image: "/images/elegant-dubai-apartment-showcasing-open-living-room-interior-in-dubai.png",
-    },
-    {
-      title: "7 Inspiring Home Renovation Design Ideas You Need to Know",
-      age: "1 year ago",
-      image: "/images/dubai-apartment-balcony-exterior-design-company-in-dubai.png",
-    },
-    {
-      title: "7 Inspiring Home Renovation Design Ideas You Need to Know",
-      age: "1 year ago",
-      image: "/images/ultra-modern-dubai-apartment-interior-design.png",
-    },
+   
+  {
+    title: "Revitalize Your Space – Expert Villa Painting Services",
+    age: "April 10, 2026",
+    image: "/images/Villa Painting Services in Dubai.png",
+    link: "/revitalize-your-space-expert-home-and-villa-painting-services-in-dubai", // High relevance
+  },
+  {
+    title: "Kitchen Interior Design Ideas in Dubai",
+    age: "April 1, 2026",
+    image: "/images/luxury-kitchen-interior-design-in-dubai.png",
+    link: "/kitchen-interior-design-in-dubai", // Specific room renovation
+  },
+  {
+    title: "Bedroom Interior Design Trends In Dubai",
+    age: "March 17, 2026",
+    image: "/images/The Future of Bedroom Interior Design in Dubai.png",
+    link: "/bedroom-interior-design-trends", // Specific room renovation
+  },
+   {
+    title: "Top Notch Villa Renovation Company in Dubai",
+    age: "January 1, 2026",
+    image: "/images/villa-renovation-company-in-dubai.png",
+    link: "/villa-renovation-company-dubai", // Most Relevant (Renovation to Company)
+  },
   ];
 
   return (
@@ -41,7 +46,9 @@ const VillaRenovationSection = () => {
           {/* Introduction */}
           <div className="text-md leading-relaxed font-play space-y-4">
             <p>
-              Villa and home renovations in Dubai go beyond aesthetics, they are all about elevating the quality of living. 
+             <a href="/villa-and-home-renovation-dubai" className="font-bold hover:underline text-[#b49a55]">
+      Villa and home renovations in Dubai
+    </a> go beyond aesthetics, they are all about elevating the quality of living. 
               Be it for comfort purposes or for boosting the value of your property. A properly planned and executed 
               home renovation in Dubai will change everything. Whether you own a luxurious villa or an upscale home in Dubai, 
               learning about the proper process will help you achieve high end finishes that last forever. 
@@ -52,7 +59,7 @@ const VillaRenovationSection = () => {
 
           {/* Hero Image */}
           <Image 
-            src="/images/luxury-villa-renovation-dubai-hero.png" 
+            src="/images/Villa and Home Renovation in Dubai.png" 
             alt="Villa and Home Renovation in Dubai" 
             width={800} height={600} 
             className="rounded-md w-full object-cover my-6" 
@@ -70,7 +77,7 @@ const VillaRenovationSection = () => {
               Dubai are opting for <b>full home renovation Dubai services</b>.
             </p>
             <Image 
-              src="/images/renovation-planning-phase.png" 
+              src="/images/interior designer workspace in Dubai.png" 
               alt="Planning Villa Renovation" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -84,12 +91,14 @@ const VillaRenovationSection = () => {
               Finding the right company is among the most crucial steps in your renovation process. With so many 
               renovation companies in Dubai, it’s important to choose one that offers both creative design and 
               technical expertise. There are several companies in Dubai that offer high quality renovation services 
-              and <b>Casa Kraft Interior Design</b> is a leading interior design company providing exceptional renovation services. 
+              and <a href="/villa-and-home-renovation-dubai" className="font-bold hover:underline text-[#b49a55]">
+      Casa Kraft Interior Design
+    </a>  is a leading interior design company providing exceptional renovation services. 
               The top villa renovation contractor in Dubai will ensure that your whole renovation project is 
               executed perfectly and smoothly.
             </p>
             <Image 
-              src="/images/leading-renovation-company-dubai.png" 
+              src="/images/luxury office in Dubai.png" 
               alt="Choosing Renovation Company" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -112,11 +121,13 @@ const VillaRenovationSection = () => {
             <h3 className="text-[#b49a55] text-xl font-bold mb-2">Full Home Renovation Dubai Specialist</h3>
             <p>
               The objective here is the total transformation of the property, both internally and externally. 
-              In the case of a Full Home Renovation Dubai Specialist | Villa To Apartment renovation, everything 
+              In the case of a Full Home Renovation Dubai Specialist | Villa To <a href="/villa-and-home-renovation-dubai" className="font-bold hover:underline text-[#b49a55]">
+      Apartment renovation
+    </a>, everything 
               about the property will look harmonious as far as design and functionality is concerned.
             </p>
             <Image 
-              src="/images/full-home-transformation.png" 
+              src="/images/before and after villa renovation split scene.png" 
               alt="Full Home Renovation Specialist" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -127,14 +138,27 @@ const VillaRenovationSection = () => {
               Luxury renovations aim at providing the ultimate in luxury to people who love exclusivity and elegance. 
               Services provided under this include elegant villa renovations, top materials used, and modern 
               amenities included. Everything from the kitchen design to bathroom designs is made exclusively for you. 
-              That is why most homeowners opt for the <b>Top Villa Renovation Company in Dubai for Luxury Homes</b>.
+              That is why most homeowners opt for the <a href="/villa-and-home-renovation-dubai" className="font-bold hover:underline text-[#b49a55]">
+      Top Villa Renovation Company in Dubai
+    </a> for Luxury Homes.
             </p>
-
+<Image 
+              src="/images/Luxury Villa Renovation Services in Dubai.png" 
+              alt="Design and Fitout Process" 
+              width={800} height={600} 
+              className="rounded-md w-full object-cover my-6" 
+            />
             <h3 className="text-[#b49a55] text-xl font-bold mb-2">Custom Renovation for Personalized Living</h3>
             <p>
               Your home is unique just like you. A custom renovation means that you can customize every little detail 
               about your home to suit your tastes. Custom renovation is quite common in Dubai's luxurious villas and homes.
             </p>
+            <Image 
+              src="/images/Custom Renovation for Personalized Living.png" 
+              alt="Design and Fitout Process" 
+              width={800} height={600} 
+              className="rounded-md w-full object-cover my-6" 
+            />
           </div>
 
           {/* Step 4 */}
@@ -145,8 +169,8 @@ const VillaRenovationSection = () => {
               visualize your concept ideas. Renovation firms give you the opportunity to see what your home will 
               look like after remodeling. They create plans that incorporate the details about materials and finishes.
             </p>
-            <Image 
-              src="/images/design-and-fitout-process.png" 
+             <Image 
+              src="/images/Design, Fit-Out, and Execution Process.png" 
               alt="Design and Fitout Process" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -167,7 +191,7 @@ const VillaRenovationSection = () => {
               are often incorporated into the home design using neutral colors to give the house a contemporary vibe.
             </p>
             <Image 
-              src="/images/modern-renovation-trends.png" 
+              src="/images/contemporary Dubai home design.png" 
               alt="Modern Renovation Trends" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -191,7 +215,7 @@ const VillaRenovationSection = () => {
               that the renovations last long.
             </p>
             <Image 
-              src="/images/renovation-budget-dubai.png" 
+              src="/images/Budgeting and Cost Considerations for villa renovations in dubai.png" 
               alt="Budgeting and Cost" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -209,7 +233,7 @@ const VillaRenovationSection = () => {
               transform your villa successfully.
             </p>
             <Image 
-              src="/images/complete-villa-renovation-finish.png" 
+              src="/images/fully renovated luxury Dubai villa interior.png" 
               alt="Complete Villa Renovation" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -220,15 +244,16 @@ const VillaRenovationSection = () => {
           <div className="text-md leading-relaxed font-play space-y-4">
             <h2 className="text-[#b49a55] text-2xl py-5 font-conthrax uppercase">Why Casa Kraft Interior Design is the Preferred Choice</h2>
             <p>
-              <b>Casa Kraft Interior Design</b> has established itself as one of the best interior design companies 
-              that offer exceptional renovation services. Renowned for its best villa and home renovation in Dubai, 
+              <b>Casa Kraft Interior Design</b> has established itself as one of the <a href="/villa-and-home-renovation-dubai" className="font-bold hover:underline text-[#b49a55]">
+     best interior design companies 
+    </a> that offer exceptional renovation services. Renowned for its best villa and home renovation in Dubai, 
               the company specializes in designing luxury interiors. Starting from the development of concepts to 
               their realization into reality, Casa Kraft offers its clients premium renovation services. As a result 
               of specializing in handling homes and luxurious villas in Dubai, the company stands out among 
               other competitors in the market.
             </p>
             <Image 
-              src="/images/casa-kraft-preferred-choice.png" 
+              src="/images/luxury interior design team presenting villa project.png" 
               alt="Why Casa Kraft" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -250,7 +275,7 @@ const VillaRenovationSection = () => {
               villa and home renovation in Dubai can completely redefine your living experience.
             </p>
             <Image 
-              src="/images/final-renovation-outcome.png" 
+              src="/images/elegant modern villa living room.png" 
               alt="Conclusion Renovation" 
               width={800} height={600} 
               className="rounded-md w-full object-cover my-6" 
@@ -299,9 +324,18 @@ const Sidebar = ({ suggestions }) => (
     <ul className="space-y-4">
       {suggestions.map((post, index) => (
         <li key={index} className="flex space-x-4">
-          <div className="w-20 h-16 bg-gray-200 rounded-md overflow-hidden">
-            <Image src={post.image} alt={post.title} width={80} height={64} className="w-full h-full object-cover" />
-          </div>
+          <a href={post.link} className="flex space-x-4 cursor-pointer">
+            <div className="w-20 h-16 rounded-md overflow-hidden flex-shrink-0">
+              <Image 
+                src={post.image} 
+                alt={post.title} 
+                width={80} 
+                height={64} 
+                className="w-full h-full object-cover" 
+              />
+              </div>
+              </a>
+         
           <div>
             <p className="text-sm font-play">{post.title}</p>
             <p className="text-xs text-[#b49a55]">{post.age}</p>

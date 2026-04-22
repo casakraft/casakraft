@@ -2,26 +2,30 @@ import Image from "next/image";
 
 const VHeroSection = () => {
   const suggestions = [
-    {
-      title: "New Hotel Interior Ideas To Make Your Hotel Spaces Luxury",
-      age: "4 years ago",
-      image: "/images/high-rise-dubai-marina-apartment-interior-design-dubai.png",
-    },
-    {
-      title: "Best Kids Room Interior Design Ideas | Tips To Decorate Your Kids Room",
-      age: "4 years ago",
-      image: "/images/elegant-dubai-apartment-showcasing-open-living-room-interior-in-dubai.png",
-    },
-    {
-      title: "7 Inspiring Home Renovation Design Ideas You Need to Know",
-      age: "1 year ago",
-      image: "/images/dubai-apartment-balcony-exterior-design-company-in-dubai.png",
-    },
-    {
-      title: "7 Inspiring Home Renovation Design Ideas You Need to Know",
-      age: "1 year ago",
-      image: "/images/ultra-modern-dubai-apartment-interior-design.png",
-    },
+   {
+    title: "Your Ultimate Guide to Villa and Home Renovation in Dubai",
+    age: "April 22, 2026",
+    image: "/images/Villa and Home Renovation in Dubai.png",
+    link: "/your-ultimate-guide-to-villa-and-home-renovation-in-dubai", // Most Relevant (Renovation to Company)
+  }, 
+   {
+    title: "Kitchen Interior Design Ideas in Dubai",
+    age: "April 1, 2026",
+    image: "/images/luxury-kitchen-interior-design-in-dubai.png",
+    link: "/kitchen-interior-design-in-dubai", // Specific room renovation
+  },
+   {
+    title: "Bedroom Interior Design Trends In Dubai",
+    age: "March 17, 2026",
+    image: "/images/The Future of Bedroom Interior Design in Dubai.png",
+    link: "/bedroom-interior-design-trends", // Specific room renovation
+  },
+  {
+    title: "Modern Apartment Interior Design in Dubai",
+    age: "January 24, 2026",
+    image: "/images/modern-apartment-interior-dubai.png",
+    link: "/modern-apartment-interior-design", // Specific room renovation
+  },
   ];
 
   return (
@@ -208,15 +212,25 @@ const VHeroSection = () => {
   );
 };
 
+// Sidebar component
 const Sidebar = ({ suggestions }) => (
   <div>
     <h3 className="text-xl font-conthrax mb-4 mt-16 text-[#b49a55]">You might also like</h3>
     <ul className="space-y-4">
       {suggestions.map((post, index) => (
         <li key={index} className="flex space-x-4">
-          <div className="w-20 h-16 bg-gray-200 rounded-md overflow-hidden">
-            <Image src={post.image} alt={post.title} width={80} height={64} className="w-full h-full object-cover" />
-          </div>
+          <a href={post.link} className="flex space-x-4 cursor-pointer">
+            <div className="w-20 h-16 rounded-md overflow-hidden flex-shrink-0">
+              <Image 
+                src={post.image} 
+                alt={post.title} 
+                width={80} 
+                height={64} 
+                className="w-full h-full object-cover" 
+              />
+              </div>
+              </a>
+         
           <div>
             <p className="text-sm font-play">{post.title}</p>
             <p className="text-xs text-[#b49a55]">{post.age}</p>
