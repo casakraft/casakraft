@@ -14,9 +14,17 @@ dayjs.extend(relativeTime);
 
 const blogs = [
   
+ {
+    id: 1,
+    slug: "your-ultimate-guide-to-villa-and-home-renovation-in-dubai",
+    title: "Your Ultimate Guide to Villa and Home Renovation in Dubai",
+    image: "/images/blog-3.png",
+    date: "2026-04-22",
+    tag: "Blog",
+  },
 
   {
-    id: 5,
+    id: 2,
     slug: "revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
     title: "Villa Painting Services in Dubai",
     image: "/images/Villa Painting Services in Dubai.png",
@@ -24,7 +32,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 1,
+    id: 3,
     slug: "bedroom-interior-design-trends",
     title: "Bedroom Interior Design Trends in Dubai",
     image: "/images/Lighting and Atmosphere in bedroom interior dubai.png",
@@ -32,7 +40,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 2,
+    id: 4,
     slug: "modern-apartment-interior-design",
     title: "Modern Apartment Interior Design",
     image: "/images/modern-family-apartment-interior-design.png",
@@ -41,7 +49,7 @@ const blogs = [
 
   },
   {
-    id: 3,
+    id: 5,
     slug: "villa-renovation-company-dubai",
     title: " Villa Renovation Company In Dubai",
     image: "/images/villa-renovation-company-in-dubai.png",
@@ -49,7 +57,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 4,
+    id: 6,
     slug: "kitchen-interior-design-in-dubai",
     title: "Kitchen Interior Design in Dubai",
     image: "/images/technology-in-modern-kitchens-in-dubai.png",
@@ -57,7 +65,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 5,
+    id: 7,
     slug: "modern-apartment-interior-design",
     title: "Luxury Apartment Interior Design",
     image: "/images/blog-1.png",
@@ -65,21 +73,14 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 6,
+    id: 8,
     slug: "modern-apartment-interior-design",
     title: "Top Villa Interior Trends in Dubai",
     image: "/images/blog-2.png",
     date: "2024-12-01",
     tag: "Blog",
   },
-  {
-    id: 7,
-    slug: "modern-apartment-interior-design",
-    title: "Modern Living Room Design Ideas",
-    image: "/images/blog-3.png",
-    date: "2024-07-01",
-    tag: "Blog",
-  },
+ 
 ];
 
 export default function BHeroSection() {

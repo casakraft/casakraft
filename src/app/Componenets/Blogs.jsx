@@ -7,6 +7,13 @@ import Link from "next/link";
 // Blog data
 const blogPosts = [
   
+   {
+    title: "Your Ultimate Guide to Villa and Home Renovation in Dubai",
+    date: "Apr 22, 2026",
+    image: "/images/The Future of Bedroom Interior Design in Dubai.png",
+    link: "/your-ultimate-guide-to-villa-and-home-renovation-in-dubai",
+  },
+
   {
     title: "Villa Painting Services in Dubai",
     date: "10 Apr, 2026",
@@ -21,12 +28,7 @@ const blogPosts = [
     link: "/kitchen-interior-design-in-dubai",
   },
 
-  {
-    title: "Bedroom Interior Design Trends In Dubai",
-    date: "Mar 17, 2026",
-    image: "/images/The Future of Bedroom Interior Design in Dubai.png",
-    link: "/bedroom-interior-design-trends",
-  },
+ 
   
 ];
 
