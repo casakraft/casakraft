@@ -4,41 +4,41 @@ import Script from "next/script";
 const GA_MEASUREMENT_ID = "G-WXLLXZ9HRM";
 
 export const metadata = {
-  title: "Interior Design Company in Dubai - Casa Kraft Interiors",
+  title: "Home Renovation Company Dubai | Casa Kraft Interiors",
   description:
-    "Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.",
+    "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE. Get a free quote today.",
   metadataBase: new URL("https://casakraftinteriors.ae/"),
   openGraph: {
-    title: "Interior Design Dubai | Luxury Designers | Casa Kraft Interiors",
+    title: "Home Renovation Company Dubai | Casa Kraft Interiors",
     description:
-      "Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.",
+      "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE. Get a free quote today.",
     url: "https://casakraftinteriors.ae/",
     siteName: "Casa Kraft Interiors",
     images: [
       {
-        url: "/images/logo.svg",
+        url: "/images/og-image.jpg", // ⚠️ Replace with a real 1200x630 JPG
         width: 1200,
         height: 630,
-        alt: "Casa Kraft Interiors Logo",
+        alt: "Casa Kraft Interiors - Home Renovation Dubai",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Residential Interior Design Company in Dubai - Casa Kraft Interiors",
+    title: "Home Renovation Company Dubai | Casa Kraft Interiors",
     description:
-      "Leading Interior Design Company in Dubai specializing in residential interiors, landscape design, renovations, and premium fit-out works. Contact Us.",
-    images: ["/images/logo.svg"],
+      "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE. Get a free quote today.",
+    images: ["/images/og-image.jpg"], // ⚠️ Replace with a real 1200x630 JPG
   },
-  alternates: { canonical: "/" },
+  alternates: { canonical: "https://casakraftinteriors.ae/" },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* GA4 (single measurement tag) */}
+        {/* GA4 */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -48,11 +48,7 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
-            // GA4 config (disable auto page_view for SPA safety)
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              send_page_view: false
-            });
+            gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
 
@@ -81,11 +77,39 @@ export default function RootLayout({ children }) {
                 "@type": "PostalAddress",
                 streetAddress: "Sheikh Zayed Road",
                 addressLocality: "Dubai",
-                addressCountry: "UAE",
+                addressCountry: "AE",
               },
               sameAs: [
-                "https://www.instagram.com/yourprofile",
-                "https://www.facebook.com/yourprofile",
+                "https://www.instagram.com/casakraftinteriors.ae/",
+                "https://share.google/9IC8xkgiy1X8tpqb2",
+              ],
+            }),
+          }}
+        />
+
+        {/* LocalBusiness Schema — replaces incorrect BlogPosting */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Casa Kraft Interiors",
+              image: "https://casakraftinteriors.ae/images/logo.svg",
+              url: "https://casakraftinteriors.ae/",
+              description:
+                "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Sheikh Zayed Road",
+                addressLocality: "Dubai",
+                addressCountry: "AE",
+              },
+              priceRange: "AED",
+              openingHours: "Mo-Sa 09:00-18:00",
+              sameAs: [
+                "https://www.instagram.com/casakraftinteriors.ae/",
+                "https://share.google/9IC8xkgiy1X8tpqb2",
               ],
             }),
           }}
@@ -98,47 +122,31 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebPage",
-              name: "Casa Kraft Interiors",
+              name: "Home Renovation Company Dubai | Casa Kraft Interiors",
               url: "https://casakraftinteriors.ae/",
               description:
-                "Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.",
+                "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
             }),
           }}
         />
 
-        {/* BlogPosting Schema */}
+        {/* Service Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              headline: "Modern Interior Design in Dubai",
-              description:
-                "Explore expert interior design tips, trends, and project inspirations from Dubai and around the world.",
+              "@type": "Service",
+              serviceType: "Home Renovation and Fit Out",
+              provider: {
+                "@type": "Organization",
+                name: "Casa Kraft Interiors",
+                url: "https://casakraftinteriors.ae",
+              },
+              areaServed: { "@type": "Place", name: "Dubai, UAE" },
+              serviceOutput:
+                "Premium home renovation solutions for residential spaces in Dubai.",
               url: "https://casakraftinteriors.ae/",
-              author: {
-                "@type": "Organization",
-                name: "Casa Kraft Interiors",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Casa Kraft Interiors",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://casakraftinteriors.ae/images/logo.svg",
-                  width: 600,
-                  height: 60,
-                },
-              },
-              mainEntityOfPage: "https://casakraftinteriors.ae/",
-              image: {
-                "@type": "ImageObject",
-                url: "https://casakraftinteriors.ae/images/logo.svg",
-                width: 1200,
-                height: 630,
-              },
-              datePublished: "2025-06-22",
             }),
           }}
         />
@@ -155,7 +163,7 @@ export default function RootLayout({ children }) {
                   "@type": "SiteNavigationElement",
                   position: 1,
                   name: "About Us",
-                  url: "https://casakraftinteriors.ae/about-us",
+                  url: "https://www.casakraftinteriors.ae/about-us",
                 },
                 {
                   "@type": "SiteNavigationElement",
@@ -200,28 +208,13 @@ export default function RootLayout({ children }) {
                   name: "Home",
                   item: "https://casakraftinteriors.ae/",
                 },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Villa Renovation Dubai",
+                  item: "https://casakraftinteriors.ae//villa-renovation",
+                },
               ],
-            }),
-          }}
-        />
-
-        {/* Service Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              serviceType: "Interior Design and Fit Out",
-              provider: {
-                "@type": "Organization",
-                name: "Casa Kraft Interiors",
-                url: "https://casakraftinteriors.ae",
-              },
-              areaServed: { "@type": "Place", name: "Dubai, UAE" },
-              serviceOutput:
-                "Luxury interior design solutions for residential and commercial spaces in Dubai.",
-              url: "https://casakraftinteriors.ae/",
             }),
           }}
         />
