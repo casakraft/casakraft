@@ -168,20 +168,20 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "SiteNavigationElement",
                   position: 2,
-                  name: "Apartment Interior Design Dubai",
-                  url: "https://casakraftinteriors.ae/apartment-interior-design-dubai",
+                  name: "Apartment Renovation Dubai",
+                  url: "https://casakraftinteriors.ae/apartment-renovation",
                 },
                 {
                   "@type": "SiteNavigationElement",
                   position: 3,
-                  name: "Villa Interior Design Dubai",
-                  url: "https://casakraftinteriors.ae/villa-interior-design-dubai",
+                  name: "Villa Renovation Dubai",
+                  url: "https://casakraftinteriors.ae/villa-renovation",
                 },
                 {
                   "@type": "SiteNavigationElement",
                   position: 4,
                   name: "Gallery",
-                  url: "https://casakraftinteriors.ae/projects",
+                  url: "https://casakraftinteriors.ae/gallery",
                 },
                 {
                   "@type": "SiteNavigationElement",
