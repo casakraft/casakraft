@@ -6,13 +6,13 @@ const GA_MEASUREMENT_ID = "G-WXLLXZ9HRM";
 export const metadata = {
   title: "Home Renovation Company Dubai | Casa Kraft Interiors",
   description:
-    "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE. Get a free quote today.",
+    "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
   metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: { canonical: "https://casakraftinteriors.ae/" },
   openGraph: {
     title: "Home Renovation Company Dubai | Casa Kraft Interiors",
     description:
-      "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE. Get a free quote today.",
+      "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
     url: "https://casakraftinteriors.ae/",
     siteName: "Casa Kraft Interiors",
     images: [
@@ -29,7 +29,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Home Renovation Company Dubai | Casa Kraft Interiors",
     description:
-      "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE. Get a free quote today.",
+      "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
     images: ["https://casakraftinteriors.ae/images/og-image.jpg"],
   },
 };
