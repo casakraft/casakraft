@@ -7,7 +7,8 @@ export const metadata = {
   title: "Home Renovation Company Dubai | Casa Kraft Interiors",
   description:
     "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE. Get a free quote today.",
-  metadataBase: new URL("https://casakraftinteriors.ae/"),
+  metadataBase: new URL("https://casakraftinteriors.ae"),
+  alternates: { canonical: "https://casakraftinteriors.ae/" },
   openGraph: {
     title: "Home Renovation Company Dubai | Casa Kraft Interiors",
     description:
@@ -16,7 +17,7 @@ export const metadata = {
     siteName: "Casa Kraft Interiors",
     images: [
       {
-        url: "/images/og-image.jpg", // ⚠️ Replace with a real 1200x630 JPG
+        url: "https://casakraftinteriors.ae/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Casa Kraft Interiors - Home Renovation Dubai",
@@ -29,16 +30,14 @@ export const metadata = {
     title: "Home Renovation Company Dubai | Casa Kraft Interiors",
     description:
       "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE. Get a free quote today.",
-    images: ["/images/og-image.jpg"], // ⚠️ Replace with a real 1200x630 JPG
+    images: ["https://casakraftinteriors.ae/images/og-image.jpg"],
   },
-  alternates: { canonical: "https://casakraftinteriors.ae/" },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* GA4 */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -48,23 +47,24 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+            });
           `}
         </Script>
 
-        {/* Robots */}
         <meta
           name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
 
-        {/* Organization Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": "https://casakraftinteriors.ae/#organization",
               name: "Casa Kraft Interiors",
               url: "https://casakraftinteriors.ae/",
               logo: {
@@ -81,24 +81,31 @@ export default function RootLayout({ children }) {
               },
               sameAs: [
                 "https://www.instagram.com/casakraftinteriors.ae/",
-                "https://share.google/9IC8xkgiy1X8tpqb2",
+                "YOUR_GOOGLE_BUSINESS_PROFILE_URL"
               ],
             }),
           }}
         />
 
-        {/* LocalBusiness Schema — replaces incorrect BlogPosting */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
+              "@id": "https://casakraftinteriors.ae/#localbusiness",
               name: "Casa Kraft Interiors",
               image: "https://casakraftinteriors.ae/images/logo.svg",
               url: "https://casakraftinteriors.ae/",
               description:
                 "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5.0",
+                reviewCount: "17",
+                bestRating: "5",
+                worstRating: "1",
+              },
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Sheikh Zayed Road",
@@ -109,19 +116,19 @@ export default function RootLayout({ children }) {
               openingHours: "Mo-Sa 09:00-18:00",
               sameAs: [
                 "https://www.instagram.com/casakraftinteriors.ae/",
-                "https://share.google/9IC8xkgiy1X8tpqb2",
+                "YOUR_GOOGLE_BUSINESS_PROFILE_URL"
               ],
             }),
           }}
         />
 
-        {/* WebPage Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebPage",
+              "@id": "https://casakraftinteriors.ae/#webpage",
               name: "Home Renovation Company Dubai | Casa Kraft Interiors",
               url: "https://casakraftinteriors.ae/",
               description:
@@ -130,7 +137,6 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Service Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -141,9 +147,12 @@ export default function RootLayout({ children }) {
               provider: {
                 "@type": "Organization",
                 name: "Casa Kraft Interiors",
-                url: "https://casakraftinteriors.ae",
+                url: "https://casakraftinteriors.ae/",
               },
-              areaServed: { "@type": "Place", name: "Dubai, UAE" },
+              areaServed: {
+                "@type": "Place",
+                name: "Dubai, UAE",
+              },
               serviceOutput:
                 "Premium home renovation solutions for residential spaces in Dubai.",
               url: "https://casakraftinteriors.ae/",
@@ -151,7 +160,6 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Site Navigation Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -163,7 +171,7 @@ export default function RootLayout({ children }) {
                   "@type": "SiteNavigationElement",
                   position: 1,
                   name: "About Us",
-                  url: "https://www.casakraftinteriors.ae/about-us",
+                  url: "https://casakraftinteriors.ae/about-us",
                 },
                 {
                   "@type": "SiteNavigationElement",
@@ -194,7 +202,6 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* BreadcrumbList Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -212,14 +219,13 @@ export default function RootLayout({ children }) {
                   "@type": "ListItem",
                   position: 2,
                   name: "Villa Renovation Dubai",
-                  item: "https://casakraftinteriors.ae//villa-renovation",
+                  item: "https://casakraftinteriors.ae/villa-renovation",
                 },
               ],
             }),
           }}
         />
       </head>
-
       <body>{children}</body>
     </html>
   );
