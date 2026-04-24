@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
               },
               sameAs: [
                 "https://www.instagram.com/casakraftinteriors.ae/",
-                "YOUR_GOOGLE_BUSINESS_PROFILE_URL"
+                "https://share.google/K8jqiMFPrOSQ3Heaq"
               ],
             }),
           }}
@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
               openingHours: "Mo-Sa 09:00-18:00",
               sameAs: [
                 "https://www.instagram.com/casakraftinteriors.ae/",
-                "YOUR_GOOGLE_BUSINESS_PROFILE_URL"
+                "https://share.google/K8jqiMFPrOSQ3Heaq"
               ],
             }),
           }}
