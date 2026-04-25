@@ -3,7 +3,7 @@ import '../globals.css';
 export const metadata = {
   title: "Contact Casa Kraft Interiors Dubai - Get a Free Consultation",
   description:
-    "Contact Casa Kraft Interiors in Dubai for interior design, renovation, and fit-out services. Get expert consultation for your apartment, villa, or commercial space.",
+    "Contact Casa Kraft Interiors in Dubai for interior design, renovation, and fit-out services. Get expert consultation for your living and commercial spaces.",
   keywords: [
     "contact interior designer Dubai",
     "Casa Kraft Interiors contact",
