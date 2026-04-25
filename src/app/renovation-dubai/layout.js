@@ -1,19 +1,101 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Renovation Dubai - Home Renovation - Casa Kraft Interiors",
+  title: "Home Renovation Dubai - Apartment & Villa Renovation | Casa Kraft Interiors",
   description:
-    "Dubai's No. 1 and largest renovation company with an experienced team of planners, interior designers and project engineers with a detailed scope of work.",
-  metadataBase: new URL('hhttps://www.casakraftinteriors.ae/'),
+    "Casa Kraft Interiors offers complete home renovation in Dubai including apartments, villas, and commercial spaces with premium design, remodeling, and fit-out services.",
+  keywords: [
+    "home renovation Dubai",
+    "apartment renovation Dubai",
+    "villa renovation Dubai",
+    "renovation company Dubai",
+    "fit out Dubai",
+    "Casa Kraft Interiors",
+  ],
+  authors: [{ name: "Casa Kraft Interiors" }],
+  metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: {
-    canonical: '/renovation-dubai',
+    canonical: "/renovation-dubai",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {/* Service Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "Home Renovation Dubai",
+              description:
+                "Complete home renovation, remodeling, and fit-out services in Dubai for apartments, villas, and commercial spaces by Casa Kraft Interiors.",
+              provider: {
+                "@type": "Organization",
+                name: "Casa Kraft Interiors",
+                url: "https://casakraftinteriors.ae/",
+              },
+              areaServed: {
+                "@type": "Place",
+                name: "Dubai, UAE",
+              },
+              serviceType: "Home Renovation and Fit Out",
+              url: "https://casakraftinteriors.ae/renovation-dubai",
+            }),
+          }}
+        />
+
+        {/* WebPage Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Home Renovation Dubai",
+              url: "https://casakraftinteriors.ae/renovation-dubai",
+              description:
+                "Get expert home renovation services in Dubai including apartment, villa, and commercial renovation by Casa Kraft Interiors.",
+            }),
+          }}
+        />
+
+        {/* Breadcrumb Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://casakraftinteriors.ae/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Services",
+                  item: "https://casakraftinteriors.ae/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Home Renovation Dubai",
+                  item: "https://casakraftinteriors.ae/renovation-dubai",
+                },
+              ],
+            }),
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }

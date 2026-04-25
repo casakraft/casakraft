@@ -1,19 +1,99 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Dubai Creek 2 Bedroom Apartment Interior Design - Casa Kraft Interiors",
+  title: "Dubai Creek 2 Bedroom Apartment Interior Design Dubai - Casa Kraft Interiors",
   description:
-    "Transform your Dubai Creek 2-Bedroom Apartment with CasaKraft Interiors. Modern interior design and expert fit-out services in Dubai. Get in touch now.",
-  metadataBase: new URL('https://www.casakraftinteriors.ae/'),
+    "Casa Kraft Interiors completed the Dubai Creek 2 Bedroom Apartment project with modern interior design, premium renovation, and full fit-out services in Dubai.",
+  keywords: [
+    "Dubai Creek 2 Bedroom Apartment",
+    "Dubai Creek apartment Dubai",
+    "2 bedroom apartment design Dubai",
+    "apartment renovation Dubai",
+    "apartment fit out Dubai",
+    "Casa Kraft Interiors projects",
+  ],
+  authors: [{ name: "Casa Kraft Interiors" }],
+  metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: {
-    canonical: '/dubai-creek-2-bedroom-apartment',
+    canonical: "/dubai-creek-2-bedroom-apartment",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {/* Project Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              name: "Dubai Creek 2 Bedroom Apartment",
+              description:
+                "Premium 2 bedroom apartment interior design and fit-out project completed by Casa Kraft Interiors in Dubai Creek, Dubai.",
+              url: "https://casakraftinteriors.ae/dubai-creek-2-bedroom-apartment",
+              creator: {
+                "@type": "Organization",
+                name: "Casa Kraft Interiors",
+              },
+              areaServed: {
+                "@type": "Place",
+                name: "Dubai, UAE",
+              },
+            }),
+          }}
+        />
+
+        {/* WebPage Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Dubai Creek 2 Bedroom Apartment Interior Design Dubai",
+              url: "https://casakraftinteriors.ae/dubai-creek-2-bedroom-apartment",
+              description:
+                "Explore Casa Kraft Interiors’ Dubai Creek 2 Bedroom Apartment project in Dubai with modern renovation and full fit-out services.",
+            }),
+          }}
+        />
+
+        {/* Breadcrumb Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://casakraftinteriors.ae/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Projects",
+                  item: "https://casakraftinteriors.ae/gallery",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Dubai Creek 2 Bedroom Apartment",
+                  item: "https://casakraftinteriors.ae/dubai-creek-2-bedroom-apartment",
+                },
+              ],
+            }),
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }

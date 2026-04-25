@@ -1,19 +1,68 @@
 import '../globals.css';
 
 export const metadata = {
-  title: " 5 Modern Apartment Interior Design Tips in 2025 by Casa Kraft Interiors",
+  title: "Thank You - Casa Kraft Interiors",
   description:
-    "Discover modern apartment interior designs in 2025. Explore 5 trending styles in Dubai, from minimalism to boho, for elegant living spaces. ",
-  metadataBase: new URL('https://casakraftinteriors.ae/'),
+    "Thank you for contacting Casa Kraft Interiors. Our team will get in touch with you shortly to discuss your interior design, renovation, or fit-out requirements.",
+  keywords: [
+    "thank you Casa Kraft Interiors",
+    "contact confirmation Dubai",
+    "interior design inquiry Dubai",
+    "fit out consultation Dubai",
+  ],
+  authors: [{ name: "Casa Kraft Interiors" }],
+  metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: {
-    canonical: '/modern-apartment-interior-design',
+    canonical: "/thank-you",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {/* WebPage Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Thank You - Casa Kraft Interiors",
+              url: "https://casakraftinteriors.ae/thank-you",
+              description:
+                "Thank you for reaching out to Casa Kraft Interiors. We will contact you shortly.",
+            }),
+          }}
+        />
+
+        {/* Breadcrumb Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://casakraftinteriors.ae/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Thank You",
+                  item: "https://casakraftinteriors.ae/thank-you",
+                },
+              ],
+            }),
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }
