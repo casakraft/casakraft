@@ -1,16 +1,16 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Meta Title will be here",
+  title: "5 Modern Apartment Interior Design Tips in 2025 by WEDO",
   description:
-    "Meta description will be here. Meta description will be here. Meta description will be here. Meta description will be here",
+    "Discover modern apartment interior designs in 2025. Explore 5 trending styles in Dubai, from minimalism to boho, for elegant living spaces.",
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   alternates: {
-    canonical: '/slug will be here',
+    canonical: '/blog-template',
   },
   robots: {
     index: false,
-    follow: true, // keeps link equity flowing
+    follow: true,
   },
 };
 
