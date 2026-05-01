@@ -47,14 +47,35 @@ const blogs = [
     date: "2026-03-17",
     tag: "Blog",
   },
-{
+
+   {
     id: 2,
-    slug: "modern-apartment-interior-design",
-    title: "Modern Apartment Interior Design in Dubai",
-    image: "/images/interior-design-trends-for-modern-apartments.png",
-    date: "2026-02-15",
+    slug: "villa-renovation-company-dubai",
+    title: "Villa Renovation Company Dubai",
+    image: "/images/villa-renovation-company-in-dubai.png",
+    date: "2026-02-17",
     tag: "Blog",
   },
+
+  {
+    id: 2,
+    slug: "modern-apartment-interior-design",
+    title: "Modern Apartment Interior Design Dubai",
+    image: "/images/modern-apartment-interior-dubai.png",
+    date: "2026-01-24",
+    tag: "Blog",
+  },
+
+   {
+    id: 2,
+    slug: "revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
+    title: "Expert Home & Villa Painting Services in Dubai",
+    image: "/images/Villa Painting Services in Dubai.png",
+    date: "2025-09-23",
+    tag: "Blog",
+  },
+
+ 
  
   
 
