@@ -7,6 +7,14 @@ import dayjs from "dayjs";
 
 // ---- DATA (kept from your current version; slugs normalized) ----
 const blogs = [
+   {
+    id: 3,
+    slug: "transform-your-dream-home-expert-villa-renovation-services-in-dubai",
+    title: "Villa Renovation Services in Dubai",
+    image: "/images/home expert villa renovation services in dubai.png",
+    date: "2026-04-30 ",
+    tag: "Blog",
+  },
   {
     id: 5,
     slug: "your-ultimate-guide-to-villa-and-home-renovation-in-dubai",
@@ -47,14 +55,7 @@ const blogs = [
     date: "2026-02-15",
     tag: "Blog",
   },
-  {
-    id: 3,
-    slug: "villa-renovation-company-dubai",
-    title: "Top Notch Villa Renovation Company in Dubai ",
-    image: "/images/villa-renovation-company-in-dubai.png",
-    date: "2026-01-01 ",
-    tag: "Blog",
-  },
+ 
   
 
 
