@@ -3,7 +3,7 @@ import "../globals.css";
 export const metadata = {
   title: "Interior Design Blog Dubai - Casa Kraft Interiors",
   description:
-    "Explore Casa Kraft Interiors blog for expert insights on interior design, renovation, fit-out trends, and modern living ideas in Dubai.",
+    "Explore Casa Kraft Interiors blog for expert insights on interior design, renovation, fit-out trends, and modern living ideas.",
   keywords: [
     "interior design blog Dubai",
     "Dubai renovation tips",
