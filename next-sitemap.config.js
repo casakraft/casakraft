@@ -5,14 +5,23 @@ module.exports = {
   generateIndexSitemap: true,
   sitemapSize: 5000,
   changefreq: 'weekly',
+
+  // 🔥 ADD THIS
+  exclude: [
+    '/blog-template',
+    '/your-second-page-slug',
+  ],
+
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
     ],
   },
+
   additionalPaths: async (config) => [
     await config.transform(config, '/'),
   ],
+
   transform: async (config, path) => {
     const priority = path === '/' ? 1.0 : 0.9;
 
