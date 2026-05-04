@@ -47,16 +47,16 @@ export default function AbusBsection() {
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-10">
           <div>
-            <h2 className="text-3xl md:text-4xl sm:mt-10 font-semibold mb-6" style={{ color: gold }}>About Us</h2>
+            <h1 className="text-3xl md:text-4xl sm:mt-10 font-semibold mb-6" style={{ color: gold }}>About Us - Casa Kraft Interiors</h1>
             <div className="space-y-5 text-gray-700 leading-relaxed">
               <p>
-                Casa Kraft Interiors is a premier interior design and fit-out company established in the UAE. We specialize in manufacturing and delivering high-quality interior design products and services at competitive prices across the region.
+                <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/">Casa Kraft Interiors</a></b> is a premier interior design and renovation company established in the Dubai, UAE. We specialize in manufacturing and delivering high-quality interior renovation products and services at competitive prices across the region.
               </p>
               <p>
-                With a team of highly qualified professionals available 24/7, we are dedicated to transforming ordinary spaces into modern, aesthetic, and luxurious environments tailored to our clients’ unique preferences.
+                With a team of highly qualified professionals available 24/7, we are dedicated to transforming ordinary spaces into luxury experiences according to our client's preferences.
               </p>
               <p>
-                Our expertise covers commercial, residential, institutional, and other architectural interior solutions, ensuring excellence, innovation, and attention to detail in every project we undertake.
+                Our expertise covers commercial, residential, institutional, and other architectural interior design and <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/renovation-dubai">renovations services</a></b>, ensuring excellence, innovation, and attention to detail in every project we undertake in Dubai.
               </p>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function AbusBsection() {
             </button>
             <DotDivider className="justify-center mt-6" />
             <div className="mt-4">
-              <a href="#projects" className="block text-center border rounded-xl px-6 py-4 hover:bg-gray-50">
+              <a href="gallery" className="block text-center border rounded-xl px-6 py-4 hover:bg-gray-50">
                 Our Projects
               </a>
             </div>
@@ -81,21 +81,21 @@ export default function AbusBsection() {
       {/* SERVICES */}
       <section className="py-16" style={{ background: light }}>
         <div className="mx-auto max-w-6xl px-6">
-          <SectionTitle title="Our Incredible Interior Design Services" />
+          <SectionTitle title="Our Interior Design & Renovation Services" />
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             {[
               {
-                title: "RESIDENTIAL",
-                img: "images/residential.png",
+                title: "INTERIOR DESIGN",
+                img: "images/modern townhouse interior in Al Furjan Dubai.png",
               },
               {
-                title: "LANDSCAPE",
-                img: "images/landscape-services.png",
+                title: "RENOVATION",
+                img: "images/Design, Fit-Out, and Execution Process.png",
               },
               {
                 title: "FIT OUT",
-                img: "images/fit-out.png",
+                img: "images/wc8.png",
               },
             ].map((c, i) => (
               <Card key={i}>
@@ -129,17 +129,19 @@ export default function AbusBsection() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <img className="rounded-xl shadow" src="images/premium-quality-products-services.png" alt="Living room" />
               <div className="space-y-4 text-gray-700">
-                <h3 className="text-2xl font-semibold" style={{ color: gold }}>Premium Quality Products & Services</h3>
+                <h3 className="text-2xl font-semibold" style={{ color: gold }}>Premium Quality Materials</h3>
                 <p>
-                  We offer the world’s top-quality interior designer products and services that make your home look amazing and eye-catching.
+                  
+               At <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/renovation-dubai">Casa Kraft interiors & renovation</a></b>, we are here to deliver the best results by combining our expertise with premium materials and services. As a trusted interior renovation company in Dubai, we make sure that our every project shows quality and durability with aesthetics.from the beginning to ending of the project, our fit-out services, interior design Dubai, and renovation services in Dubai are executed with deep attention.
+
                 </p>
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1 space-y-4 text-gray-700">
-                <h3 className="text-2xl font-semibold" style={{ color: gold }}>We Are Best At Giving Customized Services</h3>
+                <h3 className="text-2xl font-semibold" style={{ color: gold }}>Customized Services</h3>
                 <p>
-                  We tailor every project to your requirements and guarantee best-in-class results.
+                  Every location or space has its own personality and Casa Kraft is expert in designing any space according to its aesthetics. We provide best customized services in Dubai that perfectly matches with the vision, lifestyle and business needs of our clients. As a client focused <b className="text-[#b49a55]"><a href="https://share.google/dfWrNfpHxqGYPOqDG">interior design and renovation company in Dubai</a></b>, we work with personalized fit-out services that influence our every project.
                 </p>
               </div>
               <img className="order-1 md:order-2 rounded-xl shadow" src="images/best-customized-services.png" alt="TV wall" />
@@ -149,7 +151,7 @@ export default function AbusBsection() {
               <div className="space-y-4 text-gray-700">
                 <h3 className="text-2xl font-semibold" style={{ color: gold }}>Highly Experienced Staff</h3>
                 <p>
-                  Our seasoned team brings years of expertise to deliver an elevated, modern aesthetic every time.
+                  Our strength lies in our highly experienced staff of designers, project managers, and skilled craftsmen who work with their years of experience in this industry and make our every project as premium as they can.  As a professional renovation company in Dubai, we ensure a smooth execution of the project and complete it with outstanding results. With deep knowledge of<b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/blogs"> interior design Dubai trends</a></b> and technical excellence in fit-out services, our team guarantees quality you can trust.
                 </p>
               </div>
             </div>
@@ -157,36 +159,75 @@ export default function AbusBsection() {
         </div>
       </section>
 
-      {/* RECENT PROJECTS */}
-      <section id="projects" className="py-16" style={{ background: light }}>
-        <div className="mx-auto max-w-6xl px-6">
-          <SectionTitle title="Recent Project" />
+   {/* RECENT PROJECTS */}
+<section id="projects" className="py-16" style={{ background: light }}>
+  <div className="mx-auto max-w-6xl px-6">
+    <SectionTitle title="Recent Interior Design & Renovation Projects" />
 
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            {[
-              { title: "W Residence apartment, Palm Jumeirah", img: "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1470&auto=format&fit=crop" },
-              { title: "Amalfi 3 bedroom townhouse", img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1470&auto=format&fit=crop" },
-              { title: "Citywalk penthouse", img: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1470&auto=format&fit=crop" },
-              { title: "Address beach resort 4 bedroom apartment", img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1470&auto=format&fit=crop" },
-              { title: "DubaiHills. 6 bedroom villa", img: "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1470&auto=format&fit=crop" },
-              { title: "District one, Contemporary villa", img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1470&auto=format&fit=crop" },
-            ].map((p, i) => (
-              <Card key={i}>
-                <div className="border-4" style={{ borderColor: gold }}>
-                  <img src={p.img} alt={p.title} className="h-56 w-full object-cover" />
-                </div>
-                <div className="px-6 py-4 text-center font-medium text-gray-800">{p.title}</div>
-              </Card>
-            ))}
-          </div>
+    <div className="grid md:grid-cols-3 gap-8 mt-12">
+      {[
+        {
+          title: "Meadows Contemporary Villa Design",
+          img: "/images/mcv-7.png",
+          link: "meadows-contemporary-villa"
+        },
+        {
+          title: "Bluewaters 3 Bedroom Apartment",
+          img: "/images/bluewaters-8.png",
+          link: "/bluewaters-3-bedroom-design"
+        },
+        {
+          title: "Palm Jumeriah Apartment",
+          img: "/images/pja-3.png",
+           link: "/palm-jumeirah-apartment"
+        },
+       
+        {
+          title: "Contemporary 2 Bedroom Apartment",
+          img: "/images/ca-6.png",
+           link: "/contemporary-2-bedroom-apartment"
+        },
+         {
+          title: "Villa Latana Interior",
+          img: "/images/vl-2.png",
+           link: "/villa-lantana"
+        },
+        {
+          title: "Townhouse Arabian Ranches",
+         img: "/images/tar-3.png",
+          link: "/townhouse-arabian-ranches-2"
+        },
+      ].map((p, i) => (
+        <a key={i} href={p.link} className="block group">
+          <Card className="transition duration-300 hover:shadow-xl">
+            <div
+              className="border-4 overflow-hidden"
+              style={{ borderColor: gold }}
+            >
+              <img
+                src={p.img}
+                alt={p.title}
+                className="h-56 w-full object-cover group-hover:scale-105 transition duration-300"
+              />
+            </div>
+            <div className="px-6 py-4 text-center font-medium text-gray-800 group-hover:text-[#d4a373] transition">
+              {p.title}
+            </div>
+          </Card>
+        </a>
+      ))}
+    </div>
 
-          <div className="flex justify-center mt-10">
-            <a href="#all-projects" className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900">
-              <CheckCircle2 className="h-5 w-5" /> See Our Projects
-            </a>
-          </div>
-        </div>
-      </section>
+    <div className="flex justify-center mt-10">
+      <a
+        href="/gallery"
+        className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900"
+      >
+        <CheckCircle2 className="h-5 w-5" /> See Our Projects
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* OUR MISSION */}
       <section className="py-16 bg-white">
@@ -195,11 +236,9 @@ export default function AbusBsection() {
 
           <div className="grid md:grid-cols-2 gap-10 items-start mt-10">
             <div className="space-y-5 text-gray-700 leading-relaxed">
-              <p>
-                Since 2007, we’ve worked tirelessly to make Casa Kraft Interiors popular for its best-quality products and services. Our primary goal is 100% customer satisfaction.
-              </p>
-              <p>
-                Our experienced interior designers transform entire homes into outstanding spaces that attract and inspire.
+              <p className="py-10">
+                Casa Kraft Interiors & Renovation Dubai aims at turning <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/gallery">residential and commercial spaces</a></b>  into beautiful spaces that combine functionality and modern trends. Through innovative space planning and modern design ideas, we aim at improving the way people live through high-quality design and execution. The purpose is to set new benchmarks in the design industry of Dubai, UAE through timeless interiors and functional designs. Choose casakraftinteriors.ae for premium results at a competitive price point you won’t get elsewhere.
+
               </p>
             </div>
             <img className="rounded-xl shadow" src="images/our-mission.png"alt="Delivering best quality services" />
@@ -210,10 +249,10 @@ export default function AbusBsection() {
             <div className="space-y-4 text-gray-700">
               <h3 className="text-2xl font-semibold" style={{ color: gold }}>Delivering Best Quality Services</h3>
               <p>
-                Give us a call, share your requirements, and our professional team will come to your doorstep ASAP to deliver the best service.
+                We try our best to achieve perfection through accuracy, innovation, and attention to details in all projects we work on. In every stage of a project, from its starting to its completion, we focus on excellence in workmanship, choice of high-quality materials, and efficient project delivery. Each designed space is crafted to reflect durability, elegance, and a refined architectural finish that exceeds client expectations.
+              
               </p>
-              <p>
-                Choose casakraftinteriors.ae for premium results at a competitive price point you won’t get elsewhere.
+              <p> <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/contact-us">Give us a call</a></b>, share your requirements, and our professional team will come to your doorstep ASAP to deliver the best service. 
               </p>
             </div>
           </div>

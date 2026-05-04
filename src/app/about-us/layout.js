@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "About Casa Kraft | Interior Design & Renovation Dubai",
+  title: "About Casa Kraft - Interior Design & Renovation Dubai",
   description:
-    "From vision to reality — Casa Kraft Interiors delivers luxury interior design & renovation across Dubai. 5-star rated with end-to-end service.",
+    "From Imagination to reality Casa Kraft Interiors delivers luxury interior design & renovation across Dubai. 5-star rated with end-to-end service.",
 
   metadataBase: new URL('https://casakraftinteriors.ae/'),
 

@@ -102,9 +102,9 @@ export default function BlogsSection() {
     <section className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}
-        <h2 className="text-center text-[#caa193] font-conthrax tracking-widest text-lg sm:text-xl mb-12">
+        <h1 className="text-center text-[#caa193] font-conthrax tracking-widest text-lg sm:text-xl mb-12">
           OUR BLOGS
-        </h2>
+        </h1>
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -149,14 +149,8 @@ export default function BlogsSection() {
           ))}
         </div>
 
-        {/* View All Button */}
-        <div className="mt-14 flex justify-center">
-          <Link href="/blogs" className="inline-block">
-            <button className="bg-gradient-to-br from-[#193c38] to-[#22524d] text-white font-conthrax px-8 py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 uppercase tracking-wide">
-              View All Blogs
-            </button>
-          </Link>
-        </div>
+      
+        
       </div>
     </section>
   );

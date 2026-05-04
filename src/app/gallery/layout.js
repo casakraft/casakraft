@@ -3,7 +3,7 @@ import '../globals.css';
 export const metadata = {
   title: "Interior Design Projects Gallery Dubai - Casa Kraft Interiors",
   description:
-    "Explore Casa Kraft Interiors’ project gallery showcasing luxury interior design, apartment renovations, villa fit-outs, and commercial projects across Dubai.",
+    "Browse Casa Kraft Interiors project gallery showcasing luxury interior design, apartment renovations, villa fit-outs across Dubai.",
   keywords: [
     "interior design projects Dubai",
     "Dubai fit out projects",

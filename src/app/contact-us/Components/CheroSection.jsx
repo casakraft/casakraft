@@ -8,6 +8,7 @@ const CheroSection = () => {
   return (
     <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden">
       {/* 🔹 Background Image */}
+      
       <Image
         src="/images/contact-us.png" // ✅ Replace with your desired image path
         alt="Luxury Interior Design Dubai"

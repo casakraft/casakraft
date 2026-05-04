@@ -121,7 +121,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/casakraftinteriors.ae/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition"
@@ -132,7 +132,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/company/110286081/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition"
@@ -157,11 +157,12 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-4 text-lg text-gray-400">
-            <a className="hover:text-white transition"><FaInstagram /></a>
-            <a className="hover:text-white transition"><FaLinkedin /></a>
-            <a className="hover:text-white transition"><FaPinterest /></a>
+            <a  href="https://www.instagram.com/casakraftinteriors.ae/" className="hover:text-white transition"><FaInstagram /></a>
+            <a  href="https://www.linkedin.com/company/110286081/" className="hover:text-white transition"><FaLinkedin /></a>
+            <a href="https://www.pinterest.com/casakraftinteriors/" className="hover:text-white transition"><FaPinterest /></a>
           </div>
         </div>
+       
       </div>
     </footer>
   );
