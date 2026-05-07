@@ -60,18 +60,14 @@ export default function BodySection() {
             {/* 2) Heading + para + buttons stacked AFTER gallery (mobile) */}
             <div className="lg:col-span-5 pt-2 text-left lg:text-left">
               <h1 className="text-[24px] sm:text-[34px] font-medium text-[#222]">
-                Villa Renovation in Dubai By Casa Kraft Interiors
+                Villa Renovation Services in Dubai
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-                Casa Kraft Interiors is the best and  <b> <a href="https://www.casakraftinteriors.ae/"> leading villa renovation company in Dubai </a></b>, offering meticulous and stylish 
-                renovation services for modern villas and private residences. As a reliable renovation company in Dubai, Casa 
-                Kraft is skilled in offering premium villa renovation services at affordable price in Dubai, blending custom design, professional 
-                interior designers, and flawless design finishing.
-               <br /> <br />
-               If you are planning a full villa transformation, a modern interior upgrade, or a stylish home renovation, Casa 
-               Kraft Interiors is the best among the best villa renovation companies in Dubai providing masterpiece, transparency,
-                and reliability from ideation to completion.
+                If you are looking for Villa Renovation in Dubai, you are not just searching for construction work, you are seeking a full living style transformation. At Casa Kraft Interiors, we are expert in offering quality Villa Renovation Services in Dubai that blend high-end interior design, technical accuracy, and luxury finishing into one flawless process. Casakraft is a top <a href="/villa-renovation-company-dubai" className="font-bold hover:underline" style={{ color: PURPLE }}>
+     Villa Renovation Company in Dubai,
+    </a>  transforming outdated properties into contemporary luxury homes that showcase sophistication, luxury, and practicality. If it is a full Villa Remodeling in Dubai, interior upgrade, or intelligent home integration, we offer turnkey services from ideation to finishings.
+
 
               </p>
 
@@ -103,141 +99,192 @@ export default function BodySection() {
             className="text-center font-semibold text-[24px] sm:text-[30px]"
             style={{ color: PURPLE }}
           >
-            Why Casa Kraft Is Among the Best Villa Renovation Companies in Dubai
+            Why Choose Our Villa Renovation Company in Dubai
           </h2>
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              Casa Kraft Interiors is renowned as one of the best villa renovation companies in Dubai and a reliable renovation company 
-              in Dubai for high-end residential projects. As an expert villa renovation contractor in Dubai, we blend professional 
-              designers, engineers, and expert craftsmen with dedicated project management to offer premium quality, on-time delivery. 
-              Our transparent pricing, <b><a href="https://www.casakraftinteriors.ae/renovation-dubai">wide range of renovation Dubai services</a></b> , premium materials, and best quality control makes sure each villa 
-              renovation in Dubai meets the highest standards, while our smart renovation in Dubai solutions add excellence and 
-              future-ready luxury  creating Casa Kraft Interiors a long-term partner for exclusive living.
-            </p>
+              Selecting the right Villa Renovation Contractor in Dubai showcases the success of your entire project. At Casa Kraft Interiors, we are renowned as one of the Best Villa Renovation Companies Dubai because we give attention to design elegance, well-structured design, and timeless value creation. We are an experienced <a href="/villa-renovation" className="font-bold hover:underline " style={{ color: PURPLE }}>
+     Interior Fit-Out & Renovation Company in Dubai
+    </a>  delivering design, completion, authority approvals, and project management under one roof. Our experts include architects, interior designers, engineers, and project managers who make sure each Home Renovation in Dubai is offered with accuracy, transparency, and luxury standards expected in Dubai’s high-end communities.
+              </p>
           </div>
 
           <div className="mt-3">
             <h2 className="text-center font-semibold text-[24px] sm:text-[30px]" style={{ color: PURPLE }}>
-            Luxury Villa Renovation Services in Dubai
+           Our Complete Villa Renovation Services in Dubai
             </h2>
              <p className="mt-4 text-[15px] leading-7" style={{ color: MUTED }}>
-              Our Luxury Villa Renovation Services in Dubai are created for clients who expect masterpiece and accuracy. 
-              We manage everything  from planning and approvals to construction and finishing making us your complete villa 
-              contractor in Dubai. Services include:
+              Our <a href="/transform-your-dream-home-expert-villa-renovation-services-in-dubai" className="font-bold hover:underline " style={{ color: PURPLE }}>
+     Luxury Villa Renovation Services in Dubai
+    </a>  are specific for homeowners who demand high-end elegance and practical excellence. Each project is personalized based on architecture, living style, and property value goals. We are experts in full-scale Villa Renovation Services in Dubai, covering structural transformation, upgrade interior design, exterior design and smart elements integration.
              </p>
           </div>
 
           <div className="mt-10">
            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-              1- Complete Villa Renovation Services In Dubai
+              1- Interior Fit-Out & Custom Interior Design
             </h3>
 
            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
            <p>
-           Casa Kraft delivers complete villa renovation services including interior, exterior, structural, and practical 
-           upgrades. From old fashioned designed space to contemporary elegant villas, we enhance spaces with sophistication 
-           and comfort.
+           Casakraft is a premium Renovation Company in Dubai, we are experts in providing Premium Villa Interiors Dubai through full interior services that cover ceilings, flooring, lighting design, and custom joinery. Our experts at Villa Interior Design Dubai ensure that every interior design is meticulously done by creating spatial designs that suit every room, personalizing the details to give you an elegant and practical experience. From a Complete Villa Fitout or Room Renovation, our design will reflect your luxurious lifestyle.
           </p>
           <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-          2- Interior Fit-Out & Renovation Company in Dubai
+          2- Kitchen Renovation Dubai
           </h3>
           <p>
-          We are a reliable Interior Fit-Out & Renovation Company in Dubai, we design and build custom interiors including 
-          ceilings, walls, lighting, flooring, and custom joinery.
+         <a href="/kitchen-renovation" className="font-bold hover:underline " style={{ color: PURPLE }}>
+     Kitchen Renovation Dubai
+    </a> service is specially designed to change any old and normal kitchen into modern, efficient, and stylish cooking areas. Our company is an established Kitchen Renovation Company in Dubai, providing services that are innovative and beautiful at the same time. By utilizing our excellent Kitchen Renovation services in Dubai, we incorporate modular kitchens along with luxurious counters and other things in order to make the <a href="/kitchen-interior-design-in-dubai" className="font-bold hover:underline " style={{ color: PURPLE }}>
+    kitchen interior design
+    </a>  look both beautiful and functional.
+           </p>
+
+          <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+          3- Bathroom Renovation
+          </h3>
+          <p>
+          Our <a href="/bathroom-renovation" className="font-bold hover:underline " style={{ color: PURPLE }}>
+     Bathroom Renovation Dubai services
+    </a>  take care of creating a space that offers you luxury and comfort with a modern touch. We are known as the Best Bathroom Renovation Dubai Company, offering specialized bathroom services according to high-class lifestyles. By availing of our Bathroom Renovation Dubai Services, you will get the pleasure of luxury sanitary fittings, intelligent water systems, quality tiles and marbles, and ambient lighting design.
           </p>
 
           <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-          3- Kitchen Renovation Dubai
+          4- Villa Painting Services in Dubai
           </h3>
           <p>
-          We offer comprehensive kitchen renovation services covering contemporary designs, modern cabinets, practical 
-          appliances, and warm lighting to elevate your everyday experiences.
+          Our Villa Painting Dubai is designed to help you enhance your property through luxury finishing, which improves the appearance of interiors and exteriors. You can avail top-notch <a href="/revitalize-your-space-expert-home-and-villa-painting-services-in-dubai" className="font-bold hover:underline " style={{ color: PURPLE }}>
+     Villa Painting services in Dubai,
+    </a>  which include interior and exterior villa painting, textured coatings, accent walls, and waterproof and heat-resistant paints, and ensuring everlasting results. Our professional <a href="/revitalize-your-space-expert-home-and-villa-painting-services-in-dubai" className="font-bold hover:underline " style={{ color: PURPLE }}>
+     villa wall painting services at Villas and houses in Dubai,
+    </a>  perfect for homeowners looking to increase the property value of their villa before selling or renting it out.
           </p>
 
           <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-          4- Bathroom Renovation in Dubai
-          </h3>
-          <p>
-          Spa styled bathrooms with high-end layouts, aesthetic ambiance, tiling, and perfect space optimization that align 
-          with Dubai's modernity and trend.
-          </p>
-
-          <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-          5- Villa Extension Services In Dubai
+          5- Villa Exterior Renovation Services
           </h3> 
           <p>
-          We provide expert villa extension services, expanding your living space with flawless 
-          architectural integration
+         Our Villa Exterior Renovation Services in Dubai, completely change the outer appearance of your property into a contemporary architectural statement that showcases comfort and sophistication. Through our expert Dubai Villa Exterior Design Services, giving attention to integrating exterior lighting, upgrading boundary walls, and elegant outdoor aesthetic improvements. Casakraft is a reliable Villa Contractors in Dubai, we make sure each exterior renovation is complete with accuracy and creativity, helping your villa reputed beautifully in high-end communities like Palm Jumeirah and Dubai Hills.
           </p>
+
+          <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+          6- Villa Extension Services
+          </h3> 
+          <p>
+         Our Villa Extension Dubai services have been carefully designed to assist homeowners in enhancing their spaces while maintaining perfect architectural harmony and consistency in design. We are the leading Villa Extension Company in Dubai, providing intelligent design and finishing for any type of modification, ensuring safety in structure and aesthetic balance within the entire project. With our professional Villa Extension and Alteration Services in Dubai, we take care of additions to rooms, extension of living spaces, expansion of outdoor areas, and proper structuring, while adhering to the rules set by the Dubai authorities.
+           </p>
+
+            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+          7- Smart Renovation in Dubai
+          </h3> 
+          <p>
+         Our Smart Renovation in Dubai services transform contemporary villas into smart living spaces through advanced technology and flawless automation. As part of our specialization in Smart home Villa Renovation & Tech Integration in Dubai, we integrate home automation systems, smart lighting control, climate management systems, and advanced security solutions to elevate luxury, efficiency, and living style convenience. With the help of our smart home automation and technology integration in Dubai, we create a house fully integrated to give you luxurious living experiences. Casakraft has earned the reputation of being the Best Villa Renovation Company in Dubai, ensuring that all of your needs are catered to seamlessly.
+           </p>
             </div>
 
           </div>
 
           <div className="mt-3">
             <h2 className="text-center font-semibold text-[24px] sm:text-[30px] " style={{ color: PURPLE }}>
-              Our Villa Renovation Process In Dubai
+              What Is Included in a Full Villa Renovation in Dubai
             </h2>
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Our professional team follows the best designing process and created practical yet luxurious 
-                designs to ensure that every villa renovation in Dubai is unique, functional, and professionally executed.
-              </p>
+                A full Home Renovation in Dubai involves a well-structured and aesthetic transformation crafted to elevate the villa interior design, practicality, and overall value. The process includes:
+                </p>
             <ul class="list-disc">
-              <li> <b style={{ color: PURPLE }}>Consultation & Site Assessment – </b>
+              <li> 
               Casa Kraft professional designers start to work in each villa 
               renovation in Dubai with a wide consultation and on-site assessment to understand your desire.
               </li>
+              
+              <li> Demolition and site preparation to clear and ready the space for renovation
+              </li>
+               
+              <li> Structural upgrades to improve safety, stability, and modern layout planning
+              </li>
+               
+              <li> Complete electrical and plumbing (MEP) works for updated and efficient systems
+              </li>
+              
+              <li> Flooring installation and ceiling design to create a refined architectural base
+              </li>
+              
+               <li> Custom joinery for bespoke storage, furniture, and interior detailing
+              </li>
+              
+               <li> Interior finishing with premium materials for a luxury look and feel
+              </li>
+              
+               <li> Exterior finishing to enhance overall curb appeal and visual harmony
+              </li>
+            </ul>
+            <p>
+                The result is a fully integrated villa transformation that delivers modern comfort, elegance, and long-lasting quality.
+                </p>
+            </div>
+
+            <div className="mt-10">
+              <h2 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+                Villa Renovation Cost in Dubai 
+              </h2>
+              <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
+                The Villa Renovation Cost in Dubai depends upon many factors related to the size of the property, the quality of the material used, and the overall complexity of the villa renovation project. Generally speaking, basic villa renovation involves mainly cosmetic changes. On the other hand, medium level renovation may include layout modifications and improvements related to mechanical, electrical, and plumbing. Finally, luxury renovations will be related to an entire change involving luxurious materials. In this way, spending money on professional Villa Renovation in Dubai not only makes one's life better, but also adds up to the total value of property and long-term ROI in Dubai’s competitive real estate market, especially when carried out by an experienced Villa Renovation Company in Dubai.
+                </p>
+<div className="mt-10">
+                <h2 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+                Villa Renovation Approvals in Dubai
+              </h2>
+              <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
+                All Villa Renovation in Dubai projects need strict compliance with local authority regulations to make sure safety and legal approval. We provide top-notch Villa Renovation Services in Dubai, handling all the necessary approvals involved, including those from Dubai Municipality, NOC approvals within your community, and permits for changes to your structure. As a reputable Villa Renovation Company in Dubai, we ensure that all your requirements are fulfilled, documented, and coordinated in the most efficient manner possible, ensuring that there are no problems along the way.
+                </p>
+                </div>
+            </div>
+          </div>
+           <div className="mt-3">
+            <h2 className="text-center font-semibold text-[24px] sm:text-[30px] " style={{ color: PURPLE }}>
+              Our Villa Renovation Process
+            </h2>
+
+            <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
+              <p>
+                Our professional team follows the best designing process and created practical yet luxurious designs to ensure that every villa renovation in Dubai is unique, functional, and professionally executed.
+           </p>
+            <ul class="list-disc">
+              <li> <b style={{ color: PURPLE }}>Consultation & Site Assessment – </b>
+              Casa Kraft professional designers start to work in each villa renovation in Dubai with a wide consultation and on-site assessment to understand your desire.
+              </li>
               <br /> 
               <li> <b style={{ color: PURPLE }}>Design Development & 3D Visualization - </b>
-              We create personalized layouts and 3D designs, providing functional villa renovation ideas for 
-              a clear and sophisticated sight of your project.
+             We create personalized layouts and 3D designs, providing functional villa renovation ideas for a clear and sophisticated sight of your project.
               </li>
               <br /> 
               <li> <b style={{ color: PURPLE }}>Material Selection & Cost Planning - </b>
-              As a reliable renovation company in Dubai, we help you in choosing premium materials while deciding 
-              costs for your villa renovation services.
+              As a reliable renovation company in Dubai, we help you in choosing premium materials while deciding costs for your villa renovation services.
               </li>
               <br /> 
               <li> <b style={{ color: PURPLE }}>Authority Approvals & Community NOCs  - </b>
-              We handle all necessary permits and approvals, making sure flawless finishing for your home renovation 
-              in Dubai.
+              We handle all necessary permits and approvals, making sure flawless finishing for your home renovation in Dubai.
               </li>
               <br />
               <li> <b style={{ color: PURPLE }}>Construction & Project Execution  - </b>
-              Our professional designers integrate each element of your villa renovation project perfectly, from 
-              planning interiors to structural works, with precision and premium quality.
+               Our professional designers integrate each element of your villa renovation project perfectly, from planning interiors to structural works, with precision and premium quality.
               </li>
               <br />
                <li> <b style={{ color: PURPLE }}>Quality Inspection & Final Handover  - </b>
-              Before handover, we conduct rigorous quality checks to deliver one of the best villa renovation services 
-              in Dubai, making sure your space is ready to inspire and enjoy.
+              Before handover, we conduct rigorous quality checks to deliver one of the best villa renovation services in Dubai, making sure your space is ready to inspire and enjoy.
               </li>
             </ul>
             </div>
 
             <div className="mt-10">
               <h2 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-                Areas We are Serving Across Dubai 
+                Ready to Transform Your Villa in Dubai
               </h2>
-
-              
-
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-                Casa Kraft Interiors provides high-end home renovation in Dubai and villa renovation services across 
-                the city’s most beautiful residential communities, including Palm Jumeirah, Arabian Ranches, Dubai 
-                Hills, Emirates Hills, Jumeirah Islands, Nad Al Sheba, The Meadows, and The Springs. As a reliable 
-                renovation company in Dubai and professional villa renovation contractor in Dubai, we have the 
-                knowledge of the architectural styles, authority requirements, and community regulations of each 
-                location, enabling us to handle approvals and execution efficiently. 
-
-                <br />
-                <br />
-                Whether you are desiring a full villa renovation in Dubai, a modern and luxury interior, or a full 
-                villa remodeling in Dubai, our expert designers provide, meticulous solutions across Dubai, placing 
-                Casa Kraft Interiors as one of the most reliable villa renovation companies Dubai, clients trust for 
-                premium renovation projects.
+                If you are planning a Villa Renovation in Dubai, Casa Kraft Interiors is your trusted partner for complete luxury transformation. Whether you require Villa Remodeling in Dubai, interior designs or refurbishing, exterior renovations or paint jobs, or anything to do with smart homes, you will find quality turnkey services at our place. Connect with us right away to transform your villa into a contemporary luxury masterpiece.
               </p>
             </div>
           </div>
@@ -254,20 +301,27 @@ function FAQSection() {
   const faqs = useMemo(
     () => [
       {
-        q: "How long does a villa renovation take in Dubai?",
-        a: " Most villa renovation projects in Dubai take 6–12 weeks, depending on size, design complexity, and customization requirements.",
+        q: "How much does villa renovation cost in Dubai?",
+        a: " The Villa renovation cost in Dubai depends on size, materials, and customization level. Luxury villas require premium investment but deliver high ROI.",
       },
       {
-        q: "Can villa renovations services be customized",
-        a: "Yes, Casa Kraft's villa renovation services in Dubai are fully customizable from layout and materials to modern finishes and smart storage solutions.",
+        q: "How long does villa renovation take?",
+        a: "The whole villa renovation takes typically between 6–20 weeks depending on project scope.",
       },
       {
-        q: "How much does it cost to renovate a villa in Dubai?",
-        a: "The cost of villa renovation in Dubai depends on the size, materials, and level of customization. We provide transparent quotes for every project.",
+        q: "Do you handle approvals?",
+        a: "Yes, Casa Kraft Renovations manage all approvals and NOCs of our Villa projects in Dubai.",
       },
       {
-        q: "Can you renovate specific areas or the entire villa?",
-        a: "We handle both partial and full villa renovations in Dubai, including kitchens, bathrooms, bedrooms, living rooms, and wardrobes."
+        q: "Can you integrate smart home systems?",
+        a: "Yes, we specialize in full smart home integration in apartments and villas."
+      },
+      {
+        q: "Do you offer painting and finishing services?",
+        a: "Yes, including full villa painting and luxury texture finishes."
+      },{
+        q: "Do I get a project manager?",
+        a: "Yes, every project is assigned a dedicated manager."
       },
     ],
     []

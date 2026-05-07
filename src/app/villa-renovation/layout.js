@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Renovation Dubai - Luxury Villa Remodeling | Casa Kraft Interiors",
+  title: "Villa Renovation Services in Dubai - Casa kraft",
   description:
-    "Casa Kraft Interiors offers villa renovation in Dubai with luxury remodeling, modern upgrades, and premium fit-out services for high-end residential living.",
+    "Casa Kraft Interiors offers villa renovation services in Dubai including design, approvals & villa construction. Call Now!",
   keywords: [
     "villa renovation Dubai",
     "villa remodeling Dubai",
