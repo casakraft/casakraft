@@ -7,7 +7,15 @@ import dayjs from "dayjs";
 
 // ---- DATA (kept from your current version; slugs normalized) ----
 const blogs = [
-   {
+  {
+    id: 3,
+    slug: "villa-renovation-cost-in-dubai",
+    title: "Villa Renovation Cost in Dubai 2026",
+    image: "/images/Villa Renovation Cost in Dubai.png",
+    date: "2026-05-15 ",
+    tag: "Blog",
+  }, 
+  {
     id: 3,
     slug: "transform-your-dream-home-expert-villa-renovation-services-in-dubai",
     title: "Villa Renovation Services in Dubai",

@@ -13,7 +13,15 @@ import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime); 
 
 const blogs = [
-   {
+  {
+    id: 7,
+    slug: "villa-renovation-cost-in-dubai",
+    title: "Villa Renovation Cost in Dubai 2026",
+    image: "/images/Villa Renovation Cost in Dubai.png",
+    date: "2026-05-15",
+    tag: "Blog",
+  }, 
+  {
     id: 8,
     slug: "transform-your-dream-home-expert-villa-renovation-services-in-dubai",
     title: "Villa Renovation Services in Dubai",
@@ -71,14 +79,7 @@ const blogs = [
     date: "2026-04-1",
     tag: "Blog",
   },
-  {
-    id: 7,
-    slug: "modern-apartment-interior-design",
-    title: "Luxury Apartment Interior Design",
-    image: "/images/blog-1.png",
-    date: "2025-01-01",
-    tag: "Blog",
-  },
+  
  
  
 ];

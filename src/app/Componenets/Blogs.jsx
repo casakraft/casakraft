@@ -6,6 +6,12 @@ import Link from "next/link";
 
 // Blog data
 const blogPosts = [
+ {
+    title: "Villa Renovation Cost in Dubai 2026",
+    date: "15 May, 2026",
+    image: "/images/Villa Renovation Cost in Dubai.png",
+    link: "/villa-renovation-cost-in-dubai",
+  },
   {
     title: "Villa Renovation Services in Dubai",
     date: "Apr 30, 2026",
@@ -20,12 +26,7 @@ const blogPosts = [
     link: "/your-ultimate-guide-to-villa-and-home-renovation-in-dubai",
   },
 
-  {
-    title: "Villa Painting Services in Dubai",
-    date: "10 Apr, 2026",
-    image: "/images/Villa Painting Services in Dubai.png",
-    link: "/revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
-  },
+  
 
   
 
