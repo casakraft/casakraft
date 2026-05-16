@@ -8,8 +8,7 @@ export const metadata = {
   metadataBase: new URL("https://casakraftinteriors.ae"),
 
   alternates: {
-    canonical:
-      "https://casakraftinteriors.ae/bedroom-interior-design-trends",
+    canonical: "/bedroom-interior-design-trends",
   },
 
   robots: {
