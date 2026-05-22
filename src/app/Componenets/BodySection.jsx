@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import {
   FiUser,
@@ -20,39 +21,86 @@ const Section = ({ className = "", children }) => (
 );
 
 const Container = ({ className = "", children }) => (
-  <div className={`mx-auto max-w-7xl px-4 md:px-8 ${className}`}>{children}</div>
-);
-
-const PrimaryBtn = ({ href = "#", children, className = "" }) => (
-  <Link
-    href={href}
-    className={`inline-flex items-center justify-center rounded-sm bg-[#1e4a45] px-6 py-3 text-sm font-medium text-white hover:brightness-110 transition ${className}`}
-  >
+  <div className={`mx-auto max-w-7xl px-4 md:px-8 ${className}`}>
     {children}
-  </Link>
+  </div>
 );
 
-const DarkBtn = ({ href = "#", children, className = "" }) => (
-  <Link
-    href={href}
-    className={`inline-flex items-center justify-center rounded-sm bg-black px-6 py-3 text-sm font-medium text-white hover:bg-black/90 transition ${className}`}
-  >
-    {children}
-  </Link>
-);
+// Animation variants
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
 
-const GhostBtn = ({ href = "#", children, className = "" }) => (
-  <Link
-    href={href}
-    className={`inline-flex items-center justify-center rounded-sm border border-black/20 bg-white px-6 py-3 text-sm font-medium text-black hover:bg-black/5 transition ${className}`}
-  >
-    {children}
-  </Link>
-);
+const itemVariants = {
+  hidden: { opacity: 0, y: 40, scale: 0.95 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 
-// =====================================
-// Body Section (matches PDF)
-// =====================================
+// 🔥 ONLY ADDITION (COUNT UP COMPONENT)
+const CountUp = ({ value }) => {
+  const ref = useRef(null);
+  const [count, setCount] = useState(0);
+  const [start, setStart] = useState(false);
+
+  const number = parseInt(value.replace(/\D/g, ""));
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStart(true);
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!start) return;
+
+    let current = 0;
+    const duration = 1500;
+    const step = number / (duration / 20);
+
+    const timer = setInterval(() => {
+      current += step;
+
+      if (current >= number) {
+        setCount(number);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(current));
+      }
+    }, 20);
+
+    return () => clearInterval(timer);
+  }, [start, number]);
+
+  return (
+    <span ref={ref}>
+      {count}
+      {value.includes("+") ? "+" : ""}
+    </span>
+  );
+};
+
 export default function BodySection() {
   const promiseItems = useMemo(
     () => [
@@ -60,31 +108,31 @@ export default function BodySection() {
         icon: <FiUser className="text-2xl" />,
         title: "Experienced Planners",
         desc:
-          "Our team of professional designers for  home renovation, office renovation  and renovation management experts ensures that your villa, apartments and office renovation in Dubai will be taken care of.",
+          "Our team of professional designers ensures that your villa, apartments and office renovation in Dubai will be taken care of.",
       },
       {
         icon: <FiCalendar className="text-2xl" />,
         title: "Planned Installation",
         desc:
-          "Every stage is planned in advance to allow hassle-free execution of renovation work in Dubai. This could be related to kitchen renovations in Dubai, bathroom renovations in Dubai, and overall interior renovations projects.",
+          "Every stage is planned in advance to allow hassle-free execution of interior and renovation work in Dubai.",
       },
       {
         icon: <FiShield className="text-2xl" />,
         title: "Warranty",
         desc:
-          " Our home renovation services in Dubai are confidently supported by a comprehensive warranty, ensuring you achieve the desired quality for the long term of your investement.",
+          "Our home renovation services in Dubai are confidently supported by warranty, ensuring you achieve the desired quality.",
       },
       {
         icon: <FiDollarSign className="text-2xl" />,
         title: "Best Price Guarantee",
         desc:
-          " Get best quality villa renovation work in Dubai, apartment renovation work, and turnkey home renovation services at highly competitive rates, assured without compromises.",
+          "Get best quality villa renovation, apartment renovation, and turnkey renovation services at highly competitive rates.",
       },
       {
         icon: <FiGift className="text-2xl" />,
         title: "Free Design Services",
         desc:
-          " Take advantage of our complimentary design consultation for smart renovations in Dubai for benefitting from an understanding of what you want before embarking on building.",
+          "Take advantage of our free design consultation for renovations in Dubai for understanding of what you want before embarking on building.",
       },
     ],
     []
@@ -100,410 +148,92 @@ export default function BodySection() {
     []
   );
 
-  // Renovations grid (PDF shows image tiles with bottom black label)
-  const renovationTiles = useMemo(
-    () => [
-      { title: "Villa Renovation", img: "/images/vr2.png", href: "/villa-renovation" },
-      { title: "Apartment Renovation", img: "/images/aptt1.png", href: "/apartment-renovation" },
-      { title: "Office Renovation", img: "/images/or6.png", href: "/office-renovation-dubai" },
-      { title: "Kitchens", img: "/images/kr4.png", href: "/kitchen-renovation" },
-      { title: "Bathrooms", img: "/images/br7.jpeg", href: "/bathroom-renovation" },
-      { title: "Flooring", img: "/images/fr4.png", href: "/flooring-dubai" },
-      { title: "Wardrobes & Cabinets", img: "/images/wc3.png", href: "/wardrobes-and-cabinets" },
-      { title: "Swimming Pool", img: "/images/ve6.png", href: "/swimming-pool-renovation" },
-      { title: "Landscape", img: "/images/ls2.png", href: "/landscape-dubai" },
-      { title: "Painting Works", img: "/images/pn3.png", href: "/painting-services-dubai" },
-      { title: "Windows & Doors", img: "/images/wd1.png", href: "/windows-and-doors" },
-      { title: "Customized Curtains & Blinds", img: "/images/villa-living-room-curtains-in-dubai.png", href: "customized-curtains-blinds-dubai" },
-      { title: "Customized Wallpapers", img: "/images/study-room-interior-wallpaper-in-dubai.png", href: "/customized-wallpapers-dubai" },
-    ],
-    []
-  );
-
-  // ✅ UPDATED: projectMosaic now holds per-card overlay content (edit later easily)
-  const projectMosaic = useMemo(
-    () => [
-      {
-        img: "/images/gp-1.png",
-        title: "3 BEDROOM APARTMENT",
-        locationLine1: "Acacia by EMAAR,",
-        locationLine2: "Dubai Hills Estate, Dubai",
-        year: "2025",
-        service: "FULL CONCEPT CREATION",
-      },
-      {
-        img: "/images/gp-3.png",
-        title: "LUXURY PENTHOUSE",
-        locationLine1: "Bulevard Point Tower,",
-        locationLine2: "Downtown, Dubai",
-        year: "2025",
-        service: "INTERIOR DESIGN + FIT-OUT",
-      },
-      {
-        img: "/images/gp-4.png",
-        title: "TWO BEDROOM APARTMENT",
-        locationLine1: "Bulgari Residence Building,",
-        locationLine2: "Daria Island, Jumeira Bay, Jumeirah 2, Dubai",
-        year: "2025",
-        service: "DESIGN + EXECUTION",
-      },
-      {
-        img: "/images/vl-11.png",
-        title: "CONTEMPORARY VILLA",
-        locationLine1: "Lantana,",
-        locationLine2: "Al Barsha South Second, Al Barsha, Dubai",
-        year: "2025",
-        service: "TURNKEY FIT-OUT",
-      },
-    ],
-    []
-  );
-
-  const trustCards = useMemo(
-    () => [
-      {
-        title: "STANDARD PRICING",
-        desc:
-          "Transparent quotations with detailed scope—no surprises at handover.",
-        img: "/images/trust/t1.jpg",
-      },
-      {
-        title: "NOC'S & AUTHORITY APPROVALS",
-        desc:
-          "In-house coordination support for approvals and required paperwork.",
-        img: "/images/trust/t2.jpg",
-      },
-      {
-        title: "FREE DESIGNS",
-        desc:
-          "Use in-house designers for basic 2D & 3D designs (premium designs available).",
-        img: "/images/trust/t3.jpg",
-      },
-      {
-        title: "MATERIAL SELECTION",
-        desc:
-          "Visit experience center to explore tiles, sanitaryware, flooring & more to finalize designs.",
-        img: "/images/trust/t4.jpg",
-      },
-      {
-        title: "BUILD WITH THE BEST",
-        desc:
-          "Licensed, skilled team with strong engineering supervision and regular updates.",
-        img: "/images/trust/t5.jpg",
-      },
-      {
-        title: "WARRANTY",
-        desc:
-          "Up to 10 years warranty on kitchens/wardrobes/cabinets and workmanship warranty on all works.",
-        img: "/images/trust/t6.jpg",
-      },
-    ],
-    []
-  );
-
-  const partners = useMemo(
-    () => [
-      "/images/partners/p1.png",
-      "/images/partners/p2.png",
-      "/images/partners/p3.png",
-    ],
-    []
-  );
-
-  const [activeReview, setActiveReview] = useState(0);
-
   return (
-    <main className="w-full">
+    <main className="w-full ">
+
       {/* =========================
-          OUR PROMISE (purple band)
+          OUR PROMISE (ANIMATED ON SCROLL)
       ========================== */}
-      <Section className="bg-[#f6f1eb]">
-        <Container className="py-14">
+      <Section className="relative overflow-hidden">
+
+        {/* Background */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/bhd-4.png"
+            alt="Renovation Dubai Background"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-white/60" />
+        </div>
+
+        <Container className="relative py-14">
+
           <h2 className="text-3xl md:text-4xl font-semibold text-black/80">
             Renovation Dubai & Our Promise
-          </h2><br></br>
-          <p>At Casa Kraft Interiors and Renovations, we specialize in offering expert renovation services in Dubai with precision and a planned approach. When you hire us for your renovation needs in Dubai, here is what you can expect from us:</p>
-
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-            {promiseItems.map((it, idx) => (
-              <div key={idx} className="text-black/80">
-                <div className="mb-3">{it.icon}</div>
-                <h3 className="font-semibold">{it.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-black/70">
-                  {it.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* =========================
-          STATS ROW
-      ========================== */}
-      <Section className="bg-white">
-        <Container className="py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((s, i) => (
-              <div key={i} className="text-center">
-                <p className="text-3xl font-semibold text-[#6b3f7a]">{s.value}</p>
-                <p className="mt-1 text-sm text-black/60">{s.label}</p>
-                <div className="mx-auto mt-4 h-[2px] w-16 bg-black/20" />
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* =========================
-          OUR RENOVATIONS (image tile grid)
-      ========================== */}
-      <Section className="bg-[#f6f1eb]">
-        <Container className="py-14">
-          <h2 className="text-center text-2xl md:text-3xl font-semibold text-black/70">
-            Our Renovations
           </h2>
 
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {renovationTiles.map((t, idx) => (
-              <Link
-                key={idx}
-                href={t.href}
-                className="group relative overflow-hidden bg-white"
-              >
-                <div className="relative aspect-[4/3] w-full">
-                  <Image
-                    src={t.img}
-                    alt={t.title}
-                    fill
-                    className="object-cover group-hover:scale-[1.03] transition-transform duration-300"
-                  />
-                </div>
+          <p className="mt-3 text-black/70 max-w-3xl">
+            At Casa Kraft Interiors and Renovations, we deliver expert renovation
+            services in Dubai with precision, planning, and quality execution.
+          </p>
 
-                <div className="absolute inset-x-0 bottom-0 bg-black/85 px-3 py-2 flex items-center justify-between">
-                  <span className="text-xs md:text-[13px] text-white tracking-wide uppercase">
-                    {t.title}
-                  </span>
-                  <FiArrowRight className="text-white/90" />
-                </div>
-              </Link>
+          {/* ANIMATED GRID (UNCHANGED) */}
+          <motion.div
+            className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+          >
+            {promiseItems.map((it, idx) => (
+              <motion.div
+                key={idx}
+                variants={itemVariants}
+                whileHover={{ y: -10, scale: 1.03 }}
+                className="relative group bg-white/70 backdrop-blur-md p-5 rounded-xl border border-black/10 shadow-sm overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-[#6b3f7a]/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
+
+                <div className="mb-3 text-[#6b3f7a]">{it.icon}</div>
+
+                <h3 className="font-semibold text-black/80">{it.title}</h3>
+
+                <p className="mt-2 text-sm text-black/70 leading-relaxed">
+                  {it.desc}
+                </p>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
+
         </Container>
       </Section>
 
       {/* =========================
-          BOOK ONLINE (text left, image right)
+          STATS SECTION (ONLY CHANGE HERE)
       ========================== */}
       <Section className="bg-white">
         <Container className="py-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <p className="text-sm font-semibold text-[#6b3f7a]">
-                Dubai’s Trusted Renovators
-              </p>
-              <h2 className="mt-2 text-2xl md:text-3xl font-semibold text-black/80 leading-snug">
-                Our Renovation Process
-              </h2>
 
-              <div className="mt-3 space-y-2 text-sm leading-relaxed text-black/70">
-                <p>
-                  At Casa Kraft interiors & Renovation, our renovation services follow a structured process to ensure high-quality results for every residential or commercial renovation project.
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+            {stats.map((s, i) => (
+              <div key={i}>
+                <p className="text-3xl font-semibold text-[#6b3f7a]">
+                  <CountUp value={s.value} />
                 </p>
 
-                <h3 className="text-lg font-semibold">
-                 1. Inquiry
-                </h3>
-                <p>
-                  Every renovation project in Dubai begins with a conversation. When you contact Casa Kraft, we understand your requirements, budget range, timeline, and the final outcome you expect from the renovation.
+                <p className="text-sm text-black/60 mt-1">
+                  {s.label}
                 </p>
-
-                <h3 className="text-lg font-semibold">
-                 2. Free Site Visit
-                </h3>
-                <p> 
-               We provide a complimentary free site visit at any location in Dubai. Our professionals will examine the area, take required measurements, evaluate existing conditions, and discuss practical possibilities to provide best suitable recommendations.
-                </p>
-
-                <h3 className="text-lg font-semibold">
-                 3. Free Design and Consultation
-                </h3>
-                <p>
-                  Our team of designers will give you free design concepts along with professional consultation. They will guide you on how to improve your layouts, select materials, utilize your space, and renovate any space.
-                </p>
-
-                <h3 className="text-lg font-semibold">
-                 4. Quotation Submission
-                </h3>
-                <p>
-                   After finalizing the scope, we make a detailed quotation. Our pricing breakdown consists of labor, timelines, materials and project scope while ensuring no hidden costs.
-                </p>
-
-                <h3 className="text-lg font-semibold">
-                 5. Approvals and NOC
-                </h3>
-                <p>
-                   As experienced renovation company in Dubai, we handle all necessary approvals and NOCs from building management and relevant authorities. We ensure your renovation complies with Dubai regulations and guidelines.
-                </p>
-
-                <h3 className="text-lg font-semibold">
-                 6. Project Execution
-                </h3>
-                <p>
-                   Our team begins the renovation work with best quality control while maintaining timeline management. We keep clear communication and regular updates regarding renovation throughout the execution phase.</p>
-
               </div>
+            ))}
 
-           
-            </div>
-
-                <div className="relative w-full">
-                   <Image
-                     src="/images/renovation-services-in-dubai.png"
-                     alt="Book Online"
-                     width={1200}
-                     height={1800} // use actual image ratio
-                     className="w-full h-auto"
-                      />
-                 </div>
-            
           </div>
+
         </Container>
       </Section>
 
-      {/* =========================
-          FULL HOME RENOVATION (image left, text right)
-      ========================== */}
-      <Section className="bg-white">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div className="relative overflow-hidden">
-              <div className="relative aspect-[4/3] w-full">
-                <Image
-                  src="/images/vr18.jpeg"
-                  alt="Full Home Renovation"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            <div>
-              <p className="text-sm font-semibold text-[#6b3f7a]">
-                Renovation &amp; Design
-              </p>
-              <h2 className="mt-2 text-2xl md:text-3xl font-semibold text-black/80 leading-snug">
-                Why Choose Casa Kraft for Renovation?
-              </h2>
-
-              <div className="mt-6 space-y-4 text-sm leading-relaxed text-black/70">
-                <p>
-                 Choose Casa Kraft Interiors for your <b>renovation services in Dubai</b> and experience a seamless blend of expertise, luxury, and smart solutions. Our services include apartment renovation, villa renovation, office renovation, custom wallpapers, curtains & blinds installation and complete interior renovation services in Dubai. 
-                </p>
-                <p>
-                  Our <b>expert technicians</b> and project managers perform all aspects of renovation services with precision and professionalism.Our team has <b>experienced designers</b> who create detailed <b>technical drawings and 3D renders</b> which helps you to visualize your project before the renovation process begins.
-                </p>
-                <p>
-                Casa Kraft ensures every renovation work in Dubai is completed with perfection and ends with client satisfaction. We also offer turnkey villa renovations in Dubai, luxury villa renovation services, and apartment renovation services making us one of the leading renovation companies in Dubai.
-                </p>
-               
-              </div>
-
-              <div className="mt-8 mb-15">
-                <PrimaryBtn href="/contact-us">Contact Us</PrimaryBtn>
-                {/* you can also use DarkBtn / GhostBtn elsewhere */}
-              </div>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
-    
-
-      {/* =========================
-          COMPARISON TABLE (Yalla vs Typical)
-      ========================== */}
-      <Section className="bg-white">
-        <Container className="py-16">
-          <div className="overflow-x-auto border border-black/10 rounded-sm">
-            <div className="min-w-[900px]">
-              <div className="grid grid-cols-3 bg-[#f2f2f2]">
-                <div className="p-4 font-semibold text-black/60"> </div>
-                <div className="p-4 font-semibold text-black/70">
-                  Casa Kraft Renovation Experience
-                </div>
-                <div className="p-4 font-semibold text-black/70">
-                  Typical Experience
-                </div>
-              </div>
-
-              {[
-                {
-                  key: "PRICE",
-                  left: ["No hidden costs", "Competitive pricing"],
-                  right: ["20–40% hike between first quote & final cost", "Higher prices for branded product"],
-                },
-                {
-                  key: "CONVENIENCE",
-                  left: ["One stop shop for all renovation needs"],
-                  right: ["Approx 15–20 market trips to find everything"],
-                },
-                {
-                  key: "DESIGN",
-                  left: ["Free design consultation", "Personalised designs with 2D CAD drawings & 3D visuals"],
-                  right: ["No design or cookie-cutter designs", "3D designs at extra cost"],
-                },
-                {
-                  key: "TIMELINES",
-                  left: ["20 working days supply and installation for kitchens/wardrobes/cabinets after drawing approvals", "Regular updates with project tracking"],
-                  right: ["Unreliable timelines", "No communication / update delays"],
-                },
-                {
-                  key: "QUALITY",
-                  left: ["Material procured directly from manufacturers", "Quality checks"],
-                  right: ["Inferior material used to cut costs", "No quality check", "Outsourced from small contractors"],
-                },
-                {
-                  key: "WARRANTY",
-                  left: ["Up to 10 years warranty on select works", "Workmanship warranty for large projects"],
-                  right: ["No warranty offered for products or services"],
-                },
-              ].map((row, idx) => (
-                <div
-                  key={idx}
-                  className="grid grid-cols-3 border-t border-black/10"
-                >
-                  <div className="p-4 font-semibold text-black/60 bg-[#fafafa]">
-                    {row.key}
-                  </div>
-
-                  <div className="p-4">
-                    <ul className="space-y-2 text-sm text-black/70">
-                      {row.left.map((t, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <FiCheck className="mt-[3px] text-[#6b3f7a]" />
-                          <span>{t}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="p-4 bg-[#fcfcfc]">
-                    <ul className="space-y-2 text-sm text-black/70">
-                      {row.right.map((t, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <span className="mt-[7px] h-2 w-2 rounded-full bg-black/30" />
-                          <span>{t}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Container>
-      </Section>
     </main>
   );
 }

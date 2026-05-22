@@ -21,8 +21,8 @@ import Footer from "./Componenets/Footer";
 export default function Home() {
   return (
     <>
-    <main className="relative flex flex-col min-h-screen bg-[#121212]">
-        <Navbar className="absolute top-0 z-10 w-screen" />
+<main className="relative flex flex-col min-h-screen bg-[#0b0b0b] text-white">
+          <Navbar className="absolute top-0 z-10 w-screen" />
         <WhatsAppButton />
         <CallButton />
         <HeroSection />

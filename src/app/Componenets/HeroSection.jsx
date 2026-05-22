@@ -1,45 +1,183 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ArrowRight,
+} from "lucide-react";
+
+const slides = [
+  {
+    image: "/images/apartment-interior-design.png",
+    title: "Luxury Apartment Interiors",
+    subtitle:
+      "Premium apartment interior design and renovation solutions crafted for modern luxury living in Dubai.",
+  },
+  {
+    image: "/images/aptt3.png",
+    title: "Elegant Living Spaces",
+    subtitle:
+      "Transforming apartments, villas, and interiors with bespoke craftsmanship and timeless aesthetics.",
+  },
+  {
+    image: "/images/bluewaters-2.png",
+    title: "Dubai Renovation Experts",
+    subtitle:
+      "Specialized in luxury renovation, fit-out, and interior design services tailored for sophisticated lifestyles.",
+  },
+];
 
 const HeroSection = () => {
+  const [current, setCurrent] = useState(0);
+
+  // Auto Slide
+  useEffect(() => {
+    const slider = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 6000);
+
+    return () => clearInterval(slider);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
-    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden">
-      {/* 🔹 Background Image */}
-      <Image
-        src="/images/hero-image.png" // ✅ Replace with your desired image path
-        alt="Luxury Interior Design Dubai"
-        fill
-        className="object-cover"
-        priority
-      />
-
-      {/* 🔹 Soft overlay for text readability */}
-      <div className="absolute inset-0 bg-black/30 z-10" />
-
-      {/* 🔹 Centered Text Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-20">
-        <h1 className="text-lg sm:text-xl md:text-4xl lg:text-5xl font-conthrax -tracking-normal">
-           RESIDENTIAL INTERIOR DESIGN COMPANY IN DUBAI
-        </h1>
-        <p className="text-[10px] sm:text-lg md:text-2xl md:mt-2 font-play tracking-wider">
-         Specialized in residential interior design, landscape design, <br />Renovation and high-quality fit-out works across Dubai.
-
-        </p>
-      </div>
-
-      {/* 🔹 "Our Projects" Button (bottom-left corner) */}
-      <div className="absolute bottom-10 left-10 z-20">
-        <Link
-          href="/gallery"
-          className="bg-white/90 text-black text-sm md:text-base px-4 md:px-8 py-3 rounded-md shadow-md hover:bg-[#193c38] hover:text-white transition-all duration-300"
+    <section className="relative w-full h-screen overflow-hidden">
+      
+      {/* Background Slides */}
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-all duration-1000 ${
+            index === current
+              ? "opacity-100 scale-100 z-10"
+              : "opacity-0 scale-105 z-0"
+          }`}
         >
-          Our Projects
-        </Link>
+          <Image
+            src={slide.image}
+            alt={slide.title}
+            fill
+            priority
+            className="object-cover"
+          />
+
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/55" />
+        </div>
+      ))}
+
+      {/* Main Content */}
+      <div className="relative z-20 h-full flex items-center">
+        <div className="max-w-7xl mx-auto w-full px-6 md:px-10">
+
+          <AnimatePresence mode="wait">
+
+            <motion.div
+              key={current}
+              initial={{ opacity: 0, y: 60 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -60 }}
+              transition={{ duration: 0.9 }}
+              className="max-w-4xl"
+            >
+
+              {/* Small Label */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1, duration: 0.6 }}
+                className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight font-conthrax"              >
+                Casa Kraft Interiors
+              </motion.p>
+
+              {/* Heading */}
+              <motion.h1
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.8 }}
+                className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight font-conthrax"              >
+                {slides[current].title}
+              </motion.h1>
+
+              {/* Subtitle */}
+              <motion.p
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+                className="text-white/80 text-base sm:text-lg md:text-2xl mt-8 leading-relaxed max-w-3xl font-play"
+              >
+                {slides[current].subtitle}
+              </motion.p>
+
+              {/* Buttons */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6, duration: 0.8 }}
+                className="flex items-center gap-6 mt-12 flex-wrap"
+              >
+
+                {/* Primary Button */}
+                <Link
+                  href="/services"
+                  className="bg-white text-black px-8 md:px-10 py-4 md:py-5 text-sm md:text-base uppercase tracking-[2px] font-conthrax hover:bg-[#193c38] hover:text-white transition-all duration-500 flex items-center gap-4"
+                >
+                  Our Services
+                  <ArrowRight size={18} />
+                </Link>
+
+                {/* Secondary Link */}
+                <Link
+                  href="/gallery"
+                  className="text-white text-sm md:text-lg font-play underline underline-offset-8 hover:text-gray-300 transition-all duration-300"
+                >
+                  View Our Portfolio
+                </Link>
+
+              </motion.div>
+
+            </motion.div>
+
+          </AnimatePresence>
+
+        </div>
       </div>
-    </div>
+
+      {/* Left Arrow */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-5 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white p-3 md:p-4 transition-all duration-300"
+      >
+        <ChevronLeft size={28} />
+      </button>
+
+      {/* Right Arrow */}
+      <button
+        onClick={nextSlide}
+        className="absolute right-5 md:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white p-3 md:p-4 transition-all duration-300"
+      >
+        <ChevronRight size={28} />
+      </button>
+
+      {/* Slide Counter */}
+      <div className="absolute bottom-8 right-6 md:right-10 z-30 text-white font-conthrax text-sm md:text-lg tracking-[3px]">
+        0{current + 1} / 0{slides.length}
+      </div>
+
+      {/* Bottom Gradient */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/60 to-transparent z-10" />
+    </section>
   );
 };
 

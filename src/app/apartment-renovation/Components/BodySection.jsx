@@ -71,14 +71,7 @@ export default function BodySection() {
               </h1>
 
               <p className="mt-4 text-[15px] leading-7 text-[#6a6a6a] max-w-[680px] mx-auto lg:mx-0">
-              <a 
-  href="https://casakraft.com" 
-  className="hover:underline transition-all font-semibold"
-  target="_blank" 
-  rel="noopener noreferrer"style={{ color: PURPLE }}
->
-  Casa Kraft Interiors
-</a> is the No.1 apartment renovation Dubai company, providing high-end 
+             <b className="text-[#5b2d57]"><a href="https://casakraftinteriors.ae/">Casa Kraft interior Design and Renovation</a></b>  is the No.1 apartment renovation Dubai company, providing high-end 
                apartment renovation services in Dubai that turn old-fashioned living spaces into elegant, 
                contemporary homes. As a reliable apartment renovation contractor in Dubai, we are experts 
                in both complete apartment renovation and individual transformation. Whether you are 
@@ -120,17 +113,8 @@ export default function BodySection() {
 
           <div className="mt-8 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-             Casa Kraft  
-                     
-                      <a 
-  href="https://casakraft.com" 
-  className=" hover:underline transition-all font-semibold"
-  target="_blank" 
-  rel="noopener noreferrer" style={{ color: PURPLE }}
->
-     apartment renovation Dubai services
-</a>  handle each element of interior design and 
-             remodeling, placing us one of the best apartment renovation companies in Dubai. We manage 
+             At Casa Kraft, the apartment renovation Dubai services handle each element of interior design and 
+             remodeling, placing us one of the <b className="text-[#5b2d57]"><a href="https://share.google/vycoryA1MDUH1ovTN">best apartment renovation companies in Dubai</a></b>. We manage 
              each process of the renovation of apartments, making sure contemporary, Innovative, and 
              luxurious results.
             </p>
@@ -154,15 +138,7 @@ export default function BodySection() {
 
           <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
             <p>
-              We deliver comprehensive <a 
-  href="https://casakraft.com" 
-  className=" hover:underline transition-all font-semibold"
-  target="_blank" 
-  rel="noopener noreferrer" style={{ color: PURPLE }}
->
-   kitchen renovation services
-</a>  and provide contemporary and practical kitchen spaces. 
-              Casa Kraft is a reliable apartment renovation contractor in Dubai, we handle customized cabinetry, benchtop, 
+              We deliver comprehensive <b className="text-[#5b2d57]"><a href="https://casakraftinteriors.ae/kitchen-renovation">kitchen renovation services</a></b> and provide contemporary and practical kitchen spaces. Casa Kraft is a reliable apartment renovation contractor in Dubai, we handle customized cabinetry, benchtop, 
               and practical appliances to design a kitchen that enhances your everyday living.
             </p>
             </div>
@@ -175,15 +151,7 @@ export default function BodySection() {
 
             <div className="mt-4 space-y-6 text-[15px] leading-7" style={{ color: MUTED }}>
               <p>
-                Casa Kraft Interiors offers luxurious <a 
-  href="https://casakraft.com" 
-  className=" hover:underline transition-all font-semibold"
-  target="_blank" 
-  rel="noopener noreferrer" style={{ color: PURPLE }}
->
-  bathroom renovation services in Dubai,
-</a>   including contemporary 
-                appliances, premium tiling, and Innovative space optimization. Each apartment renovation project 
+                Casa Kraft Interiors offers luxurious <b className="text-[#5b2d57]"><a href="https://casakraftinteriors.ae/bathroom-renovation">bathroom renovation services in Dubai</a></b> , including contemporary appliances, premium tiling, and Innovative space optimization. Each apartment renovation project 
                 includes bathrooms designed for both functionality and excellence.
               </p>
 
@@ -191,21 +159,13 @@ export default function BodySection() {
               → Living Room and Bedroom Renovation
             </h3>
             <p>
-              Casa Kraft experienced team enhanced apartment interior design – remodeling in Dubai, transforming 
+              Casa Kraft experienced team enhanced <b className="text-[#5b2d57]"><a href="https://casakraftinteriors.ae/modern-apartment-interior-design">modern apartment interior design</a></b> – remodeling in Dubai, transforming 
               living rooms and bedrooms with practical layouts, elegant finishes, and bespoke touches. Each element 
               of renovation is designed to showcase the client's vision and personality.
             </p>
             
-            <h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
-             <a 
-  href="https://casakraft.com" 
-  className=" hover:underline transition-all font-semibold"
-  target="_blank" 
-  rel="noopener noreferrer" style={{ color: PURPLE }}
->
-  → Custom Storage and Wardrobe Solutions
-</a> 
-            </h3>
+          <a href="https://casakraftinteriors.ae/wardrobes-and-cabinets"><h3 className="font-semibold text-[18px]" style={{ color: PURPLE }}>
+               → Custom Storage and Wardrobe Solutions  </h3></a>  
             <p>
               We offer functional storage solutions, built-in wardrobes, and stylish cabinetry to perfectly optimized 
               space, placing us one of the best apartment renovation companies in Dubai for functional yet modern living 
@@ -245,12 +205,7 @@ export default function BodySection() {
               </h2>
 
               <p className="mt-5 text-[15px] leading-7" style={{ color: MUTED }}>
-                There are a lot of benefits to investing in apartment renovation services in Dubai. For the renovation of 
-                apartments, comfort and space are thoughtfully modulated while increasing their luxury value in an upscale 
-                manner. At Casa Kraft Interiors, the experts will guide you through each step of your apartment renovation 
-                project, ensuring that every detail, from design to materials, will stand at the top standard. Our space 
-                owners consistently renowned us as the expert apartment renovation Dubai company for providing practical 
-                solutions and exclusive results.
+                There are a lot of benefits to investing in <b className="text-[#5b2d57]"><a href="https://www.instagram.com/p/DW1ZF1qiE-T/">apartment renovation services in Dubai</a></b>. For the renovation of apartments, comfort and space are thoughtfully modulated while increasing their luxury value in an upscale manner. At Casa Kraft Interiors, the experts will guide you through each step of your apartment renovation project, ensuring that every detail, from design to materials, will stand at the top standard. Our space owners consistently renowned us as the expert apartment renovation Dubai company for providing practical solutions and exclusive results.
               </p>
             </div>
               <div className="mt-5">
@@ -259,14 +214,7 @@ export default function BodySection() {
               </h2>
 
               <p className="mt-8 text-[15px] leading-7" style={{ color: MUTED }}>
-               We are the <a 
-  href="https://casakraft.com" 
-  className=" hover:underline transition-all font-semibold"
-  target="_blank" 
-  rel="noopener noreferrer" style={{ color: PURPLE }}
->
-  best apartment renovation company
-</a>   for space owners looking for professional, premium renovation 
+               We are the best apartment renovation company for space owners looking for professional, premium renovation 
                services in Dubai. We oversee each element of your apartment renovation project, making sure on-time delivery, 
                premium materials, and seamless execution. Our professionals and project handlers work closely with clients to 
                get knowledge of their concept and bring it into real life, placing us the go-to experts for apartment renovation 

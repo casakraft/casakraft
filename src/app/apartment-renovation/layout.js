@@ -1,9 +1,9 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Apartment Renovation Dubai - Casa Kraft Interiors",
+  title: "Apartment Renovation Services Dubai - Casa Kraft Interiors",
   description:
-    "Casa Kraft Interiors provides expert apartment renovation in Dubai with complete remodeling, modern upgrades, and premium fit-out solutions.",
+    "Casa Kraft Interiors provides apartment renovation services in Dubai with complete remodeling, approvals & fit-out solutions. Call Now!",
   keywords: [
     "apartment renovation Dubai",
     "apartment remodeling Dubai",
@@ -12,6 +12,8 @@ export const metadata = {
     "home renovation Dubai",
     "Casa Kraft Interiors",
   ],
+
+
   authors: [{ name: "Casa Kraft Interiors" }],
   metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: {
@@ -81,7 +83,7 @@ export default function RootLayout({ children }) {
                   "@type": "ListItem",
                   position: 2,
                   name: "Services",
-                  item: "https://casakraftinteriors.ae/",
+                  item: "https://casakraftinteriors.ae/gallery",
                 },
                 {
                   "@type": "ListItem",
