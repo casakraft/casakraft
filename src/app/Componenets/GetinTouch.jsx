@@ -1,78 +1,72 @@
 "use client";
 
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import Link from "next/link";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const GetInTouch = () => {
+  const sectionRef = useRef(null);
+  const itemsRef = useRef([]);
+  const ctaRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      // Section fade in
+      gsap.from(sectionRef.current, {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+        },
+      });
+
+      // 3 info blocks stagger animation
+      gsap.from(itemsRef.current, {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 75%",
+        },
+      });
+
+      // CTA buttons animation
+      gsap.from(ctaRef.current, {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 70%",
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="bg-white border-t border-b border-gray-200">
+    <section ref={sectionRef} className="bg-white border-t border-b border-gray-200">
 
-      <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row items-center justify-between">
 
-        {/* LOCATION */}
-        <div className="flex items-center gap-4 py-6 px-6 lg:px-10 border-b lg:border-b-0 lg:border-r border-gray-200 w-full lg:w-1/3">
-          <FaMapMarkerAlt className="text-[#b6935b] text-2xl" />
-          <div>
-            <h4 className="font-semibold text-black">Dubai, UAE</h4>
-            <p className="text-sm text-gray-500">
-              Building The Curve - Showroom G11, Al Quoz
-            </p>
-          </div>
-        </div>
-
-        {/* PHONE */}
-        <div className="flex items-center gap-4 py-6 px-6 lg:px-10 border-b lg:border-b-0 lg:border-r border-gray-200 w-full lg:w-1/3">
-          <FaPhoneAlt className="text-[#b6935b] text-2xl" />
-          <div>
-            <h4 className="font-semibold text-black">+971 58 602 3677</h4>
-            <p className="text-sm text-gray-500">Mon - Friday: 9:00 to 18:00</p>
-          </div>
-        </div>
-
-        {/* EMAIL + SOCIAL */}
-        <div className="flex items-center justify-between gap-4 py-6 px-6 lg:px-10 w-full lg:w-1/3">
-
-          <div className="flex items-center gap-4">
-            <FaEnvelope className="text-[#b6935b] text-2xl" />
-            <div>
-              <h4 className="font-semibold text-black">
-                info@casakraftinteriors.ae
-              </h4>
-              <p className="text-sm text-gray-500">Get a Free Quote</p>
-            </div>
-          </div>
-
-          {/* SOCIAL ICONS (simple placeholders) */}
-          <div className="flex gap-3">
-            <a
-              href="https://facebook.com"
-              className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#b6935b] hover:text-white transition"
-            >
-              f
-            </a>
-            <a
-              href="https://instagram.com"
-              className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#b6935b] hover:text-white transition"
-            >
-              ig
-            </a>
-            <a
-              href="https://linkedin.com"
-              className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#b6935b] hover:text-white transition"
-            >
-              in
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-
+      
       {/* CTA SECTION */}
-      <div className="bg-[#e6e6e6] py-14 px-4 text-center">
-
-        <h2 className="text-[26px] sm:text-[32px] font-bold mb-2">
+      <div
+        ref={ctaRef}
+        className="bg-[#e6e6e6] py-10 px-4 text-center"
+      >
+        <h2 className="text-[26px] sm:text-[25px] font-bold mb-2">
           <span className="text-[#c8a56a]">GET IN TOUCH WITH CASA KRAFT</span>
         </h2>
 
@@ -106,7 +100,6 @@ const GetInTouch = () => {
           </a>
 
         </div>
-
       </div>
 
     </section>

@@ -1,8 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   { title: "Villa Interior Design", image: "/images/villa-design-dubai.png", href: "/villa-interior-design-dubai" },
@@ -16,34 +20,76 @@ const services = [
 ];
 
 const Services = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".service-card", {
+        opacity: 0,
+        y: 40,
+        duration: 0.9,
+        stagger: 0.12,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section id="services" className="bg-[#f6f6f6] py-16">
-      {/* Title */}
-      <h2 className="text-center text-[#c79d63] font-semibold text-2xl sm:text-3xl md:text-4xl mb-10">
-        Our Most Demanding Interior Design Services In Dubai
+    <section
+      ref={sectionRef}
+      id="services"
+      className="bg-[#f6f6f6] "
+    >
+      {/* TITLE */}
+      <h2 className="text-center text-black font-semibold text-2xl sm:text-3xl md:text-4xl mb-12">
+        Our Interior Design Services In Dubai
       </h2>
 
-      {/* Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-[90%] sm:w-[85%] mx-auto">
+      {/* GRID */}
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-[92%] mx-auto">
+
         {services.map((service, index) => (
-          <Link key={index} href={service.href} className="block">
-            <div className="bg-white rounded-xl shadow-md overflow-hidden cursor-pointer transition-all hover:scale-[1.03]">
-              <div className="relative w-full h-48 md:h-56 lg:h-60">
+          <Link
+            key={index}
+            href={service.href}
+            className="service-card group block"
+          >
+            {/* CARD */}
+            <div className="relative bg-white border border-black/5 shadow-sm overflow-hidden transition-all duration-500 group-hover:shadow-xl">
+
+              {/* IMAGE */}
+              <div className="relative w-full h-52 md:h-60 overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-110 transition duration-700"
                 />
+
+                {/* DARK OVERLAY */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               </div>
-              <div className="p-4 text-center">
-                <h3 className="text-black font-semibold text-sm md:text-base">
+
+              {/* TEXT ON IMAGE (TOP LEFT) */}
+              <div className="absolute bottom-4 left-4 right-4 z-10">
+                <h3 className="text-white font-semibold text-sm md:text-base tracking-wide">
                   {service.title}
                 </h3>
+
+                {/* small underline animation */}
+                <div className="mt-2 w-10 h-[1px] bg-[#c79d63] group-hover:w-16 transition-all duration-500" />
               </div>
+
             </div>
           </Link>
         ))}
+
       </div>
     </section>
   );

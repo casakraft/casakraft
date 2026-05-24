@@ -2,7 +2,6 @@
 
 import React, { useMemo, useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 import {
@@ -11,11 +10,11 @@ import {
   FiShield,
   FiDollarSign,
   FiGift,
-  FiArrowRight,
-  FiCheck,
 } from "react-icons/fi";
 
-// Helpers
+// =========================
+// HELPERS
+// =========================
 const Section = ({ className = "", children }) => (
   <section className={`w-full ${className}`}>{children}</section>
 );
@@ -26,7 +25,9 @@ const Container = ({ className = "", children }) => (
   </div>
 );
 
-// Animation variants
+// =========================
+// ANIMATION VARIANTS
+// =========================
 const containerVariants = {
   hidden: {},
   show: {
@@ -37,19 +38,23 @@ const containerVariants = {
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 40, scale: 0.95 },
+  hidden: {
+    opacity: 0,
+    y: 60,
+  },
   show: {
     opacity: 1,
     y: 0,
-    scale: 1,
     transition: {
-      duration: 0.6,
+      duration: 0.7,
       ease: "easeOut",
     },
   },
 };
 
-// 🔥 ONLY ADDITION (COUNT UP COMPONENT)
+// =========================
+// COUNT UP
+// =========================
 const CountUp = ({ value }) => {
   const ref = useRef(null);
   const [count, setCount] = useState(0);
@@ -101,43 +106,76 @@ const CountUp = ({ value }) => {
   );
 };
 
+// =========================
+// MAIN COMPONENT
+// =========================
 export default function BodySection() {
+
+  // =========================
+  // 6 STEP PROCESS
+  // =========================
   const promiseItems = useMemo(
     () => [
       {
-        icon: <FiUser className="text-2xl" />,
-        title: "Experienced Planners",
+        year: "01",
+        date: "Step",
+        icon: <FiUser className="text-lg" />,
+        title: "Inquiry",
         desc:
-          "Our team of professional designers ensures that your villa, apartments and office renovation in Dubai will be taken care of.",
+          "Tell us about your renovation, interior design, or fit-out requirements in Dubai.",
       },
+
       {
-        icon: <FiCalendar className="text-2xl" />,
-        title: "Planned Installation",
+        year: "02",
+        date: "Step",
+        icon: <FiCalendar className="text-lg" />,
+        title: "Free Site Visit",
         desc:
-          "Every stage is planned in advance to allow hassle-free execution of interior and renovation work in Dubai.",
+          "Our experts visit your property for measurements, consultation, and project understanding.",
       },
+
       {
-        icon: <FiShield className="text-2xl" />,
-        title: "Warranty",
+        year: "03",
+        date: "Step",
+        icon: <FiShield className="text-lg" />,
+        title: "Free 3D Design",
         desc:
-          "Our home renovation services in Dubai are confidently supported by warranty, ensuring you achieve the desired quality.",
+          "Receive detailed 3D concepts and space planning tailored to your style and budget.",
       },
+
       {
-        icon: <FiDollarSign className="text-2xl" />,
-        title: "Best Price Guarantee",
+        year: "04",
+        date: "Step",
+        icon: <FiDollarSign className="text-lg" />,
+        title: "Quotation",
         desc:
-          "Get best quality villa renovation, apartment renovation, and turnkey renovation services at highly competitive rates.",
+          "Get a transparent quotation with timelines, materials, and project scope breakdown.",
       },
+
       {
-        icon: <FiGift className="text-2xl" />,
-        title: "Free Design Services",
+        year: "05",
+        date: "Step",
+        icon: <FiShield className="text-lg" />,
+        title: "NOC & Approvals",
         desc:
-          "Take advantage of our free design consultation for renovations in Dubai for understanding of what you want before embarking on building.",
+          "We manage authority approvals and NOC documentation for smooth project execution.",
+      },
+
+      {
+        year: "06",
+        date: "Step",
+        icon: <FiGift className="text-lg" />,
+        title: "Execution",
+        desc:
+          "Our skilled team executes the renovation and interior project with premium craftsmanship and timely delivery.",
       },
     ],
     []
   );
 
+  // =========================
+  // STATS
+  // =========================
   const stats = useMemo(
     () => [
       { value: "8+", label: "Trusted Years" },
@@ -149,59 +187,115 @@ export default function BodySection() {
   );
 
   return (
-    <main className="w-full ">
+    <main className="w-full overflow-hidden">
 
       {/* =========================
-          OUR PROMISE (ANIMATED ON SCROLL)
+          PROCESS SECTION
       ========================== */}
-      <Section className="relative overflow-hidden">
+      <Section className="relative bg-[#0f111c] py-14 overflow-hidden">
 
         {/* Background */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 opacity-10">
           <Image
             src="/images/bhd-4.png"
-            alt="Renovation Dubai Background"
+            alt="Background"
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-white/60" />
         </div>
 
-        <Container className="relative py-14">
+        <Container className="relative z-10">
 
-          <h2 className="text-3xl md:text-4xl font-semibold text-black/80">
-            Renovation Dubai & Our Promise
-          </h2>
-
-          <p className="mt-3 text-black/70 max-w-3xl">
-            At Casa Kraft Interiors and Renovations, we deliver expert renovation
-            services in Dubai with precision, planning, and quality execution.
-          </p>
-
-          {/* ANIMATED GRID (UNCHANGED) */}
+          {/* Heading */}
           <motion.div
-            className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <p className="text-[#c89b6d] uppercase tracking-[4px] text-sm mb-3">
+              How We Work
+            </p>
+
+            <h2 className="text-3xl md:text-4xl font-semibold text-white">
+              Our Interior Design Process
+            </h2>
+
+            <p className="text-white/60 max-w-2xl mx-auto mt-4 text-sm md:text-base">
+              From concept to completion, our streamlined renovation process
+              ensures quality execution, transparency, and a stress-free
+              experience.
+            </p>
+          </motion.div>
+
+          {/* PROCESS GRID */}
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
           >
-            {promiseItems.map((it, idx) => (
+            {promiseItems.map((item, index) => (
               <motion.div
-                key={idx}
+                key={index}
                 variants={itemVariants}
-                whileHover={{ y: -10, scale: 1.03 }}
-                className="relative group bg-white/70 backdrop-blur-md p-5 rounded-xl border border-black/10 shadow-sm overflow-hidden"
+                whileHover={{
+                  y: -8,
+                  scale: 1.02,
+                }}
+                transition={{ duration: 0.3 }}
+                className="
+                  group
+                  relative
+                  bg-[#171a27]
+                  border
+                  border-white/5
+                  hover:border-[#c89b6d]/40
+                  p-5
+                  min-h-[170px]
+                  flex
+                  items-center
+                  overflow-hidden
+                  transition-all
+                  duration-500
+                "
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-[#6b3f7a]/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
+                {/* Glow */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#c89b6d]/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
 
-                <div className="mb-3 text-[#6b3f7a]">{it.icon}</div>
+                <div className="relative z-10 flex gap-5">
 
-                <h3 className="font-semibold text-black/80">{it.title}</h3>
+                  {/* STEP NUMBER */}
+                  <div className="min-w-[60px] text-center"> 
+                    <h3 className="text-2xl font-bold text-[#c89b6d]">
+                      {item.year}
+                    </h3>
 
-                <p className="mt-2 text-sm text-black/70 leading-relaxed">
-                  {it.desc}
-                </p>
+                    <div className="w-[1px] h-10 bg-white/20 mx-auto my-2" />
+
+                    <p className="text-[10px] uppercase tracking-[3px] text-white font-medium">
+                      {item.date}
+                    </p>
+                  </div>
+
+                  {/* CONTENT */}
+                  <div>
+                    <div className="mb-3 text-[#c89b6d]">
+                      {item.icon}
+                    </div>
+
+                    <h3 className="text-lg font-semibold text-white mb-2">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-sm text-white/70 leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -210,23 +304,34 @@ export default function BodySection() {
       </Section>
 
       {/* =========================
-          STATS SECTION (ONLY CHANGE HERE)
+          STATS SECTION
       ========================== */}
       <Section className="bg-white">
-        <Container className="py-10">
+        <Container>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
 
             {stats.map((s, i) => (
-              <div key={i}>
-                <p className="text-3xl font-semibold text-[#6b3f7a]">
-                  <CountUp value={s.value} />
-                </p>
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="relative group"
+              >
+                <div className="absolute inset-0 bg-[#6b3f7a]/5 rounded-2xl scale-0 group-hover:scale-100 transition duration-500" />
 
-                <p className="text-sm text-black/60 mt-1">
-                  {s.label}
-                </p>
-              </div>
+                <div className="relative z-10 py-6">
+                  <p className="text-4xl font-semibold text-[#6b3f7a]">
+                    <CountUp value={s.value} />
+                  </p>
+
+                  <p className="text-sm text-black/60 mt-2 uppercase tracking-wide">
+                    {s.label}
+                  </p>
+                </div>
+              </motion.div>
             ))}
 
           </div>

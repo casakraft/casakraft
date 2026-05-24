@@ -22,7 +22,7 @@ const OurAuthorities = () => {
   return (
     <section className="bg-white px-4 py-10 text-center text-black sm:px-8 lg:px-16">
       <div className="mb-8">
-        <h2 className="mt-10 text-sm font-conthrax tracking-widest sm:text-xl">
+        <h2 className="mt-5 text-sm font-conthrax tracking-widest sm:text-xl">
           OUR AUTHORITIES
         </h2>
       </div>

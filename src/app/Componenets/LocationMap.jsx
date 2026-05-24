@@ -1,294 +1,184 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Plus, Minus } from "lucide-react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const SERVICES = [
-  "Bathroom design & Renovation",
-  "Bedroom design",
-  "Cabinetry and hardware design",
-  "Commercial interior design",
-  "Crockery Unit",
-  "Curtains",
-  "Customized Furniture",
-  "Doors & Window",
-  "Flooring",
-  "Full Home Renovation",
-  "Joinery",
-  "Kitchen Renovation",
-  "Landscaping",
-  "Office Renovation",
-  "Painting",
-  "Parquet Flooring",
-  "Swimming Pool",
-  "TV Wall/Multimedia Walls",
-  "Villa Extension/Modification",
-  "Wall Panels",
-  "Wallpapers",
-  "Wardrobe & Cabinets",
-  "Wrapping",
-  "Others",
+gsap.registerPlugin(ScrollTrigger);
+
+const faqs = [
+  {
+    question: "What services do you provide?",
+    answer:
+      "We provide complete interior design, renovation, fit-out, painting, ceiling, flooring, and custom furniture solutions.",
+  },
+  {
+    question: "Do you handle approvals in Dubai?",
+    answer:
+      "Yes, we assist with municipality approvals and permits across Dubai.",
+  },
+  {
+    question: "How long does a project take?",
+    answer:
+      "Most residential projects are completed within a few weeks to a few months.",
+  },
+  {
+    question: "Do you offer custom design solutions?",
+    answer:
+      "Yes, every project is tailored to client needs and budget.",
+  },
 ];
 
-const LocationMap = () => {
-  const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    service: "",
-    otherService: "",
-  });
-
-  const [errorMsg, setErrorMsg] = useState("");
-  const [successMsg, setSuccessMsg] = useState("");
-  const [isSending, setIsSending] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-    setErrorMsg("");
-    setSuccessMsg("");
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setErrorMsg("");
-    setSuccessMsg("");
-
-    // Required fields (email optional)
-    if (
-      !form.firstName.trim() ||
-      !form.phone.trim() ||
-      !form.service.trim() ||
-      (form.service === "Others" && !form.otherService.trim())
-    ) {
-      setErrorMsg("Please fill in all required fields marked with *.");
-      return;
-    }
-
-    const fullName = `${form.firstName} ${form.lastName}`.trim();
-    const chosenService =
-      form.service === "Others" ? form.otherService.trim() : form.service;
-
-    const payload = {
-      name: fullName,
-      email: form.email.trim() || "", // optional
-      phone: form.phone.trim(),
-      subject: `New Lead - ${chosenService}`,
-      message:
-        `Service Required: ${chosenService}\n` +
-        `Client Name: ${fullName}\n` +
-        `Phone: ${form.phone.trim()}\n` +
-        (form.email.trim() ? `Email: ${form.email.trim()}\n` : "") +
-        `\nSubmitted from LocationMap form.`,
-    };
-
-    try {
-      setIsSending(true);
-
-      const res = await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok || !data.ok) {
-        throw new Error(data?.error || "Failed to send. Please try again.");
-      }
-
-      // Optional brief message (user may not see due to redirect)
-      setSuccessMsg("Thanks! Redirecting...");
-
-      // Reset form (optional)
-      setForm({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        service: "",
-        otherService: "",
-      });
-
-      // ✅ Hard redirect to thank-you page (most reliable)
-      window.location.assign("/thank-you");
-      return;
-    } catch (err) {
-      setErrorMsg(err?.message || "Something went wrong while sending.");
-    } finally {
-      setIsSending(false);
-    }
-  };
-
+function FAQItem({ item, isOpen, onClick }) {
   return (
-    <section className="w-full bg-[#f9f9f9] py-0">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-10 px-4 md:px-12 lg:px-20 py-10">
-        {/* Left: FORM */}
-        <div className="w-full lg:w-1/2">
-          <div className="rounded-[28px] bg-[#193c38] text-white p-6 sm:p-8 md:p-10">
-            <h2 className="text-[16px] leading-tight sm:text-[24px] font-semibold tracking-relaxed uppercase">
-              COMMITTED TO SUPERIOR QUALITY & RESULTS.
-            </h2>
+    <div className="border-b border-black/5 pb-3">
+      <button
+        onClick={onClick}
+        className="w-full flex items-center justify-between text-left"
+      >
+        <h3 className="text-[14px] md:text-[16px] font-normal text-[#111]">
+          {item.question}
+        </h3>
 
-            <p className="mt-6 text-md sm:text-xl font-medium opacity-90">
-              We’d love to meet you in person…
-            </p>
+        <div className="text-[#0d2f2c]">
+          {isOpen ? <Minus size={18} /> : <Plus size={18} />}
+        </div>
+      </button>
 
-            <form className="mt-8 space-y-5" onSubmit={handleSubmit} noValidate>
-              {/* Error Message */}
-              {errorMsg && (
-                <p className="text-red-300 text-sm sm:text-base bg-red-900/20 p-3 rounded-lg">
-                  {errorMsg}
-                </p>
-              )}
-
-              {/* Success Message */}
-              {successMsg && (
-                <p className="text-green-200 text-sm sm:text-base bg-green-900/20 p-3 rounded-lg">
-                  {successMsg}
-                </p>
-              )}
-
-              {/* Row 1: Name / Last name */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex flex-col">
-                  <label className="mb-1 text-sm font-medium">
-                    Name <span className="text-red-400">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="Enter your name"
-                    value={form.firstName}
-                    onChange={handleChange}
-                    className="h-12 sm:h-14 rounded-full w-full px-5 bg-white text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-white/40"
-                  />
-                </div>
-
-                <div className="flex flex-col">
-                  <label className="mb-1 text-sm font-medium">Last Name</label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Last name"
-                    value={form.lastName}
-                    onChange={handleChange}
-                    className="h-12 sm:h-14 rounded-full w-full px-5 bg-white text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-white/40"
-                  />
-                </div>
-              </div>
-
-              {/* Row 2: Email / Phone */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex flex-col">
-                  <label className="mb-1 text-sm font-medium">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email (optional)"
-                    value={form.email}
-                    onChange={handleChange}
-                    className="h-12 sm:h-14 rounded-full w-full px-5 bg-white text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-white/40"
-                  />
-                </div>
-
-                <div className="flex flex-col">
-                  <label className="mb-1 text-sm font-medium">
-                    Mobile No <span className="text-red-400">*</span>
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Enter your mobile number"
-                    value={form.phone}
-                    onChange={handleChange}
-                    className="h-12 sm:h-14 rounded-full w-full px-5 bg-white text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-white/40"
-                  />
-                </div>
-              </div>
-
-              {/* Row 3: Service dropdown */}
-              <div className="flex flex-col relative">
-                <label className="mb-1 text-sm font-medium">
-                  Service Required <span className="text-red-400">*</span>
-                </label>
-                <select
-                  name="service"
-                  value={form.service}
-                  onChange={handleChange}
-                  className="h-12 sm:h-14 rounded-full w-full pl-5 pr-12 bg-white text-gray-900 outline-none focus:ring-2 focus:ring-white/40 appearance-none"
-                >
-                  <option value="">Select a service</option>
-                  {SERVICES.map((s) => (
-                    <option key={s} value={s}>
-                      {s}
-                    </option>
-                  ))}
-                </select>
-                <span className="pointer-events-none absolute right-5 top-[42px] text-gray-500">
-                  ▾
-                </span>
-              </div>
-
-              {/* If "Others" chosen */}
-              {form.service === "Others" && (
-                <div className="flex flex-col">
-                  <label className="mb-1 text-sm font-medium">
-                    Please specify <span className="text-red-400">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="otherService"
-                    placeholder="Describe the service required"
-                    value={form.otherService}
-                    onChange={handleChange}
-                    className="h-12 sm:h-14 rounded-full w-full px-5 bg-white text-gray-900 placeholder:text-gray-400 outline-none focus:ring-2 focus:ring-white/40"
-                  />
-                </div>
-              )}
-
-              {/* Submit */}
-              <div className="pt-2">
-                <button
-                  type="submit"
-                  disabled={isSending}
-                  className="h-12 sm:h-14 rounded-full px-10 w-full sm:w-auto border-2 border-white/70 text-white font-medium hover:bg-white/10 transition disabled:opacity-50"
-                >
-                  {isSending ? "Sending..." : "Submit"}
-                </button>
-              </div>
-            </form>
-
-            {/* Contact block */}
-            <div className="mt-8 sm:mt-10">
-              <p className="text-md sm:text-xl opacity-90">For more info call:</p>
-              <a
-                href="tel:+971586023677"
-                className="block text-2xl sm:text-3xl font-extrabold tracking-tight hover:underline underline-offset-4 transition-all"
-              >
-                +971 58 602 3677
-              </a>
-            </div>
+      <div
+        className={`grid transition-all duration-300 ease-in-out ${
+          isOpen
+            ? "grid-rows-[1fr] opacity-100 mt-2"
+            : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="text-white text-[12px] md:text-[13px] leading-5 pr-4 p-3 rounded-md bg-[#123c39]">
+            {item.answer}
           </div>
         </div>
+      </div>
+    </div>
+  );
+}
 
-        {/* Right: MAP */}
-        <div className="w-full lg:w-1/2 h-[420px] md:h-[520px] lg:h-[600px] overflow-hidden rounded-xl">
-          <iframe
-            title="CASAKRAFT Interiors Group Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.1935081425995!2d55.234983899999996!3d25.1629431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f694369e42fff%3A0x7d088a84ce75732a!2sCasa%20Kraft%20Interiors%20and%20Decoration%20LLC!5e0!3m2!1sen!2sae!4v1764753426603!5m2!1sen!2sae"
-            width="100%"
-            height="100%"
-            className="border-0 w-full h-full"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+export default function ContactFaqSection() {
+  const sectionRef = useRef(null);
+  const [openIndex, setOpenIndex] = useState(0);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".fade-up", {
+        opacity: 0,
+        y: 25,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 85%",
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section ref={sectionRef} className="bg-[#f6f6f6] py-6 md:py-10">
+
+      {/* TOP GRID */}
+      <div className="max-w-[1100px] mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+          {/* FAQ */}
+          <div className="fade-up bg-white p-4 md:p-6 shadow-sm">
+            <h2 className="text-[20px] md:text-[26px] font-medium text-[#0d2f2c] mb-5">
+              FAQs
+            </h2>
+
+            <div className="space-y-3">
+              {faqs.map((item, index) => (
+                <FAQItem
+                  key={index}
+                  item={item}
+                  isOpen={openIndex === index}
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* FORM */}
+          <div className="fade-up bg-[#123c39] p-4 md:p-6 text-white">
+            <h2 className="text-[20px] md:text-[28px] font-semibold uppercase">
+              Contact Us
+            </h2>
+
+            <p className="text-white/70 mt-2 text-[12px] md:text-[14px]">
+              Fill the form and we will contact you shortly.
+            </p>
+
+            <form className="mt-4 space-y-3">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                />
+                <input
+                  type="text"
+                  placeholder="Company"
+                  className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                />
+              </div>
+
+              <select className="w-full h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none">
+                <option>Interior Design</option>
+                <option>Renovation</option>
+                <option>Fit-Out</option>
+                <option>Other</option>
+              </select>
+
+              <button
+                type="submit"
+                className="w-full h-[44px] border border-white rounded-lg text-sm hover:bg-white hover:text-[#123c39] transition"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+
+      {/* FULL WIDTH MAP */}
+<div className="w-full mt-10 h-[280px] md:h-[350px] lg:h-[420px]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.193365041701!2d55.232408974836254!3d25.162947933088116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f694369e42fff%3A0x7d088a84ce75732a!2sInterior%20Design%20Company%20Dubai%20-%20Casa%20Kraft%20Interiors!5e0!3m2!1sen!2s!4v1779581674188!5m2!1sen!2s"
+          className="w-full h-full border-0"
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+
     </section>
   );
-};
-
-export default LocationMap;
+}

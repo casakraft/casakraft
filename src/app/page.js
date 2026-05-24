@@ -8,43 +8,68 @@ import OurProjectsSwiper from "./Componenets/OurProjectsSwiper";
 import BodySection from "./Componenets/BodySection";
 import OurServices from "./Componenets/WhatWeDo";
 
-import GetInTouch from "./Componenets/GetinTouch";
+// ✅ NEW IMPORT ADDED
+import Services from "./Componenets/Services";
 
+import Areas from "./Componenets/Areas";
+import GetInTouch from "./Componenets/GetinTouch";
 import Blogs from "./Componenets/Blogs";
 import OurAuthorities from "./Componenets/OurAuthorities";
 import TestimonialsWidget from "./Componenets/Testimonials";
 import LocationMap from "./Componenets/LocationMap";
 import Footer from "./Componenets/Footer";
 
-
-
 export default function Home() {
   return (
-    <>
-<main className="relative flex flex-col min-h-screen bg-[#0b0b0b] text-white">
-          <Navbar className="absolute top-0 z-10 w-screen" />
-        <WhatsAppButton />
-        <CallButton />
-        <HeroSection />
-        <PartnersSwiper />
-        <AboutSection />
-        <OurProjectsSwiper />
-        <BodySection />
-        <OurServices />
-        
-        <GetInTouch />
-       
-        <Blogs />
-        <OurAuthorities />
-        <TestimonialsWidget />
-         <div className="bg-[#f5ede5]">
-          <LocationMap />
-          <Footer />
+    <main className="relative flex flex-col min-h-screen bg-[#f7f7f7] text-white">
 
-         </div>
+      {/* NAV + FLOATING BUTTONS */}
+      <Navbar className="absolute top-0 z-10 w-screen" />
+      <WhatsAppButton />
+      <CallButton />
+
+      {/* HERO */}
+      <HeroSection />
+
+      {/* TRUST / BRANDS */}
+      <PartnersSwiper />
+
+      {/* ABOUT */}
+      <AboutSection />
+
+      {/* PROJECTS */}
+      <OurProjectsSwiper />
+
+      {/* BODY SECTION */}
+      <BodySection />
+
+      {/* SERVICES (EXISTING) */}
+      <OurServices />
+
+      {/* ✅ NEW SERVICES SECTION */}
+      <Services />
+
+      {/* AREAS */}
+      <Areas />
+
+      {/* CTA */}
+      <GetInTouch />
+
+      {/* BLOGS */}
+      <Blogs />
+
+      {/* AUTHORITIES */}
+      <OurAuthorities />
+
+      {/* TESTIMONIALS */}
+      <TestimonialsWidget />
+
+      {/* FOOTER WRAP */}
+      <div className="bg-[#f5ede5]">
+        <LocationMap />
+        <Footer />
+      </div>
 
     </main>
-
-    </>
   );
 }
