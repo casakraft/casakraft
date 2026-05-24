@@ -142,19 +142,19 @@ export default function TestimonialsWidget() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#193c38] py-14 text-black overflow-hidden"
+      className="bg-black py-14 text-black overflow-hidden"
     >
       {/* HEADER */}
       <div className="text-center mb-10 px-4">
-        <p className="text-[#c8a96a] uppercase tracking-[4px] text-xs mb-2">
+        <p className="text-[#4eb5a9] uppercase tracking-[4px] text-xs mb-2">
           Testimonials
         </p>
 
-        <h2 className="text-2xl md:text-4xl text-white font-semibold">
+        <h2 className="text-center text-white font-semibold text-2xl sm:text-3xl md:text-4xl ">
           What Our Clients Say
         </h2>
 
-        <p className="text-white/70 mt-3 text-sm max-w-xl mx-auto">
+        <p className="text-white mt-3 text-sm max-w-xl mx-auto">
           Real feedback from our clients across Dubai luxury projects
         </p>
       </div>

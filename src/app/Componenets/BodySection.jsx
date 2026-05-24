@@ -192,7 +192,7 @@ export default function BodySection() {
       {/* =========================
           PROCESS SECTION
       ========================== */}
-      <Section className="relative bg-[#0f111c] py-14 overflow-hidden">
+      <Section className="relative bg-black py-14 overflow-hidden">
 
         {/* Background */}
         <div className="absolute inset-0 opacity-10">
@@ -214,7 +214,7 @@ export default function BodySection() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <p className="text-[#c89b6d] uppercase tracking-[4px] text-sm mb-3">
+            <p className="text-[#4eb5a9] uppercase tracking-[4px] text-sm mb-3">
               How We Work
             </p>
 
@@ -249,10 +249,10 @@ export default function BodySection() {
                 className="
                   group
                   relative
-                  bg-[#171a27]
+                  bg-[#111]
                   border
-                  border-white/5
-                  hover:border-[#c89b6d]/40
+                  border-white/10
+                  hover:border-[#4eb5a9]/40
                   p-5
                   min-h-[170px]
                   flex
@@ -263,13 +263,13 @@ export default function BodySection() {
                 "
               >
                 {/* Glow */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#c89b6d]/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#4eb5a9]/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
 
                 <div className="relative z-10 flex gap-5">
 
                   {/* STEP NUMBER */}
-                  <div className="min-w-[60px] text-center"> 
-                    <h3 className="text-2xl font-bold text-[#c89b6d]">
+                  <div className="min-w-[60px] text-center">
+                    <h3 className="text-2xl font-bold text-[#4eb5a9]">
                       {item.year}
                     </h3>
 
@@ -282,7 +282,7 @@ export default function BodySection() {
 
                   {/* CONTENT */}
                   <div>
-                    <div className="mb-3 text-[#c89b6d]">
+                    <div className="mb-3 text-[#4eb5a9]">
                       {item.icon}
                     </div>
 
@@ -306,7 +306,7 @@ export default function BodySection() {
       {/* =========================
           STATS SECTION
       ========================== */}
-      <Section className="bg-white">
+      <Section className="bg-black py-10">
         <Container>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -320,17 +320,20 @@ export default function BodySection() {
                 viewport={{ once: true }}
                 className="relative group"
               >
-                <div className="absolute inset-0 bg-[#6b3f7a]/5 rounded-2xl scale-0 group-hover:scale-100 transition duration-500" />
+                <div className="absolute inset-0 bg-white/5 rounded-2xl scale-0 group-hover:scale-100 transition duration-500" />
 
-                <div className="relative z-10 py-6">
-                  <p className="text-4xl font-semibold text-[#6b3f7a]">
+                <div className="relative z-10 py-6 border border-white/10 bg-[#111]">
+
+                  <p className="text-4xl font-semibold text-[#4eb5a9]">
                     <CountUp value={s.value} />
                   </p>
 
-                  <p className="text-sm text-black/60 mt-2 uppercase tracking-wide">
+                  <p className="text-sm text-white/60 mt-2 uppercase tracking-wide">
                     {s.label}
                   </p>
+
                 </div>
+
               </motion.div>
             ))}
 

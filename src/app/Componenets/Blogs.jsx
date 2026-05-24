@@ -62,7 +62,7 @@ const Blogs = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#f7f7f7] py-10 md:py-14 overflow-hidden"
+      className="bg-black py-10 md:py-14 overflow-hidden"
     >
       <div className="max-w-[1250px] mx-auto px-4 md:px-6">
 
@@ -70,22 +70,22 @@ const Blogs = () => {
 
           {/* LEFT */}
           <div className="blog-left">
-            <p className="text-[#0b8f3d] text-[14px] md:text-[16px] font-medium mb-3">
-              From our blog
+            <p className="text-[#4eb5a9] text-[14px] md:text-[16px] font-medium mb-3">
+             FROM OUR BLOG
             </p>
 
-            <h2 className="text-[32px] md:text-[52px] leading-[0.95] font-semibold text-[#222]">
+            <h2 className="text-[32px] md:text-[52px] leading-[0.95] font-semibold text-white">
               Latest News & Updates
             </h2>
 
-            <p className="text-[#777] text-[14px] md:text-[16px] leading-7 mt-5 max-w-[420px]">
+            <p className="text-white text-[14px] md:text-[16px] leading-7 mt-5 max-w-[420px]">
               Explore villa renovation trends, interior ideas, and luxury
               transformation tips across Dubai.
             </p>
 
             <div className="mt-7">
               <Link href="/blogs">
-                <button className="h-[52px] px-6 bg-[#1f4a45] text-white text-[15px] font-semibold hover:bg-[#b6935b] transition-all duration-300 flex items-center gap-2">
+                <button className="h-[52px] px-6 bg-[#1f4a45]  text-white text-[15px] font-semibold hover:bg-[#275f58] transition-all duration-300 flex items-center gap-2">
                   View All
                   <ArrowRight size={18} />
                 </button>
@@ -99,7 +99,7 @@ const Blogs = () => {
             {blogPosts.map((post, index) => (
               <Link href={post.link} key={index} className="group blog-card">
 
-                <article className="bg-white border border-black/5 overflow-hidden hover:shadow-lg transition-all duration-500 h-full">
+                <article className="bg-[#111111] border border-white/10 overflow-hidden hover:border-white transition-all duration-500 h-full">
 
                   {/* IMAGE */}
                   <div className="relative w-full h-[200px] overflow-hidden">
@@ -114,15 +114,15 @@ const Blogs = () => {
                   {/* CONTENT */}
                   <div className="p-5">
 
-                    <p className="text-[#999] text-[14px] mb-3">
+                    <p className="text-white/50 text-[14px] mb-3">
                       {post.date}
                     </p>
 
-                    <h3 className="text-[22px] leading-[1.3] font-semibold text-[#222] group-hover:text-[#0b8f3d] transition-colors duration-300">
+                    <h3 className="text-[22px] leading-[1.3] font-semibold text-white group-hover:text-[#4eb5a9] transition-colors duration-300">
                       {post.title}
                     </h3>
 
-                    <p className="text-[#777] text-[15px] leading-7 mt-4">
+                    <p className="text-white text-[15px] leading-7 mt-4">
                       Expert renovation insights and modern luxury interior ideas.
                     </p>
 

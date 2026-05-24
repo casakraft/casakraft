@@ -107,10 +107,10 @@ const safeSlug = (s) => s.replace(/^\/+/, "");
 
 export default function BlogsSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-black">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}
-        <h1 className="text-center text-[#caa193] font-conthrax tracking-widest text-lg sm:text-xl mb-12">
+        <h1 className="text-center text-[#4eb5a9] font-conthrax tracking-widest text-lg sm:text-xl mb-12">
           OUR BLOGS
         </h1>
 
@@ -122,7 +122,7 @@ export default function BlogsSection() {
               key={post.id}
               className="group"
             >
-              <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col h-full">
+              <div className="bg-white shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col h-full">
                 {/* Blog Image */}
                 <div className="relative w-full h-56">
                   <Image
@@ -137,13 +137,10 @@ export default function BlogsSection() {
 
                 {/* Blog Info */}
                 <div className="p-6 flex flex-col flex-grow">
-                  {/* Blog Tag */}
-                  <span className="bg-[#193c38] text-white text-xs font-semibold px-3 py-1 rounded-full w-fit mb-3">
-                    BLOG
-                  </span>
-
+                
+                  
                   {/* Title */}
-                  <h3 className="text-[#caa193] font-semibold text-lg mb-3 leading-snug group-hover:underline">
+                  <h3 className="text-[#4eb5a9] font-semibold text-lg mb-3 leading-snug group-hover:underline">
                     {splitTitle(post.title)}
                   </h3>
 

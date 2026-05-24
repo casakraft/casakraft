@@ -74,13 +74,13 @@ const AboutSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#f7f7f7] py-10 md:py-14 overflow-hidden"
+      className="relative bg-black py-10 md:py-14 overflow-hidden"
     >
       <div className="container mx-auto px-4 md:px-10 lg:px-14">
 
         {/* TITLE */}
         <div className="mb-8">
-          <h2 className="about-text text-2xl md:text-4xl font-semibold text-black">
+          <h2 className="text-[#367a72] uppercase tracking-[3px] text-xs mb-3">
             About Us
           </h2>
         </div>
@@ -90,22 +90,23 @@ const AboutSection = () => {
 
           {/* LEFT CONTENT */}
           <div className="left-card lg:col-span-5">
-            <div className="bg-white p-6 md:p-8 shadow-sm">
+            <div className="bg-[#111] p-6 md:p-8 border border-white/10">
 
-              <h2 className="about-text text-2xl md:text-3xl font-semibold leading-snug mb-4 text-black">
+              <h2 className="about-text text-2xl md:text-3xl font-semibold leading-snug mb-4 text-white">
                 Interior Design Company Dubai - Casa Kraft Interiors
               </h2>
 
-              <p className="about-text text-gray-600 text-sm md:text-base leading-relaxed mb-6">
+              <p className="about-text text-white-400 text-xs md:text-sm leading-relaxed mb-6">
                 Casa Kraft Interiors and Renovations is a leading renovation company in Dubai specializing in apartment and villa interior design, renovation services, landscape design, and turnkey fit-out solutions.
               </p>
 
-              <p className="about-text text-gray-600 text-sm md:text-base leading-relaxed mb-6">
+              <p className="about-text text-white-400 text-xs md:text-sm leading-relaxed mb-6">
                 As one of the most trusted renovation companies in Dubai, we create elegant, functional, and personalized spaces that reflect modern living. Our expert team delivers high-quality results from concept development to final execution with precision and attention to detail.
               </p>
 
+              {/* ✅ FIXED BUTTON (removed about-text class) */}
               <Link href="/contact-us">
-                <button className="about-text group bg-black hover:bg-[#c68b4e] text-white px-6 py-3 uppercase tracking-widest text-xs flex items-center gap-2 transition">
+                <button className="group bg-[#1f4a45] hover:bg-[#275f58] text-white px-6 py-3 uppercase tracking-widest text-xs flex items-center gap-2 transition">
                   Free Consultation
                   <FiArrowRight className="group-hover:translate-x-1 transition" />
                 </button>

@@ -20,10 +20,11 @@ const logos = [
 
 const OurAuthorities = () => {
   return (
-    <section className="bg-white px-4 py-10 text-center text-black sm:px-8 lg:px-16">
+    <section className="bg-[#f7f7f7] px-4 py-10 text-center text-white sm:px-8 lg:px-16">
+      
       <div className="mb-8">
-        <h2 className="mt-5 text-sm font-conthrax tracking-widest sm:text-xl">
-          OUR AUTHORITIES
+        <h2 className="text-center text-[#4eb5a9] font-semibold text-2xl sm:text-3xl md:text-4xl mb-12">
+         Our Authorities
         </h2>
       </div>
 
@@ -79,7 +80,7 @@ const OurAuthorities = () => {
 
         .our-authorities-swiper .swiper-button-prev,
         .our-authorities-swiper .swiper-button-next {
-          color: #000;
+          color: #4eb5a9;
           width: 40px;
           height: 40px;
         }

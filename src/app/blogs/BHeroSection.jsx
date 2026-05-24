@@ -118,7 +118,7 @@ export default function BHeroSection() {
                 className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/10 flex flex-col justify-end p-5 sm:p-6 md:p-10 text-white">
-                <span className="bg-gradient-to-br from-[#caa193] to-[#a0624d] text-xs px-3 py-1 rounded uppercase font-semibold w-fit">
+                <span className="bg-gradient-to-br from-[#4eb5a9] to-[#a0624d] text-xs px-3 py-1 rounded uppercase font-semibold w-fit">
                   {blog.tag}
                 </span>
                 <h2 className="text-lg sm:text-xl md:text-3xl lg:text-2xl font-conthrax mt-2 sm:mt-3">

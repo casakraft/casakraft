@@ -44,10 +44,10 @@ const Services = () => {
     <section
       ref={sectionRef}
       id="services"
-      className="bg-[#f6f6f6] "
+      className="bg-black"
     >
       {/* TITLE */}
-      <h2 className="text-center text-black font-semibold text-2xl sm:text-3xl md:text-4xl mb-12">
+      <h2 className="text-center text-white font-semibold text-2xl sm:text-3xl md:text-4xl mb-10">
         Our Interior Design Services In Dubai
       </h2>
 
@@ -61,7 +61,7 @@ const Services = () => {
             className="service-card group block"
           >
             {/* CARD */}
-            <div className="relative bg-white border border-black/5 shadow-sm overflow-hidden transition-all duration-500 group-hover:shadow-xl">
+            <div className="relative bg-[#111111] border border-[#4eb5a9]/20 shadow-sm overflow-hidden transition-all duration-500 group-hover:shadow-xl group-hover:border-[#4eb5a9s]/50">
 
               {/* IMAGE */}
               <div className="relative w-full h-52 md:h-60 overflow-hidden">
@@ -73,17 +73,17 @@ const Services = () => {
                 />
 
                 {/* DARK OVERLAY */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
               </div>
 
-              {/* TEXT ON IMAGE (TOP LEFT) */}
+              {/* TEXT ON IMAGE */}
               <div className="absolute bottom-4 left-4 right-4 z-10">
                 <h3 className="text-white font-semibold text-sm md:text-base tracking-wide">
                   {service.title}
                 </h3>
 
-                {/* small underline animation */}
-                <div className="mt-2 w-10 h-[1px] bg-[#c79d63] group-hover:w-16 transition-all duration-500" />
+                {/* UNDERLINE */}
+                <div className="mt-2 w-10 h-[1px] bg-[#4eb5a9] group-hover:w-16 transition-all duration-500" />
               </div>
 
             </div>

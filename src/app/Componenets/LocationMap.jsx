@@ -16,19 +16,38 @@ const faqs = [
   {
     question: "Do you handle approvals in Dubai?",
     answer:
-      "Yes, we assist with municipality approvals and permits across Dubai.",
+      "Yes, we assist with municipality approvals and permits across Dubai including Dubai Municipality, Nakheel, Emaar, Trakhees, and DDA.",
   },
   {
     question: "How long does a project take?",
     answer:
-      "Most residential projects are completed within a few weeks to a few months.",
+      "Most apartment renovations take 4 to 8 weeks. Full villa renovations take 8 to 16 weeks depending on size and scope of work.",
   },
   {
     question: "Do you offer custom design solutions?",
     answer:
-      "Yes, every project is tailored to client needs and budget.",
+      "Yes, every project is tailored to client needs and budget. We offer bespoke interior design and renovation solutions for villas, apartments, penthouses, and offices.",
+  },
+  {
+    question: "How much does villa renovation cost in Dubai?",
+    answer:
+      "Villa renovation in Dubai typically costs between AED 150 to 400 per sqft depending on scope, materials, and community. A full 4-bedroom villa renovation averages AED 300,000 to 800,000.",
   },
 ];
+
+// FAQPage Schema — Google is JSON ko read karta hai
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ question, answer }) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: answer,
+    },
+  })),
+};
 
 function FAQItem({ item, isOpen, onClick }) {
   return (
@@ -86,99 +105,106 @@ export default function ContactFaqSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-[#f6f6f6] py-6 md:py-10">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-      {/* TOP GRID */}
-      <div className="max-w-[1100px] mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <section ref={sectionRef} className="bg-[#111111] py-6 md:py-10">
 
-          {/* FAQ */}
-          <div className="fade-up bg-white p-4 md:p-6 shadow-sm">
-            <h2 className="text-[20px] md:text-[26px] font-medium text-[#0d2f2c] mb-5">
-              FAQs
-            </h2>
+        {/* TOP GRID */}
+        <div className="max-w-[1100px] mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 
-            <div className="space-y-3">
-              {faqs.map((item, index) => (
-                <FAQItem
-                  key={index}
-                  item={item}
-                  isOpen={openIndex === index}
-                  onClick={() =>
-                    setOpenIndex(openIndex === index ? null : index)
-                  }
-                />
-              ))}
+            {/* FAQ */}
+            <div className="fade-up bg-white p-4 md:p-6 shadow-sm">
+              <h2 className="text-[20px] md:text-[26px] font-medium text-[#0d2f2c] mb-5">
+                FAQs
+              </h2>
+
+              <div className="space-y-3">
+                {faqs.map((item, index) => (
+                  <FAQItem
+                    key={index}
+                    item={item}
+                    isOpen={openIndex === index}
+                    onClick={() =>
+                      setOpenIndex(openIndex === index ? null : index)
+                    }
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* FORM */}
+            <div className="fade-up bg-[#123c39] p-4 md:p-6 text-white">
+              <h2 className="text-[20px] md:text-[28px] font-semibold uppercase">
+                Contact Us
+              </h2>
+
+              <p className="text-white/70 mt-2 text-[12px] md:text-[14px]">
+                Fill the form and we will contact you shortly.
+              </p>
+
+              <form className="mt-4 space-y-3">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Company"
+                    className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone"
+                    className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                  />
+                </div>
+
+                <select className="w-full h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none">
+                  <option>Interior Design</option>
+                  <option>Renovation</option>
+                  <option>Fit-Out</option>
+                  <option>Other</option>
+                </select>
+
+                <button
+                  type="submit"
+                  className="w-full h-[44px] border border-white rounded-lg text-sm hover:bg-white hover:text-[#123c39] transition"
+                >
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
-
-          {/* FORM */}
-          <div className="fade-up bg-[#123c39] p-4 md:p-6 text-white">
-            <h2 className="text-[20px] md:text-[28px] font-semibold uppercase">
-              Contact Us
-            </h2>
-
-            <p className="text-white/70 mt-2 text-[12px] md:text-[14px]">
-              Fill the form and we will contact you shortly.
-            </p>
-
-            <form className="mt-4 space-y-3">
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
-                />
-                <input
-                  type="text"
-                  placeholder="Company"
-                  className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
-                />
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone"
-                  className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
-                />
-              </div>
-
-              <select className="w-full h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none">
-                <option>Interior Design</option>
-                <option>Renovation</option>
-                <option>Fit-Out</option>
-                <option>Other</option>
-              </select>
-
-              <button
-                type="submit"
-                className="w-full h-[44px] border border-white rounded-lg text-sm hover:bg-white hover:text-[#123c39] transition"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
         </div>
-      </div>
 
-      {/* FULL WIDTH MAP */}
-<div className="w-full mt-10 h-[280px] md:h-[350px] lg:h-[420px]">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.193365041701!2d55.232408974836254!3d25.162947933088116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f694369e42fff%3A0x7d088a84ce75732a!2sInterior%20Design%20Company%20Dubai%20-%20Casa%20Kraft%20Interiors!5e0!3m2!1sen!2s!4v1779581674188!5m2!1sen!2s"
-          className="w-full h-full border-0"
-          loading="lazy"
-          allowFullScreen
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-      </div>
+        {/* FULL WIDTH MAP */}
+        <div className="w-full mt-10 h-[280px] md:h-[350px] lg:h-[420px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.193365041701!2d55.232408974836254!3d25.162947933088116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f694369e42fff%3A0x7d088a84ce75732a!2sInterior%20Design%20Company%20Dubai%20-%20Casa%20Kraft%20Interiors!5e0!3m2!1sen!2s!4v1779581674188!5m2!1sen!2s"
+            className="w-full h-full border-0"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
 
-    </section>
+      </section>
+    </>
   );
 }

@@ -21,7 +21,7 @@ import Footer from "./Componenets/Footer";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col min-h-screen bg-[#f7f7f7] text-white">
+    <main className="relative flex flex-col min-h-screen bg-black text-white">
 
       {/* NAV + FLOATING BUTTONS */}
       <Navbar className="absolute top-0 z-10 w-screen" />
@@ -65,7 +65,7 @@ export default function Home() {
       <TestimonialsWidget />
 
       {/* FOOTER WRAP */}
-      <div className="bg-[#f5ede5]">
+      <div className="bg-black">
         <LocationMap />
         <Footer />
       </div>

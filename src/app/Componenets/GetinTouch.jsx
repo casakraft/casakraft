@@ -57,20 +57,23 @@ const GetInTouch = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-white border-t border-b border-gray-200">
+    <section
+      ref={sectionRef}
+      className="bg-[#111111] border-t border-b border-white/10"
+    >
 
-
-      
       {/* CTA SECTION */}
       <div
         ref={ctaRef}
-        className="bg-[#e6e6e6] py-10 px-4 text-center"
+        className="bg-[#111111] py-10 px-4 text-center"
       >
         <h2 className="text-[26px] sm:text-[25px] font-bold mb-2">
-          <span className="text-[#c8a56a]">GET IN TOUCH WITH CASA KRAFT</span>
+          <span className="text-white">
+            GET IN TOUCH WITH CASA KRAFT
+          </span>
         </h2>
 
-        <p className="text-black text-base mb-10">
+        <p className="text-white text-base mb-10">
           Luxury Interior Design & Renovation Company in Dubai
         </p>
 
@@ -78,7 +81,7 @@ const GetInTouch = () => {
 
           <Link
             href="/gallery"
-            className="bg-[#67bb74] hover:bg-[#57a464] text-white font-semibold py-3 px-10 rounded-md transition"
+            className="bg-[#1f4a45] hover:bg-[#275f58] text-white font-semibold py-3 px-10 transition"
           >
             See Our Projects
           </Link>
@@ -87,14 +90,14 @@ const GetInTouch = () => {
             href="https://wa.me/971586023677"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#67bb74] hover:bg-[#57a464] text-white font-semibold py-3 px-10 rounded-md transition"
+            className="bg-[#1a1a1a] border border-[#4eb5a9] hover:bg-[#b49a55] hover:text-black text-white font-semibold py-3 px-10 transition"
           >
             WhatsApp Us
           </a>
 
           <a
             href="mailto:info@casakraftinteriors.ae"
-            className="bg-[#b6935b] hover:bg-[#a2814f] text-white font-semibold py-3 px-10 rounded-md transition"
+            className="bg-white hover:bg-[#b49a55] hover:text-black text-black font-semibold py-3 px-10  transition"
           >
             Request Quote
           </a>

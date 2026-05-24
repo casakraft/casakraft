@@ -237,22 +237,22 @@ const items = [
 
 const PProjects = () => {
   return (
-    <section className="w-full bg-[#EDEDED] py-12 sm:py-16 lg:py-20">
+    <section className="w-full bg-black py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
-        <h2 className="uppercase tracking-wide text-3xl sm:text-4xl lg:text-5xl font-semibold text-neutral-600">
+        <h2 className="uppercase tracking-wide text-3xl sm:text-4xl lg:text-5xl font-semibold text-white">
           Casa Kraft Interior Design Projects
         </h2>
 
         {/* Decorative Divider */}
         <div className="mt-6 flex items-center justify-center gap-6">
-          <span className="hidden sm:block h-[2px] w-40 bg-neutral-400/60" />
+          <span className="hidden sm:block h-[2px] w-40 bg-white" />
           <div className="flex items-center gap-3">
-            <span className="inline-block w-5 h-5 rounded-full border-2 border-[#C89A5B] bg-white" />
-            <span className="inline-block w-5 h-5 rounded-full border-2 border-[#C89A5B] bg-white" />
-            <span className="inline-block w-5 h-5 rounded-full border-2 border-[#C89A5B] bg-white" />
+            <span className="inline-block w-5 rounded-full h-5 border-[#C89A5B] bg-white" />
+            <span className="inline-block w-5 rounded-full h-5 border-[#C89A5B] bg-white" />
+            <span className="inline-block w-5 rounded-full h-5  border-[#C89A5B] bg-white" />
           </div>
-          <span className="hidden sm:block h-[2px] w-40 bg-neutral-400/60" />
+          <span className="hidden sm:block h-[2px] w-40 bg-white" />
         </div>
 
         {/* Cards */}
@@ -261,7 +261,7 @@ const PProjects = () => {
             <Link
               key={item.title}
               href={item.href}
-              className="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+              className="group block bg-white  shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
               {/* Image */}
               <div className="relative aspect-[16/9] w-full">

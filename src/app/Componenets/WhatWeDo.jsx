@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#f7f7f7] text-black overflow-hidden py-10 md:py-12"
+      className="bg-black text-white overflow-hidden py-10 md:py-12"
     >
       <div className="container mx-auto px-4 md:px-10 lg:px-14">
 
@@ -81,7 +81,7 @@ const WhyChooseUs = () => {
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/10" />
+            <div className="absolute inset-0 bg-black/20" />
           </div>
 
           {/* RIGHT CONTENT */}
@@ -89,11 +89,11 @@ const WhyChooseUs = () => {
             <div className="max-w-xl w-full">
 
               {/* LABEL */}
-              <p className="uppercase tracking-[4px] text-xs text-gray-500 mb-4">
+              <p className="uppercase tracking-[4px] text-xs text-[#4eb5a9] mb-4">
                 WHY CHOOSE US
               </p>
 
-              {/* HEADING ANIMATION */}
+              {/* HEADING ANIMATION (UNCHANGED) */}
               <AnimatePresence mode="wait">
                 <motion.h2
                   key={activeContent?.heading}
@@ -101,27 +101,27 @@ const WhyChooseUs = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.4 }}
-                  className="text-2xl md:text-3xl font-light mb-5 leading-snug"
+                  className="text-2xl md:text-3xl font-light mb-5 leading-snug text-white"
                 >
                   {activeContent?.heading}
                 </motion.h2>
               </AnimatePresence>
 
               {/* TABS */}
-              <div className="flex gap-5 border-b border-black/10 mb-5">
+              <div className="flex gap-5 border-b border-white mb-5">
                 {tabs.map((tab) => (
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className={`pb-3 text-xs md:text-sm tracking-wide relative transition ${
                       activeTab === tab.id
-                        ? "text-black"
-                        : "text-gray-500 hover:text-black"
+                        ? "text-[#4eb5a9]"
+                        : "text-white hover:text-white"
                     }`}
                   >
                     {tab.title}
                     <span
-                      className={`absolute left-0 bottom-0 h-[2px] bg-black transition-all duration-300 ${
+                      className={`absolute left-0 bottom-0 h-[2px] bg-[#4eb5a9] transition-all duration-300 ${
                         activeTab === tab.id ? "w-full" : "w-0"
                       }`}
                     />
@@ -129,7 +129,7 @@ const WhyChooseUs = () => {
                 ))}
               </div>
 
-              {/* TEXT ANIMATION */}
+              {/* TEXT ANIMATION (ONLY CHANGED HERE) */}
               <AnimatePresence mode="wait">
                 <motion.p
                   key={activeContent?.text}
@@ -137,36 +137,38 @@ const WhyChooseUs = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.4 }}
-                  className="text-gray-600 text-sm md:text-base leading-relaxed mb-5"
+                  className="text-white text-xs md:text-sm leading-relaxed mb-5"
                 >
                   {activeContent?.text}
                 </motion.p>
               </AnimatePresence>
 
               {/* FEATURES */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-700 text-sm mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-white text-xs md:text-sm mb-6">
                 <p>• Design & Build Contract</p>
                 <p>• Sheikh Zayed Showroom</p>
                 <p>• 10-Year Warranty</p>
                 <p>• Free 3D Design</p>
               </div>
 
-             {/* BUTTONS */}
-<div className="flex flex-col sm:flex-row gap-4">
-  
-  <Link href="/gallery">
-    <button className="border border-black px-7 py-3 text-sm tracking-wide font-medium hover:bg-black hover:text-white transition duration-300">
-      See Projects
-    </button>
-  </Link>
+              {/* BUTTONS */}
+              <div className="flex flex-col sm:flex-row gap-4">
 
-  <Link href="/contact-us">
-    <button className="bg-black text-white px-7 py-3 text-sm tracking-wide font-medium hover:bg-gray-800 transition duration-300">
-      Free Consultation
-    </button>
-  </Link>
+                <a
+                  href="/gallery"
+                  className="border border-white px-7 py-3 text-sm hover:bg-white hover:text-black transition text-center"
+                >
+                  See Projects
+                </a>
 
-</div>
+                <a
+                  href="/contact-us"
+                  className="text-white px-7 py-3 text-sm bg-[#1f4a45] hover:bg-[#275f58] transition text-center"
+                >
+                  Free Consultation
+                </a>
+
+              </div>
 
             </div>
           </div>

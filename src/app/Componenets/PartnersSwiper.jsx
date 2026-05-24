@@ -16,7 +16,6 @@ const logos = [
   { id: 10, src: "/images/10.png", alt: "" },
   { id: 11, src: "/images/11.png", alt: "" },
   { id: 12, src: "/images/12.png", alt: "" },
-  
   { id: 14, src: "/images/14.png", alt: "" },
   { id: 15, src: "/images/15.png", alt: "" },
   { id: 15, src: "/images/6.png", alt: "" },
@@ -25,7 +24,7 @@ const logos = [
 
 export default function PartnersSwiper() {
   return (
-    <section className="w-full bg-[#f5f7fa] py-2 md:py-4">
+    <section className="w-full bg-[#f7f7f7] py-2 md:py-4">
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 md:flex-row md:items-center md:gap-6">
         
         {/* Left Heading */}

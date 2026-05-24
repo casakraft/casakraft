@@ -154,21 +154,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Left Arrow */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-5 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white p-3 md:p-4 transition-all duration-300"
-      >
-        <ChevronLeft size={28} />
-      </button>
-
-      {/* Right Arrow */}
-      <button
-        onClick={nextSlide}
-        className="absolute right-5 md:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white p-3 md:p-4 transition-all duration-300"
-      >
-        <ChevronRight size={28} />
-      </button>
+    
 
       {/* Slide Counter */}
       <div className="absolute bottom-8 right-6 md:right-10 z-30 text-white font-conthrax text-sm md:text-lg tracking-[3px]">

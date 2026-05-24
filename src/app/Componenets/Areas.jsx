@@ -44,11 +44,11 @@ const Areas = () => {
     <section
       ref={sectionRef}
       id="areas"
-      className="w-full mt-10 pb-14 px-4 md:px-10 lg:px-14 bg-[#f7f7f7]"
+      className="w-full mt-10 pb-14 px-4 md:px-10 lg:px-14 bg-black"
     >
 
       {/* TITLE */}
-      <h2 className="text-black mb-10  lg md:text-3xl font-bold text-center">
+      <h2 className="text-white mb-10 lg md:text-3xl font-bold text-center">
         Communities we work in Dubai
       </h2>
 
@@ -59,7 +59,7 @@ const Areas = () => {
           <Link
             key={item.id}
             href={item.href}
-            className="area-card group relative overflow-hidden rounded-md shadow-sm"
+            className="area-card group relative overflow-hidden rounded-md border border-white/10"
           >
 
             {/* IMAGE */}
@@ -72,7 +72,7 @@ const Areas = () => {
             />
 
             {/* DARK PREMIUM GRADIENT */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent opacity-100 group-hover:opacity-100 transition duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent opacity-100 group-hover:opacity-100 transition duration-300" />
 
             {/* TEXT */}
             <div className="absolute bottom-3 left-3 text-white">
@@ -80,7 +80,7 @@ const Areas = () => {
                 {item.name}
               </h3>
 
-              <p className="text-[10px] text-white/80 opacity-0 group-hover:opacity-100 transition duration-300">
+              <p className="text-[10px] text-white/70 opacity-0 group-hover:opacity-100 transition duration-300">
                 Interior projects in {item.name}
               </p>
             </div>

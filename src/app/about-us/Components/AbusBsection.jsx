@@ -1,263 +1,559 @@
-import React from "react";
-import { Play, Mail, CheckCircle2 } from "lucide-react";
+"use client";
 
-const gold = "#d4a373";
-const light = "#f7f7f7";
+import React, { useLayoutEffect, useRef } from "react";
+import {
+  ArrowRight,
+  ShieldCheck,
+  Leaf,
+  Sparkles,
+} from "lucide-react";
 
-const DotDivider = ({ className = "" }) => (
-  <div className={`flex items-center gap-2 ${className}`}>
-    <span className="h-[1px] w-16 bg-gray-300" />
-    <div className="flex items-center gap-1">
-      <span className="w-2 h-2 rounded-full bg-gray-400" />
-      <span className="w-2 h-2 rounded-full bg-gray-400" />
-      <span className="w-2 h-2 rounded-full bg-gray-400" />
-    </div>
-    <span className="h-[1px] w-16 bg-gray-300" />
-  </div>
-);
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const SectionTitle = ({ title, className = "" }) => (
-  <div className={`text-center ${className}`}>
-    <h2 className="text-3xl md:text-4xl font-semibold" style={{ color: gold }}>{title}</h2>
-    <DotDivider className="justify-center mt-3" />
-  </div>
-);
+gsap.registerPlugin(ScrollTrigger);
 
-const Card = ({ children, className = "" }) => (
-  <div className={`rounded-2xl bg-white shadow-sm border border-[${gold}]/30 overflow-hidden ${className}`}>{children}</div>
-);
+const services = [
+  {
+    title: "Interior Design",
+    img: "images/modern townhouse interior in Al Furjan Dubai.png",
+  },
+  {
+    title: "Renovation",
+    img: "images/Design, Fit-Out, and Execution Process.png",
+  },
+  {
+    title: "Fit Out",
+    img: "images/wc8.png",
+  },
+];
 
-const PillButton = ({ children, tone = "primary", className = "", ...rest }) => (
-  <button
-    className={`px-6 py-3 rounded-full font-medium inline-flex items-center gap-2 border transition focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-      tone === "primary"
-        ? "bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700"
-        : "bg-amber-50 text-amber-900 border-amber-200 hover:bg-amber-100"
-    } ${className}`}
-    {...rest}
-  >
-    {children}
-  </button>
-);
+const projects = [
+  {
+    title: "Meadows Contemporary Villa",
+    img: "/images/mcv-7.png",
+    link: "/meadows-contemporary-villa",
+  },
+  {
+    title: "Bluewaters Apartment",
+    img: "/images/bluewaters-8.png",
+    link: "/bluewaters-3-bedroom-design",
+  },
+  {
+    title: "Palm Jumeirah Apartment",
+    img: "/images/pja-3.png",
+    link: "/palm-jumeirah-apartment",
+  },
+  {
+    title: "Contemporary Apartment",
+    img: "/images/ca-6.png",
+    link: "/contemporary-2-bedroom-apartment",
+  },
+  {
+    title: "Villa Lantana Interior",
+    img: "/images/vl-2.png",
+    link: "/villa-lantana",
+  },
+  {
+    title: "Arabian Ranches Townhouse",
+    img: "/images/tar-3.png",
+    link: "/townhouse-arabian-ranches-2",
+  },
+];
 
-export default function AbusBsection() {
+export default function AboutUsPage() {
+
+  const pageRef = useRef(null);
+
+  useLayoutEffect(() => {
+
+    const ctx = gsap.context(() => {
+
+      // HERO
+      gsap.from(".hero-anim", {
+        opacity: 0,
+        y: 80,
+        duration: 1.2,
+        ease: "power3.out",
+      });
+
+      // FADE UP
+      gsap.utils.toArray(".fade-up").forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+          },
+          opacity: 0,
+          y: 70,
+          duration: 1,
+          ease: "power3.out",
+        });
+      });
+
+      // LEFT
+      gsap.utils.toArray(".fade-left").forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+          },
+          opacity: 0,
+          x: -80,
+          duration: 1,
+          ease: "power3.out",
+        });
+      });
+
+      // RIGHT
+      gsap.utils.toArray(".fade-right").forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+          },
+          opacity: 0,
+          x: 80,
+          duration: 1,
+          ease: "power3.out",
+        });
+      });
+
+      // ZOOM
+      gsap.utils.toArray(".zoom-in").forEach((el) => {
+        gsap.from(el, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+          },
+          opacity: 0,
+          scale: 0.92,
+          duration: 1,
+          ease: "power3.out",
+        });
+      });
+
+    }, pageRef);
+
+    return () => ctx.revert();
+
+  }, []);
+
   return (
-    <div className="w-full">
-      {/* ABOUT US */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-10">
-          <div>
-            <h1 className="text-3xl md:text-4xl sm:mt-10 font-semibold mb-6" style={{ color: gold }}>About Us - Casa Kraft Interiors</h1>
-            <div className="space-y-5 text-gray-700 leading-relaxed">
-              <p>
-                <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/">Casa Kraft Interiors</a></b> is a premier interior design and renovation company established in the Dubai, UAE. We specialize in manufacturing and delivering high-quality interior renovation products and services at competitive prices across the region.
-              </p>
-              <p>
-                With a team of highly qualified professionals available 24/7, we are dedicated to transforming ordinary spaces into luxury experiences according to our client's preferences.
-              </p>
-              <p>
-                Our expertise covers commercial, residential, institutional, and other architectural interior design and <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/renovation-dubai">renovations services</a></b>, ensuring excellence, innovation, and attention to detail in every project we undertake in Dubai.
-              </p>
+    <div
+      ref={pageRef}
+      className="w-full overflow-hidden bg-black text-white"
+    >
+
+      {/* HERO SECTION */}
+      <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden">
+
+        <img
+          src="/images/our-mission.png"
+          alt="Luxury Interior"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
+        />
+
+        <div className="absolute inset-0 bg-black/70" />
+
+        <div className="relative z-20 w-full hero-anim">
+
+          <div className="max-w-xl ml-[8%] lg:ml-[10%] px-6">
+
+            <span className="mt-10 uppercase tracking-[5px] text-xs text-[#4eb5a9]">
+              Casa Kraft Interiors
+            </span>
+
+            <h1 className="mt-6 text-3xl md:text-5xl font-semibold leading-tight text-white whitespace-nowrap">
+              About Casa Kraft <br /> Interior Design & Renovation
+            </h1>
+
+            <p className="mt-6 text-gray-300 text-sm md:text-base leading-7">
+              We design timeless luxury interiors combining elegance, comfort
+              and functionality for modern living.
+            </p>
+
+            <div className="mt-8 flex gap-4 flex-wrap">
+
+              <a
+                href="/gallery"
+                className="bg-[#1f4a45] hover:bg-[#275f58] transition-all duration-300 px-6 py-3 text-sm text-white"
+              >
+                Explore Projects
+              </a>
+
+              <a
+                href="/contact-us"
+                className="border border-white hover:bg-white hover:text-black transition-all duration-300 px-6 py-3 text-sm text-white"
+              >
+                Contact Us
+              </a>
+
             </div>
+
           </div>
 
-          <div className="relative sm:mt-10">
-            <div className="aspect-video rounded-xl border-4" style={{ borderColor: gold }}>
-              <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center rounded-lg" />
-            </div>
-            <button className="absolute inset-0 m-auto h-16 w-16 rounded-full bg-black/60 text-white grid place-items-center">
-              <Play />
-            </button>
-            <DotDivider className="justify-center mt-6" />
-            <div className="mt-4">
-              <a href="gallery" className="block text-center border rounded-xl px-6 py-4 hover:bg-gray-50">
-                Our Projects
-              </a>
-            </div>
-          </div>
         </div>
+
+      </section>
+
+      {/* ABOUT */}
+      <section className="py-20 bg-[#0b0b0b] fade-up">
+
+        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+          <div className="relative min-h-[420px] fade-left">
+
+            <img
+              src="images/premium-quality-products-services.png"
+              alt="Premium Quality"
+              className="w-[360px] h-[300px] object-cover absolute top-0 left-0 opacity-80"
+            />
+
+            <img
+              src="images/highly-experienced-team.png"
+              alt="Experienced Team"
+              className="w-[420px] h-[320px] object-cover absolute bottom-0 left-10"
+            />
+
+          </div>
+
+          <div className="fade-right">
+
+            <span className="uppercase tracking-[5px] text-xs text-[#4eb5a9]">
+              Our Story
+            </span>
+
+            <h2 className="mt-4 text-3xl md:text-4xl font-semibold">
+              Creative Interior Solutions
+            </h2>
+
+            <p className="mt-6 text-gray-300 text-sm leading-7">
+              Casa Kraft Interiors is a premier interior design and renovation
+              company established in Dubai, UAE. We specialize in manufacturing
+              and delivering high-quality interior renovation products and
+              services at competitive prices across the region.
+            </p>
+
+            <p className="mt-4 text-gray-300 text-sm leading-7">
+              With a team of highly qualified professionals available 24/7, we
+              are dedicated to transforming ordinary spaces into luxury
+              experiences according to our client's preferences.
+            </p>
+
+            <a
+              href="/contact-us"
+              className="inline-flex items-center gap-2 mt-6 text-white px-6 py-3 text-sm bg-[#1f4a45] hover:bg-[#275f58] transition-all duration-300"
+            >
+              Contact Us <ArrowRight size={16} />
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* CORE PRINCIPLES */}
+      <section className="bg-black py-12 border-y border-white/10 fade-up">
+
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="grid md:grid-cols-3 gap-8 zoom-in">
+
+            {/* QUALITY */}
+            <div className="flex items-start gap-4">
+
+              <div className="w-14 h-14 rounded-full border border-[#1f4a45] flex items-center justify-center shrink-0 bg-[#111]">
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.7}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#5f6f52]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75m6 2.25c0 5.523-4.477 10-10 10S1 17.523 1 12 5.477 2 11 2s10 4.477 10 10Z"
+                  />
+                </svg>
+
+              </div>
+
+              <div>
+
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  Premium Quality
+                </h3>
+
+                <p className="text-sm text-gray-400 leading-6">
+                  Crafted with premium materials and exceptional attention to detail
+                  for timeless luxury interiors.
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* SUSTAINABILITY */}
+            <div className="flex items-start gap-4">
+
+              <div className="w-14 h-14 rounded-full border border-[#1f4a45] flex items-center justify-center shrink-0 bg-[#111]">
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.7}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#5f6f52]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3v18m9-9H3"
+                  />
+                </svg>
+
+              </div>
+
+              <div>
+
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  Sustainability
+                </h3>
+
+                <p className="text-sm text-gray-400 leading-6">
+                  Smart material choices and sustainable design solutions built for
+                  modern living.
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* INNOVATION */}
+            <div className="flex items-start gap-4">
+
+              <div className="w-14 h-14 rounded-full border border-[#1f4a45] flex items-center justify-center shrink-0 bg-[#111]">
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.7}
+                  stroke="currentColor"
+                  className="w-6 h-6 text-[#5f6f52]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6l4 2"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+              </div>
+
+              <div>
+
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  Innovation
+                </h3>
+
+                <p className="text-sm text-gray-400 leading-6">
+                  Combining creativity and functionality to create refined,
+                  contemporary interior experiences.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
       {/* SERVICES */}
-      <section className="py-16" style={{ background: light }}>
-        <div className="mx-auto max-w-6xl px-6">
-          <SectionTitle title="Our Interior Design & Renovation Services" />
+      <section className="bg-black py-20 fade-up">
 
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            {[
-              {
-                title: "INTERIOR DESIGN",
-                img: "images/modern townhouse interior in Al Furjan Dubai.png",
-              },
-              {
-                title: "RENOVATION",
-                img: "images/Design, Fit-Out, and Execution Process.png",
-              },
-              {
-                title: "FIT OUT",
-                img: "images/wc8.png",
-              },
-            ].map((c, i) => (
-              <Card key={i}>
-                <div className="border-4" style={{ borderColor: gold }}>
-                  <img src={c.img} alt={c.title} className="h-64 w-full object-cover" />
+        <div className="max-w-6xl mx-auto px-6 text-center">
+
+          <span className="uppercase tracking-[5px] text-xs text-[#4eb5a9]">
+            Our Services
+          </span>
+
+          <h2 className="mt-4 text-3xl md:text-4xl font-semibold">
+            Services We Provide in Dubai
+          </h2>
+
+          <p className="mt-6 text-gray-300 text-sm md:text-base leading-7">
+            We deliver luxury interior solutions with precision, creativity,
+            and unmatched craftsmanship tailored to your lifestyle.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mt-12 zoom-in">
+
+            {services.map((s, i) => (
+              <div
+                key={i}
+                className="group relative h-[340px] overflow-hidden border border-gray-800 bg-[#111]"
+              >
+
+                <img
+                  src={s.img}
+                  alt={s.title}
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 scale-110 group-hover:scale-100 transition-all duration-500"
+                />
+
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-all duration-500" />
+
+                <div className="relative z-10 h-full flex flex-col justify-center items-center text-center p-6">
+
+                  <h3 className="text-2xl font-semibold text-white">
+                    {s.title}
+                  </h3>
+
+                  <p className="text-sm text-gray-300 mt-3 max-w-[260px]">
+                    Explore our {s.title.toLowerCase()} services crafted for
+                    luxury interiors.
+                  </p>
+
+                  <a
+                    href={`/services/${s.title
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                    className="mt-6 inline-flex items-center gap-2 text-sm text-white border border-white px-4 py-2 hover:bg-white hover:text-black transition-all duration-300"
+                  >
+                    Read More <ArrowRight size={16} />
+                  </a>
+
                 </div>
-                <div className="px-6 py-5">
-                  <h3 className="text-2xl font-semibold text-gray-800 text-center">{c.title}</h3>
-                </div>
-              </Card>
+
+              </div>
             ))}
+
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10">
-            <PillButton>
-              <CheckCircle2 className="h-5 w-5" /> Request availability by WhatsApp
-            </PillButton>
-            <PillButton tone="secondary">
-              <Mail className="h-5 w-5" /> Request availability by E-mail
-            </PillButton>
-          </div>
         </div>
+
       </section>
 
-      {/* SPECTACULAR WORKING */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-6xl px-6">
-          <SectionTitle title="Spectacular Working Of Casa Kraft Interiors" />
+      {/* WHY CHOOSE US */}
+      <section className="bg-black text-white py-10 md:py-10 fade-up">
 
-          <div className="mt-10 grid gap-10">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <img className="rounded-xl shadow" src="images/premium-quality-products-services.png" alt="Living room" />
-              <div className="space-y-4 text-gray-700">
-                <h3 className="text-2xl font-semibold" style={{ color: gold }}>Premium Quality Materials</h3>
-                <p>
-                  
-               At <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/renovation-dubai">Casa Kraft interiors & renovation</a></b>, we are here to deliver the best results by combining our expertise with premium materials and services. As a trusted interior renovation company in Dubai, we make sure that our every project shows quality and durability with aesthetics.from the beginning to ending of the project, our fit-out services, interior design Dubai, and renovation services in Dubai are executed with deep attention.
+        <div className="max-w-7xl mx-auto px-6">
 
-                </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+            {/* CONTENT */}
+            <div className="max-w-xl order-2 lg:order-1 fade-left">
+
+              <p className="uppercase tracking-[4px] text-xs text-[#4eb5a9] mb-4">
+                WHY CHOOSE US
+              </p>
+
+              <h2 className="text-3xl md:text-4xl font-semibold mb-5">
+                Premium Interior Design & Build Excellence
+              </h2>
+
+              <p className="text-gray-300 text-xs md:text-sm leading-6 mb-6">
+
+                Casa Kraft Interiors delivers fully managed luxury interior
+                solutions from concept to completion. We combine creativity,
+                precision, and craftsmanship to transform spaces into timeless
+                experiences tailored to your lifestyle.
+
+                <br />
+                <br />
+
+                Casa Kraft Interiors delivers fully managed luxury interior
+                solutions from concept to completion. We combine creativity,
+                precision, and craftsmanship to transform spaces into timeless
+                experiences tailored to your lifestyle.
+
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+
+                <a
+                  href="/gallery"
+                  className="border border-white px-7 py-3 text-sm hover:bg-white hover:text-black transition text-center"
+                >
+                  See Projects
+                </a>
+
+                <a
+                  href="/contact-us"
+                  className="text-white px-7 py-3 text-sm bg-[#1f4a45] hover:bg-[#275f58] transition text-center"
+                >
+                  Free Consultation
+                </a>
+
               </div>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1 space-y-4 text-gray-700">
-                <h3 className="text-2xl font-semibold" style={{ color: gold }}>Customized Services</h3>
-                <p>
-                  Every location or space has its own personality and Casa Kraft is expert in designing any space according to its aesthetics. We provide best customized services in Dubai that perfectly matches with the vision, lifestyle and business needs of our clients. As a client focused <b className="text-[#b49a55]"><a href="https://share.google/dfWrNfpHxqGYPOqDG">interior design and renovation company in Dubai</a></b>, we work with personalized fit-out services that influence our every project.
-                </p>
-              </div>
-              <img className="order-1 md:order-2 rounded-xl shadow" src="images/best-customized-services.png" alt="TV wall" />
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <img className="rounded-xl shadow" src="images/highly-experienced-team.png" alt="Decor" />
-              <div className="space-y-4 text-gray-700">
-                <h3 className="text-2xl font-semibold" style={{ color: gold }}>Highly Experienced Staff</h3>
-                <p>
-                  Our strength lies in our highly experienced staff of designers, project managers, and skilled craftsmen who work with their years of experience in this industry and make our every project as premium as they can.  As a professional renovation company in Dubai, we ensure a smooth execution of the project and complete it with outstanding results. With deep knowledge of<b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/blogs"> interior design Dubai trends</a></b> and technical excellence in fit-out services, our team guarantees quality you can trust.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-   {/* RECENT PROJECTS */}
-<section id="projects" className="py-16" style={{ background: light }}>
-  <div className="mx-auto max-w-6xl px-6">
-    <SectionTitle title="Recent Interior Design & Renovation Projects" />
+            </div>
 
-    <div className="grid md:grid-cols-3 gap-8 mt-12">
-      {[
-        {
-          title: "Meadows Contemporary Villa Design",
-          img: "/images/mcv-7.png",
-          link: "meadows-contemporary-villa"
-        },
-        {
-          title: "Bluewaters 3 Bedroom Apartment",
-          img: "/images/bluewaters-8.png",
-          link: "/bluewaters-3-bedroom-design"
-        },
-        {
-          title: "Palm Jumeriah Apartment",
-          img: "/images/pja-3.png",
-           link: "/palm-jumeirah-apartment"
-        },
-       
-        {
-          title: "Contemporary 2 Bedroom Apartment",
-          img: "/images/ca-6.png",
-           link: "/contemporary-2-bedroom-apartment"
-        },
-         {
-          title: "Villa Latana Interior",
-          img: "/images/vl-2.png",
-           link: "/villa-lantana"
-        },
-        {
-          title: "Townhouse Arabian Ranches",
-         img: "/images/tar-3.png",
-          link: "/townhouse-arabian-ranches-2"
-        },
-      ].map((p, i) => (
-        <a key={i} href={p.link} className="block group">
-          <Card className="transition duration-300 hover:shadow-xl">
-            <div
-              className="border-4 overflow-hidden"
-              style={{ borderColor: gold }}
-            >
+            {/* IMAGE */}
+            <div className="relative h-[300px] md:h-[380px] lg:h-[450px] overflow-hidden order-1 lg:order-2 fade-right">
+
               <img
-                src={p.img}
-                alt={p.title}
-                className="h-56 w-full object-cover group-hover:scale-105 transition duration-300"
+                src="/images/jbr-2.png"
+                alt="Casa Kraft Interior Design"
+                className="w-full h-full object-cover"
               />
+
+              <div className="absolute inset-0 bg-black/10" />
+
             </div>
-            <div className="px-6 py-4 text-center font-medium text-gray-800 group-hover:text-[#d4a373] transition">
-              {p.title}
-            </div>
-          </Card>
-        </a>
-      ))}
-    </div>
 
-    <div className="flex justify-center mt-10">
-      <a
-        href="/gallery"
-        className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900"
-      >
-        <CheckCircle2 className="h-5 w-5" /> See Our Projects
-      </a>
-    </div>
-  </div>
-</section>
-
-      {/* OUR MISSION */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-6xl px-6">
-          <SectionTitle title="Our Mission" />
-
-          <div className="grid md:grid-cols-2 gap-10 items-start mt-10">
-            <div className="space-y-5 text-gray-700 leading-relaxed">
-              <p className="py-10">
-                Casa Kraft Interiors & Renovation Dubai aims at turning <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/gallery">residential and commercial spaces</a></b>  into beautiful spaces that combine functionality and modern trends. Through innovative space planning and modern design ideas, we aim at improving the way people live through high-quality design and execution. The purpose is to set new benchmarks in the design industry of Dubai, UAE through timeless interiors and functional designs. Choose casakraftinteriors.ae for premium results at a competitive price point you won’t get elsewhere.
-
-              </p>
-            </div>
-            <img className="rounded-xl shadow" src="images/our-mission.png"alt="Delivering best quality services" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-start mt-12">
-            <img className="rounded-xl shadow hidden md:block" src="images/best-quality-services.png" alt="Sofa" />
-            <div className="space-y-4 text-gray-700">
-              <h3 className="text-2xl font-semibold" style={{ color: gold }}>Delivering Best Quality Services</h3>
-              <p>
-                We try our best to achieve perfection through accuracy, innovation, and attention to details in all projects we work on. In every stage of a project, from its starting to its completion, we focus on excellence in workmanship, choice of high-quality materials, and efficient project delivery. Each designed space is crafted to reflect durability, elegance, and a refined architectural finish that exceeds client expectations.
-              
-              </p>
-              <p> <b className="text-[#b49a55]"><a href="https://casakraftinteriors.ae/contact-us">Give us a call</a></b>, share your requirements, and our professional team will come to your doorstep ASAP to deliver the best service. 
-              </p>
-            </div>
-          </div>
         </div>
+
       </section>
+
+      {/* CTA */}
+      <section className="relative py-24 text-center fade-up">
+
+        <img
+          src="/images/best-quality-services.png"
+          alt="Best Quality Services"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+
+        <div className="absolute inset-0 bg-black/85" />
+
+        <div className="relative z-10 max-w-3xl mx-auto px-6 zoom-in">
+
+          <h2 className="text-3xl md:text-4xl font-semibold">
+            Elegant Spaces for Better Living
+          </h2>
+
+          <p className="mt-4 text-gray-300 text-sm">
+            Luxury interiors tailored to your lifestyle.
+          </p>
+
+          <a
+            href="/contact-us"
+            className="text-white px-7 py-3 text-sm bg-[#1f4a45] hover:bg-[#275f58] transition text-center inline-block mt-8"
+          >
+            Schedule Consultation
+          </a>
+
+        </div>
+
+      </section>
+
     </div>
   );
 }
