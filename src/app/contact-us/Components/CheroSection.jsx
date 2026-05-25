@@ -6,58 +6,58 @@ import Image from "next/image";
 
 const CheroSection = () => {
   return (
-    <div>
+    <div className="w-full">
 
-      {/* 🔹 NEW HERO SECTION (ADDED ON TOP) */}
-      <div className="relative w-full h-[250px] sm:h-[320px] md:h-[400px] lg:h-[500px] overflow-hidden">
+      {/* CONTACT HERO */}
+      <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden">
+
+        {/* BACKGROUND IMAGE */}
         <Image
-          src="/images/hero-top.jpg" // change if needed
-          alt="Hero Section"
+          src="/images/damac-11.png"
+          alt="Contact Hero"
           fill
-          className="object-cover"
           priority
-        />
-        <div className="absolute inset-0 bg-black/40 z-10" />
-
-        <div className="absolute inset-0 flex items-center justify-center text-center z-20">
-          <h2 className="text-white text-2xl sm:text-3xl md:text-5xl font-penrise">
-            WELCOME
-          </h2>
-        </div>
-      </div>
-
-      {/* 🔹 ORIGINAL SECTION (UNCHANGED) */}
-      <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden">
-        
-        {/* 🔹 Background Image */}
-        <Image
-          src="/images/contact-us.png"
-          alt="Luxury Interior Design Dubai"
-          fill
-          className="object-cover"
-          priority
+          className="object-cover scale-105"
         />
 
-        {/* 🔹 Soft overlay for text readability */}
-        <div className="absolute inset-0 bg-black/30 z-10" />
+        {/* OVERLAY (FIXED VISIBILITY) */}
+        <div className="absolute inset-0 bg-black/50" />
 
-        {/* 🔹 Centered Text Content */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-20">
-          <h1 className="text-lg sm:text-xl md:text-4xl lg:text-5xl font-penrise -tracking-normal">
-            CONTACT US
-          </h1>
+        {/* CONTENT */}
+        <div className="relative z-20 w-full h-full flex items-center">
+
+          <div className="max-w-xl ml-[8%] lg:ml-[10%] px-6 space-y-2">
+
+            {/* LABEL */}
+            <span className="uppercase tracking-[5px] text-xs text-[#4eb5a9]">
+              Get In Touch
+            </span>
+
+           
+            {/* BUTTONS */}
+            <div className="mt-8 flex gap-4 flex-wrap">
+
+              <a
+                href="/projects"
+                className="bg-[#1f4a45] hover:bg-[#275f58] text-white font-medium px-6 py-3 text-sm transition-all duration-300 inline-block"
+              >
+                Our Projects
+              </a>
+
+              <a
+                href="/gallery"
+                className="border border-white hover:bg-white hover:text-black text-white font-medium px-6 py-3 text-sm transition-all duration-300 inline-block"
+              >
+                View Gallery
+              </a>
+
+            </div>
+
+          </div>
+
         </div>
 
-        {/* 🔹 "Our Projects" Button (bottom-left corner) */}
-        <div className="absolute bottom-10 left-10 z-20">
-          <Link
-            href="/projects"
-            className="bg-white/90 text-black text-sm md:text-base px-4 md:px-8 py-3 rounded-md shadow-md hover:bg-[#193c38] hover:text-white transition-all duration-300"
-          >
-            Our Projects
-          </Link>
-        </div>
-      </div>
+      </section>
 
     </div>
   );

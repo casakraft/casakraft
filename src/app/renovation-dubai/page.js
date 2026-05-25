@@ -5,22 +5,26 @@ import VHeroSection from "./Components/VHeroSection";
 import BodySection from "./Components/BodySection";
 import Footer from "../Componenets/Footer";
 
-
 export default function ProjectsPage() {
   return (
-    <main className="relative flex flex-col min-h-screen bg-[#121212] mt-20 sm:mt-30">
-      {/* Sticky Top Navbar */}
-      <Navbar className="absolute top-0 z-10 w-screen" />
+    <main className="relative flex flex-col min-h-screen bg-[#121212]">
+
+      {/* NAVBAR */}
+      <Navbar />
+
+      {/* FLOATING BUTTONS */}
       <WhatsAppButton />
       <CallButton />
+
+      {/* HERO */}
       <VHeroSection />
+
+      {/* BODY */}
       <BodySection />
 
-
-     
-
-      {/* Footer Section */}
+      {/* FOOTER */}
       <Footer />
+
     </main>
   );
 }

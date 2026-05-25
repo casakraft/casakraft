@@ -103,12 +103,13 @@ const HeroSection = () => {
 
               {/* Heading */}
               <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight font-conthrax"              >
-                {slides[current].title}
-              </motion.h1>
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 0.8 }}
+  className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
+>
+  {slides[current].title}
+</motion.h1>
 
               {/* Subtitle */}
               <motion.p

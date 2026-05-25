@@ -4,9 +4,9 @@ import Script from "next/script";
 const GA_MEASUREMENT_ID = "G-WXLLXZ9HRM";
 
 export const metadata = {
-  title: "Home Renovation Company Dubai | Casa Kraft Interiors",
+  title: "Interior Design Company in Dubai - Casa Kraft Interiors",
   description:
-    "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
+    "Best interior design services in Dubai. Residential, commercial & premium fit-out works. Trusted across the UAE. Contact us Today!",
   metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: { canonical: "https://casakraftinteriors.ae/" },
   openGraph: {
