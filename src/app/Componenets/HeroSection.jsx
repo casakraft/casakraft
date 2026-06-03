@@ -13,13 +13,13 @@ import {
 const slides = [
   {
     image: "/images/apartment-interior-design.png",
-    title: "Luxury Apartment Interiors",
+    title: "Interior Design Company in Dubai – Apartments & Villas",
     subtitle:
       "Premium apartment interior design and renovation solutions crafted for modern luxury living in Dubai.",
   },
   {
     image: "/images/aptt3.png",
-    title: "Elegant Living Spaces",
+    title: "Home Renovation Services in Dubai – Luxury Fit-Out Specialists",
     subtitle:
       "Transforming apartments, villas, and interiors with bespoke craftsmanship and timeless aesthetics.",
   },
@@ -102,15 +102,25 @@ const HeroSection = () => {
               </motion.p>
 
               {/* Heading */}
-              <motion.h1
-  initial={{ opacity: 0, y: 40 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.2, duration: 0.8 }}
-  className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
->
-  {slides[current].title}
-</motion.h1>
-
+              {current === 0 ? (
+  <motion.h1
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.2, duration: 0.8 }}
+    className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
+  >
+    {slides[current].title}
+  </motion.h1>
+) : (
+  <motion.h2
+    initial={{ opacity: 0, y: 40 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.2, duration: 0.8 }}
+    className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
+  >
+    {slides[current].title}
+  </motion.h2>
+)}
               {/* Subtitle */}
               <motion.p
                 initial={{ opacity: 0, y: 40 }}

@@ -7,8 +7,17 @@ import dayjs from "dayjs";
 
 // ---- DATA (kept from your current version; slugs normalized) ----
 const blogs = [
+  
   {
-    id: 3,
+    id: 1,
+    slug: "apartment-renovation-cost-dubai",
+    title: "Apartment Renovation Cost in Dubai",
+    image: "/images/luxury Dubai apartment under renovation.png",
+    date: "2025-06-01",
+    tag: "Blog",
+  },
+  {
+    id: 2,
     slug: "villa-renovation-cost-in-dubai",
     title: "Villa Renovation Cost in Dubai 2026",
     image: "/images/Villa Renovation Cost in Dubai.png",
@@ -24,7 +33,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 5,
+    id: 4,
     slug: "your-ultimate-guide-to-villa-and-home-renovation-in-dubai",
     title: "Your Ultimate Guide to Villa and Home Renovation in Dubai",
     image: "/images/Villa and Home Renovation in Dubai.png",
@@ -40,7 +49,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 4,
+    id: 6,
     slug: "kitchen-interior-design-in-dubai",
     title: "Kitchen Interior Design in Dubai",
     image: "/images/technology-in-modern-kitchens-in-dubai.png",
@@ -48,7 +57,7 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 1,
+    id: 7,
     slug: "bedroom-interior-design-trends",
     title: "Bedroom Interior Design Trends In Dubai",
     image: "/images/The Future of Bedroom Interior Design in Dubai.png",
@@ -57,7 +66,7 @@ const blogs = [
   },
 
    {
-    id: 2,
+    id: 8,
     slug: "villa-renovation-company-dubai",
     title: "Villa Renovation Company Dubai",
     image: "/images/villa-renovation-company-in-dubai.png",
@@ -66,7 +75,7 @@ const blogs = [
   },
 
   {
-    id: 2,
+    id: 9,
     slug: "modern-apartment-interior-design",
     title: "Modern Apartment Interior Design Dubai",
     image: "/images/modern-apartment-interior-dubai.png",
@@ -74,20 +83,7 @@ const blogs = [
     tag: "Blog",
   },
 
-   {
-    id: 2,
-    slug: "revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
-    title: "Expert Home & Villa Painting Services in Dubai",
-    image: "/images/Villa Painting Services in Dubai.png",
-    date: "2025-09-23",
-    tag: "Blog",
-  },
-
- 
- 
   
-
-
 ];
 
 // Helper to split title onto two lines (optional)

@@ -11,17 +11,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const blogPosts = [
   {
+    title: "Apartment Renovation Cost in Dubai",
+    date: "01 June, 2026",
+    image: "/images/luxury Dubai apartment under renovation.png",
+    link: "/apartment-renovation-cost-dubai",
+  },
+  {
     title: "Villa Renovation Cost in Dubai 2026",
     date: "15 May, 2026",
     image: "/images/Villa Renovation Cost in Dubai.png",
     link: "/villa-renovation-cost-in-dubai",
   },
-  {
-    title: "Villa Renovation Services in Dubai",
-    date: "30 Apr, 2026",
-    image: "/images/home expert villa renovation services in dubai.png",
-    link: "/transform-your-dream-home-expert-villa-renovation-services-in-dubai",
-  },
+  
 ];
 
 const Blogs = () => {
