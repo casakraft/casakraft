@@ -13,8 +13,17 @@ import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime); 
 
 const blogs = [
+  
   {
-    id: 7,
+    id: 1,
+    slug: "apartment-renovation-cost-dubai",
+    title: "Apartment Renovation Cost in Dubai",
+    image: "/images/luxury Dubai apartment under renovation.png",
+    date: "2026-06-01",
+    tag: "Blog",
+  }, 
+  {
+    id: 2,
     slug: "villa-renovation-cost-in-dubai",
     title: "Villa Renovation Cost in Dubai 2026",
     image: "/images/Villa Renovation Cost in Dubai.png",
@@ -22,7 +31,7 @@ const blogs = [
     tag: "Blog",
   }, 
   {
-    id: 8,
+    id: 3,
     slug: "transform-your-dream-home-expert-villa-renovation-services-in-dubai",
     title: "Villa Renovation Services in Dubai",
     image: "/images/home expert villa renovation services in dubai.png",
@@ -30,24 +39,23 @@ const blogs = [
     tag: "Blog",
   },
  {
-    id: 1,
+    id: 4,
     slug: "your-ultimate-guide-to-villa-and-home-renovation-in-dubai",
     title: "Your Ultimate Guide to Villa and Home Renovation in Dubai",
     image: "/images/Villa and Home Renovation in Dubai.png",
     date: "2026-04-22",
     tag: "Blog",
   },
-
-  {
-    id: 2,
-    slug: "revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
-    title: "Villa Painting Services in Dubai",
-    image: "/images/Villa Painting Services in Dubai.png",
-    date: "2026-04-10",
+ {
+    id: 5,
+    slug: "kitchen-interior-design-in-dubai",
+    title: "Kitchen Interior Design in Dubai",
+    image: "/images/technology-in-modern-kitchens-in-dubai.png",
+    date: "2026-04-01",
     tag: "Blog",
   },
   {
-    id: 3,
+    id: 6,
     slug: "bedroom-interior-design-trends",
     title: "Bedroom Interior Design Trends in Dubai",
     image: "/images/Lighting and Atmosphere in bedroom interior dubai.png",
@@ -55,7 +63,15 @@ const blogs = [
     tag: "Blog",
   },
   {
-    id: 4,
+    id: 7,
+    slug: "villa-renovation-company-dubai",
+    title: " Villa Renovation Company In Dubai",
+    image: "/images/villa-renovation-company-in-dubai.png",
+    date: "2026-02-17",
+    tag: "Blog",
+  },
+  {
+    id: 8,
     slug: "modern-apartment-interior-design",
     title: "Modern Apartment Interior Design",
     image: "/images/modern-family-apartment-interior-design.png",
@@ -64,21 +80,18 @@ const blogs = [
 
   },
   {
-    id: 5,
-    slug: "villa-renovation-company-dubai",
-    title: " Villa Renovation Company In Dubai",
-    image: "/images/villa-renovation-company-in-dubai.png",
-    date: "2026-02-15",
+    id: 9,
+    slug: "revitalize-your-space-expert-home-and-villa-painting-services-in-dubai",
+    title: "Villa Painting Services in Dubai",
+    image: "/images/Villa Painting Services in Dubai.png",
+    date: "2025-09-23",
     tag: "Blog",
   },
-  {
-    id: 6,
-    slug: "kitchen-interior-design-in-dubai",
-    title: "Kitchen Interior Design in Dubai",
-    image: "/images/technology-in-modern-kitchens-in-dubai.png",
-    date: "2026-04-1",
-    tag: "Blog",
-  },
+ 
+  
+  
+  
+  
   
  
  
