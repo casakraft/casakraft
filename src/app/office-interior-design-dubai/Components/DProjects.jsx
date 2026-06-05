@@ -28,7 +28,7 @@ const villaSteps = [
   {
     id: '02',
     title: 'Site Study & Space Planning',
-    desc: 'Efficient architectures and building engineers conduct a comprehensive assessment of your villa after initial consultation. They also make assessment for architectural features, natural light. We create customized space plans.',
+    desc: 'Efficient architectures and building engineers conduct a comprehensive assessment of your office after initial consultation. They also make assessment for architectural features, natural light. We create customized space plans.',
     img: '/images/material high quality.png',
   },
   {
@@ -52,21 +52,21 @@ const villaSteps = [
   {
     id: '06',
     title: 'Final Styling & Handover',
-    desc: 'At the completion and just before delivery, we curated artworks, accessories and interior finishes to bring the decided design into life in your villa. The handover unwrap a space that reflects your vision.',
+    desc: 'At the completion and just before delivery, we curated artworks, accessories and interior finishes to bring the decided design into life in your office. The handover unwrap a space that reflects your vision.',
     img: '/images/best-customized-services.png',
   },
 ];
 
 const faqs = [
   {
-    question: 'How long does a villa interior design project in Dubai usually take?',
+    question: 'How long does a office interior design project in Dubai usually take?',
     answer:
-      'The timeline depends on the villa size, scope and level of customization. On average, a full villa interior design and fit out in Dubai can take anywhere from 3 to 9 months from concept to final handover.',
+      'The timeline depends on the office size, scope and level of customization. On average, a full office interior design and fit out in Dubai can take anywhere from 3 to 9 months from concept to final handover.',
   },
   {
-    question: 'Do you only work on complete villas, or can you design specific rooms?',
+    question: 'Do you only work on complete offices, or can you design specific rooms?',
     answer:
-      'We work on both complete villas and specific spaces such as living rooms, bedrooms, majlis, kitchens or basements. However, we always ensure that every space remains aligned with the overall villa design language.',
+      'We work on both complete offices and specific spaces such as living rooms, bedrooms, majlis, kitchens or basements. However, we always ensure that every space remains aligned with the overall office design language.',
   },
   {
     question: 'Can you work with my existing furniture and decor?',
@@ -74,9 +74,9 @@ const faqs = [
       'Yes, if there are certain pieces you love, we can integrate them into the new design. Our team carefully evaluates what can be reused, refinished or reupholstered while still maintaining a premium overall look.',
   },
   {
-    question: 'What is the typical budget range for villa interior design in Dubai?',
+    question: 'What is the typical budget range for office interior design in Dubai?',
     answer:
-      'Budgets vary based on villa size, finishes and brand preferences. During the initial consultation, we discuss your expectations and provide a realistic budget bracket that matches your lifestyle and the level of luxury you want to achieve.',
+      'Budgets vary based on office size, finishes and brand preferences. During the initial consultation, we discuss your expectations and provide a realistic budget bracket that matches your lifestyle and the level of luxury you want to achieve.',
   },
   {
     question: 'Do you handle approvals and coordination with contractors?',
@@ -87,23 +87,44 @@ const faqs = [
 
 const DProjects = () => {
   return (
-    <section className="px-6 py-10 text-white bg-black">
+    <section className="px-6 py-10 bg-[#f5f5f5]">
       
       {/* Top Content Block */}
-      <div className="lg:max-w-[80%] text-white mx-auto bg-black p-6 sm:p-10 rounded shadow text-center space-y-6 mb-12">
-             <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
-          Why Choose Casa Kraft for Your Villa Interior?
+      <div className="lg:max-w-[80%] mx-auto bg-[#ffffff] p-6 sm:p-10 rounded shadow text-center space-y-6 mb-12">
+        <h2 className="text-sm sm:text-xl md:text-xl tracking-widest font-conthrax">
+          Why Choose <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration </a>for Your office Interior Design in Dubai?
         </h2>
         <div className="space-y-4 text-sm sm:text-base font-play text-left">
         <p>
-          With the credible background and 15+ years of experience from the founders, Casa Kraft Interior design & renovation  has unique position of trust from the homeowners, developers and high profile clients in Dubai, where we have delivered premium and customized villa interiors. Casa Kraft Interior design & renovation built many projects in Dubai Marina, Palm Jumeirah, Emirates Hills, MBR City and in other high end living communities in Dubai. We have built a strong portfolio and reputation for excellence based on creative and consist on time project deliveries.
+          With the credible background and 15+ years of experience from the founders, <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration </a> has unique position of trust from the homeowners, developers and high profile clients in Dubai, where we have delivered premium and customized office interiors.
         </p>
-        <p>Our work process so simple as it starts with a thoughtful conversation about design that enable us to understand your customized needs, lifestyle, vision and expectations from us. This step secures that the concept we built is on the basis of client's thoughts, meaningful and bespoke. Opposite the studio apartments that depends on pre-defined design for all. Casa Kraft Interior design & renovation creates your villa from ground level to up precisely, enables your living space feel as-only-yours but not a copy of standard template.
 
-        R&D department of Casa Kraft Interior design & renovation continuously works to explore latest global trends, fine and premium materials and premium furnishings to develop interior options for clients.<br></br> <br></br>
-        From exclusive designs, developing custom-joinery to integrating smart home solutions, we go beyond the limits to upscale your villa's character and comfort.
-        To start from exclusive design, we are committed to responsible and future-focused practices. Casa Kraft Interior design & renovation a modern interior design studio, where we focus on premium but sustainable materials, excellent project management and seamless workflow to ensure that your villa is not only luxury in living but reflects conscious long term-term value. While choosing Casa Kraft Interior design & renovation, actually you are choosing an efficient team of professionals which is dedicated to crafting elegant living spaces.
-       </p>
+        <p>
+        <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration </a> built many projects in Dubai Marina, Palm Jumeirah, Emirates Hills, MBR City and in other high end living communities in Dubai. We have built a strong portfolio and reputation for excellence based on creative and consist on time project deliveries.
+        </p>
+        <p>Our work process so simple as it starts with a thoughtful conversation about design that enable us to understand your customized needs, lifestyle, vision and expectations from us.
+        </p>
+        <p>This step secures that the concept we built is on the basis of client's thoughts, meaningful and bespoke. Opposite the studio apartments that depends on pre-defined design for all. <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration </a> creates your office from ground level to up precisely, enables your living space feel as-only-yours but not a copy of standard template.<br></br><br></br>
+        R&D department of <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration </a> continuously works to explore latest global trends, fine and premium materials and premium furnishings to develop interior options for clients.<br></br> <br></br>
+        From exclusive designs, developing custom-joinery to integrating smart home solutions, we go beyond the limits to upscale your office's character and comfort.
+        To start from exclusive design, we are committed to responsible and future-focused practices.<br></br><br></br>
+        <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration </a> a modern interior design studio, where we focus on premium but sustainable materials, excellent project management and seamless workflow to ensure that your office is not only luxury in living but reflects conscious long term-term value.<br></br><br></br>
+        While choosing <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration, </a> actually you are choosing an efficient team of professionals which is dedicated to crafting elegant living spaces.
+</p>
   
         </div>
 
@@ -112,12 +133,21 @@ const DProjects = () => {
       {/* Split Row – Text + Top Right Image */}
       <div className="lg:max-w-[80%] mx-auto flex flex-col lg:flex-row items-start gap-6 mb-12">
         <div className="w-full lg:w-2/3 space-y-4">
-              
+          <h2 className="text-sm sm:text-xl md:text-xl tracking-widest font-conthrax">
+          Our Dubai office Projects
+          </h2>
           <p className="text-sm sm:text-base">
-         
-          Casa Kraft Interior Design & Renovation, completed many signature projects in Dubai's high end living communities like Palm Jumeirah, Emirates hills, MBR city and in other premium living communities.One of our villa project is located on the iconic Emirates Hills Dubai, we specially designed this villa for a client who believes in exclusivity and elevated luxury lifestyle. Villa owners approached us with clear brief: Team Casa Kraft Interior design & renovation! develop interiors that is aligned with refined luxury and something elegant. Especially for those who travelled abroad and experienced the world's finest settings. </p>
+           <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration, </a> completed many signature projects in Dubai's high end living communities like Palm Jumeirah, Emirates hills, MBR city and in other premium living communities.</p>
           <p className="text-sm sm:text-base">
-          Every detail of villa projects was boarded to celebrate Dubai's luxury while delivering comfort, craftsmanship, and a sense of perfect home aligned with Dubai's luxury lifestyle.
+          One of our office project is located on the iconic Emirates Hills Dubai, we specially designed this office for a client who believes in exclusivity and elevated luxury lifestyle.</p>
+          <p className="text-sm sm:text-base">
+          office owners approached us with clear brief: Team <a href="https://casakraftinteriors.ae/"
+          className="text-green-600 hover:text-blue-800 ml-1">
+          Casa Kraft Interiors & Decoration! </a> develop interiors that is aligned with refined luxury and something elegant. Especially for those who travelled abroad and experienced the world's finest settings. </p>
+          <p className="text-sm sm:text-base">
+          Every detail of office projects was boarded to celebrate Dubai's luxury while delivering comfort, craftsmanship, and a sense of perfect home aligned with Dubai's luxury lifestyle.
            </p>
         
           
@@ -141,9 +171,7 @@ const DProjects = () => {
           </a>
         </div>
       </div>
-      <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
-          Our Dubai Villa Interior & Renovation Projects
-          </h2>
+
       {/* Gallery Grid with Hover Effects */}
       <div className="lg:max-w-[60%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto mb-10">
         {galleryImages.map(({ src, link, title }, i) => (
@@ -155,7 +183,7 @@ const DProjects = () => {
               height={400}
               className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="absolute inset-0 text-white  bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <p className="text-white text-sm sm:text-base font-conthrax text-center">
                 {title}
               </p>
@@ -193,17 +221,17 @@ const DProjects = () => {
       </div>
 
       {/* 3-Step Process Section – visual (6 steps displayed 3 + 3) */}
-      <div className="text-white  bg-black py-16">
+      <div className="bg-[#ffffff] py-16">
         <div className="max-w-6xl mx-auto text-center px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-conthrax mb-2">
-            3-Step Process For Our Villa Design Services In Dubai
+            3-Step Process For Our office Design Services In Dubai
           </h2>
           <p className="font-play text-sm sm:text-base max-w-2xl mx-auto">
-            We follow a clear and transparent 3-step process to deliver seamless villa interior design services in Dubai.
+            We follow a clear and transparent 3-step process to deliver seamless office interior design services in Dubai.
           </p>
 
           {/* 6 circles → 3 + 3 grid */}
-          <div className=" mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center">
             {villaSteps.map((step) => (
               <div
                 key={step.id}
@@ -217,7 +245,7 @@ const DProjects = () => {
                     fill
                     className="object-cover"
                   />
-                  <div className="text-white absolute inset-0 bg-black/30" />
+                  <div className="absolute inset-0 bg-black/30" />
                   <span className="relative text-3xl sm:text-4xl font-conthrax text-white drop-shadow-lg">
                     {step.id}
                   </span>
@@ -240,20 +268,20 @@ const DProjects = () => {
       </div>
 
       {/* Content Section */}
-      <div className="  max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-center text-3xl font-conthrax py-12">
-          Bespoke Villa Interior Design Dubai, Crafted for Luxury Living
+          Bespoke office Interior Design Dubai, Crafted for Luxury Living
         </h2>
 
         {/* Section 1: Text Left, Image Right */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
           <div className="space-y-6 font-play">
             <h2 className="text-xl font-conthrax mb-4">
-              Our Interior Villa Design Services in Dubai
+              Our Interior office Design Services in Dubai
             </h2>
             <p>
-            Our villa interior design services are tailored to fit your specific needs and preferences. Whether you are designing 
-             new villa or renovating an existing one, our services ensure luxury and comfort at every step.
+            Our office interior design services are tailored to fit your specific needs and preferences. Whether you are designing 
+             new office or renovating an existing one, our services ensure luxury and comfort at every step.
              </p>
             <p>
              Our Featured Services:
@@ -264,7 +292,7 @@ const DProjects = () => {
             </li>
 
              <li>
-             <p className='font-play'> <b>Landscape Design –</b> Luxury villa landscape design service Dubai creating harmony between indoor and outdoor spaces</p>
+             <p className='font-play'> <b>Landscape Design –</b> Luxury office landscape design service Dubai creating harmony between indoor and outdoor spaces</p>
             </li>
 
              <li>
@@ -283,9 +311,9 @@ const DProjects = () => {
             </ul>
             
             <p>
-             We rank among one of the best villa  interior design companies in several areas of Dubai and we have completed our
+             We rank among one of the best office interior design companies in several areas of Dubai and we have completed our
               projects like <b><a href="https://wedointerior.ae/al-manara-luxury-villa"></a>Al Manara luxury Villa</b>, 
-              <b><a href="https://wedointerior.ae/majan-villa-design">Majan Villa Interior Design</a></b> and 
+              <b><a href="https://wedointerior.ae/majan-villa-design">Majan office Interior Design</a></b> and 
               <b><a href="https://wedointerior.ae/district-1-mbr-city-contemporary-villa">District one MBR (Muhammad Bin Rashid) City Villa </a></b>etc
             </p>           
           </div>
@@ -303,12 +331,12 @@ const DProjects = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className=" text-white max-w-4xl mx-auto mt-16 mb-4 bg-black rounded-lg text-white  shadow p-6 sm:p-10">
-        <h2 className="text-white text-center text-2xl sm:text-3xl font-conthrax mb-4 text-white">
-          Villa Interior Design Dubai – FAQs
+      <div className="max-w-4xl mx-auto mt-16 mb-4 bg-black text-white rounded-lg shadow p-6 sm:p-10">
+        <h2 className="text-center text-2xl sm:text-3xl font-conthrax mb-4 text-[#193c38]">
+          office Interior Design Dubai – FAQs
         </h2>
-        <p className="text-white font-play text-sm sm:text-base text-gray-700 mb-6 text-center">
-          Find quick answers to common questions about our villa interior design and fit-out services in Dubai.
+        <p className="font-play text-sm sm:text-base text-gray-700 mb-6 text-center">
+          Find quick answers to common questions about our office interior design and fit-out services in Dubai.
         </p>
 
         <div className="space-y-3">
@@ -318,10 +346,10 @@ const DProjects = () => {
               className="group border-b border-gray-200 py-3"
             >
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <span className="font-play font-semibold text-sm sm:text-base text-white text-left">
+                <span className="font-play font-semibold text-sm sm:text-base text-[#193c38] text-left">
                   {item.question}
                 </span>
-                <span className="ml-3 text-white text-xl transition-transform group-open:rotate-45">
+                <span className="ml-3 text-[#193c38] text-xl transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>

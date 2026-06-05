@@ -9,18 +9,30 @@ const ApId = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
-    <section className="bg-black text-white   px-6 sm:px-10 md:px-16 lg:px-28 xl:px-40 py-10 sm:py-10 font-sans">
+    <section className="bg-[#ffffff] px-6 sm:px-10 md:px-16 lg:px-28 xl:px-40 py-10 sm:py-10 font-sans">
       <div className=" mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
           
           {/* Text Column */}
           <div className="w-full lg:w-1/2 flex flex-col justify-start">
             <h2 className="text-sm sm:text-xl md:text-xl font-bold tracking-widest py-2">
-              Luxury Modern Villa Interior Design Services In Dubai
+              Luxury modern office interior design services in Dubai
             </h2>
               <p className="text-sm sm:text-base leading-7 mb-4">
-              Are you looking for <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/villa-interior-design-dubai">premium villa interior design services in Dubai </a></b>that reflect ease of living and a luxury lifestyle. You are on right spot. Casa Kraft Interior design & renovation, crafts creative originality and upscale your villa from vision to a living reality. <br /><br></br>
-              Our vision showcase contemporary and functional living to create specific spaces that feel you exclusive and personal. Keep reading to unfold that Casa Kraft Interiors, how to craft your Dubai villa into a living reality from your visions and exclusively designed for your personalized lifestyle.
+              Are you looking for
+              <a href="https://casakraftinteriors.ae/"
+              className="text-green-600 hover:text-blue-800 ml-1">
+              premium office interior design services in Dubai </a>
+              that reflect ease of living and a luxury lifestyle. You are on right spot.
+              <br></br>From the founders having 15+ years of experience transforming living spaces into premium livings especially offices in Dubai's most high end communities, 
+              <a href="https://casakraftinteriors.ae/"
+              className="text-green-600 hover:text-blue-800 ml-1">
+              Casa Kraft Interiors & Decoration, </a>crafts creative originality and upscale your office from vision to a living reality.<br></br>
+              Our vision showcase contemporary and modern luxury with functional living to create specific spaces that feel you exclusive, polished and personal.
+              Keep reading to unfold that <a href="https://casakraftinteriors.ae/"
+              className="text-green-600 hover:text-blue-800 ml-1">
+              Casa Kraft Interiors & Decoration, </a> how to craft your Dubai office into a living reality from your visions and exclusively designed for your personalized lifestyle.
+
             </p>
 
             <div className="bg-[#193c38] text-white text-xs sm:text-base font-play rounded px-6 py-4 mt-6 w-fit">
@@ -31,7 +43,7 @@ const ApId = () => {
           {/* Video Column */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-6">
             <h2 className="text-xs sm:text-xl md:text-xl font-bold tracking-widest">
-              Get Best Villa Interior Design & Fit-Out in Dubai
+              Get Best office Interior Design and Fit Out in Dubai
             </h2>
 
             {/* Video */}

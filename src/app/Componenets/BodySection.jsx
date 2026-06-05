@@ -3,6 +3,8 @@
 import React, { useMemo, useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 
 import {
   FiUser,
@@ -117,13 +119,30 @@ export default function BodySection() {
   const promiseItems = useMemo(
     () => [
       {
-        year: "01",
-        date: "Step",
-        icon: <FiUser className="text-lg" />,
-        title: "Inquiry",
-        desc:
-          "Tell us about your renovation, interior design, or fit-out requirements in Dubai.",
-      },
+  year: "01",
+  date: "Step",
+  icon: <FiUser className="text-lg" />,
+  title: "Inquiry",
+  desc: (
+    <>
+      Whether you're planning a{" "}
+      <Link
+        href="https://casakraftinteriors.ae/villa-interior-design-dubai"
+        className="text-[#4eb5a9] hover:underline"
+      >
+        villa interior design
+      </Link>{" "}
+      or an <Link
+        href="https://casakraftinteriors.ae/apartment-interior-design-dubai"
+        className="text-[#4eb5a9] hover:underline"
+      >
+        apartment interior design
+      </Link>{" "} in Dubai, just share your vision with us.
+      Our team listens and understands the lifestyle, preferences, goals, and
+      budget of our clients.
+    </>
+  ),
+},
 
       {
         year: "02",
@@ -131,7 +150,7 @@ export default function BodySection() {
         icon: <FiCalendar className="text-lg" />,
         title: "Free Site Visit",
         desc:
-          "Our experts visit your property for measurements, consultation, and project understanding.",
+          "Our interior designers in Dubai visit your property to provide a detailed consultation, take accurate measurements, and assess the best design solutions for your space.",
       },
 
       {
@@ -140,7 +159,7 @@ export default function BodySection() {
         icon: <FiShield className="text-lg" />,
         title: "Free 3D Design",
         desc:
-          "Receive detailed 3D concepts and space planning tailored to your style and budget.",
+          "We bring life to your space before even a single wall is touched. Our team of Designers create 3D model designs of your space according to your taste. We Give you super realistic preview of your future home interior design in Dubai",
       },
 
       {
@@ -149,7 +168,8 @@ export default function BodySection() {
         icon: <FiDollarSign className="text-lg" />,
         title: "Quotation",
         desc:
-          "Get a transparent quotation with timelines, materials, and project scope breakdown.",
+          "You will receive a fully transparent quotation which contains the details of materials, timelines and the scope of the project. No hidden costs, just honest pricing of your luxury interior design services and renovation services in Dubai.",
+          
       },
 
       {
@@ -158,7 +178,7 @@ export default function BodySection() {
         icon: <FiShield className="text-lg" />,
         title: "NOC & Approvals",
         desc:
-          "We manage authority approvals and NOC documentation for smooth project execution.",
+          "We also manage all the important approvals and NOC documentation across Dubai, including Municipality, Emaar, Nakheel, and Trakhees. So, our clients don't need to be worried about any paper work.",
       },
 
       {
@@ -167,7 +187,7 @@ export default function BodySection() {
         icon: <FiGift className="text-lg" />,
         title: "Execution",
         desc:
-          "Our skilled team executes the renovation and interior project with premium craftsmanship and timely delivery.",
+          "At the final step, our team works according to your design with precision and attention to details. We always deliver spaces on time and to the highest standards of residential interior design in Dubai.",
       },
     ],
     []
@@ -223,9 +243,8 @@ export default function BodySection() {
             </h2>
 
             <p className="text-white/60 max-w-2xl mx-auto mt-4 text-sm md:text-base">
-              From concept to completion, our streamlined renovation process
-              ensures quality execution, transparency, and a stress-free
-              experience.
+              At Casa Kraft Interior design & Renovation, we believe that every project begins with a clear and transparent process. We have aligned our work process in such a way that it ends up bringing a perfect, refined and liveable space.
+
             </p>
           </motion.div>
 

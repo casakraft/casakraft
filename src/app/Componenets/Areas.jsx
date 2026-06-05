@@ -9,14 +9,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const areas = [
-  { id: 1, name: "Palm Jumeirah", href: "/palm-jumeirah", src: "/images/palm-jumeirah.jpg" },
-  { id: 2, name: "Atlantis The Royal", href: "/atlantis-royal", src: "/images/atlantiss.jpg" },
-  { id: 3, name: "Dubai Marina", href: "/dubai-marina", src: "/images/dubai-marina.jpg" },
-  { id: 4, name: "Business Bay", href: "/business-bay", src: "/images/business-bay.jpg" },
-  { id: 5, name: "Downtown Dubai", href: "/downtown-dubai", src: "/images/downtown.jpg" },
-  { id: 6, name: "Damac Hills", href: "/dubai-hills", src: "/images/damac-hills.jpg" },
-  { id: 7, name: "Blue waters Dubai", href: "/jlt", src: "/images/bluewaters-dubai.jpg" },
-  { id: 8, name: "Dubai Creek Harbour", href: "/jvc", src: "/images/dubai-creek.jpg" },
+  { id: 1, name: "Palm Jumeirah", href: "/interior-design-palm-jumeirah", src: "/images/palm-jumeirah.jpg" },
+  { id: 2, name: "Atlantis The Royal", href: "/interior-design-company-royal-atlantis", src: "/images/atlantiss.jpg" },
+  { id: 3, name: "Dubai Marina", href: "/interior-design-dubai-marina", src: "/images/dubai-marina.jpg" },
+  { id: 4, name: "Business Bay", href: "/interior-design-company-business-bay", src: "/images/business-bay.jpg" },
+  { id: 5, name: "Downtown Dubai", href: "/interior-design-downtown-dubai", src: "/images/downtown.jpg" },
+  { id: 6, name: "Damac Hills", href: "/interior-design-company-damac-hills", src: "/images/damac-hills.jpg" },
+  { id: 7, name: "Bluewaters Dubai", href: "/interior-design-bluewaters-dubai", src: "/images/bluewaters-dubai.jpg" },
+  { id: 8, name: "Dubai Creek Harbour", href: "/interior-design-dubai-creek-harbour", src: "/images/dubai-creek.jpg" },
 ];
 
 const Areas = () => {

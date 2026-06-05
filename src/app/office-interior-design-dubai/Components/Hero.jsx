@@ -40,10 +40,10 @@ const Hero = () => {
     One at the land of Dubai
   </p>
 
-  <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-  VILLA INTERIOR DESIGN <span>DUBAI</span>
-  <br />
-</h1>
+  <h1 className="text-xl md:text-3xl lg:text-5xl font-conthrax leading-snug mb-4">
+    OFFICE INTERIOR <br />
+    DESIGN <span className="">DUBAI</span> <br />
+  </h1>
 
   <p className="text-xs md:text-sm font-play mb-6 opacity-90">
     Experience the Perfect Blend of <br />

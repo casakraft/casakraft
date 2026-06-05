@@ -12,21 +12,21 @@ gsap.registerPlugin(ScrollTrigger);
 const tabs = [
   {
     id: "awards",
-    title: "AWARDS",
+    title: "Free 3D Design",
     heading: "Premium Interior Excellence",
-    text: `Casa Kraft delivers complete design and build solutions under one contract, ensuring seamless execution from concept to completion with consistency and premium quality.`,
+    text: `Before starting a project, we provide 3D designs to our clients without any cost which give you a clear and realistic view of your future space. Our interior designers in Dubai ensure every detail is perfected before execution.`,
   },
   {
     id: "concept",
-    title: "CONCEPT",
+    title: "Transparent Quotation",
     heading: "Modern Design Philosophy",
-    text: `Our Sheikh Zayed Road showroom lets clients explore luxury materials and finishes while we blend architectural precision with modern interior styling.`,
+    text: `We don't add any hidden costs. Our interior design services in Dubai come with a detailed clear quotation which covers every aspect of the project.`,
   },
   {
     id: "history",
-    title: "HISTORY",
+    title: "Project Management",
     heading: "Experience & Trust",
-    text: `We provide 10-year warranty and free 3D visualization before execution, ensuring confidence, clarity, and long-term value for every project.`,
+    text: `From the first inquiry to the final handover of your project, our team manages everything including NOC approvals, authority documentation and on-site execution.Choose us for the best interior design and renovation experience in Dubai with one team, one contract, zero stress.`,
   },
 ];
 
@@ -145,9 +145,9 @@ const WhyChooseUs = () => {
 
               {/* FEATURES */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-white text-xs md:text-sm mb-6">
-                <p>• Design & Build Contract</p>
-                <p>• Sheikh Zayed Showroom</p>
-                <p>• 10-Year Warranty</p>
+                <p>• Interior Renovation</p>
+                <p>• Sheikh Zayed Office</p>
+                <p>• Commercial & Residential</p>
                 <p>• Free 3D Design</p>
               </div>
 

@@ -27,9 +27,9 @@ const DesignV = () => {
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
 
   return (
-    <section className="py-5 px-6 bg-black text-white">
-      <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
-       Villa Interior Design Dubai Services We Provide
+    <section className="py-10 px-6 bg-[#f5f5f5]">
+      <h2 className="text-center text-xs sm:text-xl md:text-xl font-bold tracking-widest mb-6 uppercase">
+       Office Interior Design Dubai Services We Provide
       </h2>
 
       {/* Desktop Grid */}
@@ -78,7 +78,7 @@ const DesignV = () => {
       )}
 
    {/* Bottom CTA Section */}
-<div className="w-screen ml-[calc(50%-50vw)] bg-black py-5 text-center space-y-4">
+<div className="w-screen ml-[calc(50%-50vw)] bg-[#f5ede5] py-10 text-center space-y-4">
   <h3 className="text-xs sm:text-xl font-conthrax uppercase">
     Get In Touch With Us
   </h3>
@@ -91,16 +91,16 @@ const DesignV = () => {
       href="https://wa.me/971588075603"
       target="_blank"
       rel="noopener noreferrer"
-      className="px-6 py-3 bg-green-500 text-white font-play text-sm  w-full sm:w-auto text-center"
+      className="px-6 py-3 bg-green-500 text-white font-play text-sm rounded w-full sm:w-auto text-center"
     >
-      Request availability by WhatsApp
+      ✅ Request availability by WhatsApp
     </a>
 
     <a
       href="mailto:info@example.com"
-      className="px-6 py-3 bg-[#1f4a45] hover:bg-[#275f58] text-white font-play text-sm  w-full sm:w-auto text-center"
+      className="px-6 py-3 bg-[#193c38] text-white font-play text-sm rounded w-full sm:w-auto text-center"
     >
-     Request availability by E-mail
+      ✉️ Request availability by E-mail
     </a>
   </div>
 </div>

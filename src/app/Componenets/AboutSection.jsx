@@ -97,11 +97,11 @@ const AboutSection = () => {
               </h2>
 
               <p className="about-text text-white-400 text-xs md:text-sm leading-relaxed mb-6">
-                Casa Kraft Interiors and Renovations is a leading renovation company in Dubai specializing in apartment and villa interior design, renovation services, landscape design, and turnkey fit-out solutions.
+                Every space is an art and a great space is formed with a vision. Casa kraft interior design and renovation is a leading <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/">interior design company in Dubai</a></b> and is devoted to creating beautiful and liveable spaces. From apartments to villas and offices to restaurants, we are among the best interior design companies in Dubai, known for the spaces that speak before even saying a word.
               </p>
 
               <p className="about-text text-white-400 text-xs md:text-sm leading-relaxed mb-6">
-                As one of the most trusted renovation companies in Dubai, we create elegant, functional, and personalized spaces that reflect modern living. Our expert team delivers high-quality results from concept development to final execution with precision and attention to detail.
+               Our team of interior designers in Dubai use their expertise in residential interior design and <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/renovation-dubai">home renovation services</a></b>. They guide every project from sketch to final touches. We have set a standard of our interior design services in different areas across Dubai like Palm Jumeirah, Downtown Dubai, Dubai Marina.
               </p>
 
               {/* ✅ FIXED BUTTON (removed about-text class) */}
@@ -128,7 +128,7 @@ const AboutSection = () => {
           {/* RIGHT IMAGE */}
           <div className="right-image hidden lg:block lg:col-span-3 relative h-[280px] md:h-[360px] overflow-hidden">
             <Image
-              src="/images/bhd-4.png"
+              src="/images/kitchen-design.png"
               alt="Renovation Work"
               fill
               className="object-cover"

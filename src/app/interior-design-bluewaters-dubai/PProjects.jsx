@@ -1,0 +1,414 @@
+"use client";
+
+import Image from "next/image";
+import React from "react";
+import Link from "next/link";
+
+const services = [
+  {
+    title: "Office Interior Design In Bluewaters Dubai",
+    bgImage: "/images/pjv-5.png",
+    link: "/office-interior-design-bluewaters-dubai",
+  },
+  {
+    title: "Apartment Interior Design In Bluewaters Dubai",
+    bgImage: "/images/pjv-1.png",
+    link: "/apartment-interior-design-bluewaters-dubai",
+  },
+  {
+    title: "Penthouse Interior Design Bluewaters Dubai",
+    bgImage: "/images/pjv-4.png",
+    link: "/penthouse-interior-design-bluewaters-dubai",
+  },
+  {
+    title: "Restaurant Interior Design In Bluewaters Dubai",
+    bgImage: "/images/pjv-3.png",
+    link: "/restaurant-interior-design-bluewaters-dubai",
+  },
+
+  {
+    title: "Retail Interior Design In Bluewaters Dubai",
+    bgImage: "/images/pjv-2.png",
+    link: "/retail-interior-design-bluewaters-dubai",
+  },
+
+  
+];
+const businessBayProjects = [
+  {
+    title: " Office Fit-Out",
+    category: "Travel Agency Office - Bluewaters Dubai",
+    image: "/images/meby (6).webp",
+    link: "/bluewaters-dubai-travel-agency",
+  },
+  {
+    title: "Bluewaters Dubai Apartment Interior",
+    category: "Residential Apartment - Bluewaters Dubai",
+    image: "/images/bba (6).jpg",
+    link: "/bluewaters-dubai-apartment",
+  },
+  {
+    title: "Restaurant Interior Design",
+    category: "Restaurant - Bluewaters Dubai",
+    image: "/images/sahelnom (5).webp",
+    link: "/bluewaters-dubai-restaurant",
+  },
+  {
+    title: " Office Interior",
+    category: "Commercial Office - Bluewaters Dubai",
+    image: "/images/startech (2).webp",
+    link: "/bluewaters-dubai-office-fit-out",
+  },
+  
+];
+const AboutSection = () => {
+  return (
+    <section className="bg-[#000000] py-16 sm:py-20">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
+
+        {/* Image + Content Row */}
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          
+
+          <div className="w-full  text-center ">
+            <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+            PROFESSIONAL INTERIOR DESIGN SERVICES IN BLUEWATERS DUBAI
+           </h2>
+            <p className="text-justify text-white text-base sm:text font-play mb-6 leading-relaxed">
+              As a leading <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/interior-design-companies-in-bluewaters-dubai-dubai">interior design company in Bluewaters Dubai</a></b> , we offer services for both commercial 
+              and residential projects. Our services related to office interior design Bluewaters Dubai help 
+              the businesses in designing a modern and productive space. For commercial businesses, our 
+              services of commercial interior design Bluewaters Dubai, such as retail outlets, restaurants, 
+              and hotels, ensure that every project is visually attractive and functional.
+              <br /><br />
+               <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
+                COMPREHENSIVE SOLUTIONS FOR HOMES AND BUSINESSES
+             </h3>
+              For our residential clients, our <b className="text-[#caa193]"
+              ><a href="https://casakraftinteriors.ae/bluewaters-dubai-apartment">apartment interior design Bluewaters Dubai</a></b> services helps in 
+              designing homes that are comfortable, stylish and modern. We combine custom furniture and 
+              luxurious materials to suit the lifestyle of our clients. Our renovation services in 
+              Bluewaters Dubai upgrade or renovate the existing spaces with minimal disturbance.
+              With our creative and technical skills, we are known as one of the best interior fit 
+              out contractors Bluewaters Dubai and <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/fit-out-company-in-bluewaters-dubai-dubai">fit-out company in Bluewaters Dubai Dubai</a></b>, with 
+              projects that reflect quality, style, and attention to detail.
+            </p>
+             
+              <section className="bg-[#000000] py-10">
+              <div className="container mx-auto flex flex-col lg:flex-row items-center px-4 sm:px-8 lg:px-16 gap-10">
+                {/* Left Side - Image */}
+                <div className="w-full lg:w-1/2">
+                 <Image
+                    src="/images/startech (3).webp"
+                    alt="Office Interior Design in Bluewaters Dubai"
+                    width={800}
+                    height={600}
+                    className="w-full h-100 rounded-lg shadow-md"
+                   />
+                  </div>
+
+      
+
+        {/* Right Side - Content */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-[#b98877] text-2xl sm:text-2xl font-conthrax mb-4 leading-tight">
+            Office Interior Design and Fit-Out in Bluewaters Dubai
+
+          </h2>
+
+          <p className="text-white text-sm sm:text-base font-play mb-4">
+            The commercial towers in Bluewaters Dubai have the most splendid offices, startups, and multinational companies in Dubai. Our <b className="text-[#caa193]"
+            ><a href="https://casakraftinteriors.ae/office-interior-design-trends-in-bluewaters-dubai">office interior design Bluewaters Dubai services</a></b> are based on delivering spaces that are functional,motivating and matching with the standard corporate environment in Dubai.
+          </p>
+         <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
+                COMPREHENSIVE SOLUTIONS FOR HOMES AND BUSINESSES
+             </h3>
+          <p className="text-white text-sm sm:text-base mb-4 font-play">
+            We oversee all the details involved in office fit-outs Dubai, such as space planning, furniture, lighting design, and technology. As professional offices fit out contractors in Dubai, we also handle DCD approvals and authority approvals Dubai to ensure that everything goes smoothly. 
+            Other than  Bluewaters Dubai, our <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/office-projects">office interior design projects</a></b> also cover the nearby areas of DIFC and Downtown Dubai, which means that all businesses in the main commercial areas of Dubai get to enjoy our expertise. 
+          </p>
+
+
+          {/* Buttons */}
+       <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+  <Link href="/gallery">
+   <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
+              See Our Projects
+            </button>
+  </Link>
+
+  <Link href="/contact-us">
+    <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
+              Free Consultation
+            </button>
+  </Link>
+</div>
+        </div>
+      </div>
+       {/* Services Section */}
+        <div className="text-center mt-10 mb-12">
+           <h2 className="text-[#b98877] text-2xl font-conthrax mb-4 leading-tight">
+            Our Interior Services in Bluewaters Dubai
+          </h2>
+        </div>
+        
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+  {services.map((service, idx) => (
+    <Link key={idx} href={service.link} className="block group">
+      <div className="relative h-[250px] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
+        
+        <Image
+          src={service.bgImage}
+          alt={service.title}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition" />
+
+        <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 text-white">
+          <h3 className="text-md font-conthrax mb-2">
+            {service.title}
+          </h3>
+          <p className="text-sm text-gray-200 leading-relaxed">
+            {service.description}
+          </p>
+        </div>
+
+      </div>
+    </Link>
+  ))}
+</div>
+      <div className="text-center mt-10">
+         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+            Turnkey Fit-Out and Design & Build Solutions
+          </h2>
+          <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
+          At <b className="text-[#caa193]"
+         ><a href="https://casakraftinteriors.ae/">Casa Kraft Interior design & renovation</a></b>, we offer full-service turnkey fit out Bluewaters Dubai services for our clients who are looking for all in one experience. As a reputable design and build company Dubai, we oversee all aspects of the process, from the first consultation and design concept to the approvals from the authorities Dubai, through to completion and delivery. Our end-to-end process ensures a smooth, efficient, and high-quality experience at all times. Our clients can take advantage of our knowledge in interior design and fit out companies in Dubai.
+
+            </p>
+        </div>
+    </section>
+            
+            <section className="bg-[#000000] py-10">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center px-4 sm:px-8 lg:px-16 gap-10">
+       
+
+      
+
+        {/* Right Side - Content */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-[#b98877] text-2xl sm:text-2xl font-conthrax mb-4 leading-tight">
+            Apartment and Luxury Interior Design in Bluewaters Dubai
+
+          </h2>
+
+          <p className="text-white text-sm sm:text-base font-play mb-4">
+            Bluewaters Dubai is known for its luxury residential properties, and our <b className="text-[#caa193]"
+            ><a href="https://casakraftinteriors.ae/apartment-interior-design-dubai">apartment interior design in Bluewaters Dubai Dubai</a></b> services are designed to provide you with luxurious, comfortable, and contemporary living spaces. We are experts in luxury interior design Dubai and provide homes that are a perfect blend of beauty and functionality</p>
+         <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
+               ELEGANT RESIDENTIAL SPACES TAILORED TO YOUR LIFESTYLE
+             </h3>
+          <p className="text-white text-sm sm:text-base mb-4 font-play">
+           We also undertake projects in other nearby locations like  Executive Towers and the Vision Tower in Bluewaters Dubai. Whether it is a small apartment or a waterfront penthouse, our interior design in Bluewaters Dubai Dubai is a perfect blend of elegance, innovation, and functionality.</p>
+
+
+           {/* Buttons */}
+       <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+  <Link href="/gallery">
+   <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
+              See Our Projects
+            </button>
+  </Link>
+
+  <Link href="/contact-us">
+    <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
+              Free Consultation
+            </button>
+  </Link>
+</div>
+
+        </div>
+         {/* Left Side - Image */}
+        <div className="w-full lg:w-1/2">
+          <Image
+            src="/images/bba.png"
+            alt="Office Interior Design in Bluewaters Dubai"
+            width={800}
+            height={600}
+            className="w-full h-100 rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+      
+      <div className="text-center mt-10">
+         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+            Why Choose Casa Kraft Interior design & renovationin Bluewaters  Dubai
+
+          </h2>
+          <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
+          Choosing the right interior design company in Bluewaters  Dubai is important to ensure that you achieve the  best results. At Casa Kraft Interior design & renovation, we have managed to set ourselves away from the rest because of our commitment to excellence and passion for design. Our professional interior designers in Bluewaters  Dubai have good experience of working in commercial high-rise buildings, ensuring that the work is done in the most efficient manner possible while also adhering to the necessary regulations. Our clients trust us for our clear pricing, organized project management, and creative designs for residential as well as commercial projects.
+          Our experience also includes the neighboring areas of Burlington Tower Dubai, The Prism Tower and Sheikh Zayed Road, making us the go-to choice for clients looking for the best interior design company in Bluewaters  Dubai.
+
+
+            </p>
+        </div>
+    </section>
+          </div>
+        </div>
+         
+        <div className="relative  mb-12 transition-transform duration-500 hover:scale-105">
+                
+                    <div className="block">
+                      <Image
+                        src="/images/primo-sitting.jpg"
+                      alt="Residential Interior Design"
+                      width={1400}
+                      height={600}
+                      className="object-cover w-full h-[200px] sm:h-[330px]"
+                      />
+                      {/* Overlay */}
+                      <div className="absolute inset-y-0 text-start right-0 w-1/2 md:w-1/3 bg-black/70 p-2 sm:p-10 flex flex-col justify-center">
+                        
+                        <h2 className="text-lg text-[#b98877] font-conthrax uppercase">
+                          START YOUR INTERIOR DESIGN PROJECT IN BLUEWATERS DUBAI TODAY
+                        </h2>
+                        <p className="text-[15px]  leading-relaxed text-gray-300 font-play overflow-hidden max-h-30 md:max-h-none transition-all duration-300 ease-in-out">
+                        If you are looking for an experienced Interior Design Company in Bluewaters Dubai, Casa Kraft Interior design & renovation is your best partner. From office interiors and retail outlets to apartments, penthouses, and restaurants, we work with every kind of space. Contact us today to schedule a consultation or site visit and experience expert interior design in Bluewaters Dubai Dubai, transforming your space into a stylish, functional, and high-end environment.
+                        </p>
+                      </div>
+                    </div>
+                  
+                  {/* Vertical Line */}
+                  <div className="hidden md:block absolute top-0 left-1/3 w-[2px] h-full bg-gradient-to-r from-[#caa193] to-[#a0624d" />
+                </div>
+
+                <div className="text-center mb-0">
+         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+           Commercial Interior Design in Bluewaters  Dubai
+          </h2>
+          <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
+          Our < b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/commercial-interior-design-dubai">commercial interior design solutions</a></b> include retail, restaurants, and hospitality. We know that design has a significant impact on customer experience, brand image, and efficiency. From retail fit out Bluewaters  Dubai projects to <b className="text-[#caa193]"
+          ><a href="https://casakraftinteriors.ae/bluewaters-dubai-restaurant">restaurant interior design Bluewaters  Dubai</a></b> , we provide services in design, materials, lighting, and implementation. As a good reputed fit out company in Bluewaters  Dubai, we design interiors that are aesthetic, functional, and match with your brand identity. We have successfully completed our projects in the surrounding regions of Bluewaters  Dubai such as Sheikh Zayed Road and Bay Avenue. Our commercial designs are modern and elegant, making us one of the leading interior fit out companies in Dubai.
+
+         </p>
+        </div>
+        {/* ================= Bluewaters  Dubai PROJECTS SECTION ================= */}
+<section className="bg-[#000000] py-16">
+  <div className="container mx-auto px-4 sm:px-8 lg:px-16">
+
+    {/* Section Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-[#b98877] text-3xl font-conthrax mb-4 leading-tight">
+        Our Projects in Bluewaters Dubai
+      </h2>
+      <p className="text-gray-300 max-w-3xl mx-auto font-play">
+        Discover our completed interior design and fit-out projects in Bluewaters Dubai,
+        including commercial offices, <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/bluewaters-dubai-apartment-design">luxury Bluewaters Dubai apartment designs</a></b>, restaurants, and turnkey solutions.
+      </p>
+    </div>
+
+    {/* Projects Grid */}
+ <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  {businessBayProjects.map((project, index) => (
+    <Link key={index} href={project.link} className="block group">
+      <div className="relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+
+        <div className="relative h-[320px]">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition duration-300" />
+        </div>
+
+        <div className="absolute inset-0 flex flex-col justify-end p-6 z-10 text-white">
+          <h3 className="text-lg font-conthrax mb-1">
+            {project.title}
+          </h3>
+          <p className="text-sm text-gray-300">
+            {project.category}
+          </p>
+        </div>
+
+      </div>
+    </Link>
+  ))}
+</div>
+    {/* Bottom CTA */}
+    <div className="text-center mt-12">
+      <Link href="/gallery">
+        <button className="bg-[#b98877] hover:bg-[#a97463] text-black px-8 py-3 rounded-md font-conthrax transition duration-300">
+          View All Projects
+        </button>
+      </Link>
+    </div>
+
+  </div>
+</section>
+
+{/* ================= END Bluewaters Dubai PROJECTS SECTION ================= */}
+       
+         <div className="text-left mt-10 mb-0">
+         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+           Interior Renovation and Upgrade Services
+          </h2>
+          <p className=" text-left mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
+          Not only Interior Design, we also deliver our premium renovation services. Our team optimizes layouts, integrates smart systems, and upgrades finishes to provide best interior designs that enhance both aesthetics and functionality of your space. We provide full renovation services in Bluewaters Dubai and nearby locations. Our team of experts works on layouts, smart systems, and finishes to provide high-end interior solutions that improve aesthetics and functionality.
+          
+         </p>
+         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+           Local Expertise and Presence in Dubai
+          </h2>
+            <p className=" text-left mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
+              Although Bluewaters Dubai is our main area of providing services, our knowledge and expertise extend throughout Dubai and the UAE. Being one of the best interior design companies in Dubai, we have successfully completed various projects including <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/bluewaters-dubai-travel-agency">travel agency Office</a></b>, Cafe Interiors, Bluewaters Dubai restaurant and an apartment interior in different locations, always providing the best possible outcomes in luxury interior design Dubai, interior design in Dubai, and other upscale regions. <br /> <br />
+              Through our services we make sure that clients from other areas are also able to take advantage of our professional interior design and fit-out solutions. Our status as one of the <b className="text-[#caa193]"
+            ><a href="https://casakraftinteriors.ae/interior-design-companies-in-bluewaters-dubai-dubai">best interior design companies in Bluewaters Dubai</a></b> is reinforced by a portfolio of satisfied clients across Dubai’s premium districts.
+
+            </p>
+        </div>
+          <div className=" text-sm leading-relaxed font-play text-white">
+          
+            <h2 class="text-[#a366b9887752] text-2xl font-conthrax leading-tight py-5">
+             Frequently asked questions (FAQs)
+            </h2>
+            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
+              1-  How long does an office fit-out in Bluewaters Dubai take?
+            </h3>
+            <p>
+            Office fit-outs usually take six to twelve weeks, depending on the size and complexity of the project. Our team takes care of all approvals from DCD and approvals from the authority in Dubai.
+            </p>
+
+            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
+             2-  Do you provide turnkey fit-out services?
+            </h3>
+            <p>
+            Yes, our turnkey fit out services in Bluewaters Dubai include all aspects, from design and approval to completion and delivery to our clients. </p>
+
+            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
+             3- Can you design luxury apartments in Bluewaters Dubai?
+            </h3>
+            <p>
+             Yes, we can. At WEDO, we are experts in apartment interior design in Bluewaters Dubai and luxury residential projects, designing homes that are both beautiful and functional.
+            </p>
+
+            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
+             4- Are you among the best interior design companies in Bluewaters Dubai?
+            </h3>
+            <p>
+             With our experience, quality work, and happy clients, Casa Kraft Interior Design & Renovation is one of the best interior design companies in Bluewaters Dubai.
+            </p>
+
+             
+          </div>
+      </div>
+      
+    </section>
+  );
+};
+
+export default AboutSection;
