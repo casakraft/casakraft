@@ -6,7 +6,8 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-[400px] md:h-[500px] lg:h-[650px] overflow-hidden">
+    <div className="relative w-full h-auto md:h-[500px] lg:h-[650px] overflow-hidden">
+      
       {/* Background Image */}
       <Image
         src="/images/villa-design-dubai.png"
@@ -14,50 +15,103 @@ const Hero = () => {
         width={1920}
         height={1080}
         priority
-        className="object-cover w-full h-full"
+        className="object-cover w-full h-full absolute inset-0"
       />
 
-      {/* DARK GRADIENT OVERLAY */}
-      <div className="absolute inset-0 " />
-{/* TEXT BLOCK */}
-<div
-  className="
-    absolute 
-    bg-gradient-to-r from-black/70 via-black/50 to-transparent 
-    z-20 left-4 md:left-10 top-1/2 -translate-y-1/3 text-white max-w-xl
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40" />
 
-    /* ⭐ NEW — adds spacing inside the overlay */
-    p-4 md:p-6 
+      {/* MAIN WRAPPER */}
+      <div className="relative z-20 flex flex-col lg:flex-row items-center justify-between w-full h-full px-4 md:px-10 lg:px-20 py-10 gap-8">
 
-    /* ⭐ NEW — adds rounded visual softness */
-    rounded-lg
+        {/* LEFT SIDE */}
+        <div className="text-white max-w-xl">
+          <p className="text-sm md:text-lg font-play mb-2 opacity-90">
+            One at the land of Dubai
+          </p>
 
-    /* ⭐ NEW — optional shadow for more premium look */
-    shadow-lg shadow-black/30
-  "
->
-  <p className="text-sm md:text-lg font-play mb-2 opacity-90">
-    One at the land of Dubai
-  </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
+            VILLA INTERIOR DESIGN <span>DUBAI</span>
+          </h1>
 
-  <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-  VILLA INTERIOR DESIGN <span>DUBAI</span>
-  <br />
-</h1>
+          <p className="text-xs md:text-sm font-play mt-4 mb-6 opacity-90">
+            Experience the Perfect Blend of <br />
+            Creativity and Functionality with Us
+          </p>
 
-  <p className="text-xs md:text-sm font-play mb-6 opacity-90">
-    Experience the Perfect Blend of <br />
-    Creativity and Functionality with Us
-  </p>
+          <Link
+            href="/contact-us"
+            className="inline-flex items-center gap-2 bg-[#193c38] text-white px-5 py-3 text-xs md:text-sm font-semibold uppercase rounded-full hover:bg-white hover:text-black transition"
+          >
+            Request a Call Back →
+          </Link>
+        </div>
 
-  <Link
-    href="/contact-us"
-    className="inline-flex items-center gap-2 bg-[#193c38] text-white px-5 py-3 text-xs md:text-sm font-semibold uppercase rounded-full hover:bg-white transition hover:text-black"
-  >
-    Request a Call Back →
-  </Link>
-</div>
+        {/* RIGHT FORM */}
+        <div className="w-full max-w-md bg-white shadow-2xl p-4 md:p-6">
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+            {/* First Name */}
+            <div>
+              <label className="text-xs font-medium">First Name</label>
+              <input
+                type="text"
+                placeholder="First Name"
+                className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+              />
+            </div>
+
+            {/* Last Name */}
+            <div>
+              <label className="text-xs font-medium">Last Name</label>
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+              />
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="text-xs font-medium">Email</label>
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+              />
+            </div>
+
+            {/* Phone */}
+            <div>
+              <label className="text-xs font-medium">Phone</label>
+              <input
+                type="text"
+                placeholder="Phone"
+                className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+              />
+            </div>
+
+          </div>
+
+          {/* Description */}
+          <div className="mt-3">
+            <label className="text-xs font-medium">Description</label>
+            <textarea
+              rows={3}
+              placeholder="Write your message..."
+              className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+            />
+          </div>
+
+          {/* Button */}
+          <button className="w-full mt-4 bg-[#1f4a45] hover:bg-[#275f58] text-white py-2.5 rounded-md font-semibold text-sm transition">
+            Get Started
+          </button>
+
+        </div>
+
+      </div>
     </div>
   );
 };

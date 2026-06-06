@@ -66,7 +66,7 @@ const GetInTouch = () => {
       <div
         ref={ctaRef}
         className="bg-[#111111] py-10 px-4 text-center"
-      >
+       >
         <h2 className="text-[26px] sm:text-[25px] font-bold mb-2">
           <span className="text-white">
             GET IN TOUCH WITH CASA KRAFT
