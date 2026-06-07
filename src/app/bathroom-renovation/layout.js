@@ -1,149 +1,101 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Bathroom Renovation Dubai | Luxury Bathroom Remodel | Casa Kraft",
+  title: "Bathroom Renovation Dubai - Casa Kraft Interiors",
   description:
-    "Transform your bathroom in Dubai with luxury renovation, premium fittings, modern layouts, and expert remodeling by CasaKraft Interiors.",
-
+    "Casa Kraft Interiors offersBathroom Renovation Dubai with bespoke concepts, premium materials, and complete renovation and fit-out solutions.",
+  keywords: [
+    "bathroom interior design Dubai",
+    "luxury bathroom design Dubai",
+    "bathroom renovation Dubai",
+    "bathroom fit out Dubai",
+    "modern bathroom interior Dubai",
+    "Casa Kraft Interiors",
+  ],
+  authors: [{ name: "Casa Kraft Interiors" }],
   metadataBase: new URL("https://casakraftinteriors.ae"),
-
   alternates: {
-    canonical:
-      "https://casakraftinteriors.ae/bathroom-renovation",
+    canonical: "/bathroom-renovation",
   },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      maxSnippet: -1,
-      maxImagePreview: "large",
-      maxVideoPreview: -1,
-    },
-  },
-
-  openGraph: {
-    title:
-      "Bathroom Renovation Dubai | Luxury Bathroom Remodel | Casa Kraft",
-    description:
-      "Upgrade your bathroom in Dubai with premium renovation, elegant finishes, modern layouts, and expert remodeling by CasaKraft Interiors.",
-    url: "https://casakraftinteriors.ae/bathroom-renovation",
-    siteName: "Casa Kraft Interiors",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Bathroom Renovation Dubai | Luxury Bathroom Remodel | Casa Kraft",
-    description:
-      "Upgrade your bathroom in Dubai with premium renovation, elegant finishes, modern layouts, and expert remodeling by CasaKraft Interiors.",
-  },
-
-  authors: [{ name: "CasaKraft Interiors" }],
-  creator: "CasaKraft Interiors",
-  publisher: "CasaKraft Interiors",
 };
 
 export default function RootLayout({ children }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Service",
-        "@id":
-          "https://casakraftinteriors.ae/bathroom-renovation#service",
-        "name": "Bathroom Renovation Dubai",
-        "description":
-          "Luxury bathroom renovation and remodeling services in Dubai, including premium fittings, modern layouts, waterproofing, tiling, and expert finishes.",
-        "provider": {
-          "@type": "Organization",
-          "name": "CasaKraft Interiors",
-          "url": "https://casakraftinteriors.ae/"
-        },
-        "serviceType": "Bathroom Renovation and Remodeling",
-        "areaServed": {
-          "@type": "City",
-          "name": "Dubai"
-        },
-        "url":
-          "https://casakraftinteriors.ae/bathroom-renovation"
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id":
-          "https://casakraftinteriors.ae/bathroom-renovation#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://casakraftinteriors.ae/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Services",
-            "item": "https://casakraftinteriors.ae/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Bathroom Renovation",
-            "item":
-              "https://casakraftinteriors.ae/bathroom-renovation"
-          }
-        ]
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://casakraftinteriors.ae/#organization",
-        "name": "CasaKraft Interiors",
-        "url": "https://casakraftinteriors.ae/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://casakraftinteriors.ae/images/logo.svg"
-        }
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://casakraftinteriors.ae/#localbusiness",
-        "name": "CasaKraft Interiors",
-        "url": "https://casakraftinteriors.ae/",
-        "telephone": "+971586023677",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress":
-            "The Curve Building, Showroom G11, Sheikh Zayed Service Road",
-          "addressLocality": "Dubai",
-          "addressCountry": "AE"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Dubai"
-        }
-      }
-    ]
-  };
-
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="keywords"
-          content="bathroom renovation Dubai, bathroom remodeling Dubai, luxury bathroom renovation Dubai, bathroom fit out Dubai, bathroom interior design Dubai, Casa Kraft Interiors"
-        />
-
+      <body>
+        {/* Service Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schema),
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "bathroom Interior Design Dubai",
+              description:
+                "Luxury bathroom interior design, renovation, and fit-out services in Dubai by Casa Kraft Interiors.",
+              provider: {
+                "@type": "Organization",
+                name: "Casa Kraft Interiors",
+                url: "https://casakraftinteriors.ae/",
+              },
+              areaServed: {
+                "@type": "Place",
+                name: "Dubai, UAE",
+              },
+              serviceType: "Bathroom Interior Design and Fit Out",
+              url: "https://casakraftinteriors.ae/ba-interior-design-dubai",
+            }),
           }}
         />
-      </head>
-      <body>{children}</body>
+
+        {/* WebPage Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "bathroom Interior Design Dubai",
+              url: "https://casakraftinteriors.ae/bathroom-renovation",
+              description:
+                "Get luxury bathroom interior design services in Dubai with expert renovation and fit-out solutions by Casa Kraft Interiors.",
+            }),
+          }}
+        />
+
+        {/* Breadcrumb Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://casakraftinteriors.ae/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Services",
+                  item: "https://casakraftinteriors.ae/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Villa Interior Design Dubai",
+                  item: "https://casakraftinteriors.ae/bathroom-renovation",
+                },
+              ],
+            }),
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }
