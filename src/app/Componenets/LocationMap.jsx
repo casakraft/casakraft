@@ -35,7 +35,6 @@ const faqs = [
   },
 ];
 
-// FAQPage Schema — Google is JSON ko read karta hai
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -86,6 +85,17 @@ export default function ContactFaqSection() {
   const sectionRef = useRef(null);
   const [openIndex, setOpenIndex] = useState(0);
 
+  const [formData, setFormData] = useState({
+    fullName: "",
+    company: "",
+    email: "",
+    phone: "",
+    service: "Interior Design",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(".fade-up", {
@@ -104,6 +114,62 @@ export default function ContactFaqSection() {
     return () => ctx.revert();
   }, []);
 
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+    setStatus("");
+
+    try {
+      const payload = {
+        name: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        subject: `Contact Form Enquiry - ${formData.service}`,
+        message:
+          `Service: ${formData.service}\n` +
+          `Company: ${formData.company || "Not provided"}\n\n` +
+          `Message:\nNew enquiry from contact FAQ section.`,
+      };
+
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.ok) {
+        setStatus("Message sent successfully.");
+
+        setFormData({
+          fullName: "",
+          company: "",
+          email: "",
+          phone: "",
+          service: "Interior Design",
+        });
+      } else {
+        setStatus(data.error || "Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Contact form error:", error);
+      setStatus("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <script
@@ -112,12 +178,8 @@ export default function ContactFaqSection() {
       />
 
       <section ref={sectionRef} className="bg-[#111111] py-6 md:py-10">
-
-        {/* TOP GRID */}
         <div className="max-w-[1100px] mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-
-            {/* FAQ */}
             <div className="fade-up bg-white p-4 md:p-6 shadow-sm">
               <h2 className="text-[20px] md:text-[26px] font-medium text-[#0d2f2c] mb-5">
                 FAQs
@@ -137,7 +199,6 @@ export default function ContactFaqSection() {
               </div>
             </div>
 
-            {/* FORM */}
             <div className="fade-up bg-[#123c39] p-4 md:p-6 text-white">
               <h2 className="text-[20px] md:text-[28px] font-semibold uppercase">
                 Contact Us
@@ -147,16 +208,23 @@ export default function ContactFaqSection() {
                 Fill the form and we will contact you shortly.
               </p>
 
-              <form className="mt-4 space-y-3">
-
+              <form onSubmit={handleSubmit} className="mt-4 space-y-3">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <input
                     type="text"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    required
                     placeholder="Full Name"
                     className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
                   />
+
                   <input
                     type="text"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
                     placeholder="Company"
                     className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
                   />
@@ -165,17 +233,31 @@ export default function ContactFaqSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     placeholder="Email"
                     className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
                   />
+
                   <input
                     type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
                     placeholder="Phone"
                     className="h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
                   />
                 </div>
 
-                <select className="w-full h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none">
+                <select
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  className="w-full h-[42px] rounded-lg px-3 text-sm bg-white text-black outline-none"
+                >
                   <option>Interior Design</option>
                   <option>Renovation</option>
                   <option>Fit-Out</option>
@@ -184,16 +266,28 @@ export default function ContactFaqSection() {
 
                 <button
                   type="submit"
-                  className="w-full h-[44px] border border-white rounded-lg text-sm hover:bg-white hover:text-[#123c39] transition"
+                  disabled={loading}
+                  className="w-full h-[44px] border border-white rounded-lg text-sm hover:bg-white hover:text-[#123c39] transition disabled:opacity-70"
                 >
-                  Submit
+                  {loading ? "Sending..." : "Submit"}
                 </button>
+
+                {status && (
+                  <p
+                    className={`text-center text-sm ${
+                      status.includes("success")
+                        ? "text-green-300"
+                        : "text-red-300"
+                    }`}
+                  >
+                    {status}
+                  </p>
+                )}
               </form>
             </div>
           </div>
         </div>
 
-        {/* FULL WIDTH MAP */}
         <div className="w-full mt-10 h-[280px] md:h-[350px] lg:h-[420px]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.193365041701!2d55.232408974836254!3d25.162947933088116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f694369e42fff%3A0x7d088a84ce75732a!2sInterior%20Design%20Company%20Dubai%20-%20Casa%20Kraft%20Interiors!5e0!3m2!1sen!2s!4v1779581674188!5m2!1sen!2s"
@@ -203,7 +297,6 @@ export default function ContactFaqSection() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-
       </section>
     </>
   );
