@@ -1,42 +1,95 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    description: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+    setStatus("");
+
+    try {
+      const payload = {
+        name: `${formData.firstName} ${formData.lastName}`.trim(),
+        email: formData.email,
+        phone: formData.phone,
+        subject: "Kitchen Renovation Dubai Enquiry",
+        message: formData.description,
+      };
+
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.ok) {
+        setStatus("Message sent successfully.");
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          description: "",
+        });
+      } else {
+        setStatus(data.error || "Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Form submit error:", error);
+      setStatus("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className="relative w-full h-auto md:h-[500px] lg:h-[650px] overflow-hidden">
-      
-      {/* Background Image */}
+    <div className="relative w-full h-auto md:h-[500px] lg:h-[550px] overflow-hidden">
       <Image
-        src="/images/villa-design-dubai.png"
-        alt="interior design"
+        src="/images/mcv-7.png"
+        alt="Villa interior design and Renovation Dubai"
         width={1920}
         height={1080}
         priority
-        className="object-cover w-full h-full absolute inset-0"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/40" />
 
-      {/* MAIN WRAPPER */}
-      <div className="relative z-20 flex flex-col lg:flex-row items-center justify-between w-full h-full px-4 md:px-10 lg:px-20 py-10 gap-8">
-
-        {/* LEFT SIDE */}
-        <div className="text-white max-w-xl">
-          <p className="text-sm md:text-lg font-play mb-2 opacity-90">
-            One at the land of Dubai
-          </p>
-
+      <div className="relative z-20 mt-10 flex flex-col lg:flex-row items-center justify-between w-full h-full px-4 md:px-10 lg:px-20 py-10 gap-8">
+        <div className="text-white/80 max-w-xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            VILLA INTERIOR DESIGN <span>DUBAI</span>
+            Villa Interior Design Dubai
           </h1>
 
           <p className="text-xs md:text-sm font-play mt-4 mb-6 opacity-90">
-            Experience the Perfect Blend of <br />
-            Creativity and Functionality with Us
+          Luxury Villa Interior Design Company – Casa Kraft Interiors & Renovations. Casa Kraft Interiors creates bespoke luxury villa interiors, fit-outs, renovations, and custom furniture solutions across the UAE
           </p>
 
           <Link
@@ -47,70 +100,100 @@ const Hero = () => {
           </Link>
         </div>
 
-        {/* RIGHT FORM */}
-        <div className="w-full max-w-md bg-white shadow-2xl p-4 md:p-6">
-
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-sm mt-10 bg-white shadow-2xl p-4 md:p-10"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-
-            {/* First Name */}
             <div>
-              <label className="text-xs font-medium">First Name</label>
+              <label className="text-[10px] font-medium">First Name</label>
+
               <input
                 type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
                 placeholder="First Name"
-                className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+                className="w-full mt-1 p-2 text-xs bg-gray-100 rounded-md outline-none border border-transparent focus:border-[#1f4a45]"
               />
             </div>
 
-            {/* Last Name */}
             <div>
-              <label className="text-xs font-medium">Last Name</label>
+              <label className="text-[10px] font-medium">Last Name</label>
+
               <input
                 type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
                 placeholder="Last Name"
-                className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+                className="w-full mt-1 p-2 text-xs bg-gray-100 rounded-md outline-none border border-transparent focus:border-[#1f4a45]"
               />
             </div>
 
-            {/* Email */}
             <div>
-              <label className="text-xs font-medium">Email</label>
+              <label className="text-[10px] font-medium">Email</label>
+
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
                 placeholder="Email"
-                className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+                className="w-full mt-1 p-2 text-xs bg-gray-100 rounded-md outline-none border border-transparent focus:border-[#1f4a45]"
               />
             </div>
 
-            {/* Phone */}
             <div>
-              <label className="text-xs font-medium">Phone</label>
+              <label className="text-[10px] font-medium">Phone</label>
+
               <input
                 type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
                 placeholder="Phone"
-                className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+                className="w-full mt-1 p-2 text-xs bg-gray-100 rounded-md outline-none border border-transparent focus:border-[#1f4a45]"
               />
             </div>
-
           </div>
 
-          {/* Description */}
           <div className="mt-3">
-            <label className="text-xs font-medium">Description</label>
+            <label className="text-[10px] font-medium">Description</label>
+
             <textarea
+              name="description"
+              value={formData.description}
+              onChange={handleChange}
               rows={3}
               placeholder="Write your message..."
-              className="w-full mt-1 p-2.5 text-sm bg-gray-100 rounded-md outline-none border border-transparent focus:outline-none focus:ring-0 focus:border-[#1f4a45]"
+              className="w-full mt-1 p-2 text-xs bg-gray-100 rounded-md outline-none border border-transparent focus:border-[#1f4a45]"
             />
           </div>
 
-          {/* Button */}
-          <button className="w-full mt-4 bg-[#1f4a45] hover:bg-[#275f58] text-white py-2.5 rounded-md font-semibold text-sm transition">
-            Get Started
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full mt-4 bg-[#1f4a45] hover:bg-[#275f58] text-white py-3 rounded-md font-semibold text-sm transition disabled:opacity-70"
+          >
+            {loading ? "Sending..." : "Get Started"}
           </button>
 
-        </div>
-
+          {status && (
+            <p
+              className={`mt-4 text-center text-sm ${
+                status.includes("success")
+                  ? "text-green-600"
+                  : "text-red-600"
+              }`}
+            >
+              {status}
+            </p>
+          )}
+        </form>
       </div>
     </div>
   );

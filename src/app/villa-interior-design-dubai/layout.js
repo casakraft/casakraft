@@ -1,18 +1,18 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Villa Interior Design Dubai - Luxury Villa Design | Casa Kraft Interiors",
+  title: "Villa Interior Design in Dubai - Casa Kraft Interiors",
   description:
-    "Casa Kraft Interiors offers luxury villa interior design in Dubai with bespoke concepts, premium materials, and complete renovation and fit-out solutions.",
+    "Looking for expert villa interior designers in Dubai? Casa Kraft creates bespoke villa interiors, fit-outs, renovations, and custom furniture in Dubai.",
   keywords: [
     "villa interior design Dubai",
     "luxury villa design Dubai",
     "villa renovation Dubai",
     "villa fit out Dubai",
     "modern villa interior Dubai",
-    "Casa Kraft Interiors",
+    "Casa Kraft Interior design and renovation",
   ],
-  authors: [{ name: "Casa Kraft Interiors" }],
+  authors: [{ name: "Casa Kraft Interior design and renovation" }],
   metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: {
     canonical: "/villa-interior-design-dubai",
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
               "@type": "Service",
               name: "Villa Interior Design Dubai",
               description:
-                "Luxury villa interior design, renovation, and fit-out services in Dubai by Casa Kraft Interiors.",
+                "Luxury Villa interior design, renovation, and fit-out services in Dubai by Casa Kraft Interiors.",
               provider: {
                 "@type": "Organization",
                 name: "Casa Kraft Interiors",
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
                 "@type": "Place",
                 name: "Dubai, UAE",
               },
-              serviceType: "Villa Interior Design and Fit Out",
+              serviceType: "Villa Interior Design and Renovation",
               url: "https://casakraftinteriors.ae/villa-interior-design-dubai",
             }),
           }}
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
               name: "Villa Interior Design Dubai",
               url: "https://casakraftinteriors.ae/villa-interior-design-dubai",
               description:
-                "Get luxury villa interior design services in Dubai with expert renovation and fit-out solutions by Casa Kraft Interiors.",
+                "Get luxury Villa interior design services in Dubai with expert renovation and fit-out solutions by Casa Kraft Interiors.",
             }),
           }}
         />
@@ -80,14 +80,14 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "ListItem",
                   position: 2,
-                  name: "Services",
-                  item: "https://casakraftinteriors.ae/",
+                  name: "Apartment Renovation",
+                  item: "https://casakraftinteriors.ae/apartment-renovation",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
-                  name: "Villa Interior Design Dubai",
-                  item: "https://casakraftinteriors.ae/villa-interior-design-dubai",
+                  name: "Villa Renovation",
+                  item: "https://casakraftinteriors.ae/villa-renovation",
                 },
               ],
             }),
