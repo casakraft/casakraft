@@ -222,7 +222,7 @@ const Navbar = () => {
 
                   {/* INTERIOR DESIGN */}
                   <Link
-                    href="https://casakraftinteriors.ae"
+                    href="/interior-design-dubai"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-5 py-3 text-sm text-white/80 hover:text-white hover:bg-white/5 border-t border-white/10 transition"

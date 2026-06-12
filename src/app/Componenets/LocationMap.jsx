@@ -177,7 +177,7 @@ export default function ContactFaqSection() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <section ref={sectionRef} className="bg-[#111111] py-6 md:py-10">
+      <section ref={sectionRef} className="bg-[#111111]">
         <div className="max-w-[1100px] mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="fade-up bg-white p-4 md:p-6 shadow-sm">

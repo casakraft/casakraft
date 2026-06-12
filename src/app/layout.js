@@ -10,7 +10,7 @@ export const metadata = {
   metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: { canonical: "https://casakraftinteriors.ae/" },
   openGraph: {
-    title: "Home Renovation Company Dubai | Casa Kraft Interiors",
+    title: "Interior Design Company in Dubai | Casa Kraft Interiors",
     description:
       "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
     url: "https://casakraftinteriors.ae/",
@@ -27,7 +27,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Home Renovation Company Dubai | Casa Kraft Interiors",
+    title: "Interior Design Company in Dubai | Casa Kraft Interiors",
     description:
       "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
     images: ["https://casakraftinteriors.ae/images/og-image.jpg"],
@@ -129,7 +129,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebPage",
               "@id": "https://casakraftinteriors.ae/#webpage",
-              name: "Home Renovation Company Dubai | Casa Kraft Interiors",
+              name: "Interior Design Company in Dubai | Casa Kraft Interiors",
               url: "https://casakraftinteriors.ae/",
               description:
                 "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",

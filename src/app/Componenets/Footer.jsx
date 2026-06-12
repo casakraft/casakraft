@@ -53,207 +53,130 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-14">
         
         {/* TOP GRID */}
-        <div
-          className="
-            grid grid-cols-2
-            sm:grid-cols-2
-            md:grid-cols-3
-            lg:grid-cols-4
-            gap-y-12
-            gap-x-10
-            mb-14
-          "
-        >
-          {/* LINKS */}
-          <div className="footer-animate">
-            <h3 className="font-semibold mb-5 text-lg tracking-wide">
-              LINKS
-            </h3>
+        {/* TOP GRID */}
+<div
+  className="
+    grid grid-cols-2
+    sm:grid-cols-2
+    md:grid-cols-3
+    lg:grid-cols-4
+    gap-y-12
+    gap-x-10
+    mb-14
+  "
+>
+  {/* ABOUT US (NOW LEFT MOST) */}
+  <div className="footer-animate">
+    <h3 className="font-semibold mb-5 text-lg tracking-wide">
+      About Us
+    </h3>
 
-            <ul className="space-y-3 text-gray-300">
-              {[
-                { label: "About Us", href: "/about-us" },
-                { label: "Our Process", href: "/our-process" },
-                { label: "Projects", href: "/projects" },
-                { label: "Media", href: "/media" },
-                { label: "Why Casa Kraft", href: "/why-casa-kraft" },
-                { label: "Contact Us", href: "/contact-us" },
-              ].map((item, i) => (
-                <li key={i} className="footer-link">
-                  <Link
-                    href={item.href}
-                    className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+    <p className="text-gray-300 leading-6 max-w-md">
+      Casa Kraft Interiors is a luxury interior design and renovation company in Dubai, delivering premium villa, apartment, office, and commercial transformations. We specialize in bespoke interior design, turnkey fit-out solutions, and high-end renovations across the UAE.
+    </p>
+  </div>
 
-          {/* SERVICES */}
-          <div className="footer-animate">
-            <h3 className="font-semibold mb-5 text-lg tracking-wide">
-              SERVICES
-            </h3>
+  {/* LINKS */}
+  <div className="footer-animate">
+    <h3 className="font-semibold mb-5 text-lg tracking-wide">
+      LINKS
+    </h3>
 
-            <ul className="space-y-3 text-gray-300">
-              {[
-                {
-                  label: "Interior Design",
-                  href: "/interior-design-dubai",
-                },
-                {
-                  label: "Fit Out",
-                  href: "/fit-out-company-dubai",
-                },
-                {
-                  label: "Renovation Dubai",
-                  href: "/renovation-dubai",
-                },
-                {
-                  label: "Windows & Doors",
-                  href: "/windows-and-doors",
-                },
-                {
-                  label: "Wardrobes & Cabnets",
-                  href: "/wardrobes-and-cabinets",
-                },
-                {
-                  label: "Landscaping & Swimming Pools",
-                  href: "/landscape-dubai",
-                },
-              ].map((item, i) => (
-                <li key={i} className="footer-link">
-                  <Link
-                    href={item.href}
-                    className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+    <ul className="space-y-3 text-gray-300">
+      {[
+        { label: "About Us", href: "/about-us" },
+        { label: "Gallery", href: "/gallery" },
+        { label: "Contact Us", href: "/contact-us" },
+        { label: "Our Blogs", href: "/blogs" },
+      ].map((item, i) => (
+        <li key={i} className="footer-link">
+          <Link
+            href={item.href}
+            className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300"
+          >
+            {item.label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
 
-          {/* EXPERTISE */}
-          <div className="footer-animate">
-            <h3 className="font-semibold mb-5 text-lg tracking-wide">
-              EXPERTISE
-            </h3>
+  {/* SERVICES */}
+  <div className="footer-animate">
+    <h3 className="font-semibold mb-5 text-lg tracking-wide">
+      SERVICES
+    </h3>
 
-            <ul className="space-y-3 text-gray-300">
-              {[
-                {
-                  label: "Residential Projects",
-                  href: "/residential-projects",
-                },
-                {
-                  label: "Commercial Projects",
-                  href: "/commercial-projects",
-                },
-                {
-                  label: "Villas & Apartments",
-                  href: "/villa-apartment-interiors",
-                },
-                {
-                  label: "Offices & Retail",
-                  href: "/office-retail-interiors",
-                },
-                {
-                  label: "Turnkey Solutions",
-                  href: "/turnkey-solutions",
-                },
-                {
-                  label: "Outdoor Design",
-                  href: "/outdoor-design",
-                },
-              ].map((item, i) => (
-                <li key={i} className="footer-link">
-                  <Link
-                    href={item.href}
-                    className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+    <ul className="space-y-3 text-gray-300">
+      {[
+        { label: "Renovation Dubai", href: "/renovation-dubai" },
+        { label: "Windows & Doors", href: "/windows-and-doors" },
+        { label: "Wardrobes & Cabnets", href: "/wardrobes-and-cabinets" },
+        { label: "Landscaping & Swimming Pools", href: "/landscape-dubai" },
+        { label: "Villa Renovation Dubai", href: "/villa-renovation" },
+        { label: "Apartment Renovation Dubai", href: "/apartment-renovation" },
+        { label: "Kitchen Renovation Dubai", href: "/kitchen-renovation" },
 
-          {/* CONTACT */}
-          <div className="footer-animate">
-            <h3 className="font-semibold mb-5 text-lg tracking-wide">
-              CONTACT US
-            </h3>
+      ].map((item, i) => (
+        <li key={i} className="footer-link">
+          <Link
+            href={item.href}
+            className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300"
+          >
+            {item.label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
 
-            <ul className="space-y-3 text-gray-300">
-              <li className="footer-link">
-                Dubai, UAE
-              </li>
+  {/* CONTACT */}
+  <div className="footer-animate">
+    <h3 className="font-semibold mb-5 text-lg tracking-wide">
+      CONTACT US
+    </h3>
 
-              <li className="footer-link">
-                <a
-                  href="tel:+971586023677"
-                  className="hover:text-white transition-all duration-300"
-                >
-                  +971 58 602 3677
-                </a>
-              </li>
+    <ul className="space-y-3 text-gray-300">
+      <li className="footer-link">Dubai, UAE</li>
 
-              <li className="footer-link">
-                <a
-                  href="tel:+97144208855"
-                  className="hover:text-white transition-all duration-300"
-                >
-                  +971 4 420 8855
-                </a>
-              </li>
+      <li className="footer-link">
+        <a href="tel:+971586023677" className="hover:text-white transition-all duration-300">
+          +971 58 602 3677
+        </a>
+      </li>
 
-              <li className="footer-link">
-                <a
-                  href="mailto:info@casakraft.ae"
-                  className="hover:text-white transition-all duration-300"
-                >
-                  info@casakraft.ae
-                </a>
-              </li>
+      <li className="footer-link">
+        <a href="tel:+97144208855" className="hover:text-white transition-all duration-300">
+          +971 4 420 8855
+        </a>
+      </li>
 
-              <li className="footer-link">
-                <a
-                  href="https://wa.me/971586023677"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-all duration-300"
-                >
-                  WhatsApp
-                </a>
-              </li>
+      <li className="footer-link">
+        <a href="mailto:info@casakraft.ae" className="hover:text-white transition-all duration-300">
+          info@casakraft.ae
+        </a>
+      </li>
 
-              <li className="footer-link">
-                <a
-                  href="https://www.instagram.com/casakraftinteriors.ae/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-all duration-300"
-                >
-                  Instagram
-                </a>
-              </li>
+      <li className="footer-link">
+        <a href="https://wa.me/971586023677" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+      </li>
 
-              <li className="footer-link">
-                <a
-                  href="https://www.linkedin.com/company/110286081/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-all duration-300"
-                >
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <li className="footer-link">
+        <a href="https://www.instagram.com/casakraftinteriors.ae/" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+      </li>
+
+      <li className="footer-link">
+        <a href="https://www.linkedin.com/company/110286081/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
         {/* BOTTOM BAR */}
         <div className="footer-animate border-t border-white/15 pt-8 flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">

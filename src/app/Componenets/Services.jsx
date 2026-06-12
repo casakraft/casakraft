@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
   { title: "Villa Interior Design", image: "/images/villa-design-dubai.png", href: "/villa-interior-design-dubai" },
   { title: "Apartment Interior Design", image: "/images/apartment-interior-design.png", href: "/apartment-interior-design-dubai" },
-  { title: "Renovation Dubai", image: "/images/penthouse-interior-design.png", href: "/renovation-dubai" },
+  { title: "Office Interior Design", image: "/images/CEO-office-interior-renovations.png", href: "/office-interior-design-dubai" },
   { title: "Home Renovation Dubai", image: "/images/kitchen-interior-design.png", href: "/" },
   { title: "Joinery", image: "/images/beach-front-design.png", href: "/" },
   { title: "Landscape Design Dubai", image: "/images/landscape-design.png", href: "/" },

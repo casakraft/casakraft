@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 const textImage = {
@@ -8,335 +8,447 @@ const textImage = {
   link: '/villa-damac-hills-5-bedroom',
   title: 'Damac Hills Villa'
 };
+const TestimonialCarousel = () => {
+  const testimonials = [
+    {
+      quote:
+        " Casa Kraft Interiors successfully made our office space a contemporary, practical, and inspiring work environment. The entire project was executed efficiently. I recommend Casa Kraft Interiors for your office interior designs & renovation services in Dubai.",
+      author: "Sarah Williams, Business Bay",
+    },
+    {
+      quote:
+        "The office redesign completed by Casa Kraft Interiors was truly exceptional from start to finish. Our workplace is now the perfect reflection of our brand personality while still offering us a functional space in which we can thrive.",
+      author: "James Carter, Downtown, Dubai",
+    },
+    {
+      quote:
+        "Working with Casa Kraft Interiors was a great experience. They understood exactly what we wanted and transformed our office into a modern and comfortable space. The team was professional, easy to work with, and delivered everything on time.",
+      author: "Rachel Bennett, DIFC",
+    },
+  ];
 
-const galleryImages = [
-  { src: '/images/cvd-3.png', link: '/classic-villa-interior-design', title: 'CLASSIC VILLA INTERIOR DESIGN' },
-  { src: '/images/vl-10.png', link: '/villa-lantana', title: 'VILLA LATANA' },
-  { src: '/images/vk-3.png', link: '/villa-khawaneej', title: 'VILLA KHAWANEEJ' },
-  { src: '/images/ehv-3.png', link: '/emirates-hills-villa', title: 'EMIRATES HILLS VILLA' },
-  { src: '/images/mbr-5.png', link: '/mbr-city-villa', title: 'MBR CITY VILLA' },
-  { src: '/images/pjv-7.png', link: '/palm-jumeirah-villa', title: 'PALM JUMEIRAH VILLA' },
+  const [idx, setIdx] = React.useState(0);
+  const [animate, setAnimate] = React.useState(true);
+
+  const change = (i) => {
+    setAnimate(false);
+    setTimeout(() => {
+      setIdx((i + testimonials.length) % testimonials.length);
+      setAnimate(true);
+    }, 250);
+  };
+
+  React.useEffect(() => {
+    const t = setInterval(() => change(idx + 1), 6000);
+    return () => clearInterval(t);
+  }, [idx]);
+
+  return (
+    <div className="relative max-w-4xl mx-auto my-16 px-6">
+      
+      {/* Glow background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#4eb5a9]/20 via-transparent to-[#4eb5a9]/20 blur-3xl rounded-3xl"></div>
+
+      {/* Main card */}
+      <div className="relative bg-zinc-950/80 backdrop-blur-xl border border-zinc-800 p-8 md:p-5 shadow-2xl">
+        
+        {/* Title */}
+       <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+          WHAT OUR CLIENTS SAY
+        </h2>
+
+        {/* Quote */}
+        <div
+          style={{
+            opacity: animate ? 1 : 0,
+            transform: animate ? "translateY(0px)" : "translateY(10px)",
+            transition: "all 0.3s ease",
+            minHeight: "140px",
+          }}
+          className="text-center"
+        >
+          <p className="text-white/80 text-sm md:text-lg leading-relaxed italic font-play">
+            “{testimonials[idx].quote}”
+          </p>
+
+          <div className="mt-6 text-[#4eb5a9] font-semibold text-sm md:text-base">
+            — {testimonials[idx].author}
+          </div>
+        </div>
+
+        {/* Controls */}
+        <div className="flex items-center justify-center gap-6">
+       
+
+          {/* dots */}
+          <div className="flex gap-2">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => change(i)}
+                className={`transition-all duration-300 rounded-full ${
+                  i === idx
+                    ? "w-6 h-2 bg-[#4eb5a9]"
+                    : "w-2 h-2 bg-zinc-600"
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            onClick={() => change(idx + 1)}
+            className="w-10 h-10 rounded-full border border-[#4eb5a9] text-[#4eb5a9] hover:bg-[#4eb5a9] hover:text-black transition"
+          >
+            ›
+          </button>
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const officeGallery = [
+  {
+    image: "/images/office-racks.png",
+  },
+  {
+    image: "/images/CEO-office-interior-renovations.png",
+  },
+  {
+    image: "/images/office-interior-in-dubai.jpg",
+  },
+  {
+    image: "/images/Interior design company twin tower dubai.png",
+  },
+  {
+    image: "/images/office-interiors-and-renovations.png",
+   },
+  {
+    image: "/images/office-sitting-area-for-clients.png",
+  },
+  
 ];
-
-const villaSteps = [
+const krSteps = [
   {
     id: '01',
-    title: 'Initial Consultation & Concept',
-    desc: 'At the beginning, we usually do a thoughtful and in-depth consultation to understand your needs, lifestyle and design expectations. This enables us to set an exclusive and unique creative direction for your vision.',
+    title: 'Discovery & Consultation',
+    desc: 'All stunning office renovations begin with an important discussion. Throughout the discovery and consultation stage we learn about your company and the image you wish to portray. In addition, the project goals, timeline and budget are determined upfront thus ensuring clear direction moving forward.',
     img: '/images/our-mission.png',
   },
   {
     id: '02',
-    title: 'Site Study & Space Planning',
-    desc: 'Efficient architectures and building engineers conduct a comprehensive assessment of your office after initial consultation. They also make assessment for architectural features, natural light. We create customized space plans.',
+    title: 'Concept & Design Development',
+    desc: 'We develop a concept by using mood boards, space planning and stunning 3D visualizations to illustrate the final result. The design process becomes collaborative with you making changes that will influence each step of the way until we know for sure that you love what we have designed.',
     img: '/images/material high quality.png',
   },
   {
     id: '03',
-    title: 'Material, Furniture & Finishing Selection',
-    desc: 'For the material sources we have an efficient suppliers/manufacturers within Dubai and outside Dubai. From our trusted suppliers/manufacturers we source premium materials, high end fabrics and unique decor pieces.',
+    title: ' Material Selection & Approval',
+    desc: 'We assist you in the carefully selected choice of materials, whether it be for floors, walls, ceilings, partitions, furniture and joinery, or lighting, all provided by our trusted sources. We spend time explaining each choice to ensure that you are informed about your decisions..',
     img: '/images/best-customized-services.png',
   },
   {
     id: '04',
-    title: 'Technical Drawings',
-    desc: 'Our team of draftsmen and architectural designers prepare full set of architectural drawings, lighting layouts, joinery plans and technical documents that are required and aligned with Dubai design standard.',
+    title: 'Project Execution & Fit-Out ',
+    desc: 'All this is taken care of by our experienced team of Casa Kraft Interior Design & Renovation that will be responsible for the complete execution of the project including civil works, partitions, ceilings, floors, electrical installation, air conditioning system, joinery work, and furnishings. Dedicated project managers will keep updating you during the process to make sure everything goes according to plan.',
     img: '/images/our-mission.png',
   },
   {
     id: '05',
-    title: 'Project Execution, Fit-Out & Installation',
-    desc: 'Now it comes execution, the part which transforms vision into reality. Here our site specialists and dedicated craftsmen blend magic with colors and materials. From flooring to interior finishes we take care of each details.',
+    title: 'Handover and Aftercare Services',
+    desc: 'The final inspection to check all systems installed will be carried out to make sure that everything is working perfectly and all finishes have been done properly. We will give you a guided tour to show you around your new workplace. In addition, we offer exclusive aftercare services to keep your office operating effectively even after its completion.',
     img: '/images/material high quality.png',
   },
-  {
+
+   {
     id: '06',
-    title: 'Final Styling & Handover',
-    desc: 'At the completion and just before delivery, we curated artworks, accessories and interior finishes to bring the decided design into life in your office. The handover unwrap a space that reflects your vision.',
-    img: '/images/best-customized-services.png',
+    title: 'Handover and Aftercare Services',
+    desc: 'The final inspection to check all systems installed will be carried out to make sure that everything is working perfectly and all finishes have been done properly. We will give you a guided tour to show you around your new workplace. In addition, we offer exclusive aftercare services to keep your office operating effectively even after its completion.',
+    img: '/images/material high quality.png',
+  },
+  
+  
+];
+
+const serviceAreas = [
+  {
+    title: "Arabian Ranches",
+  },
+  {
+    title: "Dubai Hills Estate",
+  },
+  {
+    title: "Jumeirah Golf Estate",
+  },
+  {
+    title: "Nad Al Sheba",
+  },
+  {
+    title: "Jumeirah Village Circle",
+  },
+  {
+    title: "Jumeirah Village Triangle",
+  },
+  {
+    title: "Emirates Hills",
+  },
+  {
+    title: "Palm Jumeirah",
   },
 ];
 
 const faqs = [
   {
-    question: 'How long does a office interior design project in Dubai usually take?',
+    question: 'Why is Casa Kraft regarded as one of the best office interior design companies in Dubai?',
     answer:
-      'The timeline depends on the office size, scope and level of customization. On average, a full office interior design and fit out in Dubai can take anywhere from 3 to 9 months from concept to final handover.',
+      ' Casa Kraft is a combination of creativity and professionalism. Our team comprises highly skilled and professional designers, project managers, and fit-out professionals well versed with commercial environment of Dubai. This is why we are considered as one of the best office interior design companies in Dubai.',
   },
   {
-    question: 'Do you only work on complete offices, or can you design specific rooms?',
+    question: 'Is it your practice to offer office interior design and fit out services at the same time?',
     answer:
-      'We work on both complete offices and specific spaces such as living rooms, bedrooms, majlis, kitchens or basements. However, we always ensure that every space remains aligned with the overall office design language.',
+      ' Yes. Casa Kraft is a full-service studio where we offer comprehensive office interior services including office design and fit-out.',
   },
   {
-    question: 'Can you work with my existing furniture and decor?',
+    question: 'Do you have the capability to refurbish our current office space?',
     answer:
-      'Yes, if there are certain pieces you love, we can integrate them into the new design. Our team carefully evaluates what can be reused, refinished or reupholstered while still maintaining a premium overall look.',
+      'We specialize in refurbs of existing office spaces either partial or full scale. We study the space, determine how to improve on it and deliver a whole new look for your office in the most minimally disruptive way possible.',
   },
   {
-    question: 'What is the typical budget range for office interior design in Dubai?',
+    question: 'How long does an Interior design project take in Dubai?',
     answer:
-      'Budgets vary based on office size, finishes and brand preferences. During the initial consultation, we discuss your expectations and provide a realistic budget bracket that matches your lifestyle and the level of luxury you want to achieve.',
+      'The amount of time taken to complete a project will depend on the scale and complexity of the job at hand. A basic office fitout will generally take between 6 to 12 weeks. We will always give you a detailed plan right from the start.',
   },
   {
-    question: 'Do you handle approvals and coordination with contractors?',
+    question: 'Which styles of office interior design is Casa Kraft known for?',
     answer:
-      'Yes, our team supports you with technical drawings, authority-related requirements where applicable, and complete coordination with contractors, suppliers and site teams to ensure a smooth and stress-free process.',
+      'Our office interior design company offers a variety of styles including modern office interior design, luxurious office interior design, classic and contemporary. Every project we undertake is carefully crafted to suit the personality of your business.',
   },
+  
+ 
 ];
 
 const DProjects = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
-    <section className="px-6 py-10 bg-[#f5f5f5]">
+    <section className="px-6 text-white/80 bg-black">
       
-      {/* Top Content Block */}
-      <div className="lg:max-w-[80%] mx-auto bg-[#ffffff] p-6 sm:p-10 rounded shadow text-center space-y-6 mb-12">
-        <h2 className="text-sm sm:text-xl md:text-xl tracking-widest font-conthrax">
-          Why Choose <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration </a>for Your office Interior Design in Dubai?
-        </h2>
-        <div className="space-y-4 text-sm sm:text-base font-play text-left">
-        <p>
-          With the credible background and 15+ years of experience from the founders, <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration </a> has unique position of trust from the homeowners, developers and high profile clients in Dubai, where we have delivered premium and customized office interiors.
-        </p>
+     {/* Top Content Block */}
+<div className="max-w-7xl mx-auto px-6 py-10">
 
-        <p>
-        <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration </a> built many projects in Dubai Marina, Palm Jumeirah, Emirates Hills, MBR City and in other high end living communities in Dubai. We have built a strong portfolio and reputation for excellence based on creative and consist on time project deliveries.
-        </p>
-        <p>Our work process so simple as it starts with a thoughtful conversation about design that enable us to understand your customized needs, lifestyle, vision and expectations from us.
-        </p>
-        <p>This step secures that the concept we built is on the basis of client's thoughts, meaningful and bespoke. Opposite the studio apartments that depends on pre-defined design for all. <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration </a> creates your office from ground level to up precisely, enables your living space feel as-only-yours but not a copy of standard template.<br></br><br></br>
-        R&D department of <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration </a> continuously works to explore latest global trends, fine and premium materials and premium furnishings to develop interior options for clients.<br></br> <br></br>
-        From exclusive designs, developing custom-joinery to integrating smart home solutions, we go beyond the limits to upscale your office's character and comfort.
-        To start from exclusive design, we are committed to responsible and future-focused practices.<br></br><br></br>
-        <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration </a> a modern interior design studio, where we focus on premium but sustainable materials, excellent project management and seamless workflow to ensure that your office is not only luxury in living but reflects conscious long term-term value.<br></br><br></br>
-        While choosing <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration, </a> actually you are choosing an efficient team of professionals which is dedicated to crafting elegant living spaces.
-</p>
-  
-        </div>
+  <div className="grid md:grid-cols-2 gap-10 items-center">
 
-        </div>
+    {/* Left Side - Text */}
+    <div>
+      <h2 className="text-3xl md:text-4xl font-semibold text-white mb-8">
+        Why Dubai's Leading Businesses Choose Casa Kraft
+      </h2>
 
-      {/* Split Row – Text + Top Right Image */}
-      <div className="lg:max-w-[80%] mx-auto flex flex-col lg:flex-row items-start gap-6 mb-12">
-        <div className="w-full lg:w-2/3 space-y-4">
-          <h2 className="text-sm sm:text-xl md:text-xl tracking-widest font-conthrax">
-          Our Dubai office Projects
-          </h2>
-          <p className="text-sm sm:text-base">
-           <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration, </a> completed many signature projects in Dubai's high end living communities like Palm Jumeirah, Emirates hills, MBR city and in other premium living communities.</p>
-          <p className="text-sm sm:text-base">
-          One of our office project is located on the iconic Emirates Hills Dubai, we specially designed this office for a client who believes in exclusivity and elevated luxury lifestyle.</p>
-          <p className="text-sm sm:text-base">
-          office owners approached us with clear brief: Team <a href="https://casakraftinteriors.ae/"
-          className="text-green-600 hover:text-blue-800 ml-1">
-          Casa Kraft Interiors & Decoration! </a> develop interiors that is aligned with refined luxury and something elegant. Especially for those who travelled abroad and experienced the world's finest settings. </p>
-          <p className="text-sm sm:text-base">
-          Every detail of office projects was boarded to celebrate Dubai's luxury while delivering comfort, craftsmanship, and a sense of perfect home aligned with Dubai's luxury lifestyle.
-           </p>
-        
-          
-        </div>
+      <p className="text-white/80 text-sm md:text-base font-play leading-relaxed">
+      Dubai is a place where international standards are set  and your office interior design should match the trend. Being one of the <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/">best interior designers in Dubai</a></b>, we at Casa kraft know very well what it takes to meet such high standards and expectations. It is our pleasure to be known among the most successful interior design firms in Dubai. We design and build commercial spaces such as corporate offices, executive suites, co-working environments and more throughout the UAE. Our team of expert architects, designers and artisans work together in order to create luxury office interior designs that will help you take your work to new levels. Our company ranks as one of the top interior office designs in Dubai not out of luck but because of dedication. </p>
+    </div>
 
-        {/* Top Right Image with Hover Effects */}
-        <div className="w-full lg:w-1/3 group relative overflow-hidden rounded-lg shadow-lg">
-          <a href={textImage.link} className="block">
-            <Image
-              src={textImage.src}
-              alt={textImage.title}
-              width={500}
-              height={400}
-              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="text-white text-sm sm:text-base font-conthrax text-center">
-                {textImage.title}
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
+    {/* Right Side - Image */}
+    <div className="relative overflow-hidden rounded-xl">
+      <Image
+        src="/images/CEO-office-interior-renovations.png"
+        alt="CEO OFFice Interior Design Dubai"
+        width={700}
+        height={500}
+        className="w-full h-[400px] object-cover"
+      />
+    </div>
 
-      {/* Gallery Grid with Hover Effects */}
-      <div className="lg:max-w-[60%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto mb-10">
-        {galleryImages.map(({ src, link, title }, i) => (
-          <a href={link} key={i} className="group block relative overflow-hidden rounded shadow">
-            <Image
-              src={src}
-              alt={title}
-              width={400}
-              height={400}
-              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="text-white text-sm sm:text-base font-conthrax text-center">
-                {title}
-              </p>
-            </div>
-          </a>
-        ))}
-      </div>
+  </div>
 
-      {/* Bottom CTA Section */}
-      <div className="w-screen ml-[calc(50%-50vw)] bg-[#f5ede5] py-10 text-center space-y-4">
-        <h3 className="text-xs sm:text-xl font-conthrax uppercase">
-          Get In Touch With Us
-        </h3>
-        <p className="text-sm sm:text-base font-play">
-          We are located in the world's luxury city, Dubai
-        </p>
+</div>
+     
+     
+     {/* Portfolio Section */}
+<div className="max-w-7xl mx-auto overflow-hidden">
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4 px-4">
-          <a
-            href="https://wa.me/971586023677"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-green-500 text-white font-play text-sm rounded w-full sm:w-auto text-center"
-          >
-            ✅ Request availability by WhatsApp
-          </a>
+  <div className="text-center mb-12">
+    <h2 className="text-3xl text-white md:text-4xl font-semibold mb-4">
+      Our Office Interior Design Portfolio
+    </h2>
 
-          <a
-            href="mailto:info@casakraftineriors.ae"
-            className="px-6 py-3 bg-[#193c38] text-white font-play text-sm rounded w-full sm:w-auto text-center"
-          >
-            ✉️ Request availability by E-mail
-          </a>
-        </div>
-      </div>
+    <p className="max-w-3xl mx-auto text-white/80">
+       Explore a selection of thoughtfully designed office spaces showcasing our expertise in creating functional, modern, and inspiring workplaces with premium finishes and meticulous attention to detail.
 
-      {/* 3-Step Process Section – visual (6 steps displayed 3 + 3) */}
-      <div className="bg-[#ffffff] py-16">
-        <div className="max-w-6xl mx-auto text-center px-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-conthrax mb-2">
-            3-Step Process For Our office Design Services In Dubai
-          </h2>
-          <p className="font-play text-sm sm:text-base max-w-2xl mx-auto">
-            We follow a clear and transparent 3-step process to deliver seamless office interior design services in Dubai.
+    </p>
+  </div>
+
+  <div className="relative overflow-hidden">
+    <div className="flex animate-marquee gap-5 w-max">
+
+     {[...officeGallery, ...officeGallery].map((project, index) => (
+ <div
+  key={index}
+  onClick={() => setSelectedImage(project.image)}
+  className="group relative flex-shrink-0 overflow-hidden cursor-pointer"
+>
+  <Image
+    src={project.image}
+    alt={`Villa Project ${index + 1}`}
+    width={600}
+    height={450}
+    className="w-[320px] sm:w-[380px] md:w-[350px] h-[240px] sm:h-[280px] md:h-[250px] object-cover transition duration-500 group-hover:scale-110"
+  />
+
+  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+    <span className="text-white text-lg font-medium">
+      View Project
+    </span>
+  </div>
+</div>
+))}
+
+    </div>
+  </div>
+</div>
+
+     
+    
+      {/* Process Section (REDESIGNED - Compact Timeline) */}
+<div className="bg-black text-white/80py-14">
+  <div className="max-w-6xl mx-auto px-4">
+
+          <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10 mt-10">
+     Our Office Interior Design Process: Where Vision Meets Execution
+
+    </h2>
+
+    <p className="text-center text-sm md:text-base text-white/80 mb-10 font-play">
+    Our approach at Casa Kraft Interior Design & Renovation is highly systematic, which ensures all our projects are completed on time, within budget, and to your satisfaction. The tried and tested approach we use for designing office interiors is based on experience gained from over 100 successful projects carried out in Dubai and UAE.</p>
+
+    {/* First 6 steps */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {krSteps.slice(0, 5).map((step) => (
+        <div
+          key={step.id}
+          className="bg-white/5 hover:bg-white/10 transition rounded-xl p-6 border border-white/10"
+        >
+
+          {/* Step number */}
+          <div className="text-[#4eb5a9] font-bold text-sm mb-2">
+            {step.id}
+          </div>
+
+          {/* Title */}
+          <h3 className="font-conthrax text-sm md:text-base mb-3">
+            {step.title}
+          </h3>
+
+          {/* Description */}
+          <p className="text-xs md:text-sm text-white/80 leading-relaxed">
+            {step.desc}
           </p>
 
-          {/* 6 circles → 3 + 3 grid */}
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center">
-            {villaSteps.map((step) => (
-              <div
-                key={step.id}
-                className="flex flex-col items-center text-center font-play"
-              >
-                {/* Circle */}
-                <div className="relative w-44 h-44 sm:w-48 sm:h-48 md:w-52 md:h-52 rounded-full border-[6px] border-[#193c38] overflow-hidden flex items-center justify-center shadow-md bg-white">
-                  <Image
-                    src={step.img}
-                    alt={step.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/30" />
-                  <span className="relative text-3xl sm:text-4xl font-conthrax text-white drop-shadow-lg">
-                    {step.id}
-                  </span>
-                </div>
-
-                {/* Title */}
-                <h3 className="mt-6 text-base sm:text-lg font-conthrax">
-                  {step.title}
-                </h3>
-
-                {/* Description */}
-                <p className="mt-3 text-sm sm:text-base leading-relaxed max-w-xs">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-
         </div>
-      </div>
+      ))}
 
-      {/* Content Section */}
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-3xl font-conthrax py-12">
-          Bespoke office Interior Design Dubai, Crafted for Luxury Living
-        </h2>
+    </div>
 
-        {/* Section 1: Text Left, Image Right */}
-        <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
-          <div className="space-y-6 font-play">
-            <h2 className="text-xl font-conthrax mb-4">
-              Our Interior office Design Services in Dubai
-            </h2>
-            <p>
-            Our office interior design services are tailored to fit your specific needs and preferences. Whether you are designing 
-             new office or renovating an existing one, our services ensure luxury and comfort at every step.
-             </p>
-            <p>
-             Our Featured Services:
-            </p>
-            <ul className="list-decimal pl-5 space-y-2">
-            <li>
-             <p className='font-play'> <b> Architectural Design – </b>Thoughtful layouts for luxury and practicality</p>
-            </li>
+    
+  </div>
+</div>
 
-             <li>
-             <p className='font-play'> <b>Landscape Design –</b> Luxury office landscape design service Dubai creating harmony between indoor and outdoor spaces</p>
-            </li>
 
-             <li>
-             <p className='font-play'> <b>Electrical & Plumbing Design – </b>Efficient, safe systems integrated for modern living</p>
-            </li>
+    
+ {/* CTA SECTION */}
+<div className="w-screen ml-[calc(50%-50vw)] bg-[#111111] mt-10 py-10">
+  <div className="max-w-4xl mx-auto px-4 text-center">
 
-             <li>
-             <p className='font-play'> <b>Furniture & Decor Selection –</b> Curated, custom-made pieces for a refined interior look</p>
-            </li>
-            <li>
-             <p className='font-play'><b> Interior Fit Out in Dubai – </b>Complete premium fit-out in Dubai, ensuring perfect execution of design vision </p>
-            </li>
-            <li>
-             <p className='font-play'> <b>Smart Home Integration –</b> Advanced home automation for lighting, climate, and security</p>
-            </li>
-            </ul>
-            
-            <p>
-             We rank among one of the best office interior design companies in several areas of Dubai and we have completed our
-              projects like <b><a href="https://wedointerior.ae/al-manara-luxury-villa"></a>Al Manara luxury Villa</b>, 
-              <b><a href="https://wedointerior.ae/majan-villa-design">Majan office Interior Design</a></b> and 
-              <b><a href="https://wedointerior.ae/district-1-mbr-city-contemporary-villa">District one MBR (Muhammad Bin Rashid) City Villa </a></b>etc
-            </p>           
-          </div>
+    <h2 className="text-2xl md:text-3xl font-semibold text-white uppercase mb-2">
+      Get In Touch With Casa Kraft
+    </h2>
 
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <Image
-              src="/images/mbr-6.png"
-              alt="Round luxury bed with fairy lights"
-              width={600}
-              height={400}
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </div>
-      </div>
+    <p className="text-white/80 text-sm md:text-base mb-8">
+      Office Interior design & Renovation Company in Dubai
+    </p>
+
+    <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+      <a
+        href="/gallery"
+        className="bg-[#1f5a53] hover:bg-[#276d64] text-white px-6 py-3 text-base transition min-w-[220px]"
+      >
+        See Our Projects
+      </a>
+
+      <a
+        href="https://wa.me/971586023677"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="border border-[#4eb5a9] text-white hover:bg-[#4eb5a9] hover:text-black px-6 py-3 text-base transition min-w-[220px]"
+      >
+        WhatsApp Us
+      </a>
+
+      <a
+        href="/contact-us"
+        className="bg-white text-black hover:bg-gray-200 px-6 py-3 text-base transition min-w-[220px]"
+      >
+        Request Quote
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+{/* Areas We Serve */}
+<div className="bg-black">
+  <div className="max-w-7xl mx-auto px-4">
+
+    <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+        Areas We Serve Across Dubai      </h2>
+
+      <p className="text-zinc-400 mx-auto">
+       With Casa Kraft Interior Design & Renovation, we offer the <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/office-renovation-dubai">best office interior design and renovation services</a></b> in all of Dubai's best business districts and commercial areas. Whether you are looking for a modern corporate office, an executive office, or full renovation of your current office space, we can help! We proudly work for businesses located in Business Bay, DIFC, Downtown Dubai, Dubai Marina, JLT, Dubai Internet City, Dubai Media City, Dubai Silicon Oasis, and offices on Sheikh Zayed Road. With years of experience designing office spaces in all of these top commercial spots, we are experts at delivering the right design for your business.
+      </p>
+    </div>
+
+<div className="mb-12">
+    <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+        Key Factors That Affect Office Design Cost </h2>
+
+      <ul  class="list-disc"> <li > <b className="text-[#4eb5a9]">Office size -</b> More materials and labour are required for bigger offices, although economies of scale might lower the per-square-foot cost. </li>
+
+      <li > <b className="text-[#4eb5a9]"> Design complexity - </b>Unique designs such as curved walls, feature ceilings, special joinery work, and detailed lighting solutions drive up the cost of the design.</li>
+      
+      <li ><b className="text-[#4eb5a9]">Material - </b>Cost will be higher if you opt for imported marble, natural timber, and European furniture than locally made products. </li>
+
+      <li ><b className="text-[#4eb5a9]">MEP works  -</b> Cost depends on the present state of the space and the extent of the project’s fit out. </li>
+
+      <li ><b className="text-[#4eb5a9]">Smart office technology - </b>While expensive at first, technology installations like automation systems, AV integration, intelligent lighting, and access control are more efficient in the long run. </li>
+
+      <li ><b className="text-[#4eb5a9]">Furniture and fittings -</b> Ergonomic furniture could range from affordable to very unique, depending on brands and specifications.
+ </li>
+
+ <li ><b className="text-[#4eb5a9]">Project duration - </b>Projects that need fast turnarounds can cost extra. Average projects taking between four and 16 weeks are usually budget friendly.
+ </li>
+      </ul>
+
+      <p>Get a free and no-obligation quote. Every office is different. Let Casa Kraft Interiors provide you with a personalized quote for your unique project.</p>
+    </div>
+
+  </div>
+</div>
+<div className="max-w-4xl mx-auto my-12">
+  <TestimonialCarousel />
+</div>
+      
 
       {/* FAQ Section */}
-      <div className="max-w-4xl mx-auto mt-16 mb-4 bg-black text-white rounded-lg shadow p-6 sm:p-10">
-        <h2 className="text-center text-2xl sm:text-3xl font-conthrax mb-4 text-[#193c38]">
-          office Interior Design Dubai – FAQs
+      <div className=" text-white/80 max-w-4xl mx-auto bg-black rounded-lg text-white/80  shadow p-6 sm:p-10">
+        <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+        Frequently Asked Questions (FAQs)
         </h2>
-        <p className="font-play text-sm sm:text-base text-gray-700 mb-6 text-center">
-          Find quick answers to common questions about our office interior design and fit-out services in Dubai.
+        <p className="text-white/80 font-play text-sm sm:text-base text-white/80 mb-6 text-center">
+          Find quick answers to common questions about our Office Interior Design services in Dubai.
         </p>
 
         <div className="space-y-3">
@@ -346,14 +458,14 @@ const DProjects = () => {
               className="group border-b border-gray-200 py-3"
             >
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <span className="font-play font-semibold text-sm sm:text-base text-[#193c38] text-left">
+                <span className="font-play font-semibold text-sm sm:text-base text-white/80 text-left">
                   {item.question}
                 </span>
-                <span className="ml-3 text-[#193c38] text-xl transition-transform group-open:rotate-45">
+                <span className="ml-3 text-white/80 text-xl transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>
-              <p className="mt-2 text-sm sm:text-base font-play text-gray-700">
+              <p className="mt-2 text-sm sm:text-base font-play text-white/80">
                 {item.answer}
               </p>
             </details>
@@ -361,6 +473,49 @@ const DProjects = () => {
         </div>
       </div>
 
+       {/* Top Content Block */}
+      <div className="lg:max-w-[80%] text-white mx-auto bg-black p-6 sm:p-5 mb-5 rounded shadow text-center space-y-6">
+             <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+         Transform Your Office Today in Dubai - The Casa Kraft Way
+
+        </h2>
+        <div className="space-y-4 text-white/80 text-sm sm:text-base font-play text-left">
+        <p>
+      Office interior design is about more than just being aesthetically pleasing; it increases productivity, portrays your brand, and creates an environment that makes you proud to be in it. As a top-rated office interior design company in Dubai, we do not just create office spaces; we create the future of your business. Whether you require modern office interior designs, luxury <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/">office interior design services</a></b>, or an entire office interior fit out in Dubai, we are the team that you have been searching for.
+
+       </p>
+  
+        </div>
+
+        </div>
+
+{/* Lightbox Modal */}
+{selectedImage && (
+  <div
+    className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
+    onClick={() => setSelectedImage(null)}
+  >
+    <button
+      className="fixed top-6 right-6 z-[100] bg-black/70 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl"
+      onClick={() => setSelectedImage(null)}
+    >
+      ✕
+    </button>
+
+    <div
+      className="relative max-w-5xl w-full p-4"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <Image
+        src={selectedImage}
+        alt="Preview"
+        width={1200}
+        height={800}
+        className="w-full h-auto object-contain rounded-lg"
+      />
+    </div>
+  </div>
+)}
     </section>
   );
 };
