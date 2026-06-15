@@ -9,14 +9,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const services = [
-  { title: "Villa Interior Design", image: "/images/villa-design-dubai.png", href: "/villa-interior-design-dubai" },
+  { title: "Villa Interior Design", image: "/images/fully renovated luxury Dubai villa interior.png", href: "/villa-interior-design-dubai" },
   { title: "Apartment Interior Design", image: "/images/apartment-interior-design.png", href: "/apartment-interior-design-dubai" },
   { title: "Office Interior Design", image: "/images/CEO-office-interior-renovations.png", href: "/office-interior-design-dubai" },
-  { title: "Home Renovation Dubai", image: "/images/kitchen-interior-design.png", href: "/" },
-  { title: "Joinery", image: "/images/beach-front-design.png", href: "/" },
-  { title: "Landscape Design Dubai", image: "/images/landscape-design.png", href: "/" },
-  { title: "Villa Renovation Dubai", image: "/images/villa-renovation.png", href: "/villa-renovation" },
-  { title: "Apartment Renovation Dubai", image: "/images/apartment-renovation.png", href: "/apartment-renovation" },
+  { title: "Retail Interior Design", image: "/images/Retail interior design DUbai.png", href: "/retail-interior-design-dubai" },
+  { title: "Custom Furniture & Joinery", image: "/images/custom-furniture-and-joinery-dubai.png", href: "/custom-furniture-joinery-dubai" },
+  { title: "Penthouse Interior Design", image: "/images/penthouse-interior-design.png", href: "/penthouse-interior-design-dubai" },
+  { title: "Restaurant Interior Design", image: "/images/restaurant interior design.png", href: "/restaurant-interior-design-dubai" },
+  { title: "Cafe Interior Design", image: "/images/cafe interior in downtown dubai.png", href: "/cafe-interior-design-dubai" },
 ];
 
 const Services = () => {

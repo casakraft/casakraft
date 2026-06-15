@@ -27,20 +27,20 @@ const PHeroSection = () => {
 
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-5xl md:text-4xl font-conthrax leading-tight">
-           Interior Design Company in <br />Palm Jumeirah, Dubai
+           Interior Design Company in <br />Dubai Marina, Dubai
           </h1>
 
           {/* Subheading */}
           <p className="font-play mt-6  max-w-2xl text-gray-200">
-          Casa Kraft Interior design & renovation is a leading Interior Design Company in Palm Jumeirah, Dubai, and 
+          Casa Kraft Interior design & renovation is a leading Interior Design Company in Dubai Marina, Dubai, and 
             provides the best interior design services for residential, commercial, and retail projects. 
-           Palm Jumeirah is one of the most prominent areas of Dubai as it is famous for its luxurious 
+           Dubai Marina is one of the most prominent areas of Dubai as it is famous for its luxurious 
             waterfront residential apartments, signature commercial buildings, and thriving business centers.</p>
 
           {/* CTA Button */}
           <div className="mt-8">
             <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
-             <a href="https://casakraftinteriors.ae/gallery">Our Palm Jumeirah Projects</a> 
+             <a href="https://casakraftinteriors.ae/gallery">Our Dubai Marina Projects</a> 
             </button>
           </div>
 

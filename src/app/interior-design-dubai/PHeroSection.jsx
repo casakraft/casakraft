@@ -72,10 +72,10 @@ const PHeroSection = () => {
               </a>
 
               <a
-                href="#areas"
+                href="/gallery"
                 className="border border-white hover:bg-white hover:text-black transition-all duration-300 px-6 py-3 text-sm text-white"
               >
-                Explore Areas
+               View projects
               </a>
 
             </div>

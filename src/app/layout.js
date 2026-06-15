@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* ─── Google Analytics ─── */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -53,11 +54,13 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
+        {/* ─── Global Robots Meta ─── */}
         <meta
           name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
 
+        {/* ─── Schema 1: Organization (Global) ─── */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -81,12 +84,13 @@ export default function RootLayout({ children }) {
               },
               sameAs: [
                 "https://www.instagram.com/casakraftinteriors.ae/",
-                "https://share.google/K8jqiMFPrOSQ3Heaq"
+                "https://share.google/K8jqiMFPrOSQ3Heaq",
               ],
             }),
           }}
         />
 
+        {/* ─── Schema 2: LocalBusiness (Global) ─── */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -116,50 +120,13 @@ export default function RootLayout({ children }) {
               openingHours: "Mo-Sa 09:00-18:00",
               sameAs: [
                 "https://www.instagram.com/casakraftinteriors.ae/",
-                "https://share.google/K8jqiMFPrOSQ3Heaq"
+                "https://share.google/K8jqiMFPrOSQ3Heaq",
               ],
             }),
           }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "@id": "https://casakraftinteriors.ae/#webpage",
-              name: "Interior Design Company in Dubai | Casa Kraft Interiors",
-              url: "https://casakraftinteriors.ae/",
-              description:
-                "Expert home renovation services in Dubai — residential renovations, landscape design & premium fit-out works. Trusted across the UAE.",
-            }),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              serviceType: "Home Renovation and Fit Out",
-              provider: {
-                "@type": "Organization",
-                name: "Casa Kraft Interiors",
-                url: "https://casakraftinteriors.ae/",
-              },
-              areaServed: {
-                "@type": "Place",
-                name: "Dubai, UAE",
-              },
-              serviceOutput:
-                "Premium home renovation solutions for residential spaces in Dubai.",
-              url: "https://casakraftinteriors.ae/",
-            }),
-          }}
-        />
-
+        {/* ─── Schema 3: SiteNavigation ItemList (Global) ─── */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -170,30 +137,42 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "SiteNavigationElement",
                   position: 1,
+                  name: "Home",
+                  url: "https://casakraftinteriors.ae/",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 2,
                   name: "About Us",
                   url: "https://casakraftinteriors.ae/about-us",
                 },
                 {
                   "@type": "SiteNavigationElement",
-                  position: 2,
-                  name: "Apartment Renovation Dubai",
-                  url: "https://casakraftinteriors.ae/apartment-renovation",
-                },
-                {
-                  "@type": "SiteNavigationElement",
                   position: 3,
-                  name: "Villa Renovation Dubai",
-                  url: "https://casakraftinteriors.ae/villa-renovation",
+                  name: "Renovation",
+                  url: "https://casakraftinteriors.ae/renovation-dubai",
                 },
                 {
                   "@type": "SiteNavigationElement",
                   position: 4,
+                  name: "Interior Design",
+                  url: "https://casakraftinteriors.ae/interior-design-dubai",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 5,
                   name: "Gallery",
                   url: "https://casakraftinteriors.ae/gallery",
                 },
                 {
                   "@type": "SiteNavigationElement",
-                  position: 5,
+                  position: 6,
+                  name: "Our Blogs",
+                  url: "https://casakraftinteriors.ae/blogs",
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  position: 7,
                   name: "Contact Us",
                   url: "https://casakraftinteriors.ae/contact-us",
                 },
@@ -202,29 +181,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                {
-                  "@type": "ListItem",
-                  position: 1,
-                  name: "Home",
-                  item: "https://casakraftinteriors.ae/",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 2,
-                  name: "Villa Renovation Dubai",
-                  item: "https://casakraftinteriors.ae/villa-renovation",
-                },
-              ],
-            }),
-          }}
-        />
+      
       </head>
       <body>{children}</body>
     </html>

@@ -10,23 +10,24 @@ const textImage = {
   title: 'Damac Hills Villa'
 };
 const TestimonialCarousel = () => {
-  const testimonials = [
-    {
-      quote:
-        "Casa Kraft transformed our villa into a luxury masterpiece. The detailing, communication, and execution were flawless from start to finish.",
-      author: "A.K., Palm Jumeirah",
-    },
-    {
-      quote:
-        "Highly professional team. They delivered exactly what was promised, on time and with premium quality finishes.",
-      author: "S.M., Emirates Hills",
-    },
-    {
-      quote:
-        "Our experience was smooth and well-managed. The villa now feels modern, elegant, and perfectly designed for our lifestyle.",
-      author: "R.A., Dubai Hills Estate",
-    },
-  ];
+ const testimonials = [
+{
+quote:
+"Casa Kraft transformed our office into a sophisticated and highly functional workspace. Their attention to detail and professionalism made the entire renovation process seamless.",
+author: "Mohammed Al Mansoori, Business Bay",
+},
+{
+quote:
+"From concept to completion, the team delivered exceptional quality and stayed on schedule. Our renovated office now perfectly reflects our brand and culture.",
+author: "Daniel George, DIFC",
+},
+{
+quote:
+"We wanted a modern and inspiring workplace, and Casa Kraft exceeded our expectations. The craftsmanship and finishes are truly outstanding.",
+author: "Rania Khoury, Dubai Media City",
+},
+];
+
 
   const [idx, setIdx] = React.useState(0);
   const [animate, setAnimate] = React.useState(true);
@@ -378,96 +379,7 @@ const DProjects = () => {
 </div>
 
 
-    {/* Apartment Renovation Price Guide */}
-<div className="bg-black ">
-  <div className="max-w-7xl mx-auto px-4">
-
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-conthrax text-white mt-10  mb-4">
-        Apartment Renovation Cost in Dubai 2026
-      </h2>
-
-      <p className="text-zinc-400 max-w-3xl mx-auto">
-        Typical renovation budgets based on apartment size and scope of work.
-        Final pricing depends on materials, approvals and customization level.
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-3 gap-6">
-
-      {/* Card 1 */}
-      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-[#4eb5a9] transition">
-
-        <h3 className="text-2xl font-semibold text-white/80mb-4">
-          Studio / 1 Bedroom
-        </h3>
-
-        <div className="text-4xl font-bold text-[#4eb5a9] mb-6">
-          AED 30k–55k
-        </div>
-
-        <ul className="space-y-4 text-zinc-300">
-          <li>✓ Flooring, painting & ceilings</li>
-          <li>✓ Kitchen & bathroom refresh</li>
-          <li>✓ Lighting upgrades</li>
-          <li>✓ Approx. 4 weeks completion</li>
-        </ul>
-      </div>
-
-      {/* Featured Card */}
-      <div className="relative bg-zinc-900 border-2 border-[#4eb5a9] rounded-2xl p-8 shadow-xl">
-
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4eb5a9] text-white/80text-xs font-semibold px-4 py-2 rounded-full">
-          MOST POPULAR
-        </div>
-
-        <h3 className="text-2xl font-semibold text-white/80mb-4">
-          2–3 Bedroom
-        </h3>
-
-        <div className="text-4xl font-bold text-[#4eb5a9] mb-6">
-          AED 55k–130k
-        </div>
-
-        <ul className="space-y-4 text-zinc-300">
-          <li>✓ Full apartment remodel</li>
-          <li>✓ New kitchen & bathrooms</li>
-          <li>✓ Flooring, MEP & lighting</li>
-          <li>✓ Built-in wardrobes</li>
-          <li>✓ 5–8 weeks completion</li>
-        </ul>
-      </div>
-
-      {/* Card 3 */}
-      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-[#4eb5a9] transition">
-
-        <h3 className="text-2xl font-semibold text-white/80mb-4">
-          Luxury / Full Gut Renovation
-        </h3>
-
-        <div className="text-4xl font-bold text-[#4eb5a9] mb-6">
-          AED 130k+
-        </div>
-
-        <ul className="space-y-4 text-zinc-300">
-          <li>✓ Layout redesign</li>
-          <li>✓ Premium materials</li>
-          <li>✓ Smart-home integration</li>
-          <li>✓ Bespoke joinery & finishes</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div className="mt-8 text-center">
-      <p className="text-sm text-zinc-500">
-        * Prices are indicative only and may vary based on apartment size,
-        building regulations, material selection and project scope.
-      </p>
-    </div>
-
-  </div>
-</div>
+   
  {/* CTA SECTION */}
 <div className="w-screen ml-[calc(50%-50vw)] bg-[#111111] mt-10 py-10">
   <div className="max-w-4xl mx-auto px-4 text-center">

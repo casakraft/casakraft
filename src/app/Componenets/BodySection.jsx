@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useMemo, useState, useEffect, useRef } from "react";
-import Image from "next/image";
+import React, { useMemo } from "react";import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -54,59 +53,6 @@ const itemVariants = {
   },
 };
 
-// =========================
-// COUNT UP
-// =========================
-const CountUp = ({ value }) => {
-  const ref = useRef(null);
-  const [count, setCount] = useState(0);
-  const [start, setStart] = useState(false);
-
-  const number = parseInt(value.replace(/\D/g, ""));
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setStart(true);
-        }
-      },
-      { threshold: 0.4 }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!start) return;
-
-    let current = 0;
-    const duration = 1500;
-    const step = number / (duration / 20);
-
-    const timer = setInterval(() => {
-      current += step;
-
-      if (current >= number) {
-        setCount(number);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, 20);
-
-    return () => clearInterval(timer);
-  }, [start, number]);
-
-  return (
-    <span ref={ref}>
-      {count}
-      {value.includes("+") ? "+" : ""}
-    </span>
-  );
-};
 
 // =========================
 // MAIN COMPONENT
@@ -196,15 +142,15 @@ export default function BodySection() {
   // =========================
   // STATS
   // =========================
-  const stats = useMemo(
-    () => [
-      { value: "8+", label: "Trusted Years" },
-      { value: "100+", label: "Employees" },
-      { value: "200+", label: "Residential Projects" },
-      { value: "50+", label: "Commercial Fit-Outs" },
-    ],
-    []
-  );
+ const stats = useMemo(
+  () => [
+    { value: "8+", label: "Trusted Years" },
+    { value: "100+", label: "Employees" },
+    { value: "200+", label: "Residential Projects" },
+    { value: "50+", label: "Commercial Fit-Outs" },
+  ],
+  []
+);
 
   return (
     <main className="w-full overflow-hidden">
@@ -343,9 +289,9 @@ export default function BodySection() {
 
                 <div className="relative z-10 py-6 border border-white/10 bg-[#111]">
 
-                  <p className="text-4xl font-semibold text-[#4eb5a9]">
-                    <CountUp value={s.value} />
-                  </p>
+                 <p className="text-4xl font-semibold text-[#4eb5a9]">
+  {s.value}
+</p>
 
                   <p className="text-sm text-white/60 mt-2 uppercase tracking-wide">
                     {s.label}

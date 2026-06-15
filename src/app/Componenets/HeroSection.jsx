@@ -23,7 +23,7 @@ const slides = [
   },
   {
     image: "/images/bluewaters-2.png",
-    title: "Commercial Interior Design & Fit-Out Company in Dubai",
+    title: "Commercial Interior Design & Renovation Company in Dubai",
     subtitle:
       "Specialized in luxury renovation, fit-out, and interior design services tailored for sophisticated lifestyles.",
   },
@@ -138,7 +138,7 @@ const HeroSection = () => {
                 className="flex items-center gap-6 mt-12 flex-wrap"
               >
                 <Link
-                  href="/services"
+                  href="/renovation-dubai"
                   className="bg-white text-black px-8 md:px-10 py-4 md:py-5 text-sm md:text-base uppercase tracking-[2px] font-conthrax hover:bg-[#193c38] hover:text-white transition-all duration-500 flex items-center gap-4"
                 >
                   Our Services

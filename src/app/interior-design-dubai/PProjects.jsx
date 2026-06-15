@@ -75,7 +75,7 @@ const PProjects = () => {
       {/* ================= AREAS ================= */}
       <div className="areas-section max-w-6xl mx-auto px-4 md:px-10 lg:px-14 mb-20">
         <h2 className="text-white mb-10 md:text-3xl font-bold text-center">
-          AREAS WE SERVICE IN DUBAI
+          AREAS WE SERVE IN DUBAI
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

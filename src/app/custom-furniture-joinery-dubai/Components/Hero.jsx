@@ -72,8 +72,8 @@ const Hero = () => {
   return (
     <div className="relative w-full h-auto md:h-[500px] lg:h-[550px] overflow-hidden">
       <Image
-        src="/images/c modern contemporary kitchen interior.png"
-        alt="Kitchen Renovation Dubai"
+        src="/images/custom-furniture-and-joinery-dubai.png"
+        alt="Villa interior design and Renovation Dubai"
         width={1920}
         height={1080}
         priority
@@ -85,15 +85,12 @@ const Hero = () => {
       <div className="relative z-20 mt-10 flex flex-col lg:flex-row items-center justify-between w-full h-full px-4 md:px-10 lg:px-20 py-10 gap-8">
         <div className="text-white/80 max-w-xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            Kitchen Renovation Dubai
+          Custom Furniture & Joinery Services in Dubai
           </h1>
 
           <p className="text-xs md:text-sm font-play mt-4 mb-6 opacity-90">
-            Upgrade your kitchen with modern design, smart storage solutions,
-            and premium finishes. Casa Kraft create elegant, functional, and
-            customized kitchen spaces tailored to your lifestyle in Dubai.
-          </p>
-
+          Looking for professional custom furniture and joinery experts in Dubai? Casa Kraft Interior Design & Renovation delivers bespoke furniture solutions and precision joinery work with complete design, fabrication, and installation services. Call now to bring your vision to life!
+</p>
           <Link
             href="/contact-us"
             className="inline-flex items-center gap-2 bg-[#193c38] text-white px-5 py-3 text-xs md:text-sm font-semibold uppercase rounded-full hover:bg-white hover:text-black transition"
