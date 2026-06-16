@@ -1,89 +1,136 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { FaPlay } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+
+const stats = [
+  { value: "8+", label: "Trusted Years" },
+  { value: "100+", label: "Employees" },
+  { value: "200+", label: "Residential Projects" },
+  { value: "50+", label: "Commercial Fit-Outs" },
+];
+
+const services = [
+  
+ 
+ 
+{
+  title: "→ Luxury Apartment Interior Design Dubai",
+  desc: "We provide you with luxurious interior design of apartment buildings in Dubai, where elegance, comfort, and exclusiveness reign supreme. The floors we use, the lights we install, as well as our furniture and joinery are designed exclusively for you. Luxury interior design of apartments provides you with an elegant look along with functionality.",
+},
+
+  {
+    title: "→ Modern Apartment Interior Design",
+    desc: (
+    <>
+     Smart design is essential for our modern day lives. We specialize in{" "}
+      <a
+        href="modern-apartment-interior-design"
+        className="text-[#4eb5a9] hover:underline"
+      >
+         modern apartment interior design
+      </a>{" "}
+      that have clean lines, bright spaces and maximize the available space. Our designers aim at creating a cozy, yet spacious atmosphere in the homes of our clients through smart interior designing techniques.
+    </>
+  ),
+  },
+  {
+    title: "→ Bespoke Apartment Interiors",
+    desc: "Not all homeowners are alike, nor should they have the same interior design. Our bespoke apartment interior design service is focused on you, your needs and what you want for your apartment. We design everything from your wardrobe and your entertainment system to your accent walls and your kitchen."
+  },
+ {
+  title: "→ Apartment Renovation & Interior Fit-Out",
+  desc: (
+    <>
+      Whether you are renovating your already existing apartment or turning  newly purchased property into your dream place to live, our {" "}
+      <a
+        href="apartment-renovation"
+        className="text-[#4eb5a9] hover:underline"
+      >
+        complete apartment renovation and fit-out services
+      </a>{" "}
+      We offer solutions for every stage of the renovation process, including interior design, interior planning, civil works, floorings, ceiling designing, lighting and electrical system installations, plumbing works, furniture installation, and finally styling your place
+    </>
+  ),
+},
+  
+];
 
 const ApId = () => {
-  const [videoLoaded, setVideoLoaded] = useState(false);
-
   return (
-    <section className="bg-[#ffffff] px-6 sm:px-10 md:px-16 lg:px-28 xl:px-40 py-10 sm:py-10 font-sans">
-      <div className="lg:max-w-[100%] mx-auto">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Text Column */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-start">
-            <h2 className="text-sm sm:text-xl md:text-xl font-conthrax tracking-widest py-2">
-              Apartment Interior Design Dubai by Experts
-            </h2>
-            <p className="text-sm sm:text-base leading-7 mb-4 font-play">
-             <strong> <a href="https://wedointerior.ae/apartment-projects">Apartment interior design Dubai</a></strong> is not just about aesthetics — it’s about creating smart, functional, and emotionally resonant spaces that reflect how people truly live in this city. <strong>At Casa Kraft Interiors,</strong> our team of seasoned interior architects, designers, and fit-out specialists bring over 15 years of hands-on experience transforming Dubai apartments into exceptional, livable art.
-           </p>
-           <p className="text-sm sm:text-base leading-7 mb-4 font-play">
-            We understand the unique structural layouts, lighting limitations, and lifestyle expectations that come with Dubai apartments — from compact studios in JVC to <b> luxurious penthouses in Palm Jumeirah</b>. Every design we create is guided by local experience, design certifications, sustainable practices, and our commitment to delivering timeless value.
-            </p>
-            <p className="text-sm sm:text-base leading-7 mb-4 font-play">
-            Whether you're upgrading for personal comfort or increasing rental value, our end-to-end service ensures your apartment becomes a reflection of elegance, efficiency, and Dubai’s modern lifestyle.
-            </p>
+    <section className="bg-black text-white px-6 sm:px-10 md:px-16 lg:px-28 xl:px-40 py-10 font-sans">
+      <div className="mx-auto flex flex-col gap-10">
 
-            {/* Highlight Box */}
-            <div className="bg-[#193c38] text-white text-xs sm:text-base font-play rounded px-6 py-4 mt-6 w-fit">
-              15 Years of Experience
-            </div>
-          </div>
+        {/* TRUST BAR */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 
-          {/* Video Column */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-6">
-            <h2 className="text-xs sm:text-xl md:text-xl font-conthrax tracking-widest">
-              Get Best Apartment Design Dubai
-            </h2>
+          {stats.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="text-center border border-white/10 bg-[#111] py-4 px-3 rounded-md hover:border-[#4eb5a9]/40 transition"
+            >
+              <p className="text-3xl font-semibold text-[#4eb5a9]">
+                {item.value}
+              </p>
 
-          
+              <p className="text-xs text-white/60 mt-1 uppercase tracking-wide">
+                {item.label}
+              </p>
+            </motion.div>
+          ))}
 
-            {/* Video */}
-            {!videoLoaded ? (
-              <div
-                className="relative w-full aspect-video bg-black cursor-pointer group overflow-hidden rounded-lg border-4 border-[#193c38]"
-                onClick={() => setVideoLoaded(true)}
-              >
-             <Image
-              src="/images/bedroom-design.png"
-              alt="Watch our company video"
-              width={1280}
-              height={720}
-              className="object-cover w-full h-full"
-                />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/30 flex items-center justify-center backdrop-blur-sm transition group-hover:scale-110">
-                    <FaPlay className="text-white text-xl sm:text-2xl ml-1" />
-                  </div>
-                </div>
-              </div>
-            ) : (
-             <div className="w-full aspect-video border-4 border-[#193c38] rounded-lg overflow-hidden">
-                {/* ⭐ FIXED YOUTUBE SHORTS EMBED */}
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/b8e3sMux9Jk?autoplay=1&rel=0&modestbranding=1&controls=1"
-                  title="YouTube Shorts Video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            )}
-
-            {/* Optional Highlight or CTA */}
-               <Link
-            href="/contact-us"
-            className="border border-[#193c38] text-xs sm:text-base font-play px-6 py-2 mt-6 w-fit  uppercase rounded hover:bg-[#193c38] hover:text-white transition-all duration-200"
-          >
-            GET YOUR QUOTE
-          </Link>
-
-          </div>
         </div>
+ {/* HEADING */}
+              <h2 className="text-3xl md:text-4xl font-semibold text-white text-center ">
+      Apartment Interior Design Dubai -   Modern & Luxury Spaces
+
+        </h2>
+
+        {/* INTRO */}
+        <p className="text-sm sm:text-base leading-7 text-white/80">
+       Your apartment is not just a living place; it is a reflection of your lifestyle, personality and aspirations. Casa Kraft Interior Design & Renovation provide the best interior designs for your apartment in Dubai. Our specialized interior designers create stylish and comfortable interiors for contemporary living.
+        <br /><br />
+        As the <b className="text-[#4eb5a9]"
+><a href="https://casakraftinteriors.ae/">top-rated apartment interior design firm in Dubai</a></b> , Casa Kraft provides you with full solutions in designing and building apartments with our complete in-house services. Irrespective of whether you possess a studio apartment, a penthouse, a duplex apartment, or even a luxury waterfront apartment, our design experts ensure you get an interior design that suits you.
+        Our company boasts more than 12 years of experience in Dubai and provides all its clients with end-to-end solutions right from designing to completing projects.
+
+        </p>
+
+
+        {/* HEADING */}
+         <h2 className="text-3xl md:text-4xl font-semibold text-white text-center ">
+        Our Apartment Interior Design Services In Dubai
+        </h2>
+
+        {/* SERVICES GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4">
+
+          {services.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-[#111] border border-white/10 p-5 rounded-md hover:border-[#4eb5a9]/40 transition"
+            >
+              <h3 className="text-[#4eb5a9] font-semibold mb-2 text-sm sm:text-base">
+                {item.title}
+              </h3>
+              <p className="text-white/70 text-sm leading-relaxed">
+                {item.desc}
+              </p>
+            </motion.div>
+          ))}
+
+        </div>
+
+     
+
       </div>
     </section>
   );

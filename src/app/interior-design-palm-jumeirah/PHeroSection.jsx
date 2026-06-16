@@ -32,10 +32,7 @@ const PHeroSection = () => {
 
           {/* Subheading */}
           <p className="font-play mt-6  max-w-2xl text-gray-200">
-          Casa Kraft Interior design & renovation is a leading Interior Design Company in Palm Jumeirah, Dubai, and 
-            provides the best interior design services for residential, commercial, and retail projects. 
-           Palm Jumeirah is one of the most prominent areas of Dubai as it is famous for its luxurious 
-            waterfront residential apartments, signature commercial buildings, and thriving business centers.</p>
+           Interior design company in Palm Jumeirah. We offer bespoke interiors, renovation services across Dubai. Call Now.</p>
 
           {/* CTA Button */}
           <div className="mt-8">
