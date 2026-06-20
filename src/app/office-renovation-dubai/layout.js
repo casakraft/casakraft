@@ -1,15 +1,18 @@
-import '../globals.css';
+import "../globals.css";
 
 export const metadata = {
-  title: "Office Renovation Dubai - Commercial Fit Out | Casa Kraft Interiors",
+  title: "Office Renovation Dubai | Best Interior Fit-Out Company",
   description:
-    "Expert office renovation in Dubai by Casa Kraft Interiors. We deliver modern workspace design, commercial fit-out, and complete office remodeling solutions.",
+    "Best office renovation services in Dubai. Custom fit-outs, bespoke layouts & smart tech integration. Get your free quote today!",
   keywords: [
     "office renovation Dubai",
-    "commercial fit out Dubai",
-    "office interior design Dubai",
-    "workspace renovation Dubai",
+    "office fit out Dubai",
     "office remodeling Dubai",
+    "commercial office renovation Dubai",
+    "modern office renovation Dubai",
+    "turnkey office fit out Dubai",
+    "workspace renovation Dubai",
+    "office interior design Dubai",
     "Casa Kraft Interiors",
   ],
   authors: [{ name: "Casa Kraft Interiors" }],
@@ -32,7 +35,7 @@ export default function RootLayout({ children }) {
               "@type": "Service",
               name: "Office Renovation Dubai",
               description:
-                "Professional office renovation, commercial fit-out, and workspace design services in Dubai by Casa Kraft Interiors.",
+                "Professional office renovation, fit-out, remodeling, and workspace transformation services in Dubai by Casa Kraft Interiors.",
               provider: {
                 "@type": "Organization",
                 name: "Casa Kraft Interiors",
@@ -42,7 +45,7 @@ export default function RootLayout({ children }) {
                 "@type": "Place",
                 name: "Dubai, UAE",
               },
-              serviceType: "Office Renovation and Commercial Fit Out",
+              serviceType: "Office Renovation and Commercial Fit-Out Services",
               url: "https://casakraftinteriors.ae/office-renovation-dubai",
             }),
           }}
@@ -58,7 +61,7 @@ export default function RootLayout({ children }) {
               name: "Office Renovation Dubai",
               url: "https://casakraftinteriors.ae/office-renovation-dubai",
               description:
-                "Get modern office renovation and commercial fit-out services in Dubai by Casa Kraft Interiors.",
+                "Transform your workspace with office renovation and commercial fit-out services in Dubai by Casa Kraft Interiors.",
             }),
           }}
         />
@@ -81,7 +84,7 @@ export default function RootLayout({ children }) {
                   "@type": "ListItem",
                   position: 2,
                   name: "Services",
-                  item: "https://casakraftinteriors.ae/",
+                  item: "https://casakraftinteriors.ae/office-interior-design-dubai",
                 },
                 {
                   "@type": "ListItem",
