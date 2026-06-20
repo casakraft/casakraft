@@ -6,61 +6,164 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Office Interior Design In Atlantis the Royal",
-    bgImage: "/images/pjv-5.png",
-    link: "/office-interior-design-royal-atlantis",
+    title: "Apartment Interior Design Atlantis The Royal",
+    bgImage: "/images/atr-2.png",
   },
   {
-    title: "Apartment Interior Design In Atlantis the Royal",
-    bgImage: "/images/pjv-1.png",
-    link: "/apartment-interior-design-royal-atlantis",
+    title: "Penthouse Interior Design Atlantis The Royal",
+    bgImage: "/images/penthouse living room Atlantis The Royal Dubai.png",
   },
   {
-    title: "Penthouse Interior Design Atlantis the Royal",
-    bgImage: "/images/pjv-4.png",
-    link: "/penthouse-interior-design-royal-atlantis",
+    title: "Custom Furniture & Joinery Atlantis The Royal",
+    bgImage: "/images/Custom Furniture & Joinery Atlantis The Royal.png",
   },
   {
-    title: "Restaurant Interior Design In Atlantis the Royal",
-    bgImage: "/images/pjv-3.png",
-    link: "/restaurant-interior-design-royal-atlantis",
+    title: " Kitchen Design Atlantis The Royal",
+    bgImage: "/images/kitchen inside Atlantis The Royal Residences Dubai.png",
+  },
+  {
+    title: "Bathroom Interior Design Atlantis The Royal",
+    bgImage: "/images/Bathroom Interior Design Atlantis The Royal.png",
   },
 
-  {
-    title: "Retail Interior Design In Atlantis the Royal",
-    bgImage: "/images/pjv-2.png",
-    link: "/retail-interior-design-royal-atlantis",
-  },
 
   
 ];
-const businessBayProjects = [
+const ATRProjects = [
   {
-    title: " Office Fit-Out",
-    category: "Travel Agency Office - Atlantis the Royal",
-    image: "/images/meby (6).webp",
-    link: "/royal-atlantis-travel-agency",
-  },
-  {
-    title: "Atlantis the Royal Apartment Interior",
-    category: "Residential Apartment - Atlantis the Royal",
-    image: "/images/bba (6).jpg",
+    title: " Royal Atlantis Apartment",
+    image: "/images/atr-4.png",
     link: "/royal-atlantis-apartment",
   },
-  {
-    title: "Restaurant Interior Design",
-    category: "Restaurant - Atlantis the Royal",
-    image: "/images/sahelnom (5).webp",
-    link: "/royal-atlantis-restaurant",
-  },
-  {
-    title: " Office Interior",
-    category: "Commercial Office - Atlantis the Royal",
-    image: "/images/startech (2).webp",
-    link: "/royal-atlantis-office-fit-out",
-  },
   
+ 
 ];
+const faqs = [
+  {
+  question: 'What is the average time required to design interiors for luxury residences?',
+  answer:
+    'The timeline typically ranges from 8 to 20 weeks, depending on the villa size, design complexity and scope of work. Larger or highly customized projects may require additional time.',
+},
+  {
+    question: 'Do you offer furniture supplies?',
+    answer:
+      'Yes, our team provides a full range of furniture supply services for all villas in Dubai. The products that come under this category consist of joinery, custom furniture, wardrobes, TV cabinets and top brand furniture lines.',
+  },
+  {
+    question: 'Which styles do you design in?',
+    answer:
+      'Our interior designers create villas in various styles, such as ultra luxury, modern, contemporary, Arabic, transitional, classic and minimalist designs. The designs of our villas are customized based on your preference, lifestyle and architecture of your villa.',
+  },
+  {
+    question: 'Do you offer full renovation services?',
+    answer:
+      'Certainly. We offer premium renovation services that include floors, ceilings, kitchens, bathrooms, bespoke joinery, and lighting, among other aspects.',
+  },
+  {
+    question: 'Can I visit your office?',
+    answer:
+      'Of course, you can visit us at our showroom located at Sheikh Zayed Road, Dubai. In our showroom, you will be able to see samples of materials and finishes we use for designing villa interiors, furniture, and more.',
+  },
+];
+/* =========================
+   TESTIMONIAL CAROUSEL
+========================= */
+const TestimonialCarousel = () => {
+  const testimonials = [
+    {
+      quote:
+        "The work of Casa Kraft helped turn our Atlantis Royal house into a marvelous place for us to live in. They were able to understand our vision from the first day they worked on it and made sure to design an interior that combines luxury with practicality",
+      author: "Alexander Reed , Atlantis The Royal Dubai",
+    },
+    {
+      quote:
+        "They really outdid themselves in terms of professionalism, creativity and exceptional  service provided. From initial design to execution and final styling all aspects were taken care of by Casa Kraft.",
+      author: "Daniel Mitchel, One at Palm Jumeirah",
+    },
+    {
+      quote:
+        "Working with Casa Kraft Interiors on our apartment at Atlantis The Royal Residences was a wonderful experience. From the initial design discussions to the final execution, the team demonstrated exceptional attention to detail and a clear understanding of luxury living.",
+      author: "Faisal Al Nuaimi, Serenia Residences",
+    },
+  ];
+
+  const [idx, setIdx] = React.useState(0);
+  const [animate, setAnimate] = React.useState(true);
+
+  const change = (i) => {
+    setAnimate(false);
+    setTimeout(() => {
+      setIdx((i + testimonials.length) % testimonials.length);
+      setAnimate(true);
+    }, 250);
+  };
+
+  React.useEffect(() => {
+    const t = setInterval(() => change(idx + 1), 6000);
+    return () => clearInterval(t);
+  }, [idx]);
+
+
+  return (
+    <div className="relative max-w-4xl mx-auto my-16 px-6">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#4eb5a9]/20 via-transparent to-[#4eb5a9]/20 blur-3xl rounded-3xl"></div>
+
+      <div className="relative bg-zinc-950/80 backdrop-blur-xl border border-zinc-800 p-8 md:p-5 shadow-2xl">
+        <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+          WHAT OUR CLIENTS SAY
+        </h2>
+
+        <div
+          style={{
+            opacity: animate ? 1 : 0,
+            transform: animate ? "translateY(0px)" : "translateY(10px)",
+            transition: "all 0.3s ease",
+            minHeight: "140px",
+          }}
+          className="text-center"
+        >
+          <p className="text-white/80 text-sm md:text-lg leading-relaxed italic ">
+            “{testimonials[idx].quote}”
+          </p>
+
+          <div className="mt-6 text-[#4eb5a9] font-semibold text-sm md:text-base">
+            — {testimonials[idx].author}
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center gap-6 mt-6">
+          <button
+            onClick={() => change(idx - 1)}
+            className="w-10 h-10 rounded-full border border-[#4eb5a9] text-[#4eb5a9] hover:bg-[#4eb5a9] hover:text-black transition"
+          >
+            ‹
+          </button>
+
+          <div className="flex gap-2">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => change(i)}
+                className={`transition-all duration-300 rounded-full ${
+                  i === idx ? "w-6 h-2 bg-[#4eb5a9]" : "w-2 h-2 bg-zinc-600"
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            onClick={() => change(idx + 1)}
+            className="w-10 h-10 rounded-full border border-[#4eb5a9] text-[#4eb5a9] hover:bg-[#4eb5a9] hover:text-black transition"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 const AboutSection = () => {
   return (
     <section className="bg-[#000000] py-16 sm:py-20">
@@ -70,126 +173,57 @@ const AboutSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           
 
-          <div className="w-full  text-center ">
-            <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
-            PROFESSIONAL INTERIOR DESIGN SERVICES IN Atlantis the Royal
-           </h2>
-            <p className="text-justify text-white text-base sm:text font-play mb-6 leading-relaxed">
-              As a leading <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/interior-design-companies-in-royal-atlantis-dubai">interior design company in Atlantis the Royal</a></b> , we offer services for both commercial 
-              and residential projects. Our services related to office interior design Atlantis the Royal help 
-              the businesses in designing a modern and productive space. For commercial businesses, our 
-              services of commercial interior design Atlantis the Royal, such as retail outlets, restaurants, 
-              and hotels, ensure that every project is visually attractive and functional.
-              <br /><br />
-               <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
-                COMPREHENSIVE SOLUTIONS FOR HOMES AND BUSINESSES
-             </h3>
-              For our residential clients, our <b className="text-[#caa193]"
-              ><a href="https://casakraftinteriors.ae/royal-atlantis-apartment">apartment interior design Atlantis the Royal</a></b> services helps in 
-              designing homes that are comfortable, stylish and modern. We combine custom furniture and 
-              luxurious materials to suit the lifestyle of our clients. Our renovation services in 
-              Atlantis the Royal upgrade or renovate the existing spaces with minimal disturbance.
-              With our creative and technical skills, we are known as one of the best interior fit 
-              out contractors Atlantis the Royal and <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/fit-out-company-in-royal-atlantis-dubai">fit-out company in Atlantis the Royal Dubai</a></b>, with 
-              projects that reflect quality, style, and attention to detail.
+          <div className="w-full ">    
+              <h2 className="text-3xl md:text-4xl font-semibold text-white  mb-10">
+           Transform Your Atlantis The Royal Residence With Casa Kraft</h2>
+            <p className="text-justify text-white text-base sm:text  mb-6 leading-relaxed">
+             Living in Atlantis The Royal calls for interiors befitting both the status of the building and the sophistication of the occupant. At Casa Kraft Interior Design & Renovation, we pride ourselves on offering ultra-luxury interior designs, premium renovations and high end fit-outs to discerning clients in search of exclusivity and elegance. As one of the <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/">best interior design firms at Atlantis The Royal Dubai</a></b>, we ensure the creation of interiors which blend architecture, aesthetics and practicality. Our expertise in the field has helped us position ourselves among the Top luxury interior design companies in Dubai by creating customized interiors based on individual demands.
+
             </p>
+               <h3 className="text-3xl md:text-2xl font-semibold text-white  mb-5">What Is Luxury Interior Design in Atlantis The Royal Dubai?</h3>
+
+               
+            <p className="text-justify text-white text-base sm:text  mb-6 leading-relaxed">
+            The design of interiors in Atlantis The Royal includes developing interiors that will correspond to one of the most expensive residential complexes in Dubai. Attention to detail is one of the main priorities here and all aspects from spatial layout to furnishings and lighting will be meticulously designed to bring you maximum convenience and luxury. As Casa Kraft Interior Design & Renovation, we control the entire process starting from conception and 3D rendering and finishing with the implementation of the project and delivery of results.
+                  </p>
+              <section className="bg-[#000000] ">
              
-              <section className="bg-[#000000] py-10">
-              <div className="container mx-auto flex flex-col lg:flex-row items-center px-4 sm:px-8 lg:px-16 gap-10">
-                {/* Left Side - Image */}
-                <div className="w-full lg:w-1/2">
-                 <Image
-                    src="/images/startech (3).webp"
-                    alt="Office Interior Design in Atlantis the Royal Dubai"
-                    width={800}
-                    height={600}
-                    className="w-full h-100 rounded-lg shadow-md"
-                   />
-                  </div>
-
-      
-
-        {/* Right Side - Content */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-[#b98877] text-2xl sm:text-2xl font-conthrax mb-4 leading-tight">
-            Office Interior Design and Fit-Out in Atlantis the Royal
-
-          </h2>
-
-          <p className="text-white text-sm sm:text-base font-play mb-4">
-            The commercial towers in Atlantis the Royal have the most splendid offices, startups, and multinational companies in Dubai. Our <b className="text-[#caa193]"
-            ><a href="https://casakraftinteriors.ae/office-interior-design-trends-in-royal-atlantis">office interior design Atlantis the Royal services</a></b> are based on delivering spaces that are functional,motivating and matching with the standard corporate environment in Dubai.
-          </p>
-         <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
-                COMPREHENSIVE SOLUTIONS FOR HOMES AND BUSINESSES
-             </h3>
-          <p className="text-white text-sm sm:text-base mb-4 font-play">
-            We oversee all the details involved in office fit-outs Dubai, such as space planning, furniture, lighting design, and technology. As professional offices fit out contractors in Dubai, we also handle DCD approvals and authority approvals Dubai to ensure that everything goes smoothly. 
-            Other than  Atlantis the Royal, our <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/office-projects">office interior design projects</a></b> also cover the nearby areas of DIFC and Downtown Dubai, which means that all businesses in the main commercial areas of Dubai get to enjoy our expertise. 
-          </p>
-
-
-          {/* Buttons */}
-       <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-  <Link href="/gallery">
-   <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
-              See Our Projects
-            </button>
-  </Link>
-
-  <Link href="/contact-us">
-    <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
-              Free Consultation
-            </button>
-  </Link>
-</div>
-        </div>
-      </div>
        {/* Services Section */}
-        <div className="text-center mt-10 mb-12">
-           <h2 className="text-[#b98877] text-2xl font-conthrax mb-4 leading-tight">
-            Our Interior Services in Atlantis the Royal
+        <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+            Our Interior Services in Atlantis The Royal
           </h2>
         </div>
         
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
   {services.map((service, idx) => (
-    <Link key={idx} href={service.link} className="block group">
-      <div className="relative h-[250px] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
-        
-        <Image
-          src={service.bgImage}
-          alt={service.title}
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
-        />
+  <div
+    key={idx}
+    className="group relative h-[250px] rounded-2xl overflow-hidden shadow-lg"
+  >
+    <Image
+      src={service.bgImage}
+      alt={service.title}
+      fill
+      className="object-cover transition-transform duration-700 group-hover:scale-110"
+    />
 
-        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition" />
+    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition" />
 
-        <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 text-white">
-          <h3 className="text-md font-conthrax mb-2">
-            {service.title}
-          </h3>
-          <p className="text-sm text-gray-200 leading-relaxed">
-            {service.description}
-          </p>
-        </div>
+    <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 text-white">
+      <h3 className="text-md font-conthrax mb-2">
+        {service.title}
+      </h3>
 
-      </div>
-    </Link>
-  ))}
+      <p className="text-sm text-gray-200 leading-relaxed">
+        {service.description}
+      </p>
+    </div>
+  </div>
+))}
 </div>
-      <div className="text-center mt-10">
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
-            Turnkey Fit-Out and Design & Build Solutions
-          </h2>
-          <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
-          At <b className="text-[#caa193]"
-         ><a href="https://casakraftinteriors.ae/">Casa Kraft Interior design & renovation</a></b>, we offer full-service turnkey fit out Atlantis the Royal services for our clients who are looking for all in one experience. As a reputable design and build company Dubai, we oversee all aspects of the process, from the first consultation and design concept to the approvals from the authorities Dubai, through to completion and delivery. Our end-to-end process ensures a smooth, efficient, and high-quality experience at all times. Our clients can take advantage of our knowledge in interior design and fit out companies in Dubai.
-
-            </p>
-        </div>
+    
     </section>
             
             <section className="bg-[#000000] py-10">
@@ -200,58 +234,73 @@ const AboutSection = () => {
 
         {/* Right Side - Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-[#b98877] text-2xl sm:text-2xl font-conthrax mb-4 leading-tight">
-            Apartment and Luxury Interior Design in Atlantis the Royal
-
+                <h2 className="text-3xl md:text-4xl font-semibold text-white  mb-5">
+           Our Interior Design Process in ATR, Dubai
           </h2>
-
-          <p className="text-white text-sm sm:text-base font-play mb-4">
-            Atlantis the Royal is known for its luxury residential properties, and our <b className="text-[#caa193]"
-            ><a href="https://casakraftinteriors.ae/apartment-interior-design-dubai">apartment interior design in Atlantis the Royal Dubai</a></b> services are designed to provide you with luxurious, comfortable, and contemporary living spaces. We are experts in luxury interior design Dubai and provide homes that are a perfect blend of beauty and functionality</p>
-         <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
-               ELEGANT RESIDENTIAL SPACES TAILORED TO YOUR LIFESTYLE
+         <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight">  Inquiry & Understanding
+         </h3>
+          <p className="text-white text-sm sm:text-base  mb-4">
+             We receive your query through phone calls, WhatsApp or even the contact form on our website. You tell us your needs, vision and timelines.</p>
+        <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight">
+               Site Visit
              </h3>
-          <p className="text-white text-sm sm:text-base mb-4 font-play">
-           We also undertake projects in other nearby locations like  Executive Towers and the Vision Tower in Atlantis the Royal. Whether it is a small apartment or a waterfront penthouse, our interior design in Atlantis the Royal Dubai is a perfect blend of elegance, innovation, and functionality.</p>
+          <p className="text-white text-sm sm:text-base mb-4 ">
+          The design team visits your property to analyze your interiors in detail, take accurate measurements and identify any architectural features that will affect the design.
+           </p>
 
+          <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight"> Design Development & Visualization</h3>
+          <p className="text-white text-sm sm:text-base mb-4 ">The creation of custom interior designs and visualization is done at this stage to help you visualize how your interiors will look before construction starts.</p>
+          
+          <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight">Proposal and Quote</h3>
+           <p className="text-white text-sm sm:text-base mb-4 ">You are presented with a transparent proposal that outlines the cost and other aspects of executing your design.</p>
 
-           {/* Buttons */}
-       <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-  <Link href="/gallery">
-   <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
-              See Our Projects
-            </button>
-  </Link>
+           <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight"> Finalization of Materials and Design Details</h3>
+           <p className="text-white text-sm sm:text-base mb-4 ">This involves selecting the finishing materials, furnishing your space, lighting fixtures, and all necessary planning to prepare for execution.</p>
+          
+           <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight">Execution & Handover</h3>
+           <p className="text-white text-sm sm:text-base mb-4 ">Our project management team oversees every aspect of construction, fit-out, installation, and final styling to ensure flawless delivery and a seamless handover.</p>
 
-  <Link href="/contact-us">
-    <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
-              Free Consultation
-            </button>
-  </Link>
-</div>
+          {/* BUTTONS */}
+              <div className="flex flex-col sm:flex-row gap-4">
+
+                <a
+                  href="/gallery"
+                  className="border border-white px-7 text-white py-3 text-sm hover:bg-white hover:text-black transition text-center"
+                >
+                  See Projects
+                </a>
+
+                <a
+                  href="/contact-us"
+                  className="text-white px-7 py-3 text-sm bg-[#1f4a45] hover:bg-[#275f58] transition text-center"
+                >
+                  Free Consultation
+                </a>
+
+              </div>
+
 
         </div>
          {/* Left Side - Image */}
         <div className="w-full lg:w-1/2">
           <Image
-            src="/images/bba.png"
-            alt="Office Interior Design in Atlantis the Royal Dubai"
+            src="/images/Our Interior Design Process in ATR, Dubai.png"
+            alt="Our Interior Design Process in ATR, Dubai"
             width={800}
             height={600}
-            className="w-full h-100 rounded-lg shadow-md"
+            className="w-full rounded-lg shadow-md"
           />
         </div>
       </div>
       
       <div className="text-center mt-10">
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
-            Why Choose Casa Kraft Interior design & renovationin Atlantis the Royal
+               <h2 className="text-3xl md:text-3xl font-semibold text-white text-center ">
+          Why Choose Casa Kraft – Interior Design Company in Royal Atlantis?
 
           </h2>
-          <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
-          Choosing the right interior design company in Atlantis the Royal is important to ensure that you achieve the  best results. At Casa Kraft Interior design & renovation, we have managed to set ourselves away from the rest because of our commitment to excellence and passion for design. Our professional interior designers in Atlantis the Royal have good experience of working in commercial high-rise buildings, ensuring that the work is done in the most efficient manner possible while also adhering to the necessary regulations. Our clients trust us for our clear pricing, organized project management, and creative designs for residential as well as commercial projects.
-          Our experience also includes the neighboring areas of Burlington Tower Dubai, The Prism Tower and Sheikh Zayed Road, making us the go-to choice for clients looking for the best interior design company in Atlantis the Royal.
-
+          <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-3 ">
+         Choosing the right interior design company is important when you choose to invest in luxurious interiors. Casa Kraft Interior Design & Renovation provides high end design and build service which makes the whole procedure easier while keeping the high levels of quality.
+        Our services include complimentary consultations, comprehensive design planning, 3D modeling, high quality materials selection, bespoke joinery, fit-out solutions and project management. The professionals of our company carefully coordinate each step and make sure that all of your requests will be satisfied. One of the leading interior design companies based in Dubai, we work towards meeting and exceeding the expectations of our clients.
 
             </p>
         </div>
@@ -259,60 +308,26 @@ const AboutSection = () => {
           </div>
         </div>
          
-        <div className="relative  mb-12 transition-transform duration-500 hover:scale-105">
-                
-                    <div className="block">
-                      <Image
-                        src="/images/primo-sitting.jpg"
-                      alt="Residential Interior Design"
-                      width={1400}
-                      height={600}
-                      className="object-cover w-full h-[200px] sm:h-[330px]"
-                      />
-                      {/* Overlay */}
-                      <div className="absolute inset-y-0 text-start right-0 w-1/2 md:w-1/3 bg-black/70 p-2 sm:p-10 flex flex-col justify-center">
-                        
-                        <h2 className="text-lg text-[#b98877] font-conthrax uppercase">
-                          START YOUR INTERIOR DESIGN PROJECT IN Atlantis the Royal TODAY
-                        </h2>
-                        <p className="text-[15px]  leading-relaxed text-gray-300 font-play overflow-hidden max-h-30 md:max-h-none transition-all duration-300 ease-in-out">
-                        If you are looking for an experienced Interior Design Company in Atlantis the Royal, Casa Kraft Interior design & renovation is your best partner. From office interiors and retail outlets to apartments, penthouses, and restaurants, we work with every kind of space. Contact us today to schedule a consultation or site visit and experience expert interior design in Atlantis the Royal Dubai, transforming your space into a stylish, functional, and high-end environment.
-                        </p>
-                      </div>
-                    </div>
-                  
-                  {/* Vertical Line */}
-                  <div className="hidden md:block absolute top-0 left-1/3 w-[2px] h-full bg-gradient-to-r from-[#caa193] to-[#a0624d" />
-                </div>
+       
 
-                <div className="text-center mb-0">
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
-           Commercial Interior Design in Atlantis the Royal
-          </h2>
-          <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
-          Our < b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/commercial-interior-design-dubai">commercial interior design solutions</a></b> include retail, restaurants, and hospitality. We know that design has a significant impact on customer experience, brand image, and efficiency. From retail fit out Atlantis the Royal projects to <b className="text-[#caa193]"
-          ><a href="https://casakraftinteriors.ae/royal-atlantis-restaurant">restaurant interior design Atlantis the Royal</a></b> , we provide services in design, materials, lighting, and implementation. As a good reputed fit out company in Atlantis the Royal, we design interiors that are aesthetic, functional, and match with your brand identity. We have successfully completed our projects in the surrounding regions of Atlantis the Royal such as Sheikh Zayed Road and Bay Avenue. Our commercial designs are modern and elegant, making us one of the leading interior fit out companies in Dubai.
-
-         </p>
-        </div>
-        {/* ================= Atlantis the Royal PROJECTS SECTION ================= */}
-<section className="bg-[#000000] py-16">
+             
+        {/* ================= Atlantis The Royal PROJECTS SECTION ================= */}
+<section className="bg-[#000000]">
   <div className="container mx-auto px-4 sm:px-8 lg:px-16">
 
     {/* Section Heading */}
     <div className="text-center mb-12">
-      <h2 className="text-[#b98877] text-3xl font-conthrax mb-4 leading-tight">
-        Our Projects in Atlantis the Royal
+            <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+        Our Projects in Atlantis The Royal
       </h2>
-      <p className="text-gray-300 max-w-3xl mx-auto font-play">
-        Discover our completed interior design and fit-out projects in Atlantis the Royal,
-        including commercial offices, <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/royal-atlantis-apartment-design">luxury Atlantis the Royal apartment designs</a></b>, restaurants, and turnkey solutions.
+      <p className="text-gray-300 max-w-3xl mx-auto ">
+        Discover our completed interior design and fit-out projects in Atlantis The Royal, including luxury Atlantis The Royal apartment designs, restaurants, and turnkey solutions.
       </p>
     </div>
 
     {/* Projects Grid */}
- <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-  {businessBayProjects.map((project, index) => (
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
+  {ATRProjects.map((project, index) => (
     <Link key={index} href={project.link} className="block group">
       <div className="relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
 
@@ -342,7 +357,7 @@ const AboutSection = () => {
     {/* Bottom CTA */}
     <div className="text-center mt-12">
       <Link href="/gallery">
-        <button className="bg-[#b98877] hover:bg-[#a97463] text-black px-8 py-3 rounded-md font-conthrax transition duration-300">
+        <button className="bg-[#4eb5a9] hover:bg-[#a97463] text-black px-8 py-3 rounded-md font-conthrax transition duration-300">
           View All Projects
         </button>
       </Link>
@@ -351,62 +366,214 @@ const AboutSection = () => {
   </div>
 </section>
 
-{/* ================= END Atlantis the Royal PROJECTS SECTION ================= */}
-       
-         <div className="text-left mt-10 mb-0">
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
-           Interior Renovation and Upgrade Services
-          </h2>
-          <p className=" text-left mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
-          Not only Interior Design, we also deliver our premium renovation services. Our team optimizes layouts, integrates smart systems, and upgrades finishes to provide best interior designs that enhance both aesthetics and functionality of your space. We provide full renovation services in Atlantis the Royal and nearby locations. Our team of experts works on layouts, smart systems, and finishes to provide high-end interior solutions that improve aesthetics and functionality.
-          
-         </p>
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
-           Local Expertise and Presence in Dubai
-          </h2>
-            <p className=" text-left mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
-              Although Atlantis the Royal is our main area of providing services, our knowledge and expertise extend throughout Dubai and the UAE. Being one of the best interior design companies in Dubai, we have successfully completed various projects including <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/royal-atlantis-travel-agency">travel agency Office</a></b>, Cafe Interiors, Atlantis the Royal restaurant and an apartment interior in different locations, always providing the best possible outcomes in luxury interior design Dubai, interior design in Dubai, and other upscale regions. <br /> <br />
-              Through our services we make sure that clients from other areas are also able to take advantage of our professional interior design and fit-out solutions. Our status as one of the <b className="text-[#caa193]"
-            ><a href="https://casakraftinteriors.ae/interior-design-companies-in-royal-atlantis-dubai">best interior design companies in Atlantis the Royal</a></b> is reinforced by a portfolio of satisfied clients across Dubai’s premium districts.
+{/* ================= RENOVATION + SERVICES SECTION ================= */}
+<div className="mt-10 mb-0">
 
-            </p>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+    {/* ================= LEFT SIDE (TEXT CONTENT) ================= */}
+   
+<div className="space-y-6">
+        <h3 className="text-[#4eb5a9] text-2xl font-conthrax mb-2 leading-tight">
+       Full Interior Design & Luxury Fit-Out
+      </h3>
+
+     <p className="text-sm text-white/70">
+       Our <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/interior-design-dubai">complete interior design and fit out services </a></b>will help you enhance every area of your home. We design for the living room, dining, bedroom, kitchen, bathroom, walk in wardrobe and entertainment zones using the same design theme. Our turnkey solution guarantees that you will be working with just one firm all through the process.
+      </p>
+
+      <h3 className="text-[#4eb5a9] text-2xl font-conthrax mb-2 leading-tight">
+      Bespoke Joinery and Custom Furniture
+
+      </h3>
+ <p className="text-sm text-white/70">
+       Being professionals in bespoke interior design and fit out services, we provide unique furniture items that suit your house. These range from luxurious wardrobes, TV cabinets to unique dining tables and feature walls among others.
+      </p>
+
+ <h3 className="text-[#4eb5a9] text-2xl font-conthrax mb-2 leading-tight"> Luxury Living Room Interior Design</h3>
+  <p className="text-sm text-white/70">The living room is usually the center of luxury homes. We design luxury living areas with beautiful décor, designer lighting, custom finishes on the walls and ceilings, and a layout of luxury furniture. No matter whether you opt for the contemporary look of luxury or classical elegance, casa kraft helps you to achieve it.</p>
+    </div>
+
+    {/* ================= RIGHT SIDE (SERVICES LIST) ================= */}
+    <div className="space-y-6">
+
+    <h3 className="text-[#4eb5a9] text-2xl font-conthrax mb-2 leading-tight">
+      Master Bedroom & Private Suite Design
+      </h3>
+       <p className="text-sm text-white/70">We provide <b><a href="https://casakraftinteriors.ae/bedroom-interior-design-trends"></a>luxury bedroom designs</b> , drawing inspiration from top-notch hospitality experiences around the globe. From custom bedheads and walk in closets to custom lighting and furniture, each design offers maximum luxury with consistency in its design elements.</p>
+      <div className="space-y-4 text-white ">
+
+        <div>
+          <h3 className="text-[#4eb5a9] text-2xl font-conthrax mb-2 leading-tight">Luxury Kitchens & Bathrooms</h3>
+          <p className="text-sm text-white/70">
+        We offer <b className="text-[#4eb5a9]"
+><a href="https://casakraftinteriors.ae/kitchen-interior-design-in-dubai">kitchens interior designs in Atlantis The Royal</a></b> which include quality cabinetry, stone countertops, ample storage, and luxurious finishing. As far as bathrooms are concerned, our luxury bathrooms will take you to the level of a spa where you can enjoy quality designer vanity, freestanding bathtub, lighting fixtures, and quality materials.
+
+          </p>
         </div>
-          <div className=" text-sm leading-relaxed font-play text-white">
-          
-            <h2 class="text-[#a366b9887752] text-2xl font-conthrax leading-tight py-5">
-             Frequently asked questions (FAQs)
-            </h2>
-            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
-              1-  How long does an office fit-out in Atlantis the Royal take?
-            </h3>
-            <p>
-            Office fit-outs usually take six to twelve weeks, depending on the size and complexity of the project. Our team takes care of all approvals from DCD and approvals from the authority in Dubai.
-            </p>
 
-            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
-             2-  Do you provide turnkey fit-out services?
-            </h3>
-            <p>
-            Yes, our turnkey fit out services in Atlantis the Royal include all aspects, from design and approval to completion and delivery to our clients. </p>
+        <div>
+        <h3 className="text-[#4eb5a9] text-2xl font-conthrax mb-4 leading-tight">Outdoor Entertainment Areas </h3>
+          <p className="text-sm text-white/70">
+    In addition to luxurious interiors, Atlantis The Royal has magnificent outdoor areas. Therefore, we provide luxury terraces, lounge areas, outdoor dining areas, entertainment areas, and relaxation areas.
 
-            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
-             3- Can you design luxury apartments in Atlantis the Royal?
-            </h3>
-            <p>
-             Yes, we can. At WEDO, we are experts in apartment interior design in Atlantis the Royal and luxury residential projects, designing homes that are both beautiful and functional.
-            </p>
 
-            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
-             4- Are you among the best interior design companies in Atlantis the Royal?
-            </h3>
-            <p>
-             With our experience, quality work, and happy clients, Casa Kraft Interior Design & Renovation is one of the best interior design companies in Atlantis the Royal.
-            </p>
+          </p>
+        </div>
 
-             
-          </div>
+       
+       
+
       </div>
-      
+    </div>
+
+  </div>
+{/* ================= INTERIOR THEMES SECTION ================= */}
+<section className="bg-black py-5 mt-5">
+  <div className="container mx-auto px-4 sm:px-8 lg:px-16">
+
+    <div className="text-center mb-10">
+      <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
+        Three Different Interior Design Themes for Atlantis The Royal Residences
+      </h2>
+
+      <p className="max-w-4xl mx-auto text-white/70 text-sm md:text-base leading-relaxed">
+        Every residence at Atlantis The Royal deserves interiors that reflect
+        the owner's personality and lifestyle. Casa Kraft Interior Design &
+        Renovation offers bespoke concepts tailored to modern luxury living.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      {/* Theme 1 */}
+      <div className="bg-zinc-950 border border-zinc-800 overflow-hidden rounded-2xl group">
+        <div className="relative h-[320px]">
+          <Image
+            src="/images/modern apartment living room inside Atlantis The Royal Residences Dubai.png"
+            alt="luxury apartment living room inside Atlantis The Royal Residences Dubai."
+            fill
+            className="object-cover group-hover:scale-110 transition duration-700"
+          />
+        </div>
+
+        <div className="p-7">
+          <h3 className="text-2xl text-[#4eb5a9] font-semibold mb-4">
+          Modern Luxury Interiors
+          </h3>
+
+          <p className="text-white/70 text-sm leading-relaxed">
+           In today’s interiors, there is an emphasis on streamlined architecture, premium finishes, elegance and luxury materials to create beautiful, bright, spacious and contemporary spaces without any excesses.
+
+          </p>
+        </div>
+      </div>
+
+      {/* Theme 2 */}
+      <div className="bg-zinc-950 border border-zinc-800 overflow-hidden rounded-2xl group">
+        <div className="relative h-[320px]">
+          <Image
+            src="/images/contemporary minimalist penthouse interior Atlantis The Royal Dubai.png"
+            alt="Modern Minimalist Interior Design"
+            fill
+            className="object-cover group-hover:scale-110 transition duration-700"
+          />
+        </div>
+
+        <div className="p-7">
+          <h3 className="text-2xl text-[#4eb5a9] font-semibold mb-4">
+          Contemporary Sophisticated Interiors
+           </h3>
+
+          <p className="text-white/70 text-sm leading-relaxed">
+           Modern luxury encompasses the use of modern design elements combined with comfort and practicality. Using layering in textures, high quality furniture, lighting and accessories, we design interiors that are luxurious but also comfortable.
+
+          </p>
+        </div>
+      </div>
+
+      {/* Theme 3 */}
+      <div className="bg-zinc-950 border border-zinc-800 overflow-hidden rounded-2xl group">
+        <div className="relative h-[320px]">
+          <Image
+            src="/images/classic luxury living room inside Atlantis The Royal Residences Dubai.png"
+            alt="Classic Elegant Interior Design"
+            fill
+            className="object-cover group-hover:scale-110 transition duration-700"
+          />
+        </div>
+
+        <div className="p-7">
+          <h3 className="text-2xl text-[#4eb5a9] font-semibold mb-4">
+          Timeless Classic Luxury Interiors
+          </h3>
+
+          <p className="text-white/70 text-sm leading-relaxed">
+           Classic elegance is a great choice for those customers who prefer timelessness and elegant interiors. Bespoke elements, high-quality materials, custom work and elegant finishes add to timeless looks.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  {/* TESTIMONIAL BELOW BOTH COLUMNS */}
+  <div className="mt-12">
+    <TestimonialCarousel />
+  </div>
+
+</div>
+        
+         {/* FAQ Section */}
+      <div className=" text-white/80 max-w-4xl mx-auto bg-black rounded-lg text-white/80  shadow p-6 sm:p-10">
+        <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+        Royal Atlantis Interior Design in Dubai – FAQs
+        </h2>
+        <p className="text-white/80 font-play text-sm sm:text-base text-white/80 mb-6 text-center">
+          Find quick answers to common questions about our Interior Design services in ATR, Dubai.
+        </p>
+
+        <div className="space-y-3">
+          {faqs.map((item, index) => (
+            <details
+              key={index}
+              className="group border-b border-gray-200 py-3"
+            >
+              <summary className="flex items-center justify-between cursor-pointer list-none">
+                <span className="font-play font-semibold text-sm sm:text-base text-white/80 text-left">
+                  {item.question}
+                </span>
+                <span className="ml-3 text-white/80 text-xl transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+              <p className="mt-2 text-sm sm:text-base font-play text-white/80">
+                {item.answer}
+              </p>
+            </details>
+          ))}
+        </div>
+      </div>
+
+      </div>
+        {/* Top Content Block */}
+      <div className="lg:max-w-[80%] text-white mx-auto bg-black p-6 sm:p-5 mb-5 rounded shadow text-center space-y-6">
+             <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+      Ready to Transform Your Atlantis The Royal Residence?
+
+
+        </h2>
+        <div className="space-y-4 text-white/80 text-sm sm:text-base font-play text-left">
+        <p>
+     Casa Kraft turns your home into a masterpiece from the initial concept all the way through to completion. It doesn’t matter whether it is an overall fit out, interior renovation or complete re-design. We bring you the most luxurious interior designs Dubai has to offer. Contact Casa Kraft today for a complimentary consultation after all, extraordinary living starts with a conversation! Contact us today for a free consultation and discover why we are among the best luxury interior design companies in Dubai.
+
+
+       </p>
+  
+        </div>
+
+        </div>
     </section>
   );
 };

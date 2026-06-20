@@ -9,8 +9,8 @@ const PHeroSection = () => {
       
       {/* Background Image */}
       <Image
-        src="/images/pjv-1.png"
-        alt="Luxury Interior Design Dubai in Atlantis the Royal"
+        src="/images/apartment living room Atlantis The Royal Residences Dubai.png"
+        alt="Luxury Interior Design Dubai in palm jumeirah"
         fill
         priority
         className="object-cover"
@@ -32,15 +32,12 @@ const PHeroSection = () => {
 
           {/* Subheading */}
           <p className="font-play mt-6  max-w-2xl text-gray-200">
-          Casa Kraft Interior design & renovation is a leading Interior Design Company in Atlantis the Royal, Dubai, and 
-            provides the best interior design services for residential, commercial, and retail projects. 
-           Atlantis the Royal is one of the most prominent areas of Dubai as it is famous for its luxurious 
-            waterfront residential apartments, signature commercial buildings, and thriving business centers.</p>
+          Interior Design in Atlantis The Royal Dubai by Casa Kraft Interiors. Bespoke luxury interiors, premium fit-out, renovation & custom furniture. Call Now!</p>
 
           {/* CTA Button */}
           <div className="mt-8">
             <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
-             <a href="https://casakraftinteriors.ae/gallery">Our Atlantis the Royal Projects</a> 
+             <a href="https://casakraftinteriors.ae/gallery">Our Royal Atlantis Projects</a> 
             </button>
           </div>
 

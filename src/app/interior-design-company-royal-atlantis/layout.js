@@ -1,28 +1,28 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Best Interior Design Company in Damac Hills, Dubai - Casa Kraft interiors",
+  title: "Interior Design Atlantis The Royal Dubai | Casa Kraft Interiors",
   description:
-    "Luxury interior design company in Damac Hills delivering office, apartment & turnkey fit-outs. Schedule your free consultation today.",
+    "Interior Design in Atlantis The Royal Dubai by Casa Kraft Interiors. Bespoke luxury interiors, premium fit-out, renovation & custom furniture. Call Now!",
   keywords:[
-    "interior design company Damac Hills",
-    "interior design company in Damac Hills Dubai",
-    "office interior design Damac Hills",
-    "apartment interior design Damac Hills",
-    "interior fit out company Damac Hills",
-    "turnkey fit out Damac Hills",
-    "commercial interior design Damac Hills",
+    "interior design company Atlantis The Royal",
+    "interior design company in Atlantis The Royal Dubai",
+    "office interior design Atlantis The Royal",
+    "apartment interior design Atlantis The Royal",
+    "interior fit out company Atlantis The Royal",
+    "turnkey fit out Atlantis The Royal",
+    "commercial interior design Atlantis The Royal",
     "luxury interior design Dubai",
-    "renovation services Damac Hills",
+    "renovation services Atlantis The Royal",
     "design and build company Dubai"
   ],
   metadataBase: new URL('https://casakraftinteriors.ae/'),
   openGraph: {
-    title: 'Interior Design Projects Dubai | Casa Kraft Interior Design & Renovation',
+    title: 'Interior Design Projects Dubai | Casa Kraft Interior Design & Fit-Out',
     description:
-      'Explore luxury Interior Design & Renovation projects in Dubai by Casa Kraft Interior. Discover our residential, commercial, and hospitality portfolio.',
+      'Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interior. Discover our residential, commercial, and hospitality portfolio.',
     url: 'https://casakraftinteriors.ae/interior-design-company-royal-atlantis',
-    siteName: 'Casa Kraft Interior Design & Fitout',
+    siteName: 'Casa Kraft interior design & Renovation',
     images: [
       {
         url: '/og-image.jpg',
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Interior Design Projects Dubai | Casa Kraft Interior Design & Renovation',
+    title: 'Interior Design Projects Dubai | Casa Kraft Interior Design & Fit-Out',
     description:
-      'Explore luxury Interior Design & Renovation projects in Dubai by Casa Kraft Interior. Discover our residential, commercial, and hospitality portfolio.',
+      'Explore luxury interior design and fit-out projects in Dubai by Casa Kraft Interior. Discover our residential, commercial, and hospitality portfolio.',
     images: ['/og-image.jpg'],
   },
   alternates: {
@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Casa Kraft Interior Design & Fitout",
+              "name": "Casa Kraft interior design & Renovation",
               "url": "https://casakraftinteriors.ae/",
               "logo": {
                 "@type": "ImageObject",
@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
               },
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Damac Hills",
+                "streetAddress": "Atlantis The Royal",
                 "addressLocality": "Dubai",
                 "postalCode": "00000",
                 "addressCountry": "AE"
@@ -94,9 +94,9 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebPage",
-              "name": "Interior Design Company in Damac Hills",
+              "name": "Interior Design Company in Atlantis The Royal",
               "url": "https://casakraftinteriors.ae/interior-design-company-royal-atlantis",
-              "description": "Luxury interior design services in Damac Hills Dubai including offices, apartments, cafes, restaurants, and travel agencies."
+              "description": "Luxury interior design services in Atlantis The Royal Dubai including offices, apartments, cafes, restaurants, and travel agencies."
             })
           }}
         />
@@ -109,21 +109,21 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "@id": "https://casakraftinteriors.ae/interior-design-company-royal-atlantis",
-              "name": "Casa Kraft Interior Design & Fitout",
+              "name": "Casa Kraft interior design & Renovation",
               "image": "https://casakraftinteriors.ae/og-image.jpg",
               "url": "https://casakraftinteriors.ae/interior-design-company-royal-atlantis",
               "telephone": "+971 058 807 5603",
               "priceRange": "$$$",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Damac Hills",
+                "streetAddress": "Atlantis The Royal",
                 "addressLocality": "Dubai",
                 "addressRegion": "Dubai",
                 "postalCode": "00000",
                 "addressCountry": "AE"
               },
               "areaServed": [
-                "Damac Hills",
+                "Atlantis The Royal",
                 "Downtown Dubai",
                 "DIFC",
                 "Dubai Mall",
@@ -133,10 +133,10 @@ export default function RootLayout({ children }) {
                 "Sheikh Zayed Road"
               ],
               "serviceOffered": [
-                {"@type": "Service","name": "Office Interior Design in Damac Hills"},
-                {"@type": "Service","name": "Apartment Interior Design in Damac Hills"},
-                {"@type": "Service","name": "Villa Interior Design In Damac Hills"},
-                {"@type": "Service","name": "Restaurant Interior Design In Damac Hills"}
+                {"@type": "Service","name": "Office Interior Design in Atlantis The Royal"},
+                {"@type": "Service","name": "Apartment Interior Design in Atlantis The Royal"},
+                {"@type": "Service","name": "Villa Interior Design In Atlantis The Royal"},
+                {"@type": "Service","name": "Restaurant Interior Design In Atlantis The Royal"}
               ]
             })
           }}
@@ -152,7 +152,7 @@ export default function RootLayout({ children }) {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "How long does an office fit-out in Damac Hills take?",
+                  "name": "How long does an office fit-out in Atlantis The Royal take?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Office fit-outs typically take six to twelve weeks depending on the project size and complexity. All required DCD and authority approvals are managed by our team."
@@ -160,7 +160,7 @@ export default function RootLayout({ children }) {
                 },
                 {
                   "@type": "Question",
-                  "name": "Do you provide turnkey fit-out services in Damac Hills?",
+                  "name": "Do you provide turnkey fit-out services in Atlantis The Royal?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Yes, we provide complete turnkey fit-out services including design, approvals, execution, and final handover."
@@ -168,18 +168,18 @@ export default function RootLayout({ children }) {
                 },
                 {
                   "@type": "Question",
-                  "name": "Do you design luxury apartments in Damac Hills?",
+                  "name": "Do you design luxury apartments in Atlantis The Royal?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we specialize in apartment interior design and luxury residential interiors in Damac Hills, creating elegant and functional spaces."
+                    "text": "Yes, we specialize in apartment interior design and luxury residential interiors in Atlantis The Royal, creating elegant and functional spaces."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Are you a leading interior design company in Damac Hills?",
+                  "name": "Are you a leading interior design company in Atlantis The Royal?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Casa Kraft Interior Design & Fitout is recognized for delivering high-quality residential and commercial Interior Design & Renovation projects in Damac Hills."
+                    "text": "Casa Kraft interior design & Renovation is recognized for delivering high-quality residential and commercial interior design and fit-out projects in Atlantis The Royal."
                   }
                 }
               ]
@@ -187,47 +187,47 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* CollectionPage Schema with Damac Hills Projects */}
+        {/* CollectionPage Schema with Atlantis The Royal Projects */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "CollectionPage",
-              "name": "Damac Hills Interior Design Projects",
+              "name": "Atlantis The Royal Interior Design Projects",
               "url": "https://casakraftinteriors.ae/interior-design-company-royal-atlantis",
-              "description": "A curated collection of luxury Interior Design & Renovation projects in Damac Hills by Casa Kraft Interior Design & Fitout.",
+              "description": "A curated collection of luxury interior design and fit-out projects in Atlantis The Royal by Casa Kraft interior design & Renovation.",
               "mainEntity": {
                 "@type": "ItemList",
                 "itemListElement": [
                   {
                     "@type": "ListItem",
                     "position": 1,
-                    "name": "Damac Hills Apartment Interior Design",
+                    "name": "Atlantis The Royal Apartment Interior Design",
                     "url": "https://casakraftinteriors.ae/business-bay-apartment"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
-                    "name": "Damac Hills Office Fit-Out",
+                    "name": "Atlantis The Royal Office Fit-Out",
                     "url": "https://casakraftinteriors.ae/business-bay-office-fit-out"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
-                    "name": "Damac Hills Cafe Interior Design",
+                    "name": "Atlantis The Royal Cafe Interior Design",
                     "url": "https://casakraftinteriors.ae/business-bay-cafe-interior"
                   },
                   {
                     "@type": "ListItem",
                     "position": 4,
-                    "name": "Damac Hills Restaurant Interior Design",
+                    "name": "Atlantis The Royal Restaurant Interior Design",
                     "url": "https://casakraftinteriors.ae/business-bay-restaurant"
                   },
                   {
                     "@type": "ListItem",
                     "position": 5,
-                    "name": "Damac Hills Travel Agency Interior Design",
+                    "name": "Atlantis The Royal Travel Agency Interior Design",
                     "url": "https://casakraftinteriors.ae/business-bay-travel-agency"
                   }
                 ]

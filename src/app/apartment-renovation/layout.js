@@ -1,23 +1,21 @@
 import '../globals.css';
 
 export const metadata = {
-  title: "Apartment Renovation Services Dubai - Casa Kraft Interiors",
+  title: "Kitchen Renovation Dubai| Casa Kraft Interiors",
   description:
-    "Casa Kraft Interiors provides apartment renovation services in Dubai with complete remodeling, approvals & fit-out solutions. Call Now!",
+    "Casa Kraft Interiors offers luxury Kitchen Renovation Dubai with bespoke concepts, premium materials, and complete renovation and fit-out solutions.",
   keywords: [
-    "apartment renovation Dubai",
-    "apartment remodeling Dubai",
-    "apartment refurbishment Dubai",
-    "apartment fit out Dubai",
-    "home renovation Dubai",
+    "kitchen interior design Dubai",
+    "luxury kitchen design Dubai",
+    "kitchen renovation Dubai",
+    "kitchen fit out Dubai",
+    "modern kitchen interior Dubai",
     "Casa Kraft Interiors",
   ],
-
-
   authors: [{ name: "Casa Kraft Interiors" }],
   metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: {
-    canonical: "/apartment-renovation",
+    canonical: "/kitchen-interior-design-dubai",
   },
 };
 
@@ -32,9 +30,9 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Apartment Renovation Dubai",
+              name: "kitchen Interior Design Dubai",
               description:
-                "Complete apartment renovation, remodeling, and fit-out services in Dubai by Casa Kraft Interiors.",
+                "Luxury kitchen interior design, renovation, and fit-out services in Dubai by Casa Kraft Interiors.",
               provider: {
                 "@type": "Organization",
                 name: "Casa Kraft Interiors",
@@ -44,8 +42,8 @@ export default function RootLayout({ children }) {
                 "@type": "Place",
                 name: "Dubai, UAE",
               },
-              serviceType: "Apartment Renovation and Fit Out",
-              url: "https://casakraftinteriors.ae/apartment-renovation",
+              serviceType: "kitchen Interior Design and Fit Out",
+              url: "https://casakraftinteriors.ae/kitchen-interior-design-dubai",
             }),
           }}
         />
@@ -57,10 +55,10 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebPage",
-              name: "Apartment Renovation Dubai",
-              url: "https://casakraftinteriors.ae/apartment-renovation",
+              name: "kitchen Interior Design Dubai",
+              url: "https://casakraftinteriors.ae/kitchen-interior-design-dubai",
               description:
-                "Professional apartment renovation services in Dubai including remodeling, modern upgrades, and full fit-out by Casa Kraft Interiors.",
+                "Get luxury kitchen interior design services in Dubai with expert renovation and fit-out solutions by Casa Kraft Interiors.",
             }),
           }}
         />
@@ -83,13 +81,13 @@ export default function RootLayout({ children }) {
                   "@type": "ListItem",
                   position: 2,
                   name: "Services",
-                  item: "https://casakraftinteriors.ae/gallery",
+                  item: "https://casakraftinteriors.ae/",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
-                  name: "Apartment Renovation",
-                  item: "https://casakraftinteriors.ae/apartment-renovation",
+                  name: "kitchen Interior Design Dubai",
+                  item: "https://casakraftinteriors.ae/kitchen-interior-design-dubai",
                 },
               ],
             }),

@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: "Villa Interior Design palm jumeirah",
-    bgImage: "/images/penthouse-design.png",
+    bgImage: "/images/pjv-6.png",
     link: "/villa-interior-design-palm-jumeirah",
   },
   {
@@ -204,31 +204,31 @@ const AboutSection = () => {
         
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-  {services.map((service, idx) => (
-    <Link key={idx} href={service.link} className="block group">
-      <div className="relative h-[250px] rounded-2xl overflow-hidden shadow-lg cursor-pointer">
-        
-        <Image
-          src={service.bgImage}
-          alt={service.title}
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
-        />
+ {services.map((service, idx) => (
+  <div
+    key={idx}
+    className="group relative h-[250px] rounded-2xl overflow-hidden shadow-lg"
+  >
+    <Image
+      src={service.bgImage}
+      alt={service.title}
+      fill
+      className="object-cover transition-transform duration-700 group-hover:scale-110"
+    />
 
-        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition" />
+    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition" />
 
-        <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 text-white">
-          <h3 className="text-md font-conthrax mb-2">
-            {service.title}
-          </h3>
-          <p className="text-sm text-gray-200 leading-relaxed">
-            {service.description}
-          </p>
-        </div>
+    <div className="absolute inset-0 z-10 flex flex-col justify-end p-6 text-white">
+      <h3 className="text-md font-conthrax mb-2">
+        {service.title}
+      </h3>
 
-      </div>
-    </Link>
-  ))}
+      <p className="text-sm text-gray-200 leading-relaxed">
+        {service.description}
+      </p>
+    </div>
+  </div>
+))}
 </div>
     
     </section>
