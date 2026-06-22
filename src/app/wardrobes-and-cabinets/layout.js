@@ -1,21 +1,24 @@
-import '../globals.css';
+import "../globals.css";
 
 export const metadata = {
-  title: "Wardrobes & Cabinets Dubai - Custom Storage Solutions | Casa Kraft Interiors",
+  title: "Office Renovation Dubai | Best Interior Fit-Out Company",
   description:
-    "Casa Kraft Interiors offers custom wardrobes and cabinets in Dubai with modern designs, premium materials, and expert installation for homes and apartments.",
+    "Best office renovation services in Dubai. Custom fit-outs, bespoke layouts & smart tech integration. Get your free quote today!",
   keywords: [
-    "wardrobes Dubai",
-    "custom wardrobes Dubai",
-    "cabinets Dubai",
-    "built in wardrobes Dubai",
-    "storage solutions Dubai",
+    "office renovation Dubai",
+    "office fit out Dubai",
+    "office remodeling Dubai",
+    "commercial office renovation Dubai",
+    "modern office renovation Dubai",
+    "turnkey office fit out Dubai",
+    "workspace renovation Dubai",
+    "office interior design Dubai",
     "Casa Kraft Interiors",
   ],
   authors: [{ name: "Casa Kraft Interiors" }],
   metadataBase: new URL("https://casakraftinteriors.ae"),
   alternates: {
-    canonical: "/wardrobes-and-cabinets",
+    canonical: "/office-renovation-dubai",
   },
 };
 
@@ -30,9 +33,9 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "Wardrobes & Cabinets Dubai",
+              name: "Office Renovation Dubai",
               description:
-                "Custom wardrobes and cabinets design, supply, and installation services in Dubai by Casa Kraft Interiors.",
+                "Professional office renovation, fit-out, remodeling, and workspace transformation services in Dubai by Casa Kraft Interiors.",
               provider: {
                 "@type": "Organization",
                 name: "Casa Kraft Interiors",
@@ -42,8 +45,8 @@ export default function RootLayout({ children }) {
                 "@type": "Place",
                 name: "Dubai, UAE",
               },
-              serviceType: "Wardrobes and Cabinets Design and Installation",
-              url: "https://casakraftinteriors.ae/wardrobes-and-cabinets",
+              serviceType: "Office Renovation and Commercial Fit-Out Services",
+              url: "https://casakraftinteriors.ae/office-renovation-dubai",
             }),
           }}
         />
@@ -55,10 +58,10 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebPage",
-              name: "Wardrobes & Cabinets Dubai",
-              url: "https://casakraftinteriors.ae/wardrobes-and-cabinets",
+              name: "Office Renovation Dubai",
+              url: "https://casakraftinteriors.ae/office-renovation-dubai",
               description:
-                "Get custom wardrobes and cabinets in Dubai with expert design and installation by Casa Kraft Interiors.",
+                "Transform your workspace with office renovation and commercial fit-out services in Dubai by Casa Kraft Interiors.",
             }),
           }}
         />
@@ -81,13 +84,13 @@ export default function RootLayout({ children }) {
                   "@type": "ListItem",
                   position: 2,
                   name: "Services",
-                  item: "https://casakraftinteriors.ae/",
+                  item: "https://casakraftinteriors.ae/office-interior-design-dubai",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
-                  name: "Wardrobes & Cabinets",
-                  item: "https://casakraftinteriors.ae/wardrobes-and-cabinets",
+                  name: "Office Renovation Dubai",
+                  item: "https://casakraftinteriors.ae/office-renovation-dubai",
                 },
               ],
             }),

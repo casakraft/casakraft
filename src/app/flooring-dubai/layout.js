@@ -1,15 +1,20 @@
-import '../globals.css';
+import "../globals.css";
 
 export const metadata = {
-  title: "Flooring Dubai - Wooden, Vinyl & Tile Flooring | Casa Kraft Interiors",
+  title: "Flooring Dubai - Best Flooring Company & Installation",
   description:
-    "Casa Kraft Interiors offers professional flooring services in Dubai including wooden flooring, vinyl flooring, tiles, and complete installation for residential and commercial spaces.",
+    "Leading Flooring Company in Dubai Offering SPC, Vinyl, Parquet, Laminate Flooring & Professional Installation. Visit Us Now!.",
   keywords: [
     "flooring Dubai",
-    "wooden flooring Dubai",
+    "SPC flooring Dubai",
     "vinyl flooring Dubai",
-    "tile flooring Dubai",
-    "floor installation Dubai",
+    "parquet flooring Dubai",
+    "laminate flooring Dubai",
+    "wood flooring Dubai",
+    "flooring installation Dubai",
+    "best flooring company Dubai",
+    "commercial flooring Dubai",
+    "residential flooring Dubai",
     "Casa Kraft Interiors",
   ],
   authors: [{ name: "Casa Kraft Interiors" }],
@@ -32,7 +37,7 @@ export default function RootLayout({ children }) {
               "@type": "Service",
               name: "Flooring Dubai",
               description:
-                "Professional flooring supply and installation services in Dubai including wood, vinyl, and tile flooring by Casa Kraft Interiors.",
+                "Professional flooring installation services in Dubai including SPC, vinyl, parquet, laminate, and wooden flooring by Casa Kraft Interiors.",
               provider: {
                 "@type": "Organization",
                 name: "Casa Kraft Interiors",
@@ -42,7 +47,7 @@ export default function RootLayout({ children }) {
                 "@type": "Place",
                 name: "Dubai, UAE",
               },
-              serviceType: "Flooring Supply and Installation",
+              serviceType: "Flooring Installation and Interior Flooring Solutions",
               url: "https://casakraftinteriors.ae/flooring-dubai",
             }),
           }}
@@ -58,7 +63,7 @@ export default function RootLayout({ children }) {
               name: "Flooring Dubai",
               url: "https://casakraftinteriors.ae/flooring-dubai",
               description:
-                "Get expert flooring services in Dubai including wooden, vinyl, and tile flooring with professional installation by Casa Kraft Interiors.",
+                "Explore premium flooring solutions in Dubai including SPC, vinyl, parquet, and laminate flooring with expert installation services.",
             }),
           }}
         />
@@ -80,8 +85,8 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "ListItem",
                   position: 2,
-                  name: "Services",
-                  item: "https://casakraftinteriors.ae/",
+                  name: "Gallery",
+                  item: "https://casakraftinteriors.ae/gallery",
                 },
                 {
                   "@type": "ListItem",
