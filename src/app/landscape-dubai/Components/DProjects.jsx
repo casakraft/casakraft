@@ -8,13 +8,13 @@ const TestimonialCarousel = () => {
   const testimonials = [
     {
       quote:
-        "Our requirement was a wardrobe that could be integrated into our Business Bay apartment and Casa Kraft Interior Design & Renovation did not disappoint. Their design made use of even the tiniest of spaces available and the workmanship is simply impeccable.Highly recommended.",
-      author: "iqra Khalid, Dubai",
+        "Thanks to Casa Kraft, we were able to turn our villa garden into an oasis. The design team at Casa Kraft captured the essence of what we wanted and gave us a gorgeous garden space complete with planting, seating, and lighting. Great job!",
+      author: "Leo , Dubai",
     },
     {
       quote:
-        "Everything about this project was done in a professional manner, from the initial site visit to the completion of the installation. Our walk-in wardrobe is just fantastic and the soft close drawers were an excellent choice.",
-      author: " Mohammed Rashid, Dubai",
+        "We were seeking a luxury outdoor area that could add to the beauty of our villa and create an ideal place where we can entertain our friends and family. The professional staff at Casa Kraft has been able to deliver beyond our expectations through their innovative ideas and expertise. The process from 3D landscape design to the installation of the project has been perfect in every way. The result of the landscape has not only added to the beauty of our home but also made its appearance totally different.",
+      author: "Ella ,. Dubai",
     },
   ];
 
@@ -105,34 +105,74 @@ const TestimonialCarousel = () => {
 };
 
 const aptGallery = [
-  "/images/wc2.png",
-  "/images/wc3.png",
-  "/images/wc4.png",
-  "/images/wc5.png",
-  "/images/wc6.png",
-  "/images/wc7.png",
+  "/images/ls2.png",
+  "/images/ls3.png",
+  "/images/ls4.png",
+  "/images/ls5.png",
+  "/images/ls6.png",
+  "/images/ls7.png",
 ];
 
 const krSteps = [
   {
     id: '01',
-    title: 'Site measurement and consultation',
-    desc: 'gaining an insight into your space, storage requirements, and designs',
+    title: 'Discovery Consultation',
+    desc: 'Every project starts with a comprehensive consultation where we will learn about your vision, needs, lifestyle, budget, and your objectives regarding the outdoors.',
   },
   {
     id: '02',
-    title: '3D design and material selection',
-    desc: 'creating a vision of how the end product will look like before manufacturing starts',
+    title: 'Site Assessment and Analysis',
+    desc: 'Our experts will make a thorough assessment of the site and evaluate its size, topology, soil properties, drainage, sun exposure, vegetation, and architecture in order to reveal both possibilities and difficulties.',
   },
   {
     id: '03',
-    title: 'Workshop construction',
-    desc: 'made from quality materials and finishes in a controlled environment',
+    title: 'Concept Design',
+    desc: 'Taking into account the information obtained during the site analysis and your needs, we will design a custom landscape concept that includes hard- and softscaping elements, outdoor living spaces, and other useful aspects.',
   },
   {
     id: '04',
-    title: 'Installation on site',
-    desc: 'done by our skilled carpentry crew in an efficient way',
+    title: '3D Landscape Visualization',
+    desc: 'We will make use of modern technologies and provide you with 3D visualizations of the suggested landscape project.',
+  },
+  {
+    id: '05',
+    title: 'Materials & Plant Selection',
+    desc: 'We choose high-quality materials, pavement solutions, natural stones, decorative items, plants, trees, and shrubs that suit your design and thrive well in Dubai’s weather conditions.',
+  },
+  {
+    id: '06',
+    title: 'Irrigation & Outdoor Lighting Design',
+    desc: 'We design your garden’s irrigation and outdoor lighting schemes to ensure proper growth of plants, save water and light up your space at night.',
+  },
+  {
+    id: '07',
+    title: 'Comprehensive Technical Planning',
+    desc: 'We create technical drawings for your construction, planting, grading, irrigation, materials and all other documents that you need for hassle-free project execution.',
+  },
+  {
+    id: '08',
+    title: 'Budget Clearance & Project Timetable',
+    desc: 'After designing, we will give you a detailed project proposal and schedule of work to assure full transparency prior to starting the work.',
+  },
+  {
+    id: '09',
+    title: 'Landscape construction & Installation',
+    desc: 'Our skilled landscape experts handle each phase of the project including landscaping, hardscaping, planting, irrigation, water bodies, pergolas, paths and outdoor construction.',
+  },
+  {
+    id: '10',
+    title: 'Quality Inspection & Finish Work',
+    desc: 'Every piece is inspected to meet our high quality standards. The final touches and plant improvements are made to give a perfect finish to the project.',
+  },
+  {
+    id: '11',
+    title: 'Final Inspection & Project Delivery',
+    desc: 'A final inspection is done with the client to make sure everything has been completed to their satisfaction. The finished project is then delivered to them.',
+  },
+  {
+    id: '12',
+    title: 'Landscape Maintenance',
+    desc: 'We can provide maintenance services such as lawn maintenance, pruning, checking for proper irrigation, planting and more.',
   },
 ];
 
@@ -149,34 +189,29 @@ const serviceAreas = [
 
 const faqs = [
   {
-    question: 'What is the difference between a built-in and a walk-in wardrobe?',
+    question: 'How much does landscape design cost in Dubai?',
     answer:
-      ' A built-in wardrobe will be designed to fit into the space available along a wall or into a niche, making it perfect for apartments and smaller rooms. Walk-in wardrobes will be designed as special rooms for getting ready, requiring more space than built-in wardrobes, usually used in villas and master rooms.',
+      'The prices for landscape design differ based on the scale and complexity of the project as well as other factors such as materials used.',
   },
   {
-    question: 'Are there any customization services for wardrobes and cabinets?',
+    question: 'Do you offer 3D visualization of landscape?',
     answer:
-      ' Yes. We provide highly customized wardrobe cabinet Dubai service including all details such as materials, finishes, layouts, and fittings that we design specifically for you.',
+      'Yes, we offer our 3D Landscape Visualization services during the process of Landscape Design Dubai. Before any work is started on your project, we create realistic 3D visualization that gives you an idea about the design of your future landscape. These visualizations show planting, hardscaping, outdoor living spaces, water feature design, lighting concepts, etc.',
   },
   {
-    question: ' What is the duration of wardrobe installation in Dubai?',
+    question: 'Is it possible for you to design and construct the landscape?',
     answer:
-      'The usual installation time for the wardrobe ranges from 7 to 14 days from the date of design confirmation depending on the dimensions and customization.',
+      'Yes, Casa Kraft Interior Design & Renovation does offer you Landscape Design Dubai services along with the construction works under one umbrella. Our comprehensive approach will include all phases of the projects such as consultations, concept design, detailed planning, construction, and installations of landscapes.',
   },
   {
-    question: ' Are you able to design wardrobes for apartments and villas?',
+    question: 'Do you design the irrigation system?',
     answer:
-      'Yes. We design storage solutions for all kinds of properties.',
+      'Yes, we offer professional Irrigation System Design services for Dubai. We design and install irrigation systems that are not only effective in water distribution but also guarantee healthy and beautiful landscaping. Every irrigation system designed by our company is created based on the specific requirements of the property and plants planted there.',
   },
   {
-    question: 'Which materials do you use for your wardrobe and cabinet?',
+    question: 'Which property types do you work with?',
     answer:
-      ' We manufacture a large variety of high-end material, such as laminates, wooden veneers, and lacquer coating, along with sturdy hardware for superior performance and maintenance.',
-  },
-  {
-    question: 'Do you offer kitchen cabinets and bathroom vanities also?',
-    answer:
-      'Yes. In addition to wardrobes, we also manufacture high-end kitchen cabinets, wardrobes, bathrooms vanities & entire house solutions, making your home design consistent.',
+      'We work with villas, townhouses, gardens, commercial facilities, hospitality projects, communities, and any public area.',
   },
 ];
 
@@ -199,7 +234,9 @@ const staggerContainer = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.2,
+      transition: {
+        staggerChildren: 0.2,
+      },
     },
   },
 };
@@ -218,45 +255,43 @@ const DProjects = () => {
       <div className="max-w-4xl mx-auto px-6 py-10 text-left">
         {/* Main H2 Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-6 text-center md:text-left">
-          Best Wardrobe and Cabinet Design Services in Dubai
+          Premier Landscape Design Company Dubai
         </h2>
         
         {/* Intro Paragraph */}
         <p className="text-sm sm:text-base text-white/80 leading-relaxed mb-10 text-center md:text-left">
-          Our company <b className="text-[#4eb5a9]"
-        ><a href="/renovation-dubai">Casa Kraft Interior Design & Renovation</a></b> has earned its position as one of the best interior fit out companies in Dubai and the proof of it comes from our cabinetry division. We collaborate with property owners, property developers and interior designers for providing storage solutions, which are not only stylish but practical as well. From initial designing till the time of installation we ensure that our clients get high quality products, which can close properly and are positioned exactly at the required places.
+          Casa Kraft Interior Design & Renovation is one of the <b className="text-[#4eb5a9]"
+        ><a href="https://casakraftinteriors.ae/"> leading companies for Landscaping Dubai services</a></b>. We feel that like the interior of a house, the outdoor area of a house needs to be designed with the same creativity and imagination. Our process is based on innovative design ideas, premium materials and technical skills. Before creating our unique strategy for Outdoor Landscape Design Dubai, we study the architectural design of the property, its environment and the client's needs. We aim at making outdoor areas that will look beautiful and functional all year round. Our solutions are tailor-made for any type of garden and courtyard from small to big.
         </p>
 
         {/* Dynamic Text Rows (No Boxes) */}
         <div className="space-y-10">
           <div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Custom Wardrobe Design services in Dubai</h3>
+            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4 text-center">Luxury Landscape Design Dubai Services</h2>
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3 mt-6">Villa Landscape Design Dubai</h3>
             <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              The wardrobe must blend into the design of your room rather than clash with it. Our professional designers have extensive expertise in providing <b className="text-[#4eb5a9]"
-        ><a href="https://www.google.com/search?sa=X&sca_esv=100be553d7950a9c&cs=0&biw=1536&bih=695&sxsrf=APpeQntVguqBuxSejPLvfLmpqHdvk32mMw:1782208723294&kgmid=/g/11yql27kgy&q=Casa+Kraft+Interiors&shem=epsd1,ltac&shndl=30&source=sh/x/loc/uni/m1/1&kgs=030419ba86c8e919&utm_source=epsd1,ltac,sh/x/loc/uni/m1/1">custom wardrobes in Dubai</a></b> that will merge with your interior, regardless of whether you have a minimalist interior or an elegant and contemporary one. Our wardrobes feature a modular design, which enables us to fit your wardrobe in even the most cramped corners of your apartment or villa. The advantage of modular construction is that it allows for easy future modification of shelves, drawers and hangers.
+              Our services for villa landscape designs in Dubai consist of designing lavish outdoor settings which will go well with the luxury villa properties. Our designers will work on elegant gardens, elaborate outdoor sitting areas, shaded sitting areas, decorated walkways, and pool side areas. The design of every villa will be designed in such a way as to make both the appearance and the functionality of the place more enjoyable. We design outdoor spaces for people to relax and have fun. We design relaxing, entertaining, and socializing outdoor spaces using our expertise in Luxury Garden Design Dubai.
             </p>
           </div>
 
           <div className="border-t border-zinc-900 pt-6">
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Kitchen Cabinets</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Garden Landscape Design</h3>
             <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              Custom kitchen cabinets from Casa kraft offer you smart storage along with elegant design. We offer <b className="text-[#4eb5a9]"
-        ><a href="/kitchen-renovation">modern kitchen designs</a></b> which offer better use of space along with increased functionality and beauty.
+              The professionally designed Garden Landscape Design will definitely add to the aesthetics of the property. We have an expert design team that creates unique designs of gardens that include lots of greenery and plants, decorations, and landscape designs for sustainability.Each garden is designed specifically to grow well in Dubai’s climate and to be beautiful throughout the year.
             </p>
           </div>
 
           <div className="border-t border-zinc-900 pt-6">
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Bathroom Vanity Cabinets</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Hardscape and Outdoor Landscape Design Dubai</h3>
             <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              Casa kraft designs your bathroom cabinets with elegance along with functionality in mind. We offer custom-designed vanity cabinets and storage cabinets, and other storage solutions for your <b className="text-[#4eb5a9]"
-        ><a href="/bathroom-renovation">bathroom renovation</a></b>.
+              Hardscapes are the basic structure of all well-designed landscapes. In our Outdoor Landscape Design Dubai services, we incorporate premium paving, natural stone paths, decorative walls, outdoor patios, pergolas, and entertaining areas to add function and style to your landscape.
             </p>
           </div>
 
           <div className="border-t border-zinc-900 pt-6">
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Complete House Storage Solutions</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Irrigation System Design Dubai</h3>
             <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              Whether it be living room cabinets or TV units, utility storage or home office storage, Casa kraft can offer complete house storage solutions.
+              A professional Irrigation System Design Dubai will allow you to have not only an eco-friendly but a flourishing garden. We design efficient watering systems in order to water your lawn or garden properly and reduce unnecessary expenses. Using the latest irrigation technologies in our Landscape Design Dubai projects, we make sure that the plants stay healthy and the system itself operates effectively.
             </p>
           </div>
         </div>
@@ -265,16 +300,9 @@ const DProjects = () => {
       {/* Brand Specific Material & Modern Designs Block */}
       <div className="max-w-5xl mx-auto px-6 py-10 text-center space-y-8">
         <div className="border border-zinc-800 bg-zinc-950/50 p-6 sm:p-10 rounded-2xl">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4">Get Our Best Wardrobe Cabinet Dubai Solutions</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4">Benefits of Professional Landscape Design</h2>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-4xl mx-auto">
-            In addition to bedrooms, we have a cabinet manufacturing line that caters to the needs of storage solutions for the entire house. Our premium kitchen cabinets, wardrobes, bathroom cabinets and whole-house storage options are just some of the products that we provide, so that our customers can create the same design theme in all parts of the house. Custom wardrobes from our company combine beautiful wood grain patterns with modern appeal. In terms of materials, we offer a variety of types to suit any taste: matte lacquer, high gloss lacquer or even natural wood veneers.
-          </p>
-        </div>
-
-        <div className="border border-zinc-800 bg-zinc-950/50 p-6 sm:p-10 rounded-2xl">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4">Modern Designs That Match Your Interiors</h2>
-          <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-4xl mx-auto">
-            In trends in interior design change fast but your wardrobe should be timeless enough to fit into your life for many years to come. Our experts make sure to create a modern design that will reflect the latest style trends while not going out of date. Modern wardrobes and cabinets designed to fit your interior, with different types of doors sliding and hinged, mirrored and matte surfaces, handleless push system and classic handles, everything is made to blend in with your existing interior style.
+            Landscape Designing is beneficial to investors who own properties since it gives many advantages to those property owners. For instance, landscape design improves the curb appeal of the property, adds value to the property, and makes outdoor living spaces that make the owner of the property enjoy the outdoor space. Professional landscaping also assists in maximizing the use of space by making the space look bigger.
           </p>
         </div>
       </div>
@@ -283,10 +311,10 @@ const DProjects = () => {
       <div className="w-full overflow-hidden">
         <div className="text-center mb-8 sm:mb-12 px-6">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-white font-semibold mb-4">
-            Our Bespoke Wardrobe & Cabinet Portfolio
+            Our Luxury Landscaping Portfolio
           </h2>
           <p className="max-w-3xl mx-auto text-white/80 text-sm sm:text-base">
-            Explore a selection of beautifully designed walk-in closets and custom cabinetry showcasing our premium wood finishes, seamless integration, and expert craftsmanship across Dubai.
+            Explore a selection of beautifully designed gardens, luxury villas outdoor layouts, custom structures showcasing our premium stone finishes, seamless custom designs, and expert technical landscaping execution across Dubai.
           </p>
         </div>
 
@@ -300,7 +328,7 @@ const DProjects = () => {
               >
                 <Image
                   src={image}
-                  alt={`Kitchen Project ${index + 1}`}
+                  alt={`Landscape Project ${index + 1}`}
                   width={600}
                   height={450}
                   className="w-[280px] sm:w-[340px] h-[210px] sm:h-[255px] object-cover transition duration-500 group-hover:scale-110"
@@ -314,7 +342,7 @@ const DProjects = () => {
         </div>
       </div>
 
-      {/* Converted Process Section - Now 4 Boxes Adjusted in a Row Layout */}
+      {/* Converted Process Section - Now 12 Boxes Adjusted in a Grid Layout */}
       <div className="bg-black text-white/80 py-14 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.h2
@@ -324,14 +352,9 @@ const DProjects = () => {
             transition={{ duration: 0.7 }}
             className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-6 sm:mb-10"
           >
-            Custom Wardrobe Cabinet Design and Installation Services in Dubai
+            Our Landscape Design Process
           </motion.h2>
-          <p className="text-center text-sm md:text-base text-white/80 mb-10 max-w-4xl mx-auto">
-            Creating an aesthetically pleasing wardrobe requires more than mere designing, as the precision in the installation phase is essential in ensuring it works perfectly. Casa Kraft Interior Design & Renovation offers professional custom wardrobe cabinet design and installation in Dubai that we do completely within our company.
-            Our process includes:
-          </p>
 
-          {/* Adjusted to lg:grid-cols-4 for full row grid alignment */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {krSteps.map((step) => (
               <div
@@ -340,7 +363,6 @@ const DProjects = () => {
               >
                 <div>
                   <div className="text-[#4eb5a9] font-bold text-sm mb-2">{step.id}</div>
-                  {/* Title made font-bold */}
                   <h3 className="font-bold text-sm md:text-base text-white mb-3 tracking-wide uppercase">
                     {step.title}
                   </h3>
@@ -367,12 +389,11 @@ const DProjects = () => {
           transition={{ duration: 0.7 }}
           className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-2"
         >
-          Why Choose Casa Kraft Interior Design & Renovation?
+          Why Choose Casa Kraft for Landscape Design Dubai
         </motion.h2>
         <div className="space-y-4 text-white/80 text-sm sm:text-base text-center max-w-5xl mx-auto">
           <p>
-            Casa Kraft Interior Design & Renovation, for instance, is among the <b className="text-[#4eb5a9]"
-        ><a href="https://casakraftinteriors.ae/">leading interior fit-out providers in Dubai</a></b> by virtue of its emphasis on quality craftsmanship, efficient project management and superior customer service. In contrast with most companies that depend on third party contractors, our company boasts a highly skilled carpentry staff that takes care of all aspects of the process, including design, manufacturing and installation allowing us to exercise total quality control over the services we provide. The main areas of our specialization include production of custom wardrobes and cabinets in Dubai using high quality materials, innovative designs, and installation practices suitable for residential properties including homes, apartments, villas and even luxurious properties. Every project that we carry out involves transparent pricing that includes absolutely no hidden charges, professional assistance of a dedicated design consultant, warranty for our materials and hardware, and a high level of punctuality.
+            As a trusted Landscape Contractors Dubai, Casa Kraft Interior Design & Renovation brings an entirely turnkey solution to you, which entails all aspects of landscape construction. From design creation and 3D visualizations through construction to installation and finally styling, our highly skilled professionals are involved with the project in all its aspects. We have a reputation for superior craftsmanship, innovative design ideas, and satisfaction of our clients. Every property is special in its own way, and therefore, we offer a fully customized solution of Landscape Design Dubai. With our creativity and high quality of work, we can ensure that you will be pleased with the results of our services.
           </p>
         </div>
       </motion.div>
@@ -384,7 +405,7 @@ const DProjects = () => {
             Get In Touch With Casa Kraft
           </h2>
           <p className="text-white/80 text-sm md:text-base mb-8">
-            Bespoke Wardrobes & Luxury Cabinetry Manufacturing in Dubai
+            Bespoke Landscaping & Luxury Outdoor Spaces in Dubai
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
@@ -422,7 +443,7 @@ const DProjects = () => {
               transition={{ duration: 0.7 }}
               className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-6 sm:mb-10"
             >
-              Bespoke Wardrobes & Cabinets Across Dubai
+              Luxury Landscape Architecture Across Dubai
             </motion.h2>
           </div>
 
@@ -481,60 +502,31 @@ const DProjects = () => {
         <div className="space-y-3">
           {faqs.map((item, index) => (
             <details key={index} className="group border-b border-zinc-700 py-3">
-              <summary className="flex items-center justify-between cursor-pointer list-none">
-                <span className=" font-semibold text-sm sm:text-base text-white/80 text-left pr-4">
-                  {item.question}
-                </span>
-                <span className="ml-3 text-white/80 text-xl transition-transform group-open:rotate-45 flex-shrink-0">
-                  +
+              <summary className="flex items-center justify-between cursor-pointer list-none text-white font-medium text-sm sm:text-base py-2">
+                <span>{item.question}</span>
+                <span className="transition group-open:rotate-180 text-[#4eb5a9]">
+                  <svg fill="none" height="24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                 </span>
               </summary>
-              <p className="mt-3 text-sm sm:text-base  text-white/70 leading-relaxed">
+              <p className="text-zinc-400 text-xs sm:text-sm mt-2 leading-relaxed transition-all duration-300">
                 {item.answer}
               </p>
             </details>
           ))}
         </div>
       </div>
-
-      {/* Lightbox Modal */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-5xl w-full">
-            <button
-              className="absolute -top-10 right-0 text-white/80 text-2xl"
-              onClick={() => setSelectedImage(null)}
-            >
-              ✕
-            </button>
-            <Image
-              src={selectedImage}
-              alt="Preview"
-              width={1200}
-              height={800}
-              className="w-full h-auto object-contain rounded-lg"
-            />
-          </div>
-        </div>
-      )}
-
       {/* Bottom Conclusion & Free Consultation Block */}
-      <div className="max-w-5xl mx-auto px-6 pb-16 pt-12 border-t border-zinc-900">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-4 uppercase tracking-wide">
-          Get Your Free Wardrobe and Cabinet Consultation
-        </h2>
-        <h3 className="text-[#4eb5a9] font-medium text-lg sm:text-xl mb-6 max-w-3xl mx-auto text-center">
-          Get Unique Wardrobes & Cabinets That Are Built to Fit Your Lifestyle
-        </h3>
-        <div className="space-y-6 text-zinc-400 max-w-4xl mx-auto text-sm sm:text-base leading-relaxed text-center">
-          <p>
-            Elevate the look and functionality of your house with unique and exquisite storage options made according to your needs. At Casa Kraft Interior Design & Renovation, we manufacture premium wardrobes, closets and cabinets with unique designs that provide both functionality and elegance. Whether it is modern built-in wardrobes, luxurious walk-in closets or customized kitchen cabinets, we deliver nothing but quality workmanship and installation for all projects.Want to make the most out of the storage solutions you have in your home through unique wardrobes and cabinets? Then get in touch with Casa Kraft Interior Design & Renovation and take advantage of free consultations.
-          </p>
-        </div>
-      </div>
+            <div className="max-w-5xl mx-auto px-6 pb-16 pt-12 border-t border-zinc-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-4 uppercase tracking-wide">
+                Contact Us for Premium Landscape Design Dubai
+              </h2>
+              
+              <div className="space-y-6 text-zinc-400 max-w-4xl mx-auto text-sm sm:text-base leading-relaxed text-center">
+                <p>
+                  Casa Kraft Interior Design & Renovation is the place to be if you are searching for professional Landscape Design Dubai services. We offer luxury landscape design services including Luxury Landscaping Dubai, Garden Landscape Design, Landscape Architecture Dubai, and full Outdoor Landscape Design Dubai. Get in touch with us now to schedule a consultation session and see what our premier landscaping service can do for you.                </p>
+              </div>
+            </div>
+          
     </motion.section>
   );
 };

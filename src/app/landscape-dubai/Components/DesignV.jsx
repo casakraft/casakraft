@@ -11,7 +11,7 @@ const DesignV = () => {
         </h2>
 
         <p className="text-white/80 text-sm md:text-base mb-8">
-        Bespoke Wardrobes & Luxury Cabinetry Manufacturing in Dubai
+       Bespoke Landscaping & Luxury Outdoor Spaces in Dubai
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">

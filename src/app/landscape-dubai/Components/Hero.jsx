@@ -72,7 +72,7 @@ const Hero = () => {
   return (
     <div className="relative w-full h-auto md:h-[500px] lg:h-[550px] overflow-hidden">
       <Image
-        src="/images/wc10.png"
+        src="/images/ls1.png"
         alt="Office Renovation Dubai"
         width={1920}
         height={1080}
@@ -85,12 +85,11 @@ const Hero = () => {
       <div className="relative z-20 mt-10 flex flex-col lg:flex-row items-center justify-between w-full h-full px-4 md:px-10 lg:px-20 py-10 gap-8">
         <div className="text-white/80 max-w-xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-      Custom Wardrobes & Luxury Cabinetry Dubai
+      Landscape Design Dubai | Luxury Outdoor Spaces
           </h1>
 
           <p className="text-xs md:text-sm font-play mt-4 mb-6 opacity-90">
-            Bespoke built-in wardrobes, premium walk-in closets, and elegant home cabinetry crafted with precision. Transform your storage into a statement of luxury today.
-          </p>
+            Building an amazing outdoor space is all about making sure the entire process is thought out and executed professionally. At Casa Kraft Interior Design & Renovation, we offer exceptional landscaping services that make your villa gardens luxurious, functional, and sustainable.          </p>
 
           <Link
             href="/contact-us"
