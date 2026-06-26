@@ -40,7 +40,7 @@ const ApId = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white">
             Wardrobes and Cabinet Designs Dubai – Casa Kraft Interior Design & Renovation
           </h2>
-          <p className="text-sm sm:text-base leading-7 text-white/80">
+          <p className=" text-left text-sm sm:text-base leading-7 text-white/80 ">
             Storage is one of the key components of any good home, but there is nothing that enhances day-to-day comfort like a wardrobe or cabinet that truly caters to your needs. At Casa Kraft Interior Design & Renovation, we offer professional <b className="text-[#4eb5a9]"
         ><a href="/wardrobes-and-cabinets">wardrobe and cabinet designs</a></b> for Dubai residents, no matter whether you need closet space in your studio apartment or a spacious walk-in dressing room in your villa.
           </p>

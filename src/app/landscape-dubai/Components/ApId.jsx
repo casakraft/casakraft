@@ -40,11 +40,10 @@ const ApId = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white">
             Landscape Design Dubai | Luxury Outdoor Spaces by Casa Kraft Interior Design & Renovation
           </h2>
-          <p className="text-sm sm:text-base leading-7 text-white/80">
+          <p className="text-sm sm:text-base leading-7 text-white/80 text-left">
             Building an amazing outdoor space is not just about adding plants, pathways, and embellishments but is all about making sure the entire process is thought out and executed professionally and creatively, resulting in creating impressive living spaces from ordinary outdoor spaces. At Casa Kraft Interior Design & Renovation, we offer <b className="text-[#4eb5a9]"
         ><a href="/landscape-dubai">exceptional Landscape Design Dubai services</a></b> that make your outdoor spaces luxurious, functional, and sustainable.
-                      </p>
-                      <p className="text-sm sm:text-base leading-7 text-white/80">
+                     <br/>
            Being one of the best Landscape Design Companies Dubai, we offer customized landscaping services to luxury villas, private residences, corporate buildings and hospitality establishments in the UAE. Our professional team of designers, architects and project managers work hard on making sure each outdoor space we create adds value to the property, makes it more usable and corresponds to the individual tastes of the client.If you need a luxurious garden space or a fully transformed outdoor space, our Landscaping Services in Dubai will be perfect for you.
                       </p>
         </div>

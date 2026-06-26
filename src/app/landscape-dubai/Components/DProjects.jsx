@@ -265,37 +265,50 @@ const DProjects = () => {
         </p>
 
         {/* Dynamic Text Rows (No Boxes) */}
-        <div className="space-y-10">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4 text-center">Luxury Landscape Design Dubai Services</h2>
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3 mt-6">Villa Landscape Design Dubai</h3>
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              Our services for villa landscape designs in Dubai consist of designing lavish outdoor settings which will go well with the luxury villa properties. Our designers will work on elegant gardens, elaborate outdoor sitting areas, shaded sitting areas, decorated walkways, and pool side areas. The design of every villa will be designed in such a way as to make both the appearance and the functionality of the place more enjoyable. We design outdoor spaces for people to relax and have fun. We design relaxing, entertaining, and socializing outdoor spaces using our expertise in Luxury Garden Design Dubai.
-            </p>
-          </div>
+       <div className="flex flex-col space-y-4">
+  
+  {/* Main Section Title */}
+  <div>
+    <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-2 text-center">
+      Luxury Landscape Design Dubai Services
+    </h2>
+  </div>
 
-          <div className="border-t border-zinc-900 pt-6">
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Garden Landscape Design</h3>
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              The professionally designed Garden Landscape Design will definitely add to the aesthetics of the property. We have an expert design team that creates unique designs of gardens that include lots of greenery and plants, decorations, and landscape designs for sustainability.Each garden is designed specifically to grow well in Dubai’s climate and to be beautiful throughout the year.
-            </p>
-          </div>
+  {/* Villa Landscape Design */}
+  <h3 className="text-xl sm:text-2xl font-semibold text-white">
+    Villa Landscape Design Dubai
+  </h3>
+  <p className="text-sm sm:text-base text-white/70 leading-relaxed text-justify">
+    Our services for villa landscape designs in Dubai consist of designing lavish outdoor settings which will go well with the luxury villa properties. Our designers will work on elegant gardens, elaborate outdoor sitting areas, shaded sitting areas, decorated walkways, and pool side areas. The design of every villa will be designed in such a way as to make both the appearance and the functionality of the place more enjoyable. We design outdoor spaces for people to relax and have fun. We design relaxing, entertaining, and socializing outdoor spaces using our expertise in Luxury Garden Design Dubai.
+  </p>
 
-          <div className="border-t border-zinc-900 pt-6">
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Hardscape and Outdoor Landscape Design Dubai</h3>
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              Hardscapes are the basic structure of all well-designed landscapes. In our Outdoor Landscape Design Dubai services, we incorporate premium paving, natural stone paths, decorative walls, outdoor patios, pergolas, and entertaining areas to add function and style to your landscape.
-            </p>
-          </div>
+  {/* Garden Landscape Design */}
+  <h3 className="text-xl sm:text-2xl font-semibold text-white">
+    Garden Landscape Design
+  </h3>
+  <p className="text-sm sm:text-base text-white/70 leading-relaxed text-justify">
+    The professionally designed Garden Landscape Design will definitely add to the aesthetics of the property. We have an expert design team that creates unique designs of gardens that include lots of greenery and plants, decorations, and landscape designs for sustainability. Each garden is designed specifically to grow well in Dubai’s climate and to be beautiful throughout the year.
+  </p>
 
-          <div className="border-t border-zinc-900 pt-6">
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-3">Irrigation System Design Dubai</h3>
-            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
-              A professional Irrigation System Design Dubai will allow you to have not only an eco-friendly but a flourishing garden. We design efficient watering systems in order to water your lawn or garden properly and reduce unnecessary expenses. Using the latest irrigation technologies in our Landscape Design Dubai projects, we make sure that the plants stay healthy and the system itself operates effectively.
-            </p>
-          </div>
+  {/* Hardscape Design */}
+  <h3 className="text-xl sm:text-2xl font-semibold text-white">
+    Hardscape and Outdoor Landscape Design Dubai
+  </h3>
+  <p className="text-sm sm:text-base text-white/70 leading-relaxed text-justify">
+    Hardscapes are the basic structure of all well-designed landscapes. In our Outdoor Landscape Design Dubai services, we incorporate premium paving, natural stone paths, decorative walls, outdoor patios, pergolas, and entertaining areas to add function and style to your landscape.
+  </p>
+
+  {/* Irrigation System Design */}
+  <h3 className="text-xl sm:text-2xl font-semibold text-white">
+    Irrigation System Design Dubai
+  </h3>
+  <p className="text-sm sm:text-base text-white/70 leading-relaxed text-justify">
+    A professional Irrigation System Design Dubai will allow you to have not only an eco-friendly but a flourishing garden. We design efficient watering systems in order to water your lawn or garden properly and reduce unnecessary expenses. Using the latest irrigation technologies in our Landscape Design Dubai projects, we make sure that the plants stay healthy and the system itself operates effectively.
+  </p>
+
+</div>
         </div>
-      </div>
+   
 
       {/* Brand Specific Material & Modern Designs Block */}
       <div className="max-w-5xl mx-auto px-6 py-10 text-center space-y-8">
@@ -342,37 +355,39 @@ const DProjects = () => {
         </div>
       </div>
 
-      {/* Converted Process Section - Now 12 Boxes Adjusted in a Grid Layout */}
-      <div className="bg-black text-white/80 py-14 px-6">
-        <div className="max-w-7xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-6 sm:mb-10"
-          >
-            Our Landscape Design Process
-          </motion.h2>
+     {/* Converted Process Section - Now 12 Boxes Adjusted in a Grid Layout */}
+<div className="bg-black text-white/80 py-14 px-6">
+  <div className="max-w-7xl mx-auto">
+    <motion.h2
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-6 sm:mb-10"
+    >
+      Our Landscape Design Process
+    </motion.h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {krSteps.map((step) => (
-              <div
-                key={step.id}
-                className="bg-white/5 hover:bg-white/10 transition rounded-xl p-6 border border-white/10 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="text-[#4eb5a9] font-bold text-sm mb-2">{step.id}</div>
-                  <h3 className="font-bold text-sm md:text-base text-white mb-3 tracking-wide uppercase">
-                    {step.title}
-                  </h3>
-                  <p className="text-xs md:text-sm text-white/70 leading-relaxed">{step.desc}</p>
-                </div>
-              </div>
-            ))}
+    {/* Changed to lg:grid-cols-3 for 3 columns on large screens */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {krSteps.map((step) => (
+        <div
+          key={step.id}
+          className="bg-white/5 hover:bg-white/10 transition rounded-xl p-6 border border-white/10 flex flex-col justify-between"
+        >
+          <div>
+            <div className="text-[#4eb5a9] font-bold text-sm mb-2">{step.id}</div>
+            {/* Removed "uppercase" class from here */}
+            <h3 className=" text-sm md:text-base text-white mb-3 tracking-wide">
+              {step.title}
+            </h3>
+            <p className="text-xs md:text-sm text-white/70 leading-relaxed">{step.desc}</p>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
 
       {/* Secondary Dynamic Info Block (Why Choose Us) */}
       <motion.div
@@ -387,11 +402,11 @@ const DProjects = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-2"
+          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center mb-4"
         >
           Why Choose Casa Kraft for Landscape Design Dubai
         </motion.h2>
-        <div className="space-y-4 text-white/80 text-sm sm:text-base text-center max-w-5xl mx-auto">
+        <div className="space-y-4 text-white/80 text-sm sm:text-base text-center max-w-5xl mx-auto text-left">
           <p>
             As a trusted Landscape Contractors Dubai, Casa Kraft Interior Design & Renovation brings an entirely turnkey solution to you, which entails all aspects of landscape construction. From design creation and 3D visualizations through construction to installation and finally styling, our highly skilled professionals are involved with the project in all its aspects. We have a reputation for superior craftsmanship, innovative design ideas, and satisfaction of our clients. Every property is special in its own way, and therefore, we offer a fully customized solution of Landscape Design Dubai. With our creativity and high quality of work, we can ensure that you will be pleased with the results of our services.
           </p>
@@ -521,7 +536,7 @@ const DProjects = () => {
                 Contact Us for Premium Landscape Design Dubai
               </h2>
               
-              <div className="space-y-6 text-zinc-400 max-w-4xl mx-auto text-sm sm:text-base leading-relaxed text-center">
+              <div className="space-y-6 text-zinc-400 max-w-4xl mx-auto text-sm sm:text-base leading-relaxed text-left">
                 <p>
                   Casa Kraft Interior Design & Renovation is the place to be if you are searching for professional Landscape Design Dubai services. We offer luxury landscape design services including Luxury Landscaping Dubai, Garden Landscape Design, Landscape Architecture Dubai, and full Outdoor Landscape Design Dubai. Get in touch with us now to schedule a consultation session and see what our premier landscaping service can do for you.                </p>
               </div>
