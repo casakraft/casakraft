@@ -91,7 +91,7 @@ const ApId = () => {
         {/* INTRO */}
         <p className="text-sm sm:text-base leading-7 text-white/80">
        The retail is not only your working ground, the retail is the environment where you can impress and make those important deals as well as shape your legacy. At Casa Kraft Interior Design & Renovation, our team offers luxury interior designs that not only decorate the retail but are also designed in such a way to increase efficiency and productivity, reflecting the company’s vision and mission statement.
-       Casa Kraft is one of the leading providers of <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/retail-interior-design-dubai">retail interior designing services in Dubai</a></b>, recognized for its luxurious yet functional retail interiors. If you are starting out with an retail for the first time or planning to give a new look to an already existing retail premises, our team at Casa Kraft is well equipped with the right expertise and knowledge.</p>
+       Casa Kraft is one of the leading providers of retail interior designing services in Dubai, recognized for its luxurious yet functional retail interiors. If you are starting out with an retail for the first time or planning to give a new look to an already existing retail premises, our team at Casa Kraft is well equipped with the right expertise and knowledge.</p>
 
 
         

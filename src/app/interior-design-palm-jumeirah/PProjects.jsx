@@ -187,8 +187,7 @@ const AboutSection = () => {
            Luxury Interior Design & Renovation in Palm Jumeirah
            </h2>
             <p className="text-justify text-white text-base sm:text  mb-6 leading-relaxed">
-              Palm Jumeirah is known for its luxurious lifestyle in Dubai, but Casa Kraft Interior Design & Renovation  set the standards for interior designs in Palm Jumeirah. We worked on over 12 years worth of projects including some of the most prestigious penthouse, villa, townhouses and commercial projects, we have earned ourselves a good reputation among our clients. Whatever be your requirements, from luxurious interiors to fit-out, leave it to us and you won’t be disappointed with what we do for you. Being the <b className="text-[#4eb5a9]"
-             ><a href="https://casakraftinteriors.ae/interior-design-palm-ju">leading interior design company in Palm Jumeirah</a></b>, we offer you elegant designs, custom interiors and premium quality finishes that embody your lifestyle .
+              Palm Jumeirah is known for its luxurious lifestyle in Dubai, but Casa Kraft Interior Design & Renovation  set the standards for interior designs in Palm Jumeirah. We worked on over 12 years worth of projects including some of the most prestigious penthouse, villa, townhouses and commercial projects, we have earned ourselves a good reputation among our clients. Whatever be your requirements, from luxurious interiors to fit-out, leave it to us and you won’t be disappointed with what we do for you. Being the leading interior design company in Palm Jumeirah, we offer you elegant designs, custom interiors and premium quality finishes that embody your lifestyle .
               <br /><br />
               
             </p>

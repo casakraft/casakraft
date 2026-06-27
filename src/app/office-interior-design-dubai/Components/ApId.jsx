@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: "8+", label: "Trusted Years" },
-  { value: "100+", label: "Employees" },
-  { value: "200+", label: "Residential Projects" },
-  { value: "50+", label: "Commercial Fit-Outs" },
+  { value: "8+", label: "Years of Experience" },
+  { value: "50+", label: "Office Interior Projects" },
+  { value: "30+", label: "Commercial Fit-Outs Completed" },
+  { value: "100+", label: "Skilled Professionals" },
 ];
 
 const services = [
@@ -84,14 +84,15 @@ const ApId = () => {
         </div>
  {/* HEADING */}
               <h2 className="text-3xl md:text-4xl font-semibold text-white text-center ">
-       Office Interior Design Dubai -Transform Your Workspace Into a Statement of Success
+       Office Interior Design Dubai - Increase Your Productivity
 
         </h2>
 
         {/* INTRO */}
         <p className="text-sm sm:text-base leading-7 text-white/80">
        The office is not only your working ground, the office is the environment where you can impress and make those important deals as well as shape your legacy. At Casa Kraft Interior Design & Renovation, our team offers luxury interior designs that not only decorate the office but are also designed in such a way to increase efficiency and productivity, reflecting the company’s vision and mission statement.
-       Casa Kraft is one of the leading providers of <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/office-interior-design-dubai">office interior designing services in Dubai</a></b>, recognized for its luxurious yet functional office interiors. If you are starting out with an office for the first time or planning to give a new look to an already existing office premises, our team at Casa Kraft is well equipped with the right expertise and knowledge.</p>
+       Casa Kraft is one of the leading providers of <b className="text-[#4eb5a9]"
+      ><a href="https://www.instagram.com/p/DWTpFoWCPMS/">office interior designing services in Dubai</a></b>, recognized for its luxurious yet functional office interiors. If you are starting out with an office for the first time or planning to give a new look to an already existing office premises, our team at Casa Kraft is well equipped with the right expertise and knowledge.</p>
 
 
         

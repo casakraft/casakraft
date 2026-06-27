@@ -92,17 +92,8 @@ const ApId = () => {
           services in Dubai, creating beautifully crafted solutions for homes,
           offices, retail spaces, and hospitality projects.
 
-          Casa Kraft is one of the leading providers of{" "}
-          <b className="text-[#4eb5a9]">
-            <a
-              href="https://casakraftinteriors.ae/custom-furniture-joinery-dubai"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              custom furniture and joinery services in Dubai
-            </a>
-          </b>
-          , recognized for exceptional craftsmanship, premium materials, and
+          Casa Kraft is one of the leading providers of custom furniture and joinery services in Dubai,
+           recognized for exceptional craftsmanship, premium materials, and
           attention to detail. Whether you require bespoke wardrobes, kitchen
           cabinets, TV units, office furniture, or commercial joinery solutions,
           our experienced team transforms ideas into functional masterpieces.

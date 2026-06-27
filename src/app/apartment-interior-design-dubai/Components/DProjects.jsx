@@ -286,7 +286,7 @@ const DProjects = () => {
 
       <p className="text-white/80 text-sm md:text-base font-play leading-relaxed">
        Dubai has some of the best known residential societies across the globe, and it is only fair that each apartment be given the interior decor that matches the level of elegance associated with this place. At Casa Kraft Interior Design & Renovation, we believe in offering the <b className="text-[#4eb5a9]"
-       ><a href="https://casakraftinteriors.ae/apartment-interior-design-dubai">best apartment interior designs for Dubai</a></b> through creative ideas, top quality materials, and great workmanship. <br />
+       ><a href="https://www.instagram.com/p/DUanysdCKid/">best apartment interior designs for Dubai</a></b> through creative ideas, top quality materials, and great workmanship. <br />
        The company does everything, from designing modern apartment interiors of the city to luxury penthouse interiors. One thing that makes Casa Kraft special is that it can offer a one stop shop for all the work related to design and construction. It provides customized apartment interiors, which cater to the needs of the customer. This is because of the company's design services, in-house design and construction experts, and joinery by Casa Kraft itself.
       </p>
     </div>
@@ -294,7 +294,7 @@ const DProjects = () => {
     {/* Right Side - Image */}
     <div className="relative overflow-hidden rounded-xl">
       <Image
-        src="/images/damac-9.png"
+        src="/images/pja-3.png"
         alt="Villa Interior Design Dubai"
         width={700}
         height={500}

@@ -47,7 +47,7 @@ const services = [
         href="apartment-renovation"
         className="text-[#4eb5a9] hover:underline"
       >
-        complete apartment renovation and fit-out services
+        complete apartment renovation and fit-out services.
       </a>{" "}
       We offer solutions for every stage of the renovation process, including interior design, interior planning, civil works, floorings, ceiling designing, lighting and electrical system installations, plumbing works, furniture installation, and finally styling your place
     </>

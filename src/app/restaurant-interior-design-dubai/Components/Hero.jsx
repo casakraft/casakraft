@@ -72,8 +72,8 @@ const Hero = () => {
   return (
     <div className="relative w-full h-auto md:h-[500px] lg:h-[550px] overflow-hidden">
       <Image
-        src="/images/restaurant-interior-in-dubai.jpg"
-        alt="Villa interior design and Renovation Dubai"
+        src="/images/Commercial restaurant Interior Design in Dubai.png"
+        alt="restaurant interior design and Renovation Dubai"
         width={1920}
         height={1080}
         priority

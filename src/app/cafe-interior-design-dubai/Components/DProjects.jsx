@@ -3,26 +3,21 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const textImage = {
-  src: '/images/damac-9.png',
-  link: '/villa-damac-hills-5-bedroom',
-  title: 'Damac Hills Villa'
-};
 const TestimonialCarousel = () => {
   const testimonials = [
     {
       quote:
-        " Casa Kraft Interiors successfully made our cafe space a contemporary, practical, and inspiring work environment. The entire project was executed efficiently. I recommend Casa Kraft Interiors for your cafe interior designs & renovation services in Dubai.",
+        "Casa Kraft transformed our space into a café guests genuinely love spending time in — the lighting, the seating, the whole atmosphere just works. The project was delivered on time and exactly as promised. I'd recommend them to anyone opening or refreshing a café in Dubai.",
       author: "Sarah Williams, Business Bay",
     },
     {
       quote:
-        "The cafe redesign completed by Casa Kraft Interiors was truly exceptional from start to finish. Our workplace is now the perfect reflection of our brand personality while still offering us a functional space in which we can thrive.",
-      author: "James Carter, Downtown, Dubai",
+        "The redesign Casa Kraft completed for us was exceptional from start to finish. Our café now perfectly reflects our brand, and the layout keeps service smooth even at our busiest hours. Customers notice the difference the moment they walk in.",
+      author: "James Carter, Downtown Dubai",
     },
     {
       quote:
-        "Working with Casa Kraft Interiors was a great experience. They understood exactly what we wanted and transformed our cafe into a modern and comfortable space. The team was professional, easy to work with, and delivered everything on time.",
+        "Working with Casa Kraft was a great experience. They understood our concept immediately and turned our café into a warm, modern space our customers keep coming back to. The team was professional, easy to work with, and finished on schedule.",
       author: "Rachel Bennett, DIFC",
     },
   ];
@@ -45,15 +40,15 @@ const TestimonialCarousel = () => {
 
   return (
     <div className="relative max-w-4xl mx-auto my-16 px-6">
-      
+
       {/* Glow background */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#4eb5a9]/20 via-transparent to-[#4eb5a9]/20 blur-3xl rounded-3xl"></div>
 
       {/* Main card */}
       <div className="relative bg-zinc-950/80 backdrop-blur-xl border border-zinc-800 p-8 md:p-5 shadow-2xl">
-        
+
         {/* Title */}
-       <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
           WHAT OUR CLIENTS SAY
         </h2>
 
@@ -78,7 +73,6 @@ const TestimonialCarousel = () => {
 
         {/* Controls */}
         <div className="flex items-center justify-center gap-6">
-       
 
           {/* dots */}
           <div className="flex gap-2">
@@ -110,91 +104,54 @@ const TestimonialCarousel = () => {
 
 const cafeGallery = [
   {
-    image: "/images/cafe-racks.png",
+    image: "/images/cafe interior design services in Dubai.png",
+    alt: "Cafe shelving and display design in Dubai",
   },
   {
-    image: "/images/CEO-cafe-interior-renovations.png",
+    image: "/images/Coffee Shop Interior Design.png",
+    alt: "Modern cafe interior renovation in Dubai",
   },
   {
-    image: "/images/cafe-interior-in-dubai.jpg",
+    image: "/images/Restaurant & Cafe Interior Design.png",
+    alt: "Contemporary cafe interior design in Dubai",
   },
   {
-    image: "/images/Interior design company twin tower dubai.png",
+    image: "/images/Cafe Renovation & Remodeling.png",
+    alt: "Cafe interior fit-out in Dubai",
   },
-  {
-    image: "/images/cafe-interiors-and-renovations.png",
-   },
-  {
-    image: "/images/cafe-sitting-area-for-clients.png",
-  },
-  
+ 
 ];
+
 const krSteps = [
   {
     id: '01',
     title: 'Discovery & Consultation',
-    desc: 'All stunning cafe renovations begin with an important discussion. Throughout the discovery and consultation stage we learn about your company and the image you wish to portray. In addition, the project goals, timeline and budget are determined upfront thus ensuring clear direction moving forward.',
+    desc: 'Every great café starts with the right conversation. During discovery and consultation, we get to know your concept, your menu, and the experience you want customers to have. Goals, timeline, and budget are agreed upfront so the project has clear direction from day one.',
     img: '/images/our-mission.png',
   },
   {
     id: '02',
     title: 'Concept & Design Development',
-    desc: 'We develop a concept by using mood boards, space planning and stunning 3D visualizations to illustrate the final result. The design process becomes collaborative with you making changes that will influence each step of the way until we know for sure that you love what we have designed.',
+    desc: 'We develop your concept through mood boards, space planning, and detailed 3D visualizations so you can see the result before we build. The process is collaborative — you shape every step until the design feels exactly right.',
     img: '/images/material high quality.png',
   },
   {
     id: '03',
-    title: ' Material Selection & Approval',
-    desc: 'We assist you in the carefully selected choice of materials, whether it be for floors, walls, ceilings, partitions, furniture and joinery, or lighting, all provided by our trusted sources. We spend time explaining each choice to ensure that you are informed about your decisions..',
+    title: 'Material Selection & Approval',
+    desc: 'We guide you through selecting materials for floors, walls, ceilings, seating, joinery, and lighting — all durable, easy to maintain, and sourced from trusted suppliers. We take the time to explain each option so you are confident in every decision.',
     img: '/images/best-customized-services.png',
   },
   {
     id: '04',
-    title: 'Project Execution & Fit-Out ',
-    desc: 'All this is taken care of by our experienced team of Casa Kraft Interior Design & Renovation that will be responsible for the complete execution of the project including civil works, partitions, ceilings, floors, electrical installation, air conditioning system, joinery work, and furnishings. Dedicated project managers will keep updating you during the process to make sure everything goes according to plan.',
+    title: 'Project Execution & Fit-Out',
+    desc: 'Our experienced team handles the full build: civil works, partitions, ceilings, flooring, electrical, HVAC, counter and kitchen installation, joinery, and furnishing. Dedicated project managers keep you updated throughout to make sure everything stays on track.',
     img: '/images/our-mission.png',
   },
   {
     id: '05',
-    title: 'Handover and Aftercare Services',
-    desc: 'The final inspection to check all systems installed will be carried out to make sure that everything is working perfectly and all finishes have been done properly. We will give you a guided tour to show you around your new workplace. In addition, we offer exclusive aftercare services to keep your cafe operating effectively even after its completion.',
+    title: 'Handover & Aftercare Services',
+    desc: 'We carry out a final inspection to confirm every system and finish is perfect, then walk you through your completed café. Our aftercare service keeps your space operating smoothly long after opening day.',
     img: '/images/material high quality.png',
-  },
-
-   {
-    id: '06',
-    title: 'Handover and Aftercare Services',
-    desc: 'The final inspection to check all systems installed will be carried out to make sure that everything is working perfectly and all finishes have been done properly. We will give you a guided tour to show you around your new workplace. In addition, we offer exclusive aftercare services to keep your cafe operating effectively even after its completion.',
-    img: '/images/material high quality.png',
-  },
-  
-  
-];
-
-const serviceAreas = [
-  {
-    title: "Arabian Ranches",
-  },
-  {
-    title: "Dubai Hills Estate",
-  },
-  {
-    title: "Jumeirah Golf Estate",
-  },
-  {
-    title: "Nad Al Sheba",
-  },
-  {
-    title: "Jumeirah Village Circle",
-  },
-  {
-    title: "Jumeirah Village Triangle",
-  },
-  {
-    title: "Emirates Hills",
-  },
-  {
-    title: "Palm Jumeirah",
   },
 ];
 
@@ -202,253 +159,249 @@ const faqs = [
   {
     question: 'Why is Casa Kraft regarded as one of the best cafe interior design companies in Dubai?',
     answer:
-      ' Casa Kraft is a combination of creativity and professionalism. Our team comprises highly skilled and professional designers, project managers, and fit-out professionals well versed with commercial environment of Dubai. This is why we are considered as one of the best cafe interior design companies in Dubai.',
+      'Casa Kraft is a combination of creativity and professionalism. Our team comprises highly skilled designers, project managers, and fit-out professionals well versed with the commercial environment of Dubai. This is why we are considered one of the best cafe interior design companies in Dubai.',
   },
   {
-    question: 'Is it your practice to offer cafe interior design and fit out services at the same time?',
+    question: 'Do you offer cafe interior design and fit-out services at the same time?',
     answer:
-      ' Yes. Casa Kraft is a full-service studio where we offer comprehensive cafe interior services including cafe design and fit-out.',
+      'Yes. Casa Kraft is a full-service studio where we offer comprehensive cafe interior services including cafe design and fit-out under one roof.',
   },
   {
-    question: 'Do you have the capability to refurbish our current cafe space?',
+    question: 'Can you refurbish our current cafe space?',
     answer:
-      'We specialize in refurbs of existing cafe spaces either partial or full scale. We study the space, determine how to improve on it and deliver a whole new look for your cafe in the most minimally disruptive way possible.',
+      'We specialize in refurbishments of existing cafe spaces, either partial or full scale. We study the space, determine how to improve it, and deliver a whole new look for your cafe in the most minimally disruptive way possible.',
   },
   {
-    question: 'How long does an Interior design project take in Dubai?',
+    question: 'How long does a cafe interior design project take in Dubai?',
     answer:
-      'The amount of time taken to complete a project will depend on the scale and complexity of the job at hand. A basic cafe fitout will generally take between 6 to 12 weeks. We will always give you a detailed plan right from the start.',
+      'The time taken depends on the scale and complexity of the project. A basic cafe fit-out generally takes between 6 to 12 weeks. We always provide a detailed plan right from the start.',
   },
   {
     question: 'Which styles of cafe interior design is Casa Kraft known for?',
     answer:
-      'Our cafe interior design company offers a variety of styles including modern cafe interior design, luxurious cafe interior design, classic and contemporary. Every project we undertake is carefully crafted to suit the personality of your business.',
+      'Our cafe interior design company offers a variety of styles including modern, luxurious, classic, and contemporary. Every project is carefully crafted to suit the personality of your business.',
   },
-  
- 
 ];
 
 const DProjects = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   return (
     <section className="px-6 text-white/80 bg-black">
-      
-     {/* Top Content Block */}
-<div className="max-w-7xl mx-auto px-6 py-10">
 
-  <div className="grid md:grid-cols-2 gap-10 items-center">
+      {/* Top Content Block */}
+      <div className="max-w-7xl mx-auto px-6 py-10">
 
-    {/* Left Side - Text */}
-    <div>
-      <h2 className="text-3xl md:text-4xl font-semibold text-white mb-8">
-        Why Dubai's Leading Businesses Choose Casa Kraft
-      </h2>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
 
-      <p className="text-white/80 text-sm md:text-base font-play leading-relaxed">
-      Dubai is a place where international standards are set  and your cafe interior design should match the trend. Being one of the <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/">best interior designers in Dubai</a></b>, we at Casa kraft know very well what it takes to meet such high standards and expectations. It is our pleasure to be known among the most successful interior design firms in Dubai. We design and build commercial spaces such as corporate cafes, executive suites, co-working environments and more throughout the UAE. Our team of expert architects, designers and artisans work together in order to create luxury cafe interior designs that will help you take your work to new levels. Our company ranks as one of the top interior cafe designs in Dubai not out of luck but because of dedication. </p>
-    </div>
+          {/* Left Side - Text */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-semibold text-white mb-8">
+              Why Dubai's Cafés Choose Casa Kraft
+            </h2>
 
-    {/* Right Side - Image */}
-    <div className="relative overflow-hidden rounded-xl">
-      <Image
-        src="/images/CEO-cafe-interior-renovations.png"
-        alt="CEO OFFice Interior Design Dubai"
-        width={700}
-        height={500}
-        className="w-full h-[400px] object-cover"
-      />
-    </div>
-
-  </div>
-
-</div>
-     
-     
-     {/* Portfolio Section */}
-<div className="max-w-7xl mx-auto overflow-hidden">
-
-  <div className="text-center mb-12">
-    <h2 className="text-3xl text-white md:text-4xl font-semibold mb-4">
-      Our Cafe Interior Design Portfolio
-    </h2>
-
-    <p className="max-w-3xl mx-auto text-white/80">
-       Explore a selection of thoughtfully designed cafe spaces showcasing our expertise in creating functional, modern, and inspiring workplaces with premium finishes and meticulous attention to detail.
-
-    </p>
-  </div>
-
-  <div className="relative overflow-hidden">
-    <div className="flex animate-marquee gap-5 w-max">
-
-     {[...cafeGallery, ...cafeGallery].map((project, index) => (
- <div
-  key={index}
-  onClick={() => setSelectedImage(project.image)}
-  className="group relative flex-shrink-0 overflow-hidden cursor-pointer"
->
-  <Image
-    src={project.image}
-    alt={`Villa Project ${index + 1}`}
-    width={600}
-    height={450}
-    className="w-[320px] sm:w-[380px] md:w-[350px] h-[240px] sm:h-[280px] md:h-[250px] object-cover transition duration-500 group-hover:scale-110"
-  />
-
-  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-    <span className="text-white text-lg font-medium">
-      View Project
-    </span>
-  </div>
-</div>
-))}
-
-    </div>
-  </div>
-</div>
-
-     
-    
-      {/* Process Section (REDESIGNED - Compact Timeline) */}
-<div className="bg-black text-white/80py-14">
-  <div className="max-w-6xl mx-auto px-4">
-
-          <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10 mt-10">
-     Our Cafe Interior Design Process: Where Vision Meets Execution
-
-    </h2>
-
-    <p className="text-center text-sm md:text-base text-white/80 mb-10 font-play">
-    Our approach at Casa Kraft Interior Design & Renovation is highly systematic, which ensures all our projects are completed on time, within budget, and to your satisfaction. The tried and tested approach we use for designing cafe interiors is based on experience gained from over 100 successful projects carried out in Dubai and UAE.</p>
-
-    {/* First 6 steps */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      {krSteps.slice(0, 5).map((step) => (
-        <div
-          key={step.id}
-          className="bg-white/5 hover:bg-white/10 transition rounded-xl p-6 border border-white/10"
-        >
-
-          {/* Step number */}
-          <div className="text-[#4eb5a9] font-bold text-sm mb-2">
-            {step.id}
+            <p className="text-white/80 text-sm md:text-base font-play leading-relaxed">
+              Dubai sets the standard for hospitality, and your café's interior needs to live up to it. As one of the city's <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/interior-design-dubai">trusted café interior designers</a></b>, we understand what it takes to meet those expectations — and to stand out in one of the world's most competitive coffee and dining scenes. We design and build cafés of every kind, from cozy coffee shops and specialty roasteries to luxury cafés and dessert lounges across the UAE. Our team of architects, designers, and skilled craftsmen work together to create interiors that look stunning, run efficiently, and keep customers coming back. We're recognized as one of Dubai's leading café design firms not by chance, but through consistent dedication to every project we deliver.
+            </p>
           </div>
 
-          {/* Title */}
-          <h3 className="font-conthrax text-sm md:text-base mb-3">
-            {step.title}
-          </h3>
-
-          {/* Description */}
-          <p className="text-xs md:text-sm text-white/80 leading-relaxed">
-            {step.desc}
-          </p>
+          {/* Right Side - Image */}
+          <div className="relative overflow-hidden rounded-xl">
+            <Image
+              src="/images/cafe interior design services in Dubai.png"
+              alt="Cafe interior design and renovation in Dubai by Casa Kraft"
+              width={700}
+              height={500}
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
 
         </div>
-      ))}
 
-    </div>
-
-    
-  </div>
-</div>
+      </div>
 
 
-    
- {/* CTA SECTION */}
-<div className="w-screen ml-[calc(50%-50vw)] bg-[#111111] mt-10 py-10">
-  <div className="max-w-4xl mx-auto px-4 text-center">
+      {/* Portfolio Section */}
+      <div className="max-w-7xl mx-auto overflow-hidden">
 
-    <h2 className="text-2xl md:text-3xl font-semibold text-white uppercase mb-2">
-      Get In Touch With Casa Kraft
-    </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl text-white md:text-4xl font-semibold mb-4">
+            Our Cafe Interior Design Portfolio
+          </h2>
 
-    <p className="text-white/80 text-sm md:text-base mb-8">
-      Cafe Interior design & Renovation Company in Dubai
-    </p>
+          <p className="max-w-3xl mx-auto text-white/80">
+            Explore a selection of café spaces we've designed — functional, modern, and full of atmosphere, finished with premium materials and meticulous attention to detail.
+          </p>
+        </div>
 
-    <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="relative overflow-hidden">
+          <div className="flex animate-marquee gap-5 w-max">
 
-      <a
-        href="/gallery"
-        className="bg-[#1f5a53] hover:bg-[#276d64] text-white px-6 py-3 text-base transition min-w-[220px]"
-      >
-        See Our Projects
-      </a>
+            {[...cafeGallery, ...cafeGallery].map((project, index) => (
+              <div
+                key={index}
+                onClick={() => setSelectedImage(project.image)}
+                className="group relative flex-shrink-0 overflow-hidden cursor-pointer"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.alt}
+                  width={600}
+                  height={450}
+                  className="w-[320px] sm:w-[380px] md:w-[350px] h-[240px] sm:h-[280px] md:h-[250px] object-cover transition duration-500 group-hover:scale-110"
+                />
 
-      <a
-        href="https://wa.me/971586023677"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="border border-[#4eb5a9] text-white hover:bg-[#4eb5a9] hover:text-black px-6 py-3 text-base transition min-w-[220px]"
-      >
-        WhatsApp Us
-      </a>
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                  <span className="text-white text-lg font-medium">
+                    View Project
+                  </span>
+                </div>
+              </div>
+            ))}
 
-      <a
-        href="/contact-us"
-        className="bg-white text-black hover:bg-gray-200 px-6 py-3 text-base transition min-w-[220px]"
-      >
-        Request Quote
-      </a>
+          </div>
+        </div>
+      </div>
 
-    </div>
 
-  </div>
-</div>
+      {/* Process Section (Compact Timeline) */}
+      <div className="bg-black text-white/80 py-14">
+        <div className="max-w-6xl mx-auto px-4">
 
-{/* Areas We Serve */}
-<div className="bg-black">
-  <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10 mt-10">
+            Our Cafe Interior Design Process: Where Vision Meets Execution
+          </h2>
 
-    <div className="text-center mb-12">
-    <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
-        Areas We Serve Across Dubai      </h2>
+          <p className="text-center text-sm md:text-base text-white/80 mb-10 font-play">
+            Our approach at Casa Kraft Interior Design &amp; Renovation is highly systematic, ensuring every project is completed on time, within budget, and to your satisfaction. The tried-and-tested process we use for café interiors is built on experience gained from over 100 successful projects across Dubai and the UAE.
+          </p>
 
-      <p className="text-zinc-400 mx-auto">
-       With Casa Kraft Interior Design & Renovation, we offer the <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/cafe-renovation-dubai">best cafe interior design and renovation services</a></b> in all of Dubai's best business districts and commercial areas. Whether you are looking for a modern corporate cafe, an executive cafe, or full renovation of your current cafe space, we can help! We proudly work for businesses located in Business Bay, DIFC, Downtown Dubai, Dubai Marina, JLT, Dubai Internet City, Dubai Media City, Dubai Silicon Oasis, and cafes on Sheikh Zayed Road. With years of experience designing cafe spaces in all of these top commercial spots, we are experts at delivering the right design for your business.
-      </p>
-    </div>
+          {/* Process steps */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-<div className="mb-12">
-    <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
-        Key Factors That Affect Cafe Design Cost </h2>
+            {krSteps.map((step) => (
+              <div
+                key={step.id}
+                className="bg-white/5 hover:bg-white/10 transition rounded-xl p-6 border border-white/10"
+              >
 
-      <ul  class="list-disc"> <li > <b className="text-[#4eb5a9]">Cafe size -</b> More materials and labour are required for bigger cafes, although economies of scale might lower the per-square-foot cost. </li>
+                {/* Step number */}
+                <div className="text-[#4eb5a9] font-bold text-sm mb-2">
+                  {step.id}
+                </div>
 
-      <li > <b className="text-[#4eb5a9]"> Design complexity - </b>Unique designs such as curved walls, feature ceilings, special joinery work, and detailed lighting solutions drive up the cost of the design.</li>
-      
-      <li ><b className="text-[#4eb5a9]">Material - </b>Cost will be higher if you opt for imported marble, natural timber, and European furniture than locally made products. </li>
+                {/* Title */}
+                <h3 className="font-conthrax text-sm md:text-base mb-3">
+                  {step.title}
+                </h3>
 
-      <li ><b className="text-[#4eb5a9]">MEP works  -</b> Cost depends on the present state of the space and the extent of the project’s fit out. </li>
+                {/* Description */}
+                <p className="text-xs md:text-sm text-white/80 leading-relaxed">
+                  {step.desc}
+                </p>
 
-      <li ><b className="text-[#4eb5a9]">Smart cafe technology - </b>While expensive at first, technology installations like automation systems, AV integration, intelligent lighting, and access control are more efficient in the long run. </li>
+              </div>
+            ))}
 
-      <li ><b className="text-[#4eb5a9]">Furniture and fittings -</b> Ergonomic furniture could range from affordable to very unique, depending on brands and specifications.
- </li>
+          </div>
 
- <li ><b className="text-[#4eb5a9]">Project duration - </b>Projects that need fast turnarounds can cost extra. Average projects taking between four and 16 weeks are usually budget friendly.
- </li>
-      </ul>
+        </div>
+      </div>
 
-      <p>Get a free and no-obligation quote. Every cafe is different. Let Casa Kraft Interiors provide you with a personalized quote for your unique project.</p>
-    </div>
 
-  </div>
-</div>
-<div className="max-w-4xl mx-auto my-12">
-  <TestimonialCarousel />
-</div>
-      
+      {/* CTA SECTION */}
+      <div className="w-screen ml-[calc(50%-50vw)] bg-[#111111] mt-10 py-10">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+
+          <h2 className="text-2xl md:text-3xl font-semibold text-white uppercase mb-2">
+            Get In Touch With Casa Kraft
+          </h2>
+
+          <p className="text-white/80 text-sm md:text-base mb-8">
+            Cafe Interior Design &amp; Renovation Company in Dubai
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+            <a
+              href="/gallery"
+              className="bg-[#1f5a53] hover:bg-[#276d64] text-white px-6 py-3 text-base transition min-w-[220px]"
+            >
+              See Our Projects
+            </a>
+
+            <a
+              href="https://wa.me/971586023677"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-[#4eb5a9] text-white hover:bg-[#4eb5a9] hover:text-black px-6 py-3 text-base transition min-w-[220px]"
+            >
+              WhatsApp Us
+            </a>
+
+            <a
+              href="/contact-us"
+              className="bg-white text-black hover:bg-gray-200 px-6 py-3 text-base transition min-w-[220px]"
+            >
+              Request Quote
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+      {/* Areas We Serve */}
+      <div className="bg-black">
+        <div className="max-w-7xl mx-auto px-4">
+
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+              Areas We Serve Across Dubai
+            </h2>
+
+            <p className="text-zinc-400 mx-auto">
+              Casa Kraft delivers café interior design and renovation services across Dubai's busiest dining and commercial districts. Whether you're opening a specialty coffee shop, a luxury café, a dessert lounge, or planning a full café renovation, we can help. We work with cafés and F&amp;B businesses in Business Bay, DIFC, Downtown Dubai, Dubai Marina, JLT, Dubai Internet City, Dubai Media City, Dubai Silicon Oasis, and along Sheikh Zayed Road. With years of experience designing café spaces across these high-traffic locations, we know how to deliver interiors that fit your concept and your market.
+            </p>
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+              Key Factors That Affect Cafe Design Cost
+            </h2>
+
+            <ul className="list-disc pl-5 space-y-3 text-white/80">
+              <li><b className="text-[#4eb5a9]">Cafe size –</b> Bigger cafés need more materials and labour, though economies of scale can lower the cost per square foot.</li>
+
+              <li><b className="text-[#4eb5a9]">Design complexity –</b> Custom features like curved walls, feature ceilings, bespoke joinery, and detailed lighting schemes increase design cost.</li>
+
+              <li><b className="text-[#4eb5a9]">Materials –</b> Imported marble, natural timber, and European furniture cost more than locally sourced equivalents.</li>
+
+              <li><b className="text-[#4eb5a9]">MEP &amp; equipment works –</b> Cost depends on the existing condition of the space and the scale of your counter, kitchen, ventilation, and services fit-out.</li>
+
+              <li><b className="text-[#4eb5a9]">Smart technology –</b> POS integration, scene lighting, sound systems, and climate automation cost more upfront but improve efficiency over time.</li>
+
+              <li><b className="text-[#4eb5a9]">Furniture &amp; fittings –</b> Seating, tables, counters, and fixtures range from budget to bespoke depending on brand, durability, and specification.</li>
+
+              <li><b className="text-[#4eb5a9]">Project duration –</b> Fast-track projects can cost more. Typical fit-outs of four to sixteen weeks are usually the most budget-friendly.</li>
+            </ul>
+
+            <p className="mt-6 text-white/80">Get a free, no-obligation quote. Every café is different — let Casa Kraft Interiors prepare a personalized quote for your unique project.</p>
+          </div>
+
+        </div>
+      </div>
+      <div className="max-w-4xl mx-auto my-12">
+        <TestimonialCarousel />
+      </div>
+
 
       {/* FAQ Section */}
-      <div className=" text-white/80 max-w-4xl mx-auto bg-black rounded-lg text-white/80  shadow p-6 sm:p-10">
+      <div className="text-white/80 max-w-4xl mx-auto bg-black rounded-lg shadow p-6 sm:p-10">
         <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
-        Frequently Asked Questions (FAQs)
+          Frequently Asked Questions (FAQs)
         </h2>
-        <p className="text-white/80 font-play text-sm sm:text-base text-white/80 mb-6 text-center">
-          Find quick answers to common questions about our Cafe Interior Design services in Dubai.
+        <p className="text-white/80 font-play text-sm sm:text-base mb-6 text-center">
+          Find quick answers to common questions about our café interior design services in Dubai.
         </p>
 
         <div className="space-y-3">
@@ -473,49 +426,45 @@ const DProjects = () => {
         </div>
       </div>
 
-       {/* Top Content Block */}
+      {/* Closing Content Block */}
       <div className="lg:max-w-[80%] text-white mx-auto bg-black p-6 sm:p-5 mb-5 rounded shadow text-center space-y-6">
-             <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
-         Transform Your Cafe Today in Dubai - The Casa Kraft Way
-
+        <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10">
+          Transform Your Cafe Today in Dubai - The Casa Kraft Way
         </h2>
         <div className="space-y-4 text-white/80 text-sm sm:text-base font-play text-left">
-        <p>
-      Cafe interior design is about more than just being aesthetically pleasing; it increases productivity, portrays your brand, and creates an environment that makes you proud to be in it. As a top-rated cafe interior design company in Dubai, we do not just create cafe spaces; we create the future of your business. Whether you require modern cafe interior designs, luxury <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/">cafe interior design services</a></b>, or an entire cafe interior fit out in Dubai, we are the team that you have been searching for.
-
-       </p>
-  
+          <p>
+            Café interior design is about far more than looking good — it shapes the customer experience, expresses your brand, and creates a space people want to return to again and again. As a top-rated café interior design company in Dubai, we don't just build cafés; we help build the future of your business. Whether you need a modern café interior, a luxury <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/">coffee shop fit-out</a></b>, or a complete café transformation in Dubai, we're the team you've been looking for.
+          </p>
         </div>
+      </div>
 
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            className="fixed top-6 right-6 z-[100] bg-black/70 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl"
+            onClick={() => setSelectedImage(null)}
+          >
+            ✕
+          </button>
+
+          <div
+            className="relative max-w-5xl w-full p-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={selectedImage}
+              alt="Cafe interior design project preview"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-contain rounded-lg"
+            />
+          </div>
         </div>
-
-{/* Lightbox Modal */}
-{selectedImage && (
-  <div
-    className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
-    onClick={() => setSelectedImage(null)}
-  >
-    <button
-      className="fixed top-6 right-6 z-[100] bg-black/70 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl"
-      onClick={() => setSelectedImage(null)}
-    >
-      ✕
-    </button>
-
-    <div
-      className="relative max-w-5xl w-full p-4"
-      onClick={(e) => e.stopPropagation()}
-    >
-      <Image
-        src={selectedImage}
-        alt="Preview"
-        width={1200}
-        height={800}
-        className="w-full h-auto object-contain rounded-lg"
-      />
-    </div>
-  </div>
-)}
+      )}
     </section>
   );
 };

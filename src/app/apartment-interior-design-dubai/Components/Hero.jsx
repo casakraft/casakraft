@@ -72,7 +72,7 @@ const Hero = () => {
   return (
     <div className="relative w-full h-auto md:h-[500px] lg:h-[550px] overflow-hidden">
       <Image
-        src="/images/mcv-7.png"
+        src="/images/gp-5.png"
         alt="Villa interior design and Renovation Dubai"
         width={1920}
         height={1080}

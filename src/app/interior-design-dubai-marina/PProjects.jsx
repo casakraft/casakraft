@@ -71,26 +71,25 @@ const AboutSection = () => {
           
 
           <div className="w-full  text-center ">
-            <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+            <h2 className="text-[#4eb5a9] text-2xl  font-conthrax mb-4 leading-tight">
             PROFESSIONAL INTERIOR DESIGN SERVICES IN Dubai Marina
            </h2>
             <p className="text-justify text-white text-base sm:text font-play mb-6 leading-relaxed">
-              As a leading <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/interior-design-companies-in-dubai-marina-dubai">interior design company in Dubai Marina</a></b> , we offer services for both commercial 
+              As a leading interior design company in Dubai Marina , we offer services for both commercial 
               and residential projects. Our services related to office interior design Dubai Marina help 
               the businesses in designing a modern and productive space. For commercial businesses, our 
               services of commercial interior design Dubai Marina, such as retail outlets, restaurants, 
               and hotels, ensure that every project is visually attractive and functional.
               <br /><br />
-               <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
+               <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight">
                 COMPREHENSIVE SOLUTIONS FOR HOMES AND BUSINESSES
              </h3>
-              For our residential clients, our <b className="text-[#caa193]"
-              ><a href="https://casakraftinteriors.ae/dubai-marina-apartment">apartment interior design Dubai Marina</a></b> services helps in 
+              For our residential clients, our apartment interior design Dubai Marina services helps in 
               designing homes that are comfortable, stylish and modern. We combine custom furniture and 
               luxurious materials to suit the lifestyle of our clients. Our renovation services in 
               Dubai Marina upgrade or renovate the existing spaces with minimal disturbance.
               With our creative and technical skills, we are known as one of the best interior fit 
-              out contractors Dubai Marina and <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/fit-out-company-in-dubai-marina-dubai">fit-out company in Dubai Marina Dubai</a></b>, with 
+              out contractors Dubai Marina and fit-out company in Dubai Marina Dubai, with 
               projects that reflect quality, style, and attention to detail.
             </p>
              
@@ -111,34 +110,33 @@ const AboutSection = () => {
 
         {/* Right Side - Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-[#b98877] text-2xl sm:text-2xl font-conthrax mb-4 leading-tight">
+          <h2 className="text-[#4eb5a9] text-2xl sm:text-2xl font-conthrax mb-4 leading-tight">
             Office Interior Design and Fit-Out in Dubai Marina
 
           </h2>
 
           <p className="text-white text-sm sm:text-base font-play mb-4">
-            The commercial towers in Dubai Marina have the most splendid offices, startups, and multinational companies in Dubai. Our <b className="text-[#caa193]"
-            ><a href="https://casakraftinteriors.ae/office-interior-design-trends-in-dubai-marina">office interior design Dubai Marina services</a></b> are based on delivering spaces that are functional,motivating and matching with the standard corporate environment in Dubai.
+            The commercial towers in Dubai Marina have the most splendid offices, startups, and multinational companies in Dubai. Our office interior design Dubai Marina services are based on delivering spaces that are functional,motivating and matching with the standard corporate environment in Dubai.
           </p>
-         <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
+         <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight">
                 COMPREHENSIVE SOLUTIONS FOR HOMES AND BUSINESSES
              </h3>
           <p className="text-white text-sm sm:text-base mb-4 font-play">
             We oversee all the details involved in office fit-outs Dubai, such as space planning, furniture, lighting design, and technology. As professional offices fit out contractors in Dubai, we also handle DCD approvals and authority approvals Dubai to ensure that everything goes smoothly. 
-            Other than  Dubai Marina, our <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/office-projects">office interior design projects</a></b> also cover the nearby areas of DIFC and Downtown Dubai, which means that all businesses in the main commercial areas of Dubai get to enjoy our expertise. 
+            Other than  Dubai Marina, our office interior design projects also cover the nearby areas of DIFC and Downtown Dubai, which means that all businesses in the main commercial areas of Dubai get to enjoy our expertise. 
           </p>
 
 
           {/* Buttons */}
        <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
   <Link href="/gallery">
-   <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
+   <button className="bg-[#4eb5a9] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
               See Our Projects
             </button>
   </Link>
 
   <Link href="/contact-us">
-    <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
+    <button className="bg-[#4eb5a9] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
               Free Consultation
             </button>
   </Link>
@@ -147,7 +145,7 @@ const AboutSection = () => {
       </div>
        {/* Services Section */}
         <div className="text-center mt-10 mb-12">
-           <h2 className="text-[#b98877] text-2xl font-conthrax mb-4 leading-tight">
+           <h2 className="text-[#4eb5a9] text-2xl font-conthrax mb-4 leading-tight">
             Our Interior Services in Dubai Marina
           </h2>
         </div>
@@ -181,11 +179,11 @@ const AboutSection = () => {
   ))}
 </div>
       <div className="text-center mt-10">
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+         <h2 className="text-[#4eb5a9] text-2xl  font-conthrax mb-4 leading-tight">
             Turnkey Fit-Out and Design & Build Solutions
           </h2>
           <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
-          At <b className="text-[#caa193]"
+          At <b className="text-[#4eb5a9]"
          ><a href="https://casakraftinteriors.ae/">Casa Kraft Interior design & renovation</a></b>, we offer full-service turnkey fit out Dubai Marina services for our clients who are looking for all in one experience. As a reputable design and build company Dubai, we oversee all aspects of the process, from the first consultation and design concept to the approvals from the authorities Dubai, through to completion and delivery. Our end-to-end process ensures a smooth, efficient, and high-quality experience at all times. Our clients can take advantage of our knowledge in interior design and fit out companies in Dubai.
 
             </p>
@@ -200,15 +198,15 @@ const AboutSection = () => {
 
         {/* Right Side - Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-[#b98877] text-2xl sm:text-2xl font-conthrax mb-4 leading-tight">
+          <h2 className="text-[#4eb5a9] text-2xl sm:text-2xl font-conthrax mb-4 leading-tight">
             Apartment and Luxury Interior Design in Dubai Marina
 
           </h2>
 
           <p className="text-white text-sm sm:text-base font-play mb-4">
-            Dubai Marina is known for its luxury residential properties, and our <b className="text-[#caa193]"
+            Dubai Marina is known for its luxury residential properties, and our <b className="text-[#4eb5a9]"
             ><a href="https://casakraftinteriors.ae/apartment-interior-design-dubai">apartment interior design in Dubai Marina Dubai</a></b> services are designed to provide you with luxurious, comfortable, and contemporary living spaces. We are experts in luxury interior design Dubai and provide homes that are a perfect blend of beauty and functionality</p>
-         <h3 className="text-[#b98877] text-md font-conthrax mb-4 leading-tight">
+         <h3 className="text-[#4eb5a9] text-md font-conthrax mb-4 leading-tight">
                ELEGANT RESIDENTIAL SPACES TAILORED TO YOUR LIFESTYLE
              </h3>
           <p className="text-white text-sm sm:text-base mb-4 font-play">
@@ -218,13 +216,13 @@ const AboutSection = () => {
            {/* Buttons */}
        <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
   <Link href="/gallery">
-   <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
+   <button className="bg-[#4eb5a9] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
               See Our Projects
             </button>
   </Link>
 
   <Link href="/contact-us">
-    <button className="bg-[#b98877] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
+    <button className="bg-[#4eb5a9] hover:bg-[#b88f83] text-black font-conthrax px-6 py-3 rounded-md transition duration-300">
               Free Consultation
             </button>
   </Link>
@@ -244,7 +242,7 @@ const AboutSection = () => {
       </div>
       
       <div className="text-center mt-10">
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+         <h2 className="text-[#4eb5a9] text-2xl  font-conthrax mb-4 leading-tight">
             Why Choose Casa Kraft Interior design & renovationin Dubai Marina
 
           </h2>
@@ -272,7 +270,7 @@ const AboutSection = () => {
                       {/* Overlay */}
                       <div className="absolute inset-y-0 text-start right-0 w-1/2 md:w-1/3 bg-black/70 p-2 sm:p-10 flex flex-col justify-center">
                         
-                        <h2 className="text-lg text-[#b98877] font-conthrax uppercase">
+                        <h2 className="text-lg text-[#4eb5a9] font-conthrax uppercase">
                           START YOUR INTERIOR DESIGN PROJECT IN Dubai Marina TODAY
                         </h2>
                         <p className="text-[15px]  leading-relaxed text-gray-300 font-play overflow-hidden max-h-30 md:max-h-none transition-all duration-300 ease-in-out">
@@ -282,16 +280,15 @@ const AboutSection = () => {
                     </div>
                   
                   {/* Vertical Line */}
-                  <div className="hidden md:block absolute top-0 left-1/3 w-[2px] h-full bg-gradient-to-r from-[#caa193] to-[#a0624d" />
+                  <div className="hidden md:block absolute top-0 left-1/3 w-[2px] h-full bg-gradient-to-r from-[#4eb5a9] to-[#a0624d" />
                 </div>
 
                 <div className="text-center mb-0">
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+         <h2 className="text-[#4eb5a9] text-2xl  font-conthrax mb-4 leading-tight">
            Commercial Interior Design in Dubai Marina
           </h2>
           <p className=" text-center max-w-6xl mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
-          Our < b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/commercial-interior-design-dubai">commercial interior design solutions</a></b> include retail, restaurants, and hospitality. We know that design has a significant impact on customer experience, brand image, and efficiency. From retail fit out Dubai Marina projects to <b className="text-[#caa193]"
-          ><a href="https://casakraftinteriors.ae/dubai-marina-restaurant">restaurant interior design Dubai Marina</a></b> , we provide services in design, materials, lighting, and implementation. As a good reputed fit out company in Dubai Marina, we design interiors that are aesthetic, functional, and match with your brand identity. We have successfully completed our projects in the surrounding regions of Dubai Marina such as Sheikh Zayed Road and Bay Avenue. Our commercial designs are modern and elegant, making us one of the leading interior fit out companies in Dubai.
+          Our commercial interior design solutions include retail, restaurants, and hospitality. We know that design has a significant impact on customer experience, brand image, and efficiency. From retail fit out Dubai Marina projects to  restaurant interior design Dubai Marina, we provide services in design, materials, lighting, and implementation. As a good reputed fit out company in Dubai Marina, we design interiors that are aesthetic, functional, and match with your brand identity. We have successfully completed our projects in the surrounding regions of Dubai Marina such as Sheikh Zayed Road and Bay Avenue. Our commercial designs are modern and elegant, making us one of the leading interior fit out companies in Dubai.
 
          </p>
         </div>
@@ -301,12 +298,12 @@ const AboutSection = () => {
 
     {/* Section Heading */}
     <div className="text-center mb-12">
-      <h2 className="text-[#b98877] text-3xl font-conthrax mb-4 leading-tight">
+      <h2 className="text-[#4eb5a9] text-3xl font-conthrax mb-4 leading-tight">
         Our Projects in Dubai Marina
       </h2>
       <p className="text-gray-300 max-w-3xl mx-auto font-play">
         Discover our completed interior design and fit-out projects in Dubai Marina,
-        including commercial offices, <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/dubai-marina-apartment-design">luxury Dubai Marina apartment designs</a></b>, restaurants, and turnkey solutions.
+        including commercial offices, luxury Dubai Marina apartment designs, restaurants, and turnkey solutions.
       </p>
     </div>
 
@@ -342,7 +339,7 @@ const AboutSection = () => {
     {/* Bottom CTA */}
     <div className="text-center mt-12">
       <Link href="/gallery">
-        <button className="bg-[#b98877] hover:bg-[#a97463] text-black px-8 py-3 rounded-md font-conthrax transition duration-300">
+        <button className="bg-[#4eb5a9] hover:bg-[#a97463] text-black px-8 py-3 rounded-md font-conthrax transition duration-300">
           View All Projects
         </button>
       </Link>
@@ -354,49 +351,48 @@ const AboutSection = () => {
 {/* ================= END Dubai Marina PROJECTS SECTION ================= */}
        
          <div className="text-left mt-10 mb-0">
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+         <h2 className="text-[#4eb5a9] text-2xl  font-conthrax mb-4 leading-tight">
            Interior Renovation and Upgrade Services
           </h2>
           <p className=" text-left mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
           Not only Interior Design, we also deliver our premium renovation services. Our team optimizes layouts, integrates smart systems, and upgrades finishes to provide best interior designs that enhance both aesthetics and functionality of your space. We provide full renovation services in Dubai Marina and nearby locations. Our team of experts works on layouts, smart systems, and finishes to provide high-end interior solutions that improve aesthetics and functionality.
           
          </p>
-         <h2 className="text-[#b98877] text-2xl  font-conthrax mb-4 leading-tight">
+         <h2 className="text-[#4eb5a9] text-2xl  font-conthrax mb-4 leading-tight">
            Local Expertise and Presence in Dubai
           </h2>
             <p className=" text-left mx-auto mt-0 md:mt-4 text-[12px] sm:text-base text-white py-2 md:py-6 font-play">
-              Although Dubai Marina is our main area of providing services, our knowledge and expertise extend throughout Dubai and the UAE. Being one of the best interior design companies in Dubai, we have successfully completed various projects including <b className="text-[#caa193]"><a href="https://casakraftinteriors.ae/dubai-marina-travel-agency">travel agency Office</a></b>, Cafe Interiors, Dubai Marina restaurant and an apartment interior in different locations, always providing the best possible outcomes in luxury interior design Dubai, interior design in Dubai, and other upscale regions. <br /> <br />
-              Through our services we make sure that clients from other areas are also able to take advantage of our professional interior design and fit-out solutions. Our status as one of the <b className="text-[#caa193]"
-            ><a href="https://casakraftinteriors.ae/interior-design-companies-in-dubai-marina-dubai">best interior design companies in Dubai Marina</a></b> is reinforced by a portfolio of satisfied clients across Dubai’s premium districts.
+              Although Dubai Marina is our main area of providing services, our knowledge and expertise extend throughout Dubai and the UAE. Being one of the best interior design companies in Dubai, we have successfully completed various projects including travel agency Office, Cafe Interiors, Dubai Marina restaurant and an apartment interior in different locations, always providing the best possible outcomes in luxury interior design Dubai, interior design in Dubai, and other upscale regions. <br /> <br />
+              Through our services we make sure that clients from other areas are also able to take advantage of our professional interior design and fit-out solutions. Our status as one of the best interior design companies in Dubai Marina is reinforced by a portfolio of satisfied clients across Dubai’s premium districts.
 
             </p>
         </div>
           <div className=" text-sm leading-relaxed font-play text-white">
           
-            <h2 class="text-[#a366b9887752] text-2xl font-conthrax leading-tight py-5">
+            <h2 class="text-[#a3664eb5a952] text-2xl font-conthrax leading-tight py-5">
              Frequently asked questions (FAQs)
             </h2>
-            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
+            <h3 class="text-[#4eb5a9] text-md font-conthrax leading-tight py-5">
               1-  How long does an office fit-out in Dubai Marina take?
             </h3>
             <p>
             Office fit-outs usually take six to twelve weeks, depending on the size and complexity of the project. Our team takes care of all approvals from DCD and approvals from the authority in Dubai.
             </p>
 
-            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
+            <h3 class="text-[#4eb5a9] text-md font-conthrax leading-tight py-5">
              2-  Do you provide turnkey fit-out services?
             </h3>
             <p>
             Yes, our turnkey fit out services in Dubai Marina include all aspects, from design and approval to completion and delivery to our clients. </p>
 
-            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
+            <h3 class="text-[#4eb5a9] text-md font-conthrax leading-tight py-5">
              3- Can you design luxury apartments in Dubai Marina?
             </h3>
             <p>
              Yes, we can. At WEDO, we are experts in apartment interior design in Dubai Marina and luxury residential projects, designing homes that are both beautiful and functional.
             </p>
 
-            <h3 class="text-[#b98877] text-md font-conthrax leading-tight py-5">
+            <h3 class="text-[#4eb5a9] text-md font-conthrax leading-tight py-5">
              4- Are you among the best interior design companies in Dubai Marina?
             </h3>
             <p>

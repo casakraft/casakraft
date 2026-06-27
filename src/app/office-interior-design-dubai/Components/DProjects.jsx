@@ -3,11 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const textImage = {
-  src: '/images/damac-9.png',
-  link: '/villa-damac-hills-5-bedroom',
-  title: 'Damac Hills Villa'
-};
+
 const TestimonialCarousel = () => {
   const testimonials = [
     {
@@ -289,7 +285,7 @@ const DProjects = () => {
 >
   <Image
     src={project.image}
-    alt={`Villa Project ${index + 1}`}
+    alt={`Office Project ${index + 1}`}
     width={600}
     height={450}
     className="w-[320px] sm:w-[380px] md:w-[350px] h-[240px] sm:h-[280px] md:h-[250px] object-cover transition duration-500 group-hover:scale-110"
@@ -314,7 +310,7 @@ const DProjects = () => {
   <div className="max-w-6xl mx-auto px-4">
 
           <h2 className="text-3xl md:text-4xl font-semibold text-white text-center mb-10 mt-10">
-     Our Office Interior Design Process: Where Vision Meets Execution
+     Our Office Interior Design Process
 
     </h2>
 
@@ -481,7 +477,8 @@ const DProjects = () => {
         </h2>
         <div className="space-y-4 text-white/80 text-sm sm:text-base font-play text-left">
         <p>
-      Office interior design is about more than just being aesthetically pleasing; it increases productivity, portrays your brand, and creates an environment that makes you proud to be in it. As a top-rated office interior design company in Dubai, we do not just create office spaces; we create the future of your business. Whether you require modern office interior designs, luxury <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/">office interior design services</a></b>, or an entire office interior fit out in Dubai, we are the team that you have been searching for.
+      <b className="text-[#4eb5a9]"
+      ><a href="https://casakraftinteriors.ae/interior-design-dubai">Interior design</a></b> is about more than just being aesthetically pleasing; it increases productivity, portrays your brand, and creates an environment that makes you proud to be in it. As a top-rated office interior design company in Dubai, we do not just create office spaces; we create the future of your business. Whether you require modern office interior designs, office renovation services, or an entire office interior fit out in Dubai, we are the team that you have been searching for.
 
        </p>
   

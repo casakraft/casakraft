@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const stats = [
   { value: "8+", label: "Trusted Years" },
-  { value: "100+", label: "Employees" },
+  { value: "100+", label: "Team Members" },
   { value: "150+", label: "Cafe Projects" },
   { value: "50+", label: "Commercial Fit-Outs" },
 ];
@@ -86,19 +86,12 @@ const ApId = () => {
 
         {/* INTRO */}
         <p className="text-sm sm:text-base leading-7 text-white/80">
-          A great café is more than just coffee and food—it is an experience. At Casa Kraft Interior Design & Renovation, we create stunning and functional cafe interiors that reflect your brand identity while providing customers with a welcoming atmosphere. From cozy coffee shops to luxury cafés and trendy dining spaces, we design interiors that enhance customer satisfaction and maximize space efficiency.
-
-          Casa Kraft is one of the leading providers of{" "}
-          <b className="text-[#4eb5a9]">
-            <a
-              href="https://casakraftinteriors.ae/cafe-interior-design-dubai"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              cafe interior design services in Dubai
-            </a>
-          </b>
-          , known for delivering elegant and practical hospitality spaces. Whether you are launching a new café or renovating an existing one, our expert designers and fit-out specialists are ready to bring your vision to life.
+          A great café is more than just coffee and food—it is an experience. At Casa Kraft Interior Design &amp; Renovation, we create stunning and functional cafe interiors that reflect your brand identity while providing customers with a welcoming atmosphere. From cozy coffee shops to luxury cafés and trendy dining spaces, we design interiors that enhance customer satisfaction and maximize space efficiency. Casa Kraft is one of the leading providers of{" "}
+        cafe interior design services in Dubai, known for delivering elegant and practical hospitality spaces. Whether you are launching a new café or{" "}
+         
+            renovating an existing one
+        
+          , our expert designers and fit-out specialists are ready to bring your vision to life.
         </p>
 
         {/* SERVICES HEADING */}
@@ -134,4 +127,3 @@ const ApId = () => {
 };
 
 export default ApId;
-

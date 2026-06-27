@@ -110,22 +110,22 @@ const TestimonialCarousel = () => {
 
 const retailGallery = [
   {
-    image: "/images/retail-racks.png",
+    image: "/images/office-racks.png",
   },
   {
-    image: "/images/CEO-retail-interior-renovations.png",
+    image: "/images/CEO-office-interior-renovations.png",
   },
   {
-    image: "/images/retail-interior-in-dubai.jpg",
+    image: "/images/office-interior-in-dubai.jpg",
   },
   {
     image: "/images/Interior design company twin tower dubai.png",
   },
   {
-    image: "/images/retail-interiors-and-renovations.png",
+    image: "/images/office-interiors-and-renovations.png",
    },
   {
-    image: "/images/retail-sitting-area-for-clients.png",
+    image: "/images/office-sitting-area-for-clients.png",
   },
   
 ];
@@ -251,7 +251,7 @@ const DProjects = () => {
     {/* Right Side - Image */}
     <div className="relative overflow-hidden rounded-xl">
       <Image
-        src="/images/CEO-retail-interior-renovations.png"
+        src="/images/CEO-office-interior-renovations.png"
         alt="CEO OFFice Interior Design Dubai"
         width={700}
         height={500}
@@ -407,7 +407,7 @@ const DProjects = () => {
         Areas We Serve Across Dubai      </h2>
 
       <p className="text-zinc-400 mx-auto">
-       With Casa Kraft Interior Design & Renovation, we offer the <b className="text-[#4eb5a9]"><a href="https://casakraftinteriors.ae/retail-renovation-dubai">best retail interior design and renovation services</a></b> in all of Dubai's best business districts and commercial areas. Whether you are looking for a modern corporate retail, an executive retail, or full renovation of your current retail space, we can help! We proudly work for businesses located in Business Bay, DIFC, Downtown Dubai, Dubai Marina, JLT, Dubai Internet City, Dubai Media City, Dubai Silicon Oasis, and retails on Sheikh Zayed Road. With years of experience designing retail spaces in all of these top commercial spots, we are experts at delivering the right design for your business.
+       With Casa Kraft Interior Design & Renovation, we offer the best retail interior design and renovation services in all of Dubai's best business districts and commercial areas. Whether you are looking for a modern corporate retail, an executive retail, or full renovation of your current retail space, we can help! We proudly work for businesses located in Business Bay, DIFC, Downtown Dubai, Dubai Marina, JLT, Dubai Internet City, Dubai Media City, Dubai Silicon Oasis, and retails on Sheikh Zayed Road. With years of experience designing retail spaces in all of these top commercial spots, we are experts at delivering the right design for your business.
       </p>
     </div>
 

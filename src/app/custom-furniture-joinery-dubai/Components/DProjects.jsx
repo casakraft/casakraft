@@ -432,13 +432,7 @@ const DProjects = () => {
         Areas We Serve Across Dubai      </h2>
 
       <p className="text-zinc-400 mx-auto">
-     With Casa Kraft Interior Design & Renovation, we offer the{" "}
-<b className="text-[#4eb5a9]">
-  <a href="https://casakraftinteriors.ae/custom-furniture-joinery">
-    best custom furniture and joinery services
-  </a>
-</b>{" "}
-in all of Dubai’s premium residential, commercial, and hospitality spaces. Whether you are looking for bespoke furniture pieces, tailor-made wardrobes, modular kitchens, elegant wall paneling, or full joinery solutions for your property, we can help.
+     With Casa Kraft Interior Design & Renovation, we offer the best custom furniture and joinery services in all of Dubai’s premium residential, commercial, and hospitality spaces. Whether you are looking for bespoke furniture pieces, tailor-made wardrobes, modular kitchens, elegant wall paneling, or full joinery solutions for your property, we can help.
 
 We proudly serve clients across Business Bay, DIFC, Downtown Dubai, Dubai Marina, JLT, Dubai Internet City, Dubai Media City, Dubai Silicon Oasis, and Sheikh Zayed Road. With years of experience delivering precision-crafted joinery and custom furniture solutions across these top locations, we are experts at transforming spaces with functionality, durability, and timeless design.
       </p>
