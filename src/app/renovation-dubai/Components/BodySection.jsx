@@ -196,8 +196,8 @@ const projects = useMemo(() => [
     { title: "Bathrooms", img: "/images/br7.jpeg", href: "/bathroom-renovation" },
     { title: "Flooring", img: "/images/fr4.png", href: "/flooring-dubai" },
     { title: "Wardrobes & Cabinets", img: "/images/wc5.png", href: "/wardrobes-and-cabinets" },
-    { title: "Villa Extension", img: "/images/ve6.png", href: "/villa-extention" },
     { title: "Landscape", img: "/images/ls2.png", href: "/landscape-dubai" },
+     { title: "Customized Curtains & Blinds", img: "/images/apartment-bedroom-curtains-in-dubai.png", href: "/customized-curtains-blinds-dubai" },
     { title: "Painting", img: "/images/pn3.png", href: "/painting-services-dubai" },
     { title: "Windows & Doors", img: "/images/wd1.png", href: "/windows-and-doors" },
   ], []);
